@@ -1,15 +1,15 @@
 {
-    "resolved": 59,
-    "open": 838,
+    "resolved": 61,
+    "open": 851,
     "due": 0,
     "unresolvable": 43,
-    "brier": 0.224,
-    "hit_rate": 0.63,
+    "brier": 0.239,
+    "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 59,
-            "brier": 0.224,
-            "hit_rate": 0.63
+            "resolved": 61,
+            "brier": 0.239,
+            "hit_rate": 0.61
         }
     },
     "calibration": [
@@ -33,42 +33,64 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 17,
-            "avg_predicted": 0.68,
-            "observed": 0.18
+            "n": 18,
+            "avg_predicted": 0.69,
+            "observed": 0.17
         },
         {
             "bin": "80\u2013100%",
-            "n": 4,
+            "n": 5,
             "avg_predicted": 0.85,
-            "observed": 0.75
+            "observed": 0.6
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 59,
-            "brier": 0.302
+            "resolved": 61,
+            "brier": 0.319
         },
         "Economist": {
-            "resolved": 59,
-            "brier": 0.264
+            "resolved": 61,
+            "brier": 0.279
         },
         "Naturalist": {
-            "resolved": 59,
-            "brier": 0.297
+            "resolved": 61,
+            "brier": 0.31
         },
         "Skeptic": {
-            "resolved": 58,
-            "brier": 0.151
+            "resolved": 60,
+            "brier": 0.165
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 235,
-            "brier": 0.254
+            "resolved": 243,
+            "brier": 0.268
         }
     },
     "recent": [
+        {
+            "statement": "Severe thunderstorms will cause power outages in the Midwest region",
+            "horizon": "24h",
+            "probability": 0.79,
+            "location": "Midwest USA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The signals only show Severe Thunderstorm Warnings were issued, but none document that power outages actually occurred as the forecast required.",
+            "resolved_ms": 1784411731581,
+            "ts": 1784324290457
+        },
+        {
+            "statement": "A severe thunderstorm will hit the city of Birmingham, Alabama within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.87,
+            "location": "Birmingham, AL",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm hitting a major city would certainly have been captured within the closed window.",
+            "resolved_ms": 1784411728676,
+            "ts": 1784322445454
+        },
         {
             "statement": "A severe thunderstorm warning will be issued for the Chicago area",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "There is no mention of a tropical cyclone making landfall in the Philippines within the next 24 hours, despite several news signals mentioning earthquakes and volcanic eruptions in the region.",
             "resolved_ms": 1784387552737,
             "ts": 1784298429798
-        },
-        {
-            "statement": "A category 3 hurricane will make landfall in the southeastern United States within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.39,
-            "location": "Southeastern United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "There is no mention of a category 3 hurricane making landfall in the southeastern United States within the next 24 hours after the window closed, and no such event appears in the seismic or news signals.",
-            "resolved_ms": 1784383949033,
-            "ts": 1784296591172
-        },
-        {
-            "statement": "The US Federal Reserve will raise interest rates by 50 basis points",
-            "horizon": "24h",
-            "probability": 0.66,
-            "location": "Federal Reserve Building, Washington D.C.",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No Federal Reserve rate-decision signal was captured during the window; a 50bp hike would dominate every feed.",
-            "resolved_ms": 1784383947302,
-            "ts": 1784294740166
         }
     ]
 }
