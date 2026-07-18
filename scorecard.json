@@ -1,15 +1,15 @@
 {
-    "resolved": 54,
-    "open": 802,
-    "due": 2,
+    "resolved": 59,
+    "open": 838,
+    "due": 0,
     "unresolvable": 43,
-    "brier": 0.211,
-    "hit_rate": 0.67,
+    "brier": 0.224,
+    "hit_rate": 0.63,
     "per_horizon": {
         "24h": {
-            "resolved": 54,
-            "brier": 0.211,
-            "hit_rate": 0.67
+            "resolved": 59,
+            "brier": 0.224,
+            "hit_rate": 0.63
         }
     },
     "calibration": [
@@ -21,8 +21,8 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 12,
-            "avg_predicted": 0.29,
+            "n": 13,
+            "avg_predicted": 0.28,
             "observed": 0.08
         },
         {
@@ -33,9 +33,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 13,
-            "avg_predicted": 0.69,
-            "observed": 0.23
+            "n": 17,
+            "avg_predicted": 0.68,
+            "observed": 0.18
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,84 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 54,
-            "brier": 0.277
+            "resolved": 59,
+            "brier": 0.302
         },
         "Economist": {
-            "resolved": 54,
-            "brier": 0.243
+            "resolved": 59,
+            "brier": 0.264
         },
         "Naturalist": {
-            "resolved": 54,
-            "brier": 0.287
+            "resolved": 59,
+            "brier": 0.297
         },
         "Skeptic": {
-            "resolved": 53,
-            "brier": 0.156
+            "resolved": 58,
+            "brier": 0.151
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 215,
-            "brier": 0.241
+            "resolved": 235,
+            "brier": 0.254
         }
     },
     "recent": [
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Chicago area",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "Chicago, IL",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a severe thunderstorm warning for the Chicago area within the forecast window.",
+            "resolved_ms": 1784407917009,
+            "ts": 1784320603886
+        },
+        {
+            "statement": "A flash flood will occur in the Rio Grande Gorge near Taos, New Mexico",
+            "horizon": "24h",
+            "probability": 0.65,
+            "location": "Rio Grande Gorge, NM",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a flash flood of this nature would have been recorded if it occurred within the window.",
+            "resolved_ms": 1784406338801,
+            "ts": 1784318761620
+        },
+        {
+            "statement": "A severe thunderstorm will hit the city of Albuquerque, New Mexico",
+            "horizon": "24h",
+            "probability": 0.71,
+            "location": "Albuquerque, NM",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm hitting a major city would certainly have been captured, yet none shows it.",
+            "resolved_ms": 1784406337005,
+            "ts": 1784318761620
+        },
+        {
+            "statement": "A category 2 cyclone will make landfall in Mexico within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.22,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows cyclone ELIDA-26 at Tropical Storm level with zero population affected by Category 1 or higher winds, far short of a Category 2 landfall in Mexico.",
+            "resolved_ms": 1784406335141,
+            "ts": 1784316922513
+        },
+        {
+            "statement": "A Category 1 tropical cyclone will make landfall in Mexico",
+            "horizon": "24h",
+            "probability": 0.68,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signal S1 shows cyclone ELIDA-26 with zero population affected by Category 1 winds and an offshore location, indicating no Category 1 landfall in Mexico occurred within the window.",
+            "resolved_ms": 1784406333024,
+            "ts": 1784311382690
+        },
         {
             "statement": "An earthquake with a magnitude greater than 7.0 will occur in Mexico within the next 24 hours",
             "horizon": "24h",
@@ -145,61 +200,6 @@
             "evidence": "No Federal Reserve rate-decision signal was captured during the window; a 50bp hike would dominate every feed.",
             "resolved_ms": 1784383947302,
             "ts": 1784294740166
-        },
-        {
-            "statement": "A magnitude 6.5 earthquake will occur in the South Of Fiji Islands within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.54,
-            "location": "South Of Fiji Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The seismic activity during the window was significant, but there is no clear indication of a magnitude 6.5 earthquake in the South Of Fiji Islands within the next 24 hours.",
-            "resolved_ms": 1784380343711,
-            "ts": 1784292890881
-        },
-        {
-            "statement": "A significant earthquake will strike the East Coast of the United States within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.14,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The forecast claimed a significant earthquake on the East Coast of the United States, but no such event is reported in the CURRENT WORLD SNAPSHOT.",
-            "resolved_ms": 1784376740036,
-            "ts": 1784289184861
-        },
-        {
-            "statement": "A Category 2 hurricane will make landfall in the southeastern United States within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.17,
-            "location": "Southeastern United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No Category 2 hurricane made landfall in the southeastern United States within the next 24 hours, as there is no mention of such an event in the current world snapshot or archived signals.",
-            "resolved_ms": 1784376738560,
-            "ts": 1784287335773
-        },
-        {
-            "statement": "A major oil tanker will be seized in the Strait of Hormuz due to Iranian naval activity",
-            "horizon": "24h",
-            "probability": 0.45,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The forecast stated a 'major oil tanker' would be seized, but there is no mention of such an incident in the provided signals.",
-            "resolved_ms": 1784373134858,
-            "ts": 1784285485844
-        },
-        {
-            "statement": "A Category 2 hurricane will make landfall in the southeastern United States within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.2,
-            "location": "Gulf Coast",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No Category 2 hurricane made landfall in the southeastern United States within the next 24 hours, as there is no mention of a hurricane or any significant weather event in the provided signals.",
-            "resolved_ms": 1784369529576,
-            "ts": 1784281787054
         }
     ]
 }
