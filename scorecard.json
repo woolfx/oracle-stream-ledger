@@ -1,15 +1,15 @@
 {
-    "resolved": 53,
-    "open": 791,
+    "resolved": 54,
+    "open": 802,
     "due": 2,
     "unresolvable": 43,
-    "brier": 0.203,
-    "hit_rate": 0.68,
+    "brier": 0.211,
+    "hit_rate": 0.67,
     "per_horizon": {
         "24h": {
-            "resolved": 53,
-            "brier": 0.203,
-            "hit_rate": 0.68
+            "resolved": 54,
+            "brier": 0.211,
+            "hit_rate": 0.67
         }
     },
     "calibration": [
@@ -21,9 +21,9 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 11,
+            "n": 12,
             "avg_predicted": 0.29,
-            "observed": 0.0
+            "observed": 0.08
         },
         {
             "bin": "40\u201360%",
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 53,
-            "brier": 0.27
+            "resolved": 54,
+            "brier": 0.277
         },
         "Economist": {
-            "resolved": 53,
-            "brier": 0.235
+            "resolved": 54,
+            "brier": 0.243
         },
         "Naturalist": {
-            "resolved": 53,
-            "brier": 0.28
+            "resolved": 54,
+            "brier": 0.287
         },
         "Skeptic": {
-            "resolved": 52,
-            "brier": 0.146
+            "resolved": 53,
+            "brier": 0.156
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 211,
-            "brier": 0.233
+            "resolved": 215,
+            "brier": 0.241
         }
     },
     "recent": [
+        {
+            "statement": "An earthquake with a magnitude greater than 7.0 will occur in Mexico within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "Mexico",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S4's text states that 'an earthquake occurred in Mexico potentially affecting 60 thousand (in MMI>=VII)'. The forecast claimed an earthquake with a magnitude greater than 7.0 would occur in Mexico within the next 24 hours, which matches Signal S4's details.",
+            "resolved_ms": 1784403743690,
+            "ts": 1784315083821
+        },
         {
             "statement": "A major earthquake will strike Mexico within the next fortnight",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "No Category 2 hurricane made landfall in the southeastern United States within the next 24 hours, as there is no mention of a hurricane or any significant weather event in the provided signals.",
             "resolved_ms": 1784369529576,
             "ts": 1784281787054
-        },
-        {
-            "statement": "The US will launch another round of airstrikes against Iran",
-            "horizon": "24h",
-            "probability": 0.59,
-            "location": "Middle East",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The forecasted airstrikes against Iran do not appear in any of the archived signals or current world snapshot, indicating they did not occur within the window.",
-            "resolved_ms": 1784369527911,
-            "ts": 1784279915795
         }
     ]
 }
