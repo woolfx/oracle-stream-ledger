@@ -1,15 +1,15 @@
 {
-    "resolved": 52,
-    "open": 778,
-    "due": 1,
+    "resolved": 53,
+    "open": 777,
+    "due": 0,
     "unresolvable": 43,
-    "brier": 0.205,
-    "hit_rate": 0.67,
+    "brier": 0.203,
+    "hit_rate": 0.68,
     "per_horizon": {
         "24h": {
-            "resolved": 52,
-            "brier": 0.205,
-            "hit_rate": 0.67
+            "resolved": 53,
+            "brier": 0.203,
+            "hit_rate": 0.68
         }
     },
     "calibration": [
@@ -33,9 +33,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 12,
+            "n": 13,
             "avg_predicted": 0.69,
-            "observed": 0.17
+            "observed": 0.23
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 52,
-            "brier": 0.266
+            "resolved": 53,
+            "brier": 0.27
         },
         "Economist": {
-            "resolved": 52,
-            "brier": 0.239
+            "resolved": 53,
+            "brier": 0.235
         },
         "Naturalist": {
-            "resolved": 52,
-            "brier": 0.285
+            "resolved": 53,
+            "brier": 0.28
         },
         "Skeptic": {
-            "resolved": 51,
-            "brier": 0.148
+            "resolved": 52,
+            "brier": 0.146
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 207,
-            "brier": 0.235
+            "resolved": 211,
+            "brier": 0.233
         }
     },
     "recent": [
+        {
+            "statement": "A major earthquake will strike Mexico within the next fortnight",
+            "horizon": "24h",
+            "probability": 0.69,
+            "location": "Mexico",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "On 7/17/2026 2:48:39 PM, an earthquake occurred in Mexico potentially affecting 60 thousand (in MMI>=VII). The earthquake had Magnitude 7.3M, Depth:18.584km",
+            "resolved_ms": 1784396538279,
+            "ts": 1784309542169
+        },
         {
             "statement": "A Category 2 hurricane will make landfall in the southern United States within the next 24 hours.",
             "horizon": "24h",
@@ -188,17 +199,6 @@
             "verdict": "no",
             "evidence": "The forecasted airstrikes against Iran do not appear in any of the archived signals or current world snapshot, indicating they did not occur within the window.",
             "resolved_ms": 1784369527911,
-            "ts": 1784279915795
-        },
-        {
-            "statement": "The flood alert in France will be upgraded to an orange level warning",
-            "horizon": "24h",
-            "probability": 0.45,
-            "location": "France",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The archived France flood alert remained green throughout the window; no orange upgrade was captured.",
-            "resolved_ms": 1784369526383,
             "ts": 1784279915795
         }
     ]
