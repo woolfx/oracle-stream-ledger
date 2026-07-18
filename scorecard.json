@@ -1,14 +1,14 @@
 {
-    "resolved": 61,
-    "open": 851,
+    "resolved": 64,
+    "open": 862,
     "due": 0,
     "unresolvable": 43,
-    "brier": 0.239,
+    "brier": 0.241,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 61,
-            "brier": 0.239,
+            "resolved": 64,
+            "brier": 0.241,
             "hit_rate": 0.61
         }
     },
@@ -27,15 +27,15 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 19,
+            "n": 21,
             "avg_predicted": 0.48,
-            "observed": 0.11
+            "observed": 0.1
         },
         {
             "bin": "60\u201380%",
-            "n": 18,
-            "avg_predicted": 0.69,
-            "observed": 0.17
+            "n": 19,
+            "avg_predicted": 0.68,
+            "observed": 0.16
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 61,
-            "brier": 0.319
+            "resolved": 64,
+            "brier": 0.308
         },
         "Economist": {
-            "resolved": 61,
-            "brier": 0.279
+            "resolved": 64,
+            "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 61,
-            "brier": 0.31
+            "resolved": 64,
+            "brier": 0.315
         },
         "Skeptic": {
-            "resolved": 60,
-            "brier": 0.165
+            "resolved": 63,
+            "brier": 0.173
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 243,
-            "brier": 0.268
+            "resolved": 255,
+            "brier": 0.272
         }
     },
     "recent": [
+        {
+            "statement": "A significant market volatility event will occur within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.46,
+            "location": "Global Markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "VIX sits at 18.77 (below the ~20 calm threshold) with equity futures down only ~1%, indicating no significant market volatility event occurred within the window.",
+            "resolved_ms": 1784415339014,
+            "ts": 1784327972213
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Chicago area",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "Chicago, IL",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for Chicago would certainly have been captured if it occurred.",
+            "resolved_ms": 1784415335335,
+            "ts": 1784327972213
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Dallas-Fort Worth metropolitan area in Texas.",
+            "horizon": "24h",
+            "probability": 0.47,
+            "location": "Dallas-Fort Worth, TX",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for a major metro area would certainly have been recorded within its closed window.",
+            "resolved_ms": 1784415333663,
+            "ts": 1784326128496
+        },
         {
             "statement": "Severe thunderstorms will cause power outages in the Midwest region",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "On 7/17/2026 2:48:39 PM, an earthquake occurred in Mexico potentially affecting 60 thousand (in MMI>=VII). The earthquake had Magnitude 7.3M, Depth:18.584km",
             "resolved_ms": 1784396538279,
             "ts": 1784309542169
-        },
-        {
-            "statement": "A Category 2 hurricane will make landfall in the southern United States within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.51,
-            "location": "Gulf Coast, USA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "There is no mention of a Category 2 hurricane making landfall in the Gulf Coast, USA within the next 24 hours.",
-            "resolved_ms": 1784394761336,
-            "ts": 1784305858112
-        },
-        {
-            "statement": "A major cyberattack will target the Microsoft SharePoint platform",
-            "horizon": "24h",
-            "probability": 0.4,
-            "location": "Global",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "There are no reports of a major cyberattack targeting the Microsoft SharePoint platform within the given window.",
-            "resolved_ms": 1784387554094,
-            "ts": 1784300272543
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the Philippines within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.72,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "There is no mention of a tropical cyclone making landfall in the Philippines within the next 24 hours, despite several news signals mentioning earthquakes and volcanic eruptions in the region.",
-            "resolved_ms": 1784387552737,
-            "ts": 1784298429798
         }
     ]
 }
