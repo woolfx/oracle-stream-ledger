@@ -1,0 +1,205 @@
+{
+    "resolved": 52,
+    "open": 778,
+    "due": 1,
+    "unresolvable": 43,
+    "brier": 0.205,
+    "hit_rate": 0.67,
+    "per_horizon": {
+        "24h": {
+            "resolved": 52,
+            "brier": 0.205,
+            "hit_rate": 0.67
+        }
+    },
+    "calibration": [
+        {
+            "bin": "0\u201320%",
+            "n": 6,
+            "avg_predicted": 0.12,
+            "observed": 0.0
+        },
+        {
+            "bin": "20\u201340%",
+            "n": 11,
+            "avg_predicted": 0.29,
+            "observed": 0.0
+        },
+        {
+            "bin": "40\u201360%",
+            "n": 19,
+            "avg_predicted": 0.48,
+            "observed": 0.11
+        },
+        {
+            "bin": "60\u201380%",
+            "n": 12,
+            "avg_predicted": 0.69,
+            "observed": 0.17
+        },
+        {
+            "bin": "80\u2013100%",
+            "n": 4,
+            "avg_predicted": 0.85,
+            "observed": 0.75
+        }
+    ],
+    "personas": {
+        "Strategist": {
+            "resolved": 52,
+            "brier": 0.266
+        },
+        "Economist": {
+            "resolved": 52,
+            "brier": 0.239
+        },
+        "Naturalist": {
+            "resolved": 52,
+            "brier": 0.285
+        },
+        "Skeptic": {
+            "resolved": 51,
+            "brier": 0.148
+        }
+    },
+    "models": {
+        "llama3.1": {
+            "resolved": 207,
+            "brier": 0.235
+        }
+    },
+    "recent": [
+        {
+            "statement": "A Category 2 hurricane will make landfall in the southern United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.51,
+            "location": "Gulf Coast, USA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "There is no mention of a Category 2 hurricane making landfall in the Gulf Coast, USA within the next 24 hours.",
+            "resolved_ms": 1784394761336,
+            "ts": 1784305858112
+        },
+        {
+            "statement": "A major cyberattack will target the Microsoft SharePoint platform",
+            "horizon": "24h",
+            "probability": 0.4,
+            "location": "Global",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "There are no reports of a major cyberattack targeting the Microsoft SharePoint platform within the given window.",
+            "resolved_ms": 1784387554094,
+            "ts": 1784300272543
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in the Philippines within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.72,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "There is no mention of a tropical cyclone making landfall in the Philippines within the next 24 hours, despite several news signals mentioning earthquakes and volcanic eruptions in the region.",
+            "resolved_ms": 1784387552737,
+            "ts": 1784298429798
+        },
+        {
+            "statement": "A category 3 hurricane will make landfall in the southeastern United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.39,
+            "location": "Southeastern United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "There is no mention of a category 3 hurricane making landfall in the southeastern United States within the next 24 hours after the window closed, and no such event appears in the seismic or news signals.",
+            "resolved_ms": 1784383949033,
+            "ts": 1784296591172
+        },
+        {
+            "statement": "The US Federal Reserve will raise interest rates by 50 basis points",
+            "horizon": "24h",
+            "probability": 0.66,
+            "location": "Federal Reserve Building, Washington D.C.",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No Federal Reserve rate-decision signal was captured during the window; a 50bp hike would dominate every feed.",
+            "resolved_ms": 1784383947302,
+            "ts": 1784294740166
+        },
+        {
+            "statement": "A magnitude 6.5 earthquake will occur in the South Of Fiji Islands within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.54,
+            "location": "South Of Fiji Islands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The seismic activity during the window was significant, but there is no clear indication of a magnitude 6.5 earthquake in the South Of Fiji Islands within the next 24 hours.",
+            "resolved_ms": 1784380343711,
+            "ts": 1784292890881
+        },
+        {
+            "statement": "A significant earthquake will strike the East Coast of the United States within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.14,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The forecast claimed a significant earthquake on the East Coast of the United States, but no such event is reported in the CURRENT WORLD SNAPSHOT.",
+            "resolved_ms": 1784376740036,
+            "ts": 1784289184861
+        },
+        {
+            "statement": "A Category 2 hurricane will make landfall in the southeastern United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.17,
+            "location": "Southeastern United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No Category 2 hurricane made landfall in the southeastern United States within the next 24 hours, as there is no mention of such an event in the current world snapshot or archived signals.",
+            "resolved_ms": 1784376738560,
+            "ts": 1784287335773
+        },
+        {
+            "statement": "A major oil tanker will be seized in the Strait of Hormuz due to Iranian naval activity",
+            "horizon": "24h",
+            "probability": 0.45,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The forecast stated a 'major oil tanker' would be seized, but there is no mention of such an incident in the provided signals.",
+            "resolved_ms": 1784373134858,
+            "ts": 1784285485844
+        },
+        {
+            "statement": "A Category 2 hurricane will make landfall in the southeastern United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "Gulf Coast",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No Category 2 hurricane made landfall in the southeastern United States within the next 24 hours, as there is no mention of a hurricane or any significant weather event in the provided signals.",
+            "resolved_ms": 1784369529576,
+            "ts": 1784281787054
+        },
+        {
+            "statement": "The US will launch another round of airstrikes against Iran",
+            "horizon": "24h",
+            "probability": 0.59,
+            "location": "Middle East",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The forecasted airstrikes against Iran do not appear in any of the archived signals or current world snapshot, indicating they did not occur within the window.",
+            "resolved_ms": 1784369527911,
+            "ts": 1784279915795
+        },
+        {
+            "statement": "The flood alert in France will be upgraded to an orange level warning",
+            "horizon": "24h",
+            "probability": 0.45,
+            "location": "France",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The archived France flood alert remained green throughout the window; no orange upgrade was captured.",
+            "resolved_ms": 1784369526383,
+            "ts": 1784279915795
+        }
+    ]
+}
