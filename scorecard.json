@@ -1,13 +1,13 @@
 {
-    "resolved": 119,
-    "open": 1090,
-    "due": 2,
+    "resolved": 123,
+    "open": 1094,
+    "due": 0,
     "unresolvable": 43,
     "brier": 0.292,
     "hit_rate": 0.47,
     "per_horizon": {
         "24h": {
-            "resolved": 119,
+            "resolved": 123,
             "brier": 0.292,
             "hit_rate": 0.47
         }
@@ -33,42 +33,86 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 38,
+            "n": 41,
             "avg_predicted": 0.67,
-            "observed": 0.11
+            "observed": 0.15
         },
         {
             "bin": "80\u2013100%",
-            "n": 14,
+            "n": 15,
             "avg_predicted": 0.83,
-            "observed": 0.21
+            "observed": 0.2
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 119,
-            "brier": 0.352
+            "resolved": 123,
+            "brier": 0.353
         },
         "Economist": {
-            "resolved": 119,
-            "brier": 0.357
+            "resolved": 123,
+            "brier": 0.356
         },
         "Naturalist": {
-            "resolved": 119,
-            "brier": 0.401
+            "resolved": 123,
+            "brier": 0.4
         },
         "Skeptic": {
-            "resolved": 118,
-            "brier": 0.188
+            "resolved": 122,
+            "brier": 0.192
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 475,
-            "brier": 0.325
+            "resolved": 491,
+            "brier": 0.326
         }
     },
     "recent": [
+        {
+            "statement": "Severe thunderstorms will affect the New York City metropolitan area",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "New York City, USA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and severe thunderstorms in the NYC metro would certainly have been documented if they occurred.",
+            "resolved_ms": 1784491349569,
+            "ts": 1784403771683
+        },
+        {
+            "statement": "Severe thunderstorms will cause widespread power outages in the Mid-Atlantic region",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "Mid-Atlantic region",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The signals only show issued Severe Thunderstorm Warnings, which are alerts of possible conditions, and none document actual widespread power outages occurring in the Mid-Atlantic during the window.",
+            "resolved_ms": 1784491347984,
+            "ts": 1784401936526
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will hit the region around Puerto Madero, Mexico",
+            "horizon": "24h",
+            "probability": 0.63,
+            "location": "Puerto Madero, Mexico",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S6 reports a M5.5 earthquake 81 km SW of Puerto Madero, Mexico, exceeding the 5.0 threshold in the forecast region.",
+            "resolved_ms": 1784491344103,
+            "ts": 1784373843713
+        },
+        {
+            "statement": "A magnitude 4.5 earthquake will occur in the vicinity of Puerto Madero, Mexico.",
+            "horizon": "24h",
+            "probability": 0.79,
+            "location": "Puerto Madero, Mexico",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S6 reports an M5.5 earthquake 81 km SW of Puerto Madero, Mexico, exceeding the forecast's M4.5 threshold in the specified vicinity.",
+            "resolved_ms": 1784491340383,
+            "ts": 1784372013888
+        },
         {
             "statement": "A severe thunderstorm will cause widespread power outages in the Mid-Atlantic region",
             "horizon": "24h",
@@ -156,50 +200,6 @@
             "evidence": "No signal reports an earthquake near the southern East Pacific Rise; the quakes listed occurred in Scotia Sea, Peru, and Mexico.",
             "resolved_ms": 1784480464127,
             "ts": 1784392214031
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will strike near Puerto Madero, Mexico",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "Puerto Madero, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Mexico earthquake signal shows a magnitude 5.7 event, below the forecast 6.0 threshold and not specified near Puerto Madero, so no signal confirms the event occurred.",
-            "resolved_ms": 1784476843749,
-            "ts": 1784390381209
-        },
-        {
-            "statement": "A significant oil price spike will occur within the next 24 hours due to disruptions at the Bab el-Mandeb chokepoint.",
-            "horizon": "24h",
-            "probability": 0.57,
-            "location": "Bab el-Mandeb",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude is flat at 88.1 $/bbl (+0.0%) with no signal indicating any Bab el-Mandeb disruption or oil price spike.",
-            "resolved_ms": 1784476840617,
-            "ts": 1784388537511
-        },
-        {
-            "statement": "A magnitude 6.5 earthquake will strike near the coast of Mexico within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.66,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Mexico earthquake signal (S3) was magnitude 5.7M, below the required 6.5 threshold, and no signal shows a 6.5M event.",
-            "resolved_ms": 1784476837993,
-            "ts": 1784388537511
-        },
-        {
-            "statement": "A M5+ earthquake will strike near the Puerto Madero area in Mexico",
-            "horizon": "24h",
-            "probability": 0.78,
-            "location": "Puerto Madero, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S3 reports a M5.7 earthquake generically in 'Mexico' but does not name Puerto Madero, so it fails to confirm the event at the specified location.",
-            "resolved_ms": 1784476833875,
-            "ts": 1784379337556
         }
     ]
 }
