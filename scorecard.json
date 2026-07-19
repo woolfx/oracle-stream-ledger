@@ -1,15 +1,15 @@
 {
-    "resolved": 88,
-    "open": 900,
+    "resolved": 91,
+    "open": 918,
     "due": 0,
     "unresolvable": 43,
-    "brier": 0.292,
-    "hit_rate": 0.51,
+    "brier": 0.289,
+    "hit_rate": 0.52,
     "per_horizon": {
         "24h": {
-            "resolved": 88,
-            "brier": 0.292,
-            "hit_rate": 0.51
+            "resolved": 91,
+            "brier": 0.289,
+            "hit_rate": 0.52
         }
     },
     "calibration": [
@@ -21,9 +21,9 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 15,
-            "avg_predicted": 0.29,
-            "observed": 0.07
+            "n": 17,
+            "avg_predicted": 0.28,
+            "observed": 0.06
         },
         {
             "bin": "40\u201360%",
@@ -33,7 +33,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 26,
+            "n": 27,
             "avg_predicted": 0.68,
             "observed": 0.15
         },
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 88,
-            "brier": 0.342
+            "resolved": 91,
+            "brier": 0.338
         },
         "Economist": {
-            "resolved": 88,
-            "brier": 0.353
+            "resolved": 91,
+            "brier": 0.349
         },
         "Naturalist": {
-            "resolved": 88,
-            "brier": 0.383
+            "resolved": 91,
+            "brier": 0.382
         },
         "Skeptic": {
-            "resolved": 87,
-            "brier": 0.211
+            "resolved": 90,
+            "brier": 0.206
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 351,
-            "brier": 0.323
+            "resolved": 363,
+            "brier": 0.319
         }
     },
     "recent": [
+        {
+            "statement": "Tilman Fertitta will face further protests during his yacht tour in Venice",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "Venice, Italy",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a protest event of this nature would certainly have been captured within the closed window.",
+            "resolved_ms": 1784440646012,
+            "ts": 1784353631516
+        },
+        {
+            "statement": "A magnitude 4.5 earthquake will strike near Polkowice, Poland",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "Polkowice, Poland",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signals describe a magnitude 5.5 earthquake in the Scotia Sea, not any earthquake near Polkowice, Poland, so the forecast event is unsupported.",
+            "resolved_ms": 1784440639832,
+            "ts": 1784353631516
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will occur in the Pacific Northwest region of North America within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.36,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signals report a magnitude 5.5 earthquake in the Scotia Sea, not a magnitude 5.0 event in the Pacific Northwest, and no signal shows the forecast event occurring.",
+            "resolved_ms": 1784440637952,
+            "ts": 1784351793725
+        },
         {
             "statement": "A major wildfire will break out in California",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "No captured signal provides any evidence about a severe thunderstorm warning for Atlanta within the window.",
             "resolved_ms": 1784426198806,
             "ts": 1784337042569
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Midwest region on July 18",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "Midwest US",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "NWS Cleveland OH issued a Severe Thunderstorm Warning on July 18, and Ohio falls within the Midwest region.",
-            "resolved_ms": 1784426196747,
-            "ts": 1784335191524
-        },
-        {
-            "statement": "Flash flooding will occur in Midland/Odessa, TX",
-            "horizon": "24h",
-            "probability": 0.9,
-            "location": "Midland/Odessa, TX",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 is a Flash Flood Warning (an alert naming the NWS office, not the city), which shows a risk condition rather than confirming flash flooding actually occurred in Midland/Odessa.",
-            "resolved_ms": 1784426194028,
-            "ts": 1784333341424
-        },
-        {
-            "statement": "Power outage reported in the city of San Francisco, California",
-            "horizon": "24h",
-            "probability": 0.25,
-            "location": "San Francisco, CA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports any power outage in San Francisco, and such an event would have been captured within the closed window.",
-            "resolved_ms": 1784422582340,
-            "ts": 1784333394111
         }
     ]
 }
