@@ -1,14 +1,14 @@
 {
-    "resolved": 97,
-    "open": 957,
+    "resolved": 99,
+    "open": 961,
     "due": 0,
     "unresolvable": 43,
-    "brier": 0.293,
+    "brier": 0.292,
     "hit_rate": 0.48,
     "per_horizon": {
         "24h": {
-            "resolved": 97,
-            "brier": 0.293,
+            "resolved": 99,
+            "brier": 0.292,
             "hit_rate": 0.48
         }
     },
@@ -27,9 +27,9 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 31,
+            "n": 33,
             "avg_predicted": 0.49,
-            "observed": 0.1
+            "observed": 0.09
         },
         {
             "bin": "60\u201380%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 97,
+            "resolved": 99,
             "brier": 0.347
         },
         "Economist": {
-            "resolved": 97,
-            "brier": 0.352
+            "resolved": 99,
+            "brier": 0.349
         },
         "Naturalist": {
-            "resolved": 97,
-            "brier": 0.39
+            "resolved": 99,
+            "brier": 0.395
         },
         "Skeptic": {
-            "resolved": 96,
-            "brier": 0.207
+            "resolved": 98,
+            "brier": 0.203
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 387,
+            "resolved": 395,
             "brier": 0.324
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 5.0 earthquake will strike near the city of Yakutat, Alaska",
+            "horizon": "24h",
+            "probability": 0.41,
+            "location": "Yakutat, Alaska",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal describes a magnitude 5.5 earthquake in the Scotia Sea, not a magnitude 5.0 quake near Yakutat, Alaska, so no signal shows the forecast event occurred.",
+            "resolved_ms": 1784455085032,
+            "ts": 1784368351014
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will strike within the next 24 hours near Puerto Madero, Mexico",
+            "horizon": "24h",
+            "probability": 0.56,
+            "location": "Puerto Madero, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only nearby earthquakes were M4.4 and M4.2 near Puerto Madero, neither meeting the M5.0 threshold, and the M5.5 event was in the distant Scotia Sea.",
+            "resolved_ms": 1784455082621,
+            "ts": 1784366518598
+        },
         {
             "statement": "A magnitude 4.5 earthquake will strike near Puerto Madero, Mexico",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "No captured signal concerns this forecast, and a major California wildfire would certainly have been captured within the closed window.",
             "resolved_ms": 1784437035089,
             "ts": 1784349946954
-        },
-        {
-            "statement": "A magnitude 6+ earthquake will hit the coast of Mexico",
-            "horizon": "24h",
-            "probability": 0.59,
-            "location": "Mexican Coast",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only in-window Mexico earthquake (S3) was magnitude 5.7M, below the required 6+ threshold, while the M6+ events (S4, S5) occurred on 07/17 before the forecast window.",
-            "resolved_ms": 1784437033172,
-            "ts": 1784349946954
-        },
-        {
-            "statement": "A magnitude 6+ earthquake will hit Mexico within the next 24h",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only in-window Mexico earthquake (S3) was magnitude 5.7M, below the 6+ threshold, and the M6/M7.3 events (S4, S5) occurred on 07-17 before the forecast window.",
-            "resolved_ms": 1784437026678,
-            "ts": 1784348092911
         }
     ]
 }
