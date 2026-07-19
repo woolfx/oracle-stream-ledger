@@ -1,15 +1,15 @@
 {
-    "resolved": 95,
-    "open": 943,
+    "resolved": 97,
+    "open": 957,
     "due": 0,
     "unresolvable": 43,
-    "brier": 0.292,
-    "hit_rate": 0.49,
+    "brier": 0.293,
+    "hit_rate": 0.48,
     "per_horizon": {
         "24h": {
-            "resolved": 95,
-            "brier": 0.292,
-            "hit_rate": 0.49
+            "resolved": 97,
+            "brier": 0.293,
+            "hit_rate": 0.48
         }
     },
     "calibration": [
@@ -27,15 +27,15 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 30,
+            "n": 31,
             "avg_predicted": 0.49,
-            "observed": 0.07
+            "observed": 0.1
         },
         {
             "bin": "60\u201380%",
-            "n": 29,
-            "avg_predicted": 0.68,
-            "observed": 0.14
+            "n": 30,
+            "avg_predicted": 0.67,
+            "observed": 0.13
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 95,
+            "resolved": 97,
             "brier": 0.347
         },
         "Economist": {
-            "resolved": 95,
-            "brier": 0.353
+            "resolved": 97,
+            "brier": 0.352
         },
         "Naturalist": {
-            "resolved": 95,
-            "brier": 0.385
+            "resolved": 97,
+            "brier": 0.39
         },
         "Skeptic": {
-            "resolved": 94,
-            "brier": 0.204
+            "resolved": 96,
+            "brier": 0.207
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 379,
-            "brier": 0.322
+            "resolved": 387,
+            "brier": 0.324
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 4.5 earthquake will strike near Puerto Madero, Mexico",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "Puerto Madero, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signals show several Mexico earthquakes but none is identified as occurring near Puerto Madero, so the specific forecast location is not confirmed.",
+            "resolved_ms": 1784451479407,
+            "ts": 1784364680047
+        },
+        {
+            "statement": "A 4.5 magnitude earthquake will occur in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.43,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S2 reports a magnitude 5.5 earthquake in Peru on 07/19/2026, occurring within the window and exceeding the 4.5 magnitude threshold.",
+            "resolved_ms": 1784451475814,
+            "ts": 1784362844163
+        },
         {
             "statement": "A magnitude 5.0 earthquake will occur in the southern Kermadec Islands.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "The only in-window Mexico earthquake (S3) was magnitude 5.7M, below the 6+ threshold, and the M6/M7.3 events (S4, S5) occurred on 07-17 before the forecast window.",
             "resolved_ms": 1784437026678,
             "ts": 1784348092911
-        },
-        {
-            "statement": "A magnitude 6.5 earthquake will occur in Mexico within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.56,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Within the 7/18\u20137/19 window only a 5.7M quake struck Mexico (S3), below the 6.5 threshold; the 7.3M quake (S5) occurred on 7/17, before the window.",
-            "resolved_ms": 1784433422224,
-            "ts": 1784346252009
-        },
-        {
-            "statement": "A magnitude 6.5 earthquake will occur in Mexico within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Within the 24h window only S3 (5.7M on 18/07) occurred in Mexico, below the 6.5 threshold, while the larger S4/S5 quakes predate the window on 17/07.",
-            "resolved_ms": 1784433418038,
-            "ts": 1784344412176
         }
     ]
 }
