@@ -1,13 +1,13 @@
 {
-    "resolved": 81,
-    "open": 888,
+    "resolved": 83,
+    "open": 890,
     "due": 0,
     "unresolvable": 43,
     "brier": 0.292,
     "hit_rate": 0.53,
     "per_horizon": {
         "24h": {
-            "resolved": 81,
+            "resolved": 83,
             "brier": 0.292,
             "hit_rate": 0.53
         }
@@ -27,15 +27,15 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 23,
+            "n": 24,
             "avg_predicted": 0.48,
-            "observed": 0.09
+            "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 24,
+            "n": 25,
             "avg_predicted": 0.68,
-            "observed": 0.17
+            "observed": 0.16
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 81,
-            "brier": 0.344
+            "resolved": 83,
+            "brier": 0.345
         },
         "Economist": {
-            "resolved": 81,
-            "brier": 0.341
+            "resolved": 83,
+            "brier": 0.348
         },
         "Naturalist": {
-            "resolved": 81,
-            "brier": 0.373
+            "resolved": 83,
+            "brier": 0.372
         },
         "Skeptic": {
-            "resolved": 80,
-            "brier": 0.224
+            "resolved": 82,
+            "brier": 0.22
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 323,
-            "brier": 0.321
+            "resolved": 331,
+            "brier": 0.322
         }
     },
     "recent": [
+        {
+            "statement": "A new earthquake with a magnitude of at least 6.0 will occur in Mexico within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.66,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only in-window Mexico quake (S3) was 5.7M, below the 6.0 threshold, while the 6.0M+ events (S4, S5) occurred on 17/07 before the forecast window began.",
+            "resolved_ms": 1784429812403,
+            "ts": 1784342575393
+        },
+        {
+            "statement": "A significant earthquake will occur in the Philippines within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.43,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Both signals describe an earthquake in the Scotia Sea, not the Philippines, so no signal shows a significant Philippine earthquake occurred within the window.",
+            "resolved_ms": 1784429806134,
+            "ts": 1784340736974
+        },
         {
             "statement": "A magnitude 6.5 earthquake will hit Mexico within the next 24 hours",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning would have been captured if it occurred within the window.",
             "resolved_ms": 1784422559037,
             "ts": 1784333220356
-        },
-        {
-            "statement": "Flash Flood Warning issued for the Houston area",
-            "horizon": "24h",
-            "probability": 0.88,
-            "location": "Houston, TX",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a Flash Flood Warning for the Houston area would certainly have been captured if issued.",
-            "resolved_ms": 1784422557568,
-            "ts": 1784333220356
-        },
-        {
-            "statement": "Flash flooding will affect major highways in the Dallas-Fort Worth area",
-            "horizon": "24h",
-            "probability": 0.77,
-            "location": "Dallas-Fort Worth, TX",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and flash flooding affecting major DFW highways would certainly have been captured had it occurred within the window.",
-            "resolved_ms": 1784422555287,
-            "ts": 1784333148285
         }
     ]
 }
