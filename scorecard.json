@@ -1,14 +1,14 @@
 {
-    "resolved": 101,
-    "open": 989,
-    "due": 2,
+    "resolved": 102,
+    "open": 997,
+    "due": 3,
     "unresolvable": 43,
-    "brier": 0.294,
+    "brier": 0.291,
     "hit_rate": 0.48,
     "per_horizon": {
         "24h": {
-            "resolved": 101,
-            "brier": 0.294,
+            "resolved": 102,
+            "brier": 0.291,
             "hit_rate": 0.48
         }
     },
@@ -21,7 +21,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 17,
+            "n": 18,
             "avg_predicted": 0.28,
             "observed": 0.06
         },
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 101,
-            "brier": 0.353
-        },
-        "Economist": {
-            "resolved": 101,
+            "resolved": 102,
             "brier": 0.35
         },
+        "Economist": {
+            "resolved": 102,
+            "brier": 0.346
+        },
         "Naturalist": {
-            "resolved": 101,
-            "brier": 0.4
+            "resolved": 102,
+            "brier": 0.396
         },
         "Skeptic": {
-            "resolved": 100,
-            "brier": 0.2
+            "resolved": 101,
+            "brier": 0.198
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 403,
-            "brier": 0.326
+            "resolved": 407,
+            "brier": 0.323
         }
     },
     "recent": [
+        {
+            "statement": "A M5+ earthquake will strike the southern East Pacific Rise within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "southern East Pacific Rise",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports an earthquake in the southern East Pacific Rise; all events are in the Scotia Sea, Peru, and Mexico.",
+            "resolved_ms": 1784465937989,
+            "ts": 1784377509258
+        },
         {
             "statement": "A magnitude 5.0 earthquake will strike near the city of Khorugh in Tajikistan",
             "horizon": "24h",
@@ -188,17 +199,6 @@
             "verdict": "no",
             "evidence": "No captured signal concerns this forecast, and a protest event of this nature would certainly have been captured within the closed window.",
             "resolved_ms": 1784440646012,
-            "ts": 1784353631516
-        },
-        {
-            "statement": "A magnitude 4.5 earthquake will strike near Polkowice, Poland",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "Polkowice, Poland",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signals describe a magnitude 5.5 earthquake in the Scotia Sea, not any earthquake near Polkowice, Poland, so the forecast event is unsupported.",
-            "resolved_ms": 1784440639832,
             "ts": 1784353631516
         }
     ]
