@@ -1,14 +1,14 @@
 {
-    "resolved": 99,
-    "open": 961,
-    "due": 0,
+    "resolved": 100,
+    "open": 973,
+    "due": 1,
     "unresolvable": 43,
-    "brier": 0.292,
+    "brier": 0.293,
     "hit_rate": 0.48,
     "per_horizon": {
         "24h": {
-            "resolved": 99,
-            "brier": 0.292,
+            "resolved": 100,
+            "brier": 0.293,
             "hit_rate": 0.48
         }
     },
@@ -33,7 +33,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 30,
+            "n": 31,
             "avg_predicted": 0.67,
             "observed": 0.13
         },
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 99,
-            "brier": 0.347
+            "resolved": 100,
+            "brier": 0.35
         },
         "Economist": {
-            "resolved": 99,
-            "brier": 0.349
+            "resolved": 100,
+            "brier": 0.351
         },
         "Naturalist": {
-            "resolved": 99,
-            "brier": 0.395
+            "resolved": 100,
+            "brier": 0.397
         },
         "Skeptic": {
-            "resolved": 98,
-            "brier": 0.203
+            "resolved": 99,
+            "brier": 0.201
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 395,
-            "brier": 0.324
+            "resolved": 399,
+            "brier": 0.325
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 5.0 earthquake will occur in the Philippines",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signals report a 5.5M earthquake in the Scotia Sea, not in the Philippines, so no signal shows the forecast event occurred.",
+            "resolved_ms": 1784458688741,
+            "ts": 1784370185808
+        },
         {
             "statement": "A magnitude 5.0 earthquake will strike near the city of Yakutat, Alaska",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "The only signals report a magnitude 5.5 earthquake in the Scotia Sea, not a magnitude 5.0 event in the Pacific Northwest, and no signal shows the forecast event occurring.",
             "resolved_ms": 1784440637952,
             "ts": 1784351793725
-        },
-        {
-            "statement": "A major wildfire will break out in California",
-            "horizon": "24h",
-            "probability": 0.43,
-            "location": "California",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a major California wildfire would certainly have been captured within the closed window.",
-            "resolved_ms": 1784437035089,
-            "ts": 1784349946954
         }
     ]
 }
