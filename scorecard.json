@@ -1,15 +1,15 @@
 {
-    "resolved": 116,
-    "open": 1075,
-    "due": 3,
+    "resolved": 119,
+    "open": 1090,
+    "due": 2,
     "unresolvable": 43,
-    "brier": 0.287,
-    "hit_rate": 0.48,
+    "brier": 0.292,
+    "hit_rate": 0.47,
     "per_horizon": {
         "24h": {
-            "resolved": 116,
-            "brier": 0.287,
-            "hit_rate": 0.48
+            "resolved": 119,
+            "brier": 0.292,
+            "hit_rate": 0.47
         }
     },
     "calibration": [
@@ -33,42 +33,75 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 36,
+            "n": 38,
             "avg_predicted": 0.67,
             "observed": 0.11
         },
         {
             "bin": "80\u2013100%",
-            "n": 13,
+            "n": 14,
             "avg_predicted": 0.83,
-            "observed": 0.23
+            "observed": 0.21
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 116,
-            "brier": 0.343
+            "resolved": 119,
+            "brier": 0.352
         },
         "Economist": {
-            "resolved": 116,
-            "brier": 0.348
+            "resolved": 119,
+            "brier": 0.357
         },
         "Naturalist": {
-            "resolved": 116,
-            "brier": 0.396
+            "resolved": 119,
+            "brier": 0.401
         },
         "Skeptic": {
-            "resolved": 115,
-            "brier": 0.187
+            "resolved": 118,
+            "brier": 0.188
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 463,
-            "brier": 0.319
+            "resolved": 475,
+            "brier": 0.325
         }
     },
     "recent": [
+        {
+            "statement": "A severe thunderstorm will cause widespread power outages in the Mid-Atlantic region",
+            "horizon": "24h",
+            "probability": 0.82,
+            "location": "Mid-Atlantic, USA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The signals only show Severe Thunderstorm Warnings were issued, which are alerts of potential conditions and do not confirm any actual widespread power outages occurred.",
+            "resolved_ms": 1784487736414,
+            "ts": 1784400093486
+        },
+        {
+            "statement": "A M5.8 earthquake will strike in the Gulf of California, Mexico",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "Gulf of California, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a M5.8 earthquake in the Gulf of California; the Mexico quakes were only M5.5 and M5.7 and not identified as being in the Gulf of California.",
+            "resolved_ms": 1784487732736,
+            "ts": 1784398250625
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will strike off the coast of Puerto Madero, Mexico.",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "Puerto Madero, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Though S2 and S4 report Mexico earthquakes, none names Puerto Madero or its offshore area, so no signal confirms the forecast event's specific location.",
+            "resolved_ms": 1784487729342,
+            "ts": 1784396442229
+        },
         {
             "statement": "Flash flooding will occur in the Pittsburgh area due to heavy rainfall",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "S3 reports a M5.7 earthquake generically in 'Mexico' but does not name Puerto Madero, so it fails to confirm the event at the specified location.",
             "resolved_ms": 1784476833875,
             "ts": 1784379337556
-        },
-        {
-            "statement": "The US will experience a major cyberattack within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.18,
-            "location": "",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a major US cyberattack, an event of that scale would certainly have been captured, so it did not occur within the window.",
-            "resolved_ms": 1784473211194,
-            "ts": 1784386691667
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike the southern East Pacific Rise within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.2,
-            "location": "",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports an earthquake on the southern East Pacific Rise; the captured quakes were in the Scotia Sea, Peru, and Mexico.",
-            "resolved_ms": 1784473209122,
-            "ts": 1784386691667
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike near the city of Los Angeles in the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.15,
-            "location": "Los Angeles, CA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signals describe a magnitude 5.5 earthquake in the Scotia Sea, not near Los Angeles, so no M5.0 LA event was captured within the window.",
-            "resolved_ms": 1784473206359,
-            "ts": 1784384858490
         }
     ]
 }
