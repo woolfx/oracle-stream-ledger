@@ -1,15 +1,15 @@
 {
-    "resolved": 135,
-    "open": 1110,
+    "resolved": 139,
+    "open": 1114,
     "due": 0,
     "unresolvable": 43,
-    "brier": 0.298,
-    "hit_rate": 0.47,
+    "brier": 0.296,
+    "hit_rate": 0.48,
     "per_horizon": {
         "24h": {
-            "resolved": 135,
-            "brier": 0.298,
-            "hit_rate": 0.47
+            "resolved": 139,
+            "brier": 0.296,
+            "hit_rate": 0.48
         }
     },
     "calibration": [
@@ -21,13 +21,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 22,
+            "n": 24,
             "avg_predicted": 0.28,
-            "observed": 0.05
+            "observed": 0.08
         },
         {
             "bin": "40\u201360%",
-            "n": 42,
+            "n": 44,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
@@ -46,29 +46,73 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 135,
-            "brier": 0.363
+            "resolved": 139,
+            "brier": 0.357
         },
         "Economist": {
-            "resolved": 135,
+            "resolved": 139,
             "brier": 0.366
         },
         "Naturalist": {
-            "resolved": 135,
+            "resolved": 139,
             "brier": 0.406
         },
         "Skeptic": {
-            "resolved": 134,
-            "brier": 0.199
+            "resolved": 138,
+            "brier": 0.197
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 539,
-            "brier": 0.334
+            "resolved": 555,
+            "brier": 0.332
         }
     },
     "recent": [
+        {
+            "statement": "The Nasdaq 100 futures will close below 28700",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Nasdaq 100 futures are at 28831.25, above the 28700 threshold, so the forecast of closing below 28700 did not occur.",
+            "resolved_ms": 1784501963142,
+            "ts": 1784415393471
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the New York City area",
+            "horizon": "24h",
+            "probability": 0.49,
+            "location": "New York City",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for NYC would certainly have been captured if issued during the closed window.",
+            "resolved_ms": 1784501959837,
+            "ts": 1784415393471
+        },
+        {
+            "statement": "The Nasdaq 100 futures will close below 29000",
+            "horizon": "24h",
+            "probability": 0.35,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Nasdaq 100 futures show 28831.25, which is below the 29000 threshold.",
+            "resolved_ms": 1784501957941,
+            "ts": 1784413549739
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the northeastern United States",
+            "horizon": "24h",
+            "probability": 0.44,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All three severe thunderstorm warnings were issued by NWS offices in Oklahoma, Montana, and Arizona, none in the northeastern United States.",
+            "resolved_ms": 1784501953992,
+            "ts": 1784413549739
+        },
         {
             "statement": "A severe thunderstorm warning will be issued for the Mid-Atlantic region in the next 24 hours.",
             "horizon": "24h",
@@ -156,50 +200,6 @@
             "evidence": "No captured signal concerns this forecast, and a tornado touchdown in Cleveland would certainly have been recorded, yet none is present.",
             "resolved_ms": 1784494726463,
             "ts": 1784406285883
-        },
-        {
-            "statement": "A flash flood will occur in Charleston, WV",
-            "horizon": "24h",
-            "probability": 0.87,
-            "location": "Charleston, WV",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a flash flood in Charleston, WV would certainly have been captured if it occurred.",
-            "resolved_ms": 1784494724680,
-            "ts": 1784406246733
-        },
-        {
-            "statement": "A severe thunderstorm will hit the Cleveland area",
-            "horizon": "24h",
-            "probability": 0.77,
-            "location": "Cleveland, OH",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm hitting Cleveland would certainly have been captured within the closed window.",
-            "resolved_ms": 1784494722893,
-            "ts": 1784406246733
-        },
-        {
-            "statement": "Flash flooding occurs in Buffalo NY",
-            "horizon": "24h",
-            "probability": 0.67,
-            "location": "Buffalo NY",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports flash flooding in Buffalo NY, and such an event would have been captured within the closed window.",
-            "resolved_ms": 1784494720181,
-            "ts": 1784405604158
-        },
-        {
-            "statement": "Severe thunderstorm warning issued for the eastern United States",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "Eastern United States",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "NWS Peachtree City GA issued a Severe Thunderstorm Warning on July 19 within the window, confirming a warning in the eastern United States.",
-            "resolved_ms": 1784494718524,
-            "ts": 1784405604158
         }
     ]
 }
