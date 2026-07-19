@@ -1,14 +1,14 @@
 {
-    "resolved": 100,
-    "open": 973,
-    "due": 1,
+    "resolved": 101,
+    "open": 989,
+    "due": 2,
     "unresolvable": 43,
-    "brier": 0.293,
+    "brier": 0.294,
     "hit_rate": 0.48,
     "per_horizon": {
         "24h": {
-            "resolved": 100,
-            "brier": 0.293,
+            "resolved": 101,
+            "brier": 0.294,
             "hit_rate": 0.48
         }
     },
@@ -27,7 +27,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 33,
+            "n": 34,
             "avg_predicted": 0.49,
             "observed": 0.09
         },
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 100,
-            "brier": 0.35
+            "resolved": 101,
+            "brier": 0.353
         },
         "Economist": {
-            "resolved": 100,
-            "brier": 0.351
+            "resolved": 101,
+            "brier": 0.35
         },
         "Naturalist": {
-            "resolved": 100,
-            "brier": 0.397
+            "resolved": 101,
+            "brier": 0.4
         },
         "Skeptic": {
-            "resolved": 99,
-            "brier": 0.201
+            "resolved": 100,
+            "brier": 0.2
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 399,
-            "brier": 0.325
+            "resolved": 403,
+            "brier": 0.326
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 5.0 earthquake will strike near the city of Khorugh in Tajikistan",
+            "horizon": "24h",
+            "probability": 0.56,
+            "location": "Khorugh, Tajikistan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signals describe a magnitude 5.5 earthquake in the Scotia Sea, not any earthquake near Khorugh, Tajikistan, so the forecast event is not shown to have occurred within its closed window.",
+            "resolved_ms": 1784462318638,
+            "ts": 1784375680719
+        },
         {
             "statement": "A magnitude 5.0 earthquake will occur in the Philippines",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "The only signals describe a magnitude 5.5 earthquake in the Scotia Sea, not any earthquake near Polkowice, Poland, so the forecast event is unsupported.",
             "resolved_ms": 1784440639832,
             "ts": 1784353631516
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will occur in the Pacific Northwest region of North America within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.36,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signals report a magnitude 5.5 earthquake in the Scotia Sea, not a magnitude 5.0 event in the Pacific Northwest, and no signal shows the forecast event occurring.",
-            "resolved_ms": 1784440637952,
-            "ts": 1784351793725
         }
     ]
 }
