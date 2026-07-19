@@ -1,15 +1,15 @@
 {
-    "resolved": 111,
-    "open": 1066,
-    "due": 4,
+    "resolved": 116,
+    "open": 1075,
+    "due": 3,
     "unresolvable": 43,
     "brier": 0.287,
-    "hit_rate": 0.49,
+    "hit_rate": 0.48,
     "per_horizon": {
         "24h": {
-            "resolved": 111,
+            "resolved": 116,
             "brier": 0.287,
-            "hit_rate": 0.49
+            "hit_rate": 0.48
         }
     },
     "calibration": [
@@ -21,21 +21,21 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 19,
-            "avg_predicted": 0.28,
+            "n": 20,
+            "avg_predicted": 0.27,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 37,
+            "n": 39,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 34,
+            "n": 36,
             "avg_predicted": 0.67,
-            "observed": 0.12
+            "observed": 0.11
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,84 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 111,
+            "resolved": 116,
             "brier": 0.343
         },
         "Economist": {
-            "resolved": 111,
-            "brier": 0.345
+            "resolved": 116,
+            "brier": 0.348
         },
         "Naturalist": {
-            "resolved": 111,
-            "brier": 0.392
+            "resolved": 116,
+            "brier": 0.396
         },
         "Skeptic": {
-            "resolved": 110,
-            "brier": 0.193
+            "resolved": 115,
+            "brier": 0.187
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 443,
-            "brier": 0.318
+            "resolved": 463,
+            "brier": 0.319
         }
     },
     "recent": [
+        {
+            "statement": "Flash flooding will occur in the Pittsburgh area due to heavy rainfall",
+            "horizon": "24h",
+            "probability": 0.22,
+            "location": "Pittsburgh, PA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and flash flooding of this scale in Pittsburgh would have been captured if it occurred.",
+            "resolved_ms": 1784484093920,
+            "ts": 1784396411535
+        },
+        {
+            "statement": "A M6+ earthquake will strike the state of Oaxaca in Mexico",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "Oaxaca, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Mexico earthquake signal was 5.7M (below M6) and not confirmed to be in Oaxaca, so no M6+ Oaxaca event was captured.",
+            "resolved_ms": 1784484092019,
+            "ts": 1784396411535
+        },
+        {
+            "statement": "A M6.0 earthquake will strike the southern East Pacific Rise within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.41,
+            "location": "Southern East Pacific Rise",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any M6.0 earthquake on the southern East Pacific Rise; all listed quakes are elsewhere and below magnitude 6.0.",
+            "resolved_ms": 1784484087875,
+            "ts": 1784395878064
+        },
+        {
+            "statement": "A M5+ earthquake will strike the Caribbean Sea within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.68,
+            "location": "Caribbean Sea",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any earthquake in the Caribbean Sea; all listed quakes occurred elsewhere (Scotia Sea, Peru, Mexico, Japan).",
+            "resolved_ms": 1784484085191,
+            "ts": 1784394049009
+        },
+        {
+            "statement": "A M5+ earthquake will strike near the southern East Pacific Rise.",
+            "horizon": "24h",
+            "probability": 0.58,
+            "location": "southern East Pacific Rise",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports an earthquake near the southern East Pacific Rise; the quakes listed occurred in Scotia Sea, Peru, and Mexico.",
+            "resolved_ms": 1784480464127,
+            "ts": 1784392214031
+        },
         {
             "statement": "A magnitude 6.0 earthquake will strike near Puerto Madero, Mexico",
             "horizon": "24h",
@@ -145,61 +200,6 @@
             "evidence": "The only signals describe a magnitude 5.5 earthquake in the Scotia Sea, not near Los Angeles, so no M5.0 LA event was captured within the window.",
             "resolved_ms": 1784473206359,
             "ts": 1784384858490
-        },
-        {
-            "statement": "A major wildfire will break out in the western United States",
-            "horizon": "24h",
-            "probability": 0.43,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a major western U.S. wildfire would certainly have been recorded, yet none appears.",
-            "resolved_ms": 1784469574441,
-            "ts": 1784383013179
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike near the city of Akhiok, Alaska",
-            "horizon": "24h",
-            "probability": 0.41,
-            "location": "Akhiok, Alaska",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signals report a magnitude 5.5 earthquake in the Scotia Sea, with no signal showing any earthquake near Akhiok, Alaska during the closed window.",
-            "resolved_ms": 1784469572672,
-            "ts": 1784381174425
-        },
-        {
-            "statement": "A M5+ earthquake will strike the southern East Pacific Rise within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.2,
-            "location": "southern East Pacific Rise",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports an earthquake in the southern East Pacific Rise; all events are in the Scotia Sea, Peru, and Mexico.",
-            "resolved_ms": 1784465937989,
-            "ts": 1784377509258
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike near the city of Khorugh in Tajikistan",
-            "horizon": "24h",
-            "probability": 0.56,
-            "location": "Khorugh, Tajikistan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signals describe a magnitude 5.5 earthquake in the Scotia Sea, not any earthquake near Khorugh, Tajikistan, so the forecast event is not shown to have occurred within its closed window.",
-            "resolved_ms": 1784462318638,
-            "ts": 1784375680719
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will occur in the Philippines",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signals report a 5.5M earthquake in the Scotia Sea, not in the Philippines, so no signal shows the forecast event occurred.",
-            "resolved_ms": 1784458688741,
-            "ts": 1784370185808
         }
     ]
 }
