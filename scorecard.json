@@ -1,15 +1,15 @@
 {
-    "resolved": 85,
+    "resolved": 88,
     "open": 900,
     "due": 0,
     "unresolvable": 43,
     "brier": 0.292,
-    "hit_rate": 0.52,
+    "hit_rate": 0.51,
     "per_horizon": {
         "24h": {
-            "resolved": 85,
+            "resolved": 88,
             "brier": 0.292,
-            "hit_rate": 0.52
+            "hit_rate": 0.51
         }
     },
     "calibration": [
@@ -27,15 +27,15 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 26,
+            "n": 28,
             "avg_predicted": 0.49,
-            "observed": 0.08
+            "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 25,
+            "n": 26,
             "avg_predicted": 0.68,
-            "observed": 0.16
+            "observed": 0.15
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 85,
+            "resolved": 88,
             "brier": 0.342
         },
         "Economist": {
-            "resolved": 85,
-            "brier": 0.352
+            "resolved": 88,
+            "brier": 0.353
         },
         "Naturalist": {
-            "resolved": 85,
-            "brier": 0.378
+            "resolved": 88,
+            "brier": 0.383
         },
         "Skeptic": {
-            "resolved": 84,
-            "brier": 0.216
+            "resolved": 87,
+            "brier": 0.211
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 339,
-            "brier": 0.322
+            "resolved": 351,
+            "brier": 0.323
         }
     },
     "recent": [
+        {
+            "statement": "A major wildfire will break out in California",
+            "horizon": "24h",
+            "probability": 0.43,
+            "location": "California",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a major California wildfire would certainly have been captured within the closed window.",
+            "resolved_ms": 1784437035089,
+            "ts": 1784349946954
+        },
+        {
+            "statement": "A magnitude 6+ earthquake will hit the coast of Mexico",
+            "horizon": "24h",
+            "probability": 0.59,
+            "location": "Mexican Coast",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only in-window Mexico earthquake (S3) was magnitude 5.7M, below the required 6+ threshold, while the M6+ events (S4, S5) occurred on 07/17 before the forecast window.",
+            "resolved_ms": 1784437033172,
+            "ts": 1784349946954
+        },
+        {
+            "statement": "A magnitude 6+ earthquake will hit Mexico within the next 24h",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only in-window Mexico earthquake (S3) was magnitude 5.7M, below the 6+ threshold, and the M6/M7.3 events (S4, S5) occurred on 07-17 before the forecast window.",
+            "resolved_ms": 1784437026678,
+            "ts": 1784348092911
+        },
         {
             "statement": "A magnitude 6.5 earthquake will occur in Mexico within the next 24 hours",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "No captured signal reports any power outage in San Francisco, and such an event would have been captured within the closed window.",
             "resolved_ms": 1784422582340,
             "ts": 1784333394111
-        },
-        {
-            "statement": "Flash flood warning issued for the city of Austin, Texas",
-            "horizon": "24h",
-            "probability": 0.49,
-            "location": "Austin, TX",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Both signals are Flash Flood Warnings issued by NWS Midland/Odessa for West Texas locations (~32\u00b0N, -101\u00b0W), not Austin (~30.3\u00b0N, -97.7\u00b0W), so no signal shows a warning for Austin.",
-            "resolved_ms": 1784422580241,
-            "ts": 1784333394111
-        },
-        {
-            "statement": "Severe thunderstorm warning issued for the entire state of Florida",
-            "horizon": "24h",
-            "probability": 0.66,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows a statewide severe thunderstorm warning for Florida, an event that would certainly have been recorded if it had occurred.",
-            "resolved_ms": 1784422576007,
-            "ts": 1784333394111
-        },
-        {
-            "statement": "Severe thunderstorms will cause power outages in Tallahassee, FL",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "Tallahassee, FL",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports severe thunderstorms or power outages in Tallahassee within the window, so the event is unsupported.",
-            "resolved_ms": 1784422562245,
-            "ts": 1784333341424
         }
     ]
 }
