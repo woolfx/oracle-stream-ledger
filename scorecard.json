@@ -1,15 +1,15 @@
 {
-    "resolved": 91,
-    "open": 918,
+    "resolved": 93,
+    "open": 926,
     "due": 0,
     "unresolvable": 43,
-    "brier": 0.289,
-    "hit_rate": 0.52,
+    "brier": 0.29,
+    "hit_rate": 0.51,
     "per_horizon": {
         "24h": {
-            "resolved": 91,
-            "brier": 0.289,
-            "hit_rate": 0.52
+            "resolved": 93,
+            "brier": 0.29,
+            "hit_rate": 0.51
         }
     },
     "calibration": [
@@ -27,15 +27,15 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 28,
+            "n": 29,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 27,
+            "n": 28,
             "avg_predicted": 0.68,
-            "observed": 0.15
+            "observed": 0.14
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 91,
-            "brier": 0.338
+            "resolved": 93,
+            "brier": 0.343
         },
         "Economist": {
-            "resolved": 91,
-            "brier": 0.349
+            "resolved": 93,
+            "brier": 0.352
         },
         "Naturalist": {
-            "resolved": 91,
-            "brier": 0.382
+            "resolved": 93,
+            "brier": 0.379
         },
         "Skeptic": {
-            "resolved": 90,
-            "brier": 0.206
+            "resolved": 92,
+            "brier": 0.207
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 363,
-            "brier": 0.319
+            "resolved": 371,
+            "brier": 0.321
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 4.9 earthquake will strike near the coast of Mexico.",
+            "horizon": "24h",
+            "probability": 0.68,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a magnitude 4.9 earthquake near the Mexican coast; the Mexico signals report different magnitudes (5.7, 6, 7.3) without specifying a coastal location matching the forecast.",
+            "resolved_ms": 1784444260231,
+            "ts": 1784357329901
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will occur in the Pacific Ocean",
+            "horizon": "24h",
+            "probability": 0.53,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports an earthquake located in the Pacific Ocean; the listed events are in the Scotia Sea, Peru, and Mexico, none stated as Pacific Ocean.",
+            "resolved_ms": 1784444250633,
+            "ts": 1784355479592
+        },
         {
             "statement": "Tilman Fertitta will face further protests during his yacht tour in Venice",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "Both signals describe an earthquake in the Scotia Sea, not the Philippines, so no signal shows a significant Philippine earthquake occurred within the window.",
             "resolved_ms": 1784429806134,
             "ts": 1784340736974
-        },
-        {
-            "statement": "A magnitude 6.5 earthquake will hit Mexico within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.37,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Within the forecast window, the only Mexico earthquake captured (S3) was magnitude 5.7M, below the 6.5 threshold, and larger quakes (S4, S5) occurred on 17/07 before the forecast window opened.",
-            "resolved_ms": 1784426203891,
-            "ts": 1784338899543
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Atlanta metropolitan area",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "Atlanta, GA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal provides any evidence about a severe thunderstorm warning for Atlanta within the window.",
-            "resolved_ms": 1784426198806,
-            "ts": 1784337042569
         }
     ]
 }
