@@ -1,14 +1,14 @@
 {
-    "resolved": 123,
-    "open": 1094,
+    "resolved": 133,
+    "open": 1104,
     "due": 0,
     "unresolvable": 43,
-    "brier": 0.292,
+    "brier": 0.3,
     "hit_rate": 0.47,
     "per_horizon": {
         "24h": {
-            "resolved": 123,
-            "brier": 0.292,
+            "resolved": 133,
+            "brier": 0.3,
             "hit_rate": 0.47
         }
     },
@@ -21,54 +21,164 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 20,
-            "avg_predicted": 0.27,
+            "n": 22,
+            "avg_predicted": 0.28,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 39,
+            "n": 40,
             "avg_predicted": 0.49,
-            "observed": 0.08
+            "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 41,
+            "n": 44,
             "avg_predicted": 0.67,
-            "observed": 0.15
+            "observed": 0.14
         },
         {
             "bin": "80\u2013100%",
-            "n": 15,
+            "n": 19,
             "avg_predicted": 0.83,
-            "observed": 0.2
+            "observed": 0.21
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 123,
-            "brier": 0.353
+            "resolved": 133,
+            "brier": 0.367
         },
         "Economist": {
-            "resolved": 123,
-            "brier": 0.356
+            "resolved": 133,
+            "brier": 0.368
         },
         "Naturalist": {
-            "resolved": 123,
-            "brier": 0.4
+            "resolved": 133,
+            "brier": 0.404
         },
         "Skeptic": {
-            "resolved": 122,
-            "brier": 0.192
+            "resolved": 132,
+            "brier": 0.199
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 491,
-            "brier": 0.326
+            "resolved": 531,
+            "brier": 0.335
         }
     },
     "recent": [
+        {
+            "statement": "Severe thunderstorms will affect the Midwest region in the United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "Midwest region, United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, yet severe thunderstorms across the Midwest would certainly have been captured if they occurred.",
+            "resolved_ms": 1784494745042,
+            "ts": 1784408048287
+        },
+        {
+            "statement": "The Federal Reserve will raise interest rates at their meeting on July 28th",
+            "horizon": "24h",
+            "probability": 0.47,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S6 shows the July 28 FOMC meeting was merely scheduled, with no signal indicating any rate increase occurred.",
+            "resolved_ms": 1784494742990,
+            "ts": 1784408001361
+        },
+        {
+            "statement": "A Severe Thunderstorm Warning will be issued for the Cleveland area",
+            "horizon": "24h",
+            "probability": 0.39,
+            "location": "Cleveland, OH",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows a Severe Thunderstorm Warning was issued for the Cleveland area within the window.",
+            "resolved_ms": 1784494738992,
+            "ts": 1784408001361
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Raleigh-Durham area in North Carolina.",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "Raleigh-Durham, NC",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only warning was issued by NWS Newport/Morehead City for coastal NC (~36.2,-75.7), not the Raleigh-Durham area served by NWS Raleigh, and no signal names Raleigh-Durham.",
+            "resolved_ms": 1784494736858,
+            "ts": 1784407818971
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Washington D.C. area within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "Washington D.C.",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a Severe Thunderstorm Warning for the Washington D.C. area; the warnings are from KY, GA, OK, and NC offices, none covering D.C.",
+            "resolved_ms": 1784494729635,
+            "ts": 1784407784405
+        },
+        {
+            "statement": "A tornado will touch down in the Cleveland, OH area.",
+            "horizon": "24h",
+            "probability": 0.33,
+            "location": "Cleveland, OH",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a tornado touchdown in Cleveland would certainly have been recorded, yet none is present.",
+            "resolved_ms": 1784494726463,
+            "ts": 1784406285883
+        },
+        {
+            "statement": "A flash flood will occur in Charleston, WV",
+            "horizon": "24h",
+            "probability": 0.87,
+            "location": "Charleston, WV",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a flash flood in Charleston, WV would certainly have been captured if it occurred.",
+            "resolved_ms": 1784494724680,
+            "ts": 1784406246733
+        },
+        {
+            "statement": "A severe thunderstorm will hit the Cleveland area",
+            "horizon": "24h",
+            "probability": 0.77,
+            "location": "Cleveland, OH",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm hitting Cleveland would certainly have been captured within the closed window.",
+            "resolved_ms": 1784494722893,
+            "ts": 1784406246733
+        },
+        {
+            "statement": "Flash flooding occurs in Buffalo NY",
+            "horizon": "24h",
+            "probability": 0.67,
+            "location": "Buffalo NY",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports flash flooding in Buffalo NY, and such an event would have been captured within the closed window.",
+            "resolved_ms": 1784494720181,
+            "ts": 1784405604158
+        },
+        {
+            "statement": "Severe thunderstorm warning issued for the eastern United States",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "Eastern United States",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "NWS Peachtree City GA issued a Severe Thunderstorm Warning on July 19 within the window, confirming a warning in the eastern United States.",
+            "resolved_ms": 1784494718524,
+            "ts": 1784405604158
+        },
         {
             "statement": "Severe thunderstorms will affect the New York City metropolitan area",
             "horizon": "24h",
@@ -90,116 +200,6 @@
             "evidence": "The signals only show issued Severe Thunderstorm Warnings, which are alerts of possible conditions, and none document actual widespread power outages occurring in the Mid-Atlantic during the window.",
             "resolved_ms": 1784491347984,
             "ts": 1784401936526
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will hit the region around Puerto Madero, Mexico",
-            "horizon": "24h",
-            "probability": 0.63,
-            "location": "Puerto Madero, Mexico",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S6 reports a M5.5 earthquake 81 km SW of Puerto Madero, Mexico, exceeding the 5.0 threshold in the forecast region.",
-            "resolved_ms": 1784491344103,
-            "ts": 1784373843713
-        },
-        {
-            "statement": "A magnitude 4.5 earthquake will occur in the vicinity of Puerto Madero, Mexico.",
-            "horizon": "24h",
-            "probability": 0.79,
-            "location": "Puerto Madero, Mexico",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S6 reports an M5.5 earthquake 81 km SW of Puerto Madero, Mexico, exceeding the forecast's M4.5 threshold in the specified vicinity.",
-            "resolved_ms": 1784491340383,
-            "ts": 1784372013888
-        },
-        {
-            "statement": "A severe thunderstorm will cause widespread power outages in the Mid-Atlantic region",
-            "horizon": "24h",
-            "probability": 0.82,
-            "location": "Mid-Atlantic, USA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The signals only show Severe Thunderstorm Warnings were issued, which are alerts of potential conditions and do not confirm any actual widespread power outages occurred.",
-            "resolved_ms": 1784487736414,
-            "ts": 1784400093486
-        },
-        {
-            "statement": "A M5.8 earthquake will strike in the Gulf of California, Mexico",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "Gulf of California, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a M5.8 earthquake in the Gulf of California; the Mexico quakes were only M5.5 and M5.7 and not identified as being in the Gulf of California.",
-            "resolved_ms": 1784487732736,
-            "ts": 1784398250625
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike off the coast of Puerto Madero, Mexico.",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "Puerto Madero, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Though S2 and S4 report Mexico earthquakes, none names Puerto Madero or its offshore area, so no signal confirms the forecast event's specific location.",
-            "resolved_ms": 1784487729342,
-            "ts": 1784396442229
-        },
-        {
-            "statement": "Flash flooding will occur in the Pittsburgh area due to heavy rainfall",
-            "horizon": "24h",
-            "probability": 0.22,
-            "location": "Pittsburgh, PA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and flash flooding of this scale in Pittsburgh would have been captured if it occurred.",
-            "resolved_ms": 1784484093920,
-            "ts": 1784396411535
-        },
-        {
-            "statement": "A M6+ earthquake will strike the state of Oaxaca in Mexico",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "Oaxaca, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Mexico earthquake signal was 5.7M (below M6) and not confirmed to be in Oaxaca, so no M6+ Oaxaca event was captured.",
-            "resolved_ms": 1784484092019,
-            "ts": 1784396411535
-        },
-        {
-            "statement": "A M6.0 earthquake will strike the southern East Pacific Rise within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.41,
-            "location": "Southern East Pacific Rise",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any M6.0 earthquake on the southern East Pacific Rise; all listed quakes are elsewhere and below magnitude 6.0.",
-            "resolved_ms": 1784484087875,
-            "ts": 1784395878064
-        },
-        {
-            "statement": "A M5+ earthquake will strike the Caribbean Sea within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.68,
-            "location": "Caribbean Sea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any earthquake in the Caribbean Sea; all listed quakes occurred elsewhere (Scotia Sea, Peru, Mexico, Japan).",
-            "resolved_ms": 1784484085191,
-            "ts": 1784394049009
-        },
-        {
-            "statement": "A M5+ earthquake will strike near the southern East Pacific Rise.",
-            "horizon": "24h",
-            "probability": 0.58,
-            "location": "southern East Pacific Rise",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports an earthquake near the southern East Pacific Rise; the quakes listed occurred in Scotia Sea, Peru, and Mexico.",
-            "resolved_ms": 1784480464127,
-            "ts": 1784392214031
         }
     ]
 }
