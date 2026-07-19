@@ -1,15 +1,15 @@
 {
-    "resolved": 66,
-    "open": 869,
+    "resolved": 77,
+    "open": 874,
     "due": 2,
     "unresolvable": 43,
-    "brier": 0.253,
-    "hit_rate": 0.59,
+    "brier": 0.284,
+    "hit_rate": 0.53,
     "per_horizon": {
         "24h": {
-            "resolved": 66,
-            "brier": 0.253,
-            "hit_rate": 0.59
+            "resolved": 77,
+            "brier": 0.284,
+            "hit_rate": 0.53
         }
     },
     "calibration": [
@@ -21,54 +21,175 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 13,
+            "n": 14,
             "avg_predicted": 0.28,
-            "observed": 0.08
+            "observed": 0.07
         },
         {
             "bin": "40\u201360%",
-            "n": 21,
+            "n": 23,
             "avg_predicted": 0.48,
-            "observed": 0.1
+            "observed": 0.09
         },
         {
             "bin": "60\u201380%",
-            "n": 19,
-            "avg_predicted": 0.68,
-            "observed": 0.16
+            "n": 23,
+            "avg_predicted": 0.69,
+            "observed": 0.13
         },
         {
             "bin": "80\u2013100%",
-            "n": 7,
-            "avg_predicted": 0.84,
-            "observed": 0.43
+            "n": 11,
+            "avg_predicted": 0.83,
+            "observed": 0.27
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 66,
-            "brier": 0.318
+            "resolved": 77,
+            "brier": 0.342
         },
         "Economist": {
-            "resolved": 66,
-            "brier": 0.3
+            "resolved": 77,
+            "brier": 0.338
         },
         "Naturalist": {
-            "resolved": 66,
-            "brier": 0.325
+            "resolved": 77,
+            "brier": 0.365
         },
         "Skeptic": {
-            "resolved": 65,
-            "brier": 0.188
+            "resolved": 76,
+            "brier": 0.207
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 263,
-            "brier": 0.283
+            "resolved": 307,
+            "brier": 0.313
         }
     },
     "recent": [
+        {
+            "statement": "Power outage reported in the city of San Francisco, California",
+            "horizon": "24h",
+            "probability": 0.25,
+            "location": "San Francisco, CA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports any power outage in San Francisco, and such an event would have been captured within the closed window.",
+            "resolved_ms": 1784422582340,
+            "ts": 1784333394111
+        },
+        {
+            "statement": "Flash flood warning issued for the city of Austin, Texas",
+            "horizon": "24h",
+            "probability": 0.49,
+            "location": "Austin, TX",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Both signals are Flash Flood Warnings issued by NWS Midland/Odessa for West Texas locations (~32\u00b0N, -101\u00b0W), not Austin (~30.3\u00b0N, -97.7\u00b0W), so no signal shows a warning for Austin.",
+            "resolved_ms": 1784422580241,
+            "ts": 1784333394111
+        },
+        {
+            "statement": "Severe thunderstorm warning issued for the entire state of Florida",
+            "horizon": "24h",
+            "probability": 0.66,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows a statewide severe thunderstorm warning for Florida, an event that would certainly have been recorded if it had occurred.",
+            "resolved_ms": 1784422576007,
+            "ts": 1784333394111
+        },
+        {
+            "statement": "Severe thunderstorms will cause power outages in Tallahassee, FL",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "Tallahassee, FL",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports severe thunderstorms or power outages in Tallahassee within the window, so the event is unsupported.",
+            "resolved_ms": 1784422562245,
+            "ts": 1784333341424
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the city of Nashville, TN",
+            "horizon": "24h",
+            "probability": 0.75,
+            "location": "Nashville, TN",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for Nashville would have been captured if it occurred.",
+            "resolved_ms": 1784422560352,
+            "ts": 1784333275881
+        },
+        {
+            "statement": "Severe Thunderstorm Warning issued for parts of New Mexico",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "New Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning would have been captured if it occurred within the window.",
+            "resolved_ms": 1784422559037,
+            "ts": 1784333220356
+        },
+        {
+            "statement": "Flash Flood Warning issued for the Houston area",
+            "horizon": "24h",
+            "probability": 0.88,
+            "location": "Houston, TX",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a Flash Flood Warning for the Houston area would certainly have been captured if issued.",
+            "resolved_ms": 1784422557568,
+            "ts": 1784333220356
+        },
+        {
+            "statement": "Flash flooding will affect major highways in the Dallas-Fort Worth area",
+            "horizon": "24h",
+            "probability": 0.77,
+            "location": "Dallas-Fort Worth, TX",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and flash flooding affecting major DFW highways would certainly have been captured had it occurred within the window.",
+            "resolved_ms": 1784422555287,
+            "ts": 1784333148285
+        },
+        {
+            "statement": "A severe thunderstorm will cause a power outage in Nashville, TN",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "Nashville, TN",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm causing a power outage in Nashville would certainly have been captured within the closed window.",
+            "resolved_ms": 1784422553755,
+            "ts": 1784333148285
+        },
+        {
+            "statement": "A severe thunderstorm will cause a power outage in Charlotte, NC",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "Charlotte, NC",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 is only a warning issued by NWS Raleigh, not naming Charlotte or showing any power outage actually occurred.",
+            "resolved_ms": 1784422552141,
+            "ts": 1784332717097
+        },
+        {
+            "statement": "Severe thunderstorm warning issued for the entire state of Florida",
+            "horizon": "24h",
+            "probability": 0.52,
+            "location": "Florida",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows a severe thunderstorm warning covering the entire state of Florida within the window, an event that would certainly have been recorded.",
+            "resolved_ms": 1784422546532,
+            "ts": 1784332658934
+        },
         {
             "statement": "Severe thunderstorms will hit the Gulf Coast region in the next 24 hours",
             "horizon": "24h",
@@ -79,127 +200,6 @@
             "evidence": "The only signal is a Severe Thunderstorm Warning near Midland/Odessa TX (32.9,-103.3), which is West Texas\u2014not the Gulf Coast region\u2014so no signal shows the forecast event occurring.",
             "resolved_ms": 1784418944869,
             "ts": 1784331675889
-        },
-        {
-            "statement": "Severe thunderstorms will cause flash flooding in the Tallahassee area.",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "Tallahassee, FL",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports flash flooding or severe thunderstorms in the Tallahassee area during the window.",
-            "resolved_ms": 1784418940515,
-            "ts": 1784329825193
-        },
-        {
-            "statement": "A significant market volatility event will occur within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.46,
-            "location": "Global Markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "VIX sits at 18.77 (below the ~20 calm threshold) with equity futures down only ~1%, indicating no significant market volatility event occurred within the window.",
-            "resolved_ms": 1784415339014,
-            "ts": 1784327972213
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Chicago area",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "Chicago, IL",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for Chicago would certainly have been captured if it occurred.",
-            "resolved_ms": 1784415335335,
-            "ts": 1784327972213
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Dallas-Fort Worth metropolitan area in Texas.",
-            "horizon": "24h",
-            "probability": 0.47,
-            "location": "Dallas-Fort Worth, TX",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for a major metro area would certainly have been recorded within its closed window.",
-            "resolved_ms": 1784415333663,
-            "ts": 1784326128496
-        },
-        {
-            "statement": "Severe thunderstorms will cause power outages in the Midwest region",
-            "horizon": "24h",
-            "probability": 0.79,
-            "location": "Midwest USA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The signals only show Severe Thunderstorm Warnings were issued, but none document that power outages actually occurred as the forecast required.",
-            "resolved_ms": 1784411731581,
-            "ts": 1784324290457
-        },
-        {
-            "statement": "A severe thunderstorm will hit the city of Birmingham, Alabama within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.87,
-            "location": "Birmingham, AL",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm hitting a major city would certainly have been captured within the closed window.",
-            "resolved_ms": 1784411728676,
-            "ts": 1784322445454
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Chicago area",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "Chicago, IL",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a severe thunderstorm warning for the Chicago area within the forecast window.",
-            "resolved_ms": 1784407917009,
-            "ts": 1784320603886
-        },
-        {
-            "statement": "A flash flood will occur in the Rio Grande Gorge near Taos, New Mexico",
-            "horizon": "24h",
-            "probability": 0.65,
-            "location": "Rio Grande Gorge, NM",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a flash flood of this nature would have been recorded if it occurred within the window.",
-            "resolved_ms": 1784406338801,
-            "ts": 1784318761620
-        },
-        {
-            "statement": "A severe thunderstorm will hit the city of Albuquerque, New Mexico",
-            "horizon": "24h",
-            "probability": 0.71,
-            "location": "Albuquerque, NM",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm hitting a major city would certainly have been captured, yet none shows it.",
-            "resolved_ms": 1784406337005,
-            "ts": 1784318761620
-        },
-        {
-            "statement": "A category 2 cyclone will make landfall in Mexico within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.22,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows cyclone ELIDA-26 at Tropical Storm level with zero population affected by Category 1 or higher winds, far short of a Category 2 landfall in Mexico.",
-            "resolved_ms": 1784406335141,
-            "ts": 1784316922513
-        },
-        {
-            "statement": "A Category 1 tropical cyclone will make landfall in Mexico",
-            "horizon": "24h",
-            "probability": 0.68,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Signal S1 shows cyclone ELIDA-26 with zero population affected by Category 1 winds and an offshore location, indicating no Category 1 landfall in Mexico occurred within the window.",
-            "resolved_ms": 1784406333024,
-            "ts": 1784311382690
         }
     ]
 }
