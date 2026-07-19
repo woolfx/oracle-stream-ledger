@@ -1,15 +1,15 @@
 {
-    "resolved": 83,
-    "open": 890,
+    "resolved": 85,
+    "open": 900,
     "due": 0,
     "unresolvable": 43,
     "brier": 0.292,
-    "hit_rate": 0.53,
+    "hit_rate": 0.52,
     "per_horizon": {
         "24h": {
-            "resolved": 83,
+            "resolved": 85,
             "brier": 0.292,
-            "hit_rate": 0.53
+            "hit_rate": 0.52
         }
     },
     "calibration": [
@@ -27,8 +27,8 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 24,
-            "avg_predicted": 0.48,
+            "n": 26,
+            "avg_predicted": 0.49,
             "observed": 0.08
         },
         {
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 83,
-            "brier": 0.345
+            "resolved": 85,
+            "brier": 0.342
         },
         "Economist": {
-            "resolved": 83,
-            "brier": 0.348
+            "resolved": 85,
+            "brier": 0.352
         },
         "Naturalist": {
-            "resolved": 83,
-            "brier": 0.372
+            "resolved": 85,
+            "brier": 0.378
         },
         "Skeptic": {
-            "resolved": 82,
-            "brier": 0.22
+            "resolved": 84,
+            "brier": 0.216
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 331,
+            "resolved": 339,
             "brier": 0.322
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 6.5 earthquake will occur in Mexico within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.56,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Within the 7/18\u20137/19 window only a 5.7M quake struck Mexico (S3), below the 6.5 threshold; the 7.3M quake (S5) occurred on 7/17, before the window.",
+            "resolved_ms": 1784433422224,
+            "ts": 1784346252009
+        },
+        {
+            "statement": "A magnitude 6.5 earthquake will occur in Mexico within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.52,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Within the 24h window only S3 (5.7M on 18/07) occurred in Mexico, below the 6.5 threshold, while the larger S4/S5 quakes predate the window on 17/07.",
+            "resolved_ms": 1784433418038,
+            "ts": 1784344412176
+        },
         {
             "statement": "A new earthquake with a magnitude of at least 6.0 will occur in Mexico within the next 24 hours.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "No captured signal reports severe thunderstorms or power outages in Tallahassee within the window, so the event is unsupported.",
             "resolved_ms": 1784422562245,
             "ts": 1784333341424
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the city of Nashville, TN",
-            "horizon": "24h",
-            "probability": 0.75,
-            "location": "Nashville, TN",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for Nashville would have been captured if it occurred.",
-            "resolved_ms": 1784422560352,
-            "ts": 1784333275881
-        },
-        {
-            "statement": "Severe Thunderstorm Warning issued for parts of New Mexico",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "New Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning would have been captured if it occurred within the window.",
-            "resolved_ms": 1784422559037,
-            "ts": 1784333220356
         }
     ]
 }
