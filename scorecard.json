@@ -1,29 +1,29 @@
 {
-    "resolved": 104,
-    "open": 1015,
+    "resolved": 107,
+    "open": 1034,
     "due": 3,
     "unresolvable": 43,
-    "brier": 0.289,
-    "hit_rate": 0.49,
+    "brier": 0.282,
+    "hit_rate": 0.5,
     "per_horizon": {
         "24h": {
-            "resolved": 104,
-            "brier": 0.289,
-            "hit_rate": 0.49
+            "resolved": 107,
+            "brier": 0.282,
+            "hit_rate": 0.5
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 6,
-            "avg_predicted": 0.12,
+            "n": 8,
+            "avg_predicted": 0.14,
             "observed": 0.0
         },
         {
             "bin": "20\u201340%",
-            "n": 18,
+            "n": 19,
             "avg_predicted": 0.28,
-            "observed": 0.06
+            "observed": 0.05
         },
         {
             "bin": "40\u201360%",
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 104,
-            "brier": 0.345
+            "resolved": 107,
+            "brier": 0.336
         },
         "Economist": {
-            "resolved": 104,
-            "brier": 0.342
+            "resolved": 107,
+            "brier": 0.335
         },
         "Naturalist": {
-            "resolved": 104,
-            "brier": 0.398
+            "resolved": 107,
+            "brier": 0.388
         },
         "Skeptic": {
-            "resolved": 103,
-            "brier": 0.196
+            "resolved": 106,
+            "brier": 0.191
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 415,
-            "brier": 0.321
+            "resolved": 427,
+            "brier": 0.313
         }
     },
     "recent": [
+        {
+            "statement": "The US will experience a major cyberattack within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.18,
+            "location": "",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a major US cyberattack, an event of that scale would certainly have been captured, so it did not occur within the window.",
+            "resolved_ms": 1784473211194,
+            "ts": 1784386691667
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will strike the southern East Pacific Rise within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports an earthquake on the southern East Pacific Rise; the captured quakes were in the Scotia Sea, Peru, and Mexico.",
+            "resolved_ms": 1784473209122,
+            "ts": 1784386691667
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will strike near the city of Los Angeles in the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.15,
+            "location": "Los Angeles, CA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signals describe a magnitude 5.5 earthquake in the Scotia Sea, not near Los Angeles, so no M5.0 LA event was captured within the window.",
+            "resolved_ms": 1784473206359,
+            "ts": 1784384858490
+        },
         {
             "statement": "A major wildfire will break out in the western United States",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "S2 reports a magnitude 5.5 earthquake in Peru on 07/19/2026, occurring within the window and exceeding the 4.5 magnitude threshold.",
             "resolved_ms": 1784451475814,
             "ts": 1784362844163
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will occur in the southern Kermadec Islands.",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "Kermadec Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Both signals report a Scotia Sea earthquake, not the forecasted magnitude 5.0 event in the southern Kermadec Islands, and no signal shows a Kermadec quake within the window.",
-            "resolved_ms": 1784447871278,
-            "ts": 1784361006297
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike near Puerto Madero, Mexico",
-            "horizon": "24h",
-            "probability": 0.58,
-            "location": "Puerto Madero, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Several Mexico earthquakes are reported (S3, S4, S5) but none names Puerto Madero or otherwise confirms an event at that specific location, so the forecast's stated place is not met.",
-            "resolved_ms": 1784447868382,
-            "ts": 1784359167943
-        },
-        {
-            "statement": "A magnitude 4.9 earthquake will strike near the coast of Mexico.",
-            "horizon": "24h",
-            "probability": 0.68,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a magnitude 4.9 earthquake near the Mexican coast; the Mexico signals report different magnitudes (5.7, 6, 7.3) without specifying a coastal location matching the forecast.",
-            "resolved_ms": 1784444260231,
-            "ts": 1784357329901
         }
     ]
 }
