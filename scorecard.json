@@ -1,14 +1,14 @@
 {
-    "resolved": 77,
-    "open": 874,
-    "due": 2,
+    "resolved": 81,
+    "open": 888,
+    "due": 0,
     "unresolvable": 43,
-    "brier": 0.284,
+    "brier": 0.292,
     "hit_rate": 0.53,
     "per_horizon": {
         "24h": {
-            "resolved": 77,
-            "brier": 0.284,
+            "resolved": 81,
+            "brier": 0.292,
             "hit_rate": 0.53
         }
     },
@@ -21,8 +21,8 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 14,
-            "avg_predicted": 0.28,
+            "n": 15,
+            "avg_predicted": 0.29,
             "observed": 0.07
         },
         {
@@ -33,42 +33,86 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 23,
-            "avg_predicted": 0.69,
-            "observed": 0.13
+            "n": 24,
+            "avg_predicted": 0.68,
+            "observed": 0.17
         },
         {
             "bin": "80\u2013100%",
-            "n": 11,
+            "n": 13,
             "avg_predicted": 0.83,
-            "observed": 0.27
+            "observed": 0.23
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 77,
-            "brier": 0.342
+            "resolved": 81,
+            "brier": 0.344
         },
         "Economist": {
-            "resolved": 77,
-            "brier": 0.338
+            "resolved": 81,
+            "brier": 0.341
         },
         "Naturalist": {
-            "resolved": 77,
-            "brier": 0.365
+            "resolved": 81,
+            "brier": 0.373
         },
         "Skeptic": {
-            "resolved": 76,
-            "brier": 0.207
+            "resolved": 80,
+            "brier": 0.224
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 307,
-            "brier": 0.313
+            "resolved": 323,
+            "brier": 0.321
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 6.5 earthquake will hit Mexico within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.37,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Within the forecast window, the only Mexico earthquake captured (S3) was magnitude 5.7M, below the 6.5 threshold, and larger quakes (S4, S5) occurred on 17/07 before the forecast window opened.",
+            "resolved_ms": 1784426203891,
+            "ts": 1784338899543
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Atlanta metropolitan area",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "Atlanta, GA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal provides any evidence about a severe thunderstorm warning for Atlanta within the window.",
+            "resolved_ms": 1784426198806,
+            "ts": 1784337042569
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Midwest region on July 18",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "Midwest US",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "NWS Cleveland OH issued a Severe Thunderstorm Warning on July 18, and Ohio falls within the Midwest region.",
+            "resolved_ms": 1784426196747,
+            "ts": 1784335191524
+        },
+        {
+            "statement": "Flash flooding will occur in Midland/Odessa, TX",
+            "horizon": "24h",
+            "probability": 0.9,
+            "location": "Midland/Odessa, TX",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 is a Flash Flood Warning (an alert naming the NWS office, not the city), which shows a risk condition rather than confirming flash flooding actually occurred in Midland/Odessa.",
+            "resolved_ms": 1784426194028,
+            "ts": 1784333341424
+        },
         {
             "statement": "Power outage reported in the city of San Francisco, California",
             "horizon": "24h",
@@ -156,50 +200,6 @@
             "evidence": "No captured signal concerns this forecast, and flash flooding affecting major DFW highways would certainly have been captured had it occurred within the window.",
             "resolved_ms": 1784422555287,
             "ts": 1784333148285
-        },
-        {
-            "statement": "A severe thunderstorm will cause a power outage in Nashville, TN",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "Nashville, TN",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm causing a power outage in Nashville would certainly have been captured within the closed window.",
-            "resolved_ms": 1784422553755,
-            "ts": 1784333148285
-        },
-        {
-            "statement": "A severe thunderstorm will cause a power outage in Charlotte, NC",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "Charlotte, NC",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 is only a warning issued by NWS Raleigh, not naming Charlotte or showing any power outage actually occurred.",
-            "resolved_ms": 1784422552141,
-            "ts": 1784332717097
-        },
-        {
-            "statement": "Severe thunderstorm warning issued for the entire state of Florida",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows a severe thunderstorm warning covering the entire state of Florida within the window, an event that would certainly have been recorded.",
-            "resolved_ms": 1784422546532,
-            "ts": 1784332658934
-        },
-        {
-            "statement": "Severe thunderstorms will hit the Gulf Coast region in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "Gulf Coast",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal is a Severe Thunderstorm Warning near Midland/Odessa TX (32.9,-103.3), which is West Texas\u2014not the Gulf Coast region\u2014so no signal shows the forecast event occurring.",
-            "resolved_ms": 1784418944869,
-            "ts": 1784331675889
         }
     ]
 }
