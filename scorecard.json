@@ -1,15 +1,15 @@
 {
-    "resolved": 107,
-    "open": 1034,
-    "due": 3,
+    "resolved": 111,
+    "open": 1049,
+    "due": 2,
     "unresolvable": 43,
-    "brier": 0.282,
-    "hit_rate": 0.5,
+    "brier": 0.287,
+    "hit_rate": 0.49,
     "per_horizon": {
         "24h": {
-            "resolved": 107,
-            "brier": 0.282,
-            "hit_rate": 0.5
+            "resolved": 111,
+            "brier": 0.287,
+            "hit_rate": 0.49
         }
     },
     "calibration": [
@@ -27,15 +27,15 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 36,
+            "n": 37,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 31,
+            "n": 34,
             "avg_predicted": 0.67,
-            "observed": 0.13
+            "observed": 0.12
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,73 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 107,
-            "brier": 0.336
+            "resolved": 111,
+            "brier": 0.343
         },
         "Economist": {
-            "resolved": 107,
-            "brier": 0.335
+            "resolved": 111,
+            "brier": 0.345
         },
         "Naturalist": {
-            "resolved": 107,
-            "brier": 0.388
+            "resolved": 111,
+            "brier": 0.392
         },
         "Skeptic": {
-            "resolved": 106,
-            "brier": 0.191
+            "resolved": 110,
+            "brier": 0.193
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 427,
-            "brier": 0.313
+            "resolved": 443,
+            "brier": 0.318
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 6.0 earthquake will strike near Puerto Madero, Mexico",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "Puerto Madero, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Mexico earthquake signal shows a magnitude 5.7 event, below the forecast 6.0 threshold and not specified near Puerto Madero, so no signal confirms the event occurred.",
+            "resolved_ms": 1784476843749,
+            "ts": 1784390381209
+        },
+        {
+            "statement": "A significant oil price spike will occur within the next 24 hours due to disruptions at the Bab el-Mandeb chokepoint.",
+            "horizon": "24h",
+            "probability": 0.57,
+            "location": "Bab el-Mandeb",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent Crude is flat at 88.1 $/bbl (+0.0%) with no signal indicating any Bab el-Mandeb disruption or oil price spike.",
+            "resolved_ms": 1784476840617,
+            "ts": 1784388537511
+        },
+        {
+            "statement": "A magnitude 6.5 earthquake will strike near the coast of Mexico within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.66,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Mexico earthquake signal (S3) was magnitude 5.7M, below the required 6.5 threshold, and no signal shows a 6.5M event.",
+            "resolved_ms": 1784476837993,
+            "ts": 1784388537511
+        },
+        {
+            "statement": "A M5+ earthquake will strike near the Puerto Madero area in Mexico",
+            "horizon": "24h",
+            "probability": 0.78,
+            "location": "Puerto Madero, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S3 reports a M5.7 earthquake generically in 'Mexico' but does not name Puerto Madero, so it fails to confirm the event at the specified location.",
+            "resolved_ms": 1784476833875,
+            "ts": 1784379337556
+        },
         {
             "statement": "The US will experience a major cyberattack within the next 24 hours.",
             "horizon": "24h",
@@ -156,50 +200,6 @@
             "evidence": "The only signals report a 5.5M earthquake in the Scotia Sea, not in the Philippines, so no signal shows the forecast event occurred.",
             "resolved_ms": 1784458688741,
             "ts": 1784370185808
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike near the city of Yakutat, Alaska",
-            "horizon": "24h",
-            "probability": 0.41,
-            "location": "Yakutat, Alaska",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal describes a magnitude 5.5 earthquake in the Scotia Sea, not a magnitude 5.0 quake near Yakutat, Alaska, so no signal shows the forecast event occurred.",
-            "resolved_ms": 1784455085032,
-            "ts": 1784368351014
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike within the next 24 hours near Puerto Madero, Mexico",
-            "horizon": "24h",
-            "probability": 0.56,
-            "location": "Puerto Madero, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only nearby earthquakes were M4.4 and M4.2 near Puerto Madero, neither meeting the M5.0 threshold, and the M5.5 event was in the distant Scotia Sea.",
-            "resolved_ms": 1784455082621,
-            "ts": 1784366518598
-        },
-        {
-            "statement": "A magnitude 4.5 earthquake will strike near Puerto Madero, Mexico",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "Puerto Madero, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Signals show several Mexico earthquakes but none is identified as occurring near Puerto Madero, so the specific forecast location is not confirmed.",
-            "resolved_ms": 1784451479407,
-            "ts": 1784364680047
-        },
-        {
-            "statement": "A 4.5 magnitude earthquake will occur in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.43,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S2 reports a magnitude 5.5 earthquake in Peru on 07/19/2026, occurring within the window and exceeding the 4.5 magnitude threshold.",
-            "resolved_ms": 1784451475814,
-            "ts": 1784362844163
         }
     ]
 }
