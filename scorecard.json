@@ -1,23 +1,23 @@
 {
-    "resolved": 170,
-    "open": 1374,
-    "due": 2,
+    "resolved": 172,
+    "open": 1386,
+    "due": 3,
     "unresolvable": 51,
-    "brier": 0.269,
-    "hit_rate": 0.54,
+    "brier": 0.266,
+    "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 170,
-            "brier": 0.269,
-            "hit_rate": 0.54
+            "resolved": 172,
+            "brier": 0.266,
+            "hit_rate": 0.55
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 25,
+            "n": 27,
             "avg_predicted": 0.12,
-            "observed": 0.08
+            "observed": 0.07
         },
         {
             "bin": "20\u201340%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 170,
-            "brier": 0.32
+            "resolved": 172,
+            "brier": 0.317
         },
         "Economist": {
-            "resolved": 170,
-            "brier": 0.328
+            "resolved": 172,
+            "brier": 0.325
         },
         "Naturalist": {
-            "resolved": 170,
-            "brier": 0.376
+            "resolved": 172,
+            "brier": 0.372
         },
         "Skeptic": {
-            "resolved": 169,
-            "brier": 0.18
+            "resolved": 171,
+            "brier": 0.178
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 679,
-            "brier": 0.302
+            "resolved": 687,
+            "brier": 0.298
         }
     },
     "recent": [
+        {
+            "statement": "A tropical cyclone will make landfall in the southeastern United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.06,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 shows only a green-alert tropical depression offshore in the Atlantic and S2 a storm in the East Pacific, with no signal indicating an actual southeastern US landfall.",
+            "resolved_ms": 1784579216011,
+            "ts": 1784491094761
+        },
+        {
+            "statement": "A magnitude 6.0 earthquake will occur in the Mexico City area within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "Mexico City, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 shows only a magnitude 5.5 earthquake in Mexico, below the 6.0 threshold and not specified as Mexico City, so the forecast event did not occur.",
+            "resolved_ms": 1784579210652,
+            "ts": 1784489265170
+        },
         {
             "statement": "A severe thunderstorm will cause power outages in the Midwest.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "The signals only show a tropical depression (TWO-26) and an East Pacific tropical storm (FAUSTO-26) as active green (low-impact) notifications, with no signal indicating a US landfall.",
             "resolved_ms": 1784549039485,
             "ts": 1784459637298
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the eastern United States within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.08,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 is only a green alert for a weak tropical depression (TWO-26) and does not state a landfall occurred, while FAUSTO-26 is in the East Pacific, so no signal confirms a US landfall.",
-            "resolved_ms": 1784545435250,
-            "ts": 1784457781360
-        },
-        {
-            "statement": "A magnitude 5.8 earthquake will occur in the Mexico region within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.2,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows a 5.5M earthquake in Mexico, below the forecast's 5.8 magnitude threshold, and no signal shows a 5.8+ event.",
-            "resolved_ms": 1784545427267,
-            "ts": 1784455941018
         }
     ]
 }
