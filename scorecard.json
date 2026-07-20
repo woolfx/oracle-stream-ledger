@@ -1,15 +1,15 @@
 {
-    "resolved": 177,
-    "open": 1360,
-    "due": 1,
-    "unresolvable": 43,
-    "brier": 0.282,
-    "hit_rate": 0.52,
+    "resolved": 170,
+    "open": 1374,
+    "due": 2,
+    "unresolvable": 51,
+    "brier": 0.269,
+    "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
-            "resolved": 177,
-            "brier": 0.282,
-            "hit_rate": 0.52
+            "resolved": 170,
+            "brier": 0.269,
+            "hit_rate": 0.54
         }
     },
     "calibration": [
@@ -27,48 +27,59 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 51,
-            "avg_predicted": 0.49,
+            "n": 50,
+            "avg_predicted": 0.48,
             "observed": 0.06
         },
         {
             "bin": "60\u201380%",
-            "n": 47,
+            "n": 46,
             "avg_predicted": 0.67,
             "observed": 0.13
         },
         {
             "bin": "80\u2013100%",
-            "n": 24,
+            "n": 19,
             "avg_predicted": 0.83,
-            "observed": 0.17
+            "observed": 0.21
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 177,
-            "brier": 0.336
+            "resolved": 170,
+            "brier": 0.32
         },
         "Economist": {
-            "resolved": 177,
-            "brier": 0.345
+            "resolved": 170,
+            "brier": 0.328
         },
         "Naturalist": {
-            "resolved": 177,
-            "brier": 0.385
+            "resolved": 170,
+            "brier": 0.376
         },
         "Skeptic": {
-            "resolved": 176,
-            "brier": 0.195
+            "resolved": 169,
+            "brier": 0.18
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 707,
-            "brier": 0.315
+            "resolved": 679,
+            "brier": 0.302
         }
     },
     "recent": [
+        {
+            "statement": "A severe thunderstorm will cause power outages in the Midwest.",
+            "horizon": "24h",
+            "probability": 0.46,
+            "location": "Midwest",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm causing Midwest power outages would certainly have been captured within the closed window.",
+            "resolved_ms": 1784574285812,
+            "ts": 1784487407959
+        },
         {
             "statement": "A tropical cyclone will make landfall in the southeastern United States within the next 24 hours.",
             "horizon": "24h",
@@ -79,17 +90,6 @@
             "evidence": "S1 shows only a tropical depression TWO-26 active offshore in the Atlantic with no signal indicating a cyclone landfall in the southeastern US, and S2 is in the East Pacific.",
             "resolved_ms": 1784570683194,
             "ts": 1784483710997
-        },
-        {
-            "statement": "The Federal Reserve will raise interest rates at the next FOMC meeting on July 28th",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The FOMC meeting is confirmed scheduled for 2026-07-28, which is after the window closed, and no signal shows any rate increase occurred.",
-            "resolved_ms": 1784570679013,
-            "ts": 1784481864420
         },
         {
             "statement": "Tropical Depression TWO-26 will make landfall in the southeastern United States.",
@@ -112,28 +112,6 @@
             "evidence": "The VIX never rose above 20 during the window, peaking at 18.51 and closing at 17.83, well below the threshold.",
             "resolved_ms": 1784563471075,
             "ts": 1784476304473
-        },
-        {
-            "statement": "The FOMC meeting on July 28 will result in a rate hike.",
-            "horizon": "24h",
-            "probability": 0.78,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The FOMC meeting is scheduled for July 28, after the window closed, and no signal shows any rate hike occurred.",
-            "resolved_ms": 1784563468390,
-            "ts": 1784474454867
-        },
-        {
-            "statement": "The US Federal Reserve will raise interest rates at the upcoming FOMC meeting on July 28th.",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S7 confirms the FOMC meeting is scheduled for 2026-07-28, eight days after the window closed, so no signal shows a rate hike actually occurred.",
-            "resolved_ms": 1784559864768,
-            "ts": 1784472584586
         },
         {
             "statement": "The VIX fear gauge will exceed 20 within the next 24 hours, indicating increased market volatility.",
@@ -200,6 +178,28 @@
             "evidence": "The signals only show a tropical depression (TWO-26) and an East Pacific tropical storm (FAUSTO-26) as active green (low-impact) notifications, with no signal indicating a US landfall.",
             "resolved_ms": 1784549039485,
             "ts": 1784459637298
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in the eastern United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.08,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 is only a green alert for a weak tropical depression (TWO-26) and does not state a landfall occurred, while FAUSTO-26 is in the East Pacific, so no signal confirms a US landfall.",
+            "resolved_ms": 1784545435250,
+            "ts": 1784457781360
+        },
+        {
+            "statement": "A magnitude 5.8 earthquake will occur in the Mexico region within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 shows a 5.5M earthquake in Mexico, below the forecast's 5.8 magnitude threshold, and no signal shows a 5.8+ event.",
+            "resolved_ms": 1784545427267,
+            "ts": 1784455941018
         }
     ]
 }
