@@ -1,15 +1,15 @@
 {
-    "resolved": 139,
-    "open": 1114,
-    "due": 0,
+    "resolved": 141,
+    "open": 1145,
+    "due": 1,
     "unresolvable": 43,
-    "brier": 0.296,
-    "hit_rate": 0.48,
+    "brier": 0.295,
+    "hit_rate": 0.49,
     "per_horizon": {
         "24h": {
-            "resolved": 139,
-            "brier": 0.296,
-            "hit_rate": 0.48
+            "resolved": 141,
+            "brier": 0.295,
+            "hit_rate": 0.49
         }
     },
     "calibration": [
@@ -27,8 +27,8 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 44,
-            "avg_predicted": 0.49,
+            "n": 46,
+            "avg_predicted": 0.48,
             "observed": 0.07
         },
         {
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 139,
+            "resolved": 141,
             "brier": 0.357
         },
         "Economist": {
-            "resolved": 139,
-            "brier": 0.366
+            "resolved": 141,
+            "brier": 0.365
         },
         "Naturalist": {
-            "resolved": 139,
-            "brier": 0.406
+            "resolved": 141,
+            "brier": 0.405
         },
         "Skeptic": {
-            "resolved": 138,
-            "brier": 0.197
+            "resolved": 140,
+            "brier": 0.195
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 555,
-            "brier": 0.332
+            "resolved": 563,
+            "brier": 0.331
         }
     },
     "recent": [
+        {
+            "statement": "The Nasdaq 100 futures will close below 28700",
+            "horizon": "24h",
+            "probability": 0.41,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Nasdaq 100 futures are at 28797, above the 28700 threshold, so the forecast of closing below 28700 did not come true.",
+            "resolved_ms": 1784503845257,
+            "ts": 1784417235453
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Pittsburgh area",
+            "horizon": "24h",
+            "probability": 0.42,
+            "location": "Pittsburgh, PA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for Pittsburgh would certainly have been captured if issued.",
+            "resolved_ms": 1784503843224,
+            "ts": 1784417235453
+        },
         {
             "statement": "The Nasdaq 100 futures will close below 28700",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "The only warning was issued by NWS Newport/Morehead City for coastal NC (~36.2,-75.7), not the Raleigh-Durham area served by NWS Raleigh, and no signal names Raleigh-Durham.",
             "resolved_ms": 1784494736858,
             "ts": 1784407818971
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Washington D.C. area within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "Washington D.C.",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a Severe Thunderstorm Warning for the Washington D.C. area; the warnings are from KY, GA, OK, and NC offices, none covering D.C.",
-            "resolved_ms": 1784494729635,
-            "ts": 1784407784405
-        },
-        {
-            "statement": "A tornado will touch down in the Cleveland, OH area.",
-            "horizon": "24h",
-            "probability": 0.33,
-            "location": "Cleveland, OH",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a tornado touchdown in Cleveland would certainly have been recorded, yet none is present.",
-            "resolved_ms": 1784494726463,
-            "ts": 1784406285883
         }
     ]
 }
