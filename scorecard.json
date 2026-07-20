@@ -1,22 +1,22 @@
 {
-    "resolved": 175,
-    "open": 1391,
+    "resolved": 177,
+    "open": 1406,
     "due": 2,
     "unresolvable": 51,
-    "brier": 0.265,
+    "brier": 0.262,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 175,
-            "brier": 0.265,
+            "resolved": 177,
+            "brier": 0.262,
             "hit_rate": 0.55
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 27,
-            "avg_predicted": 0.12,
+            "n": 28,
+            "avg_predicted": 0.11,
             "observed": 0.07
         },
         {
@@ -33,9 +33,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 47,
+            "n": 48,
             "avg_predicted": 0.67,
-            "observed": 0.15
+            "observed": 0.17
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 175,
-            "brier": 0.315
+            "resolved": 177,
+            "brier": 0.313
         },
         "Economist": {
-            "resolved": 175,
-            "brier": 0.323
+            "resolved": 177,
+            "brier": 0.319
         },
         "Naturalist": {
-            "resolved": 175,
-            "brier": 0.37
+            "resolved": 177,
+            "brier": 0.366
         },
         "Skeptic": {
-            "resolved": 174,
-            "brier": 0.182
+            "resolved": 176,
+            "brier": 0.181
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 699,
-            "brier": 0.298
+            "resolved": 707,
+            "brier": 0.295
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 6.0 earthquake will occur in the Pacific Ocean within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.09,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a magnitude 6.0 or greater earthquake in the Pacific Ocean; the closest Pacific signal (S3) was only 5.5M, below the stated threshold.",
+            "resolved_ms": 1784586432963,
+            "ts": 1784498254389
+        },
+        {
+            "statement": "Severe thunderstorms will affect the Midwest region in the United States",
+            "horizon": "24h",
+            "probability": 0.7,
+            "location": "Midwest, USA",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S2 shows a Severe Thunderstorm Warning issued July 20 by NWS Marquette MI, within the Midwest region and the forecast window.",
+            "resolved_ms": 1784586429654,
+            "ts": 1784496419454
+        },
         {
             "statement": "Severe thunderstorm warning issued for the Midwest region in the United States",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "All VIX readings stayed below 20 (peaking at 18.51), and the latest snapshot shows 18.22, so the threshold was never exceeded.",
             "resolved_ms": 1784559860217,
             "ts": 1784470723457
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the southeastern United States within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.09,
-            "location": "East Pacific",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Neither signal shows a tropical cyclone making landfall in the southeastern US; S2 (Fausto) was in the East Pacific and S1 was an Atlantic depression with no stated landfall.",
-            "resolved_ms": 1784556256777,
-            "ts": 1784468866742
-        },
-        {
-            "statement": "A magnitude 5.8 earthquake will occur in the southern part of Mexico within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.29,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 reports a magnitude 5.5 earthquake in Mexico, below the forecast's 5.8 threshold, so the predicted event did not occur.",
-            "resolved_ms": 1784552650449,
-            "ts": 1784465147749
         }
     ]
 }
