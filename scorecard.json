@@ -1,27 +1,27 @@
 {
-    "resolved": 163,
-    "open": 1247,
+    "resolved": 165,
+    "open": 1266,
     "due": 0,
     "unresolvable": 43,
-    "brier": 0.288,
-    "hit_rate": 0.51,
+    "brier": 0.285,
+    "hit_rate": 0.52,
     "per_horizon": {
         "24h": {
-            "resolved": 163,
-            "brier": 0.288,
-            "hit_rate": 0.51
+            "resolved": 165,
+            "brier": 0.285,
+            "hit_rate": 0.52
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 19,
+            "n": 20,
             "avg_predicted": 0.12,
-            "observed": 0.11
+            "observed": 0.1
         },
         {
             "bin": "20\u201340%",
-            "n": 27,
+            "n": 28,
             "avg_predicted": 0.28,
             "observed": 0.07
         },
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 163,
-            "brier": 0.344
+            "resolved": 165,
+            "brier": 0.34
         },
         "Economist": {
-            "resolved": 163,
-            "brier": 0.356
+            "resolved": 165,
+            "brier": 0.352
         },
         "Naturalist": {
-            "resolved": 163,
-            "brier": 0.396
+            "resolved": 165,
+            "brier": 0.392
         },
         "Skeptic": {
-            "resolved": 162,
-            "brier": 0.196
+            "resolved": 164,
+            "brier": 0.194
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 651,
-            "brier": 0.323
+            "resolved": 659,
+            "brier": 0.319
         }
     },
     "recent": [
+        {
+            "statement": "A tropical cyclone will make landfall in the eastern United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.08,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 is only a green alert for a weak tropical depression (TWO-26) and does not state a landfall occurred, while FAUSTO-26 is in the East Pacific, so no signal confirms a US landfall.",
+            "resolved_ms": 1784545435250,
+            "ts": 1784457781360
+        },
+        {
+            "statement": "A magnitude 5.8 earthquake will occur in the Mexico region within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 shows a 5.5M earthquake in Mexico, below the forecast's 5.8 magnitude threshold, and no signal shows a 5.8+ event.",
+            "resolved_ms": 1784545427267,
+            "ts": 1784455941018
+        },
         {
             "statement": "A tropical cyclone will make landfall in the eastern United States within the next 24 hours.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "The July 28 FOMC meeting was still scheduled 8 days out at snapshot and no signal shows any rate decision occurred within the closed window.",
             "resolved_ms": 1784530976594,
             "ts": 1784437489469
-        },
-        {
-            "statement": "A Category 1 tropical cyclone will make landfall in the United States within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.03,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows only a tropical depression (93 km/h) in the Atlantic and S2 a Pacific tropical storm\u2014neither is a Category 1 cyclone making US landfall.",
-            "resolved_ms": 1784523772668,
-            "ts": 1784433813826
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will occur in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.13,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 reports a magnitude 5.5M earthquake in Mexico on 7/19/2026 17:45 UTC, within the window and exceeding the magnitude 5.0 threshold.",
-            "resolved_ms": 1784520167240,
-            "ts": 1784431978301
         }
     ]
 }
