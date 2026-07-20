@@ -1,14 +1,14 @@
 {
-    "resolved": 172,
-    "open": 1386,
-    "due": 3,
+    "resolved": 175,
+    "open": 1391,
+    "due": 2,
     "unresolvable": 51,
-    "brier": 0.266,
+    "brier": 0.265,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 172,
-            "brier": 0.266,
+            "resolved": 175,
+            "brier": 0.265,
             "hit_rate": 0.55
         }
     },
@@ -21,21 +21,21 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 30,
+            "n": 31,
             "avg_predicted": 0.28,
-            "observed": 0.07
-        },
-        {
-            "bin": "40\u201360%",
-            "n": 50,
-            "avg_predicted": 0.48,
             "observed": 0.06
         },
         {
+            "bin": "40\u201360%",
+            "n": 51,
+            "avg_predicted": 0.48,
+            "observed": 0.08
+        },
+        {
             "bin": "60\u201380%",
-            "n": 46,
+            "n": 47,
             "avg_predicted": 0.67,
-            "observed": 0.13
+            "observed": 0.15
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 172,
-            "brier": 0.317
+            "resolved": 175,
+            "brier": 0.315
         },
         "Economist": {
-            "resolved": 172,
-            "brier": 0.325
+            "resolved": 175,
+            "brier": 0.323
         },
         "Naturalist": {
-            "resolved": 172,
-            "brier": 0.372
+            "resolved": 175,
+            "brier": 0.37
         },
         "Skeptic": {
-            "resolved": 171,
-            "brier": 0.178
+            "resolved": 174,
+            "brier": 0.182
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 687,
+            "resolved": 699,
             "brier": 0.298
         }
     },
     "recent": [
+        {
+            "statement": "Severe thunderstorm warning issued for the Midwest region in the United States",
+            "horizon": "24h",
+            "probability": 0.41,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 shows NWS Quad Cities IA IL issued a Severe Thunderstorm Warning on July 20, within the Midwest region and forecast window.",
+            "resolved_ms": 1784582826183,
+            "ts": 1784494620207
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Midwest region",
+            "horizon": "24h",
+            "probability": 0.63,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 shows a Severe Thunderstorm Warning issued July 20 by NWS Quad Cities IA IL, within the Midwest region and the forecast window.",
+            "resolved_ms": 1784582820341,
+            "ts": 1784494582379
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Nashville area.",
+            "horizon": "24h",
+            "probability": 0.38,
+            "location": "Nashville, TN",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows a severe thunderstorm warning was issued for the Nashville area within the window.",
+            "resolved_ms": 1784582817742,
+            "ts": 1784492936036
+        },
         {
             "statement": "A tropical cyclone will make landfall in the southeastern United States within the next 24 hours.",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "S1 reports a magnitude 5.5 earthquake in Mexico, below the forecast's 5.8 threshold, so the predicted event did not occur.",
             "resolved_ms": 1784552650449,
             "ts": 1784465147749
-        },
-        {
-            "statement": "A magnitude 6+ earthquake will strike the west coast of Mexico within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.18,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 reports only a 5.5M earthquake in Mexico, below the required magnitude 6+ threshold, and no signal shows a 6+ event.",
-            "resolved_ms": 1784552647439,
-            "ts": 1784463314704
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the United States within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.05,
-            "location": "East Pacific",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S2 shows FAUSTO-26 active in the East Pacific but nothing indicates a landfall in the United States within the window.",
-            "resolved_ms": 1784549043297,
-            "ts": 1784461482870
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the United States within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.16,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The signals only show a tropical depression (TWO-26) and an East Pacific tropical storm (FAUSTO-26) as active green (low-impact) notifications, with no signal indicating a US landfall.",
-            "resolved_ms": 1784549039485,
-            "ts": 1784459637298
         }
     ]
 }
