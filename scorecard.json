@@ -1,27 +1,27 @@
 {
-    "resolved": 167,
-    "open": 1288,
-    "due": 2,
+    "resolved": 169,
+    "open": 1295,
+    "due": 1,
     "unresolvable": 43,
-    "brier": 0.282,
-    "hit_rate": 0.52,
+    "brier": 0.279,
+    "hit_rate": 0.53,
     "per_horizon": {
         "24h": {
-            "resolved": 167,
-            "brier": 0.282,
-            "hit_rate": 0.52
+            "resolved": 169,
+            "brier": 0.279,
+            "hit_rate": 0.53
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 22,
+            "n": 23,
             "avg_predicted": 0.12,
             "observed": 0.09
         },
         {
             "bin": "20\u201340%",
-            "n": 28,
+            "n": 29,
             "avg_predicted": 0.28,
             "observed": 0.07
         },
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 167,
-            "brier": 0.336
+            "resolved": 169,
+            "brier": 0.333
         },
         "Economist": {
-            "resolved": 167,
-            "brier": 0.348
+            "resolved": 169,
+            "brier": 0.344
         },
         "Naturalist": {
-            "resolved": 167,
-            "brier": 0.387
+            "resolved": 169,
+            "brier": 0.383
         },
         "Skeptic": {
-            "resolved": 166,
-            "brier": 0.192
+            "resolved": 168,
+            "brier": 0.19
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 667,
-            "brier": 0.316
+            "resolved": 675,
+            "brier": 0.313
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 5.8 earthquake will occur in the southern part of Mexico within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.29,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 reports a magnitude 5.5 earthquake in Mexico, below the forecast's 5.8 threshold, so the predicted event did not occur.",
+            "resolved_ms": 1784552650449,
+            "ts": 1784465147749
+        },
+        {
+            "statement": "A magnitude 6+ earthquake will strike the west coast of Mexico within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.18,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 reports only a 5.5M earthquake in Mexico, below the required magnitude 6+ threshold, and no signal shows a 6+ event.",
+            "resolved_ms": 1784552647439,
+            "ts": 1784463314704
+        },
         {
             "statement": "A tropical cyclone will make landfall in the United States within the next 24 hours.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "TWO-26 near the US East Coast was only a Tropical Depression (93 km/h), below Category 1 strength and no landfall of a Category 1 cyclone is shown, while FAUSTO-26 was in the East Pacific.",
             "resolved_ms": 1784534598126,
             "ts": 1784444870601
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Mexico within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.22,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Neither signal shows a tropical cyclone making landfall in Mexico; TWO-26 was in the Atlantic near the US East Coast and FAUSTO-26 was an active East Pacific storm with no stated Mexican landfall.",
-            "resolved_ms": 1784530993686,
-            "ts": 1784443025208
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Mexico within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.17,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Neither TWO-26 (Atlantic, off US east coast) nor FAUSTO-26 (East Pacific tropical storm) shows any landfall in Mexico within the window.",
-            "resolved_ms": 1784530988814,
-            "ts": 1784441190091
         }
     ]
 }
