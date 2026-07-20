@@ -1,15 +1,15 @@
 {
-    "resolved": 170,
-    "open": 1309,
-    "due": 2,
+    "resolved": 174,
+    "open": 1313,
+    "due": 0,
     "unresolvable": 43,
-    "brier": 0.277,
-    "hit_rate": 0.53,
+    "brier": 0.283,
+    "hit_rate": 0.52,
     "per_horizon": {
         "24h": {
-            "resolved": 170,
-            "brier": 0.277,
-            "hit_rate": 0.53
+            "resolved": 174,
+            "brier": 0.283,
+            "hit_rate": 0.52
         }
     },
     "calibration": [
@@ -33,42 +33,86 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 44,
+            "n": 47,
             "avg_predicted": 0.67,
-            "observed": 0.14
+            "observed": 0.13
         },
         {
             "bin": "80\u2013100%",
-            "n": 22,
+            "n": 23,
             "avg_predicted": 0.83,
-            "observed": 0.18
+            "observed": 0.17
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 170,
-            "brier": 0.331
+            "resolved": 174,
+            "brier": 0.338
         },
         "Economist": {
-            "resolved": 170,
-            "brier": 0.342
+            "resolved": 174,
+            "brier": 0.347
         },
         "Naturalist": {
-            "resolved": 170,
-            "brier": 0.381
+            "resolved": 174,
+            "brier": 0.388
         },
         "Skeptic": {
-            "resolved": 169,
-            "brier": 0.189
+            "resolved": 173,
+            "brier": 0.194
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 679,
-            "brier": 0.311
+            "resolved": 695,
+            "brier": 0.317
         }
     },
     "recent": [
+        {
+            "statement": "The VIX fear gauge will rise above 20",
+            "horizon": "24h",
+            "probability": 0.72,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The VIX never rose above 20 during the window, peaking at 18.51 and closing at 17.83, well below the threshold.",
+            "resolved_ms": 1784563471075,
+            "ts": 1784476304473
+        },
+        {
+            "statement": "The FOMC meeting on July 28 will result in a rate hike.",
+            "horizon": "24h",
+            "probability": 0.78,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The FOMC meeting is scheduled for July 28, after the window closed, and no signal shows any rate hike occurred.",
+            "resolved_ms": 1784563468390,
+            "ts": 1784474454867
+        },
+        {
+            "statement": "The US Federal Reserve will raise interest rates at the upcoming FOMC meeting on July 28th.",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S7 confirms the FOMC meeting is scheduled for 2026-07-28, eight days after the window closed, so no signal shows a rate hike actually occurred.",
+            "resolved_ms": 1784559864768,
+            "ts": 1784472584586
+        },
+        {
+            "statement": "The VIX fear gauge will exceed 20 within the next 24 hours, indicating increased market volatility.",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All VIX readings stayed below 20 (peaking at 18.51), and the latest snapshot shows 18.22, so the threshold was never exceeded.",
+            "resolved_ms": 1784559860217,
+            "ts": 1784470723457
+        },
         {
             "statement": "A tropical cyclone will make landfall in the southeastern United States within the next 24 hours",
             "horizon": "24h",
@@ -156,50 +200,6 @@
             "evidence": "S1 is only a green alert showing tropical depression TWO-26 active in the Atlantic near the coast, a condition rather than a confirmed landfall, and no signal states a cyclone made landfall in the eastern US.",
             "resolved_ms": 1784541824029,
             "ts": 1784454102675
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will strike in the next 24 hours near Mexico City",
-            "horizon": "24h",
-            "probability": 0.1,
-            "location": "Mexico City, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 reports only a 5.5M earthquake in Mexico, below the 6.0 threshold and not confirmed near Mexico City, so the forecast event did not occur.",
-            "resolved_ms": 1784541812539,
-            "ts": 1784452272833
-        },
-        {
-            "statement": "The US Federal Reserve will raise interest rates at the next FOMC meeting on July 28th.",
-            "horizon": "24h",
-            "probability": 0.85,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S7 shows the FOMC meeting is still scheduled for July 28, 8 days after the window closed, so no rate decision occurred within the forecast window.",
-            "resolved_ms": 1784538208915,
-            "ts": 1784450423065
-        },
-        {
-            "statement": "A magnitude 5.8 earthquake will strike Mexico within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.18,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows a 5.5M earthquake in Mexico, below the forecast's 5.8 magnitude threshold, and no signal shows a 5.8+ event.",
-            "resolved_ms": 1784538205675,
-            "ts": 1784448576685
-        },
-        {
-            "statement": "The US Federal Reserve will raise interest rates at their next meeting on July 28th",
-            "horizon": "24h",
-            "probability": 0.84,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The FOMC meeting is scheduled for July 28, still 8 days out and after the window closed, so no signal shows any rate increase occurred.",
-            "resolved_ms": 1784534602072,
-            "ts": 1784446727103
         }
     ]
 }
