@@ -1,23 +1,23 @@
 {
-    "resolved": 165,
-    "open": 1271,
+    "resolved": 167,
+    "open": 1288,
     "due": 2,
     "unresolvable": 43,
-    "brier": 0.285,
+    "brier": 0.282,
     "hit_rate": 0.52,
     "per_horizon": {
         "24h": {
-            "resolved": 165,
-            "brier": 0.285,
+            "resolved": 167,
+            "brier": 0.282,
             "hit_rate": 0.52
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 20,
+            "n": 22,
             "avg_predicted": 0.12,
-            "observed": 0.1
+            "observed": 0.09
         },
         {
             "bin": "20\u201340%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 165,
-            "brier": 0.34
+            "resolved": 167,
+            "brier": 0.336
         },
         "Economist": {
-            "resolved": 165,
-            "brier": 0.352
+            "resolved": 167,
+            "brier": 0.348
         },
         "Naturalist": {
-            "resolved": 165,
-            "brier": 0.392
+            "resolved": 167,
+            "brier": 0.387
         },
         "Skeptic": {
-            "resolved": 164,
-            "brier": 0.194
+            "resolved": 166,
+            "brier": 0.192
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 659,
-            "brier": 0.319
+            "resolved": 667,
+            "brier": 0.316
         }
     },
     "recent": [
+        {
+            "statement": "A tropical cyclone will make landfall in the United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.05,
+            "location": "East Pacific",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S2 shows FAUSTO-26 active in the East Pacific but nothing indicates a landfall in the United States within the window.",
+            "resolved_ms": 1784549043297,
+            "ts": 1784461482870
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in the United States within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.16,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The signals only show a tropical depression (TWO-26) and an East Pacific tropical storm (FAUSTO-26) as active green (low-impact) notifications, with no signal indicating a US landfall.",
+            "resolved_ms": 1784549039485,
+            "ts": 1784459637298
+        },
         {
             "statement": "A tropical cyclone will make landfall in the eastern United States within the next 24 hours.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "Neither TWO-26 (Atlantic, off US east coast) nor FAUSTO-26 (East Pacific tropical storm) shows any landfall in Mexico within the window.",
             "resolved_ms": 1784530988814,
             "ts": 1784441190091
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will occur in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.1,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 reports a magnitude 5.5 earthquake in Mexico on 2026-07-19 within the forecast window, exceeding the 5.0 threshold.",
-            "resolved_ms": 1784530982977,
-            "ts": 1784439344602
-        },
-        {
-            "statement": "The FOMC will raise interest rates at the July 28 meeting",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The July 28 FOMC meeting was still scheduled 8 days out at snapshot and no signal shows any rate decision occurred within the closed window.",
-            "resolved_ms": 1784530976594,
-            "ts": 1784437489469
         }
     ]
 }
