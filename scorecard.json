@@ -1,23 +1,23 @@
 {
-    "resolved": 157,
-    "open": 1235,
-    "due": 2,
+    "resolved": 161,
+    "open": 1244,
+    "due": 0,
     "unresolvable": 43,
-    "brier": 0.29,
+    "brier": 0.292,
     "hit_rate": 0.5,
     "per_horizon": {
         "24h": {
-            "resolved": 157,
-            "brier": 0.29,
+            "resolved": 161,
+            "brier": 0.292,
             "hit_rate": 0.5
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 15,
+            "n": 17,
             "avg_predicted": 0.13,
-            "observed": 0.13
+            "observed": 0.12
         },
         {
             "bin": "20\u201340%",
@@ -39,36 +39,80 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 20,
+            "n": 22,
             "avg_predicted": 0.83,
-            "observed": 0.2
+            "observed": 0.18
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 157,
-            "brier": 0.346
+            "resolved": 161,
+            "brier": 0.348
         },
         "Economist": {
-            "resolved": 157,
-            "brier": 0.359
+            "resolved": 161,
+            "brier": 0.36
         },
         "Naturalist": {
-            "resolved": 157,
-            "brier": 0.402
+            "resolved": 161,
+            "brier": 0.401
         },
         "Skeptic": {
-            "resolved": 156,
-            "brier": 0.195
+            "resolved": 160,
+            "brier": 0.198
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 627,
-            "brier": 0.326
+            "resolved": 643,
+            "brier": 0.327
         }
     },
     "recent": [
+        {
+            "statement": "The US Federal Reserve will raise interest rates at the next FOMC meeting on July 28th.",
+            "horizon": "24h",
+            "probability": 0.85,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S7 shows the FOMC meeting is still scheduled for July 28, 8 days after the window closed, so no rate decision occurred within the forecast window.",
+            "resolved_ms": 1784538208915,
+            "ts": 1784450423065
+        },
+        {
+            "statement": "A magnitude 5.8 earthquake will strike Mexico within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.18,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 shows a 5.5M earthquake in Mexico, below the forecast's 5.8 magnitude threshold, and no signal shows a 5.8+ event.",
+            "resolved_ms": 1784538205675,
+            "ts": 1784448576685
+        },
+        {
+            "statement": "The US Federal Reserve will raise interest rates at their next meeting on July 28th",
+            "horizon": "24h",
+            "probability": 0.84,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The FOMC meeting is scheduled for July 28, still 8 days out and after the window closed, so no signal shows any rate increase occurred.",
+            "resolved_ms": 1784534602072,
+            "ts": 1784446727103
+        },
+        {
+            "statement": "A Category 1 tropical cyclone will make landfall in the eastern United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.06,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "TWO-26 near the US East Coast was only a Tropical Depression (93 km/h), below Category 1 strength and no landfall of a Category 1 cyclone is shown, while FAUSTO-26 was in the East Pacific.",
+            "resolved_ms": 1784534598126,
+            "ts": 1784444870601
+        },
         {
             "statement": "A tropical cyclone will make landfall in Mexico within the next 24 hours",
             "horizon": "24h",
@@ -156,50 +200,6 @@
             "evidence": "The only Scotia Sea signal (S3) is a M5.5 quake on 7/18/2026 19:50 UTC, before the forecast's 7/19\u20137/20 window, and no signal shows a qualifying quake within the window.",
             "resolved_ms": 1784518268473,
             "ts": 1784428311405
-        },
-        {
-            "statement": "The FOMC will raise interest rates by at least 50bps during the July 28 meeting",
-            "horizon": "24h",
-            "probability": 0.59,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The July 28 FOMC meeting is still scheduled (8 days out) and no signal shows any rate decision, let alone a 50bps hike.",
-            "resolved_ms": 1784514664007,
-            "ts": 1784426462970
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will strike Mexico within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.16,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The largest Mexico earthquakes in the signals were 5.5M and 5.7M, neither reaching the required magnitude 6.0 threshold within the window.",
-            "resolved_ms": 1784514660621,
-            "ts": 1784426462970
-        },
-        {
-            "statement": "The Nasdaq 100 futures will close below 28700",
-            "horizon": "24h",
-            "probability": 0.38,
-            "location": "US markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Nasdaq 100 futures closed at 28829.25, above the 28700 threshold, so the forecast did not come true.",
-            "resolved_ms": 1784511057633,
-            "ts": 1784424605304
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Midland/Odessa TX area",
-            "horizon": "24h",
-            "probability": 0.57,
-            "location": "Midland/Odessa, TX",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows a severe thunderstorm warning was issued for the Midland/Odessa area, and such an event would have been captured within the closed window.",
-            "resolved_ms": 1784511054759,
-            "ts": 1784424605304
         }
     ]
 }
