@@ -1,23 +1,23 @@
 {
-    "resolved": 169,
-    "open": 1295,
-    "due": 1,
+    "resolved": 170,
+    "open": 1309,
+    "due": 2,
     "unresolvable": 43,
-    "brier": 0.279,
+    "brier": 0.277,
     "hit_rate": 0.53,
     "per_horizon": {
         "24h": {
-            "resolved": 169,
-            "brier": 0.279,
+            "resolved": 170,
+            "brier": 0.277,
             "hit_rate": 0.53
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 23,
+            "n": 24,
             "avg_predicted": 0.12,
-            "observed": 0.09
+            "observed": 0.08
         },
         {
             "bin": "20\u201340%",
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 169,
-            "brier": 0.333
+            "resolved": 170,
+            "brier": 0.331
         },
         "Economist": {
-            "resolved": 169,
-            "brier": 0.344
+            "resolved": 170,
+            "brier": 0.342
         },
         "Naturalist": {
-            "resolved": 169,
-            "brier": 0.383
+            "resolved": 170,
+            "brier": 0.381
         },
         "Skeptic": {
-            "resolved": 168,
-            "brier": 0.19
+            "resolved": 169,
+            "brier": 0.189
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 675,
-            "brier": 0.313
+            "resolved": 679,
+            "brier": 0.311
         }
     },
     "recent": [
+        {
+            "statement": "A tropical cyclone will make landfall in the southeastern United States within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.09,
+            "location": "East Pacific",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Neither signal shows a tropical cyclone making landfall in the southeastern US; S2 (Fausto) was in the East Pacific and S1 was an Atlantic depression with no stated landfall.",
+            "resolved_ms": 1784556256777,
+            "ts": 1784468866742
+        },
         {
             "statement": "A magnitude 5.8 earthquake will occur in the southern part of Mexico within the next 24 hours.",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "The FOMC meeting is scheduled for July 28, still 8 days out and after the window closed, so no signal shows any rate increase occurred.",
             "resolved_ms": 1784534602072,
             "ts": 1784446727103
-        },
-        {
-            "statement": "A Category 1 tropical cyclone will make landfall in the eastern United States within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.06,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "TWO-26 near the US East Coast was only a Tropical Depression (93 km/h), below Category 1 strength and no landfall of a Category 1 cyclone is shown, while FAUSTO-26 was in the East Pacific.",
-            "resolved_ms": 1784534598126,
-            "ts": 1784444870601
         }
     ]
 }
