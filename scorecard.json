@@ -1,23 +1,23 @@
 {
-    "resolved": 149,
-    "open": 1182,
-    "due": 1,
+    "resolved": 152,
+    "open": 1206,
+    "due": 0,
     "unresolvable": 43,
-    "brier": 0.29,
+    "brier": 0.289,
     "hit_rate": 0.5,
     "per_horizon": {
         "24h": {
-            "resolved": 149,
-            "brier": 0.29,
+            "resolved": 152,
+            "brier": 0.289,
             "hit_rate": 0.5
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 9,
+            "n": 12,
             "avg_predicted": 0.14,
-            "observed": 0.0
+            "observed": 0.08
         },
         {
             "bin": "20\u201340%",
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 149,
-            "brier": 0.349
+            "resolved": 152,
+            "brier": 0.346
         },
         "Economist": {
-            "resolved": 149,
-            "brier": 0.362
+            "resolved": 152,
+            "brier": 0.36
         },
         "Naturalist": {
-            "resolved": 149,
-            "brier": 0.409
+            "resolved": 152,
+            "brier": 0.405
         },
         "Skeptic": {
-            "resolved": 148,
-            "brier": 0.19
+            "resolved": 151,
+            "brier": 0.192
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 595,
-            "brier": 0.328
+            "resolved": 607,
+            "brier": 0.326
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 5.0 earthquake will occur in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.13,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 reports a magnitude 5.5M earthquake in Mexico on 7/19/2026 17:45 UTC, within the window and exceeding the magnitude 5.0 threshold.",
+            "resolved_ms": 1784520167240,
+            "ts": 1784431978301
+        },
+        {
+            "statement": "A Category 1 tropical cyclone will make landfall in the United States within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.09,
+            "location": "East Pacific",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S2 shows FAUSTO-26 active in the East Pacific but provides no evidence of a Category 1 landfall in the United States within the window.",
+            "resolved_ms": 1784518273425,
+            "ts": 1784430147430
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will occur in the Scotia Sea.",
+            "horizon": "24h",
+            "probability": 0.17,
+            "location": "Scotia Sea",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Scotia Sea signal (S3) is a M5.5 quake on 7/18/2026 19:50 UTC, before the forecast's 7/19\u20137/20 window, and no signal shows a qualifying quake within the window.",
+            "resolved_ms": 1784518268473,
+            "ts": 1784428311405
+        },
         {
             "statement": "The FOMC will raise interest rates by at least 50bps during the July 28 meeting",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "Nasdaq 100 futures are at 28797, above the 28700 threshold, so the forecast of closing below 28700 did not come true.",
             "resolved_ms": 1784503845257,
             "ts": 1784417235453
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Pittsburgh area",
-            "horizon": "24h",
-            "probability": 0.42,
-            "location": "Pittsburgh, PA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for Pittsburgh would certainly have been captured if issued.",
-            "resolved_ms": 1784503843224,
-            "ts": 1784417235453
-        },
-        {
-            "statement": "The Nasdaq 100 futures will close below 28700",
-            "horizon": "24h",
-            "probability": 0.2,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Nasdaq 100 futures are at 28831.25, above the 28700 threshold, so the forecast of closing below 28700 did not occur.",
-            "resolved_ms": 1784501963142,
-            "ts": 1784415393471
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the New York City area",
-            "horizon": "24h",
-            "probability": 0.49,
-            "location": "New York City",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for NYC would certainly have been captured if issued during the closed window.",
-            "resolved_ms": 1784501959837,
-            "ts": 1784415393471
         }
     ]
 }
