@@ -1,29 +1,29 @@
 {
-    "resolved": 153,
-    "open": 1227,
-    "due": 2,
+    "resolved": 157,
+    "open": 1225,
+    "due": 0,
     "unresolvable": 43,
-    "brier": 0.287,
+    "brier": 0.29,
     "hit_rate": 0.5,
     "per_horizon": {
         "24h": {
-            "resolved": 153,
-            "brier": 0.287,
+            "resolved": 157,
+            "brier": 0.29,
             "hit_rate": 0.5
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 13,
+            "n": 15,
             "avg_predicted": 0.13,
-            "observed": 0.08
+            "observed": 0.13
         },
         {
             "bin": "20\u201340%",
-            "n": 26,
+            "n": 27,
             "avg_predicted": 0.28,
-            "observed": 0.08
+            "observed": 0.07
         },
         {
             "bin": "40\u201360%",
@@ -39,36 +39,80 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 19,
+            "n": 20,
             "avg_predicted": 0.83,
-            "observed": 0.21
+            "observed": 0.2
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 153,
-            "brier": 0.344
+            "resolved": 157,
+            "brier": 0.346
         },
         "Economist": {
-            "resolved": 153,
-            "brier": 0.358
+            "resolved": 157,
+            "brier": 0.359
         },
         "Naturalist": {
-            "resolved": 153,
+            "resolved": 157,
             "brier": 0.402
         },
         "Skeptic": {
-            "resolved": 152,
-            "brier": 0.191
+            "resolved": 156,
+            "brier": 0.195
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 611,
-            "brier": 0.324
+            "resolved": 627,
+            "brier": 0.326
         }
     },
     "recent": [
+        {
+            "statement": "A tropical cyclone will make landfall in Mexico within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.22,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Neither signal shows a tropical cyclone making landfall in Mexico; TWO-26 was in the Atlantic near the US East Coast and FAUSTO-26 was an active East Pacific storm with no stated Mexican landfall.",
+            "resolved_ms": 1784530993686,
+            "ts": 1784443025208
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Mexico within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.17,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Neither TWO-26 (Atlantic, off US east coast) nor FAUSTO-26 (East Pacific tropical storm) shows any landfall in Mexico within the window.",
+            "resolved_ms": 1784530988814,
+            "ts": 1784441190091
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will occur in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.1,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 reports a magnitude 5.5 earthquake in Mexico on 2026-07-19 within the forecast window, exceeding the 5.0 threshold.",
+            "resolved_ms": 1784530982977,
+            "ts": 1784439344602
+        },
+        {
+            "statement": "The FOMC will raise interest rates at the July 28 meeting",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The July 28 FOMC meeting was still scheduled 8 days out at snapshot and no signal shows any rate decision occurred within the closed window.",
+            "resolved_ms": 1784530976594,
+            "ts": 1784437489469
+        },
         {
             "statement": "A Category 1 tropical cyclone will make landfall in the United States within the next 24 hours.",
             "horizon": "24h",
@@ -156,50 +200,6 @@
             "evidence": "No captured signal shows a severe thunderstorm warning was issued for the Midland/Odessa area, and such an event would have been captured within the closed window.",
             "resolved_ms": 1784511054759,
             "ts": 1784424605304
-        },
-        {
-            "statement": "Nasdaq 100 futures will close below 28700",
-            "horizon": "24h",
-            "probability": 0.29,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Nasdaq 100 futures closed at 28829.25, above the 28700 threshold, so the forecast did not come true.",
-            "resolved_ms": 1784511052434,
-            "ts": 1784422752566
-        },
-        {
-            "statement": "Flash Flood Warning issued in the US Midwest",
-            "horizon": "24h",
-            "probability": 0.47,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a Flash Flood Warning in the US Midwest would certainly have been captured if it occurred.",
-            "resolved_ms": 1784511050607,
-            "ts": 1784422752566
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Pittsburgh area in Pennsylvania.",
-            "horizon": "24h",
-            "probability": 0.54,
-            "location": "Pittsburgh, PA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for Pittsburgh would certainly have been captured within the closed window.",
-            "resolved_ms": 1784511048823,
-            "ts": 1784420900753
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Pittsburgh area",
-            "horizon": "24h",
-            "probability": 0.42,
-            "location": "Pittsburgh, PA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows a severe thunderstorm warning was issued for the Pittsburgh area within the window.",
-            "resolved_ms": 1784511046915,
-            "ts": 1784419069977
         }
     ]
 }
