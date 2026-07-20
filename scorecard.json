@@ -1,23 +1,23 @@
 {
-    "resolved": 161,
-    "open": 1244,
+    "resolved": 163,
+    "open": 1247,
     "due": 0,
     "unresolvable": 43,
-    "brier": 0.292,
-    "hit_rate": 0.5,
+    "brier": 0.288,
+    "hit_rate": 0.51,
     "per_horizon": {
         "24h": {
-            "resolved": 161,
-            "brier": 0.292,
-            "hit_rate": 0.5
+            "resolved": 163,
+            "brier": 0.288,
+            "hit_rate": 0.51
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 17,
-            "avg_predicted": 0.13,
-            "observed": 0.12
+            "n": 19,
+            "avg_predicted": 0.12,
+            "observed": 0.11
         },
         {
             "bin": "20\u201340%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 161,
-            "brier": 0.348
+            "resolved": 163,
+            "brier": 0.344
         },
         "Economist": {
-            "resolved": 161,
-            "brier": 0.36
+            "resolved": 163,
+            "brier": 0.356
         },
         "Naturalist": {
-            "resolved": 161,
-            "brier": 0.401
+            "resolved": 163,
+            "brier": 0.396
         },
         "Skeptic": {
-            "resolved": 160,
-            "brier": 0.198
+            "resolved": 162,
+            "brier": 0.196
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 643,
-            "brier": 0.327
+            "resolved": 651,
+            "brier": 0.323
         }
     },
     "recent": [
+        {
+            "statement": "A tropical cyclone will make landfall in the eastern United States within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.04,
+            "location": "Eastern United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 is only a green alert showing tropical depression TWO-26 active in the Atlantic near the coast, a condition rather than a confirmed landfall, and no signal states a cyclone made landfall in the eastern US.",
+            "resolved_ms": 1784541824029,
+            "ts": 1784454102675
+        },
+        {
+            "statement": "A magnitude 6.0 earthquake will strike in the next 24 hours near Mexico City",
+            "horizon": "24h",
+            "probability": 0.1,
+            "location": "Mexico City, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 reports only a 5.5M earthquake in Mexico, below the 6.0 threshold and not confirmed near Mexico City, so the forecast event did not occur.",
+            "resolved_ms": 1784541812539,
+            "ts": 1784452272833
+        },
         {
             "statement": "The US Federal Reserve will raise interest rates at the next FOMC meeting on July 28th.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "S1 reports a magnitude 5.5M earthquake in Mexico on 7/19/2026 17:45 UTC, within the window and exceeding the magnitude 5.0 threshold.",
             "resolved_ms": 1784520167240,
             "ts": 1784431978301
-        },
-        {
-            "statement": "A Category 1 tropical cyclone will make landfall in the United States within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.09,
-            "location": "East Pacific",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S2 shows FAUSTO-26 active in the East Pacific but provides no evidence of a Category 1 landfall in the United States within the window.",
-            "resolved_ms": 1784518273425,
-            "ts": 1784430147430
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will occur in the Scotia Sea.",
-            "horizon": "24h",
-            "probability": 0.17,
-            "location": "Scotia Sea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Scotia Sea signal (S3) is a M5.5 quake on 7/18/2026 19:50 UTC, before the forecast's 7/19\u20137/20 window, and no signal shows a qualifying quake within the window.",
-            "resolved_ms": 1784518268473,
-            "ts": 1784428311405
         }
     ]
 }
