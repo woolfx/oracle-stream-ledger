@@ -1,14 +1,14 @@
 {
-    "resolved": 193,
-    "open": 1463,
-    "due": 6,
+    "resolved": 196,
+    "open": 1477,
+    "due": 4,
     "unresolvable": 51,
-    "brier": 0.262,
+    "brier": 0.261,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 193,
-            "brier": 0.262,
+            "resolved": 196,
+            "brier": 0.261,
             "hit_rate": 0.55
         }
     },
@@ -21,14 +21,14 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 37,
-            "avg_predicted": 0.28,
+            "n": 39,
+            "avg_predicted": 0.29,
             "observed": 0.08
         },
         {
             "bin": "40\u201360%",
-            "n": 55,
-            "avg_predicted": 0.48,
+            "n": 56,
+            "avg_predicted": 0.49,
             "observed": 0.09
         },
         {
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 193,
+            "resolved": 196,
             "brier": 0.31
         },
         "Economist": {
-            "resolved": 193,
-            "brier": 0.319
+            "resolved": 196,
+            "brier": 0.318
         },
         "Naturalist": {
-            "resolved": 193,
+            "resolved": 196,
             "brier": 0.36
         },
         "Skeptic": {
-            "resolved": 192,
-            "brier": 0.186
+            "resolved": 195,
+            "brier": 0.184
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 771,
-            "brier": 0.294
+            "resolved": 783,
+            "brier": 0.293
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil price will rise by at least 2% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.59,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest WTI snapshot shows 82.49 $/bbl at -0.89%, a decline rather than the required 2% rise.",
+            "resolved_ms": 1784618902298,
+            "ts": 1784531075474
+        },
+        {
+            "statement": "The price of Brent Crude will drop by more than 2% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.29,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S14 shows Brent Crude at -0.29%, far short of the required >2% drop within the window.",
+            "resolved_ms": 1784618899829,
+            "ts": 1784529245859
+        },
+        {
+            "statement": "The price of Natural Gas will drop by 5% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.3,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports natural gas prices at all, so the claimed 5% drop is not shown; only crude, Brent, and equity index data are present.",
+            "resolved_ms": 1784618897235,
+            "ts": 1784527387550
+        },
         {
             "statement": "The price of Corn will drop by 2% within the next 24 hours",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "No signal shows CL=F rising \u22651%; the closest oil proxy, Brent Crude (S12), was down -0.93%, indicating no such increase occurred.",
             "resolved_ms": 1784608059555,
             "ts": 1784519914558
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will strike the Pacific coast of Mexico within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.19,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Mexico signal (S3) shows a magnitude 5.5M quake on 7/19, below the 6.0 threshold, and no signal reports a magnitude 6.0 earthquake on Mexico's Pacific coast within the window.",
-            "resolved_ms": 1784608055647,
-            "ts": 1784518533761
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will strike near the Mexico City area within the next 24h.",
-            "horizon": "24h",
-            "probability": 0.16,
-            "location": "Mexico City, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a magnitude 6.0 earthquake near Mexico City; the only Mexico event (S3) was M5.5 and predates the window, and such a large quake would certainly have been captured.",
-            "resolved_ms": 1784600852552,
-            "ts": 1784513017060
-        },
-        {
-            "statement": "WTI Crude Oil price will drop by 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.22,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only crude price signal (Brent) shows just -0.87%, far short of a 2% drop, and no signal shows WTI declining by 2%.",
-            "resolved_ms": 1784597248669,
-            "ts": 1784509301009
         }
     ]
 }
