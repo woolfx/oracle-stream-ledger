@@ -1,14 +1,14 @@
 {
-    "resolved": 212,
-    "open": 1538,
-    "due": 7,
+    "resolved": 215,
+    "open": 1543,
+    "due": 6,
     "unresolvable": 51,
-    "brier": 0.267,
+    "brier": 0.265,
     "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
-            "resolved": 212,
-            "brier": 0.267,
+            "resolved": 215,
+            "brier": 0.265,
             "hit_rate": 0.54
         }
     },
@@ -21,15 +21,15 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 43,
+            "n": 45,
             "avg_predicted": 0.29,
             "observed": 0.09
         },
         {
             "bin": "40\u201360%",
-            "n": 63,
+            "n": 64,
             "avg_predicted": 0.49,
-            "observed": 0.1
+            "observed": 0.09
         },
         {
             "bin": "60\u201380%",
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 212,
-            "brier": 0.314
+            "resolved": 215,
+            "brier": 0.312
         },
         "Economist": {
-            "resolved": 212,
+            "resolved": 215,
             "brier": 0.321
         },
         "Naturalist": {
-            "resolved": 212,
-            "brier": 0.362
+            "resolved": 215,
+            "brier": 0.361
         },
         "Skeptic": {
-            "resolved": 211,
-            "brier": 0.198
+            "resolved": 214,
+            "brier": 0.197
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 847,
-            "brier": 0.299
+            "resolved": 859,
+            "brier": 0.297
         }
     },
     "recent": [
+        {
+            "statement": "EIA weekly petroleum status report will move CL=F by +2.5% in the next 24h",
+            "horizon": "24h",
+            "probability": 0.31,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 shows the EIA report was merely scheduled for 2026-07-22 (after the window closed 2026-07-21) and no signal shows any +2.5% move in CL=F.",
+            "resolved_ms": 1784651420458,
+            "ts": 1784564269323
+        },
+        {
+            "statement": "The price of Natural Gas (Henry Hub) will fall by at least 2% in the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.24,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Henry Hub natural gas is up +0.31% at 2.87 $/MMBtu, not down 2%.",
+            "resolved_ms": 1784651415178,
+            "ts": 1784562432671
+        },
+        {
+            "statement": "The price of Natural Gas (Henry Hub) will decrease by more than 2% in the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.56,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Henry Hub natural gas signal shows +0.31%, not a decrease exceeding 2%.",
+            "resolved_ms": 1784651413203,
+            "ts": 1784555062243
+        },
         {
             "statement": "Natural Gas (Henry Hub) price will drop by 3% within the next 24 hours",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "S4 shows WTI Crude Oil trading at $83.94/bbl, exceeding the $83.50 threshold within the forecast window.",
             "resolved_ms": 1784636937485,
             "ts": 1784547684756
-        },
-        {
-            "statement": "Crude oil prices will increase by at least 1% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.5,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current WTI crude signal shows only +0.23%, far below the required 1% increase, with no admissible signal showing WTI rising at least 1%.",
-            "resolved_ms": 1784633334144,
-            "ts": 1784545851538
-        },
-        {
-            "statement": "WTI Crude Oil price drops by 2% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.54,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The largest WTI decline shown is -1.67% (S3), and current snapshot S11 shows only -0.49%, so no signal reflects the required 2% drop.",
-            "resolved_ms": 1784629727861,
-            "ts": 1784542131409
-        },
-        {
-            "statement": "The price of WTI Crude Oil will drop by at least 2% over the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.59,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current WTI snapshot shows only -0.49%, and no signal shows a drop of at least 2% within the window.",
-            "resolved_ms": 1784629722830,
-            "ts": 1784540290156
         }
     ]
 }
