@@ -1,14 +1,14 @@
 {
-    "resolved": 196,
-    "open": 1477,
+    "resolved": 198,
+    "open": 1482,
     "due": 4,
     "unresolvable": 51,
-    "brier": 0.261,
+    "brier": 0.262,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 196,
-            "brier": 0.261,
+            "resolved": 198,
+            "brier": 0.262,
             "hit_rate": 0.55
         }
     },
@@ -21,15 +21,15 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 39,
-            "avg_predicted": 0.29,
-            "observed": 0.08
+            "n": 40,
+            "avg_predicted": 0.28,
+            "observed": 0.1
         },
         {
             "bin": "40\u201360%",
-            "n": 56,
+            "n": 57,
             "avg_predicted": 0.49,
-            "observed": 0.09
+            "observed": 0.11
         },
         {
             "bin": "60\u201380%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 196,
-            "brier": 0.31
+            "resolved": 198,
+            "brier": 0.308
         },
         "Economist": {
-            "resolved": 196,
-            "brier": 0.318
+            "resolved": 198,
+            "brier": 0.319
         },
         "Naturalist": {
-            "resolved": 196,
-            "brier": 0.36
+            "resolved": 198,
+            "brier": 0.361
         },
         "Skeptic": {
-            "resolved": 195,
-            "brier": 0.184
+            "resolved": 197,
+            "brier": 0.189
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 783,
-            "brier": 0.293
+            "resolved": 791,
+            "brier": 0.294
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil price will drop by at least 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.5,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S11 shows WTI Crude Oil at -2.13%, exceeding the 2% drop threshold within the forecast window.",
+            "resolved_ms": 1784622510462,
+            "ts": 1784534752075
+        },
+        {
+            "statement": "WTI Crude Oil price will drop by 2% within the next 24h",
+            "horizon": "24h",
+            "probability": 0.26,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S11 shows WTI Crude Oil at 81.46 $/bbl with a -2.13% change, exceeding the 2% drop threshold within the window.",
+            "resolved_ms": 1784622506845,
+            "ts": 1784532912762
+        },
         {
             "statement": "WTI Crude Oil price will rise by at least 2% within the next 24 hours",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "The EIA petroleum report is scheduled for 2026-07-22, after the forecast window closed on 2026-07-21, so it could not have moved CL=F within the window.",
             "resolved_ms": 1784608066141,
             "ts": 1784520035253
-        },
-        {
-            "statement": "The price of CL=F oil futures will increase by at least 2% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.58,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI crude closed at 82.06 (-1.41%), showing a decline rather than the required \u22652% increase.",
-            "resolved_ms": 1784608062764,
-            "ts": 1784519946492
-        },
-        {
-            "statement": "The price of CL=F will increase by at least 1% in the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.78,
-            "location": "Taiwan Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows CL=F rising \u22651%; the closest oil proxy, Brent Crude (S12), was down -0.93%, indicating no such increase occurred.",
-            "resolved_ms": 1784608059555,
-            "ts": 1784519914558
         }
     ]
 }
