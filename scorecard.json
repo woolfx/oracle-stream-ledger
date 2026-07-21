@@ -1,14 +1,14 @@
 {
-    "resolved": 216,
-    "open": 1555,
+    "resolved": 217,
+    "open": 1562,
     "due": 6,
     "unresolvable": 51,
-    "brier": 0.265,
+    "brier": 0.266,
     "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
-            "resolved": 216,
-            "brier": 0.265,
+            "resolved": 217,
+            "brier": 0.266,
             "hit_rate": 0.54
         }
     },
@@ -39,36 +39,47 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 20,
+            "n": 21,
             "avg_predicted": 0.83,
-            "observed": 0.2
+            "observed": 0.19
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 216,
-            "brier": 0.313
+            "resolved": 217,
+            "brier": 0.315
         },
         "Economist": {
-            "resolved": 216,
-            "brier": 0.32
+            "resolved": 217,
+            "brier": 0.321
         },
         "Naturalist": {
-            "resolved": 216,
-            "brier": 0.362
+            "resolved": 217,
+            "brier": 0.363
         },
         "Skeptic": {
-            "resolved": 215,
-            "brier": 0.196
+            "resolved": 216,
+            "brier": 0.198
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 863,
-            "brier": 0.298
+            "resolved": 867,
+            "brier": 0.299
         }
     },
     "recent": [
+        {
+            "statement": "The EIA weekly petroleum status report will move CL=F by at least 1%.",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 shows the EIA report was still scheduled for 2026-07-22, after the forecast window closed 2026-07-21, and no signal shows any 1% CL=F move occurred.",
+            "resolved_ms": 1784658627161,
+            "ts": 1784571666234
+        },
         {
             "statement": "The VIX fear gauge will increase by more than 5% within the next 24 hours",
             "horizon": "24h",
@@ -188,17 +199,6 @@
             "verdict": "no",
             "evidence": "WTI never fell below $78, with the latest snapshot at $83.83 and all windowed readings ranging 81.84\u201383.94.",
             "resolved_ms": 1784636947632,
-            "ts": 1784549518896
-        },
-        {
-            "statement": "The VIX fear gauge will rise above 20",
-            "horizon": "24h",
-            "probability": 0.46,
-            "location": "",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The latest VIX reading is 17.69, well below the 20 threshold, and all signals show values between 17.51 and 17.74, never exceeding 20.",
-            "resolved_ms": 1784636940430,
             "ts": 1784549518896
         }
     ]
