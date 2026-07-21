@@ -1,13 +1,13 @@
 {
-    "resolved": 215,
-    "open": 1543,
+    "resolved": 216,
+    "open": 1555,
     "due": 6,
     "unresolvable": 51,
     "brier": 0.265,
     "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
-            "resolved": 215,
+            "resolved": 216,
             "brier": 0.265,
             "hit_rate": 0.54
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 64,
+            "n": 65,
             "avg_predicted": 0.49,
             "observed": 0.09
         },
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 215,
-            "brier": 0.312
+            "resolved": 216,
+            "brier": 0.313
         },
         "Economist": {
-            "resolved": 215,
-            "brier": 0.321
+            "resolved": 216,
+            "brier": 0.32
         },
         "Naturalist": {
-            "resolved": 215,
-            "brier": 0.361
+            "resolved": 216,
+            "brier": 0.362
         },
         "Skeptic": {
-            "resolved": 214,
-            "brier": 0.197
+            "resolved": 215,
+            "brier": 0.196
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 859,
-            "brier": 0.297
+            "resolved": 863,
+            "brier": 0.298
         }
     },
     "recent": [
+        {
+            "statement": "The VIX fear gauge will increase by more than 5% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.43,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The final snapshot shows VIX down 8.26%, not up more than 5%, and all archived signals show declines.",
+            "resolved_ms": 1784655023150,
+            "ts": 1784566105637
+        },
         {
             "statement": "EIA weekly petroleum status report will move CL=F by +2.5% in the next 24h",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "The latest VIX reading is 17.69, well below the 20 threshold, and all signals show values between 17.51 and 17.74, never exceeding 20.",
             "resolved_ms": 1784636940430,
             "ts": 1784549518896
-        },
-        {
-            "statement": "The price of WTI Crude Oil will rise to $83.50/bbl within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.06,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S4 shows WTI Crude Oil trading at $83.94/bbl, exceeding the $83.50 threshold within the forecast window.",
-            "resolved_ms": 1784636937485,
-            "ts": 1784547684756
         }
     ]
 }
