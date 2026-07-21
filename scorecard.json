@@ -1,14 +1,14 @@
 {
-    "resolved": 206,
-    "open": 1516,
-    "due": 7,
+    "resolved": 209,
+    "open": 1521,
+    "due": 6,
     "unresolvable": 51,
-    "brier": 0.267,
+    "brier": 0.266,
     "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
-            "resolved": 206,
-            "brier": 0.267,
+            "resolved": 209,
+            "brier": 0.266,
             "hit_rate": 0.54
         }
     },
@@ -21,19 +21,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 41,
+            "n": 42,
             "avg_predicted": 0.29,
             "observed": 0.1
         },
         {
             "bin": "40\u201360%",
-            "n": 61,
+            "n": 62,
             "avg_predicted": 0.49,
             "observed": 0.1
         },
         {
             "bin": "60\u201380%",
-            "n": 53,
+            "n": 54,
             "avg_predicted": 0.67,
             "observed": 0.15
         },
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 206,
-            "brier": 0.314
+            "resolved": 209,
+            "brier": 0.313
         },
         "Economist": {
-            "resolved": 206,
-            "brier": 0.325
+            "resolved": 209,
+            "brier": 0.323
         },
         "Naturalist": {
-            "resolved": 206,
-            "brier": 0.367
+            "resolved": 209,
+            "brier": 0.365
         },
         "Skeptic": {
-            "resolved": 205,
-            "brier": 0.194
+            "resolved": 208,
+            "brier": 0.195
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 823,
-            "brier": 0.3
+            "resolved": 835,
+            "brier": 0.299
         }
     },
     "recent": [
+        {
+            "statement": "The price of WTI Crude Oil will rise by at least $1.50 per barrel",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports WTI Crude Oil's price change; only Brent (+1.88%) is shown, which is a different subject and cannot confirm a $1.50 WTI rise.",
+            "resolved_ms": 1784640560974,
+            "ts": 1784553223040
+        },
+        {
+            "statement": "WTI Crude Oil price will drop by at least $1.50",
+            "horizon": "24h",
+            "probability": 0.35,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI rose to 84.33 (+1.32%) by window close rather than dropping $1.50, so the forecast did not occur.",
+            "resolved_ms": 1784640554061,
+            "ts": 1784551377922
+        },
+        {
+            "statement": "The US stock market will experience a moderate decline",
+            "horizon": "24h",
+            "probability": 0.42,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S&P 500 futures rose +0.4% (and Nasdaq +1.33%, VIX -4.34%), showing gains rather than the forecast moderate decline.",
+            "resolved_ms": 1784640550561,
+            "ts": 1784551377922
+        },
         {
             "statement": "WTI Crude Oil will drop below $78/bbl",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "S11 shows WTI Crude Oil at -2.13%, exceeding the 2% drop threshold within the forecast window.",
             "resolved_ms": 1784622510462,
             "ts": 1784534752075
-        },
-        {
-            "statement": "WTI Crude Oil price will drop by 2% within the next 24h",
-            "horizon": "24h",
-            "probability": 0.26,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S11 shows WTI Crude Oil at 81.46 $/bbl with a -2.13% change, exceeding the 2% drop threshold within the window.",
-            "resolved_ms": 1784622506845,
-            "ts": 1784532912762
-        },
-        {
-            "statement": "WTI Crude Oil price will rise by at least 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.59,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The latest WTI snapshot shows 82.49 $/bbl at -0.89%, a decline rather than the required 2% rise.",
-            "resolved_ms": 1784618902298,
-            "ts": 1784531075474
-        },
-        {
-            "statement": "The price of Brent Crude will drop by more than 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.29,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S14 shows Brent Crude at -0.29%, far short of the required >2% drop within the window.",
-            "resolved_ms": 1784618899829,
-            "ts": 1784529245859
         }
     ]
 }
