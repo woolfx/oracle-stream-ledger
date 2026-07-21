@@ -1,33 +1,33 @@
 {
-    "resolved": 203,
-    "open": 1507,
-    "due": 6,
+    "resolved": 206,
+    "open": 1516,
+    "due": 7,
     "unresolvable": 51,
-    "brier": 0.265,
+    "brier": 0.267,
     "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
-            "resolved": 203,
-            "brier": 0.265,
+            "resolved": 206,
+            "brier": 0.267,
             "hit_rate": 0.54
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 30,
+            "n": 31,
             "avg_predicted": 0.12,
-            "observed": 0.07
+            "observed": 0.1
         },
         {
             "bin": "20\u201340%",
-            "n": 40,
-            "avg_predicted": 0.28,
+            "n": 41,
+            "avg_predicted": 0.29,
             "observed": 0.1
         },
         {
             "bin": "40\u201360%",
-            "n": 60,
+            "n": 61,
             "avg_predicted": 0.49,
             "observed": 0.1
         },
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 203,
-            "brier": 0.312
+            "resolved": 206,
+            "brier": 0.314
         },
         "Economist": {
-            "resolved": 203,
-            "brier": 0.323
+            "resolved": 206,
+            "brier": 0.325
         },
         "Naturalist": {
-            "resolved": 203,
-            "brier": 0.365
+            "resolved": 206,
+            "brier": 0.367
         },
         "Skeptic": {
-            "resolved": 202,
-            "brier": 0.192
+            "resolved": 205,
+            "brier": 0.194
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 811,
-            "brier": 0.298
+            "resolved": 823,
+            "brier": 0.3
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil will drop below $78/bbl",
+            "horizon": "24h",
+            "probability": 0.34,
+            "location": "",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI never fell below $78, with the latest snapshot at $83.83 and all windowed readings ranging 81.84\u201383.94.",
+            "resolved_ms": 1784636947632,
+            "ts": 1784549518896
+        },
+        {
+            "statement": "The VIX fear gauge will rise above 20",
+            "horizon": "24h",
+            "probability": 0.46,
+            "location": "",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest VIX reading is 17.69, well below the 20 threshold, and all signals show values between 17.51 and 17.74, never exceeding 20.",
+            "resolved_ms": 1784636940430,
+            "ts": 1784549518896
+        },
+        {
+            "statement": "The price of WTI Crude Oil will rise to $83.50/bbl within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.06,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S4 shows WTI Crude Oil trading at $83.94/bbl, exceeding the $83.50 threshold within the forecast window.",
+            "resolved_ms": 1784636937485,
+            "ts": 1784547684756
+        },
         {
             "statement": "Crude oil prices will increase by at least 1% within the next 24 hours",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "S14 shows Brent Crude at -0.29%, far short of the required >2% drop within the window.",
             "resolved_ms": 1784618899829,
             "ts": 1784529245859
-        },
-        {
-            "statement": "The price of Natural Gas will drop by 5% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.3,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports natural gas prices at all, so the claimed 5% drop is not shown; only crude, Brent, and equity index data are present.",
-            "resolved_ms": 1784618897235,
-            "ts": 1784527387550
-        },
-        {
-            "statement": "The price of Corn will drop by 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.36,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal references corn prices at all, so the claimed 2% drop is not shown to have occurred within the window.",
-            "resolved_ms": 1784615290796,
-            "ts": 1784527387550
-        },
-        {
-            "statement": "The price of WTI Crude Oil will drop by 3% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.28,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The latest WTI signal shows only -1.25% (max observed -1.35%), far short of the required 3% drop.",
-            "resolved_ms": 1784615282544,
-            "ts": 1784527387550
         }
     ]
 }
