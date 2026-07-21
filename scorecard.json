@@ -1,14 +1,14 @@
 {
-    "resolved": 180,
-    "open": 1405,
+    "resolved": 181,
+    "open": 1413,
     "due": 3,
     "unresolvable": 51,
-    "brier": 0.262,
+    "brier": 0.261,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 180,
-            "brier": 0.262,
+            "resolved": 181,
+            "brier": 0.261,
             "hit_rate": 0.55
         }
     },
@@ -27,9 +27,9 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 52,
+            "n": 53,
             "avg_predicted": 0.48,
-            "observed": 0.1
+            "observed": 0.09
         },
         {
             "bin": "60\u201380%",
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 180,
-            "brier": 0.314
+            "resolved": 181,
+            "brier": 0.312
         },
         "Economist": {
-            "resolved": 180,
-            "brier": 0.319
+            "resolved": 181,
+            "brier": 0.32
         },
         "Naturalist": {
-            "resolved": 180,
-            "brier": 0.364
+            "resolved": 181,
+            "brier": 0.362
         },
         "Skeptic": {
-            "resolved": 179,
+            "resolved": 180,
             "brier": 0.182
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 719,
-            "brier": 0.295
+            "resolved": 723,
+            "brier": 0.294
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil price will drop by 1.5% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.41,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI moved from ~82.42-82.61 to 82.39 at window close, a decline far under the required 1.5% drop.",
+            "resolved_ms": 1784593645237,
+            "ts": 1784503773738
+        },
         {
             "statement": "A severe thunderstorm warning will be issued for the Midwest within the next 24 hours due to a low-pressure system moving east",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "No captured signal concerns this forecast, and a severe thunderstorm causing Midwest power outages would certainly have been captured within the closed window.",
             "resolved_ms": 1784574285812,
             "ts": 1784487407959
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the southeastern United States within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.06,
-            "location": "Southeastern United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows only a tropical depression TWO-26 active offshore in the Atlantic with no signal indicating a cyclone landfall in the southeastern US, and S2 is in the East Pacific.",
-            "resolved_ms": 1784570683194,
-            "ts": 1784483710997
         }
     ]
 }
