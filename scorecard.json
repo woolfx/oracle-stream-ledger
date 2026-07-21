@@ -1,21 +1,21 @@
 {
-    "resolved": 183,
-    "open": 1444,
-    "due": 8,
+    "resolved": 188,
+    "open": 1450,
+    "due": 5,
     "unresolvable": 51,
-    "brier": 0.259,
-    "hit_rate": 0.56,
+    "brier": 0.261,
+    "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 183,
-            "brier": 0.259,
-            "hit_rate": 0.56
+            "resolved": 188,
+            "brier": 0.261,
+            "hit_rate": 0.55
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 29,
+            "n": 30,
             "avg_predicted": 0.12,
             "observed": 0.07
         },
@@ -27,15 +27,15 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 53,
+            "n": 55,
             "avg_predicted": 0.48,
             "observed": 0.09
         },
         {
             "bin": "60\u201380%",
-            "n": 48,
+            "n": 50,
             "avg_predicted": 0.67,
-            "observed": 0.17
+            "observed": 0.16
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,84 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 183,
-            "brier": 0.309
+            "resolved": 188,
+            "brier": 0.312
         },
         "Economist": {
-            "resolved": 183,
-            "brier": 0.317
+            "resolved": 188,
+            "brier": 0.32
         },
         "Naturalist": {
-            "resolved": 183,
+            "resolved": 188,
             "brier": 0.359
         },
         "Skeptic": {
-            "resolved": 182,
-            "brier": 0.181
+            "resolved": 187,
+            "brier": 0.184
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 731,
-            "brier": 0.291
+            "resolved": 751,
+            "brier": 0.294
         }
     },
     "recent": [
+        {
+            "statement": "The price of CL=F will increase by 2% in the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.66,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI's latest snapshot shows 82.06 $/bbl at -1.41%, a decline rather than the required 2% increase.",
+            "resolved_ms": 1784608068445,
+            "ts": 1784520073310
+        },
+        {
+            "statement": "The EIA weekly petroleum status report will move CL=F by at least 1% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.57,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The EIA petroleum report is scheduled for 2026-07-22, after the forecast window closed on 2026-07-21, so it could not have moved CL=F within the window.",
+            "resolved_ms": 1784608066141,
+            "ts": 1784520035253
+        },
+        {
+            "statement": "The price of CL=F oil futures will increase by at least 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.58,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI crude closed at 82.06 (-1.41%), showing a decline rather than the required \u22652% increase.",
+            "resolved_ms": 1784608062764,
+            "ts": 1784519946492
+        },
+        {
+            "statement": "The price of CL=F will increase by at least 1% in the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.78,
+            "location": "Taiwan Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows CL=F rising \u22651%; the closest oil proxy, Brent Crude (S12), was down -0.93%, indicating no such increase occurred.",
+            "resolved_ms": 1784608059555,
+            "ts": 1784519914558
+        },
+        {
+            "statement": "A magnitude 6.0 earthquake will strike the Pacific coast of Mexico within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.19,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Mexico signal (S3) shows a magnitude 5.5M quake on 7/19, below the 6.0 threshold, and no signal reports a magnitude 6.0 earthquake on Mexico's Pacific coast within the window.",
+            "resolved_ms": 1784608055647,
+            "ts": 1784518533761
+        },
         {
             "statement": "A magnitude 6.0 earthquake will strike near the Mexico City area within the next 24h.",
             "horizon": "24h",
@@ -145,61 +200,6 @@
             "evidence": "No signal shows a magnitude 6.0 or greater earthquake in the Pacific Ocean; the closest Pacific signal (S3) was only 5.5M, below the stated threshold.",
             "resolved_ms": 1784586432963,
             "ts": 1784498254389
-        },
-        {
-            "statement": "Severe thunderstorms will affect the Midwest region in the United States",
-            "horizon": "24h",
-            "probability": 0.7,
-            "location": "Midwest, USA",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S2 shows a Severe Thunderstorm Warning issued July 20 by NWS Marquette MI, within the Midwest region and the forecast window.",
-            "resolved_ms": 1784586429654,
-            "ts": 1784496419454
-        },
-        {
-            "statement": "Severe thunderstorm warning issued for the Midwest region in the United States",
-            "horizon": "24h",
-            "probability": 0.41,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 shows NWS Quad Cities IA IL issued a Severe Thunderstorm Warning on July 20, within the Midwest region and forecast window.",
-            "resolved_ms": 1784582826183,
-            "ts": 1784494620207
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Midwest region",
-            "horizon": "24h",
-            "probability": 0.63,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 shows a Severe Thunderstorm Warning issued July 20 by NWS Quad Cities IA IL, within the Midwest region and the forecast window.",
-            "resolved_ms": 1784582820341,
-            "ts": 1784494582379
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Nashville area.",
-            "horizon": "24h",
-            "probability": 0.38,
-            "location": "Nashville, TN",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows a severe thunderstorm warning was issued for the Nashville area within the window.",
-            "resolved_ms": 1784582817742,
-            "ts": 1784492936036
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the southeastern United States within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.06,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows only a green-alert tropical depression offshore in the Atlantic and S2 a storm in the East Pacific, with no signal indicating an actual southeastern US landfall.",
-            "resolved_ms": 1784579216011,
-            "ts": 1784491094761
         }
     ]
 }
