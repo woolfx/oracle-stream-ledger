@@ -1,14 +1,14 @@
 {
-    "resolved": 181,
-    "open": 1413,
-    "due": 3,
+    "resolved": 182,
+    "open": 1420,
+    "due": 2,
     "unresolvable": 51,
-    "brier": 0.261,
+    "brier": 0.26,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 181,
-            "brier": 0.261,
+            "resolved": 182,
+            "brier": 0.26,
             "hit_rate": 0.55
         }
     },
@@ -21,7 +21,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 33,
+            "n": 34,
             "avg_predicted": 0.28,
             "observed": 0.09
         },
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 181,
-            "brier": 0.312
+            "resolved": 182,
+            "brier": 0.311
         },
         "Economist": {
-            "resolved": 181,
-            "brier": 0.32
+            "resolved": 182,
+            "brier": 0.318
         },
         "Naturalist": {
-            "resolved": 181,
-            "brier": 0.362
+            "resolved": 182,
+            "brier": 0.361
         },
         "Skeptic": {
-            "resolved": 180,
-            "brier": 0.182
+            "resolved": 181,
+            "brier": 0.181
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 723,
-            "brier": 0.294
+            "resolved": 727,
+            "brier": 0.293
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil price will drop by 2% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.22,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only crude price signal (Brent) shows just -0.87%, far short of a 2% drop, and no signal shows WTI declining by 2%.",
+            "resolved_ms": 1784597248669,
+            "ts": 1784509301009
+        },
         {
             "statement": "WTI Crude Oil price will drop by 1.5% in the next 24 hours",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "S1 shows only a magnitude 5.5 earthquake in Mexico, below the 6.0 threshold and not specified as Mexico City, so the forecast event did not occur.",
             "resolved_ms": 1784579210652,
             "ts": 1784489265170
-        },
-        {
-            "statement": "A severe thunderstorm will cause power outages in the Midwest.",
-            "horizon": "24h",
-            "probability": 0.46,
-            "location": "Midwest",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm causing Midwest power outages would certainly have been captured within the closed window.",
-            "resolved_ms": 1784574285812,
-            "ts": 1784487407959
         }
     ]
 }
