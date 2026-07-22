@@ -1,20 +1,20 @@
 {
-    "resolved": 261,
-    "open": 1863,
-    "due": 19,
+    "resolved": 272,
+    "open": 1864,
+    "due": 13,
     "unresolvable": 51,
-    "brier": 0.264,
-    "hit_rate": 0.56,
+    "brier": 0.266,
+    "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 260,
-            "brier": 0.263,
-            "hit_rate": 0.56
+            "resolved": 264,
+            "brier": 0.265,
+            "hit_rate": 0.55
         },
         "week": {
-            "resolved": 1,
-            "brier": 0.436,
-            "hit_rate": 0.0
+            "resolved": 8,
+            "brier": 0.279,
+            "hit_rate": 0.5
         }
     },
     "calibration": [
@@ -26,21 +26,21 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 57,
+            "n": 59,
             "avg_predicted": 0.29,
             "observed": 0.07
         },
         {
             "bin": "40\u201360%",
-            "n": 80,
+            "n": 85,
             "avg_predicted": 0.49,
-            "observed": 0.09
+            "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 65,
+            "n": 69,
             "avg_predicted": 0.67,
-            "observed": 0.15
+            "observed": 0.14
         },
         {
             "bin": "80\u2013100%",
@@ -51,29 +51,150 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 261,
-            "brier": 0.312
+            "resolved": 272,
+            "brier": 0.313
         },
         "Economist": {
-            "resolved": 261,
-            "brier": 0.325
+            "resolved": 272,
+            "brier": 0.333
         },
         "Naturalist": {
-            "resolved": 261,
-            "brier": 0.354
+            "resolved": 272,
+            "brier": 0.358
         },
         "Skeptic": {
-            "resolved": 260,
-            "brier": 0.199
+            "resolved": 271,
+            "brier": 0.197
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1043,
-            "brier": 0.298
+            "resolved": 1087,
+            "brier": 0.3
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 6.5 earthquake will occur in the Philippines",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports a magnitude 6.5 earthquake in the Philippines, and such an event would certainly have been captured during the closed window.",
+            "resolved_ms": 1784757590946,
+            "ts": 1784150694917
+        },
+        {
+            "statement": "A Category 2 hurricane will make landfall in Mexico within the next week",
+            "horizon": "week",
+            "probability": 0.36,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All tropical cyclone signals (BERTHA, FAUSTO, ELIDA) are green alerts at Tropical Storm strength with zero population affected by Category 1+ winds, and none shows a Category 2 hurricane landfall in Mexico.",
+            "resolved_ms": 1784757588269,
+            "ts": 1784148889035
+        },
+        {
+            "statement": "A Category 2 tropical cyclone will form in the Pacific Ocean within the next week",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "EastPacific",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "East Pacific cyclones FAUSTO and ELIDA are only Tropical Storms with green alerts, and no signal shows any Category 2 cyclone forming.",
+            "resolved_ms": 1784757582868,
+            "ts": 1784148848500
+        },
+        {
+            "statement": "The price of CL=F will increase by at least 2% within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.76,
+            "location": "Global Oil Markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current WTI (CL=F) snapshot shows only +1.85%, below the required 2% increase threshold.",
+            "resolved_ms": 1784757578472,
+            "ts": 1784666239402
+        },
+        {
+            "statement": "The price of oil will increase by at least $5 per barrel within the next week",
+            "horizon": "week",
+            "probability": 0.7,
+            "location": "Bab el-Mandeb",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent rose only +3.32% and WTI +2.17% in the snapshots, with no signal showing an actual $5/bbl weekly price increase.",
+            "resolved_ms": 1784757574021,
+            "ts": 1784146876609
+        },
+        {
+            "statement": "WTI Crude Oil price will increase by at least 2% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.51,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The final [now] snapshot S10 shows WTI at 86.48 (+1.85%), and prices ranged only 86.34\u219286.75 over the window\u2014well below a 2% increase from the forecast baseline.",
+            "resolved_ms": 1784757568833,
+            "ts": 1784664390853
+        },
+        {
+            "statement": "WTI Crude Oil price will increase by more than 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.58,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current WTI snapshot shows only +1.85%, below the required 2% increase threshold.",
+            "resolved_ms": 1784757559379,
+            "ts": 1784663864398
+        },
+        {
+            "statement": "WTI Crude Oil price will drop by at least 2% within the next 24h",
+            "horizon": "24h",
+            "probability": 0.66,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest WTI snapshot shows the price at 86.48 $/bbl (+1.85%), rising rather than dropping at least 2% within the window.",
+            "resolved_ms": 1784757552163,
+            "ts": 1784662035020
+        },
+        {
+            "statement": "The price of oil will increase by at least $2 per barrel due to supply chain disruptions in the Strait of Hormuz",
+            "horizon": "week",
+            "probability": 0.4,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S10 shows reduced Hormuz transits (a condition, not a disruption event), and no signal attributes the oil price rise to Strait of Hormuz supply-chain disruption, so the compound claim is not confirmed.",
+            "resolved_ms": 1784757544114,
+            "ts": 1784142881398
+        },
+        {
+            "statement": "The price of oil will surge by at least $10 per barrel within the next week due to supply chain disruptions in the Strait of Hormuz.",
+            "horizon": "week",
+            "probability": 0.46,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent at 93.88 (+3.15%) and WTI at 86.75 (+2.17%) show only single-digit percentage moves, nowhere near the required $10/bbl surge, despite reduced Hormuz transits.",
+            "resolved_ms": 1784757535790,
+            "ts": 1784141895788
+        },
+        {
+            "statement": "Tropical cyclone BAVI-26 makes landfall in China",
+            "horizon": "week",
+            "probability": 0.65,
+            "location": "Bavianshan, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions cyclone BAVI-26 or a landfall in China; only unrelated green-alert cyclones (BERTHA, FAUSTO, ELIDA) far from China appear.",
+            "resolved_ms": 1784757530114,
+            "ts": 1784141851843
+        },
         {
             "statement": "The European Aviation Safety Agency (EASA) will extend its airspace restrictions for Bahrain, Kuwait, Qatar, and the UAE within the next week",
             "horizon": "week",
@@ -84,127 +205,6 @@
             "evidence": "No captured signal concerns this forecast, and an EASA extension of airspace restrictions for these Gulf states would certainly have been captured had it occurred.",
             "resolved_ms": 1784746251940,
             "ts": 1784141350380
-        },
-        {
-            "statement": "CL=F will close at $84.50",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal captures CL=F's closing price, and a specific settlement of $84.50 would have been recorded if it had occurred.",
-            "resolved_ms": 1784746249725,
-            "ts": 1784658367770
-        },
-        {
-            "statement": "A magnitude 5.8 earthquake will strike the Kermadec Islands Region",
-            "horizon": "24h",
-            "probability": 0.27,
-            "location": "Kermadec Islands Region",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a magnitude 5.8 earthquake in the Kermadec Islands Region within the window, and such an event would have been recorded.",
-            "resolved_ms": 1784744186781,
-            "ts": 1784656515120
-        },
-        {
-            "statement": "US crude oil prices will rise by more than 2% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.76,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S11 [now] shows WTI Crude Oil at +2.17%, exceeding the stated 2% rise threshold for US crude within the window.",
-            "resolved_ms": 1784742014812,
-            "ts": 1784654670319
-        },
-        {
-            "statement": "The US dollar will strengthen by 1% against the euro in the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.26,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any EUR/USD exchange rate movement, so the claimed 1% dollar strengthening is not shown to have occurred.",
-            "resolved_ms": 1784739351191,
-            "ts": 1784652826113
-        },
-        {
-            "statement": "The EIA weekly petroleum status report will move CL=F by +2.5%.",
-            "horizon": "24h",
-            "probability": 0.49,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The EIA weekly petroleum status report is scheduled for 2026-07-29, after the window closed on 2026-07-22, so no report-driven CL=F move occurred within the window.",
-            "resolved_ms": 1784739347473,
-            "ts": 1784650994000
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will occur in the Kermadec Islands Region within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.19,
-            "location": "Kermadec Islands Region",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 reports only a magnitude 5.6 earthquake in the Kermadec Islands Region, below the forecast's 6.0 threshold, and no signal shows a 6.0 event.",
-            "resolved_ms": 1784736769240,
-            "ts": 1784647304081
-        },
-        {
-            "statement": "The price of NG=F will fall by at least 1% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.36,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports NG=F (natural gas) prices at all; all signals concern crude oil, VIX, and FOMC dates, so no evidence shows a 1% drop in natural gas.",
-            "resolved_ms": 1784736766389,
-            "ts": 1784641791387
-        },
-        {
-            "statement": "EIA weekly petroleum status report will move CL=F by +1.2% over the next 24h",
-            "horizon": "24h",
-            "probability": 0.71,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The EIA petroleum status report was scheduled for 2026-07-29, well after the forecast's 2026-07-22 window closed, and no signal shows any +1.2% move in CL=F occurred.",
-            "resolved_ms": 1784733161549,
-            "ts": 1784645469237
-        },
-        {
-            "statement": "EIA weekly petroleum status report moves CL=F by at least 1%.",
-            "horizon": "24h",
-            "probability": 0.69,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The EIA petroleum status report was scheduled for 2026-07-29 (per S2/S4), outside the forecast's window closing 2026-07-22, so no signal shows it moved CL=F by 1% within the window.",
-            "resolved_ms": 1784733158288,
-            "ts": 1784643628627
-        },
-        {
-            "statement": "The EIA weekly petroleum status report will move CL=F by +2.5%.",
-            "horizon": "24h",
-            "probability": 0.75,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The EIA weekly petroleum status report was scheduled for 2026-07-29, after the forecast's window closed 2026-07-22, so no CL=F move of +2.5% could have occurred within the window.",
-            "resolved_ms": 1784729539593,
-            "ts": 1784639952859
-        },
-        {
-            "statement": "WTI Crude Oil price will increase by more than 1% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current snapshot S12 shows WTI Crude Oil at 86.99 $/bbl with a +2.45% change, exceeding the 1% increase threshold.",
-            "resolved_ms": 1784725935400,
-            "ts": 1784638109563
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 261,
-        "base_rate": 0.1073,
-        "brier_raw": 0.2637,
-        "brier_base_rate": 0.0958,
+        "resolved_n": 272,
+        "base_rate": 0.1029,
+        "brier_raw": 0.2656,
+        "brier_base_rate": 0.0923,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
