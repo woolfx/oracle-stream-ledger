@@ -1,15 +1,15 @@
 {
-    "resolved": 240,
-    "open": 1692,
-    "due": 10,
+    "resolved": 242,
+    "open": 1703,
+    "due": 9,
     "unresolvable": 51,
-    "brier": 0.257,
-    "hit_rate": 0.57,
+    "brier": 0.26,
+    "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 240,
-            "brier": 0.257,
-            "hit_rate": 0.57
+            "resolved": 242,
+            "brier": 0.26,
+            "hit_rate": 0.56
         }
     },
     "calibration": [
@@ -39,36 +39,58 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 21,
-            "avg_predicted": 0.83,
-            "observed": 0.19
+            "n": 23,
+            "avg_predicted": 0.82,
+            "observed": 0.17
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 240,
-            "brier": 0.302
+            "resolved": 242,
+            "brier": 0.305
         },
         "Economist": {
-            "resolved": 240,
-            "brier": 0.318
+            "resolved": 242,
+            "brier": 0.32
         },
         "Naturalist": {
-            "resolved": 240,
-            "brier": 0.352
+            "resolved": 242,
+            "brier": 0.355
         },
         "Skeptic": {
-            "resolved": 239,
-            "brier": 0.191
+            "resolved": 241,
+            "brier": 0.194
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 959,
-            "brier": 0.291
+            "resolved": 967,
+            "brier": 0.294
         }
     },
     "recent": [
+        {
+            "statement": "The EIA weekly petroleum status report will move CL=F by at least 1%.",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The EIA petroleum status report is scheduled for 2026-07-29, after the forecast's window closed on 2026-07-22, so no such report could have moved CL=F within the window.",
+            "resolved_ms": 1784711495861,
+            "ts": 1784623395810
+        },
+        {
+            "statement": "The EIA weekly petroleum status report will move CL=F by more than 1%.",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The EIA weekly petroleum status report is scheduled for 2026-07-29, seven days after the forecast window closed on 2026-07-22, so it could not have moved CL=F within the window.",
+            "resolved_ms": 1784711491965,
+            "ts": 1784621560340
+        },
         {
             "statement": "The EIA weekly petroleum status report will move CL=F by +2.5% in the next 24h",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "WTI rose throughout the window, ending at +2.8% (85.56 $/bbl) rather than dropping 1.5%.",
             "resolved_ms": 1784686180733,
             "ts": 1784599435000
-        },
-        {
-            "statement": "The price of WTI Crude Oil will increase by at least 2% within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.53,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI moved from 84.65 (S1) at forecast time to 85.56 (S12) at window close, an increase of only ~1.07%, short of the required 2%.",
-            "resolved_ms": 1784686177155,
-            "ts": 1784597591643
-        },
-        {
-            "statement": "Natural Gas (Henry Hub) price will drop by at least 0.5% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.63,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S14 shows Henry Hub natural gas at 2.89 $/MMBtu up +1.08%, the opposite of the forecasted 0.5% drop.",
-            "resolved_ms": 1784682559607,
-            "ts": 1784595748921
         }
     ]
 }
