@@ -1,13 +1,13 @@
 {
-    "resolved": 246,
-    "open": 1717,
+    "resolved": 248,
+    "open": 1722,
     "due": 8,
     "unresolvable": 51,
     "brier": 0.262,
     "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 246,
+            "resolved": 248,
             "brier": 0.262,
             "hit_rate": 0.56
         }
@@ -27,13 +27,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 78,
+            "n": 79,
             "avg_predicted": 0.49,
             "observed": 0.09
         },
         {
             "bin": "60\u201380%",
-            "n": 57,
+            "n": 58,
             "avg_predicted": 0.67,
             "observed": 0.14
         },
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 246,
-            "brier": 0.304
+            "resolved": 248,
+            "brier": 0.306
         },
         "Economist": {
-            "resolved": 246,
-            "brier": 0.324
+            "resolved": 248,
+            "brier": 0.326
         },
         "Naturalist": {
-            "resolved": 246,
-            "brier": 0.356
+            "resolved": 248,
+            "brier": 0.358
         },
         "Skeptic": {
-            "resolved": 245,
-            "brier": 0.196
+            "resolved": 247,
+            "brier": 0.195
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 983,
-            "brier": 0.295
+            "resolved": 991,
+            "brier": 0.296
         }
     },
     "recent": [
+        {
+            "statement": "NG=F will fall by at least 2% over the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows NG=F falling by at least 2% within the window, which such a price move would have been reflected.",
+            "resolved_ms": 1784722325021,
+            "ts": 1784634425683
+        },
+        {
+            "statement": "Natural Gas (NG=F) will fall by more than 1% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.56,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, so there is no evidence that natural gas fell by more than 1% within the window.",
+            "resolved_ms": 1784722323026,
+            "ts": 1784632594682
+        },
         {
             "statement": "The EIA weekly petroleum status report will move CL=F by at least 1%.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "No signal references US natural gas prices or any Gulf Coast supply disruption; only crude oil (Brent/WTI) prices appear, none showing a natural gas surge.",
             "resolved_ms": 1784697019225,
             "ts": 1784608651750
-        },
-        {
-            "statement": "Oil prices will surge due to a disruption in Strait of Hormuz shipping.",
-            "horizon": "24h",
-            "probability": 0.19,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI rose only 0.44% and Brent 1.36%, showing no price surge despite Hormuz transits being 30% below average, so the forecast event did not occur.",
-            "resolved_ms": 1784697016057,
-            "ts": 1784608651750
-        },
-        {
-            "statement": "NG=F will drop by more than 1% in the next 24h",
-            "horizon": "24h",
-            "probability": 0.49,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, so there is no evidence the event occurred within its closed window.",
-            "resolved_ms": 1784693404102,
-            "ts": 1784606813153
         }
     ]
 }
