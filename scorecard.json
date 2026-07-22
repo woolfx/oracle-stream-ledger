@@ -1,15 +1,15 @@
 {
-    "resolved": 237,
-    "open": 1670,
-    "due": 9,
+    "resolved": 239,
+    "open": 1673,
+    "due": 8,
     "unresolvable": 51,
-    "brier": 0.258,
-    "hit_rate": 0.57,
+    "brier": 0.257,
+    "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 237,
-            "brier": 0.258,
-            "hit_rate": 0.57
+            "resolved": 239,
+            "brier": 0.257,
+            "hit_rate": 0.56
         }
     },
     "calibration": [
@@ -27,7 +27,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 74,
+            "n": 76,
             "avg_predicted": 0.49,
             "observed": 0.09
         },
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 237,
-            "brier": 0.303
+            "resolved": 239,
+            "brier": 0.302
         },
         "Economist": {
-            "resolved": 237,
-            "brier": 0.316
+            "resolved": 239,
+            "brier": 0.317
         },
         "Naturalist": {
-            "resolved": 237,
-            "brier": 0.35
+            "resolved": 239,
+            "brier": 0.352
         },
         "Skeptic": {
-            "resolved": 236,
-            "brier": 0.192
+            "resolved": 238,
+            "brier": 0.191
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 947,
-            "brier": 0.29
+            "resolved": 955,
+            "brier": 0.291
         }
     },
     "recent": [
+        {
+            "statement": "NG=F drops by 2% within the next 24h",
+            "horizon": "24h",
+            "probability": 0.55,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a 2% move in NG=F would certainly have been captured within the closed window.",
+            "resolved_ms": 1784700643163,
+            "ts": 1784614164673
+        },
+        {
+            "statement": "NG=F will drop by 2% over the next 24h",
+            "horizon": "24h",
+            "probability": 0.43,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal captured any price data for NG=F, so the claimed 2% drop cannot be confirmed within the closed window.",
+            "resolved_ms": 1784700640934,
+            "ts": 1784612331718
+        },
         {
             "statement": "US natural gas prices will surge due to a supply disruption in the Gulf Coast region.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "The latest WTI reading rose to 84.82 $/bbl (+1.91%), showing a gain rather than the required 1% drop.",
             "resolved_ms": 1784678950213,
             "ts": 1784592062368
-        },
-        {
-            "statement": "WTI Crude Oil price will drop by 2% within the next 24h",
-            "horizon": "24h",
-            "probability": 0.4,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The latest WTI signal shows the price up +1.91% to 84.82, not down 2%, so the forecast did not come true.",
-            "resolved_ms": 1784678946323,
-            "ts": 1784590229463
-        },
-        {
-            "statement": "WTI Crude Oil price will rise by 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.41,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI started at 84.52 and the latest snapshot shows only 84.71 (~+0.22%), far short of the 2% rise (~86.21) required within the window.",
-            "resolved_ms": 1784675338766,
-            "ts": 1784588373794
         }
     ]
 }
