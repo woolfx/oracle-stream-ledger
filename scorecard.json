@@ -1,13 +1,13 @@
 {
-    "resolved": 248,
-    "open": 1722,
+    "resolved": 250,
+    "open": 1735,
     "due": 8,
     "unresolvable": 51,
     "brier": 0.262,
     "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 248,
+            "resolved": 250,
             "brier": 0.262,
             "hit_rate": 0.56
         }
@@ -33,9 +33,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 58,
+            "n": 60,
             "avg_predicted": 0.67,
-            "observed": 0.14
+            "observed": 0.15
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 248,
+            "resolved": 250,
             "brier": 0.306
         },
         "Economist": {
-            "resolved": 248,
-            "brier": 0.326
+            "resolved": 250,
+            "brier": 0.325
         },
         "Naturalist": {
-            "resolved": 248,
-            "brier": 0.358
+            "resolved": 250,
+            "brier": 0.357
         },
         "Skeptic": {
-            "resolved": 247,
-            "brier": 0.195
+            "resolved": 249,
+            "brier": 0.196
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 991,
+            "resolved": 999,
             "brier": 0.296
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil price will increase by more than 1% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current snapshot S12 shows WTI Crude Oil at 86.99 $/bbl with a +2.45% change, exceeding the 1% increase threshold.",
+            "resolved_ms": 1784725935400,
+            "ts": 1784638109563
+        },
+        {
+            "statement": "CL=F will increase by at least 1% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows CL=F increased by at least 1% within the window, though such a price move would have been recorded.",
+            "resolved_ms": 1784725928421,
+            "ts": 1784636261752
+        },
         {
             "statement": "NG=F will fall by at least 2% over the next 24 hours",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "No captured signal concerns this forecast, and a 2% move in NG=F would certainly have been captured within the closed window.",
             "resolved_ms": 1784700643163,
             "ts": 1784614164673
-        },
-        {
-            "statement": "NG=F will drop by 2% over the next 24h",
-            "horizon": "24h",
-            "probability": 0.43,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal captured any price data for NG=F, so the claimed 2% drop cannot be confirmed within the closed window.",
-            "resolved_ms": 1784700640934,
-            "ts": 1784612331718
-        },
-        {
-            "statement": "US natural gas prices will surge due to a supply disruption in the Gulf Coast region.",
-            "horizon": "24h",
-            "probability": 0.1,
-            "location": "Gulf Coast region",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal references US natural gas prices or any Gulf Coast supply disruption; only crude oil (Brent/WTI) prices appear, none showing a natural gas surge.",
-            "resolved_ms": 1784697019225,
-            "ts": 1784608651750
         }
     ]
 }
