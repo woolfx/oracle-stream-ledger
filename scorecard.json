@@ -1,15 +1,15 @@
 {
-    "resolved": 242,
-    "open": 1703,
-    "due": 9,
+    "resolved": 244,
+    "open": 1711,
+    "due": 8,
     "unresolvable": 51,
     "brier": 0.26,
-    "hit_rate": 0.56,
+    "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 242,
+            "resolved": 244,
             "brier": 0.26,
-            "hit_rate": 0.56
+            "hit_rate": 0.57
         }
     },
     "calibration": [
@@ -21,13 +21,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 53,
+            "n": 54,
             "avg_predicted": 0.29,
-            "observed": 0.08
+            "observed": 0.07
         },
         {
             "bin": "40\u201360%",
-            "n": 77,
+            "n": 78,
             "avg_predicted": 0.49,
             "observed": 0.09
         },
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 242,
-            "brier": 0.305
+            "resolved": 244,
+            "brier": 0.303
         },
         "Economist": {
-            "resolved": 242,
-            "brier": 0.32
+            "resolved": 244,
+            "brier": 0.322
         },
         "Naturalist": {
-            "resolved": 242,
-            "brier": 0.355
+            "resolved": 244,
+            "brier": 0.353
         },
         "Skeptic": {
-            "resolved": 241,
-            "brier": 0.194
+            "resolved": 243,
+            "brier": 0.193
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 967,
-            "brier": 0.294
+            "resolved": 975,
+            "brier": 0.293
         }
     },
     "recent": [
+        {
+            "statement": "The VIX fear gauge will exceed 20 within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.48,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "VIX remained at 17.49, below the 20 threshold, throughout the window including the current snapshot.",
+            "resolved_ms": 1784715108867,
+            "ts": 1784625225873
+        },
+        {
+            "statement": "Oil prices will rise by at least $1/bbl in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.29,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent Crude is shown down -7.27% at 84.39 $/bbl, indicating oil fell rather than rising by at least $1/bbl.",
+            "resolved_ms": 1784715099211,
+            "ts": 1784582842168
+        },
         {
             "statement": "The EIA weekly petroleum status report will move CL=F by at least 1%.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "The latest WTI snapshot shows the price at 85.2 $/bbl up +2.37%, rising rather than dropping 2%, so the forecast did not occur.",
             "resolved_ms": 1784689794686,
             "ts": 1784603108458
-        },
-        {
-            "statement": "The price of WTI Crude Oil will drop by at least 2% within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.33,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current snapshot shows WTI at 85.2 $/bbl up +2.37%, not dropping, and no signal shows a 2% decline within the window.",
-            "resolved_ms": 1784689789292,
-            "ts": 1784601275878
-        },
-        {
-            "statement": "WTI Crude Oil price drops by 1.5% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.26,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI rose throughout the window, ending at +2.8% (85.56 $/bbl) rather than dropping 1.5%.",
-            "resolved_ms": 1784686180733,
-            "ts": 1784599435000
         }
     ]
 }
