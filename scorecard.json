@@ -1,15 +1,20 @@
 {
-    "resolved": 258,
-    "open": 1775,
-    "due": 8,
+    "resolved": 261,
+    "open": 1814,
+    "due": 10,
     "unresolvable": 51,
-    "brier": 0.262,
+    "brier": 0.264,
     "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 258,
-            "brier": 0.262,
+            "resolved": 260,
+            "brier": 0.263,
             "hit_rate": 0.56
+        },
+        "week": {
+            "resolved": 1,
+            "brier": 0.436,
+            "hit_rate": 0.0
         }
     },
     "calibration": [
@@ -21,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 56,
+            "n": 57,
             "avg_predicted": 0.29,
             "observed": 0.07
         },
@@ -33,42 +38,75 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 64,
+            "n": 65,
             "avg_predicted": 0.67,
-            "observed": 0.16
+            "observed": 0.15
         },
         {
             "bin": "80\u2013100%",
-            "n": 24,
+            "n": 25,
             "avg_predicted": 0.82,
-            "observed": 0.17
+            "observed": 0.16
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 258,
-            "brier": 0.31
+            "resolved": 261,
+            "brier": 0.312
         },
         "Economist": {
-            "resolved": 258,
-            "brier": 0.324
+            "resolved": 261,
+            "brier": 0.325
         },
         "Naturalist": {
-            "resolved": 258,
-            "brier": 0.353
+            "resolved": 261,
+            "brier": 0.354
         },
         "Skeptic": {
-            "resolved": 257,
-            "brier": 0.196
+            "resolved": 260,
+            "brier": 0.199
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1031,
-            "brier": 0.296
+            "resolved": 1043,
+            "brier": 0.298
         }
     },
     "recent": [
+        {
+            "statement": "The European Aviation Safety Agency (EASA) will extend its airspace restrictions for Bahrain, Kuwait, Qatar, and the UAE within the next week",
+            "horizon": "week",
+            "probability": 0.66,
+            "location": "Bahrain, Kuwait, Qatar, and UAE",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and an EASA extension of airspace restrictions for these Gulf states would certainly have been captured had it occurred.",
+            "resolved_ms": 1784746251940,
+            "ts": 1784141350380
+        },
+        {
+            "statement": "CL=F will close at $84.50",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal captures CL=F's closing price, and a specific settlement of $84.50 would have been recorded if it had occurred.",
+            "resolved_ms": 1784746249725,
+            "ts": 1784658367770
+        },
+        {
+            "statement": "A magnitude 5.8 earthquake will strike the Kermadec Islands Region",
+            "horizon": "24h",
+            "probability": 0.27,
+            "location": "Kermadec Islands Region",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a magnitude 5.8 earthquake in the Kermadec Islands Region within the window, and such an event would have been recorded.",
+            "resolved_ms": 1784744186781,
+            "ts": 1784656515120
+        },
         {
             "statement": "US crude oil prices will rise by more than 2% in the next 24 hours",
             "horizon": "24h",
@@ -167,39 +205,6 @@
             "evidence": "The current snapshot S12 shows WTI Crude Oil at 86.99 $/bbl with a +2.45% change, exceeding the 1% increase threshold.",
             "resolved_ms": 1784725935400,
             "ts": 1784638109563
-        },
-        {
-            "statement": "CL=F will increase by at least 1% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows CL=F increased by at least 1% within the window, though such a price move would have been recorded.",
-            "resolved_ms": 1784725928421,
-            "ts": 1784636261752
-        },
-        {
-            "statement": "NG=F will fall by at least 2% over the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows NG=F falling by at least 2% within the window, which such a price move would have been reflected.",
-            "resolved_ms": 1784722325021,
-            "ts": 1784634425683
-        },
-        {
-            "statement": "Natural Gas (NG=F) will fall by more than 1% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.56,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, so there is no evidence that natural gas fell by more than 1% within the window.",
-            "resolved_ms": 1784722323026,
-            "ts": 1784632594682
         }
     ]
 }
