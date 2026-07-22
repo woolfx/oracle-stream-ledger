@@ -1,14 +1,14 @@
 {
-    "resolved": 251,
-    "open": 1740,
+    "resolved": 253,
+    "open": 1743,
     "due": 9,
     "unresolvable": 51,
-    "brier": 0.264,
+    "brier": 0.265,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 251,
-            "brier": 0.264,
+            "resolved": 253,
+            "brier": 0.265,
             "hit_rate": 0.55
         }
     },
@@ -33,9 +33,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 61,
+            "n": 63,
             "avg_predicted": 0.67,
-            "observed": 0.15
+            "observed": 0.14
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 251,
-            "brier": 0.307
+            "resolved": 253,
+            "brier": 0.31
         },
         "Economist": {
-            "resolved": 251,
+            "resolved": 253,
             "brier": 0.327
         },
         "Naturalist": {
-            "resolved": 251,
-            "brier": 0.358
+            "resolved": 253,
+            "brier": 0.36
         },
         "Skeptic": {
-            "resolved": 250,
-            "brier": 0.196
+            "resolved": 252,
+            "brier": 0.199
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1003,
-            "brier": 0.297
+            "resolved": 1011,
+            "brier": 0.299
         }
     },
     "recent": [
+        {
+            "statement": "EIA weekly petroleum status report will move CL=F by +1.2% over the next 24h",
+            "horizon": "24h",
+            "probability": 0.71,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The EIA petroleum status report was scheduled for 2026-07-29, well after the forecast's 2026-07-22 window closed, and no signal shows any +1.2% move in CL=F occurred.",
+            "resolved_ms": 1784733161549,
+            "ts": 1784645469237
+        },
+        {
+            "statement": "EIA weekly petroleum status report moves CL=F by at least 1%.",
+            "horizon": "24h",
+            "probability": 0.69,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The EIA petroleum status report was scheduled for 2026-07-29 (per S2/S4), outside the forecast's window closing 2026-07-22, so no signal shows it moved CL=F by 1% within the window.",
+            "resolved_ms": 1784733158288,
+            "ts": 1784643628627
+        },
         {
             "statement": "The EIA weekly petroleum status report will move CL=F by +2.5%.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "The EIA petroleum status report is scheduled for 2026-07-29, after the forecast's window closed on 2026-07-22, so no such report could have moved CL=F within the window.",
             "resolved_ms": 1784711495861,
             "ts": 1784623395810
-        },
-        {
-            "statement": "The EIA weekly petroleum status report will move CL=F by more than 1%.",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The EIA weekly petroleum status report is scheduled for 2026-07-29, seven days after the forecast window closed on 2026-07-22, so it could not have moved CL=F within the window.",
-            "resolved_ms": 1784711491965,
-            "ts": 1784621560340
-        },
-        {
-            "statement": "The EIA weekly petroleum status report will move CL=F by +2.5% in the next 24h",
-            "horizon": "24h",
-            "probability": 0.47,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The EIA weekly petroleum status report is scheduled for 2026-07-29, outside the forecast's window that closed 2026-07-22, so no report could have moved CL=F by +2.5% within the window.",
-            "resolved_ms": 1784707876910,
-            "ts": 1784619715098
         }
     ]
 }
