@@ -1,14 +1,14 @@
 {
-    "resolved": 257,
-    "open": 1766,
-    "due": 7,
+    "resolved": 258,
+    "open": 1775,
+    "due": 8,
     "unresolvable": 51,
-    "brier": 0.263,
+    "brier": 0.262,
     "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 257,
-            "brier": 0.263,
+            "resolved": 258,
+            "brier": 0.262,
             "hit_rate": 0.56
         }
     },
@@ -33,9 +33,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 63,
+            "n": 64,
             "avg_predicted": 0.67,
-            "observed": 0.14
+            "observed": 0.16
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 257,
-            "brier": 0.311
+            "resolved": 258,
+            "brier": 0.31
         },
         "Economist": {
-            "resolved": 257,
-            "brier": 0.325
+            "resolved": 258,
+            "brier": 0.324
         },
         "Naturalist": {
-            "resolved": 257,
-            "brier": 0.354
+            "resolved": 258,
+            "brier": 0.353
         },
         "Skeptic": {
-            "resolved": 256,
+            "resolved": 257,
             "brier": 0.196
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1027,
-            "brier": 0.297
+            "resolved": 1031,
+            "brier": 0.296
         }
     },
     "recent": [
+        {
+            "statement": "US crude oil prices will rise by more than 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.76,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S11 [now] shows WTI Crude Oil at +2.17%, exceeding the stated 2% rise threshold for US crude within the window.",
+            "resolved_ms": 1784742014812,
+            "ts": 1784654670319
+        },
         {
             "statement": "The US dollar will strengthen by 1% against the euro in the next 24 hours.",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "No captured signal concerns this forecast, so there is no evidence that natural gas fell by more than 1% within the window.",
             "resolved_ms": 1784722323026,
             "ts": 1784632594682
-        },
-        {
-            "statement": "The EIA weekly petroleum status report will move CL=F by at least 1%.",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The EIA weekly petroleum status report is scheduled for 2026-07-29, after the forecast window closed 2026-07-22, so it could not have moved CL=F within the window.",
-            "resolved_ms": 1784718720766,
-            "ts": 1784628904512
         }
     ]
 }
