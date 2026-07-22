@@ -1,15 +1,15 @@
 {
-    "resolved": 244,
-    "open": 1711,
+    "resolved": 246,
+    "open": 1717,
     "due": 8,
     "unresolvable": 51,
-    "brier": 0.26,
-    "hit_rate": 0.57,
+    "brier": 0.262,
+    "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 244,
-            "brier": 0.26,
-            "hit_rate": 0.57
+            "resolved": 246,
+            "brier": 0.262,
+            "hit_rate": 0.56
         }
     },
     "calibration": [
@@ -33,42 +33,64 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 56,
+            "n": 57,
             "avg_predicted": 0.67,
             "observed": 0.14
         },
         {
             "bin": "80\u2013100%",
-            "n": 23,
+            "n": 24,
             "avg_predicted": 0.82,
             "observed": 0.17
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 244,
-            "brier": 0.303
+            "resolved": 246,
+            "brier": 0.304
         },
         "Economist": {
-            "resolved": 244,
-            "brier": 0.322
+            "resolved": 246,
+            "brier": 0.324
         },
         "Naturalist": {
-            "resolved": 244,
-            "brier": 0.353
+            "resolved": 246,
+            "brier": 0.356
         },
         "Skeptic": {
-            "resolved": 243,
-            "brier": 0.193
+            "resolved": 245,
+            "brier": 0.196
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 975,
-            "brier": 0.293
+            "resolved": 983,
+            "brier": 0.295
         }
     },
     "recent": [
+        {
+            "statement": "The EIA weekly petroleum status report will move CL=F by at least 1%.",
+            "horizon": "24h",
+            "probability": 0.8,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The EIA weekly petroleum status report is scheduled for 2026-07-29, after the forecast window closed 2026-07-22, so it could not have moved CL=F within the window.",
+            "resolved_ms": 1784718720766,
+            "ts": 1784628904512
+        },
+        {
+            "statement": "The price of natural gas will drop by at least 2% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.66,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports natural gas prices; all signals concern crude oil, VIX, and FOMC meetings, so the claimed 2% natural gas drop cannot be confirmed.",
+            "resolved_ms": 1784718716698,
+            "ts": 1784610500904
+        },
         {
             "statement": "The VIX fear gauge will exceed 20 within the next 24 hours.",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "No captured signal concerns this forecast, so there is no evidence the event occurred within its closed window.",
             "resolved_ms": 1784693404102,
             "ts": 1784606813153
-        },
-        {
-            "statement": "NG=F will drop by 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.34,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a 2% NG=F price drop within the window would have been recorded if it occurred.",
-            "resolved_ms": 1784693401824,
-            "ts": 1784604958054
-        },
-        {
-            "statement": "WTI Crude Oil price will drop by at least 2% within the next 24h",
-            "horizon": "24h",
-            "probability": 0.43,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The latest WTI snapshot shows the price at 85.2 $/bbl up +2.37%, rising rather than dropping 2%, so the forecast did not occur.",
-            "resolved_ms": 1784689794686,
-            "ts": 1784603108458
         }
     ]
 }
