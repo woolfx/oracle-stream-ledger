@@ -1,15 +1,15 @@
 {
-    "resolved": 231,
-    "open": 1635,
+    "resolved": 233,
+    "open": 1641,
     "due": 8,
     "unresolvable": 51,
-    "brier": 0.261,
-    "hit_rate": 0.55,
+    "brier": 0.26,
+    "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 231,
-            "brier": 0.261,
-            "hit_rate": 0.55
+            "resolved": 233,
+            "brier": 0.26,
+            "hit_rate": 0.56
         }
     },
     "calibration": [
@@ -21,13 +21,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 51,
+            "n": 52,
             "avg_predicted": 0.29,
             "observed": 0.08
         },
         {
             "bin": "40\u201360%",
-            "n": 72,
+            "n": 73,
             "avg_predicted": 0.49,
             "observed": 0.1
         },
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 231,
-            "brier": 0.307
+            "resolved": 233,
+            "brier": 0.306
         },
         "Economist": {
-            "resolved": 231,
-            "brier": 0.315
+            "resolved": 233,
+            "brier": 0.316
         },
         "Naturalist": {
-            "resolved": 231,
-            "brier": 0.356
+            "resolved": 233,
+            "brier": 0.354
         },
         "Skeptic": {
-            "resolved": 230,
-            "brier": 0.197
+            "resolved": 232,
+            "brier": 0.195
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 923,
-            "brier": 0.294
+            "resolved": 931,
+            "brier": 0.293
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil price will drop by at least 2% within the next 24h",
+            "horizon": "24h",
+            "probability": 0.43,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest WTI snapshot shows the price at 85.2 $/bbl up +2.37%, rising rather than dropping 2%, so the forecast did not occur.",
+            "resolved_ms": 1784689794686,
+            "ts": 1784603108458
+        },
+        {
+            "statement": "The price of WTI Crude Oil will drop by at least 2% within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.33,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current snapshot shows WTI at 85.2 $/bbl up +2.37%, not dropping, and no signal shows a 2% decline within the window.",
+            "resolved_ms": 1784689789292,
+            "ts": 1784601275878
+        },
         {
             "statement": "WTI Crude Oil price drops by 1.5% within the next 24 hours",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "S13 shows Henry Hub natural gas at 2.89 $/MMBtu up +0.98%, not falling by more than 2%.",
             "resolved_ms": 1784668120850,
             "ts": 1784579152652
-        },
-        {
-            "statement": "WTI Crude Oil price will drop by at least 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.26,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The most recent WTI reading (S11) shows +1.74%, an increase rather than the required \u22652% drop, and no signal shows any decline.",
-            "resolved_ms": 1784664517916,
-            "ts": 1784577312248
-        },
-        {
-            "statement": "WTI Crude Oil price drops by at least 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.22,
-            "location": "",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The latest WTI snapshot shows the price up +1.71% at 84.65 $/bbl, not down 2% or more, so the forecast did not occur.",
-            "resolved_ms": 1784662238713,
-            "ts": 1784575506304
         }
     ]
 }
