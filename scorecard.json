@@ -1,15 +1,15 @@
 {
-    "resolved": 228,
-    "open": 1619,
-    "due": 7,
+    "resolved": 229,
+    "open": 1628,
+    "due": 8,
     "unresolvable": 51,
-    "brier": 0.261,
-    "hit_rate": 0.56,
+    "brier": 0.262,
+    "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 228,
-            "brier": 0.261,
-            "hit_rate": 0.56
+            "resolved": 229,
+            "brier": 0.262,
+            "hit_rate": 0.55
         }
     },
     "calibration": [
@@ -33,9 +33,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 55,
+            "n": 56,
             "avg_predicted": 0.67,
-            "observed": 0.15
+            "observed": 0.14
         },
         {
             "bin": "80\u2013100%",
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 228,
+            "resolved": 229,
             "brier": 0.308
         },
         "Economist": {
-            "resolved": 228,
-            "brier": 0.315
+            "resolved": 229,
+            "brier": 0.314
         },
         "Naturalist": {
-            "resolved": 228,
+            "resolved": 229,
             "brier": 0.357
         },
         "Skeptic": {
-            "resolved": 227,
-            "brier": 0.196
+            "resolved": 228,
+            "brier": 0.198
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 911,
+            "resolved": 915,
             "brier": 0.294
         }
     },
     "recent": [
+        {
+            "statement": "Natural Gas (Henry Hub) price will drop by at least 0.5% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.63,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S14 shows Henry Hub natural gas at 2.89 $/MMBtu up +1.08%, the opposite of the forecasted 0.5% drop.",
+            "resolved_ms": 1784682559607,
+            "ts": 1784595748921
+        },
         {
             "statement": "WTI Crude Oil price will drop by at least 1% in the next 24 hours",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "The current snapshot S12 shows Brent Crude at 91.38 $/bbl, up +2.42%, exceeding the 2% threshold.",
             "resolved_ms": 1784662232058,
             "ts": 1784575394680
-        },
-        {
-            "statement": "The EIA weekly petroleum status report will move CL=F by at least 1%.",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows the EIA report was still scheduled for 2026-07-22, after the forecast window closed 2026-07-21, and no signal shows any 1% CL=F move occurred.",
-            "resolved_ms": 1784658627161,
-            "ts": 1784571666234
         }
     ]
 }
