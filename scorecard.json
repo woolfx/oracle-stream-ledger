@@ -1,33 +1,33 @@
 {
-    "resolved": 253,
-    "open": 1743,
-    "due": 9,
+    "resolved": 257,
+    "open": 1766,
+    "due": 7,
     "unresolvable": 51,
-    "brier": 0.265,
-    "hit_rate": 0.55,
+    "brier": 0.263,
+    "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 253,
-            "brier": 0.265,
-            "hit_rate": 0.55
+            "resolved": 257,
+            "brier": 0.263,
+            "hit_rate": 0.56
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 33,
+            "n": 34,
             "avg_predicted": 0.12,
             "observed": 0.09
         },
         {
             "bin": "20\u201340%",
-            "n": 54,
+            "n": 56,
             "avg_predicted": 0.29,
             "observed": 0.07
         },
         {
             "bin": "40\u201360%",
-            "n": 79,
+            "n": 80,
             "avg_predicted": 0.49,
             "observed": 0.09
         },
@@ -46,29 +46,73 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 253,
-            "brier": 0.31
+            "resolved": 257,
+            "brier": 0.311
         },
         "Economist": {
-            "resolved": 253,
-            "brier": 0.327
+            "resolved": 257,
+            "brier": 0.325
         },
         "Naturalist": {
-            "resolved": 253,
-            "brier": 0.36
+            "resolved": 257,
+            "brier": 0.354
         },
         "Skeptic": {
-            "resolved": 252,
-            "brier": 0.199
+            "resolved": 256,
+            "brier": 0.196
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1011,
-            "brier": 0.299
+            "resolved": 1027,
+            "brier": 0.297
         }
     },
     "recent": [
+        {
+            "statement": "The US dollar will strengthen by 1% against the euro in the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.26,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any EUR/USD exchange rate movement, so the claimed 1% dollar strengthening is not shown to have occurred.",
+            "resolved_ms": 1784739351191,
+            "ts": 1784652826113
+        },
+        {
+            "statement": "The EIA weekly petroleum status report will move CL=F by +2.5%.",
+            "horizon": "24h",
+            "probability": 0.49,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The EIA weekly petroleum status report is scheduled for 2026-07-29, after the window closed on 2026-07-22, so no report-driven CL=F move occurred within the window.",
+            "resolved_ms": 1784739347473,
+            "ts": 1784650994000
+        },
+        {
+            "statement": "A magnitude 6.0 earthquake will occur in the Kermadec Islands Region within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.19,
+            "location": "Kermadec Islands Region",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 reports only a magnitude 5.6 earthquake in the Kermadec Islands Region, below the forecast's 6.0 threshold, and no signal shows a 6.0 event.",
+            "resolved_ms": 1784736769240,
+            "ts": 1784647304081
+        },
+        {
+            "statement": "The price of NG=F will fall by at least 1% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.36,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports NG=F (natural gas) prices at all; all signals concern crude oil, VIX, and FOMC dates, so no evidence shows a 1% drop in natural gas.",
+            "resolved_ms": 1784736766389,
+            "ts": 1784641791387
+        },
         {
             "statement": "EIA weekly petroleum status report will move CL=F by +1.2% over the next 24h",
             "horizon": "24h",
@@ -156,50 +200,6 @@
             "evidence": "The EIA weekly petroleum status report is scheduled for 2026-07-29, after the forecast window closed 2026-07-22, so it could not have moved CL=F within the window.",
             "resolved_ms": 1784718720766,
             "ts": 1784628904512
-        },
-        {
-            "statement": "The price of natural gas will drop by at least 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.66,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports natural gas prices; all signals concern crude oil, VIX, and FOMC meetings, so the claimed 2% natural gas drop cannot be confirmed.",
-            "resolved_ms": 1784718716698,
-            "ts": 1784610500904
-        },
-        {
-            "statement": "The VIX fear gauge will exceed 20 within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.48,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "VIX remained at 17.49, below the 20 threshold, throughout the window including the current snapshot.",
-            "resolved_ms": 1784715108867,
-            "ts": 1784625225873
-        },
-        {
-            "statement": "Oil prices will rise by at least $1/bbl in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.29,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude is shown down -7.27% at 84.39 $/bbl, indicating oil fell rather than rising by at least $1/bbl.",
-            "resolved_ms": 1784715099211,
-            "ts": 1784582842168
-        },
-        {
-            "statement": "The EIA weekly petroleum status report will move CL=F by at least 1%.",
-            "horizon": "24h",
-            "probability": 0.8,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The EIA petroleum status report is scheduled for 2026-07-29, after the forecast's window closed on 2026-07-22, so no such report could have moved CL=F within the window.",
-            "resolved_ms": 1784711495861,
-            "ts": 1784623395810
         }
     ]
 }
