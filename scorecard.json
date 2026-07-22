@@ -1,15 +1,15 @@
 {
-    "resolved": 239,
-    "open": 1681,
-    "due": 9,
+    "resolved": 240,
+    "open": 1692,
+    "due": 10,
     "unresolvable": 51,
     "brier": 0.257,
-    "hit_rate": 0.56,
+    "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 239,
+            "resolved": 240,
             "brier": 0.257,
-            "hit_rate": 0.56
+            "hit_rate": 0.57
         }
     },
     "calibration": [
@@ -27,7 +27,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 76,
+            "n": 77,
             "avg_predicted": 0.49,
             "observed": 0.09
         },
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 239,
+            "resolved": 240,
             "brier": 0.302
         },
         "Economist": {
-            "resolved": 239,
-            "brier": 0.317
+            "resolved": 240,
+            "brier": 0.318
         },
         "Naturalist": {
-            "resolved": 239,
+            "resolved": 240,
             "brier": 0.352
         },
         "Skeptic": {
-            "resolved": 238,
+            "resolved": 239,
             "brier": 0.191
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 955,
+            "resolved": 959,
             "brier": 0.291
         }
     },
     "recent": [
+        {
+            "statement": "The EIA weekly petroleum status report will move CL=F by +2.5% in the next 24h",
+            "horizon": "24h",
+            "probability": 0.47,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The EIA weekly petroleum status report is scheduled for 2026-07-29, outside the forecast's window that closed 2026-07-22, so no report could have moved CL=F by +2.5% within the window.",
+            "resolved_ms": 1784707876910,
+            "ts": 1784619715098
+        },
         {
             "statement": "NG=F drops by 2% within the next 24h",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "S14 shows Henry Hub natural gas at 2.89 $/MMBtu up +1.08%, the opposite of the forecasted 0.5% drop.",
             "resolved_ms": 1784682559607,
             "ts": 1784595748921
-        },
-        {
-            "statement": "WTI Crude Oil price will drop by at least 1% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.59,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The latest WTI reading rose to 84.82 $/bbl (+1.91%), showing a gain rather than the required 1% drop.",
-            "resolved_ms": 1784678950213,
-            "ts": 1784592062368
         }
     ]
 }
