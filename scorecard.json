@@ -1,15 +1,15 @@
 {
-    "resolved": 223,
-    "open": 1608,
-    "due": 10,
+    "resolved": 226,
+    "open": 1613,
+    "due": 9,
     "unresolvable": 51,
-    "brier": 0.263,
-    "hit_rate": 0.55,
+    "brier": 0.261,
+    "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 223,
-            "brier": 0.263,
-            "hit_rate": 0.55
+            "resolved": 226,
+            "brier": 0.261,
+            "hit_rate": 0.56
         }
     },
     "calibration": [
@@ -21,13 +21,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 49,
+            "n": 50,
             "avg_predicted": 0.29,
             "observed": 0.08
         },
         {
             "bin": "40\u201360%",
-            "n": 67,
+            "n": 69,
             "avg_predicted": 0.49,
             "observed": 0.1
         },
@@ -46,29 +46,62 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 223,
-            "brier": 0.312
+            "resolved": 226,
+            "brier": 0.309
         },
         "Economist": {
-            "resolved": 223,
+            "resolved": 226,
             "brier": 0.315
         },
         "Naturalist": {
-            "resolved": 223,
-            "brier": 0.36
+            "resolved": 226,
+            "brier": 0.357
         },
         "Skeptic": {
-            "resolved": 222,
+            "resolved": 225,
             "brier": 0.195
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 891,
-            "brier": 0.296
+            "resolved": 903,
+            "brier": 0.294
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil price will rise by 2% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.41,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI started at 84.52 and the latest snapshot shows only 84.71 (~+0.22%), far short of the 2% rise (~86.21) required within the window.",
+            "resolved_ms": 1784675338766,
+            "ts": 1784588373794
+        },
+        {
+            "statement": "WTI Crude Oil price will drop by 1.5% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.45,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest WTI snapshot shows the price rising to 84.71 (+1.78%), not dropping by 1.5%, and no signal shows any decline.",
+            "resolved_ms": 1784675332862,
+            "ts": 1784586521698
+        },
+        {
+            "statement": "WTI Crude Oil price will drop by more than 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.36,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest WTI snapshot (S12) shows the price up +1.78% at 84.71, not dropping more than 2%, so the forecast did not come true.",
+            "resolved_ms": 1784675329788,
+            "ts": 1784584677400
+        },
         {
             "statement": "Natural Gas (Henry Hub) price will drop by 2% within the next 24 hours",
             "horizon": "24h",
@@ -167,39 +200,6 @@
             "evidence": "S1 shows the EIA report was merely scheduled for 2026-07-22 (after the window closed 2026-07-21) and no signal shows any +2.5% move in CL=F.",
             "resolved_ms": 1784651420458,
             "ts": 1784564269323
-        },
-        {
-            "statement": "The price of Natural Gas (Henry Hub) will fall by at least 2% in the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.24,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Henry Hub natural gas is up +0.31% at 2.87 $/MMBtu, not down 2%.",
-            "resolved_ms": 1784651415178,
-            "ts": 1784562432671
-        },
-        {
-            "statement": "The price of Natural Gas (Henry Hub) will decrease by more than 2% in the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.56,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Henry Hub natural gas signal shows +0.31%, not a decrease exceeding 2%.",
-            "resolved_ms": 1784651413203,
-            "ts": 1784555062243
-        },
-        {
-            "statement": "Natural Gas (Henry Hub) price will drop by 3% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.27,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Henry Hub natural gas prices; the archived signals cover only crude oil, equities, VIX, and FOMC dates, none showing a 3% natural gas drop.",
-            "resolved_ms": 1784647807529,
-            "ts": 1784560601636
         }
     ]
 }
