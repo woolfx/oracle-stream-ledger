@@ -1,20 +1,20 @@
 {
-    "resolved": 272,
-    "open": 1864,
-    "due": 13,
+    "resolved": 277,
+    "open": 1866,
+    "due": 11,
     "unresolvable": 51,
-    "brier": 0.266,
+    "brier": 0.265,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 264,
+            "resolved": 265,
             "brier": 0.265,
             "hit_rate": 0.55
         },
         "week": {
-            "resolved": 8,
-            "brier": 0.279,
-            "hit_rate": 0.5
+            "resolved": 12,
+            "brier": 0.261,
+            "hit_rate": 0.58
         }
     },
     "calibration": [
@@ -26,19 +26,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 59,
+            "n": 62,
             "avg_predicted": 0.29,
-            "observed": 0.07
+            "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 85,
+            "n": 86,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 69,
+            "n": 70,
             "avg_predicted": 0.67,
             "observed": 0.14
         },
@@ -51,29 +51,84 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 272,
-            "brier": 0.313
+            "resolved": 277,
+            "brier": 0.312
         },
         "Economist": {
-            "resolved": 272,
-            "brier": 0.333
+            "resolved": 277,
+            "brier": 0.331
         },
         "Naturalist": {
-            "resolved": 272,
-            "brier": 0.358
+            "resolved": 277,
+            "brier": 0.359
         },
         "Skeptic": {
-            "resolved": 271,
+            "resolved": 276,
             "brier": 0.197
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1087,
+            "resolved": 1107,
             "brier": 0.3
         }
     },
     "recent": [
+        {
+            "statement": "Tropical Storm ELIDA-26 will make landfall in Mexico",
+            "horizon": "week",
+            "probability": 0.35,
+            "location": "EastPacific, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S3 shows ELIDA-26 as a green-alert tropical storm located far out in the Pacific at @26.4,-127.2 with zero population affected, indicating no landfall in Mexico occurred.",
+            "resolved_ms": 1784761214819,
+            "ts": 1784156254657
+        },
+        {
+            "statement": "CL=F will move up by 2.5% within the next 24h",
+            "horizon": "24h",
+            "probability": 0.54,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows CL=F moving up 2.5% within the window, and such a move would have been captured.",
+            "resolved_ms": 1784761210546,
+            "ts": 1784673606500
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in East Asia within the next week",
+            "horizon": "week",
+            "probability": 0.38,
+            "location": "East Asia",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only cyclone signals are green tropical-storm alerts with zero Category-1 population impact and coordinates outside East Asia, so no signal shows a tropical cyclone making landfall in East Asia.",
+            "resolved_ms": 1784761208421,
+            "ts": 1784154406365
+        },
+        {
+            "statement": "A major wildfire will break out in California due to high temperatures and dry conditions.",
+            "horizon": "week",
+            "probability": 0.72,
+            "location": "California",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The window closed and no numbered signal's text shows a major California wildfire breaking out; the wildfire section was trimmed with no supporting event evidence provided.",
+            "resolved_ms": 1784761202879,
+            "ts": 1784152552179
+        },
+        {
+            "statement": "A magnitude 6.5 earthquake will occur in the East Of South Sandwich Islands.",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "East Of South Sandwich Islands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports a magnitude 6.5 earthquake east of the South Sandwich Islands within the window, and an event that large would have been captured.",
+            "resolved_ms": 1784761198063,
+            "ts": 1784152552179
+        },
         {
             "statement": "A magnitude 6.5 earthquake will occur in the Philippines",
             "horizon": "week",
@@ -150,61 +205,6 @@
             "evidence": "The current WTI snapshot shows only +1.85%, below the required 2% increase threshold.",
             "resolved_ms": 1784757559379,
             "ts": 1784663864398
-        },
-        {
-            "statement": "WTI Crude Oil price will drop by at least 2% within the next 24h",
-            "horizon": "24h",
-            "probability": 0.66,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The latest WTI snapshot shows the price at 86.48 $/bbl (+1.85%), rising rather than dropping at least 2% within the window.",
-            "resolved_ms": 1784757552163,
-            "ts": 1784662035020
-        },
-        {
-            "statement": "The price of oil will increase by at least $2 per barrel due to supply chain disruptions in the Strait of Hormuz",
-            "horizon": "week",
-            "probability": 0.4,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S10 shows reduced Hormuz transits (a condition, not a disruption event), and no signal attributes the oil price rise to Strait of Hormuz supply-chain disruption, so the compound claim is not confirmed.",
-            "resolved_ms": 1784757544114,
-            "ts": 1784142881398
-        },
-        {
-            "statement": "The price of oil will surge by at least $10 per barrel within the next week due to supply chain disruptions in the Strait of Hormuz.",
-            "horizon": "week",
-            "probability": 0.46,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent at 93.88 (+3.15%) and WTI at 86.75 (+2.17%) show only single-digit percentage moves, nowhere near the required $10/bbl surge, despite reduced Hormuz transits.",
-            "resolved_ms": 1784757535790,
-            "ts": 1784141895788
-        },
-        {
-            "statement": "Tropical cyclone BAVI-26 makes landfall in China",
-            "horizon": "week",
-            "probability": 0.65,
-            "location": "Bavianshan, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions cyclone BAVI-26 or a landfall in China; only unrelated green-alert cyclones (BERTHA, FAUSTO, ELIDA) far from China appear.",
-            "resolved_ms": 1784757530114,
-            "ts": 1784141851843
-        },
-        {
-            "statement": "The European Aviation Safety Agency (EASA) will extend its airspace restrictions for Bahrain, Kuwait, Qatar, and the UAE within the next week",
-            "horizon": "week",
-            "probability": 0.66,
-            "location": "Bahrain, Kuwait, Qatar, and UAE",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and an EASA extension of airspace restrictions for these Gulf states would certainly have been captured had it occurred.",
-            "resolved_ms": 1784746251940,
-            "ts": 1784141350380
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 272,
-        "base_rate": 0.1029,
-        "brier_raw": 0.2656,
-        "brier_base_rate": 0.0923,
+        "resolved_n": 277,
+        "base_rate": 0.1011,
+        "brier_raw": 0.2651,
+        "brier_base_rate": 0.0909,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
