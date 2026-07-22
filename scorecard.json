@@ -1,15 +1,15 @@
 {
-    "resolved": 250,
-    "open": 1735,
-    "due": 8,
+    "resolved": 251,
+    "open": 1740,
+    "due": 9,
     "unresolvable": 51,
-    "brier": 0.262,
-    "hit_rate": 0.56,
+    "brier": 0.264,
+    "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 250,
-            "brier": 0.262,
-            "hit_rate": 0.56
+            "resolved": 251,
+            "brier": 0.264,
+            "hit_rate": 0.55
         }
     },
     "calibration": [
@@ -33,7 +33,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 60,
+            "n": 61,
             "avg_predicted": 0.67,
             "observed": 0.15
         },
@@ -46,29 +46,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 250,
-            "brier": 0.306
+            "resolved": 251,
+            "brier": 0.307
         },
         "Economist": {
-            "resolved": 250,
-            "brier": 0.325
+            "resolved": 251,
+            "brier": 0.327
         },
         "Naturalist": {
-            "resolved": 250,
-            "brier": 0.357
+            "resolved": 251,
+            "brier": 0.358
         },
         "Skeptic": {
-            "resolved": 249,
+            "resolved": 250,
             "brier": 0.196
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 999,
-            "brier": 0.296
+            "resolved": 1003,
+            "brier": 0.297
         }
     },
     "recent": [
+        {
+            "statement": "The EIA weekly petroleum status report will move CL=F by +2.5%.",
+            "horizon": "24h",
+            "probability": 0.75,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The EIA weekly petroleum status report was scheduled for 2026-07-29, after the forecast's window closed 2026-07-22, so no CL=F move of +2.5% could have occurred within the window.",
+            "resolved_ms": 1784729539593,
+            "ts": 1784639952859
+        },
         {
             "statement": "WTI Crude Oil price will increase by more than 1% in the next 24 hours",
             "horizon": "24h",
@@ -189,17 +200,6 @@
             "evidence": "The EIA weekly petroleum status report is scheduled for 2026-07-29, outside the forecast's window that closed 2026-07-22, so no report could have moved CL=F by +2.5% within the window.",
             "resolved_ms": 1784707876910,
             "ts": 1784619715098
-        },
-        {
-            "statement": "NG=F drops by 2% within the next 24h",
-            "horizon": "24h",
-            "probability": 0.55,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a 2% move in NG=F would certainly have been captured within the closed window.",
-            "resolved_ms": 1784700643163,
-            "ts": 1784614164673
         }
     ]
 }
