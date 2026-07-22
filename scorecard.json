@@ -1,13 +1,13 @@
 {
-    "resolved": 226,
-    "open": 1613,
-    "due": 9,
+    "resolved": 228,
+    "open": 1619,
+    "due": 7,
     "unresolvable": 51,
     "brier": 0.261,
     "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 226,
+            "resolved": 228,
             "brier": 0.261,
             "hit_rate": 0.56
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 69,
+            "n": 71,
             "avg_predicted": 0.49,
             "observed": 0.1
         },
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 226,
-            "brier": 0.309
+            "resolved": 228,
+            "brier": 0.308
         },
         "Economist": {
-            "resolved": 226,
+            "resolved": 228,
             "brier": 0.315
         },
         "Naturalist": {
-            "resolved": 226,
+            "resolved": 228,
             "brier": 0.357
         },
         "Skeptic": {
-            "resolved": 225,
-            "brier": 0.195
+            "resolved": 227,
+            "brier": 0.196
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 903,
+            "resolved": 911,
             "brier": 0.294
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil price will drop by at least 1% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.59,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest WTI reading rose to 84.82 $/bbl (+1.91%), showing a gain rather than the required 1% drop.",
+            "resolved_ms": 1784678950213,
+            "ts": 1784592062368
+        },
+        {
+            "statement": "WTI Crude Oil price will drop by 2% within the next 24h",
+            "horizon": "24h",
+            "probability": 0.4,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest WTI signal shows the price up +1.91% to 84.82, not down 2%, so the forecast did not come true.",
+            "resolved_ms": 1784678946323,
+            "ts": 1784590229463
+        },
         {
             "statement": "WTI Crude Oil price will rise by 2% within the next 24 hours",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "S1 shows the EIA report was still scheduled for 2026-07-22, after the forecast window closed 2026-07-21, and no signal shows any 1% CL=F move occurred.",
             "resolved_ms": 1784658627161,
             "ts": 1784571666234
-        },
-        {
-            "statement": "The VIX fear gauge will increase by more than 5% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.43,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The final snapshot shows VIX down 8.26%, not up more than 5%, and all archived signals show declines.",
-            "resolved_ms": 1784655023150,
-            "ts": 1784566105637
-        },
-        {
-            "statement": "EIA weekly petroleum status report will move CL=F by +2.5% in the next 24h",
-            "horizon": "24h",
-            "probability": 0.31,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows the EIA report was merely scheduled for 2026-07-22 (after the window closed 2026-07-21) and no signal shows any +2.5% move in CL=F.",
-            "resolved_ms": 1784651420458,
-            "ts": 1784564269323
         }
     ]
 }
