@@ -1,13 +1,13 @@
 {
-    "resolved": 233,
-    "open": 1641,
-    "due": 8,
+    "resolved": 235,
+    "open": 1647,
+    "due": 9,
     "unresolvable": 51,
     "brier": 0.26,
     "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 233,
+            "resolved": 235,
             "brier": 0.26,
             "hit_rate": 0.56
         }
@@ -21,15 +21,15 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 52,
+            "n": 53,
             "avg_predicted": 0.29,
             "observed": 0.08
         },
         {
             "bin": "40\u201360%",
-            "n": 73,
+            "n": 74,
             "avg_predicted": 0.49,
-            "observed": 0.1
+            "observed": 0.09
         },
         {
             "bin": "60\u201380%",
@@ -46,29 +46,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 233,
+            "resolved": 235,
             "brier": 0.306
         },
         "Economist": {
-            "resolved": 233,
-            "brier": 0.316
+            "resolved": 235,
+            "brier": 0.318
         },
         "Naturalist": {
-            "resolved": 233,
-            "brier": 0.354
+            "resolved": 235,
+            "brier": 0.353
         },
         "Skeptic": {
-            "resolved": 232,
-            "brier": 0.195
+            "resolved": 234,
+            "brier": 0.194
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 931,
+            "resolved": 939,
             "brier": 0.293
         }
     },
     "recent": [
+        {
+            "statement": "NG=F will drop by more than 1% in the next 24h",
+            "horizon": "24h",
+            "probability": 0.49,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, so there is no evidence the event occurred within its closed window.",
+            "resolved_ms": 1784693404102,
+            "ts": 1784606813153
+        },
+        {
+            "statement": "NG=F will drop by 2% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.34,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a 2% NG=F price drop within the window would have been recorded if it occurred.",
+            "resolved_ms": 1784693401824,
+            "ts": 1784604958054
+        },
         {
             "statement": "WTI Crude Oil price will drop by at least 2% within the next 24h",
             "horizon": "24h",
@@ -178,28 +200,6 @@
             "evidence": "The latest WTI snapshot (S12) shows the price up +1.78% at 84.71, not dropping more than 2%, so the forecast did not come true.",
             "resolved_ms": 1784675329788,
             "ts": 1784584677400
-        },
-        {
-            "statement": "Natural Gas (Henry Hub) price will drop by 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.32,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Henry Hub natural gas is at 2.89 $/MMBtu up +0.98%, not down 2%, so the forecast drop did not occur.",
-            "resolved_ms": 1784668122984,
-            "ts": 1784581009235
-        },
-        {
-            "statement": "The price of Natural Gas (Henry Hub) will fall by more than 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.38,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S13 shows Henry Hub natural gas at 2.89 $/MMBtu up +0.98%, not falling by more than 2%.",
-            "resolved_ms": 1784668120850,
-            "ts": 1784579152652
         }
     ]
 }
