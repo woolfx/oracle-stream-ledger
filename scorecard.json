@@ -1,7 +1,7 @@
 {
     "resolved": 261,
-    "open": 1828,
-    "due": 13,
+    "open": 1863,
+    "due": 19,
     "unresolvable": 51,
     "brier": 0.264,
     "hit_rate": 0.56,
@@ -206,5 +206,19 @@
             "resolved_ms": 1784725935400,
             "ts": 1784638109563
         }
-    ]
+    ],
+    "self_calibration": {
+        "enabled": true,
+        "feedback": false,
+        "method": "platt",
+        "fallback": "none",
+        "fitted": true,
+        "resolved_n": 261,
+        "base_rate": 0.1073,
+        "brier_raw": 0.2637,
+        "brier_base_rate": 0.0958,
+        "brier_calibrated_oos": null,
+        "brier_calibrated_oos_n": 0,
+        "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
+    }
 }
