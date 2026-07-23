@@ -1,20 +1,20 @@
 {
-    "resolved": 328,
+    "resolved": 339,
     "open": 1947,
-    "due": 35,
+    "due": 45,
     "unresolvable": 51,
-    "brier": 0.262,
+    "brier": 0.261,
     "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
-            "resolved": 289,
-            "brier": 0.266,
-            "hit_rate": 0.54
+            "resolved": 291,
+            "brier": 0.267,
+            "hit_rate": 0.53
         },
         "week": {
-            "resolved": 39,
-            "brier": 0.229,
-            "hit_rate": 0.56
+            "resolved": 48,
+            "brier": 0.227,
+            "hit_rate": 0.58
         }
     },
     "calibration": [
@@ -26,19 +26,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 75,
+            "n": 79,
             "avg_predicted": 0.29,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 107,
+            "n": 110,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 85,
+            "n": 89,
             "avg_predicted": 0.67,
             "observed": 0.15
         },
@@ -51,29 +51,150 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 328,
-            "brier": 0.31
+            "resolved": 339,
+            "brier": 0.311
         },
         "Economist": {
-            "resolved": 328,
-            "brier": 0.332
+            "resolved": 339,
+            "brier": 0.329
         },
         "Naturalist": {
-            "resolved": 328,
+            "resolved": 339,
             "brier": 0.352
         },
         "Skeptic": {
-            "resolved": 327,
+            "resolved": 338,
             "brier": 0.193
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1311,
-            "brier": 0.297
+            "resolved": 1355,
+            "brier": 0.296
         }
     },
     "recent": [
+        {
+            "statement": "A Category 3 tropical cyclone will make landfall in Honduras",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "Honduras",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only tropical cyclone signals (BERTHA, FAUSTO, ELIDA) are green notifications with zero population affected at Category 1+, located far from Honduras, showing no Category 3 landfall there.",
+            "resolved_ms": 1784829578627,
+            "ts": 1784221379391
+        },
+        {
+            "statement": "A major earthquake will hit the South Sandwich Islands",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "East Of South Sandwich Islands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a major earthquake would certainly have been recorded within the closed window.",
+            "resolved_ms": 1784829575456,
+            "ts": 1784221348236
+        },
+        {
+            "statement": "A significant volcanic eruption will occur in the Philippines",
+            "horizon": "week",
+            "probability": 0.6,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal concerns a volcano in Costa Rica, not the Philippines, and no signal shows a significant eruption occurred in the Philippines during the window.",
+            "resolved_ms": 1784829573044,
+            "ts": 1784221007618
+        },
+        {
+            "statement": "A Category 1 cyclone will make landfall in the Philippines",
+            "horizon": "week",
+            "probability": 0.6,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a Category 1 cyclone making landfall in the Philippines; the three cyclone notifications are elsewhere and at tropical-storm intensity with zero Category 1 impact.",
+            "resolved_ms": 1784829571167,
+            "ts": 1784221007618
+        },
+        {
+            "statement": "A major cyberattack will occur on a prominent financial institution within the next week.",
+            "horizon": "week",
+            "probability": 0.28,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows a major cyberattack occurring on a prominent financial institution during the window, so an event that large would have been captured but was not.",
+            "resolved_ms": 1784829567881,
+            "ts": 1784220973990
+        },
+        {
+            "statement": "A major oil tanker will experience a mechanical failure in the Bab el-Mandeb Strait within the next week.",
+            "horizon": "week",
+            "probability": 0.45,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any oil tanker mechanical failure in the Bab el-Mandeb Strait; such an event would have been captured but none appears.",
+            "resolved_ms": 1784829565990,
+            "ts": 1784220973990
+        },
+        {
+            "statement": "NG=F price will increase by 4% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.52,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports NG=F (natural gas) price movement; only oil (WTI/Brent) prices are shown, so the required 4% natural gas increase is not evidenced.",
+            "resolved_ms": 1784829564020,
+            "ts": 1784739247603
+        },
+        {
+            "statement": "A major flood will occur in Austria",
+            "horizon": "week",
+            "probability": 0.78,
+            "location": "Austria",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a major flood occurring in Austria during the window, and such an event would certainly have been captured.",
+            "resolved_ms": 1784829559284,
+            "ts": 1784220437740
+        },
+        {
+            "statement": "A Category 2 tropical cyclone will make landfall in Honduras",
+            "horizon": "week",
+            "probability": 0.23,
+            "location": "Honduras",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are green alerts with zero Category 1+ impact and none near Honduras, so no Category 2 landfall occurred.",
+            "resolved_ms": 1784829557119,
+            "ts": 1784220437740
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will strike the coast of Central Chile",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "Chilean Coast",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports the forecast M5.0 earthquake on the Central Chile coast, and such an event would have been captured within the closed window.",
+            "resolved_ms": 1784829554187,
+            "ts": 1784220403442
+        },
+        {
+            "statement": "NG=F price will drop by 2% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.69,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports NG=F natural gas prices; only crude oil (WTI/Brent) signals appear, and they show price increases, so no captured evidence supports a 2% natural gas drop.",
+            "resolved_ms": 1784829550266,
+            "ts": 1784708567029
+        },
         {
             "statement": "Tensions between Iran and Saudi Arabia will escalate, leading to a naval confrontation in the Persian Gulf",
             "horizon": "week",
@@ -84,127 +205,6 @@
             "evidence": "The only Strait of Hormuz signal (S4) shows reduced ship transits, not a naval confrontation between Iran and Saudi Arabia; no signal reports any such event.",
             "resolved_ms": 1784825944551,
             "ts": 1784220111640
-        },
-        {
-            "statement": "NG=F will increase by at least 2% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.69,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows NG=F increased by at least 2% within the 24-hour window, and such a market move would have been recorded.",
-            "resolved_ms": 1784825941228,
-            "ts": 1784738060554
-        },
-        {
-            "statement": "A major flood will occur in the Rhine River region within the next week, causing significant damage to infrastructure and disrupting trade.",
-            "horizon": "week",
-            "probability": 0.5,
-            "location": "Rhine River Region",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a major Rhine River flood causing significant infrastructure damage or trade disruption during the window, though such an event would certainly have been captured.",
-            "resolved_ms": 1784825939064,
-            "ts": 1784219627083
-        },
-        {
-            "statement": "A cyberattack will compromise the Oracle E-Business Suite within the next week, causing significant disruption to businesses worldwide.",
-            "horizon": "week",
-            "probability": 0.28,
-            "location": "Global",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows any Oracle E-Business Suite cyberattack causing worldwide business disruption during the window.",
-            "resolved_ms": 1784825937111,
-            "ts": 1784219627083
-        },
-        {
-            "statement": "A Category 1 hurricane will make landfall in Honduras within the next week.",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "Honduras",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are far from Honduras, remain tropical-storm strength with zero Category 1 wind impact, so no Category 1 landfall in Honduras occurred.",
-            "resolved_ms": 1784825934496,
-            "ts": 1784219627083
-        },
-        {
-            "statement": "A major earthquake will strike the Pacific Ring of Fire within the next week, affecting the west coast of North America.",
-            "horizon": "week",
-            "probability": 0.65,
-            "location": "Pacific Ring of Fire, West Coast, North America",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal documents a major earthquake affecting the west coast of North America during the window, and such an event would certainly have been captured.",
-            "resolved_ms": 1784825930644,
-            "ts": 1784219583260
-        },
-        {
-            "statement": "A Category 1 tropical cyclone will make landfall in Honduras",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "Honduras",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The three tropical cyclone signals (BERTHA, FAUSTO, ELIDA) are located far from Honduras with zero population affected by Category 1 winds, and no signal shows a Category 1 landfall in Honduras.",
-            "resolved_ms": 1784825928888,
-            "ts": 1784218879307
-        },
-        {
-            "statement": "A major cyberattack will occur on the Oracle E-Business Suite within the next week",
-            "horizon": "week",
-            "probability": 0.4,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports a major cyberattack on Oracle E-Business Suite during the window, and such an event would have been captured.",
-            "resolved_ms": 1784825925640,
-            "ts": 1784218817469
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Mexico within the next week",
-            "horizon": "week",
-            "probability": 0.53,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The three cyclone signals (BERTHA, FAUSTO, ELIDA) are all green alerts with zero population affected and are located offshore or near the US Gulf coast, with none showing a landfall in Mexico.",
-            "resolved_ms": 1784825923713,
-            "ts": 1784218817469
-        },
-        {
-            "statement": "NG=F price will rise by at least 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports NG=F (natural gas) price movement; only oil benchmarks (WTI, Brent) are shown, so no evidence of a 2% natural gas rise exists.",
-            "resolved_ms": 1784825919113,
-            "ts": 1784736202729
-        },
-        {
-            "statement": "The price of Brent Crude will increase by at least $1 within the next 24h",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S10 shows Brent Crude at 86.83 $/bbl down 7.7%, indicating a decrease rather than the required $1 increase.",
-            "resolved_ms": 1784818697872,
-            "ts": 1784728827310
-        },
-        {
-            "statement": "NG=F will move up by at least 2% within the next 24h",
-            "horizon": "24h",
-            "probability": 0.59,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows NG=F moving up by at least 2% within the 24h window.",
-            "resolved_ms": 1784818695225,
-            "ts": 1784728827310
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 328,
-        "base_rate": 0.1006,
-        "brier_raw": 0.2619,
-        "brier_base_rate": 0.0905,
+        "resolved_n": 339,
+        "base_rate": 0.0973,
+        "brier_raw": 0.2614,
+        "brier_base_rate": 0.0879,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
