@@ -1,20 +1,20 @@
 {
-    "resolved": 291,
-    "open": 1902,
-    "due": 14,
+    "resolved": 295,
+    "open": 1906,
+    "due": 15,
     "unresolvable": 51,
-    "brier": 0.265,
+    "brier": 0.264,
     "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
-            "resolved": 271,
-            "brier": 0.266,
+            "resolved": 273,
+            "brier": 0.267,
             "hit_rate": 0.54
         },
         "week": {
-            "resolved": 20,
-            "brier": 0.244,
-            "hit_rate": 0.55
+            "resolved": 22,
+            "brier": 0.236,
+            "hit_rate": 0.59
         }
     },
     "calibration": [
@@ -26,19 +26,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 64,
+            "n": 65,
             "avg_predicted": 0.29,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 89,
+            "n": 91,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 78,
+            "n": 79,
             "avg_predicted": 0.67,
             "observed": 0.15
         },
@@ -51,29 +51,73 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 291,
-            "brier": 0.312
+            "resolved": 295,
+            "brier": 0.314
         },
         "Economist": {
-            "resolved": 291,
-            "brier": 0.329
+            "resolved": 295,
+            "brier": 0.33
         },
         "Naturalist": {
-            "resolved": 291,
+            "resolved": 295,
             "brier": 0.358
         },
         "Skeptic": {
-            "resolved": 290,
-            "brier": 0.197
+            "resolved": 294,
+            "brier": 0.195
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1163,
+            "resolved": 1179,
             "brier": 0.299
         }
     },
     "recent": [
+        {
+            "statement": "CL=F will increase by at least 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.58,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal captured any CL=F price movement, so a 2% increase cannot be confirmed and would have been captured if it occurred.",
+            "resolved_ms": 1784778922757,
+            "ts": 1784691966969
+        },
+        {
+            "statement": "A major flood will occur in Bangladesh within the next week.",
+            "horizon": "week",
+            "probability": 0.38,
+            "location": "Bangladesh",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal text shows a major flood occurring in Bangladesh during the window, though such an event would have been captured.",
+            "resolved_ms": 1784778920642,
+            "ts": 1784172866466
+        },
+        {
+            "statement": "WTI Crude Oil price will increase by at least 2% within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI rose from 86.77 at forecast time (S1) to 88.42 at window close (S11), a gain of about 1.9%, which falls short of the required 2% increase.",
+            "resolved_ms": 1784778917385,
+            "ts": 1784690134115
+        },
+        {
+            "statement": "The price of Brent crude oil will rise by at least $5 per barrel within the next week due to supply chain disruptions in the Middle East.",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "Middle East",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent moved from ~93.9 (S2) to 96.25 now (S12), a rise of only ~$2.35, well below the required $5, and no signal shows a Middle East supply disruption.",
+            "resolved_ms": 1784778898516,
+            "ts": 1784171016164
+        },
         {
             "statement": "WTI Crude Oil price will rise by at least 2% in the next 24 hours",
             "horizon": "24h",
@@ -161,50 +205,6 @@
             "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for Nashville would certainly have been captured within the closed window.",
             "resolved_ms": 1784771643357,
             "ts": 1784679124595
-        },
-        {
-            "statement": "The US will impose further sanctions on Iran within the next week",
-            "horizon": "week",
-            "probability": 0.65,
-            "location": "Iran/US",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows the US imposing further sanctions on Iran during the window, and such an action would certainly have been recorded.",
-            "resolved_ms": 1784768033353,
-            "ts": 1784161794125
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Vietnam, causing widespread flooding and damage",
-            "horizon": "week",
-            "probability": 0.21,
-            "location": "Vietnam",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only cyclone signals (BERTHA-26, FAUSTO-26, ELIDA-26) are located far from Vietnam with zero population affected, and no signal shows a tropical cyclone making landfall in Vietnam causing flooding or damage.",
-            "resolved_ms": 1784768029465,
-            "ts": 1784159952740
-        },
-        {
-            "statement": "A flash flood warning will be issued for the Midwest region in the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "Midwest",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No numbered signal provides any evidence of a flash flood warning issued for the Midwest during the window, so the event cannot be confirmed.",
-            "resolved_ms": 1784768026328,
-            "ts": 1784677284625
-        },
-        {
-            "statement": "A major earthquake will strike the South Sandwich Islands region",
-            "horizon": "week",
-            "probability": 0.42,
-            "location": "South Sandwich Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows a major earthquake striking the South Sandwich Islands during the window, and an event that large would have been captured.",
-            "resolved_ms": 1784768023436,
-            "ts": 1784158101162
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 291,
-        "base_rate": 0.1031,
-        "brier_raw": 0.2646,
-        "brier_base_rate": 0.0925,
+        "resolved_n": 295,
+        "base_rate": 0.1017,
+        "brier_raw": 0.2645,
+        "brier_base_rate": 0.0914,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
