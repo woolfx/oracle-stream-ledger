@@ -1,9 +1,9 @@
 {
-    "resolved": 339,
-    "open": 1947,
-    "due": 45,
+    "resolved": 347,
+    "open": 1944,
+    "due": 49,
     "unresolvable": 51,
-    "brier": 0.261,
+    "brier": 0.263,
     "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
@@ -12,9 +12,9 @@
             "hit_rate": 0.53
         },
         "week": {
-            "resolved": 48,
-            "brier": 0.227,
-            "hit_rate": 0.58
+            "resolved": 56,
+            "brier": 0.239,
+            "hit_rate": 0.55
         }
     },
     "calibration": [
@@ -26,54 +26,142 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 79,
+            "n": 81,
             "avg_predicted": 0.29,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 110,
+            "n": 114,
             "avg_predicted": 0.49,
-            "observed": 0.08
+            "observed": 0.09
         },
         {
             "bin": "60\u201380%",
-            "n": 89,
+            "n": 90,
             "avg_predicted": 0.67,
-            "observed": 0.15
+            "observed": 0.14
         },
         {
             "bin": "80\u2013100%",
-            "n": 26,
+            "n": 27,
             "avg_predicted": 0.82,
             "observed": 0.15
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 339,
-            "brier": 0.311
+            "resolved": 347,
+            "brier": 0.312
         },
         "Economist": {
-            "resolved": 339,
+            "resolved": 347,
             "brier": 0.329
         },
         "Naturalist": {
-            "resolved": 339,
-            "brier": 0.352
+            "resolved": 347,
+            "brier": 0.351
         },
         "Skeptic": {
-            "resolved": 338,
-            "brier": 0.193
+            "resolved": 346,
+            "brier": 0.196
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1355,
-            "brier": 0.296
+            "resolved": 1387,
+            "brier": 0.297
         }
     },
     "recent": [
+        {
+            "statement": "A significant earthquake will occur in the Pacific Ring of Fire",
+            "horizon": "week",
+            "probability": 0.75,
+            "location": "Pacific Ring of Fire",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a significant Ring of Fire earthquake would certainly have been recorded during the closed window.",
+            "resolved_ms": 1784833227478,
+            "ts": 1784223274528
+        },
+        {
+            "statement": "The price of Brent crude oil will rise above $80 per barrel within the next week due to supply chain disruptions and increased demand.",
+            "horizon": "week",
+            "probability": 0.46,
+            "location": "Global oil markets",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S10 shows Brent Crude at $100.59/bbl, well above the $80 threshold within the forecast window.",
+            "resolved_ms": 1784833224260,
+            "ts": 1784223147355
+        },
+        {
+            "statement": "Protests will erupt in major cities across India over a new economic reform package",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "Major Cities, India",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal reports protests erupting in Indian cities over an economic reform package during the window, and such a major event would have been captured.",
+            "resolved_ms": 1784833214850,
+            "ts": 1784223110790
+        },
+        {
+            "statement": "The price of oil will surge above $120 per barrel within the next week due to supply chain disruptions at the Bab el-Mandeb chokepoint",
+            "horizon": "week",
+            "probability": 0.57,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent Crude sits at $100.59/bbl, well below the $120 threshold, so the forecast oil surge did not occur.",
+            "resolved_ms": 1784833212677,
+            "ts": 1784222771000
+        },
+        {
+            "statement": "A major cyberattack will occur on a critical infrastructure target within the next week",
+            "horizon": "week",
+            "probability": 0.45,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows a major cyberattack on critical infrastructure occurring within the window, though such an event would have been captured.",
+            "resolved_ms": 1784833197383,
+            "ts": 1784222595093
+        },
+        {
+            "statement": "A major cyberattack will disrupt global supply chains via the Port of Rotterdam",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "Port of Rotterdam",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a major cyberattack disrupting global supply chains via the Port of Rotterdam within the window, an event that would certainly have been captured.",
+            "resolved_ms": 1784833195604,
+            "ts": 1784222559273
+        },
+        {
+            "statement": "A major earthquake will occur within 100 km of Tokyo, Japan within the next week.",
+            "horizon": "week",
+            "probability": 0.26,
+            "location": "Tokyo, Japan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports any major earthquake near Tokyo, and such an event would certainly have been recorded within the closed window.",
+            "resolved_ms": 1784833185345,
+            "ts": 1784222079564
+        },
+        {
+            "statement": "A severe flood will hit the Czech Republic",
+            "horizon": "week",
+            "probability": 0.8,
+            "location": "Czech Republic",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal provides any text showing a severe flood occurred in the Czech Republic during the window, and such an event would certainly have been captured.",
+            "resolved_ms": 1784833182734,
+            "ts": 1784221379391
+        },
         {
             "statement": "A Category 3 tropical cyclone will make landfall in Honduras",
             "horizon": "week",
@@ -117,94 +205,6 @@
             "evidence": "No signal shows a Category 1 cyclone making landfall in the Philippines; the three cyclone notifications are elsewhere and at tropical-storm intensity with zero Category 1 impact.",
             "resolved_ms": 1784829571167,
             "ts": 1784221007618
-        },
-        {
-            "statement": "A major cyberattack will occur on a prominent financial institution within the next week.",
-            "horizon": "week",
-            "probability": 0.28,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows a major cyberattack occurring on a prominent financial institution during the window, so an event that large would have been captured but was not.",
-            "resolved_ms": 1784829567881,
-            "ts": 1784220973990
-        },
-        {
-            "statement": "A major oil tanker will experience a mechanical failure in the Bab el-Mandeb Strait within the next week.",
-            "horizon": "week",
-            "probability": 0.45,
-            "location": "Bab el-Mandeb Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any oil tanker mechanical failure in the Bab el-Mandeb Strait; such an event would have been captured but none appears.",
-            "resolved_ms": 1784829565990,
-            "ts": 1784220973990
-        },
-        {
-            "statement": "NG=F price will increase by 4% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports NG=F (natural gas) price movement; only oil (WTI/Brent) prices are shown, so the required 4% natural gas increase is not evidenced.",
-            "resolved_ms": 1784829564020,
-            "ts": 1784739247603
-        },
-        {
-            "statement": "A major flood will occur in Austria",
-            "horizon": "week",
-            "probability": 0.78,
-            "location": "Austria",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a major flood occurring in Austria during the window, and such an event would certainly have been captured.",
-            "resolved_ms": 1784829559284,
-            "ts": 1784220437740
-        },
-        {
-            "statement": "A Category 2 tropical cyclone will make landfall in Honduras",
-            "horizon": "week",
-            "probability": 0.23,
-            "location": "Honduras",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are green alerts with zero Category 1+ impact and none near Honduras, so no Category 2 landfall occurred.",
-            "resolved_ms": 1784829557119,
-            "ts": 1784220437740
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike the coast of Central Chile",
-            "horizon": "week",
-            "probability": 0.42,
-            "location": "Chilean Coast",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports the forecast M5.0 earthquake on the Central Chile coast, and such an event would have been captured within the closed window.",
-            "resolved_ms": 1784829554187,
-            "ts": 1784220403442
-        },
-        {
-            "statement": "NG=F price will drop by 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.69,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports NG=F natural gas prices; only crude oil (WTI/Brent) signals appear, and they show price increases, so no captured evidence supports a 2% natural gas drop.",
-            "resolved_ms": 1784829550266,
-            "ts": 1784708567029
-        },
-        {
-            "statement": "Tensions between Iran and Saudi Arabia will escalate, leading to a naval confrontation in the Persian Gulf",
-            "horizon": "week",
-            "probability": 0.5,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal (S4) shows reduced ship transits, not a naval confrontation between Iran and Saudi Arabia; no signal reports any such event.",
-            "resolved_ms": 1784825944551,
-            "ts": 1784220111640
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 339,
-        "base_rate": 0.0973,
-        "brier_raw": 0.2614,
-        "brier_base_rate": 0.0879,
+        "resolved_n": 347,
+        "base_rate": 0.098,
+        "brier_raw": 0.2626,
+        "brier_base_rate": 0.0884,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
