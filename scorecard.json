@@ -1,14 +1,14 @@
 {
-    "resolved": 315,
-    "open": 1930,
-    "due": 19,
+    "resolved": 316,
+    "open": 1933,
+    "due": 20,
     "unresolvable": 51,
     "brier": 0.262,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 284,
-            "brier": 0.266,
+            "resolved": 285,
+            "brier": 0.265,
             "hit_rate": 0.54
         },
         "week": {
@@ -26,9 +26,9 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 72,
+            "n": 73,
             "avg_predicted": 0.29,
-            "observed": 0.06
+            "observed": 0.05
         },
         {
             "bin": "40\u201360%",
@@ -51,29 +51,40 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 315,
-            "brier": 0.31
+            "resolved": 316,
+            "brier": 0.309
         },
         "Economist": {
-            "resolved": 315,
+            "resolved": 316,
             "brier": 0.329
         },
         "Naturalist": {
-            "resolved": 315,
-            "brier": 0.352
+            "resolved": 316,
+            "brier": 0.351
         },
         "Skeptic": {
-            "resolved": 314,
+            "resolved": 315,
             "brier": 0.195
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1259,
-            "brier": 0.297
+            "resolved": 1263,
+            "brier": 0.296
         }
     },
     "recent": [
+        {
+            "statement": "NG=F will move up by at least 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.33,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows NG=F moved up by at least 2% within the window, and such a move would have been captured.",
+            "resolved_ms": 1784811481797,
+            "ts": 1784721467057
+        },
         {
             "statement": "BZ=F will close 2.5% higher",
             "horizon": "24h",
@@ -194,17 +205,6 @@
             "evidence": "The three named tropical cyclones (BERTHA, FAUSTO, ELIDA) are located far from the Philippines with zero population affected, and no signal shows any cyclone landfall in the Philippines.",
             "resolved_ms": 1784786180199,
             "ts": 1784178888027
-        },
-        {
-            "statement": "CL=F price will increase by more than 1%",
-            "horizon": "24h",
-            "probability": 0.68,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S11 shows WTI Crude Oil (CL=F) at 88.12 $/bbl, up +1.49%, exceeding the 1% increase threshold within the window.",
-            "resolved_ms": 1784782565590,
-            "ts": 1784695636391
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 315,
-        "base_rate": 0.1048,
-        "brier_raw": 0.2622,
-        "brier_base_rate": 0.0938,
+        "resolved_n": 316,
+        "base_rate": 0.1044,
+        "brier_raw": 0.2617,
+        "brier_base_rate": 0.0935,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
