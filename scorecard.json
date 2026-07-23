@@ -1,20 +1,20 @@
 {
-    "resolved": 295,
-    "open": 1906,
+    "resolved": 304,
+    "open": 1901,
     "due": 15,
     "unresolvable": 51,
-    "brier": 0.264,
-    "hit_rate": 0.54,
+    "brier": 0.262,
+    "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 273,
-            "brier": 0.267,
+            "resolved": 275,
+            "brier": 0.266,
             "hit_rate": 0.54
         },
         "week": {
-            "resolved": 22,
-            "brier": 0.236,
-            "hit_rate": 0.59
+            "resolved": 29,
+            "brier": 0.22,
+            "hit_rate": 0.62
         }
     },
     "calibration": [
@@ -26,21 +26,21 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 65,
+            "n": 69,
             "avg_predicted": 0.29,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 91,
+            "n": 94,
             "avg_predicted": 0.49,
-            "observed": 0.08
+            "observed": 0.09
         },
         {
             "bin": "60\u201380%",
-            "n": 79,
+            "n": 81,
             "avg_predicted": 0.67,
-            "observed": 0.15
+            "observed": 0.16
         },
         {
             "bin": "80\u2013100%",
@@ -51,29 +51,128 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 295,
-            "brier": 0.314
+            "resolved": 304,
+            "brier": 0.308
         },
         "Economist": {
-            "resolved": 295,
-            "brier": 0.33
+            "resolved": 304,
+            "brier": 0.329
         },
         "Naturalist": {
-            "resolved": 295,
-            "brier": 0.358
+            "resolved": 304,
+            "brier": 0.353
         },
         "Skeptic": {
-            "resolved": 294,
-            "brier": 0.195
+            "resolved": 303,
+            "brier": 0.193
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1179,
-            "brier": 0.299
+            "resolved": 1215,
+            "brier": 0.296
         }
     },
     "recent": [
+        {
+            "statement": "CL=F price will increase by more than 1%",
+            "horizon": "24h",
+            "probability": 0.68,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S11 shows WTI Crude Oil (CL=F) at 88.12 $/bbl, up +1.49%, exceeding the 1% increase threshold within the window.",
+            "resolved_ms": 1784782565590,
+            "ts": 1784695636391
+        },
+        {
+            "statement": "A significant flood will occur in the Mississippi River basin within the next week, causing widespread damage and disruption.",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "Mississippi River Basin",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports a significant Mississippi River basin flood causing widespread damage during the closed window, though such an event would have been captured.",
+            "resolved_ms": 1784782562669,
+            "ts": 1784177088928
+        },
+        {
+            "statement": "A major cyber attack will occur on a prominent US company within the next week, resulting in significant data breaches and financial losses.",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "US",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal provides text showing a major cyber attack with significant data breaches and financial losses on a prominent US company during the window.",
+            "resolved_ms": 1784782560231,
+            "ts": 1784177088928
+        },
+        {
+            "statement": "The value of Bitcoin will drop by more than 10% within the next week.",
+            "horizon": "week",
+            "probability": 0.23,
+            "location": "Global Markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Bitcoin's price at all, and calm markets (VIX 16.64, -2.4%) show no evidence of a >10% Bitcoin drop within the window.",
+            "resolved_ms": 1784782558692,
+            "ts": 1784177088928
+        },
+        {
+            "statement": "A major wildfire will break out in California",
+            "horizon": "week",
+            "probability": 0.35,
+            "location": "California",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a major California wildfire would certainly have been captured within the closed window.",
+            "resolved_ms": 1784782556105,
+            "ts": 1784177043079
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Vietnam",
+            "horizon": "week",
+            "probability": 0.45,
+            "location": "Vietnam",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are located far from Vietnam with zero populations affected, and no signal shows any cyclone landfall in Vietnam during the window.",
+            "resolved_ms": 1784782552836,
+            "ts": 1784177043079
+        },
+        {
+            "statement": "The US will launch airstrikes against Iranian missile sites within the next week.",
+            "horizon": "week",
+            "probability": 0.6,
+            "location": "Iranian territory",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal concerns the DRC eastern conflict and says nothing about US airstrikes on Iranian missile sites, which such a major event would certainly have generated a signal.",
+            "resolved_ms": 1784782548539,
+            "ts": 1784176587883
+        },
+        {
+            "statement": "US crude oil price will rise by at least 1.5% in the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.55,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 shows WTI crude at +2.19% during the forecast window, exceeding the 1.5% rise threshold.",
+            "resolved_ms": 1784782546100,
+            "ts": 1784693805586
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in the Philippines",
+            "horizon": "week",
+            "probability": 0.53,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are located in the western hemisphere far from the Philippines and none show any landfall there.",
+            "resolved_ms": 1784782538676,
+            "ts": 1784174731125
+        },
         {
             "statement": "CL=F will increase by at least 2% in the next 24 hours",
             "horizon": "24h",
@@ -106,105 +205,6 @@
             "evidence": "WTI rose from 86.77 at forecast time (S1) to 88.42 at window close (S11), a gain of about 1.9%, which falls short of the required 2% increase.",
             "resolved_ms": 1784778917385,
             "ts": 1784690134115
-        },
-        {
-            "statement": "The price of Brent crude oil will rise by at least $5 per barrel within the next week due to supply chain disruptions in the Middle East.",
-            "horizon": "week",
-            "probability": 0.42,
-            "location": "Middle East",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent moved from ~93.9 (S2) to 96.25 now (S12), a rise of only ~$2.35, well below the required $5, and no signal shows a Middle East supply disruption.",
-            "resolved_ms": 1784778898516,
-            "ts": 1784171016164
-        },
-        {
-            "statement": "WTI Crude Oil price will rise by at least 2% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.76,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current snapshot S11 shows WTI Crude Oil up +3.91%, exceeding the 2% threshold.",
-            "resolved_ms": 1784775281715,
-            "ts": 1784688291851
-        },
-        {
-            "statement": "A tropical storm will make landfall in East Pacific within the next week",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "East Pacific",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The signals show East Pacific storms (Fausto, Elida) existing offshore with zero affected population, but no signal indicates any tropical storm actually made landfall.",
-            "resolved_ms": 1784775278503,
-            "ts": 1784169174001
-        },
-        {
-            "statement": "The price of CL=F will increase by at least 1% within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "Global Crude Oil Market",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The [now] snapshot S11 shows WTI (CL=F) at 88.23 $/bbl up +3.91%, exceeding the 1% increase threshold.",
-            "resolved_ms": 1784775273998,
-            "ts": 1784686459933
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the Philippines",
-            "horizon": "week",
-            "probability": 0.5,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only cyclone signals (Bertha, Fausto, Elida) are located in the Atlantic and eastern Pacific with zero population affected, and none show a landfall in the Philippines.",
-            "resolved_ms": 1784775268964,
-            "ts": 1784167321684
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant oil price spike due to increased tensions between the US and Iran within the next week.",
-            "horizon": "week",
-            "probability": 0.68,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Oil shows only modest ~5% gains (S12/S14) with no signal indicating a significant spike attributable to US-Iran tensions, and no signal references such tensions.",
-            "resolved_ms": 1784771657611,
-            "ts": 1784165473460
-        },
-        {
-            "statement": "CL=F will rise by 2.5% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.69,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports CL=F price data; all signals concern ship transit counts, so the claimed 2.5% oil price rise is not shown.",
-            "resolved_ms": 1784771652432,
-            "ts": 1784682787056
-        },
-        {
-            "statement": "A magnitude 6.5 earthquake will occur in the South Sandwich Islands",
-            "horizon": "week",
-            "probability": 0.23,
-            "location": "South Sandwich Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a magnitude 6.5 earthquake in the South Sandwich Islands, an event that would certainly have been recorded within the closed window.",
-            "resolved_ms": 1784771647785,
-            "ts": 1784163633218
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Nashville, TN area on July 22",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "Nashville, TN",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for Nashville would certainly have been captured within the closed window.",
-            "resolved_ms": 1784771643357,
-            "ts": 1784679124595
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 295,
-        "base_rate": 0.1017,
-        "brier_raw": 0.2645,
-        "brier_base_rate": 0.0914,
+        "resolved_n": 304,
+        "base_rate": 0.1053,
+        "brier_raw": 0.2616,
+        "brier_base_rate": 0.0942,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
