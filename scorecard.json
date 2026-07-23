@@ -1,20 +1,20 @@
 {
-    "resolved": 347,
-    "open": 1944,
-    "due": 49,
+    "resolved": 355,
+    "open": 1948,
+    "due": 45,
     "unresolvable": 51,
     "brier": 0.263,
-    "hit_rate": 0.54,
+    "hit_rate": 0.53,
     "per_horizon": {
         "24h": {
-            "resolved": 291,
-            "brier": 0.267,
+            "resolved": 292,
+            "brier": 0.268,
             "hit_rate": 0.53
         },
         "week": {
-            "resolved": 56,
-            "brier": 0.239,
-            "hit_rate": 0.55
+            "resolved": 63,
+            "brier": 0.241,
+            "hit_rate": 0.52
         }
     },
     "calibration": [
@@ -26,19 +26,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 81,
+            "n": 84,
             "avg_predicted": 0.29,
-            "observed": 0.05
+            "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 114,
+            "n": 117,
             "avg_predicted": 0.49,
             "observed": 0.09
         },
         {
             "bin": "60\u201380%",
-            "n": 90,
+            "n": 92,
             "avg_predicted": 0.67,
             "observed": 0.14
         },
@@ -51,29 +51,117 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 347,
+            "resolved": 355,
             "brier": 0.312
         },
         "Economist": {
-            "resolved": 347,
+            "resolved": 355,
             "brier": 0.329
         },
         "Naturalist": {
-            "resolved": 347,
-            "brier": 0.351
+            "resolved": 355,
+            "brier": 0.353
         },
         "Skeptic": {
-            "resolved": 346,
-            "brier": 0.196
+            "resolved": 354,
+            "brier": 0.198
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1387,
-            "brier": 0.297
+            "resolved": 1419,
+            "brier": 0.298
         }
     },
     "recent": [
+        {
+            "statement": "Protests will erupt in Paris over proposed pension reforms, leading to widespread civil unrest",
+            "horizon": "week",
+            "probability": 0.5,
+            "location": "Paris, France",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows protests or civil unrest occurring in Paris over pension reforms during the window.",
+            "resolved_ms": 1784836872629,
+            "ts": 1784227536046
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will strike the southern coast of Chile",
+            "horizon": "week",
+            "probability": 0.57,
+            "location": "Chilean Coast",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal documents any magnitude 5.0 earthquake striking the southern coast of Chile within the window, though such an event would likely have been recorded.",
+            "resolved_ms": 1784836870908,
+            "ts": 1784227536046
+        },
+        {
+            "statement": "The price of Brent crude oil will rise above $80/barrel",
+            "horizon": "week",
+            "probability": 0.35,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S10 shows Brent Crude at $100.18/barrel, well above the $80 threshold.",
+            "resolved_ms": 1784836868958,
+            "ts": 1784226629149
+        },
+        {
+            "statement": "A major earthquake will strike the South Island of New Zealand",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "South Island, NZ",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal was captured, and a major earthquake striking the South Island would certainly have been recorded within the window.",
+            "resolved_ms": 1784836866049,
+            "ts": 1784226629149
+        },
+        {
+            "statement": "A major wildfire will break out in California.",
+            "horizon": "week",
+            "probability": 0.6,
+            "location": "California",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a major California wildfire would certainly have been captured within the closed window.",
+            "resolved_ms": 1784836863899,
+            "ts": 1784226582946
+        },
+        {
+            "statement": "Texas electricity demand surges by +15% within the next 24 hours due to heat stress.",
+            "horizon": "24h",
+            "probability": 0.71,
+            "location": "Texas",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal addresses Texas electricity demand or heat stress; the available signals concern nuclear plants in Canada and Ukraine, so an event this large would have been captured but was not.",
+            "resolved_ms": 1784836861767,
+            "ts": 1784744108260
+        },
+        {
+            "statement": "A major earthquake will strike near the Volcano Islands, Japan region.",
+            "horizon": "week",
+            "probability": 0.53,
+            "location": "Volcano Islands, Japan Region",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Neither signal reports an earthquake near the Volcano Islands, Japan region; they concern volcanoes in Kikai and Costa Rica, so no qualifying event is shown.",
+            "resolved_ms": 1784836859341,
+            "ts": 1784224725309
+        },
+        {
+            "statement": "A major cyberattack will hit a European nation's critical infrastructure",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "Poland",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows a major cyberattack hitting Poland's critical infrastructure during the window, and such an event would have been captured.",
+            "resolved_ms": 1784836856356,
+            "ts": 1784224421794
+        },
         {
             "statement": "A significant earthquake will occur in the Pacific Ring of Fire",
             "horizon": "week",
@@ -117,94 +205,6 @@
             "evidence": "Brent Crude sits at $100.59/bbl, well below the $120 threshold, so the forecast oil surge did not occur.",
             "resolved_ms": 1784833212677,
             "ts": 1784222771000
-        },
-        {
-            "statement": "A major cyberattack will occur on a critical infrastructure target within the next week",
-            "horizon": "week",
-            "probability": 0.45,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows a major cyberattack on critical infrastructure occurring within the window, though such an event would have been captured.",
-            "resolved_ms": 1784833197383,
-            "ts": 1784222595093
-        },
-        {
-            "statement": "A major cyberattack will disrupt global supply chains via the Port of Rotterdam",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "Port of Rotterdam",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a major cyberattack disrupting global supply chains via the Port of Rotterdam within the window, an event that would certainly have been captured.",
-            "resolved_ms": 1784833195604,
-            "ts": 1784222559273
-        },
-        {
-            "statement": "A major earthquake will occur within 100 km of Tokyo, Japan within the next week.",
-            "horizon": "week",
-            "probability": 0.26,
-            "location": "Tokyo, Japan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports any major earthquake near Tokyo, and such an event would certainly have been recorded within the closed window.",
-            "resolved_ms": 1784833185345,
-            "ts": 1784222079564
-        },
-        {
-            "statement": "A severe flood will hit the Czech Republic",
-            "horizon": "week",
-            "probability": 0.8,
-            "location": "Czech Republic",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal provides any text showing a severe flood occurred in the Czech Republic during the window, and such an event would certainly have been captured.",
-            "resolved_ms": 1784833182734,
-            "ts": 1784221379391
-        },
-        {
-            "statement": "A Category 3 tropical cyclone will make landfall in Honduras",
-            "horizon": "week",
-            "probability": 0.25,
-            "location": "Honduras",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only tropical cyclone signals (BERTHA, FAUSTO, ELIDA) are green notifications with zero population affected at Category 1+, located far from Honduras, showing no Category 3 landfall there.",
-            "resolved_ms": 1784829578627,
-            "ts": 1784221379391
-        },
-        {
-            "statement": "A major earthquake will hit the South Sandwich Islands",
-            "horizon": "week",
-            "probability": 0.25,
-            "location": "East Of South Sandwich Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a major earthquake would certainly have been recorded within the closed window.",
-            "resolved_ms": 1784829575456,
-            "ts": 1784221348236
-        },
-        {
-            "statement": "A significant volcanic eruption will occur in the Philippines",
-            "horizon": "week",
-            "probability": 0.6,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal concerns a volcano in Costa Rica, not the Philippines, and no signal shows a significant eruption occurred in the Philippines during the window.",
-            "resolved_ms": 1784829573044,
-            "ts": 1784221007618
-        },
-        {
-            "statement": "A Category 1 cyclone will make landfall in the Philippines",
-            "horizon": "week",
-            "probability": 0.6,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a Category 1 cyclone making landfall in the Philippines; the three cyclone notifications are elsewhere and at tropical-storm intensity with zero Category 1 impact.",
-            "resolved_ms": 1784829571167,
-            "ts": 1784221007618
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 347,
-        "base_rate": 0.098,
-        "brier_raw": 0.2626,
-        "brier_base_rate": 0.0884,
+        "resolved_n": 355,
+        "base_rate": 0.0986,
+        "brier_raw": 0.2633,
+        "brier_base_rate": 0.0889,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
