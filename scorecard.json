@@ -1,13 +1,13 @@
 {
-    "resolved": 308,
-    "open": 1913,
-    "due": 16,
+    "resolved": 311,
+    "open": 1916,
+    "due": 15,
     "unresolvable": 51,
     "brier": 0.263,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 277,
+            "resolved": 280,
             "brier": 0.267,
             "hit_rate": 0.54
         },
@@ -26,15 +26,15 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 69,
+            "n": 70,
             "avg_predicted": 0.29,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 96,
+            "n": 97,
             "avg_predicted": 0.49,
-            "observed": 0.08
+            "observed": 0.09
         },
         {
             "bin": "60\u201380%",
@@ -44,36 +44,69 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 25,
+            "n": 26,
             "avg_predicted": 0.82,
-            "observed": 0.16
+            "observed": 0.15
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 308,
-            "brier": 0.309
+            "resolved": 311,
+            "brier": 0.308
         },
         "Economist": {
-            "resolved": 308,
-            "brier": 0.33
+            "resolved": 311,
+            "brier": 0.329
         },
         "Naturalist": {
-            "resolved": 308,
-            "brier": 0.354
+            "resolved": 311,
+            "brier": 0.353
         },
         "Skeptic": {
-            "resolved": 307,
-            "brier": 0.196
+            "resolved": 310,
+            "brier": 0.197
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1231,
+            "resolved": 1243,
             "brier": 0.297
         }
     },
     "recent": [
+        {
+            "statement": "The price of WTI Crude Oil will rise to $90/bbl within the next 24h",
+            "horizon": "24h",
+            "probability": 0.25,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI Crude Oil is at 89.59 $/bbl, below the $90 threshold, so the forecast target was not reached.",
+            "resolved_ms": 1784793427223,
+            "ts": 1784704881987
+        },
+        {
+            "statement": "The US crude oil price will rise by at least 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.58,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S12 shows WTI Crude Oil (US crude) at 89.59 $/bbl, up +3.18%, exceeding the 2% threshold.",
+            "resolved_ms": 1784793420448,
+            "ts": 1784703053545
+        },
+        {
+            "statement": "The price of CL=F will increase by at least 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.81,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows CL=F rising 2%; the [now] crude anchor (Brent) instead fell 8.42%, indicating no such increase occurred.",
+            "resolved_ms": 1784793417073,
+            "ts": 1784680957526
+        },
         {
             "statement": "WTI Crude Oil price will drop by at least 2% in the next 24 hours",
             "horizon": "24h",
@@ -172,39 +205,6 @@
             "evidence": "No captured signal concerns this forecast, and a major California wildfire would certainly have been captured within the closed window.",
             "resolved_ms": 1784782556105,
             "ts": 1784177043079
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Vietnam",
-            "horizon": "week",
-            "probability": 0.45,
-            "location": "Vietnam",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are located far from Vietnam with zero populations affected, and no signal shows any cyclone landfall in Vietnam during the window.",
-            "resolved_ms": 1784782552836,
-            "ts": 1784177043079
-        },
-        {
-            "statement": "The US will launch airstrikes against Iranian missile sites within the next week.",
-            "horizon": "week",
-            "probability": 0.6,
-            "location": "Iranian territory",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal concerns the DRC eastern conflict and says nothing about US airstrikes on Iranian missile sites, which such a major event would certainly have generated a signal.",
-            "resolved_ms": 1784782548539,
-            "ts": 1784176587883
-        },
-        {
-            "statement": "US crude oil price will rise by at least 1.5% in the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.55,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 shows WTI crude at +2.19% during the forecast window, exceeding the 1.5% rise threshold.",
-            "resolved_ms": 1784782546100,
-            "ts": 1784693805586
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 308,
-        "base_rate": 0.1039,
-        "brier_raw": 0.2629,
-        "brier_base_rate": 0.0931,
+        "resolved_n": 311,
+        "base_rate": 0.1061,
+        "brier_raw": 0.2632,
+        "brier_base_rate": 0.0949,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
