@@ -1,20 +1,20 @@
 {
-    "resolved": 287,
-    "open": 1903,
-    "due": 15,
+    "resolved": 291,
+    "open": 1902,
+    "due": 14,
     "unresolvable": 51,
-    "brier": 0.266,
+    "brier": 0.265,
     "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
-            "resolved": 269,
-            "brier": 0.267,
+            "resolved": 271,
+            "brier": 0.266,
             "hit_rate": 0.54
         },
         "week": {
-            "resolved": 18,
-            "brier": 0.24,
-            "hit_rate": 0.61
+            "resolved": 20,
+            "brier": 0.244,
+            "hit_rate": 0.55
         }
     },
     "calibration": [
@@ -32,15 +32,15 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 87,
+            "n": 89,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 76,
+            "n": 78,
             "avg_predicted": 0.67,
-            "observed": 0.13
+            "observed": 0.15
         },
         {
             "bin": "80\u2013100%",
@@ -51,29 +51,73 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 287,
-            "brier": 0.314
+            "resolved": 291,
+            "brier": 0.312
         },
         "Economist": {
-            "resolved": 287,
-            "brier": 0.33
+            "resolved": 291,
+            "brier": 0.329
         },
         "Naturalist": {
-            "resolved": 287,
+            "resolved": 291,
             "brier": 0.358
         },
         "Skeptic": {
-            "resolved": 286,
+            "resolved": 290,
             "brier": 0.197
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1147,
-            "brier": 0.3
+            "resolved": 1163,
+            "brier": 0.299
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil price will rise by at least 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.76,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current snapshot S11 shows WTI Crude Oil up +3.91%, exceeding the 2% threshold.",
+            "resolved_ms": 1784775281715,
+            "ts": 1784688291851
+        },
+        {
+            "statement": "A tropical storm will make landfall in East Pacific within the next week",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "East Pacific",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The signals show East Pacific storms (Fausto, Elida) existing offshore with zero affected population, but no signal indicates any tropical storm actually made landfall.",
+            "resolved_ms": 1784775278503,
+            "ts": 1784169174001
+        },
+        {
+            "statement": "The price of CL=F will increase by at least 1% within the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "Global Crude Oil Market",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The [now] snapshot S11 shows WTI (CL=F) at 88.23 $/bbl up +3.91%, exceeding the 1% increase threshold.",
+            "resolved_ms": 1784775273998,
+            "ts": 1784686459933
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in the Philippines",
+            "horizon": "week",
+            "probability": 0.5,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only cyclone signals (Bertha, Fausto, Elida) are located in the Atlantic and eastern Pacific with zero population affected, and none show a landfall in the Philippines.",
+            "resolved_ms": 1784775268964,
+            "ts": 1784167321684
+        },
         {
             "statement": "The Strait of Hormuz will experience a significant oil price spike due to increased tensions between the US and Iran within the next week.",
             "horizon": "week",
@@ -161,50 +205,6 @@
             "evidence": "No admissible signal shows a major earthquake striking the South Sandwich Islands during the window, and an event that large would have been captured.",
             "resolved_ms": 1784768023436,
             "ts": 1784158101162
-        },
-        {
-            "statement": "A M7.0 earthquake will strike the Mariana Islands region",
-            "horizon": "week",
-            "probability": 0.18,
-            "location": "Mariana Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any M7.0 earthquake in the Mariana Islands region, and an event that large would certainly have been captured, so the forecast did not come true.",
-            "resolved_ms": 1784768020039,
-            "ts": 1784158101161
-        },
-        {
-            "statement": "CL=F will close above $85/bbl",
-            "horizon": "24h",
-            "probability": 0.62,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows CL=F's closing price, and such a market close would certainly have been recorded if it occurred, so the threshold cannot be confirmed.",
-            "resolved_ms": 1784768018156,
-            "ts": 1784675453050
-        },
-        {
-            "statement": "Tropical Storm ELIDA-26 will make landfall in Mexico",
-            "horizon": "week",
-            "probability": 0.35,
-            "location": "EastPacific, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S3 shows ELIDA-26 as a green-alert tropical storm located far out in the Pacific at @26.4,-127.2 with zero population affected, indicating no landfall in Mexico occurred.",
-            "resolved_ms": 1784761214819,
-            "ts": 1784156254657
-        },
-        {
-            "statement": "CL=F will move up by 2.5% within the next 24h",
-            "horizon": "24h",
-            "probability": 0.54,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows CL=F moving up 2.5% within the window, and such a move would have been captured.",
-            "resolved_ms": 1784761210546,
-            "ts": 1784673606500
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 287,
-        "base_rate": 0.0976,
-        "brier_raw": 0.2657,
-        "brier_base_rate": 0.088,
+        "resolved_n": 291,
+        "base_rate": 0.1031,
+        "brier_raw": 0.2646,
+        "brier_base_rate": 0.0925,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
