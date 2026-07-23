@@ -1,14 +1,14 @@
 {
-    "resolved": 316,
+    "resolved": 318,
     "open": 1943,
-    "due": 23,
+    "due": 22,
     "unresolvable": 51,
     "brier": 0.262,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 285,
-            "brier": 0.265,
+            "resolved": 287,
+            "brier": 0.266,
             "hit_rate": 0.54
         },
         "week": {
@@ -32,7 +32,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 99,
+            "n": 101,
             "avg_predicted": 0.49,
             "observed": 0.09
         },
@@ -51,29 +51,51 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 316,
+            "resolved": 318,
             "brier": 0.309
         },
         "Economist": {
-            "resolved": 316,
+            "resolved": 318,
             "brier": 0.329
         },
         "Naturalist": {
-            "resolved": 316,
-            "brier": 0.351
+            "resolved": 318,
+            "brier": 0.353
         },
         "Skeptic": {
-            "resolved": 315,
+            "resolved": 317,
             "brier": 0.195
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1263,
+            "resolved": 1271,
             "brier": 0.296
         }
     },
     "recent": [
+        {
+            "statement": "The price of Brent Crude will increase by at least $1 within the next 24h",
+            "horizon": "24h",
+            "probability": 0.52,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S10 shows Brent Crude at 86.83 $/bbl down 7.7%, indicating a decrease rather than the required $1 increase.",
+            "resolved_ms": 1784818697872,
+            "ts": 1784728827310
+        },
+        {
+            "statement": "NG=F will move up by at least 2% within the next 24h",
+            "horizon": "24h",
+            "probability": 0.59,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows NG=F moving up by at least 2% within the 24h window.",
+            "resolved_ms": 1784818695225,
+            "ts": 1784728827310
+        },
         {
             "statement": "NG=F will move up by at least 2% in the next 24 hours",
             "horizon": "24h",
@@ -183,28 +205,6 @@
             "evidence": "No captured signal shows CL=F increased by 2% within the window, and a move that large would have been recorded.",
             "resolved_ms": 1784786185783,
             "ts": 1784697481414
-        },
-        {
-            "statement": "A cyberattack will occur on a major oil company within the next week.",
-            "horizon": "week",
-            "probability": 0.42,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any cyberattack on an oil company; signals only show oil prices, FOMC schedules, and volatility indices.",
-            "resolved_ms": 1784786182339,
-            "ts": 1784178888027
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the Philippines within the next week.",
-            "horizon": "week",
-            "probability": 0.7,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The three named tropical cyclones (BERTHA, FAUSTO, ELIDA) are located far from the Philippines with zero population affected, and no signal shows any cyclone landfall in the Philippines.",
-            "resolved_ms": 1784786180199,
-            "ts": 1784178888027
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 316,
-        "base_rate": 0.1044,
-        "brier_raw": 0.2617,
-        "brier_base_rate": 0.0935,
+        "resolved_n": 318,
+        "base_rate": 0.1038,
+        "brier_raw": 0.262,
+        "brier_base_rate": 0.093,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
