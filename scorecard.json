@@ -1,44 +1,44 @@
 {
-    "resolved": 277,
-    "open": 1902,
-    "due": 16,
+    "resolved": 283,
+    "open": 1903,
+    "due": 14,
     "unresolvable": 51,
-    "brier": 0.265,
+    "brier": 0.264,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 265,
-            "brier": 0.265,
-            "hit_rate": 0.55
+            "resolved": 267,
+            "brier": 0.266,
+            "hit_rate": 0.54
         },
         "week": {
-            "resolved": 12,
-            "brier": 0.261,
-            "hit_rate": 0.58
+            "resolved": 16,
+            "brier": 0.238,
+            "hit_rate": 0.62
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 34,
+            "n": 35,
             "avg_predicted": 0.12,
             "observed": 0.09
         },
         {
             "bin": "20\u201340%",
-            "n": 62,
+            "n": 63,
             "avg_predicted": 0.29,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 86,
+            "n": 87,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 70,
+            "n": 73,
             "avg_predicted": 0.67,
             "observed": 0.14
         },
@@ -51,29 +51,95 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 277,
+            "resolved": 283,
             "brier": 0.312
         },
         "Economist": {
-            "resolved": 277,
-            "brier": 0.331
+            "resolved": 283,
+            "brier": 0.329
         },
         "Naturalist": {
-            "resolved": 277,
-            "brier": 0.359
+            "resolved": 283,
+            "brier": 0.356
         },
         "Skeptic": {
-            "resolved": 276,
-            "brier": 0.197
+            "resolved": 282,
+            "brier": 0.198
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1107,
-            "brier": 0.3
+            "resolved": 1131,
+            "brier": 0.299
         }
     },
     "recent": [
+        {
+            "statement": "The US will impose further sanctions on Iran within the next week",
+            "horizon": "week",
+            "probability": 0.65,
+            "location": "Iran/US",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows the US imposing further sanctions on Iran during the window, and such an action would certainly have been recorded.",
+            "resolved_ms": 1784768033353,
+            "ts": 1784161794125
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Vietnam, causing widespread flooding and damage",
+            "horizon": "week",
+            "probability": 0.21,
+            "location": "Vietnam",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only cyclone signals (BERTHA-26, FAUSTO-26, ELIDA-26) are located far from Vietnam with zero population affected, and no signal shows a tropical cyclone making landfall in Vietnam causing flooding or damage.",
+            "resolved_ms": 1784768029465,
+            "ts": 1784159952740
+        },
+        {
+            "statement": "A flash flood warning will be issued for the Midwest region in the next 24 hours.",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "Midwest",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No numbered signal provides any evidence of a flash flood warning issued for the Midwest during the window, so the event cannot be confirmed.",
+            "resolved_ms": 1784768026328,
+            "ts": 1784677284625
+        },
+        {
+            "statement": "A major earthquake will strike the South Sandwich Islands region",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "South Sandwich Islands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows a major earthquake striking the South Sandwich Islands during the window, and an event that large would have been captured.",
+            "resolved_ms": 1784768023436,
+            "ts": 1784158101162
+        },
+        {
+            "statement": "A M7.0 earthquake will strike the Mariana Islands region",
+            "horizon": "week",
+            "probability": 0.18,
+            "location": "Mariana Islands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any M7.0 earthquake in the Mariana Islands region, and an event that large would certainly have been captured, so the forecast did not come true.",
+            "resolved_ms": 1784768020039,
+            "ts": 1784158101161
+        },
+        {
+            "statement": "CL=F will close above $85/bbl",
+            "horizon": "24h",
+            "probability": 0.62,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows CL=F's closing price, and such a market close would certainly have been recorded if it occurred, so the threshold cannot be confirmed.",
+            "resolved_ms": 1784768018156,
+            "ts": 1784675453050
+        },
         {
             "statement": "Tropical Storm ELIDA-26 will make landfall in Mexico",
             "horizon": "week",
@@ -139,72 +205,6 @@
             "evidence": "No signal reports a magnitude 6.5 earthquake in the Philippines, and such an event would certainly have been captured during the closed window.",
             "resolved_ms": 1784757590946,
             "ts": 1784150694917
-        },
-        {
-            "statement": "A Category 2 hurricane will make landfall in Mexico within the next week",
-            "horizon": "week",
-            "probability": 0.36,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All tropical cyclone signals (BERTHA, FAUSTO, ELIDA) are green alerts at Tropical Storm strength with zero population affected by Category 1+ winds, and none shows a Category 2 hurricane landfall in Mexico.",
-            "resolved_ms": 1784757588269,
-            "ts": 1784148889035
-        },
-        {
-            "statement": "A Category 2 tropical cyclone will form in the Pacific Ocean within the next week",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "EastPacific",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "East Pacific cyclones FAUSTO and ELIDA are only Tropical Storms with green alerts, and no signal shows any Category 2 cyclone forming.",
-            "resolved_ms": 1784757582868,
-            "ts": 1784148848500
-        },
-        {
-            "statement": "The price of CL=F will increase by at least 2% within the next 24 hours.",
-            "horizon": "24h",
-            "probability": 0.76,
-            "location": "Global Oil Markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current WTI (CL=F) snapshot shows only +1.85%, below the required 2% increase threshold.",
-            "resolved_ms": 1784757578472,
-            "ts": 1784666239402
-        },
-        {
-            "statement": "The price of oil will increase by at least $5 per barrel within the next week",
-            "horizon": "week",
-            "probability": 0.7,
-            "location": "Bab el-Mandeb",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent rose only +3.32% and WTI +2.17% in the snapshots, with no signal showing an actual $5/bbl weekly price increase.",
-            "resolved_ms": 1784757574021,
-            "ts": 1784146876609
-        },
-        {
-            "statement": "WTI Crude Oil price will increase by at least 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.51,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The final [now] snapshot S10 shows WTI at 86.48 (+1.85%), and prices ranged only 86.34\u219286.75 over the window\u2014well below a 2% increase from the forecast baseline.",
-            "resolved_ms": 1784757568833,
-            "ts": 1784664390853
-        },
-        {
-            "statement": "WTI Crude Oil price will increase by more than 2% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.58,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current WTI snapshot shows only +1.85%, below the required 2% increase threshold.",
-            "resolved_ms": 1784757559379,
-            "ts": 1784663864398
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 277,
-        "base_rate": 0.1011,
-        "brier_raw": 0.2651,
-        "brier_base_rate": 0.0909,
+        "resolved_n": 283,
+        "base_rate": 0.0989,
+        "brier_raw": 0.2645,
+        "brier_base_rate": 0.0892,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
