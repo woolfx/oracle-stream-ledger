@@ -1,38 +1,38 @@
 {
-    "resolved": 363,
+    "resolved": 371,
     "open": 1954,
-    "due": 49,
+    "due": 45,
     "unresolvable": 51,
-    "brier": 0.261,
-    "hit_rate": 0.54,
+    "brier": 0.257,
+    "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 296,
-            "brier": 0.267,
-            "hit_rate": 0.53
+            "resolved": 300,
+            "brier": 0.264,
+            "hit_rate": 0.54
         },
         "week": {
-            "resolved": 67,
-            "brier": 0.233,
-            "hit_rate": 0.55
+            "resolved": 71,
+            "brier": 0.227,
+            "hit_rate": 0.58
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 36,
+            "n": 39,
             "avg_predicted": 0.12,
             "observed": 0.08
         },
         {
             "bin": "20\u201340%",
-            "n": 89,
+            "n": 92,
             "avg_predicted": 0.29,
-            "observed": 0.06
+            "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 118,
+            "n": 120,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
@@ -51,33 +51,121 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 363,
-            "brier": 0.309
+            "resolved": 371,
+            "brier": 0.305
         },
         "Economist": {
-            "resolved": 363,
-            "brier": 0.325
+            "resolved": 371,
+            "brier": 0.32
         },
         "Naturalist": {
-            "resolved": 363,
-            "brier": 0.351
+            "resolved": 371,
+            "brier": 0.345
         },
         "Skeptic": {
-            "resolved": 362,
-            "brier": 0.196
+            "resolved": 370,
+            "brier": 0.195
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1443,
-            "brier": 0.297
+            "resolved": 1459,
+            "brier": 0.295
         },
         "qwen3:14b": {
-            "resolved": 8,
-            "brier": 0.058
+            "resolved": 24,
+            "brier": 0.061
         }
     },
     "recent": [
+        {
+            "statement": "Flash flood warnings in Colorado will disrupt 15-20% of regional electricity grid capacity",
+            "horizon": "24h",
+            "probability": 0.1,
+            "location": "Colorado",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows flash flooding disrupting 15-20% of Colorado's grid capacity, an event that would certainly have been captured in the infrastructure or outage sections.",
+            "resolved_ms": 1784847785690,
+            "ts": 1784757778857
+        },
+        {
+            "statement": "A Category 2 hurricane will make landfall in Florida within the next week",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "Florida, USA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows any Category 2 hurricane making landfall in Florida; the only nearby cyclone (BERTHA-26) was a tropical storm affecting zero population, far from Florida.",
+            "resolved_ms": 1784847783375,
+            "ts": 1784237487661
+        },
+        {
+            "statement": "A major cyberattack will occur on a major US corporation within the next week.",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "USA, global",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal text shows a major cyberattack on a major US corporation occurred during the window.",
+            "resolved_ms": 1784847779914,
+            "ts": 1784235636247
+        },
+        {
+            "statement": "A severe heatwave will affect major cities across Europe within the next week.",
+            "horizon": "week",
+            "probability": 0.45,
+            "location": "Europe, global",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe European heatwave affecting major cities would certainly have been captured within the closed window.",
+            "resolved_ms": 1784847778180,
+            "ts": 1784235636246
+        },
+        {
+            "statement": "A Category 2 hurricane will make landfall in Louisiana within the next week.",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Louisiana, USA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Louisiana-area cyclone, BERTHA-26, was a Tropical Storm with zero population affected by Category 1 or higher winds, far short of a Category 2 landfall.",
+            "resolved_ms": 1784847776360,
+            "ts": 1784235636246
+        },
+        {
+            "statement": "Flash flood warnings in Utah and New Mexico will lead to localized infrastructure damage and evacuation orders",
+            "horizon": "24h",
+            "probability": 0.1,
+            "location": "US Southwest",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No numbered signal provides text showing flash flood warnings causing infrastructure damage and evacuation orders in both Utah and New Mexico within the window.",
+            "resolved_ms": 1784847773003,
+            "ts": 1784754001766
+        },
+        {
+            "statement": "Flash flood warnings in Utah will lead to localized flooding in Salt Lake City",
+            "horizon": "24h",
+            "probability": 0.11,
+            "location": "Salt Lake City UT",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows localized flooding occurred in Salt Lake City within the window, so the forecast is unconfirmed.",
+            "resolved_ms": 1784847768431,
+            "ts": 1784753838717
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict proximity",
+            "horizon": "24h",
+            "probability": 0.44,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait shows 2 daily transits, which is not below the forecast threshold of 1/day.",
+            "resolved_ms": 1784847765335,
+            "ts": 1784752534077
+        },
         {
             "statement": "A Category 2 hurricane will make landfall in Central America",
             "horizon": "week",
@@ -121,94 +209,6 @@
             "evidence": "None of the tropical cyclone signals show a Category 1 hurricane landfall in Honduras, and no signal is located near Honduras with the required wind speeds.",
             "resolved_ms": 1784844126055,
             "ts": 1784231980896
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the entire state of Florida",
-            "horizon": "week",
-            "probability": 0.38,
-            "location": "Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows a severe thunderstorm warning covering the entire state of Florida, an event that would certainly have been captured.",
-            "resolved_ms": 1784844123309,
-            "ts": 1784231938996
-        },
-        {
-            "statement": "A heatwave will hit the Texas power grid within the next 24 hours, leading to a 10% increase in electricity demand",
-            "horizon": "24h",
-            "probability": 0.71,
-            "location": "Texas",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The window has closed and no numbered signal provides any text showing a Texas heatwave or a 10% electricity demand increase occurred.",
-            "resolved_ms": 1784844121718,
-            "ts": 1784750153786
-        },
-        {
-            "statement": "NG=F will close 3% higher than today's price",
-            "horizon": "24h",
-            "probability": 0.47,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports NG=F (natural gas futures) price movement; the energy signals cover only WTI and Brent crude oil, so nothing shows natural gas closing 3% higher.",
-            "resolved_ms": 1784844116900,
-            "ts": 1784750153786
-        },
-        {
-            "statement": "There will be a significant earthquake in the South Sandwich Islands within the next week.",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "South Sandwich Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No numbered signal contains text showing a significant earthquake occurred in the South Sandwich Islands during the window, though such an event would have been captured.",
-            "resolved_ms": 1784844107250,
-            "ts": 1784227827920
-        },
-        {
-            "statement": "Protests will erupt in Paris over proposed pension reforms, leading to widespread civil unrest",
-            "horizon": "week",
-            "probability": 0.5,
-            "location": "Paris, France",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows protests or civil unrest occurring in Paris over pension reforms during the window.",
-            "resolved_ms": 1784836872629,
-            "ts": 1784227536046
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike the southern coast of Chile",
-            "horizon": "week",
-            "probability": 0.57,
-            "location": "Chilean Coast",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal documents any magnitude 5.0 earthquake striking the southern coast of Chile within the window, though such an event would likely have been recorded.",
-            "resolved_ms": 1784836870908,
-            "ts": 1784227536046
-        },
-        {
-            "statement": "The price of Brent crude oil will rise above $80/barrel",
-            "horizon": "week",
-            "probability": 0.35,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S10 shows Brent Crude at $100.18/barrel, well above the $80 threshold.",
-            "resolved_ms": 1784836868958,
-            "ts": 1784226629149
-        },
-        {
-            "statement": "A major earthquake will strike the South Island of New Zealand",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "South Island, NZ",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal was captured, and a major earthquake striking the South Island would certainly have been recorded within the window.",
-            "resolved_ms": 1784836866049,
-            "ts": 1784226629149
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 363,
-        "base_rate": 0.0964,
-        "brier_raw": 0.261,
-        "brier_base_rate": 0.0871,
-        "brier_calibrated_oos": null,
-        "brier_calibrated_oos_n": 0,
+        "resolved_n": 371,
+        "base_rate": 0.0943,
+        "brier_raw": 0.2572,
+        "brier_base_rate": 0.0854,
+        "brier_calibrated_oos": 0.003,
+        "brier_calibrated_oos_n": 3,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
