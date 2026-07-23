@@ -1,20 +1,20 @@
 {
-    "resolved": 283,
+    "resolved": 287,
     "open": 1903,
-    "due": 14,
+    "due": 15,
     "unresolvable": 51,
-    "brier": 0.264,
-    "hit_rate": 0.55,
+    "brier": 0.266,
+    "hit_rate": 0.54,
     "per_horizon": {
         "24h": {
-            "resolved": 267,
-            "brier": 0.266,
+            "resolved": 269,
+            "brier": 0.267,
             "hit_rate": 0.54
         },
         "week": {
-            "resolved": 16,
-            "brier": 0.238,
-            "hit_rate": 0.62
+            "resolved": 18,
+            "brier": 0.24,
+            "hit_rate": 0.61
         }
     },
     "calibration": [
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 63,
+            "n": 64,
             "avg_predicted": 0.29,
             "observed": 0.06
         },
@@ -38,9 +38,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 73,
+            "n": 76,
             "avg_predicted": 0.67,
-            "observed": 0.14
+            "observed": 0.13
         },
         {
             "bin": "80\u2013100%",
@@ -51,29 +51,73 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 283,
-            "brier": 0.312
+            "resolved": 287,
+            "brier": 0.314
         },
         "Economist": {
-            "resolved": 283,
-            "brier": 0.329
+            "resolved": 287,
+            "brier": 0.33
         },
         "Naturalist": {
-            "resolved": 283,
-            "brier": 0.356
+            "resolved": 287,
+            "brier": 0.358
         },
         "Skeptic": {
-            "resolved": 282,
-            "brier": 0.198
+            "resolved": 286,
+            "brier": 0.197
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1131,
-            "brier": 0.299
+            "resolved": 1147,
+            "brier": 0.3
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience a significant oil price spike due to increased tensions between the US and Iran within the next week.",
+            "horizon": "week",
+            "probability": 0.68,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Oil shows only modest ~5% gains (S12/S14) with no signal indicating a significant spike attributable to US-Iran tensions, and no signal references such tensions.",
+            "resolved_ms": 1784771657611,
+            "ts": 1784165473460
+        },
+        {
+            "statement": "CL=F will rise by 2.5% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.69,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports CL=F price data; all signals concern ship transit counts, so the claimed 2.5% oil price rise is not shown.",
+            "resolved_ms": 1784771652432,
+            "ts": 1784682787056
+        },
+        {
+            "statement": "A magnitude 6.5 earthquake will occur in the South Sandwich Islands",
+            "horizon": "week",
+            "probability": 0.23,
+            "location": "South Sandwich Islands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a magnitude 6.5 earthquake in the South Sandwich Islands, an event that would certainly have been recorded within the closed window.",
+            "resolved_ms": 1784771647785,
+            "ts": 1784163633218
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Nashville, TN area on July 22",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "Nashville, TN",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a severe thunderstorm warning for Nashville would certainly have been captured within the closed window.",
+            "resolved_ms": 1784771643357,
+            "ts": 1784679124595
+        },
         {
             "statement": "The US will impose further sanctions on Iran within the next week",
             "horizon": "week",
@@ -161,50 +205,6 @@
             "evidence": "No captured signal shows CL=F moving up 2.5% within the window, and such a move would have been captured.",
             "resolved_ms": 1784761210546,
             "ts": 1784673606500
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in East Asia within the next week",
-            "horizon": "week",
-            "probability": 0.38,
-            "location": "East Asia",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only cyclone signals are green tropical-storm alerts with zero Category-1 population impact and coordinates outside East Asia, so no signal shows a tropical cyclone making landfall in East Asia.",
-            "resolved_ms": 1784761208421,
-            "ts": 1784154406365
-        },
-        {
-            "statement": "A major wildfire will break out in California due to high temperatures and dry conditions.",
-            "horizon": "week",
-            "probability": 0.72,
-            "location": "California",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The window closed and no numbered signal's text shows a major California wildfire breaking out; the wildfire section was trimmed with no supporting event evidence provided.",
-            "resolved_ms": 1784761202879,
-            "ts": 1784152552179
-        },
-        {
-            "statement": "A magnitude 6.5 earthquake will occur in the East Of South Sandwich Islands.",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "East Of South Sandwich Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports a magnitude 6.5 earthquake east of the South Sandwich Islands within the window, and an event that large would have been captured.",
-            "resolved_ms": 1784761198063,
-            "ts": 1784152552179
-        },
-        {
-            "statement": "A magnitude 6.5 earthquake will occur in the Philippines",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports a magnitude 6.5 earthquake in the Philippines, and such an event would certainly have been captured during the closed window.",
-            "resolved_ms": 1784757590946,
-            "ts": 1784150694917
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 283,
-        "base_rate": 0.0989,
-        "brier_raw": 0.2645,
-        "brier_base_rate": 0.0892,
+        "resolved_n": 287,
+        "base_rate": 0.0976,
+        "brier_raw": 0.2657,
+        "brier_base_rate": 0.088,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
