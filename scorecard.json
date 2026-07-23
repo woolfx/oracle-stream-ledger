@@ -1,20 +1,20 @@
 {
-    "resolved": 304,
-    "open": 1901,
+    "resolved": 308,
+    "open": 1906,
     "due": 15,
     "unresolvable": 51,
-    "brier": 0.262,
+    "brier": 0.263,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 275,
-            "brier": 0.266,
+            "resolved": 277,
+            "brier": 0.267,
             "hit_rate": 0.54
         },
         "week": {
-            "resolved": 29,
-            "brier": 0.22,
-            "hit_rate": 0.62
+            "resolved": 31,
+            "brier": 0.228,
+            "hit_rate": 0.61
         }
     },
     "calibration": [
@@ -32,13 +32,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 94,
+            "n": 96,
             "avg_predicted": 0.49,
-            "observed": 0.09
+            "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 81,
+            "n": 83,
             "avg_predicted": 0.67,
             "observed": 0.16
         },
@@ -51,29 +51,73 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 304,
-            "brier": 0.308
+            "resolved": 308,
+            "brier": 0.309
         },
         "Economist": {
-            "resolved": 304,
-            "brier": 0.329
+            "resolved": 308,
+            "brier": 0.33
         },
         "Naturalist": {
-            "resolved": 304,
-            "brier": 0.353
+            "resolved": 308,
+            "brier": 0.354
         },
         "Skeptic": {
-            "resolved": 303,
-            "brier": 0.193
+            "resolved": 307,
+            "brier": 0.196
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1215,
-            "brier": 0.296
+            "resolved": 1231,
+            "brier": 0.297
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil price will drop by at least 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.5,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest [now] WTI signal shows the price at 88 $/bbl up +1.35%, not dropping 2%, and all prior signals show gains.",
+            "resolved_ms": 1784786188695,
+            "ts": 1784699349538
+        },
+        {
+            "statement": "CL=F will increase by 2% in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.72,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows CL=F increased by 2% within the window, and a move that large would have been recorded.",
+            "resolved_ms": 1784786185783,
+            "ts": 1784697481414
+        },
+        {
+            "statement": "A cyberattack will occur on a major oil company within the next week.",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any cyberattack on an oil company; signals only show oil prices, FOMC schedules, and volatility indices.",
+            "resolved_ms": 1784786182339,
+            "ts": 1784178888027
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in the Philippines within the next week.",
+            "horizon": "week",
+            "probability": 0.7,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The three named tropical cyclones (BERTHA, FAUSTO, ELIDA) are located far from the Philippines with zero population affected, and no signal shows any cyclone landfall in the Philippines.",
+            "resolved_ms": 1784786180199,
+            "ts": 1784178888027
+        },
         {
             "statement": "CL=F price will increase by more than 1%",
             "horizon": "24h",
@@ -161,50 +205,6 @@
             "evidence": "S1 shows WTI crude at +2.19% during the forecast window, exceeding the 1.5% rise threshold.",
             "resolved_ms": 1784782546100,
             "ts": 1784693805586
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the Philippines",
-            "horizon": "week",
-            "probability": 0.53,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are located in the western hemisphere far from the Philippines and none show any landfall there.",
-            "resolved_ms": 1784782538676,
-            "ts": 1784174731125
-        },
-        {
-            "statement": "CL=F will increase by at least 2% in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.58,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal captured any CL=F price movement, so a 2% increase cannot be confirmed and would have been captured if it occurred.",
-            "resolved_ms": 1784778922757,
-            "ts": 1784691966969
-        },
-        {
-            "statement": "A major flood will occur in Bangladesh within the next week.",
-            "horizon": "week",
-            "probability": 0.38,
-            "location": "Bangladesh",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal text shows a major flood occurring in Bangladesh during the window, though such an event would have been captured.",
-            "resolved_ms": 1784778920642,
-            "ts": 1784172866466
-        },
-        {
-            "statement": "WTI Crude Oil price will increase by at least 2% within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI rose from 86.77 at forecast time (S1) to 88.42 at window close (S11), a gain of about 1.9%, which falls short of the required 2% increase.",
-            "resolved_ms": 1784778917385,
-            "ts": 1784690134115
         }
     ],
     "self_calibration": {
@@ -213,10 +213,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 304,
-        "base_rate": 0.1053,
-        "brier_raw": 0.2616,
-        "brier_base_rate": 0.0942,
+        "resolved_n": 308,
+        "base_rate": 0.1039,
+        "brier_raw": 0.2629,
+        "brier_base_rate": 0.0931,
         "brier_calibrated_oos": null,
         "brier_calibrated_oos_n": 0,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
