@@ -1,19 +1,19 @@
 {
-    "resolved": 462,
-    "open": 1946,
-    "due": 54,
+    "resolved": 466,
+    "open": 1948,
+    "due": 55,
     "unresolvable": 51,
-    "brier": 0.246,
+    "brier": 0.247,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 338,
-            "brier": 0.253,
+            "resolved": 340,
+            "brier": 0.254,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 124,
-            "brier": 0.226,
+            "resolved": 126,
+            "brier": 0.229,
             "hit_rate": 0.59
         }
     },
@@ -26,58 +26,102 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 126,
+            "n": 127,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 148,
+            "n": 149,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 105,
+            "n": 106,
             "avg_predicted": 0.67,
             "observed": 0.12
         },
         {
             "bin": "80\u2013100%",
-            "n": 30,
+            "n": 31,
             "avg_predicted": 0.82,
             "observed": 0.13
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 462,
-            "brier": 0.293
+            "resolved": 466,
+            "brier": 0.294
         },
         "Economist": {
-            "resolved": 461,
-            "brier": 0.307
+            "resolved": 465,
+            "brier": 0.308
         },
         "Naturalist": {
-            "resolved": 462,
-            "brier": 0.323
+            "resolved": 466,
+            "brier": 0.325
         },
         "Skeptic": {
-            "resolved": 461,
-            "brier": 0.185
+            "resolved": 465,
+            "brier": 0.186
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1675,
+            "resolved": 1683,
             "brier": 0.289
         },
         "qwen3:14b": {
-            "resolved": 171,
-            "brier": 0.157
+            "resolved": 179,
+            "brier": 0.173
         }
     },
     "recent": [
+        {
+            "statement": "A tropical cyclone will make landfall in the Philippines within the next week",
+            "horizon": "week",
+            "probability": 0.2,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are located in the Atlantic/Pacific far from the Philippines with zero population affected, and no signal shows any cyclone landfall in the Philippines.",
+            "resolved_ms": 1784923832030,
+            "ts": 1784318761620
+        },
+        {
+            "statement": "WTI crude oil prices will rise above $95/bbl within 24 hours due to Red Sea shipping disruptions",
+            "horizon": "24h",
+            "probability": 0.55,
+            "location": "Red Sea",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI crude is at $89.32/bbl (-3.11%), well below the $95 threshold, so the forecast did not come true.",
+            "resolved_ms": 1784923828016,
+            "ts": 1784836519128
+        },
+        {
+            "statement": "A heatwave will continue to affect Germany within the next week",
+            "horizon": "week",
+            "probability": 0.82,
+            "location": "Germany",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a continuing heatwave in Germany would certainly have been captured before the window closed.",
+            "resolved_ms": 1784923825406,
+            "ts": 1784316922513
+        },
+        {
+            "statement": "WTI crude oil price will rise above $95/bbl due to escalating Red Sea maritime disruptions",
+            "horizon": "24h",
+            "probability": 0.75,
+            "location": "Red Sea",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI crude is at $89.32/bbl (down 3.11%), well below the $95 threshold, so the forecast did not come true.",
+            "resolved_ms": 1784923823544,
+            "ts": 1784834545323
+        },
         {
             "statement": "The Strait of Hormuz will experience a temporary closure due to a naval conflict within the next week",
             "horizon": "week",
@@ -165,50 +209,6 @@
             "evidence": "Brent crude sits at $96.39 (down 4.27%), so WTI\u2014typically below Brent\u2014did not exceed $105, and no signal shows any such price spike.",
             "resolved_ms": 1784916599942,
             "ts": 1784826719848
-        },
-        {
-            "statement": "A significant earthquake will occur in the region of Puerto Madero, Mexico within the next week",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "Puerto Madero, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a significant earthquake at Puerto Madero, Mexico during the window, and such an event would certainly have been captured.",
-            "resolved_ms": 1784912993539,
-            "ts": 1784307699367
-        },
-        {
-            "statement": "A major earthquake will occur in the Pacific Ring of Fire within the next week.",
-            "horizon": "week",
-            "probability": 0.46,
-            "location": "Pacific Ocean",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal documents any major earthquake in the Pacific Ring of Fire during the window, and such an event would certainly have been recorded.",
-            "resolved_ms": 1784912990735,
-            "ts": 1784305858112
-        },
-        {
-            "statement": "Oil prices (WTI/Brent) will rise above $105/bbl due to escalating Red Sea attacks disrupting shipping.",
-            "horizon": "24h",
-            "probability": 0.79,
-            "location": "Red Sea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI is at $88.36 and Brent at ~$96, both well below the $105/bbl threshold, so the forecasted price rise did not occur.",
-            "resolved_ms": 1784909388389,
-            "ts": 1784822864916
-        },
-        {
-            "statement": "Donald Trump will announce that Jon Ossof and Raphael Warnock are illegitimate Senators by the end of the week",
-            "horizon": "week",
-            "probability": 0.06,
-            "location": "USA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows Trump making any such announcement, and an event this notable would certainly have been captured within the window.",
-            "resolved_ms": 1784909385807,
-            "ts": 1784304012766
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 462,
-        "base_rate": 0.0779,
-        "brier_raw": 0.2456,
-        "brier_base_rate": 0.0719,
-        "brier_calibrated_oos": 0.0277,
-        "brier_calibrated_oos_n": 40,
+        "resolved_n": 466,
+        "base_rate": 0.0773,
+        "brier_raw": 0.2468,
+        "brier_base_rate": 0.0713,
+        "brier_calibrated_oos": 0.0271,
+        "brier_calibrated_oos_n": 42,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
