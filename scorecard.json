@@ -1,38 +1,38 @@
 {
-    "resolved": 371,
-    "open": 1954,
-    "due": 53,
+    "resolved": 379,
+    "open": 1948,
+    "due": 52,
     "unresolvable": 51,
-    "brier": 0.257,
+    "brier": 0.254,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 300,
-            "brier": 0.264,
+            "resolved": 305,
+            "brier": 0.262,
             "hit_rate": 0.54
         },
         "week": {
-            "resolved": 71,
-            "brier": 0.227,
-            "hit_rate": 0.58
+            "resolved": 74,
+            "brier": 0.22,
+            "hit_rate": 0.59
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 39,
+            "n": 43,
             "avg_predicted": 0.12,
-            "observed": 0.08
+            "observed": 0.07
         },
         {
             "bin": "20\u201340%",
-            "n": 92,
+            "n": 94,
             "avg_predicted": 0.29,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 120,
+            "n": 122,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
@@ -51,33 +51,121 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 371,
-            "brier": 0.305
+            "resolved": 379,
+            "brier": 0.301
         },
         "Economist": {
-            "resolved": 371,
-            "brier": 0.32
+            "resolved": 379,
+            "brier": 0.316
         },
         "Naturalist": {
-            "resolved": 371,
-            "brier": 0.345
+            "resolved": 379,
+            "brier": 0.341
         },
         "Skeptic": {
-            "resolved": 370,
-            "brier": 0.195
+            "resolved": 378,
+            "brier": 0.192
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1459,
-            "brier": 0.295
+            "resolved": 1471,
+            "brier": 0.293
         },
         "qwen3:14b": {
-            "resolved": 24,
-            "brier": 0.061
+            "resolved": 44,
+            "brier": 0.095
         }
     },
     "recent": [
+        {
+            "statement": "Ukraine warfronts will see increased artillery exchanges in eastern regions due to stalled ceasefire negotiations",
+            "horizon": "24h",
+            "probability": 0.59,
+            "location": "Ukraine",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 only shows ongoing active frontlines as a general condition, not any increase in artillery exchanges or ceasefire negotiation context.",
+            "resolved_ms": 1784851430435,
+            "ts": 1784764015540
+        },
+        {
+            "statement": "An earthquake will occur in the South Sandwich Islands with a magnitude above 6.0",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "East Of South Sandwich Islands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal's text reports any M6.0+ earthquake in the South Sandwich Islands during the window, though such an event would certainly have been captured.",
+            "resolved_ms": 1784851428812,
+            "ts": 1784244859023
+        },
+        {
+            "statement": "Severe thunderstorm in Houston, Texas causes localized power outages",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "Texas",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, so there is no evidence the Houston thunderstorm or resulting power outages occurred within the window.",
+            "resolved_ms": 1784851424358,
+            "ts": 1784762209103
+        },
+        {
+            "statement": "Flash flood warnings in New Mexico and Colorado will cause temporary disruptions to coal transportation infrastructure",
+            "horizon": "24h",
+            "probability": 0.14,
+            "location": "New Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows flash flood warnings disrupting coal transportation infrastructure in New Mexico, and such an event would have been captured within the closed window.",
+            "resolved_ms": 1784851422488,
+            "ts": 1784761988036
+        },
+        {
+            "statement": "A major earthquake will strike near Tokyo in the next week",
+            "horizon": "week",
+            "probability": 0.2,
+            "location": "Tokyo, Japan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports a major earthquake striking near Tokyo during the window, an event that would certainly have been captured.",
+            "resolved_ms": 1784851420496,
+            "ts": 1784243016190
+        },
+        {
+            "statement": "Bab el-Mandeb chokepoint risk rating escalates to 'CRITICAL' due to Houthi naval activity",
+            "horizon": "24h",
+            "probability": 0.4,
+            "location": "Bab el-Mandeb",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Bab el-Mandeb, Houthi activity, or any escalation to a CRITICAL risk rating; all signals concern unrelated straits.",
+            "resolved_ms": 1784851418493,
+            "ts": 1784759725739
+        },
+        {
+            "statement": "Flash flood warnings in Colorado trigger temporary 15% surge in Texas electricity demand",
+            "horizon": "24h",
+            "probability": 0.15,
+            "location": "Texas",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows any Colorado flood warning causing a 15% surge in Texas electricity demand, an event that would certainly have been captured.",
+            "resolved_ms": 1784851415837,
+            "ts": 1784759725739
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Mexico's Yucatan Peninsula",
+            "horizon": "week",
+            "probability": 0.18,
+            "location": "Yucatan Peninsula, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "None of the named cyclones (BERTHA near Texas, FAUSTO/ELIDA in the Pacific, NOUL in NW Pacific) is located at or made landfall in Mexico's Yucatan Peninsula.",
+            "resolved_ms": 1784851413352,
+            "ts": 1784241170860
+        },
         {
             "statement": "Flash flood warnings in Colorado will disrupt 15-20% of regional electricity grid capacity",
             "horizon": "24h",
@@ -121,94 +209,6 @@
             "evidence": "No captured signal concerns this forecast, and a severe European heatwave affecting major cities would certainly have been captured within the closed window.",
             "resolved_ms": 1784847778180,
             "ts": 1784235636246
-        },
-        {
-            "statement": "A Category 2 hurricane will make landfall in Louisiana within the next week.",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Louisiana, USA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Louisiana-area cyclone, BERTHA-26, was a Tropical Storm with zero population affected by Category 1 or higher winds, far short of a Category 2 landfall.",
-            "resolved_ms": 1784847776360,
-            "ts": 1784235636246
-        },
-        {
-            "statement": "Flash flood warnings in Utah and New Mexico will lead to localized infrastructure damage and evacuation orders",
-            "horizon": "24h",
-            "probability": 0.1,
-            "location": "US Southwest",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No numbered signal provides text showing flash flood warnings causing infrastructure damage and evacuation orders in both Utah and New Mexico within the window.",
-            "resolved_ms": 1784847773003,
-            "ts": 1784754001766
-        },
-        {
-            "statement": "Flash flood warnings in Utah will lead to localized flooding in Salt Lake City",
-            "horizon": "24h",
-            "probability": 0.11,
-            "location": "Salt Lake City UT",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows localized flooding occurred in Salt Lake City within the window, so the forecast is unconfirmed.",
-            "resolved_ms": 1784847768431,
-            "ts": 1784753838717
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict proximity",
-            "horizon": "24h",
-            "probability": 0.44,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily transits, which is not below the forecast threshold of 1/day.",
-            "resolved_ms": 1784847765335,
-            "ts": 1784752534077
-        },
-        {
-            "statement": "A Category 2 hurricane will make landfall in Central America",
-            "horizon": "week",
-            "probability": 0.26,
-            "location": "Central America",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The listed cyclones (BERTHA, FAUSTO, ELIDA, NOUL) were all tropical storms outside Central America with zero Category 1+ impact, so no Category 2 hurricane landfall in Central America is shown.",
-            "resolved_ms": 1784844135899,
-            "ts": 1784233790151
-        },
-        {
-            "statement": "Texas electricity demand will exceed 95 GWh/h due to extreme heat",
-            "horizon": "24h",
-            "probability": 0.13,
-            "location": "Texas",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports Texas electricity demand exceeding 95 GWh/h during the window, so the threshold event is not shown to have occurred.",
-            "resolved_ms": 1784844130768,
-            "ts": 1784751997820
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1 per day due to intensified Ukrainian conflict activity",
-            "horizon": "24h",
-            "probability": 0.29,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily transits, which is not below the forecast threshold of 1 per day.",
-            "resolved_ms": 1784844128870,
-            "ts": 1784751997820
-        },
-        {
-            "statement": "A Category 1 hurricane will make landfall in Honduras within the next week.",
-            "horizon": "week",
-            "probability": 0.35,
-            "location": "Honduras",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "None of the tropical cyclone signals show a Category 1 hurricane landfall in Honduras, and no signal is located near Honduras with the required wind speeds.",
-            "resolved_ms": 1784844126055,
-            "ts": 1784231980896
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 371,
-        "base_rate": 0.0943,
-        "brier_raw": 0.2572,
-        "brier_base_rate": 0.0854,
-        "brier_calibrated_oos": 0.003,
-        "brier_calibrated_oos_n": 3,
+        "resolved_n": 379,
+        "base_rate": 0.0923,
+        "brier_raw": 0.2537,
+        "brier_base_rate": 0.0838,
+        "brier_calibrated_oos": 0.005,
+        "brier_calibrated_oos_n": 8,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
