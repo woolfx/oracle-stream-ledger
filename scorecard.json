@@ -1,26 +1,26 @@
 {
-    "resolved": 440,
-    "open": 1940,
-    "due": 51,
+    "resolved": 445,
+    "open": 1944,
+    "due": 49,
     "unresolvable": 51,
     "brier": 0.245,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 330,
-            "brier": 0.251,
+            "resolved": 332,
+            "brier": 0.25,
             "hit_rate": 0.57
         },
         "week": {
-            "resolved": 110,
-            "brier": 0.228,
-            "hit_rate": 0.58
+            "resolved": 113,
+            "brier": 0.23,
+            "hit_rate": 0.57
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 51,
+            "n": 52,
             "avg_predicted": 0.12,
             "observed": 0.06
         },
@@ -32,9 +32,9 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 139,
+            "n": 143,
             "avg_predicted": 0.49,
-            "observed": 0.07
+            "observed": 0.08
         },
         {
             "bin": "60\u201380%",
@@ -51,33 +51,88 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 440,
-            "brier": 0.294
+            "resolved": 445,
+            "brier": 0.293
         },
         "Economist": {
-            "resolved": 439,
-            "brier": 0.307
+            "resolved": 444,
+            "brier": 0.306
         },
         "Naturalist": {
-            "resolved": 440,
-            "brier": 0.323
+            "resolved": 445,
+            "brier": 0.322
         },
         "Skeptic": {
-            "resolved": 439,
-            "brier": 0.183
+            "resolved": 444,
+            "brier": 0.184
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1619,
+            "resolved": 1631,
             "brier": 0.291
         },
         "qwen3:14b": {
-            "resolved": 139,
-            "brier": 0.11
+            "resolved": 147,
+            "brier": 0.113
         }
     },
     "recent": [
+        {
+            "statement": "Shipping disruptions in the Kerch Strait due to proximity to Ukraine conflict",
+            "horizon": "24h",
+            "probability": 0.45,
+            "location": "Kerch Strait",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S6 shows Kerch Strait at 2 daily transits, 73% below its 30-day average, with a nearby Russia-Ukraine conflict flag, evidencing the forecast shipping disruption.",
+            "resolved_ms": 1784902167982,
+            "ts": 1784815021494
+        },
+        {
+            "statement": "A major earthquake will occur in the Pacific Ring of Fire within the next week, causing significant damage and loss of life.",
+            "horizon": "week",
+            "probability": 0.54,
+            "location": "Pacific Ring of Fire",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal reports a major earthquake with significant damage and loss of life in the Pacific Ring of Fire during the window, so an event that large would have been captured but was not.",
+            "resolved_ms": 1784902163573,
+            "ts": 1784296591172
+        },
+        {
+            "statement": "A major flood will occur in the UK",
+            "horizon": "week",
+            "probability": 0.54,
+            "location": "UK",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports a major flood occurring in the UK during the window, and such an event would certainly have been captured.",
+            "resolved_ms": 1784902161456,
+            "ts": 1784294740166
+        },
+        {
+            "statement": "A Category 2 hurricane will make landfall in Louisiana",
+            "horizon": "week",
+            "probability": 0.56,
+            "location": "Gulf of Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Bertha, the only system near Louisiana, is only a Tropical Storm with green notification and zero Category 1+ wind population, far below the required Category 2 hurricane landfall.",
+            "resolved_ms": 1784902159457,
+            "ts": 1784294740166
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop to zero due to escalation of conflict near Ukraine",
+            "horizon": "24h",
+            "probability": 0.17,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait still shows 2 daily ship transits, not zero, so the forecast of transits dropping to zero did not occur.",
+            "resolved_ms": 1784902155616,
+            "ts": 1784813038560
+        },
         {
             "statement": "Andy Burnham will be officially sworn in as the Prime Minister of the United Kingdom within the next week.",
             "horizon": "week",
@@ -154,61 +209,6 @@
             "evidence": "WTI Crude Oil is at 89.99 $/bbl showing -2.39%, a decline rather than the forecasted 3-5% rise.",
             "resolved_ms": 1784894931124,
             "ts": 1784807219146
-        },
-        {
-            "statement": "A power outage will occur in the New York City metropolitan area within the next week.",
-            "horizon": "week",
-            "probability": 0.44,
-            "location": "New York City metropolitan area",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal references any power outage in the New York City metropolitan area; the admissible signals concern nuclear plant operational statuses only.",
-            "resolved_ms": 1784894926646,
-            "ts": 1784287335773
-        },
-        {
-            "statement": "A Category 1 hurricane will make landfall in Mexico within the next week",
-            "horizon": "week",
-            "probability": 0.23,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All listed cyclones (BERTHA, FAUSTO, ELIDA) are green-level tropical storms with zero population affected by Category 1 winds, and none show a Category 1 hurricane making landfall in Mexico.",
-            "resolved_ms": 1784891322730,
-            "ts": 1784285485844
-        },
-        {
-            "statement": "The Strait of Hormuz will experience disruptions to oil traffic within the next week.",
-            "horizon": "week",
-            "probability": 0.62,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S9 shows Hormuz transits merely 30% below a 30-day average, a status fluctuation with no signal confirming an actual disruption event to oil traffic occurred within the window.",
-            "resolved_ms": 1784891317922,
-            "ts": 1784283645138
-        },
-        {
-            "statement": "VIX fear gauge rises above 19.5 due to escalation in Ukraine-Russia diplomatic tensions and Gaza conflict volatility",
-            "horizon": "24h",
-            "probability": 0.3,
-            "location": "Global financial markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current VIX reading (S12) is 18.84, below the forecast threshold of 19.5, so the fear gauge did not rise above the stated level.",
-            "resolved_ms": 1784891306989,
-            "ts": 1784801536301
-        },
-        {
-            "statement": "A significant increase in global oil prices will occur within the next week due to a potential disruption at the Bab el-Mandeb Strait.",
-            "horizon": "week",
-            "probability": 0.72,
-            "location": "Bab el-Mandeb Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude fell 9.24% to $91.39/bbl, showing a price decrease rather than the forecast significant increase.",
-            "resolved_ms": 1784887704146,
-            "ts": 1784281787054
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 440,
-        "base_rate": 0.0795,
+        "resolved_n": 445,
+        "base_rate": 0.0809,
         "brier_raw": 0.245,
-        "brier_base_rate": 0.0732,
-        "brier_calibrated_oos": 0.0057,
-        "brier_calibrated_oos_n": 32,
+        "brier_base_rate": 0.0744,
+        "brier_calibrated_oos": 0.0295,
+        "brier_calibrated_oos_n": 34,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
