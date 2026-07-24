@@ -1,38 +1,38 @@
 {
-    "resolved": 386,
-    "open": 1949,
-    "due": 49,
+    "resolved": 393,
+    "open": 1955,
+    "due": 47,
     "unresolvable": 51,
-    "brier": 0.252,
-    "hit_rate": 0.55,
+    "brier": 0.249,
+    "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 310,
-            "brier": 0.259,
+            "resolved": 313,
+            "brier": 0.257,
             "hit_rate": 0.55
         },
         "week": {
-            "resolved": 76,
-            "brier": 0.221,
-            "hit_rate": 0.58
+            "resolved": 80,
+            "brier": 0.218,
+            "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 47,
+            "n": 48,
             "avg_predicted": 0.12,
             "observed": 0.06
         },
         {
             "bin": "20\u201340%",
-            "n": 94,
+            "n": 98,
             "avg_predicted": 0.29,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 124,
+            "n": 126,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
@@ -51,33 +51,110 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 386,
-            "brier": 0.3
+            "resolved": 393,
+            "brier": 0.296
         },
         "Economist": {
-            "resolved": 386,
-            "brier": 0.314
+            "resolved": 393,
+            "brier": 0.31
         },
         "Naturalist": {
-            "resolved": 386,
-            "brier": 0.337
+            "resolved": 393,
+            "brier": 0.333
         },
         "Skeptic": {
-            "resolved": 385,
-            "brier": 0.19
+            "resolved": 392,
+            "brier": 0.188
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1479,
-            "brier": 0.293
+            "resolved": 1495,
+            "brier": 0.292
         },
         "qwen3:14b": {
-            "resolved": 64,
-            "brier": 0.095
+            "resolved": 76,
+            "brier": 0.086
         }
     },
     "recent": [
+        {
+            "statement": "A major flood will hit Austria within the next week, affecting at least 10,000 people.",
+            "horizon": "week",
+            "probability": 0.48,
+            "location": "Austria",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports a major flood in Austria affecting at least 10,000 people during the window, and such an event would have been captured.",
+            "resolved_ms": 1784858748362,
+            "ts": 1784252239603
+        },
+        {
+            "statement": "WTI Crude Oil price will rise by 2.5-3.5% within 24 hours due to sustained below-average ship transits in the Strait of Hormuz (15 daily vs 21 30-day average) and backwardation in the 6-month curve indicating physical supply stress",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports WTI Crude Oil price; the only oil price given is Brent at +6.33%, a different benchmark and outside the specified 2.5-3.5% range.",
+            "resolved_ms": 1784858745436,
+            "ts": 1784770248317
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Mexico",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The listed cyclones (BERTHA near Texas, FAUSTO and ELIDA far offshore in the Pacific, NOUL in the NW Pacific/China) show no landfall in Mexico, all with zero affected population.",
+            "resolved_ms": 1784858738289,
+            "ts": 1784250395488
+        },
+        {
+            "statement": "A magnitude 6.0 earthquake will occur in the South Of Fiji Islands",
+            "horizon": "week",
+            "probability": 0.4,
+            "location": "South Of Fiji Islands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal provides evidence of a magnitude 6.0 earthquake occurring in the South Of Fiji Islands during the window.",
+            "resolved_ms": 1784858732234,
+            "ts": 1784250395488
+        },
+        {
+            "statement": "Texas electricity demand will exceed 100 GWh/h for 3 consecutive days due to heatwave",
+            "horizon": "24h",
+            "probability": 0.22,
+            "location": "Texas",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The window has closed and no admissible signal contains text showing Texas electricity demand exceeded 100 GWh/h for three consecutive days.",
+            "resolved_ms": 1784858730483,
+            "ts": 1784768269220
+        },
+        {
+            "statement": "Heavy rainfall will cause flooding in Eastern Europe",
+            "horizon": "week",
+            "probability": 0.39,
+            "location": "Eastern Europe",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal provides text showing that heavy rainfall caused flooding in Eastern Europe within the window.",
+            "resolved_ms": 1784858722375,
+            "ts": 1784248546738
+        },
+        {
+            "statement": "Texas electricity demand surges to 105 GWh/h due to extreme heat",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "Texas",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal text shows Texas electricity demand reaching 105 GWh/h, and the window has closed.",
+            "resolved_ms": 1784858718397,
+            "ts": 1784764327210
+        },
         {
             "statement": "Severe thunderstorms will cause power outages in the Midwest US",
             "horizon": "week",
@@ -132,83 +209,6 @@
             "evidence": "No captured signal concerns this forecast, and an event this significant would certainly have been captured if it occurred.",
             "resolved_ms": 1784855073171,
             "ts": 1784764533847
-        },
-        {
-            "statement": "Flash flood in Grand Junction, Colorado causes road closures and evacuations",
-            "horizon": "24h",
-            "probability": 0.1,
-            "location": "Grand Junction, Colorado",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal provides any text showing a flash flood, road closures, or evacuations in Grand Junction, Colorado during the window.",
-            "resolved_ms": 1784855071259,
-            "ts": 1784764533847
-        },
-        {
-            "statement": "Flash flood warnings in Colorado trigger 15% drop in agricultural commodity futures",
-            "horizon": "24h",
-            "probability": 0.11,
-            "location": "Colorado",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows Colorado flash flood warnings or a 15% drop in agricultural commodity futures; only FOMC schedules and unrelated market indices appear.",
-            "resolved_ms": 1784855069671,
-            "ts": 1784764327210
-        },
-        {
-            "statement": "Ukraine warfronts will see increased artillery exchanges in eastern regions due to stalled ceasefire negotiations",
-            "horizon": "24h",
-            "probability": 0.59,
-            "location": "Ukraine",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 only shows ongoing active frontlines as a general condition, not any increase in artillery exchanges or ceasefire negotiation context.",
-            "resolved_ms": 1784851430435,
-            "ts": 1784764015540
-        },
-        {
-            "statement": "An earthquake will occur in the South Sandwich Islands with a magnitude above 6.0",
-            "horizon": "week",
-            "probability": 0.3,
-            "location": "East Of South Sandwich Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal's text reports any M6.0+ earthquake in the South Sandwich Islands during the window, though such an event would certainly have been captured.",
-            "resolved_ms": 1784851428812,
-            "ts": 1784244859023
-        },
-        {
-            "statement": "Severe thunderstorm in Houston, Texas causes localized power outages",
-            "horizon": "24h",
-            "probability": 0.12,
-            "location": "Texas",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, so there is no evidence the Houston thunderstorm or resulting power outages occurred within the window.",
-            "resolved_ms": 1784851424358,
-            "ts": 1784762209103
-        },
-        {
-            "statement": "Flash flood warnings in New Mexico and Colorado will cause temporary disruptions to coal transportation infrastructure",
-            "horizon": "24h",
-            "probability": 0.14,
-            "location": "New Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows flash flood warnings disrupting coal transportation infrastructure in New Mexico, and such an event would have been captured within the closed window.",
-            "resolved_ms": 1784851422488,
-            "ts": 1784761988036
-        },
-        {
-            "statement": "A major earthquake will strike near Tokyo in the next week",
-            "horizon": "week",
-            "probability": 0.2,
-            "location": "Tokyo, Japan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports a major earthquake striking near Tokyo during the window, an event that would certainly have been captured.",
-            "resolved_ms": 1784851420496,
-            "ts": 1784243016190
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 386,
-        "base_rate": 0.0907,
-        "brier_raw": 0.2517,
-        "brier_base_rate": 0.0825,
-        "brier_calibrated_oos": 0.0051,
-        "brier_calibrated_oos_n": 13,
+        "resolved_n": 393,
+        "base_rate": 0.0891,
+        "brier_raw": 0.2491,
+        "brier_base_rate": 0.0811,
+        "brier_calibrated_oos": 0.0049,
+        "brier_calibrated_oos_n": 16,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
