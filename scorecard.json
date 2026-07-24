@@ -1,20 +1,20 @@
 {
-    "resolved": 421,
-    "open": 1946,
-    "due": 47,
+    "resolved": 425,
+    "open": 1947,
+    "due": 49,
     "unresolvable": 51,
     "brier": 0.246,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 324,
-            "brier": 0.254,
+            "resolved": 326,
+            "brier": 0.253,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 97,
-            "brier": 0.219,
-            "hit_rate": 0.6
+            "resolved": 99,
+            "brier": 0.224,
+            "hit_rate": 0.59
         }
     },
     "calibration": [
@@ -26,9 +26,9 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 111,
+            "n": 113,
             "avg_predicted": 0.29,
-            "observed": 0.05
+            "observed": 0.04
         },
         {
             "bin": "40\u201360%",
@@ -38,7 +38,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 97,
+            "n": 99,
             "avg_predicted": 0.67,
             "observed": 0.13
         },
@@ -51,33 +51,77 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 421,
+            "resolved": 425,
             "brier": 0.293
         },
         "Economist": {
-            "resolved": 421,
+            "resolved": 425,
             "brier": 0.307
         },
         "Naturalist": {
-            "resolved": 421,
-            "brier": 0.328
+            "resolved": 425,
+            "brier": 0.327
         },
         "Skeptic": {
-            "resolved": 420,
-            "brier": 0.186
+            "resolved": 424,
+            "brier": 0.185
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1567,
-            "brier": 0.29
+            "resolved": 1575,
+            "brier": 0.291
         },
         "qwen3:14b": {
-            "resolved": 116,
-            "brier": 0.121
+            "resolved": 124,
+            "brier": 0.117
         }
     },
     "recent": [
+        {
+            "statement": "Texas electricity demand will exceed 64 GWh/h for 3 consecutive days",
+            "horizon": "24h",
+            "probability": 0.26,
+            "location": "Texas",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "None of the signals reference Texas electricity demand or any GWh/h figures, and no signal shows the demand threshold being met over three consecutive days.",
+            "resolved_ms": 1784884091191,
+            "ts": 1784797651915
+        },
+        {
+            "statement": "The Iranian conflict will escalate with increased military strikes in the next week.",
+            "horizon": "week",
+            "probability": 0.76,
+            "location": "Middle East",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, so there is no evidence that escalated military strikes occurred within the window.",
+            "resolved_ms": 1784884088770,
+            "ts": 1784278068717
+        },
+        {
+            "statement": "Hurricane Fausto intensifies to Category 2, disrupting shipping in the eastern Pacific Ocean",
+            "horizon": "24h",
+            "probability": 0.21,
+            "location": "Pacific Ocean",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signal S11 shows FAUSTO-26 as only a Tropical Storm with 0 population affected by Category 1 or higher winds, far below the forecast Category 2 intensification.",
+            "resolved_ms": 1784884086243,
+            "ts": 1784795691981
+        },
+        {
+            "statement": "The US will launch another round of airstrikes against Iran within the next week.",
+            "horizon": "week",
+            "probability": 0.6,
+            "location": "Middle East",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows US airstrikes against Iran occurred within the window, and such a major event would certainly have been captured.",
+            "resolved_ms": 1784884081848,
+            "ts": 1784276227972
+        },
         {
             "statement": "A major oil tanker will pass through the Bab el-Mandeb Strait within the next week",
             "horizon": "week",
@@ -165,50 +209,6 @@
             "evidence": "Kerch Strait shows 2 daily ship transits, which is above the forecast threshold of below 1/day.",
             "resolved_ms": 1784876860346,
             "ts": 1784787817167
-        },
-        {
-            "statement": "The price of oil will rise by at least $1 per barrel within the next week due to increased tensions in the Middle East",
-            "horizon": "week",
-            "probability": 0.43,
-            "location": "Middle East",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current WTI snapshot shows oil at 90.79 $/bbl down 1.52% (and Brent down 1.35%), with no signal showing the required $1 per barrel rise during the window.",
-            "resolved_ms": 1784876857610,
-            "ts": 1784268865025
-        },
-        {
-            "statement": "VIX fear gauge will spike to 18.5 due to renewed Gaza conflict escalation.",
-            "horizon": "24h",
-            "probability": 0.31,
-            "location": "Gaza Strip",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 confirms ongoing Gaza conflict but provides no VIX data showing a spike to 18.5, which such a market move would require.",
-            "resolved_ms": 1784876852792,
-            "ts": 1784785850617
-        },
-        {
-            "statement": "NG=F will close 0.5% lower",
-            "horizon": "24h",
-            "probability": 0.53,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, so there is no evidence that NG=F closed 0.5% lower within the window.",
-            "resolved_ms": 1784876850033,
-            "ts": 1784717788345
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop to 1/day due to intensified Ukrainian conflict.",
-            "horizon": "24h",
-            "probability": 0.4,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily transits, not the forecasted drop to 1/day, so the specific threshold was not met.",
-            "resolved_ms": 1784873243898,
-            "ts": 1784785850617
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 421,
-        "base_rate": 0.0831,
-        "brier_raw": 0.2462,
-        "brier_base_rate": 0.0762,
-        "brier_calibrated_oos": 0.006,
-        "brier_calibrated_oos_n": 26,
+        "resolved_n": 425,
+        "base_rate": 0.0824,
+        "brier_raw": 0.2463,
+        "brier_base_rate": 0.0756,
+        "brier_calibrated_oos": 0.0059,
+        "brier_calibrated_oos_n": 28,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
