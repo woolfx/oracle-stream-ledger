@@ -1,32 +1,32 @@
 {
-    "resolved": 472,
-    "open": 1942,
-    "due": 53,
+    "resolved": 475,
+    "open": 1939,
+    "due": 55,
     "unresolvable": 51,
-    "brier": 0.248,
+    "brier": 0.246,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 343,
-            "brier": 0.253,
+            "resolved": 345,
+            "brier": 0.252,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 129,
-            "brier": 0.232,
+            "resolved": 130,
+            "brier": 0.231,
             "hit_rate": 0.58
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 53,
+            "n": 54,
             "avg_predicted": 0.12,
             "observed": 0.06
         },
         {
             "bin": "20\u201340%",
-            "n": 128,
+            "n": 130,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -51,33 +51,66 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 472,
-            "brier": 0.295
+            "resolved": 475,
+            "brier": 0.293
         },
         "Economist": {
-            "resolved": 471,
-            "brier": 0.307
+            "resolved": 474,
+            "brier": 0.306
         },
         "Naturalist": {
-            "resolved": 472,
-            "brier": 0.327
+            "resolved": 475,
+            "brier": 0.326
         },
         "Skeptic": {
-            "resolved": 471,
-            "brier": 0.187
+            "resolved": 474,
+            "brier": 0.186
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1695,
+            "resolved": 1699,
             "brier": 0.29
         },
         "qwen3:14b": {
-            "resolved": 191,
-            "brier": 0.178
+            "resolved": 199,
+            "brier": 0.174
         }
     },
     "recent": [
+        {
+            "statement": "WTI crude oil prices will rise above $95/bbl within 24 hours due to heightened geopolitical tensions in the Red Sea disrupting shipping through the Bab-el-Mandeb Strait",
+            "horizon": "24h",
+            "probability": 0.32,
+            "location": "Red Sea",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports WTI price; the closest signal shows Brent at $98.38 falling -2.29%, with no evidence of WTI rising above $95 or Red Sea shipping disruption.",
+            "resolved_ms": 1784931069286,
+            "ts": 1784844445703
+        },
+        {
+            "statement": "The Strait of Hormuz will experience increased oil tanker traffic due to supply chain disruptions in the Middle East",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating decreased\u2014not increased\u2014traffic during the window.",
+            "resolved_ms": 1784931064843,
+            "ts": 1784324290457
+        },
+        {
+            "statement": "WTI Crude Oil price surges above $95/bbl due to Strait of Hormuz shipping disruptions",
+            "horizon": "24h",
+            "probability": 0.11,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent crude was at 98.38 and falling (-2.29%), showing no price surge, and no signal shows WTI above $95 from a Hormuz disruption.",
+            "resolved_ms": 1784931062436,
+            "ts": 1784842472735
+        },
         {
             "statement": "The price of oil will rise due to supply chain disruptions caused by the ongoing conflict in the Middle East within the next week.",
             "horizon": "week",
@@ -176,39 +209,6 @@
             "evidence": "No captured signal concerns this forecast, and a continuing heatwave in Germany would certainly have been captured before the window closed.",
             "resolved_ms": 1784923825406,
             "ts": 1784316922513
-        },
-        {
-            "statement": "WTI crude oil price will rise above $95/bbl due to escalating Red Sea maritime disruptions",
-            "horizon": "24h",
-            "probability": 0.75,
-            "location": "Red Sea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI crude is at $89.32/bbl (down 3.11%), well below the $95 threshold, so the forecast did not come true.",
-            "resolved_ms": 1784923823544,
-            "ts": 1784834545323
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a temporary closure due to a naval conflict within the next week",
-            "horizon": "week",
-            "probability": 0.2,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S4 shows the Strait of Hormuz still had 15 daily transits (only 30% below average), indicating it remained operational with no closure or naval conflict captured.",
-            "resolved_ms": 1784920220977,
-            "ts": 1784315083821
-        },
-        {
-            "statement": "Red Sea maritime disruptions will push WTI crude above $95/bbl within 24 hours",
-            "horizon": "24h",
-            "probability": 0.2,
-            "location": "Red Sea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI crude is at $89.28/bbl (down 3.16%), well below the $95 threshold required by the forecast.",
-            "resolved_ms": 1784920217582,
-            "ts": 1784832558906
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 472,
-        "base_rate": 0.0784,
-        "brier_raw": 0.2475,
-        "brier_base_rate": 0.0722,
-        "brier_calibrated_oos": 0.0258,
-        "brier_calibrated_oos_n": 45,
+        "resolved_n": 475,
+        "base_rate": 0.0779,
+        "brier_raw": 0.2464,
+        "brier_base_rate": 0.0718,
+        "brier_calibrated_oos": 0.0249,
+        "brier_calibrated_oos_n": 47,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
