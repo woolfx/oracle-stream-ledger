@@ -1,6 +1,6 @@
 {
-    "resolved": 418,
-    "open": 1948,
+    "resolved": 421,
+    "open": 1946,
     "due": 47,
     "unresolvable": 51,
     "brier": 0.246,
@@ -12,22 +12,22 @@
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 94,
-            "brier": 0.217,
+            "resolved": 97,
+            "brier": 0.219,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 48,
+            "n": 49,
             "avg_predicted": 0.12,
             "observed": 0.06
         },
         {
             "bin": "20\u201340%",
-            "n": 110,
-            "avg_predicted": 0.3,
+            "n": 111,
+            "avg_predicted": 0.29,
             "observed": 0.05
         },
         {
@@ -44,32 +44,32 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 27,
+            "n": 28,
             "avg_predicted": 0.82,
-            "observed": 0.15
+            "observed": 0.14
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 418,
-            "brier": 0.294
+            "resolved": 421,
+            "brier": 0.293
         },
         "Economist": {
-            "resolved": 418,
+            "resolved": 421,
             "brier": 0.307
         },
         "Naturalist": {
-            "resolved": 418,
+            "resolved": 421,
             "brier": 0.328
         },
         "Skeptic": {
-            "resolved": 417,
-            "brier": 0.185
+            "resolved": 420,
+            "brier": 0.186
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1555,
+            "resolved": 1567,
             "brier": 0.29
         },
         "qwen3:14b": {
@@ -78,6 +78,39 @@
         }
     },
     "recent": [
+        {
+            "statement": "A major oil tanker will pass through the Bab el-Mandeb Strait within the next week",
+            "horizon": "week",
+            "probability": 0.86,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Bab el-Mandeb signal shows a critical chokepoint status with LIVE SHIPS: 0, confirming no tanker transit was captured rather than a major oil tanker passing through.",
+            "resolved_ms": 1784880479965,
+            "ts": 1784274385109
+        },
+        {
+            "statement": "Donald Trump will announce that Jon Ossof and Raphael Warnock are illegitimate Senators by the end of the week",
+            "horizon": "week",
+            "probability": 0.05,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows Trump making such an announcement, and an event this notable would have been captured within the window.",
+            "resolved_ms": 1784880476106,
+            "ts": 1784274385109
+        },
+        {
+            "statement": "A significant earthquake will occur in the South Sandwich Islands within the next week",
+            "horizon": "week",
+            "probability": 0.28,
+            "location": "South Sandwich Islands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows an M4.9 quake, which does not meet the threshold for a 'significant' earthquake in the South Sandwich Islands.",
+            "resolved_ms": 1784880474301,
+            "ts": 1784272544260
+        },
         {
             "statement": "S&P 500 futures will dip below 7450 due to geopolitical risk premium",
             "horizon": "24h",
@@ -176,39 +209,6 @@
             "evidence": "Kerch Strait shows 2 daily transits, not the forecasted drop to 1/day, so the specific threshold was not met.",
             "resolved_ms": 1784873243898,
             "ts": 1784785850617
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Japan",
-            "horizon": "week",
-            "probability": 0.32,
-            "location": "Japan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a tropical cyclone making landfall in Japan; NOUL-26 is located near the Philippines/Taiwan (18.7,123.5) and the others are far from Japan.",
-            "resolved_ms": 1784873241658,
-            "ts": 1784267012845
-        },
-        {
-            "statement": "The US will impose new sanctions on Iran",
-            "horizon": "week",
-            "probability": 0.6,
-            "location": "Middle East",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and new US sanctions on Iran would certainly have been captured, so no evidence shows the event occurred.",
-            "resolved_ms": 1784873237200,
-            "ts": 1784267012845
-        },
-        {
-            "statement": "US military strikes on Iran will escalate",
-            "horizon": "week",
-            "probability": 0.77,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any US military strikes on Iran; the Strait of Hormuz signal only shows a 30% drop in ship transits, which is a condition and not evidence of military escalation.",
-            "resolved_ms": 1784873235075,
-            "ts": 1784265169234
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 418,
-        "base_rate": 0.0837,
-        "brier_raw": 0.246,
-        "brier_base_rate": 0.0767,
+        "resolved_n": 421,
+        "base_rate": 0.0831,
+        "brier_raw": 0.2462,
+        "brier_base_rate": 0.0762,
         "brier_calibrated_oos": 0.006,
         "brier_calibrated_oos_n": 26,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
