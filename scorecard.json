@@ -1,20 +1,20 @@
 {
-    "resolved": 410,
-    "open": 1956,
-    "due": 51,
+    "resolved": 418,
+    "open": 1948,
+    "due": 47,
     "unresolvable": 51,
-    "brier": 0.247,
-    "hit_rate": 0.56,
+    "brier": 0.246,
+    "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 318,
-            "brier": 0.256,
+            "resolved": 324,
+            "brier": 0.254,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 92,
-            "brier": 0.219,
-            "hit_rate": 0.59
+            "resolved": 94,
+            "brier": 0.217,
+            "hit_rate": 0.6
         }
     },
     "calibration": [
@@ -26,21 +26,21 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 105,
-            "avg_predicted": 0.29,
+            "n": 110,
+            "avg_predicted": 0.3,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 134,
+            "n": 136,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 96,
+            "n": 97,
             "avg_predicted": 0.67,
-            "observed": 0.14
+            "observed": 0.13
         },
         {
             "bin": "80\u2013100%",
@@ -51,33 +51,121 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 410,
+            "resolved": 418,
             "brier": 0.294
         },
         "Economist": {
-            "resolved": 410,
-            "brier": 0.309
+            "resolved": 418,
+            "brier": 0.307
         },
         "Naturalist": {
-            "resolved": 410,
-            "brier": 0.331
+            "resolved": 418,
+            "brier": 0.328
         },
         "Skeptic": {
-            "resolved": 409,
-            "brier": 0.186
+            "resolved": 417,
+            "brier": 0.185
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1543,
-            "brier": 0.291
+            "resolved": 1555,
+            "brier": 0.29
         },
         "qwen3:14b": {
-            "resolved": 96,
-            "brier": 0.108
+            "resolved": 116,
+            "brier": 0.121
         }
     },
     "recent": [
+        {
+            "statement": "S&P 500 futures will dip below 7450 due to geopolitical risk premium",
+            "horizon": "24h",
+            "probability": 0.29,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports the S&P 500 futures level; only Nasdaq 100 futures (S13) is shown, so no evidence confirms a dip below 7450.",
+            "resolved_ms": 1784876871205,
+            "ts": 1784789775547
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict",
+            "horizon": "24h",
+            "probability": 0.34,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait shows 2 daily transits, which is not below the forecast threshold of 1/day.",
+            "resolved_ms": 1784876868420,
+            "ts": 1784789775547
+        },
+        {
+            "statement": "Natural gas prices (Henry Hub) will rise by 2.5-3.5% following the EIA storage report on 2026-07-23",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only natural gas signal (S12) shows Henry Hub at $2.9/MMBtu down 0.62%, a decline rather than the predicted 2.5-3.5% rise.",
+            "resolved_ms": 1784876865327,
+            "ts": 1784789775547
+        },
+        {
+            "statement": "The US will launch another round of strikes on Iran within the next week.",
+            "horizon": "week",
+            "probability": 0.27,
+            "location": "Iran",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows a US strike on Iran during the window, and such an event would certainly have been captured.",
+            "resolved_ms": 1784876862236,
+            "ts": 1784270705684
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict",
+            "horizon": "24h",
+            "probability": 0.38,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait shows 2 daily ship transits, which is above the forecast threshold of below 1/day.",
+            "resolved_ms": 1784876860346,
+            "ts": 1784787817167
+        },
+        {
+            "statement": "The price of oil will rise by at least $1 per barrel within the next week due to increased tensions in the Middle East",
+            "horizon": "week",
+            "probability": 0.43,
+            "location": "Middle East",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current WTI snapshot shows oil at 90.79 $/bbl down 1.52% (and Brent down 1.35%), with no signal showing the required $1 per barrel rise during the window.",
+            "resolved_ms": 1784876857610,
+            "ts": 1784268865025
+        },
+        {
+            "statement": "VIX fear gauge will spike to 18.5 due to renewed Gaza conflict escalation.",
+            "horizon": "24h",
+            "probability": 0.31,
+            "location": "Gaza Strip",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 confirms ongoing Gaza conflict but provides no VIX data showing a spike to 18.5, which such a market move would require.",
+            "resolved_ms": 1784876852792,
+            "ts": 1784785850617
+        },
+        {
+            "statement": "NG=F will close 0.5% lower",
+            "horizon": "24h",
+            "probability": 0.53,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, so there is no evidence that NG=F closed 0.5% lower within the window.",
+            "resolved_ms": 1784876850033,
+            "ts": 1784717788345
+        },
         {
             "statement": "Kerch Strait ship transits will drop to 1/day due to intensified Ukrainian conflict.",
             "horizon": "24h",
@@ -121,94 +209,6 @@
             "evidence": "No signal reports any US military strikes on Iran; the Strait of Hormuz signal only shows a 30% drop in ship transits, which is a condition and not evidence of military escalation.",
             "resolved_ms": 1784873235075,
             "ts": 1784265169234
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict operations",
-            "horizon": "24h",
-            "probability": 0.38,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily transits, which is above the forecast threshold of below 1/day.",
-            "resolved_ms": 1784869625890,
-            "ts": 1784781894962
-        },
-        {
-            "statement": "A significant increase in oil prices will occur due to disruptions at the Strait of Hormuz",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude sits at 100.31 $/bbl and is down 0.38%, showing no significant oil-price increase despite reduced Hormuz transits.",
-            "resolved_ms": 1784869622548,
-            "ts": 1784263329242
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a brief but significant disruption to shipping within the next week.",
-            "horizon": "week",
-            "probability": 0.5,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S4 shows Hormuz transits merely 30% below its 30-day average, a routine fluctuation that does not constitute a brief but significant shipping disruption event.",
-            "resolved_ms": 1784869618864,
-            "ts": 1784261489934
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will strike off the coast of Japan",
-            "horizon": "week",
-            "probability": 0.23,
-            "location": "Japan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a magnitude 6.0 earthquake off the coast of Japan during the window, and such an event would certainly have been recorded.",
-            "resolved_ms": 1784866010360,
-            "ts": 1784259637358
-        },
-        {
-            "statement": "At least one major oil tanker will be affected by the ongoing conflict in Bab el-Mandeb",
-            "horizon": "week",
-            "probability": 0.3,
-            "location": "Bab el-Mandeb",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S14 shows Bab el-Mandeb at critical/elevated risk status with zero live ships, but no signal reports any oil tanker actually being affected by conflict.",
-            "resolved_ms": 1784866008046,
-            "ts": 1784257786801
-        },
-        {
-            "statement": "Oil prices will rise by at least $5 per barrel within the next week due to supply chain disruptions in the Strait of Hormuz.",
-            "horizon": "week",
-            "probability": 0.47,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports oil prices at all; the reduced Hormuz transits in S11 show a supply condition but do not show any $5/barrel price rise occurred.",
-            "resolved_ms": 1784866004465,
-            "ts": 1784223147355
-        },
-        {
-            "statement": "The price of oil will increase by at least $5 per barrel within the next week due to supply chain disruptions in the Strait of Hormuz.",
-            "horizon": "week",
-            "probability": 0.38,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any oil price movement; S11 shows reduced Hormuz transits (a condition, not a $5/barrel price increase), so the forecast's stated threshold is unmet.",
-            "resolved_ms": 1784865999478,
-            "ts": 1784222734483
-        },
-        {
-            "statement": "The price of oil will rise by at least $5 per barrel within the next week due to supply chain disruptions caused by the ongoing conflict in the Middle East.",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "Bab el-Mandeb",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any oil price movement; S14 only shows an elevated-risk chokepoint status, not a $5/barrel price rise, so the forecast's stated threshold is not met.",
-            "resolved_ms": 1784865994987,
-            "ts": 1784222125174
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 410,
-        "base_rate": 0.0854,
-        "brier_raw": 0.2475,
-        "brier_base_rate": 0.0781,
-        "brier_calibrated_oos": 0.0056,
-        "brier_calibrated_oos_n": 21,
+        "resolved_n": 418,
+        "base_rate": 0.0837,
+        "brier_raw": 0.246,
+        "brier_base_rate": 0.0767,
+        "brier_calibrated_oos": 0.006,
+        "brier_calibrated_oos_n": 26,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
