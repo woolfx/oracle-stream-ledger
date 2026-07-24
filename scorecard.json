@@ -1,19 +1,19 @@
 {
-    "resolved": 445,
-    "open": 1944,
-    "due": 49,
+    "resolved": 447,
+    "open": 1947,
+    "due": 54,
     "unresolvable": 51,
-    "brier": 0.245,
+    "brier": 0.244,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 332,
+            "resolved": 333,
             "brier": 0.25,
             "hit_rate": 0.57
         },
         "week": {
-            "resolved": 113,
-            "brier": 0.23,
+            "resolved": 114,
+            "brier": 0.229,
             "hit_rate": 0.57
         }
     },
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 119,
+            "n": 121,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -51,33 +51,55 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 445,
+            "resolved": 447,
             "brier": 0.293
         },
         "Economist": {
-            "resolved": 444,
+            "resolved": 446,
             "brier": 0.306
         },
         "Naturalist": {
-            "resolved": 445,
+            "resolved": 447,
             "brier": 0.322
         },
         "Skeptic": {
-            "resolved": 444,
-            "brier": 0.184
+            "resolved": 446,
+            "brier": 0.183
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1631,
+            "resolved": 1635,
             "brier": 0.291
         },
         "qwen3:14b": {
-            "resolved": 147,
-            "brier": 0.113
+            "resolved": 151,
+            "brier": 0.112
         }
     },
     "recent": [
+        {
+            "statement": "S&P 500 futures will drop below 7400 due to heightened geopolitical risk aversion",
+            "horizon": "24h",
+            "probability": 0.27,
+            "location": "Global Markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports S&P 500 futures level; the only equity signal (S12, Nasdaq 100 at 28420.75) does not show S&P 500 falling below 7400, and oil prices actually declined, contradicting the geopolitical-panic premise.",
+            "resolved_ms": 1784905774971,
+            "ts": 1784818937171
+        },
+        {
+            "statement": "A major earthquake will strike the South Island of New Zealand within the next week",
+            "horizon": "week",
+            "probability": 0.37,
+            "location": "South Island, New Zealand",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal was captured concerning this forecast, and a major earthquake would certainly have been recorded, so the event did not occur within the window.",
+            "resolved_ms": 1784905770072,
+            "ts": 1784298429798
+        },
         {
             "statement": "Shipping disruptions in the Kerch Strait due to proximity to Ukraine conflict",
             "horizon": "24h",
@@ -187,28 +209,6 @@
             "evidence": "WTI crude fell 2.97% rather than rising 3.2%, contradicting the forecast.",
             "resolved_ms": 1784898540807,
             "ts": 1784809205858
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the Gulf Coast within the next week",
-            "horizon": "week",
-            "probability": 0.34,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Only green-level advisory notifications for tropical storms exist (BERTHA at inland Texas coords with 0 population affected at Category 1+), which show conditions rather than a confirmed Gulf Coast landfall event.",
-            "resolved_ms": 1784894938179,
-            "ts": 1784289184861
-        },
-        {
-            "statement": "WTI Crude Oil price will rise by 3-5% within 24 hours due to increased shipping activity through the Ombai Strait (51% above 30-day average).",
-            "horizon": "24h",
-            "probability": 0.12,
-            "location": "Ombai Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI Crude Oil is at 89.99 $/bbl showing -2.39%, a decline rather than the forecasted 3-5% rise.",
-            "resolved_ms": 1784894931124,
-            "ts": 1784807219146
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 445,
-        "base_rate": 0.0809,
-        "brier_raw": 0.245,
-        "brier_base_rate": 0.0744,
-        "brier_calibrated_oos": 0.0295,
-        "brier_calibrated_oos_n": 34,
+        "resolved_n": 447,
+        "base_rate": 0.0805,
+        "brier_raw": 0.2444,
+        "brier_base_rate": 0.0741,
+        "brier_calibrated_oos": 0.0288,
+        "brier_calibrated_oos_n": 35,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
