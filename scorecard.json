@@ -1,20 +1,20 @@
 {
-    "resolved": 406,
-    "open": 1951,
-    "due": 48,
+    "resolved": 410,
+    "open": 1956,
+    "due": 51,
     "unresolvable": 51,
     "brier": 0.247,
     "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 317,
+            "resolved": 318,
             "brier": 0.256,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 89,
-            "brier": 0.215,
-            "hit_rate": 0.6
+            "resolved": 92,
+            "brier": 0.219,
+            "hit_rate": 0.59
         }
     },
     "calibration": [
@@ -26,19 +26,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 104,
+            "n": 105,
             "avg_predicted": 0.29,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 133,
+            "n": 134,
             "avg_predicted": 0.49,
-            "observed": 0.08
+            "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 94,
+            "n": 96,
             "avg_predicted": 0.67,
             "observed": 0.14
         },
@@ -51,33 +51,77 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 406,
-            "brier": 0.292
+            "resolved": 410,
+            "brier": 0.294
         },
         "Economist": {
-            "resolved": 406,
+            "resolved": 410,
             "brier": 0.309
         },
         "Naturalist": {
-            "resolved": 406,
+            "resolved": 410,
             "brier": 0.331
         },
         "Skeptic": {
-            "resolved": 405,
+            "resolved": 409,
             "brier": 0.186
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1531,
-            "brier": 0.29
+            "resolved": 1543,
+            "brier": 0.291
         },
         "qwen3:14b": {
-            "resolved": 92,
-            "brier": 0.105
+            "resolved": 96,
+            "brier": 0.108
         }
     },
     "recent": [
+        {
+            "statement": "Kerch Strait ship transits will drop to 1/day due to intensified Ukrainian conflict.",
+            "horizon": "24h",
+            "probability": 0.4,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait shows 2 daily transits, not the forecasted drop to 1/day, so the specific threshold was not met.",
+            "resolved_ms": 1784873243898,
+            "ts": 1784785850617
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Japan",
+            "horizon": "week",
+            "probability": 0.32,
+            "location": "Japan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a tropical cyclone making landfall in Japan; NOUL-26 is located near the Philippines/Taiwan (18.7,123.5) and the others are far from Japan.",
+            "resolved_ms": 1784873241658,
+            "ts": 1784267012845
+        },
+        {
+            "statement": "The US will impose new sanctions on Iran",
+            "horizon": "week",
+            "probability": 0.6,
+            "location": "Middle East",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and new US sanctions on Iran would certainly have been captured, so no evidence shows the event occurred.",
+            "resolved_ms": 1784873237200,
+            "ts": 1784267012845
+        },
+        {
+            "statement": "US military strikes on Iran will escalate",
+            "horizon": "week",
+            "probability": 0.77,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any US military strikes on Iran; the Strait of Hormuz signal only shows a 30% drop in ship transits, which is a condition and not evidence of military escalation.",
+            "resolved_ms": 1784873235075,
+            "ts": 1784265169234
+        },
         {
             "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict operations",
             "horizon": "24h",
@@ -165,50 +209,6 @@
             "evidence": "No signal reports any oil price movement; S14 only shows an elevated-risk chokepoint status, not a $5/barrel price rise, so the forecast's stated threshold is not met.",
             "resolved_ms": 1784865994987,
             "ts": 1784222125174
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will occur in the South Sandwich Islands",
-            "horizon": "week",
-            "probability": 0.23,
-            "location": "South Sandwich Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The window has closed and no provided signal text reports a magnitude 6.0 earthquake in the South Sandwich Islands, an event that would have been captured.",
-            "resolved_ms": 1784862389744,
-            "ts": 1784255935254
-        },
-        {
-            "statement": "Zaporizhzhia Nuclear Power Plant will issue a Level 2 INES safety alert due to shelling near the facility",
-            "horizon": "24h",
-            "probability": 0.29,
-            "location": "Zaporizhzhia NPP",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Signal 9 shows Zaporizhzhia NPP as an active conflict zone but does not indicate any Level 2 INES safety alert was issued.",
-            "resolved_ms": 1784862384342,
-            "ts": 1784774106286
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict proximity",
-            "horizon": "24h",
-            "probability": 0.45,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily ship transits, which is above the forecast threshold of below 1/day, so the event did not occur.",
-            "resolved_ms": 1784862382564,
-            "ts": 1784774106286
-        },
-        {
-            "statement": "Natural gas futures (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report on July 23",
-            "horizon": "24h",
-            "probability": 0.5,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports NG=F price movement or a July 23 storage report outcome; the only natural gas signal (S4) is a future scheduled report on July 30, so the claimed 2.5-3.5% rise is unconfirmed.",
-            "resolved_ms": 1784862379269,
-            "ts": 1784774106286
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 406,
-        "base_rate": 0.0862,
-        "brier_raw": 0.2469,
-        "brier_base_rate": 0.0788,
-        "brier_calibrated_oos": 0.0055,
-        "brier_calibrated_oos_n": 20,
+        "resolved_n": 410,
+        "base_rate": 0.0854,
+        "brier_raw": 0.2475,
+        "brier_base_rate": 0.0781,
+        "brier_calibrated_oos": 0.0056,
+        "brier_calibrated_oos_n": 21,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
