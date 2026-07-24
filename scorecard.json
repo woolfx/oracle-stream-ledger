@@ -1,19 +1,19 @@
 {
-    "resolved": 454,
-    "open": 1943,
-    "due": 53,
+    "resolved": 458,
+    "open": 1945,
+    "due": 54,
     "unresolvable": 51,
-    "brier": 0.245,
+    "brier": 0.247,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 335,
-            "brier": 0.252,
+            "resolved": 337,
+            "brier": 0.253,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 119,
-            "brier": 0.227,
+            "resolved": 121,
+            "brier": 0.23,
             "hit_rate": 0.58
         }
     },
@@ -26,58 +26,102 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 122,
+            "n": 123,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 146,
+            "n": 147,
             "avg_predicted": 0.49,
-            "observed": 0.08
+            "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 104,
+            "n": 105,
             "avg_predicted": 0.67,
             "observed": 0.12
         },
         {
             "bin": "80\u2013100%",
-            "n": 29,
+            "n": 30,
             "avg_predicted": 0.82,
-            "observed": 0.14
+            "observed": 0.13
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 454,
-            "brier": 0.292
+            "resolved": 458,
+            "brier": 0.295
         },
         "Economist": {
-            "resolved": 453,
-            "brier": 0.307
+            "resolved": 457,
+            "brier": 0.309
         },
         "Naturalist": {
-            "resolved": 454,
-            "brier": 0.323
+            "resolved": 458,
+            "brier": 0.325
         },
         "Skeptic": {
-            "resolved": 453,
-            "brier": 0.184
+            "resolved": 457,
+            "brier": 0.186
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1655,
+            "resolved": 1663,
             "brier": 0.29
         },
         "qwen3:14b": {
-            "resolved": 159,
-            "brier": 0.142
+            "resolved": 167,
+            "brier": 0.159
         }
     },
     "recent": [
+        {
+            "statement": "A devastating flood will hit the city of Paris within the next week",
+            "horizon": "week",
+            "probability": 0.22,
+            "location": "Paris, France",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any flood in Paris, and a devastating flood would certainly have been captured within the closed window.",
+            "resolved_ms": 1784916607964,
+            "ts": 1784311382691
+        },
+        {
+            "statement": "The price of oil will rise due to disruptions in the Bab el-Mandeb Strait",
+            "horizon": "week",
+            "probability": 0.88,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent Crude fell to 96.39 $/bbl (-4.27%), showing oil prices declined rather than rose during the window.",
+            "resolved_ms": 1784916605336,
+            "ts": 1784311382690
+        },
+        {
+            "statement": "Oil prices (WTI/Brent) will rise above $105/bbl due to intensified Red Sea attacks disrupting shipping",
+            "horizon": "24h",
+            "probability": 0.77,
+            "location": "Red Sea/Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent Crude is at $96.39/bbl (-4.27%), well below the $105 threshold and falling, so the forecast did not come true.",
+            "resolved_ms": 1784916602474,
+            "ts": 1784828716525
+        },
+        {
+            "statement": "WTI crude oil prices will exceed $105 per barrel due to escalating Red Sea attacks disrupting shipping through the Strait of Hormuz",
+            "horizon": "24h",
+            "probability": 0.57,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent crude sits at $96.39 (down 4.27%), so WTI\u2014typically below Brent\u2014did not exceed $105, and no signal shows any such price spike.",
+            "resolved_ms": 1784916599942,
+            "ts": 1784826719848
+        },
         {
             "statement": "A significant earthquake will occur in the region of Puerto Madero, Mexico within the next week",
             "horizon": "week",
@@ -165,50 +209,6 @@
             "evidence": "No signal reports S&P 500 futures level; the only equity signal (S12, Nasdaq 100 at 28420.75) does not show S&P 500 falling below 7400, and oil prices actually declined, contradicting the geopolitical-panic premise.",
             "resolved_ms": 1784905774971,
             "ts": 1784818937171
-        },
-        {
-            "statement": "A major earthquake will strike the South Island of New Zealand within the next week",
-            "horizon": "week",
-            "probability": 0.37,
-            "location": "South Island, New Zealand",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal was captured concerning this forecast, and a major earthquake would certainly have been recorded, so the event did not occur within the window.",
-            "resolved_ms": 1784905770072,
-            "ts": 1784298429798
-        },
-        {
-            "statement": "Shipping disruptions in the Kerch Strait due to proximity to Ukraine conflict",
-            "horizon": "24h",
-            "probability": 0.45,
-            "location": "Kerch Strait",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S6 shows Kerch Strait at 2 daily transits, 73% below its 30-day average, with a nearby Russia-Ukraine conflict flag, evidencing the forecast shipping disruption.",
-            "resolved_ms": 1784902167982,
-            "ts": 1784815021494
-        },
-        {
-            "statement": "A major earthquake will occur in the Pacific Ring of Fire within the next week, causing significant damage and loss of life.",
-            "horizon": "week",
-            "probability": 0.54,
-            "location": "Pacific Ring of Fire",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports a major earthquake with significant damage and loss of life in the Pacific Ring of Fire during the window, so an event that large would have been captured but was not.",
-            "resolved_ms": 1784902163573,
-            "ts": 1784296591172
-        },
-        {
-            "statement": "A major flood will occur in the UK",
-            "horizon": "week",
-            "probability": 0.54,
-            "location": "UK",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports a major flood occurring in the UK during the window, and such an event would certainly have been captured.",
-            "resolved_ms": 1784902161456,
-            "ts": 1784294740166
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 454,
-        "base_rate": 0.0793,
-        "brier_raw": 0.2453,
-        "brier_base_rate": 0.073,
-        "brier_calibrated_oos": 0.0288,
-        "brier_calibrated_oos_n": 37,
+        "resolved_n": 458,
+        "base_rate": 0.0786,
+        "brier_raw": 0.247,
+        "brier_base_rate": 0.0724,
+        "brier_calibrated_oos": 0.0283,
+        "brier_calibrated_oos_n": 39,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
