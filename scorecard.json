@@ -1,19 +1,19 @@
 {
-    "resolved": 393,
-    "open": 1955,
-    "due": 47,
+    "resolved": 398,
+    "open": 1951,
+    "due": 46,
     "unresolvable": 51,
-    "brier": 0.249,
+    "brier": 0.248,
     "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 313,
-            "brier": 0.257,
+            "resolved": 316,
+            "brier": 0.256,
             "hit_rate": 0.55
         },
         "week": {
-            "resolved": 80,
-            "brier": 0.218,
+            "resolved": 82,
+            "brier": 0.217,
             "hit_rate": 0.6
         }
     },
@@ -26,13 +26,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 98,
+            "n": 100,
             "avg_predicted": 0.29,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 126,
+            "n": 129,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
@@ -51,33 +51,88 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 393,
-            "brier": 0.296
+            "resolved": 398,
+            "brier": 0.294
         },
         "Economist": {
-            "resolved": 393,
+            "resolved": 398,
             "brier": 0.31
         },
         "Naturalist": {
-            "resolved": 393,
+            "resolved": 398,
             "brier": 0.333
         },
         "Skeptic": {
-            "resolved": 392,
-            "brier": 0.188
+            "resolved": 397,
+            "brier": 0.186
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1495,
-            "brier": 0.292
+            "resolved": 1503,
+            "brier": 0.291
         },
         "qwen3:14b": {
-            "resolved": 76,
-            "brier": 0.086
+            "resolved": 88,
+            "brier": 0.103
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 6.0 earthquake will occur in the South Sandwich Islands",
+            "horizon": "week",
+            "probability": 0.23,
+            "location": "South Sandwich Islands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The window has closed and no provided signal text reports a magnitude 6.0 earthquake in the South Sandwich Islands, an event that would have been captured.",
+            "resolved_ms": 1784862389744,
+            "ts": 1784255935254
+        },
+        {
+            "statement": "Zaporizhzhia Nuclear Power Plant will issue a Level 2 INES safety alert due to shelling near the facility",
+            "horizon": "24h",
+            "probability": 0.29,
+            "location": "Zaporizhzhia NPP",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signal 9 shows Zaporizhzhia NPP as an active conflict zone but does not indicate any Level 2 INES safety alert was issued.",
+            "resolved_ms": 1784862384342,
+            "ts": 1784774106286
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict proximity",
+            "horizon": "24h",
+            "probability": 0.45,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait shows 2 daily ship transits, which is above the forecast threshold of below 1/day, so the event did not occur.",
+            "resolved_ms": 1784862382564,
+            "ts": 1784774106286
+        },
+        {
+            "statement": "Natural gas futures (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report on July 23",
+            "horizon": "24h",
+            "probability": 0.5,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports NG=F price movement or a July 23 storage report outcome; the only natural gas signal (S4) is a future scheduled report on July 30, so the claimed 2.5-3.5% rise is unconfirmed.",
+            "resolved_ms": 1784862379269,
+            "ts": 1784774106286
+        },
+        {
+            "statement": "A magnitude 6.0+ earthquake will strike the South Island of New Zealand",
+            "horizon": "week",
+            "probability": 0.51,
+            "location": "South Island, New Zealand",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The window closed and no admissible signal reports a magnitude 6.0+ earthquake striking the South Island of New Zealand, which an event of that size would certainly have shown.",
+            "resolved_ms": 1784862375217,
+            "ts": 1784254083657
+        },
         {
             "statement": "A major flood will hit Austria within the next week, affecting at least 10,000 people.",
             "horizon": "week",
@@ -154,61 +209,6 @@
             "evidence": "No signal text shows Texas electricity demand reaching 105 GWh/h, and the window has closed.",
             "resolved_ms": 1784858718397,
             "ts": 1784764327210
-        },
-        {
-            "statement": "Severe thunderstorms will cause power outages in the Midwest US",
-            "horizon": "week",
-            "probability": 0.52,
-            "location": "Midwest, USA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a widespread severe thunderstorm power outage event in the Midwest would certainly have been captured within the closed window.",
-            "resolved_ms": 1784855086300,
-            "ts": 1784248546738
-        },
-        {
-            "statement": "Flash flooding in Albuquerque, New Mexico will disrupt at least 3 major highways",
-            "horizon": "24h",
-            "probability": 0.15,
-            "location": "Albuquerque, New Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal provides evidence of flash flooding disrupting three major highways in Albuquerque, and such a major event would have been captured within the closed window.",
-            "resolved_ms": 1784855084321,
-            "ts": 1784766335453
-        },
-        {
-            "statement": "Natural gas futures (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report release on July 23",
-            "horizon": "24h",
-            "probability": 0.63,
-            "location": "Henry Hub, Louisiana",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports NG=F price movement following the July 23 EIA storage report; S5 only references a future July 30 report, so the claimed 2.5-3.5% rise is unconfirmed.",
-            "resolved_ms": 1784855082743,
-            "ts": 1784766335453
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in oil tanker traffic.",
-            "horizon": "week",
-            "probability": 0.51,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average of 21, indicating a decrease rather than a significant increase in tanker traffic.",
-            "resolved_ms": 1784855076094,
-            "ts": 1784246696390
-        },
-        {
-            "statement": "Severe thunderstorm in Tampa, Florida disrupts air travel and causes power outages",
-            "horizon": "24h",
-            "probability": 0.16,
-            "location": "Tampa, Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and an event this significant would certainly have been captured if it occurred.",
-            "resolved_ms": 1784855073171,
-            "ts": 1784764533847
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 393,
-        "base_rate": 0.0891,
-        "brier_raw": 0.2491,
-        "brier_base_rate": 0.0811,
-        "brier_calibrated_oos": 0.0049,
-        "brier_calibrated_oos_n": 16,
+        "resolved_n": 398,
+        "base_rate": 0.0879,
+        "brier_raw": 0.2481,
+        "brier_base_rate": 0.0802,
+        "brier_calibrated_oos": 0.0054,
+        "brier_calibrated_oos_n": 19,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
