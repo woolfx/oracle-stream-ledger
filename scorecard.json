@@ -1,18 +1,18 @@
 {
-    "resolved": 429,
-    "open": 1944,
+    "resolved": 432,
+    "open": 1941,
     "due": 48,
     "unresolvable": 51,
     "brier": 0.247,
     "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 326,
+            "resolved": 327,
             "brier": 0.253,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 103,
+            "resolved": 105,
             "brier": 0.229,
             "hit_rate": 0.57
         }
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 114,
+            "n": 116,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -38,7 +38,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 101,
+            "n": 102,
             "avg_predicted": 0.67,
             "observed": 0.13
         },
@@ -51,33 +51,66 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 429,
-            "brier": 0.296
+            "resolved": 432,
+            "brier": 0.295
         },
         "Economist": {
-            "resolved": 429,
+            "resolved": 432,
             "brier": 0.307
         },
         "Naturalist": {
-            "resolved": 429,
-            "brier": 0.328
+            "resolved": 432,
+            "brier": 0.327
         },
         "Skeptic": {
-            "resolved": 428,
-            "brier": 0.185
+            "resolved": 431,
+            "brier": 0.184
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1591,
-            "brier": 0.292
+            "resolved": 1599,
+            "brier": 0.291
         },
         "qwen3:14b": {
-            "resolved": 124,
-            "brier": 0.117
+            "resolved": 128,
+            "brier": 0.116
         }
     },
     "recent": [
+        {
+            "statement": "A Category 1 hurricane will make landfall in Mexico within the next week",
+            "horizon": "week",
+            "probability": 0.23,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All listed cyclones (BERTHA, FAUSTO, ELIDA) are green-level tropical storms with zero population affected by Category 1 winds, and none show a Category 1 hurricane making landfall in Mexico.",
+            "resolved_ms": 1784891322730,
+            "ts": 1784285485844
+        },
+        {
+            "statement": "The Strait of Hormuz will experience disruptions to oil traffic within the next week.",
+            "horizon": "week",
+            "probability": 0.62,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S9 shows Hormuz transits merely 30% below a 30-day average, a status fluctuation with no signal confirming an actual disruption event to oil traffic occurred within the window.",
+            "resolved_ms": 1784891317922,
+            "ts": 1784283645138
+        },
+        {
+            "statement": "VIX fear gauge rises above 19.5 due to escalation in Ukraine-Russia diplomatic tensions and Gaza conflict volatility",
+            "horizon": "24h",
+            "probability": 0.3,
+            "location": "Global financial markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current VIX reading (S12) is 18.84, below the forecast threshold of 19.5, so the fear gauge did not rise above the stated level.",
+            "resolved_ms": 1784891306989,
+            "ts": 1784801536301
+        },
         {
             "statement": "A significant increase in global oil prices will occur within the next week due to a potential disruption at the Bab el-Mandeb Strait.",
             "horizon": "week",
@@ -176,39 +209,6 @@
             "evidence": "The only Bab el-Mandeb signal shows a critical chokepoint status with LIVE SHIPS: 0, confirming no tanker transit was captured rather than a major oil tanker passing through.",
             "resolved_ms": 1784880479965,
             "ts": 1784274385109
-        },
-        {
-            "statement": "Donald Trump will announce that Jon Ossof and Raphael Warnock are illegitimate Senators by the end of the week",
-            "horizon": "week",
-            "probability": 0.05,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows Trump making such an announcement, and an event this notable would have been captured within the window.",
-            "resolved_ms": 1784880476106,
-            "ts": 1784274385109
-        },
-        {
-            "statement": "A significant earthquake will occur in the South Sandwich Islands within the next week",
-            "horizon": "week",
-            "probability": 0.28,
-            "location": "South Sandwich Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows an M4.9 quake, which does not meet the threshold for a 'significant' earthquake in the South Sandwich Islands.",
-            "resolved_ms": 1784880474301,
-            "ts": 1784272544260
-        },
-        {
-            "statement": "S&P 500 futures will dip below 7450 due to geopolitical risk premium",
-            "horizon": "24h",
-            "probability": 0.29,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports the S&P 500 futures level; only Nasdaq 100 futures (S13) is shown, so no evidence confirms a dip below 7450.",
-            "resolved_ms": 1784876871205,
-            "ts": 1784789775547
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 429,
-        "base_rate": 0.0816,
-        "brier_raw": 0.2472,
-        "brier_base_rate": 0.0749,
+        "resolved_n": 432,
+        "base_rate": 0.081,
+        "brier_raw": 0.2467,
+        "brier_base_rate": 0.0745,
         "brier_calibrated_oos": 0.0059,
-        "brier_calibrated_oos_n": 28,
+        "brier_calibrated_oos_n": 29,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
