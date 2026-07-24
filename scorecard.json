@@ -1,20 +1,20 @@
 {
-    "resolved": 466,
-    "open": 1948,
-    "due": 55,
+    "resolved": 472,
+    "open": 1942,
+    "due": 53,
     "unresolvable": 51,
-    "brier": 0.247,
+    "brier": 0.248,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 340,
-            "brier": 0.254,
+            "resolved": 343,
+            "brier": 0.253,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 126,
-            "brier": 0.229,
-            "hit_rate": 0.59
+            "resolved": 129,
+            "brier": 0.232,
+            "hit_rate": 0.58
         }
     },
     "calibration": [
@@ -26,19 +26,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 127,
+            "n": 128,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 149,
+            "n": 151,
             "avg_predicted": 0.49,
-            "observed": 0.07
+            "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 106,
+            "n": 109,
             "avg_predicted": 0.67,
             "observed": 0.12
         },
@@ -51,33 +51,99 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 466,
-            "brier": 0.294
+            "resolved": 472,
+            "brier": 0.295
         },
         "Economist": {
-            "resolved": 465,
-            "brier": 0.308
+            "resolved": 471,
+            "brier": 0.307
         },
         "Naturalist": {
-            "resolved": 466,
-            "brier": 0.325
+            "resolved": 472,
+            "brier": 0.327
         },
         "Skeptic": {
-            "resolved": 465,
-            "brier": 0.186
+            "resolved": 471,
+            "brier": 0.187
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1683,
-            "brier": 0.289
+            "resolved": 1695,
+            "brier": 0.29
         },
         "qwen3:14b": {
-            "resolved": 179,
-            "brier": 0.173
+            "resolved": 191,
+            "brier": 0.178
         }
     },
     "recent": [
+        {
+            "statement": "The price of oil will rise due to supply chain disruptions caused by the ongoing conflict in the Middle East within the next week.",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "Middle East",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 explicitly reports Red Sea turmoil from the Iran/Middle East conflict pushing oil past $100 a barrel, showing the price rise due to conflict-driven supply disruption within the window.",
+            "resolved_ms": 1784927456694,
+            "ts": 1784322445454
+        },
+        {
+            "statement": "A significant earthquake will occur in Mexico within the next week.",
+            "horizon": "week",
+            "probability": 0.78,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal was captured concerning any earthquake in Mexico, and a significant earthquake would certainly have been recorded during the closed window.",
+            "resolved_ms": 1784927449269,
+            "ts": 1784322445454
+        },
+        {
+            "statement": "S&P 500 futures will drop below 7350 by 24 hours",
+            "horizon": "24h",
+            "probability": 0.24,
+            "location": "US markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports S&P 500 futures below 7350; related Nasdaq futures fell only -1.11% and VIX at 18.58 (-0.64%) indicate no such drop occurred.",
+            "resolved_ms": 1784927447598,
+            "ts": 1784840523188
+        },
+        {
+            "statement": "WTI Crude Oil price will rise above $95/bbl within 24 hours",
+            "horizon": "24h",
+            "probability": 0.63,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports WTI crude price; the closest, Brent at $98.44 falling -2.23%, does not show WTI above $95/bbl.",
+            "resolved_ms": 1784927442490,
+            "ts": 1784840523188
+        },
+        {
+            "statement": "A heatwave will affect parts of Europe next week",
+            "horizon": "week",
+            "probability": 0.6,
+            "location": "Europe",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a European heatwave would certainly have been captured, yet none is present.",
+            "resolved_ms": 1784927437783,
+            "ts": 1784320603886
+        },
+        {
+            "statement": "S&P 500 futures drop by 1.5-2.5% due to heightened geopolitical risks and VIX volatility spillover",
+            "horizon": "24h",
+            "probability": 0.42,
+            "location": "Global Financial Markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Nasdaq 100 futures fell only 1.11% and VIX actually declined (-0.64%), showing no 1.5-2.5% equity drop or volatility spillover occurred.",
+            "resolved_ms": 1784927436006,
+            "ts": 1784838520126
+        },
         {
             "statement": "A tropical cyclone will make landfall in the Philippines within the next week",
             "horizon": "week",
@@ -143,72 +209,6 @@
             "evidence": "WTI crude is at $89.28/bbl (down 3.16%), well below the $95 threshold required by the forecast.",
             "resolved_ms": 1784920217582,
             "ts": 1784832558906
-        },
-        {
-            "statement": "A major wildfire will break out in California's Napa Valley region.",
-            "horizon": "week",
-            "probability": 0.45,
-            "location": "Napa Valley, California",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports a major wildfire in Napa Valley during the window, so an event that large would have been captured yet none appears.",
-            "resolved_ms": 1784920214790,
-            "ts": 1784313234619
-        },
-        {
-            "statement": "A Category 1 tropical cyclone will make landfall in the Philippines.",
-            "horizon": "week",
-            "probability": 0.2,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are far from the Philippines with zero Category 1 wind impact, and no signal shows any Category 1 landfall in the Philippines during the closed window.",
-            "resolved_ms": 1784920211830,
-            "ts": 1784313234619
-        },
-        {
-            "statement": "A devastating flood will hit the city of Paris within the next week",
-            "horizon": "week",
-            "probability": 0.22,
-            "location": "Paris, France",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any flood in Paris, and a devastating flood would certainly have been captured within the closed window.",
-            "resolved_ms": 1784916607964,
-            "ts": 1784311382691
-        },
-        {
-            "statement": "The price of oil will rise due to disruptions in the Bab el-Mandeb Strait",
-            "horizon": "week",
-            "probability": 0.88,
-            "location": "Bab el-Mandeb Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude fell to 96.39 $/bbl (-4.27%), showing oil prices declined rather than rose during the window.",
-            "resolved_ms": 1784916605336,
-            "ts": 1784311382690
-        },
-        {
-            "statement": "Oil prices (WTI/Brent) will rise above $105/bbl due to intensified Red Sea attacks disrupting shipping",
-            "horizon": "24h",
-            "probability": 0.77,
-            "location": "Red Sea/Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude is at $96.39/bbl (-4.27%), well below the $105 threshold and falling, so the forecast did not come true.",
-            "resolved_ms": 1784916602474,
-            "ts": 1784828716525
-        },
-        {
-            "statement": "WTI crude oil prices will exceed $105 per barrel due to escalating Red Sea attacks disrupting shipping through the Strait of Hormuz",
-            "horizon": "24h",
-            "probability": 0.57,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent crude sits at $96.39 (down 4.27%), so WTI\u2014typically below Brent\u2014did not exceed $105, and no signal shows any such price spike.",
-            "resolved_ms": 1784916599942,
-            "ts": 1784826719848
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 466,
-        "base_rate": 0.0773,
-        "brier_raw": 0.2468,
-        "brier_base_rate": 0.0713,
-        "brier_calibrated_oos": 0.0271,
-        "brier_calibrated_oos_n": 42,
+        "resolved_n": 472,
+        "base_rate": 0.0784,
+        "brier_raw": 0.2475,
+        "brier_base_rate": 0.0722,
+        "brier_calibrated_oos": 0.0258,
+        "brier_calibrated_oos_n": 45,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
