@@ -1,20 +1,20 @@
 {
-    "resolved": 458,
-    "open": 1945,
+    "resolved": 462,
+    "open": 1946,
     "due": 54,
     "unresolvable": 51,
-    "brier": 0.247,
+    "brier": 0.246,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 337,
+            "resolved": 338,
             "brier": 0.253,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 121,
-            "brier": 0.23,
-            "hit_rate": 0.58
+            "resolved": 124,
+            "brier": 0.226,
+            "hit_rate": 0.59
         }
     },
     "calibration": [
@@ -26,13 +26,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 123,
+            "n": 126,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 147,
+            "n": 148,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
@@ -51,33 +51,77 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 458,
-            "brier": 0.295
+            "resolved": 462,
+            "brier": 0.293
         },
         "Economist": {
-            "resolved": 457,
-            "brier": 0.309
+            "resolved": 461,
+            "brier": 0.307
         },
         "Naturalist": {
-            "resolved": 458,
-            "brier": 0.325
+            "resolved": 462,
+            "brier": 0.323
         },
         "Skeptic": {
-            "resolved": 457,
-            "brier": 0.186
+            "resolved": 461,
+            "brier": 0.185
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1663,
-            "brier": 0.29
+            "resolved": 1675,
+            "brier": 0.289
         },
         "qwen3:14b": {
-            "resolved": 167,
-            "brier": 0.159
+            "resolved": 171,
+            "brier": 0.157
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience a temporary closure due to a naval conflict within the next week",
+            "horizon": "week",
+            "probability": 0.2,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S4 shows the Strait of Hormuz still had 15 daily transits (only 30% below average), indicating it remained operational with no closure or naval conflict captured.",
+            "resolved_ms": 1784920220977,
+            "ts": 1784315083821
+        },
+        {
+            "statement": "Red Sea maritime disruptions will push WTI crude above $95/bbl within 24 hours",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "Red Sea",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI crude is at $89.28/bbl (down 3.16%), well below the $95 threshold required by the forecast.",
+            "resolved_ms": 1784920217582,
+            "ts": 1784832558906
+        },
+        {
+            "statement": "A major wildfire will break out in California's Napa Valley region.",
+            "horizon": "week",
+            "probability": 0.45,
+            "location": "Napa Valley, California",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal reports a major wildfire in Napa Valley during the window, so an event that large would have been captured yet none appears.",
+            "resolved_ms": 1784920214790,
+            "ts": 1784313234619
+        },
+        {
+            "statement": "A Category 1 tropical cyclone will make landfall in the Philippines.",
+            "horizon": "week",
+            "probability": 0.2,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are far from the Philippines with zero Category 1 wind impact, and no signal shows any Category 1 landfall in the Philippines during the closed window.",
+            "resolved_ms": 1784920211830,
+            "ts": 1784313234619
+        },
         {
             "statement": "A devastating flood will hit the city of Paris within the next week",
             "horizon": "week",
@@ -165,50 +209,6 @@
             "evidence": "No captured signal shows Trump making any such announcement, and an event this notable would certainly have been captured within the window.",
             "resolved_ms": 1784909385807,
             "ts": 1784304012766
-        },
-        {
-            "statement": "A Category 1 tropical cyclone will make landfall in the Philippines",
-            "horizon": "week",
-            "probability": 0.43,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only cyclone signals (BERTHA, FAUSTO, ELIDA) are located far from the Philippines with zero Category 1 population impact, and no signal shows any Category 1 landfall in the Philippines within the window.",
-            "resolved_ms": 1784909384137,
-            "ts": 1784304012766
-        },
-        {
-            "statement": "WTI crude oil prices will rise above $95/bbl due to ongoing Red Sea attacks disrupting shipping.",
-            "horizon": "24h",
-            "probability": 0.82,
-            "location": "Red Sea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI crude was 88.36 $/bbl, well below the $95/bbl threshold, so the forecast did not come true.",
-            "resolved_ms": 1784909380656,
-            "ts": 1784820922348
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Florida within the next week",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only tropical cyclone signals (BERTHA, FAUSTO, ELIDA) are green alerts with zero population affected and are located far from Florida, showing no Florida landfall occurred.",
-            "resolved_ms": 1784909378405,
-            "ts": 1784302134236
-        },
-        {
-            "statement": "S&P 500 futures will drop below 7400 due to heightened geopolitical risk aversion",
-            "horizon": "24h",
-            "probability": 0.27,
-            "location": "Global Markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports S&P 500 futures level; the only equity signal (S12, Nasdaq 100 at 28420.75) does not show S&P 500 falling below 7400, and oil prices actually declined, contradicting the geopolitical-panic premise.",
-            "resolved_ms": 1784905774971,
-            "ts": 1784818937171
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 458,
-        "base_rate": 0.0786,
-        "brier_raw": 0.247,
-        "brier_base_rate": 0.0724,
-        "brier_calibrated_oos": 0.0283,
-        "brier_calibrated_oos_n": 39,
+        "resolved_n": 462,
+        "base_rate": 0.0779,
+        "brier_raw": 0.2456,
+        "brier_base_rate": 0.0719,
+        "brier_calibrated_oos": 0.0277,
+        "brier_calibrated_oos_n": 40,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
