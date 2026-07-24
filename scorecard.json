@@ -1,10 +1,10 @@
 {
-    "resolved": 425,
-    "open": 1947,
-    "due": 49,
+    "resolved": 429,
+    "open": 1944,
+    "due": 48,
     "unresolvable": 51,
-    "brier": 0.246,
-    "hit_rate": 0.57,
+    "brier": 0.247,
+    "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
             "resolved": 326,
@@ -12,9 +12,9 @@
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 99,
-            "brier": 0.224,
-            "hit_rate": 0.59
+            "resolved": 103,
+            "brier": 0.229,
+            "hit_rate": 0.57
         }
     },
     "calibration": [
@@ -26,19 +26,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 113,
+            "n": 114,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 136,
+            "n": 137,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 99,
+            "n": 101,
             "avg_predicted": 0.67,
             "observed": 0.13
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 425,
-            "brier": 0.293
+            "resolved": 429,
+            "brier": 0.296
         },
         "Economist": {
-            "resolved": 425,
+            "resolved": 429,
             "brier": 0.307
         },
         "Naturalist": {
-            "resolved": 425,
-            "brier": 0.327
+            "resolved": 429,
+            "brier": 0.328
         },
         "Skeptic": {
-            "resolved": 424,
+            "resolved": 428,
             "brier": 0.185
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1575,
-            "brier": 0.291
+            "resolved": 1591,
+            "brier": 0.292
         },
         "qwen3:14b": {
             "resolved": 124,
@@ -78,6 +78,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "A significant increase in global oil prices will occur within the next week due to a potential disruption at the Bab el-Mandeb Strait.",
+            "horizon": "week",
+            "probability": 0.72,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent Crude fell 9.24% to $91.39/bbl, showing a price decrease rather than the forecast significant increase.",
+            "resolved_ms": 1784887704146,
+            "ts": 1784281787054
+        },
+        {
+            "statement": "A major earthquake will strike Japan within the next week.",
+            "horizon": "week",
+            "probability": 0.59,
+            "location": "Volcano Islands, Japan Region",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a major earthquake in the Volcano Islands region during the window, which an event of that magnitude would certainly have generated.",
+            "resolved_ms": 1784887700712,
+            "ts": 1784281787054
+        },
+        {
+            "statement": "The price of oil will rise due to disruptions at the Bab el-Mandeb chokepoint",
+            "horizon": "week",
+            "probability": 0.68,
+            "location": "Bab el-Mandeb",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent Crude fell 9.24% to $91.39, showing oil prices dropped rather than rose despite the Bab el-Mandeb chokepoint alert.",
+            "resolved_ms": 1784887698961,
+            "ts": 1784279915795
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Mexico, causing widespread damage",
+            "horizon": "week",
+            "probability": 0.21,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All cyclone signals are green alerts with zero population affected at Category 1+ winds, showing no landfall causing widespread damage in Mexico.",
+            "resolved_ms": 1784887695198,
+            "ts": 1784279915795
+        },
         {
             "statement": "Texas electricity demand will exceed 64 GWh/h for 3 consecutive days",
             "horizon": "24h",
@@ -165,50 +209,6 @@
             "evidence": "No signal reports the S&P 500 futures level; only Nasdaq 100 futures (S13) is shown, so no evidence confirms a dip below 7450.",
             "resolved_ms": 1784876871205,
             "ts": 1784789775547
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict",
-            "horizon": "24h",
-            "probability": 0.34,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily transits, which is not below the forecast threshold of 1/day.",
-            "resolved_ms": 1784876868420,
-            "ts": 1784789775547
-        },
-        {
-            "statement": "Natural gas prices (Henry Hub) will rise by 2.5-3.5% following the EIA storage report on 2026-07-23",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only natural gas signal (S12) shows Henry Hub at $2.9/MMBtu down 0.62%, a decline rather than the predicted 2.5-3.5% rise.",
-            "resolved_ms": 1784876865327,
-            "ts": 1784789775547
-        },
-        {
-            "statement": "The US will launch another round of strikes on Iran within the next week.",
-            "horizon": "week",
-            "probability": 0.27,
-            "location": "Iran",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows a US strike on Iran during the window, and such an event would certainly have been captured.",
-            "resolved_ms": 1784876862236,
-            "ts": 1784270705684
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict",
-            "horizon": "24h",
-            "probability": 0.38,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily ship transits, which is above the forecast threshold of below 1/day.",
-            "resolved_ms": 1784876860346,
-            "ts": 1784787817167
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 425,
-        "base_rate": 0.0824,
-        "brier_raw": 0.2463,
-        "brier_base_rate": 0.0756,
+        "resolved_n": 429,
+        "base_rate": 0.0816,
+        "brier_raw": 0.2472,
+        "brier_base_rate": 0.0749,
         "brier_calibrated_oos": 0.0059,
         "brier_calibrated_oos_n": 28,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
