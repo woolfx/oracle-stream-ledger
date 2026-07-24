@@ -1,38 +1,38 @@
 {
-    "resolved": 432,
-    "open": 1941,
-    "due": 48,
+    "resolved": 435,
+    "open": 1944,
+    "due": 51,
     "unresolvable": 51,
-    "brier": 0.247,
-    "hit_rate": 0.56,
+    "brier": 0.246,
+    "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 327,
-            "brier": 0.253,
+            "resolved": 328,
+            "brier": 0.252,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 105,
-            "brier": 0.229,
-            "hit_rate": 0.57
+            "resolved": 107,
+            "brier": 0.227,
+            "hit_rate": 0.58
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 49,
+            "n": 50,
             "avg_predicted": 0.12,
             "observed": 0.06
         },
         {
             "bin": "20\u201340%",
-            "n": 116,
+            "n": 117,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 137,
+            "n": 138,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
@@ -51,33 +51,66 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 432,
-            "brier": 0.295
+            "resolved": 435,
+            "brier": 0.294
         },
         "Economist": {
-            "resolved": 432,
-            "brier": 0.307
+            "resolved": 435,
+            "brier": 0.306
         },
         "Naturalist": {
-            "resolved": 432,
-            "brier": 0.327
+            "resolved": 435,
+            "brier": 0.326
         },
         "Skeptic": {
-            "resolved": 431,
-            "brier": 0.184
+            "resolved": 434,
+            "brier": 0.183
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1599,
+            "resolved": 1607,
             "brier": 0.291
         },
         "qwen3:14b": {
-            "resolved": 128,
-            "brier": 0.116
+            "resolved": 132,
+            "brier": 0.113
         }
     },
     "recent": [
+        {
+            "statement": "A tropical cyclone will make landfall in the Gulf Coast within the next week",
+            "horizon": "week",
+            "probability": 0.34,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Only green-level advisory notifications for tropical storms exist (BERTHA at inland Texas coords with 0 population affected at Category 1+), which show conditions rather than a confirmed Gulf Coast landfall event.",
+            "resolved_ms": 1784894938179,
+            "ts": 1784289184861
+        },
+        {
+            "statement": "WTI Crude Oil price will rise by 3-5% within 24 hours due to increased shipping activity through the Ombai Strait (51% above 30-day average).",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "Ombai Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI Crude Oil is at 89.99 $/bbl showing -2.39%, a decline rather than the forecasted 3-5% rise.",
+            "resolved_ms": 1784894931124,
+            "ts": 1784807219146
+        },
+        {
+            "statement": "A power outage will occur in the New York City metropolitan area within the next week.",
+            "horizon": "week",
+            "probability": 0.44,
+            "location": "New York City metropolitan area",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal references any power outage in the New York City metropolitan area; the admissible signals concern nuclear plant operational statuses only.",
+            "resolved_ms": 1784894926646,
+            "ts": 1784287335773
+        },
         {
             "statement": "A Category 1 hurricane will make landfall in Mexico within the next week",
             "horizon": "week",
@@ -176,39 +209,6 @@
             "evidence": "No captured signal concerns this forecast, so there is no evidence that escalated military strikes occurred within the window.",
             "resolved_ms": 1784884088770,
             "ts": 1784278068717
-        },
-        {
-            "statement": "Hurricane Fausto intensifies to Category 2, disrupting shipping in the eastern Pacific Ocean",
-            "horizon": "24h",
-            "probability": 0.21,
-            "location": "Pacific Ocean",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Signal S11 shows FAUSTO-26 as only a Tropical Storm with 0 population affected by Category 1 or higher winds, far below the forecast Category 2 intensification.",
-            "resolved_ms": 1784884086243,
-            "ts": 1784795691981
-        },
-        {
-            "statement": "The US will launch another round of airstrikes against Iran within the next week.",
-            "horizon": "week",
-            "probability": 0.6,
-            "location": "Middle East",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows US airstrikes against Iran occurred within the window, and such a major event would certainly have been captured.",
-            "resolved_ms": 1784884081848,
-            "ts": 1784276227972
-        },
-        {
-            "statement": "A major oil tanker will pass through the Bab el-Mandeb Strait within the next week",
-            "horizon": "week",
-            "probability": 0.86,
-            "location": "Bab el-Mandeb Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Bab el-Mandeb signal shows a critical chokepoint status with LIVE SHIPS: 0, confirming no tanker transit was captured rather than a major oil tanker passing through.",
-            "resolved_ms": 1784880479965,
-            "ts": 1784274385109
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 432,
-        "base_rate": 0.081,
-        "brier_raw": 0.2467,
-        "brier_base_rate": 0.0745,
-        "brier_calibrated_oos": 0.0059,
-        "brier_calibrated_oos_n": 29,
+        "resolved_n": 435,
+        "base_rate": 0.0805,
+        "brier_raw": 0.2458,
+        "brier_base_rate": 0.074,
+        "brier_calibrated_oos": 0.0058,
+        "brier_calibrated_oos_n": 30,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
