@@ -1,20 +1,20 @@
 {
-    "resolved": 403,
-    "open": 1948,
-    "due": 44,
+    "resolved": 406,
+    "open": 1951,
+    "due": 48,
     "unresolvable": 51,
     "brier": 0.247,
-    "hit_rate": 0.57,
+    "hit_rate": 0.56,
     "per_horizon": {
         "24h": {
-            "resolved": 316,
+            "resolved": 317,
             "brier": 0.256,
-            "hit_rate": 0.55
+            "hit_rate": 0.56
         },
         "week": {
-            "resolved": 87,
-            "brier": 0.213,
-            "hit_rate": 0.61
+            "resolved": 89,
+            "brier": 0.215,
+            "hit_rate": 0.6
         }
     },
     "calibration": [
@@ -26,13 +26,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 103,
+            "n": 104,
             "avg_predicted": 0.29,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 131,
+            "n": 133,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
@@ -51,33 +51,66 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 403,
+            "resolved": 406,
             "brier": 0.292
         },
         "Economist": {
-            "resolved": 403,
+            "resolved": 406,
             "brier": 0.309
         },
         "Naturalist": {
-            "resolved": 403,
+            "resolved": 406,
             "brier": 0.331
         },
         "Skeptic": {
-            "resolved": 402,
-            "brier": 0.187
+            "resolved": 405,
+            "brier": 0.186
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1523,
+            "resolved": 1531,
             "brier": 0.29
         },
         "qwen3:14b": {
-            "resolved": 88,
-            "brier": 0.103
+            "resolved": 92,
+            "brier": 0.105
         }
     },
     "recent": [
+        {
+            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict operations",
+            "horizon": "24h",
+            "probability": 0.38,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait shows 2 daily transits, which is above the forecast threshold of below 1/day.",
+            "resolved_ms": 1784869625890,
+            "ts": 1784781894962
+        },
+        {
+            "statement": "A significant increase in oil prices will occur due to disruptions at the Strait of Hormuz",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent Crude sits at 100.31 $/bbl and is down 0.38%, showing no significant oil-price increase despite reduced Hormuz transits.",
+            "resolved_ms": 1784869622548,
+            "ts": 1784263329242
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a brief but significant disruption to shipping within the next week.",
+            "horizon": "week",
+            "probability": 0.5,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S4 shows Hormuz transits merely 30% below its 30-day average, a routine fluctuation that does not constitute a brief but significant shipping disruption event.",
+            "resolved_ms": 1784869618864,
+            "ts": 1784261489934
+        },
         {
             "statement": "A magnitude 6.0 earthquake will strike off the coast of Japan",
             "horizon": "week",
@@ -176,39 +209,6 @@
             "evidence": "No signal reports NG=F price movement or a July 23 storage report outcome; the only natural gas signal (S4) is a future scheduled report on July 30, so the claimed 2.5-3.5% rise is unconfirmed.",
             "resolved_ms": 1784862379269,
             "ts": 1784774106286
-        },
-        {
-            "statement": "A magnitude 6.0+ earthquake will strike the South Island of New Zealand",
-            "horizon": "week",
-            "probability": 0.51,
-            "location": "South Island, New Zealand",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The window closed and no admissible signal reports a magnitude 6.0+ earthquake striking the South Island of New Zealand, which an event of that size would certainly have shown.",
-            "resolved_ms": 1784862375217,
-            "ts": 1784254083657
-        },
-        {
-            "statement": "A major flood will hit Austria within the next week, affecting at least 10,000 people.",
-            "horizon": "week",
-            "probability": 0.48,
-            "location": "Austria",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports a major flood in Austria affecting at least 10,000 people during the window, and such an event would have been captured.",
-            "resolved_ms": 1784858748362,
-            "ts": 1784252239603
-        },
-        {
-            "statement": "WTI Crude Oil price will rise by 2.5-3.5% within 24 hours due to sustained below-average ship transits in the Strait of Hormuz (15 daily vs 21 30-day average) and backwardation in the 6-month curve indicating physical supply stress",
-            "horizon": "24h",
-            "probability": 0.2,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports WTI Crude Oil price; the only oil price given is Brent at +6.33%, a different benchmark and outside the specified 2.5-3.5% range.",
-            "resolved_ms": 1784858745436,
-            "ts": 1784770248317
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 403,
-        "base_rate": 0.0868,
-        "brier_raw": 0.247,
-        "brier_base_rate": 0.0793,
-        "brier_calibrated_oos": 0.0054,
-        "brier_calibrated_oos_n": 19,
+        "resolved_n": 406,
+        "base_rate": 0.0862,
+        "brier_raw": 0.2469,
+        "brier_base_rate": 0.0788,
+        "brier_calibrated_oos": 0.0055,
+        "brier_calibrated_oos_n": 20,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
