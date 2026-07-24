@@ -1,10 +1,10 @@
 {
-    "resolved": 398,
-    "open": 1951,
-    "due": 46,
+    "resolved": 403,
+    "open": 1948,
+    "due": 44,
     "unresolvable": 51,
-    "brier": 0.248,
-    "hit_rate": 0.56,
+    "brier": 0.247,
+    "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
             "resolved": 316,
@@ -12,9 +12,9 @@
             "hit_rate": 0.55
         },
         "week": {
-            "resolved": 82,
-            "brier": 0.217,
-            "hit_rate": 0.6
+            "resolved": 87,
+            "brier": 0.213,
+            "hit_rate": 0.61
         }
     },
     "calibration": [
@@ -26,13 +26,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 100,
+            "n": 103,
             "avg_predicted": 0.29,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 129,
+            "n": 131,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 398,
-            "brier": 0.294
+            "resolved": 403,
+            "brier": 0.292
         },
         "Economist": {
-            "resolved": 398,
-            "brier": 0.31
+            "resolved": 403,
+            "brier": 0.309
         },
         "Naturalist": {
-            "resolved": 398,
-            "brier": 0.333
+            "resolved": 403,
+            "brier": 0.331
         },
         "Skeptic": {
-            "resolved": 397,
-            "brier": 0.186
+            "resolved": 402,
+            "brier": 0.187
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1503,
-            "brier": 0.291
+            "resolved": 1523,
+            "brier": 0.29
         },
         "qwen3:14b": {
             "resolved": 88,
@@ -78,6 +78,61 @@
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 6.0 earthquake will strike off the coast of Japan",
+            "horizon": "week",
+            "probability": 0.23,
+            "location": "Japan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a magnitude 6.0 earthquake off the coast of Japan during the window, and such an event would certainly have been recorded.",
+            "resolved_ms": 1784866010360,
+            "ts": 1784259637358
+        },
+        {
+            "statement": "At least one major oil tanker will be affected by the ongoing conflict in Bab el-Mandeb",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "Bab el-Mandeb",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S14 shows Bab el-Mandeb at critical/elevated risk status with zero live ships, but no signal reports any oil tanker actually being affected by conflict.",
+            "resolved_ms": 1784866008046,
+            "ts": 1784257786801
+        },
+        {
+            "statement": "Oil prices will rise by at least $5 per barrel within the next week due to supply chain disruptions in the Strait of Hormuz.",
+            "horizon": "week",
+            "probability": 0.47,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports oil prices at all; the reduced Hormuz transits in S11 show a supply condition but do not show any $5/barrel price rise occurred.",
+            "resolved_ms": 1784866004465,
+            "ts": 1784223147355
+        },
+        {
+            "statement": "The price of oil will increase by at least $5 per barrel within the next week due to supply chain disruptions in the Strait of Hormuz.",
+            "horizon": "week",
+            "probability": 0.38,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any oil price movement; S11 shows reduced Hormuz transits (a condition, not a $5/barrel price increase), so the forecast's stated threshold is unmet.",
+            "resolved_ms": 1784865999478,
+            "ts": 1784222734483
+        },
+        {
+            "statement": "The price of oil will rise by at least $5 per barrel within the next week due to supply chain disruptions caused by the ongoing conflict in the Middle East.",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "Bab el-Mandeb",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any oil price movement; S14 only shows an elevated-risk chokepoint status, not a $5/barrel price rise, so the forecast's stated threshold is not met.",
+            "resolved_ms": 1784865994987,
+            "ts": 1784222125174
+        },
         {
             "statement": "A magnitude 6.0 earthquake will occur in the South Sandwich Islands",
             "horizon": "week",
@@ -154,61 +209,6 @@
             "evidence": "No signal reports WTI Crude Oil price; the only oil price given is Brent at +6.33%, a different benchmark and outside the specified 2.5-3.5% range.",
             "resolved_ms": 1784858745436,
             "ts": 1784770248317
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Mexico",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The listed cyclones (BERTHA near Texas, FAUSTO and ELIDA far offshore in the Pacific, NOUL in the NW Pacific/China) show no landfall in Mexico, all with zero affected population.",
-            "resolved_ms": 1784858738289,
-            "ts": 1784250395488
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will occur in the South Of Fiji Islands",
-            "horizon": "week",
-            "probability": 0.4,
-            "location": "South Of Fiji Islands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal provides evidence of a magnitude 6.0 earthquake occurring in the South Of Fiji Islands during the window.",
-            "resolved_ms": 1784858732234,
-            "ts": 1784250395488
-        },
-        {
-            "statement": "Texas electricity demand will exceed 100 GWh/h for 3 consecutive days due to heatwave",
-            "horizon": "24h",
-            "probability": 0.22,
-            "location": "Texas",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The window has closed and no admissible signal contains text showing Texas electricity demand exceeded 100 GWh/h for three consecutive days.",
-            "resolved_ms": 1784858730483,
-            "ts": 1784768269220
-        },
-        {
-            "statement": "Heavy rainfall will cause flooding in Eastern Europe",
-            "horizon": "week",
-            "probability": 0.39,
-            "location": "Eastern Europe",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal provides text showing that heavy rainfall caused flooding in Eastern Europe within the window.",
-            "resolved_ms": 1784858722375,
-            "ts": 1784248546738
-        },
-        {
-            "statement": "Texas electricity demand surges to 105 GWh/h due to extreme heat",
-            "horizon": "24h",
-            "probability": 0.12,
-            "location": "Texas",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal text shows Texas electricity demand reaching 105 GWh/h, and the window has closed.",
-            "resolved_ms": 1784858718397,
-            "ts": 1784764327210
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 398,
-        "base_rate": 0.0879,
-        "brier_raw": 0.2481,
-        "brier_base_rate": 0.0802,
+        "resolved_n": 403,
+        "base_rate": 0.0868,
+        "brier_raw": 0.247,
+        "brier_base_rate": 0.0793,
         "brier_calibrated_oos": 0.0054,
         "brier_calibrated_oos_n": 19,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
