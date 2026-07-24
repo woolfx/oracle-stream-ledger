@@ -1,44 +1,44 @@
 {
-    "resolved": 435,
-    "open": 1944,
+    "resolved": 440,
+    "open": 1940,
     "due": 51,
     "unresolvable": 51,
-    "brier": 0.246,
+    "brier": 0.245,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 328,
-            "brier": 0.252,
-            "hit_rate": 0.56
+            "resolved": 330,
+            "brier": 0.251,
+            "hit_rate": 0.57
         },
         "week": {
-            "resolved": 107,
-            "brier": 0.227,
+            "resolved": 110,
+            "brier": 0.228,
             "hit_rate": 0.58
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 50,
+            "n": 51,
             "avg_predicted": 0.12,
             "observed": 0.06
         },
         {
             "bin": "20\u201340%",
-            "n": 117,
+            "n": 119,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 138,
+            "n": 139,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 102,
+            "n": 103,
             "avg_predicted": 0.67,
             "observed": 0.13
         },
@@ -51,33 +51,88 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 435,
+            "resolved": 440,
             "brier": 0.294
         },
         "Economist": {
-            "resolved": 435,
-            "brier": 0.306
+            "resolved": 439,
+            "brier": 0.307
         },
         "Naturalist": {
-            "resolved": 435,
-            "brier": 0.326
+            "resolved": 440,
+            "brier": 0.323
         },
         "Skeptic": {
-            "resolved": 434,
+            "resolved": 439,
             "brier": 0.183
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1607,
+            "resolved": 1619,
             "brier": 0.291
         },
         "qwen3:14b": {
-            "resolved": 132,
-            "brier": 0.113
+            "resolved": 139,
+            "brier": 0.11
         }
     },
     "recent": [
+        {
+            "statement": "Andy Burnham will be officially sworn in as the Prime Minister of the United Kingdom within the next week.",
+            "horizon": "week",
+            "probability": 0.68,
+            "location": "United Kingdom",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows Andy Burnham being sworn in as UK Prime Minister, an event of this magnitude that would certainly have been captured had it occurred.",
+            "resolved_ms": 1784898552984,
+            "ts": 1784292890881
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Vietnam on July 22nd",
+            "horizon": "week",
+            "probability": 0.37,
+            "location": "Vietnam",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All signals concern cyclones in the Americas/Pacific (near 30,-96; 18.5,-129.9; 26.4,-127.2), none show any tropical cyclone landfall in Vietnam.",
+            "resolved_ms": 1784898550250,
+            "ts": 1784291029315
+        },
+        {
+            "statement": "A magnitude 6.0 earthquake will hit the Philippines on July 20th",
+            "horizon": "week",
+            "probability": 0.43,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a magnitude 6.0 earthquake in the Philippines on July 20th, which an event that significant would certainly have generated within the closed window.",
+            "resolved_ms": 1784898545201,
+            "ts": 1784291029315
+        },
+        {
+            "statement": "The VIX fear gauge will spike above 20.5 in the next 24 hours as geopolitical tensions in Ukraine and Gaza trigger risk-off sentiment",
+            "horizon": "24h",
+            "probability": 0.32,
+            "location": "Global Markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The VIX reading is 18.79, below the forecast threshold of 20.5, so no spike above 20.5 occurred within the window.",
+            "resolved_ms": 1784898543467,
+            "ts": 1784809205859
+        },
+        {
+            "statement": "WTI crude oil prices will rise by 3.2% within 24 hours due to increased shipping activity in the Ombai Strait",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "Ombai Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI crude fell 2.97% rather than rising 3.2%, contradicting the forecast.",
+            "resolved_ms": 1784898540807,
+            "ts": 1784809205858
+        },
         {
             "statement": "A tropical cyclone will make landfall in the Gulf Coast within the next week",
             "horizon": "week",
@@ -154,61 +209,6 @@
             "evidence": "Brent Crude fell 9.24% to $91.39/bbl, showing a price decrease rather than the forecast significant increase.",
             "resolved_ms": 1784887704146,
             "ts": 1784281787054
-        },
-        {
-            "statement": "A major earthquake will strike Japan within the next week.",
-            "horizon": "week",
-            "probability": 0.59,
-            "location": "Volcano Islands, Japan Region",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a major earthquake in the Volcano Islands region during the window, which an event of that magnitude would certainly have generated.",
-            "resolved_ms": 1784887700712,
-            "ts": 1784281787054
-        },
-        {
-            "statement": "The price of oil will rise due to disruptions at the Bab el-Mandeb chokepoint",
-            "horizon": "week",
-            "probability": 0.68,
-            "location": "Bab el-Mandeb",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude fell 9.24% to $91.39, showing oil prices dropped rather than rose despite the Bab el-Mandeb chokepoint alert.",
-            "resolved_ms": 1784887698961,
-            "ts": 1784279915795
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Mexico, causing widespread damage",
-            "horizon": "week",
-            "probability": 0.21,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All cyclone signals are green alerts with zero population affected at Category 1+ winds, showing no landfall causing widespread damage in Mexico.",
-            "resolved_ms": 1784887695198,
-            "ts": 1784279915795
-        },
-        {
-            "statement": "Texas electricity demand will exceed 64 GWh/h for 3 consecutive days",
-            "horizon": "24h",
-            "probability": 0.26,
-            "location": "Texas",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "None of the signals reference Texas electricity demand or any GWh/h figures, and no signal shows the demand threshold being met over three consecutive days.",
-            "resolved_ms": 1784884091191,
-            "ts": 1784797651915
-        },
-        {
-            "statement": "The Iranian conflict will escalate with increased military strikes in the next week.",
-            "horizon": "week",
-            "probability": 0.76,
-            "location": "Middle East",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, so there is no evidence that escalated military strikes occurred within the window.",
-            "resolved_ms": 1784884088770,
-            "ts": 1784278068717
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 435,
-        "base_rate": 0.0805,
-        "brier_raw": 0.2458,
-        "brier_base_rate": 0.074,
-        "brier_calibrated_oos": 0.0058,
-        "brier_calibrated_oos_n": 30,
+        "resolved_n": 440,
+        "base_rate": 0.0795,
+        "brier_raw": 0.245,
+        "brier_base_rate": 0.0732,
+        "brier_calibrated_oos": 0.0057,
+        "brier_calibrated_oos_n": 32,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
