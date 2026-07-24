@@ -1,28 +1,28 @@
 {
-    "resolved": 379,
-    "open": 1948,
-    "due": 52,
+    "resolved": 386,
+    "open": 1949,
+    "due": 49,
     "unresolvable": 51,
-    "brier": 0.254,
+    "brier": 0.252,
     "hit_rate": 0.55,
     "per_horizon": {
         "24h": {
-            "resolved": 305,
-            "brier": 0.262,
-            "hit_rate": 0.54
+            "resolved": 310,
+            "brier": 0.259,
+            "hit_rate": 0.55
         },
         "week": {
-            "resolved": 74,
-            "brier": 0.22,
-            "hit_rate": 0.59
+            "resolved": 76,
+            "brier": 0.221,
+            "hit_rate": 0.58
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 43,
+            "n": 47,
             "avg_predicted": 0.12,
-            "observed": 0.07
+            "observed": 0.06
         },
         {
             "bin": "20\u201340%",
@@ -32,13 +32,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 122,
+            "n": 124,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 93,
+            "n": 94,
             "avg_predicted": 0.67,
             "observed": 0.14
         },
@@ -51,33 +51,110 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 379,
-            "brier": 0.301
+            "resolved": 386,
+            "brier": 0.3
         },
         "Economist": {
-            "resolved": 379,
-            "brier": 0.316
+            "resolved": 386,
+            "brier": 0.314
         },
         "Naturalist": {
-            "resolved": 379,
-            "brier": 0.341
+            "resolved": 386,
+            "brier": 0.337
         },
         "Skeptic": {
-            "resolved": 378,
-            "brier": 0.192
+            "resolved": 385,
+            "brier": 0.19
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1471,
+            "resolved": 1479,
             "brier": 0.293
         },
         "qwen3:14b": {
-            "resolved": 44,
+            "resolved": 64,
             "brier": 0.095
         }
     },
     "recent": [
+        {
+            "statement": "Severe thunderstorms will cause power outages in the Midwest US",
+            "horizon": "week",
+            "probability": 0.52,
+            "location": "Midwest, USA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a widespread severe thunderstorm power outage event in the Midwest would certainly have been captured within the closed window.",
+            "resolved_ms": 1784855086300,
+            "ts": 1784248546738
+        },
+        {
+            "statement": "Flash flooding in Albuquerque, New Mexico will disrupt at least 3 major highways",
+            "horizon": "24h",
+            "probability": 0.15,
+            "location": "Albuquerque, New Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal provides evidence of flash flooding disrupting three major highways in Albuquerque, and such a major event would have been captured within the closed window.",
+            "resolved_ms": 1784855084321,
+            "ts": 1784766335453
+        },
+        {
+            "statement": "Natural gas futures (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report release on July 23",
+            "horizon": "24h",
+            "probability": 0.63,
+            "location": "Henry Hub, Louisiana",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports NG=F price movement following the July 23 EIA storage report; S5 only references a future July 30 report, so the claimed 2.5-3.5% rise is unconfirmed.",
+            "resolved_ms": 1784855082743,
+            "ts": 1784766335453
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in oil tanker traffic.",
+            "horizon": "week",
+            "probability": 0.51,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average of 21, indicating a decrease rather than a significant increase in tanker traffic.",
+            "resolved_ms": 1784855076094,
+            "ts": 1784246696390
+        },
+        {
+            "statement": "Severe thunderstorm in Tampa, Florida disrupts air travel and causes power outages",
+            "horizon": "24h",
+            "probability": 0.16,
+            "location": "Tampa, Florida",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and an event this significant would certainly have been captured if it occurred.",
+            "resolved_ms": 1784855073171,
+            "ts": 1784764533847
+        },
+        {
+            "statement": "Flash flood in Grand Junction, Colorado causes road closures and evacuations",
+            "horizon": "24h",
+            "probability": 0.1,
+            "location": "Grand Junction, Colorado",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal provides any text showing a flash flood, road closures, or evacuations in Grand Junction, Colorado during the window.",
+            "resolved_ms": 1784855071259,
+            "ts": 1784764533847
+        },
+        {
+            "statement": "Flash flood warnings in Colorado trigger 15% drop in agricultural commodity futures",
+            "horizon": "24h",
+            "probability": 0.11,
+            "location": "Colorado",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows Colorado flash flood warnings or a 15% drop in agricultural commodity futures; only FOMC schedules and unrelated market indices appear.",
+            "resolved_ms": 1784855069671,
+            "ts": 1784764327210
+        },
         {
             "statement": "Ukraine warfronts will see increased artillery exchanges in eastern regions due to stalled ceasefire negotiations",
             "horizon": "24h",
@@ -132,83 +209,6 @@
             "evidence": "No signal reports a major earthquake striking near Tokyo during the window, an event that would certainly have been captured.",
             "resolved_ms": 1784851420496,
             "ts": 1784243016190
-        },
-        {
-            "statement": "Bab el-Mandeb chokepoint risk rating escalates to 'CRITICAL' due to Houthi naval activity",
-            "horizon": "24h",
-            "probability": 0.4,
-            "location": "Bab el-Mandeb",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Bab el-Mandeb, Houthi activity, or any escalation to a CRITICAL risk rating; all signals concern unrelated straits.",
-            "resolved_ms": 1784851418493,
-            "ts": 1784759725739
-        },
-        {
-            "statement": "Flash flood warnings in Colorado trigger temporary 15% surge in Texas electricity demand",
-            "horizon": "24h",
-            "probability": 0.15,
-            "location": "Texas",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows any Colorado flood warning causing a 15% surge in Texas electricity demand, an event that would certainly have been captured.",
-            "resolved_ms": 1784851415837,
-            "ts": 1784759725739
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Mexico's Yucatan Peninsula",
-            "horizon": "week",
-            "probability": 0.18,
-            "location": "Yucatan Peninsula, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "None of the named cyclones (BERTHA near Texas, FAUSTO/ELIDA in the Pacific, NOUL in NW Pacific) is located at or made landfall in Mexico's Yucatan Peninsula.",
-            "resolved_ms": 1784851413352,
-            "ts": 1784241170860
-        },
-        {
-            "statement": "Flash flood warnings in Colorado will disrupt 15-20% of regional electricity grid capacity",
-            "horizon": "24h",
-            "probability": 0.1,
-            "location": "Colorado",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows flash flooding disrupting 15-20% of Colorado's grid capacity, an event that would certainly have been captured in the infrastructure or outage sections.",
-            "resolved_ms": 1784847785690,
-            "ts": 1784757778857
-        },
-        {
-            "statement": "A Category 2 hurricane will make landfall in Florida within the next week",
-            "horizon": "week",
-            "probability": 0.25,
-            "location": "Florida, USA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows any Category 2 hurricane making landfall in Florida; the only nearby cyclone (BERTHA-26) was a tropical storm affecting zero population, far from Florida.",
-            "resolved_ms": 1784847783375,
-            "ts": 1784237487661
-        },
-        {
-            "statement": "A major cyberattack will occur on a major US corporation within the next week.",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "USA, global",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal text shows a major cyberattack on a major US corporation occurred during the window.",
-            "resolved_ms": 1784847779914,
-            "ts": 1784235636247
-        },
-        {
-            "statement": "A severe heatwave will affect major cities across Europe within the next week.",
-            "horizon": "week",
-            "probability": 0.45,
-            "location": "Europe, global",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a severe European heatwave affecting major cities would certainly have been captured within the closed window.",
-            "resolved_ms": 1784847778180,
-            "ts": 1784235636246
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 379,
-        "base_rate": 0.0923,
-        "brier_raw": 0.2537,
-        "brier_base_rate": 0.0838,
-        "brier_calibrated_oos": 0.005,
-        "brier_calibrated_oos_n": 8,
+        "resolved_n": 386,
+        "base_rate": 0.0907,
+        "brier_raw": 0.2517,
+        "brier_base_rate": 0.0825,
+        "brier_calibrated_oos": 0.0051,
+        "brier_calibrated_oos_n": 13,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
