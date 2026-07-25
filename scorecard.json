@@ -1,6 +1,6 @@
 {
-    "resolved": 518,
-    "open": 1949,
+    "resolved": 520,
+    "open": 1951,
     "due": 59,
     "unresolvable": 51,
     "brier": 0.241,
@@ -12,7 +12,7 @@
             "hit_rate": 0.58
         },
         "week": {
-            "resolved": 160,
+            "resolved": 162,
             "brier": 0.228,
             "hit_rate": 0.59
         }
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 152,
+            "n": 153,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -38,7 +38,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 110,
+            "n": 111,
             "avg_predicted": 0.67,
             "observed": 0.12
         },
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 518,
+            "resolved": 520,
             "brier": 0.288
         },
         "Economist": {
-            "resolved": 517,
+            "resolved": 519,
             "brier": 0.299
         },
         "Naturalist": {
-            "resolved": 518,
+            "resolved": 520,
             "brier": 0.314
         },
         "Skeptic": {
-            "resolved": 517,
+            "resolved": 519,
             "brier": 0.181
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1819,
+            "resolved": 1827,
             "brier": 0.286
         },
         "qwen3:14b": {
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "A major volcanic eruption will occur on the island of Mayon in the Philippines.",
+            "horizon": "week",
+            "probability": 0.63,
+            "location": "Mayon Volcano, Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a major volcanic eruption at Mayon during the window, and such an event would certainly have been recorded.",
+            "resolved_ms": 1784967270202,
+            "ts": 1784361006297
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in the Philippines within the next week",
+            "horizon": "week",
+            "probability": 0.39,
+            "location": "Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signals show Typhoon Noul active near the Luzon Strait (@20.8,118.3) but none state that any cyclone actually made landfall in the Philippines within the window.",
+            "resolved_ms": 1784967262659,
+            "ts": 1784346252009
+        },
         {
             "statement": "The price of oil will rise by $5 per barrel due to increased tensions in the Strait of Hormuz.",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "No signal provides any text showing protests occurred in Venice over Fertitta's yacht, and such an event would have been captured within the window.",
             "resolved_ms": 1784960017219,
             "ts": 1784351793725
-        },
-        {
-            "statement": "The US will experience a major cyberattack on critical infrastructure",
-            "horizon": "week",
-            "probability": 0.52,
-            "location": "US Critical Infrastructure",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a major cyberattack on US critical infrastructure occurring within the window.",
-            "resolved_ms": 1784960015287,
-            "ts": 1784349946954
-        },
-        {
-            "statement": "The US will announce new sanctions on Iran",
-            "horizon": "week",
-            "probability": 0.39,
-            "location": "Washington D.C.",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows the US announcing new sanctions on Iran within the window, an event that would certainly have been recorded.",
-            "resolved_ms": 1784960013634,
-            "ts": 1784349946954
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 518,
-        "base_rate": 0.0734,
-        "brier_raw": 0.2406,
-        "brier_base_rate": 0.068,
+        "resolved_n": 520,
+        "base_rate": 0.0731,
+        "brier_raw": 0.2407,
+        "brier_base_rate": 0.0677,
         "brier_calibrated_oos": 0.0204,
         "brier_calibrated_oos_n": 60,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
