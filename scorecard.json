@@ -1,32 +1,32 @@
 {
-    "resolved": 498,
-    "open": 1928,
-    "due": 61,
+    "resolved": 503,
+    "open": 1929,
+    "due": 58,
     "unresolvable": 51,
-    "brier": 0.245,
+    "brier": 0.244,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 349,
-            "brier": 0.252,
-            "hit_rate": 0.56
+            "resolved": 352,
+            "brier": 0.25,
+            "hit_rate": 0.57
         },
         "week": {
-            "resolved": 149,
-            "brier": 0.23,
+            "resolved": 151,
+            "brier": 0.231,
             "hit_rate": 0.59
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 56,
+            "n": 57,
             "avg_predicted": 0.12,
             "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 142,
+            "n": 145,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -38,7 +38,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 109,
+            "n": 110,
             "avg_predicted": 0.67,
             "observed": 0.12
         },
@@ -51,33 +51,88 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 498,
-            "brier": 0.292
+            "resolved": 503,
+            "brier": 0.29
         },
         "Economist": {
-            "resolved": 497,
-            "brier": 0.305
+            "resolved": 502,
+            "brier": 0.304
         },
         "Naturalist": {
-            "resolved": 498,
-            "brier": 0.322
+            "resolved": 503,
+            "brier": 0.319
         },
         "Skeptic": {
-            "resolved": 497,
-            "brier": 0.184
+            "resolved": 502,
+            "brier": 0.183
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1775,
+            "resolved": 1783,
             "brier": 0.288
         },
         "qwen3:14b": {
-            "resolved": 215,
-            "brier": 0.176
+            "resolved": 227,
+            "brier": 0.17
         }
     },
     "recent": [
+        {
+            "statement": "WTI crude oil price increases by 3-4% within 24 hours",
+            "horizon": "24h",
+            "probability": 0.31,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only crude price signal, Brent, fell -2.29%, contradicting any 3-4% WTI increase, and no signal shows WTI rising within the window.",
+            "resolved_ms": 1784949152274,
+            "ts": 1784861791599
+        },
+        {
+            "statement": "A severe thunderstorm will cause flash flooding in parts of Arizona within the next week.",
+            "horizon": "week",
+            "probability": 0.35,
+            "location": "Arizona",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows a severe thunderstorm causing flash flooding in Arizona during the window, which such an event would have generated.",
+            "resolved_ms": 1784949144127,
+            "ts": 1784342575393
+        },
+        {
+            "statement": "WTI crude oil prices will rise by 3-4% within 24 hours due to increased shipping congestion in the Ombai Strait",
+            "horizon": "24h",
+            "probability": 0.25,
+            "location": "Ombai Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI crude closed at 90.47 $/bbl down 1.87%, contradicting the forecast of a 3-4% rise.",
+            "resolved_ms": 1784949140993,
+            "ts": 1784859836618
+        },
+        {
+            "statement": "A heatwave will cause widespread power outages in Germany within the next week",
+            "horizon": "week",
+            "probability": 0.61,
+            "location": "Germany",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal was captured, and widespread heatwave-caused power outages in Germany would certainly have been recorded had they occurred within the window.",
+            "resolved_ms": 1784949138525,
+            "ts": 1784340736974
+        },
+        {
+            "statement": "A surge in wildfire evacuations in Spain and France",
+            "horizon": "24h",
+            "probability": 0.09,
+            "location": "Europe",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows a surge in wildfire evacuations in Spain or France during the window, and such an event would have been captured.",
+            "resolved_ms": 1784949136938,
+            "ts": 1784855917253
+        },
         {
             "statement": "VIX fear gauge spikes above 20 due to escalation in Gaza conflict",
             "horizon": "24h",
@@ -154,61 +209,6 @@
             "evidence": "No captured signal concerns this forecast, and a seismic event causing infrastructure damage and landslides in Indonesia would certainly have been recorded if it occurred.",
             "resolved_ms": 1784941909979,
             "ts": 1784852112195
-        },
-        {
-            "statement": "Volcanic eruption occurs at Mayon volcano in the Philippines",
-            "horizon": "week",
-            "probability": 0.92,
-            "location": "Mayon Volcano, Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal concerns Rincon de la Vieja Volcano in Costa Rica, not an eruption at Mayon in the Philippines.",
-            "resolved_ms": 1784938307225,
-            "ts": 1784333394111
-        },
-        {
-            "statement": "Earthquake with magnitude greater than 6.0 occurs in Mexico",
-            "horizon": "week",
-            "probability": 0.82,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a magnitude greater than 6.0 earthquake in Mexico during the window, which would certainly have been recorded.",
-            "resolved_ms": 1784938305303,
-            "ts": 1784333394111
-        },
-        {
-            "statement": "The price of Brent Crude will exceed $90 per barrel",
-            "horizon": "week",
-            "probability": 0.38,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Brent Crude is at $98.38/bbl, which exceeds the $90 per barrel threshold.",
-            "resolved_ms": 1784938303504,
-            "ts": 1784333341424
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Mexico",
-            "horizon": "week",
-            "probability": 0.2,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a tropical cyclone actually making landfall in Mexico; the named storms are either far offshore in the Pacific or show zero hurricane-force impact.",
-            "resolved_ms": 1784938300752,
-            "ts": 1784333341424
-        },
-        {
-            "statement": "A severe flood warning will be issued for the city of Paris, France within the next week",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Paris, France",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a severe flood warning was issued for Paris, and such an event would certainly have been captured, yet the window has closed with no supporting evidence.",
-            "resolved_ms": 1784938296757,
-            "ts": 1784333275881
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 498,
-        "base_rate": 0.0763,
-        "brier_raw": 0.2452,
-        "brier_base_rate": 0.0705,
-        "brier_calibrated_oos": 0.0236,
-        "brier_calibrated_oos_n": 51,
+        "resolved_n": 503,
+        "base_rate": 0.0755,
+        "brier_raw": 0.2441,
+        "brier_base_rate": 0.0698,
+        "brier_calibrated_oos": 0.0225,
+        "brier_calibrated_oos_n": 54,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
