@@ -1,14 +1,14 @@
 {
-    "resolved": 503,
-    "open": 1929,
-    "due": 58,
+    "resolved": 504,
+    "open": 1938,
+    "due": 62,
     "unresolvable": 51,
     "brier": 0.244,
-    "hit_rate": 0.57,
+    "hit_rate": 0.58,
     "per_horizon": {
         "24h": {
-            "resolved": 352,
-            "brier": 0.25,
+            "resolved": 353,
+            "brier": 0.249,
             "hit_rate": 0.57
         },
         "week": {
@@ -20,7 +20,7 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 57,
+            "n": 58,
             "avg_predicted": 0.12,
             "observed": 0.05
         },
@@ -51,19 +51,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 503,
+            "resolved": 504,
             "brier": 0.29
         },
         "Economist": {
-            "resolved": 502,
-            "brier": 0.304
+            "resolved": 503,
+            "brier": 0.303
         },
         "Naturalist": {
-            "resolved": 503,
+            "resolved": 504,
             "brier": 0.319
         },
         "Skeptic": {
-            "resolved": 502,
+            "resolved": 503,
             "brier": 0.183
         }
     },
@@ -73,11 +73,22 @@
             "brier": 0.288
         },
         "qwen3:14b": {
-            "resolved": 227,
-            "brier": 0.17
+            "resolved": 231,
+            "brier": 0.168
         }
     },
     "recent": [
+        {
+            "statement": "S&P 500 futures will drop by over 1.5% within 24 hours",
+            "horizon": "24h",
+            "probability": 0.17,
+            "location": "Global financial markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The closest index signal, Nasdaq 100 futures, fell only 1.1% and VIX actually declined, with no signal showing S&P 500 futures dropping over 1.5%.",
+            "resolved_ms": 1784952783145,
+            "ts": 1784865738316
+        },
         {
             "statement": "WTI crude oil price increases by 3-4% within 24 hours",
             "horizon": "24h",
@@ -198,17 +209,6 @@
             "evidence": "S1 shows NOUL-26 at Category 1 (120 km/h) wind speeds with an Orange alert, but no signal confirms it reached Category 2 status.",
             "resolved_ms": 1784941913316,
             "ts": 1784852112195
-        },
-        {
-            "statement": "Increased seismic activity in Indonesia triggers localized infrastructure damage and landslides",
-            "horizon": "24h",
-            "probability": 0.12,
-            "location": "Indonesia",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a seismic event causing infrastructure damage and landslides in Indonesia would certainly have been recorded if it occurred.",
-            "resolved_ms": 1784941909979,
-            "ts": 1784852112195
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 503,
-        "base_rate": 0.0755,
-        "brier_raw": 0.2441,
-        "brier_base_rate": 0.0698,
-        "brier_calibrated_oos": 0.0225,
-        "brier_calibrated_oos_n": 54,
+        "resolved_n": 504,
+        "base_rate": 0.0754,
+        "brier_raw": 0.2437,
+        "brier_base_rate": 0.0697,
+        "brier_calibrated_oos": 0.0221,
+        "brier_calibrated_oos_n": 55,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
