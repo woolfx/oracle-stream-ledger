@@ -1,7 +1,7 @@
 {
-    "resolved": 536,
-    "open": 1936,
-    "due": 59,
+    "resolved": 537,
+    "open": 1935,
+    "due": 62,
     "unresolvable": 51,
     "brier": 0.237,
     "hit_rate": 0.59,
@@ -12,7 +12,7 @@
             "hit_rate": 0.58
         },
         "week": {
-            "resolved": 173,
+            "resolved": 174,
             "brier": 0.22,
             "hit_rate": 0.62
         }
@@ -32,7 +32,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 163,
+            "n": 164,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 536,
-            "brier": 0.282
+            "resolved": 537,
+            "brier": 0.283
         },
         "Economist": {
-            "resolved": 535,
+            "resolved": 536,
             "brier": 0.295
         },
         "Naturalist": {
-            "resolved": 536,
+            "resolved": 537,
             "brier": 0.309
         },
         "Skeptic": {
-            "resolved": 535,
-            "brier": 0.18
+            "resolved": 536,
+            "brier": 0.179
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1871,
+            "resolved": 1875,
             "brier": 0.282
         },
         "qwen3:14b": {
@@ -78,6 +78,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The price of oil will rise by at least $5 per barrel due to tensions in the Strait of Hormuz",
+            "horizon": "week",
+            "probability": 0.48,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent Crude is at 96.78 $/bbl down 3.88%, showing oil falling rather than rising by at least $5 per barrel.",
+            "resolved_ms": 1784988945319,
+            "ts": 1784381174425
+        },
         {
             "statement": "Hurricane Fausto will disrupt shipping routes in the Atlantic, causing a 3-5% drop in global freight rates within 24 hours",
             "horizon": "24h",
@@ -198,17 +209,6 @@
             "evidence": "No signal reports EUR/USD exchange rates or any dollar appreciation against the euro; the available signals cover FOMC schedules, oil, and equities only.",
             "resolved_ms": 1784978107196,
             "ts": 1784364680047
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1 daily due to escalating Ukrainian-Russian conflict near the strait",
-            "horizon": "24h",
-            "probability": 0.32,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily ship transits, which is not below the forecast threshold of 1 daily transit.",
-            "resolved_ms": 1784974500458,
-            "ts": 1784886879565
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 536,
-        "base_rate": 0.0728,
+        "resolved_n": 537,
+        "base_rate": 0.0726,
         "brier_raw": 0.2372,
-        "brier_base_rate": 0.0675,
+        "brier_base_rate": 0.0674,
         "brier_calibrated_oos": 0.0333,
         "brier_calibrated_oos_n": 65,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
