@@ -1,13 +1,13 @@
 {
-    "resolved": 497,
-    "open": 1926,
-    "due": 58,
+    "resolved": 498,
+    "open": 1928,
+    "due": 61,
     "unresolvable": 51,
-    "brier": 0.246,
+    "brier": 0.245,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 348,
+            "resolved": 349,
             "brier": 0.252,
             "hit_rate": 0.56
         },
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 141,
+            "n": 142,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -51,20 +51,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 497,
+            "resolved": 498,
             "brier": 0.292
         },
         "Economist": {
-            "resolved": 496,
+            "resolved": 497,
             "brier": 0.305
         },
         "Naturalist": {
-            "resolved": 497,
+            "resolved": 498,
             "brier": 0.322
         },
         "Skeptic": {
-            "resolved": 496,
-            "brier": 0.185
+            "resolved": 497,
+            "brier": 0.184
         }
     },
     "models": {
@@ -73,11 +73,22 @@
             "brier": 0.288
         },
         "qwen3:14b": {
-            "resolved": 211,
-            "brier": 0.177
+            "resolved": 215,
+            "brier": 0.176
         }
     },
     "recent": [
+        {
+            "statement": "VIX fear gauge spikes above 20 due to escalation in Gaza conflict",
+            "horizon": "24h",
+            "probability": 0.32,
+            "location": "Gaza Strip",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The VIX signal shows 18.58, below the stated threshold of 20, so the forecasted spike did not occur.",
+            "resolved_ms": 1784945535323,
+            "ts": 1784857895612
+        },
         {
             "statement": "A major power outage will occur in California within the next week",
             "horizon": "week",
@@ -198,17 +209,6 @@
             "evidence": "No signal shows a severe flood warning was issued for Paris, and such an event would certainly have been captured, yet the window has closed with no supporting evidence.",
             "resolved_ms": 1784938296757,
             "ts": 1784333275881
-        },
-        {
-            "statement": "A large earthquake will strike Mexico within the next week",
-            "horizon": "week",
-            "probability": 0.53,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a large earthquake in Mexico during the window, and such an event would certainly have been recorded.",
-            "resolved_ms": 1784938294273,
-            "ts": 1784333275881
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 497,
-        "base_rate": 0.0765,
-        "brier_raw": 0.2455,
-        "brier_base_rate": 0.0706,
-        "brier_calibrated_oos": 0.024,
-        "brier_calibrated_oos_n": 50,
+        "resolved_n": 498,
+        "base_rate": 0.0763,
+        "brier_raw": 0.2452,
+        "brier_base_rate": 0.0705,
+        "brier_calibrated_oos": 0.0236,
+        "brier_calibrated_oos_n": 51,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
