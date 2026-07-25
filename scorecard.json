@@ -1,18 +1,18 @@
 {
-    "resolved": 545,
-    "open": 1927,
-    "due": 61,
+    "resolved": 550,
+    "open": 1922,
+    "due": 59,
     "unresolvable": 51,
-    "brier": 0.237,
+    "brier": 0.236,
     "hit_rate": 0.59,
     "per_horizon": {
         "24h": {
-            "resolved": 365,
-            "brier": 0.245,
+            "resolved": 367,
+            "brier": 0.244,
             "hit_rate": 0.58
         },
         "week": {
-            "resolved": 180,
+            "resolved": 183,
             "brier": 0.219,
             "hit_rate": 0.62
         }
@@ -20,19 +20,19 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 65,
+            "n": 66,
             "avg_predicted": 0.12,
             "observed": 0.06
         },
         {
             "bin": "20\u201340%",
-            "n": 167,
+            "n": 169,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 168,
+            "n": 170,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
@@ -51,33 +51,88 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 545,
+            "resolved": 550,
             "brier": 0.281
         },
         "Economist": {
-            "resolved": 544,
-            "brier": 0.295
+            "resolved": 549,
+            "brier": 0.293
         },
         "Naturalist": {
-            "resolved": 545,
-            "brier": 0.308
+            "resolved": 550,
+            "brier": 0.307
         },
         "Skeptic": {
-            "resolved": 544,
-            "brier": 0.179
+            "resolved": 549,
+            "brier": 0.178
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1899,
+            "resolved": 1911,
             "brier": 0.281
         },
         "qwen3:14b": {
-            "resolved": 279,
-            "brier": 0.161
+            "resolved": 287,
+            "brier": 0.159
         }
     },
     "recent": [
+        {
+            "statement": "The price of oil will rise by at least $5 per barrel within the next week due to supply chain disruptions.",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent Crude is at 96.78 $/bbl down 3.88%, showing oil fell rather than rising by at least $5 per barrel.",
+            "resolved_ms": 1784999816728,
+            "ts": 1784394049009
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop below 1 daily due to intensified Ukrainian conflict near the strait.",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait shows 2 daily transits, which is not below the forecast threshold of 1 daily.",
+            "resolved_ms": 1784999813966,
+            "ts": 1784912013916
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Vietnam, causing widespread flooding.",
+            "horizon": "week",
+            "probability": 0.41,
+            "location": "Vietnam",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a tropical cyclone making landfall in Vietnam; NOUL-26 is located at 21.8,115.9 (South China Sea near China) with no landfall or flooding in Vietnam indicated.",
+            "resolved_ms": 1784999812111,
+            "ts": 1784392214031
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop below 2 daily due to intensified Russian-Ukrainian missile exchanges near the strait",
+            "horizon": "24h",
+            "probability": 0.39,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait shows exactly 2 daily transits, not below 2 as the forecast required.",
+            "resolved_ms": 1784999808850,
+            "ts": 1784910070248
+        },
+        {
+            "statement": "The US dollar will strengthen against the euro within the next week",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports EUR/USD exchange rate movement, so there is no evidence the dollar strengthened against the euro within the window.",
+            "resolved_ms": 1784999805714,
+            "ts": 1784383013179
+        },
         {
             "statement": "A tropical cyclone will make landfall in Vietnam",
             "horizon": "week",
@@ -154,61 +209,6 @@
             "evidence": "Brent crude is at 96.78 $/bbl down -3.88%, showing oil fell rather than surging by at least $5/bbl.",
             "resolved_ms": 1784992575158,
             "ts": 1784384858490
-        },
-        {
-            "statement": "A magnitude 5+ earthquake will hit the southern East Pacific Rise",
-            "horizon": "week",
-            "probability": 0.54,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports any magnitude 5+ earthquake on the southern East Pacific Rise during the window; the only present signal concerns a Japan 8.0 quake market.",
-            "resolved_ms": 1784992566943,
-            "ts": 1784383013179
-        },
-        {
-            "statement": "The price of oil will rise by at least $5 per barrel due to tensions in the Strait of Hormuz",
-            "horizon": "week",
-            "probability": 0.48,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude is at 96.78 $/bbl down 3.88%, showing oil falling rather than rising by at least $5 per barrel.",
-            "resolved_ms": 1784988945319,
-            "ts": 1784381174425
-        },
-        {
-            "statement": "Hurricane Fausto will disrupt shipping routes in the Atlantic, causing a 3-5% drop in global freight rates within 24 hours",
-            "horizon": "24h",
-            "probability": 0.06,
-            "location": "Atlantic Ocean",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Fausto is a Pacific storm (@18.8,-135.1) with a green notification and 0 population affected, and no signal shows any Atlantic shipping disruption or a 3-5% freight rate drop.",
-            "resolved_ms": 1784985341537,
-            "ts": 1784898441290
-        },
-        {
-            "statement": "The price of Brent crude will increase by at least $10 per barrel due to supply chain disruptions",
-            "horizon": "week",
-            "probability": 0.2,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent crude is at 96.78 $/bbl and down 3.88%, showing no $10 price increase during the window.",
-            "resolved_ms": 1784985337499,
-            "ts": 1784379337556
-        },
-        {
-            "statement": "Kerch Strait daily ship transits will drop below 1 (current: 2) due to escalation of Ukraine-Russia conflict near the strait",
-            "horizon": "24h",
-            "probability": 0.16,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S6 shows Kerch Strait still at 2 daily transits, not below 1, so the forecast threshold was not met.",
-            "resolved_ms": 1784985333714,
-            "ts": 1784896497429
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 545,
-        "base_rate": 0.0716,
-        "brier_raw": 0.2365,
-        "brier_base_rate": 0.0664,
-        "brier_calibrated_oos": 0.0324,
-        "brier_calibrated_oos_n": 67,
+        "resolved_n": 550,
+        "base_rate": 0.0709,
+        "brier_raw": 0.2357,
+        "brier_base_rate": 0.0659,
+        "brier_calibrated_oos": 0.0316,
+        "brier_calibrated_oos_n": 69,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
