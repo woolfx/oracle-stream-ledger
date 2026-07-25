@@ -1,38 +1,38 @@
 {
-    "resolved": 504,
-    "open": 1948,
-    "due": 65,
+    "resolved": 514,
+    "open": 1943,
+    "due": 61,
     "unresolvable": 51,
-    "brier": 0.244,
+    "brier": 0.241,
     "hit_rate": 0.58,
     "per_horizon": {
         "24h": {
-            "resolved": 353,
-            "brier": 0.249,
+            "resolved": 357,
+            "brier": 0.247,
             "hit_rate": 0.57
         },
         "week": {
-            "resolved": 151,
-            "brier": 0.231,
+            "resolved": 157,
+            "brier": 0.228,
             "hit_rate": 0.59
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 58,
+            "n": 60,
             "avg_predicted": 0.12,
             "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 145,
+            "n": 151,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 157,
+            "n": 159,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
@@ -51,33 +51,143 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 504,
-            "brier": 0.29
+            "resolved": 514,
+            "brier": 0.289
         },
         "Economist": {
-            "resolved": 503,
-            "brier": 0.303
+            "resolved": 513,
+            "brier": 0.299
         },
         "Naturalist": {
-            "resolved": 504,
-            "brier": 0.319
+            "resolved": 514,
+            "brier": 0.315
         },
         "Skeptic": {
-            "resolved": 503,
-            "brier": 0.183
+            "resolved": 513,
+            "brier": 0.182
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1783,
-            "brier": 0.288
+            "resolved": 1807,
+            "brier": 0.286
         },
         "qwen3:14b": {
-            "resolved": 231,
-            "brier": 0.168
+            "resolved": 247,
+            "brier": 0.16
         }
     },
     "recent": [
+        {
+            "statement": "StoneX Group (SNEX) stock will drop below $10.50/share due to insider selling pressure",
+            "horizon": "24h",
+            "probability": 0.09,
+            "location": "",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal references StoneX Group (SNEX) stock price or insider selling; the admissible signals only cover FOMC meetings, crude oil, and Nasdaq futures.",
+            "resolved_ms": 1784960031277,
+            "ts": 1784873389907
+        },
+        {
+            "statement": "WTI crude oil futures (CL=F) will rise above $93.50/bbl following geopolitical risk premiums from Middle East tensions",
+            "horizon": "24h",
+            "probability": 0.33,
+            "location": "",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI crude is at $89.31/bbl, below the $93.50 threshold and falling (-3.12%), so the forecast did not come true.",
+            "resolved_ms": 1784960029391,
+            "ts": 1784873389907
+        },
+        {
+            "statement": "Strait of Hormuz ship transits will drop below 15 daily due to increased Iranian naval activity near the chokepoint",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S8 shows Strait of Hormuz at 15 daily transits, which does not meet the forecast's threshold of dropping below 15.",
+            "resolved_ms": 1784960027151,
+            "ts": 1784873389907
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Mexico within the next week",
+            "horizon": "week",
+            "probability": 0.53,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The named cyclones (Fausto, Elida, Bertha, Noul) are located offshore or near Texas with no signal showing any landfall in Mexico, and affected populations are reported as zero.",
+            "resolved_ms": 1784960024885,
+            "ts": 1784353631516
+        },
+        {
+            "statement": "VIX fear gauge will spike above 22 due to escalating tensions in the Gaza conflict",
+            "horizon": "24h",
+            "probability": 0.27,
+            "location": "Gaza Strip",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal describes ongoing Gaza military operations but provides no VIX data showing a spike above 22, so the forecast event is unconfirmed.",
+            "resolved_ms": 1784960020447,
+            "ts": 1784871412977
+        },
+        {
+            "statement": "Protests will erupt in Venice, Italy within the next week due to the arrival of billionaire US envoy Tilman Fertitta's yacht.",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Venice, Italy",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal provides any text showing protests occurred in Venice over Fertitta's yacht, and such an event would have been captured within the window.",
+            "resolved_ms": 1784960017219,
+            "ts": 1784351793725
+        },
+        {
+            "statement": "The US will experience a major cyberattack on critical infrastructure",
+            "horizon": "week",
+            "probability": 0.52,
+            "location": "US Critical Infrastructure",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a major cyberattack on US critical infrastructure occurring within the window.",
+            "resolved_ms": 1784960015287,
+            "ts": 1784349946954
+        },
+        {
+            "statement": "The US will announce new sanctions on Iran",
+            "horizon": "week",
+            "probability": 0.39,
+            "location": "Washington D.C.",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows the US announcing new sanctions on Iran within the window, an event that would certainly have been recorded.",
+            "resolved_ms": 1784960013634,
+            "ts": 1784349946954
+        },
+        {
+            "statement": "A major flood will occur in France within the next week",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "France",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal reports a major flood occurring in France during the window, and an event that large would certainly have been captured.",
+            "resolved_ms": 1784960011871,
+            "ts": 1784348092912
+        },
+        {
+            "statement": "The US will announce a new sanctions package against Iran within the next week",
+            "horizon": "week",
+            "probability": 0.27,
+            "location": "US/Iran",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows the US announcing a new sanctions package against Iran within the window.",
+            "resolved_ms": 1784960009342,
+            "ts": 1784348092911
+        },
         {
             "statement": "S&P 500 futures will drop by over 1.5% within 24 hours",
             "horizon": "24h",
@@ -99,116 +209,6 @@
             "evidence": "The only crude price signal, Brent, fell -2.29%, contradicting any 3-4% WTI increase, and no signal shows WTI rising within the window.",
             "resolved_ms": 1784949152274,
             "ts": 1784861791599
-        },
-        {
-            "statement": "A severe thunderstorm will cause flash flooding in parts of Arizona within the next week.",
-            "horizon": "week",
-            "probability": 0.35,
-            "location": "Arizona",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows a severe thunderstorm causing flash flooding in Arizona during the window, which such an event would have generated.",
-            "resolved_ms": 1784949144127,
-            "ts": 1784342575393
-        },
-        {
-            "statement": "WTI crude oil prices will rise by 3-4% within 24 hours due to increased shipping congestion in the Ombai Strait",
-            "horizon": "24h",
-            "probability": 0.25,
-            "location": "Ombai Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI crude closed at 90.47 $/bbl down 1.87%, contradicting the forecast of a 3-4% rise.",
-            "resolved_ms": 1784949140993,
-            "ts": 1784859836618
-        },
-        {
-            "statement": "A heatwave will cause widespread power outages in Germany within the next week",
-            "horizon": "week",
-            "probability": 0.61,
-            "location": "Germany",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal was captured, and widespread heatwave-caused power outages in Germany would certainly have been recorded had they occurred within the window.",
-            "resolved_ms": 1784949138525,
-            "ts": 1784340736974
-        },
-        {
-            "statement": "A surge in wildfire evacuations in Spain and France",
-            "horizon": "24h",
-            "probability": 0.09,
-            "location": "Europe",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows a surge in wildfire evacuations in Spain or France during the window, and such an event would have been captured.",
-            "resolved_ms": 1784949136938,
-            "ts": 1784855917253
-        },
-        {
-            "statement": "VIX fear gauge spikes above 20 due to escalation in Gaza conflict",
-            "horizon": "24h",
-            "probability": 0.32,
-            "location": "Gaza Strip",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The VIX signal shows 18.58, below the stated threshold of 20, so the forecasted spike did not occur.",
-            "resolved_ms": 1784945535323,
-            "ts": 1784857895612
-        },
-        {
-            "statement": "A major power outage will occur in California within the next week",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "California",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports any major power outage in California during the window, though such an event would certainly have been captured.",
-            "resolved_ms": 1784941926296,
-            "ts": 1784337042569
-        },
-        {
-            "statement": "A heatwave will affect Europe within the next week",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "Europe",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a European heatwave would certainly have been captured if it occurred.",
-            "resolved_ms": 1784941923713,
-            "ts": 1784337042569
-        },
-        {
-            "statement": "A tornado will touch down in central Florida within the next week",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "Central Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a tornado touchdown in central Florida would certainly have been captured if it occurred.",
-            "resolved_ms": 1784941922186,
-            "ts": 1784337042569
-        },
-        {
-            "statement": "A flash flood warning will be issued for parts of Florida on July 19",
-            "horizon": "week",
-            "probability": 0.5,
-            "location": "Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No provided signal text shows a flash flood warning was issued for any part of Florida on July 19, and the window has closed.",
-            "resolved_ms": 1784941920716,
-            "ts": 1784335191524
-        },
-        {
-            "statement": "Tropical Storm NOUL-26 intensifies to Category 2 status in NWPacific",
-            "horizon": "24h",
-            "probability": 0.15,
-            "location": "NWPacific",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows NOUL-26 at Category 1 (120 km/h) wind speeds with an Orange alert, but no signal confirms it reached Category 2 status.",
-            "resolved_ms": 1784941913316,
-            "ts": 1784852112195
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 504,
-        "base_rate": 0.0754,
-        "brier_raw": 0.2437,
-        "brier_base_rate": 0.0697,
-        "brier_calibrated_oos": 0.0221,
-        "brier_calibrated_oos_n": 55,
+        "resolved_n": 514,
+        "base_rate": 0.0739,
+        "brier_raw": 0.2412,
+        "brier_base_rate": 0.0685,
+        "brier_calibrated_oos": 0.0208,
+        "brier_calibrated_oos_n": 59,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
