@@ -1,10 +1,10 @@
 {
-    "resolved": 565,
-    "open": 1907,
-    "due": 65,
+    "resolved": 572,
+    "open": 1900,
+    "due": 60,
     "unresolvable": 51,
     "brier": 0.234,
-    "hit_rate": 0.59,
+    "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
             "resolved": 373,
@@ -12,9 +12,9 @@
             "hit_rate": 0.58
         },
         "week": {
-            "resolved": 192,
-            "brier": 0.218,
-            "hit_rate": 0.61
+            "resolved": 199,
+            "brier": 0.217,
+            "hit_rate": 0.62
         }
     },
     "calibration": [
@@ -26,19 +26,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 173,
+            "n": 178,
             "avg_predicted": 0.29,
             "observed": 0.03
         },
         {
             "bin": "40\u201360%",
-            "n": 179,
+            "n": 180,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 111,
+            "n": 112,
             "avg_predicted": 0.67,
             "observed": 0.12
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 565,
-            "brier": 0.281
+            "resolved": 572,
+            "brier": 0.28
         },
         "Economist": {
-            "resolved": 564,
-            "brier": 0.291
+            "resolved": 571,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 565,
+            "resolved": 572,
             "brier": 0.305
         },
         "Skeptic": {
-            "resolved": 564,
-            "brier": 0.177
+            "resolved": 571,
+            "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1947,
-            "brier": 0.28
+            "resolved": 1975,
+            "brier": 0.279
         },
         "qwen3:14b": {
             "resolved": 311,
@@ -78,6 +78,83 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience increased ship traffic within the next week due to sustained deviations from its 30-day average.",
+            "horizon": "week",
+            "probability": 0.37,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average, contradicting the forecast of increased traffic.",
+            "resolved_ms": 1785014309159,
+            "ts": 1784408048287
+        },
+        {
+            "statement": "A significant increase in earthquakes will occur in Mexico by the end of July",
+            "horizon": "week",
+            "probability": 0.39,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal shows any significant increase in Mexican earthquakes during the window.",
+            "resolved_ms": 1785014307654,
+            "ts": 1784408001361
+        },
+        {
+            "statement": "A major fire will break out in Norway by the end of July",
+            "horizon": "week",
+            "probability": 0.32,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a major fire would certainly have been captured, yet none shows it occurred.",
+            "resolved_ms": 1785014306078,
+            "ts": 1784408001361
+        },
+        {
+            "statement": "The Nasdaq 100 futures will close below 28000 by the end of July",
+            "horizon": "week",
+            "probability": 0.49,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Nasdaq 100 futures signal shows 28282.25, above the 28000 threshold, so the futures did not close below 28000.",
+            "resolved_ms": 1785014304388,
+            "ts": 1784408001361
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Mexico within the next week.",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a tropical cyclone actually making landfall in Mexico; the named storms are offshore in the Pacific or over Texas, with zero population affected.",
+            "resolved_ms": 1785014301542,
+            "ts": 1784407818971
+        },
+        {
+            "statement": "A magnitude 6+ earthquake will strike the southern coast of Mexico within the next week.",
+            "horizon": "week",
+            "probability": 0.64,
+            "location": "Southern coast of Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports a magnitude 6+ earthquake striking southern Mexico, and such an event would certainly have been captured within the closed window.",
+            "resolved_ms": 1785014263029,
+            "ts": 1784406285883
+        },
+        {
+            "statement": "A magnitude 5.0 earthquake will strike near Puerto Madero, Mexico",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Puerto Madero, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal reports a magnitude 5.0 earthquake near Puerto Madero within the window, though such an event would have been captured.",
+            "resolved_ms": 1785014260722,
+            "ts": 1784406246733
+        },
         {
             "statement": "Earthquake with magnitude 6 or higher occurs in Mexico",
             "horizon": "week",
@@ -132,83 +209,6 @@
             "evidence": "The signals only confirm ongoing Sudan civil war but contain no data on the VIX rising above 20, so the specific market threshold is unsupported.",
             "resolved_ms": 1785010646971,
             "ts": 1784921647385
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 2/day due to increased Russian-Ukrainian missile exchanges",
-            "horizon": "24h",
-            "probability": 0.38,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows exactly 2 daily transits, which is not below the stated 2/day threshold.",
-            "resolved_ms": 1785010644308,
-            "ts": 1784921647385
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Central America within the next week",
-            "horizon": "week",
-            "probability": 0.53,
-            "location": "Central America",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a tropical cyclone making landfall in Central America; the listed cyclones are in the South China Sea, eastern Pacific, and Texas.",
-            "resolved_ms": 1785007041257,
-            "ts": 1784401936526
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will strike off the coast of Mexico",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a magnitude 6.0 earthquake striking off the coast of Mexico during the window, and such an event would certainly have been captured.",
-            "resolved_ms": 1785007037875,
-            "ts": 1784401936526
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1 daily transit due to intensified Russian-Ukrainian naval clashes",
-            "horizon": "24h",
-            "probability": 0.41,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily transits, which is not below the forecast threshold of 1 daily transit.",
-            "resolved_ms": 1785007035949,
-            "ts": 1784919700034
-        },
-        {
-            "statement": "A major wildfire will break out in California due to hot and dry conditions",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "California, USA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal documents any major California wildfire during the window, though such an event would certainly have been recorded.",
-            "resolved_ms": 1785007033786,
-            "ts": 1784400093486
-        },
-        {
-            "statement": "A Category 2 hurricane will make landfall in the Gulf of Mexico",
-            "horizon": "week",
-            "probability": 0.44,
-            "location": "Gulf of Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Gulf of Mexico system, Bertha, is a Tropical Storm with zero population affected\u2014far below Category 2 hurricane landfall\u2014and no signal shows any such landfall.",
-            "resolved_ms": 1785007032043,
-            "ts": 1784400093486
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1 per day due to intensified Russian-Ukrainian missile exchanges",
-            "horizon": "24h",
-            "probability": 0.58,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily transits, which is above the forecast threshold of below 1 per day, so the predicted drop did not occur.",
-            "resolved_ms": 1785007026757,
-            "ts": 1784917707174
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 565,
-        "base_rate": 0.069,
-        "brier_raw": 0.2342,
-        "brier_base_rate": 0.0643,
+        "resolved_n": 572,
+        "base_rate": 0.0682,
+        "brier_raw": 0.2335,
+        "brier_base_rate": 0.0635,
         "brier_calibrated_oos": 0.0293,
         "brier_calibrated_oos_n": 75,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
