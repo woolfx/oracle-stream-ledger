@@ -1,7 +1,7 @@
 {
-    "resolved": 480,
-    "open": 1934,
-    "due": 57,
+    "resolved": 491,
+    "open": 1929,
+    "due": 58,
     "unresolvable": 51,
     "brier": 0.247,
     "hit_rate": 0.57,
@@ -12,9 +12,9 @@
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 134,
-            "brier": 0.23,
-            "hit_rate": 0.6
+            "resolved": 145,
+            "brier": 0.232,
+            "hit_rate": 0.59
         }
     },
     "calibration": [
@@ -26,13 +26,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 132,
+            "n": 139,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 153,
+            "n": 155,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
@@ -44,32 +44,32 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 32,
-            "avg_predicted": 0.82,
+            "n": 34,
+            "avg_predicted": 0.83,
             "observed": 0.12
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 480,
+            "resolved": 491,
             "brier": 0.294
         },
         "Economist": {
-            "resolved": 479,
+            "resolved": 490,
             "brier": 0.306
         },
         "Naturalist": {
-            "resolved": 480,
-            "brier": 0.325
+            "resolved": 491,
+            "brier": 0.324
         },
         "Skeptic": {
-            "resolved": 479,
-            "brier": 0.187
+            "resolved": 490,
+            "brier": 0.186
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1715,
+            "resolved": 1759,
             "brier": 0.289
         },
         "qwen3:14b": {
@@ -78,6 +78,127 @@
         }
     },
     "recent": [
+        {
+            "statement": "Volcanic eruption occurs at Mayon volcano in the Philippines",
+            "horizon": "week",
+            "probability": 0.92,
+            "location": "Mayon Volcano, Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal concerns Rincon de la Vieja Volcano in Costa Rica, not an eruption at Mayon in the Philippines.",
+            "resolved_ms": 1784938307225,
+            "ts": 1784333394111
+        },
+        {
+            "statement": "Earthquake with magnitude greater than 6.0 occurs in Mexico",
+            "horizon": "week",
+            "probability": 0.82,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a magnitude greater than 6.0 earthquake in Mexico during the window, which would certainly have been recorded.",
+            "resolved_ms": 1784938305303,
+            "ts": 1784333394111
+        },
+        {
+            "statement": "The price of Brent Crude will exceed $90 per barrel",
+            "horizon": "week",
+            "probability": 0.38,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Brent Crude is at $98.38/bbl, which exceeds the $90 per barrel threshold.",
+            "resolved_ms": 1784938303504,
+            "ts": 1784333341424
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Mexico",
+            "horizon": "week",
+            "probability": 0.2,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a tropical cyclone actually making landfall in Mexico; the named storms are either far offshore in the Pacific or show zero hurricane-force impact.",
+            "resolved_ms": 1784938300752,
+            "ts": 1784333341424
+        },
+        {
+            "statement": "A severe flood warning will be issued for the city of Paris, France within the next week",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Paris, France",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a severe flood warning was issued for Paris, and such an event would certainly have been captured, yet the window has closed with no supporting evidence.",
+            "resolved_ms": 1784938296757,
+            "ts": 1784333275881
+        },
+        {
+            "statement": "A large earthquake will strike Mexico within the next week",
+            "horizon": "week",
+            "probability": 0.53,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a large earthquake in Mexico during the window, and such an event would certainly have been recorded.",
+            "resolved_ms": 1784938294273,
+            "ts": 1784333275881
+        },
+        {
+            "statement": "Tropical cyclone ELIDA-26 will make landfall in Baja California, Mexico",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "Baja California, Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions cyclone ELIDA-26 or any landfall in Baja California; only unrelated cyclones NOUL, BERTHA, FAUSTO, and GENEVIEVE appear, so the forecast event is not shown.",
+            "resolved_ms": 1784938292620,
+            "ts": 1784333220356
+        },
+        {
+            "statement": "The International Criminal Court will issue an arrest warrant for a high-ranking US official",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "The Hague, Netherlands",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal indicates the ICC issued an arrest warrant for a high-ranking US official, an event that would certainly have been captured within the window.",
+            "resolved_ms": 1784938289321,
+            "ts": 1784333148285
+        },
+        {
+            "statement": "The Volcano Mayon in Philippines will erupt with increased intensity",
+            "horizon": "week",
+            "probability": 0.5,
+            "location": "Mayon, Philippines",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal concerns Rincon de la Vieja Volcano in Costa Rica, not Mayon in the Philippines, so no evidence shows the forecast eruption occurred.",
+            "resolved_ms": 1784938287756,
+            "ts": 1784332717097
+        },
+        {
+            "statement": "The Turkish Straits will experience a major shipping disruption within the next week",
+            "horizon": "week",
+            "probability": 0.21,
+            "location": "Turkish Straits",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal references the Turkish Straits or any shipping disruption there; all signals concern unrelated Asia-Pacific straits.",
+            "resolved_ms": 1784938285904,
+            "ts": 1784332658934
+        },
+        {
+            "statement": "A major earthquake will hit Mexico in the next week",
+            "horizon": "week",
+            "probability": 0.27,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a major earthquake in Mexico during the window, which such an event would certainly have generated.",
+            "resolved_ms": 1784938284014,
+            "ts": 1784331675889
+        },
         {
             "statement": "A significant earthquake will strike the Philippines within the next week.",
             "horizon": "week",
@@ -88,127 +209,6 @@
             "evidence": "No admissible signal reports a significant earthquake striking the Philippines during the window, so the event that large would have been captured yet was not.",
             "resolved_ms": 1784934682228,
             "ts": 1784329825193
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Mexico within the next week.",
-            "horizon": "week",
-            "probability": 0.35,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Both cyclone signals are green alerts with zero population affected and neither shows a landfall in Mexico, so no qualifying event was captured within the window.",
-            "resolved_ms": 1784934680610,
-            "ts": 1784329825193
-        },
-        {
-            "statement": "WTI crude oil price rises above $95/bbl due to Red Sea conflict disrupting shipping routes",
-            "horizon": "24h",
-            "probability": 0.82,
-            "location": "Red Sea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI crude is at $90.47/bbl and falling (-1.87%), below the required $95/bbl threshold.",
-            "resolved_ms": 1784934677283,
-            "ts": 1784846391834
-        },
-        {
-            "statement": "A major cyberattack will occur within the next week",
-            "horizon": "week",
-            "probability": 0.36,
-            "location": "Global Networks",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows a specific major cyberattack occurring within the window; only trimmed section counts are provided, none documenting such an event.",
-            "resolved_ms": 1784934675620,
-            "ts": 1784327972213
-        },
-        {
-            "statement": "A flash flood warning will be issued for the Houston area within the next week",
-            "horizon": "week",
-            "probability": 0.47,
-            "location": "Houston, TX",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows a flash flood warning issued for the Houston area during the window, so the event is unsupported.",
-            "resolved_ms": 1784934672830,
-            "ts": 1784327972213
-        },
-        {
-            "statement": "WTI crude oil prices will rise above $95/bbl within 24 hours due to heightened geopolitical tensions in the Red Sea disrupting shipping through the Bab-el-Mandeb Strait",
-            "horizon": "24h",
-            "probability": 0.32,
-            "location": "Red Sea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports WTI price; the closest signal shows Brent at $98.38 falling -2.29%, with no evidence of WTI rising above $95 or Red Sea shipping disruption.",
-            "resolved_ms": 1784931069286,
-            "ts": 1784844445703
-        },
-        {
-            "statement": "The Strait of Hormuz will experience increased oil tanker traffic due to supply chain disruptions in the Middle East",
-            "horizon": "week",
-            "probability": 0.3,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating decreased\u2014not increased\u2014traffic during the window.",
-            "resolved_ms": 1784931064843,
-            "ts": 1784324290457
-        },
-        {
-            "statement": "WTI Crude Oil price surges above $95/bbl due to Strait of Hormuz shipping disruptions",
-            "horizon": "24h",
-            "probability": 0.11,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent crude was at 98.38 and falling (-2.29%), showing no price surge, and no signal shows WTI above $95 from a Hormuz disruption.",
-            "resolved_ms": 1784931062436,
-            "ts": 1784842472735
-        },
-        {
-            "statement": "The price of oil will rise due to supply chain disruptions caused by the ongoing conflict in the Middle East within the next week.",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "Middle East",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 explicitly reports Red Sea turmoil from the Iran/Middle East conflict pushing oil past $100 a barrel, showing the price rise due to conflict-driven supply disruption within the window.",
-            "resolved_ms": 1784927456694,
-            "ts": 1784322445454
-        },
-        {
-            "statement": "A significant earthquake will occur in Mexico within the next week.",
-            "horizon": "week",
-            "probability": 0.78,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal was captured concerning any earthquake in Mexico, and a significant earthquake would certainly have been recorded during the closed window.",
-            "resolved_ms": 1784927449269,
-            "ts": 1784322445454
-        },
-        {
-            "statement": "S&P 500 futures will drop below 7350 by 24 hours",
-            "horizon": "24h",
-            "probability": 0.24,
-            "location": "US markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports S&P 500 futures below 7350; related Nasdaq futures fell only -1.11% and VIX at 18.58 (-0.64%) indicate no such drop occurred.",
-            "resolved_ms": 1784927447598,
-            "ts": 1784840523188
-        },
-        {
-            "statement": "WTI Crude Oil price will rise above $95/bbl within 24 hours",
-            "horizon": "24h",
-            "probability": 0.63,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports WTI crude price; the closest, Brent at $98.44 falling -2.23%, does not show WTI above $95/bbl.",
-            "resolved_ms": 1784927442490,
-            "ts": 1784840523188
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 480,
-        "base_rate": 0.0771,
-        "brier_raw": 0.2467,
-        "brier_base_rate": 0.0711,
+        "resolved_n": 491,
+        "base_rate": 0.0774,
+        "brier_raw": 0.2469,
+        "brier_base_rate": 0.0714,
         "brier_calibrated_oos": 0.0249,
         "brier_calibrated_oos_n": 48,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
