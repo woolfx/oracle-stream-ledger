@@ -1,38 +1,38 @@
 {
-    "resolved": 491,
-    "open": 1929,
+    "resolved": 497,
+    "open": 1926,
     "due": 58,
     "unresolvable": 51,
-    "brier": 0.247,
+    "brier": 0.246,
     "hit_rate": 0.57,
     "per_horizon": {
         "24h": {
-            "resolved": 346,
-            "brier": 0.253,
+            "resolved": 348,
+            "brier": 0.252,
             "hit_rate": 0.56
         },
         "week": {
-            "resolved": 145,
-            "brier": 0.232,
+            "resolved": 149,
+            "brier": 0.23,
             "hit_rate": 0.59
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 54,
+            "n": 56,
             "avg_predicted": 0.12,
-            "observed": 0.06
+            "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 139,
+            "n": 141,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 155,
+            "n": 157,
             "avg_predicted": 0.49,
             "observed": 0.08
         },
@@ -51,33 +51,99 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 491,
-            "brier": 0.294
+            "resolved": 497,
+            "brier": 0.292
         },
         "Economist": {
-            "resolved": 490,
-            "brier": 0.306
+            "resolved": 496,
+            "brier": 0.305
         },
         "Naturalist": {
-            "resolved": 491,
-            "brier": 0.324
+            "resolved": 497,
+            "brier": 0.322
         },
         "Skeptic": {
-            "resolved": 490,
-            "brier": 0.186
+            "resolved": 496,
+            "brier": 0.185
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1759,
-            "brier": 0.289
+            "resolved": 1775,
+            "brier": 0.288
         },
         "qwen3:14b": {
-            "resolved": 203,
-            "brier": 0.184
+            "resolved": 211,
+            "brier": 0.177
         }
     },
     "recent": [
+        {
+            "statement": "A major power outage will occur in California within the next week",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "California",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal reports any major power outage in California during the window, though such an event would certainly have been captured.",
+            "resolved_ms": 1784941926296,
+            "ts": 1784337042569
+        },
+        {
+            "statement": "A heatwave will affect Europe within the next week",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "Europe",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a European heatwave would certainly have been captured if it occurred.",
+            "resolved_ms": 1784941923713,
+            "ts": 1784337042569
+        },
+        {
+            "statement": "A tornado will touch down in central Florida within the next week",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "Central Florida",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a tornado touchdown in central Florida would certainly have been captured if it occurred.",
+            "resolved_ms": 1784941922186,
+            "ts": 1784337042569
+        },
+        {
+            "statement": "A flash flood warning will be issued for parts of Florida on July 19",
+            "horizon": "week",
+            "probability": 0.5,
+            "location": "Florida",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No provided signal text shows a flash flood warning was issued for any part of Florida on July 19, and the window has closed.",
+            "resolved_ms": 1784941920716,
+            "ts": 1784335191524
+        },
+        {
+            "statement": "Tropical Storm NOUL-26 intensifies to Category 2 status in NWPacific",
+            "horizon": "24h",
+            "probability": 0.15,
+            "location": "NWPacific",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 shows NOUL-26 at Category 1 (120 km/h) wind speeds with an Orange alert, but no signal confirms it reached Category 2 status.",
+            "resolved_ms": 1784941913316,
+            "ts": 1784852112195
+        },
+        {
+            "statement": "Increased seismic activity in Indonesia triggers localized infrastructure damage and landslides",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "Indonesia",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a seismic event causing infrastructure damage and landslides in Indonesia would certainly have been recorded if it occurred.",
+            "resolved_ms": 1784941909979,
+            "ts": 1784852112195
+        },
         {
             "statement": "Volcanic eruption occurs at Mayon volcano in the Philippines",
             "horizon": "week",
@@ -143,72 +209,6 @@
             "evidence": "No captured signal reports a large earthquake in Mexico during the window, and such an event would certainly have been recorded.",
             "resolved_ms": 1784938294273,
             "ts": 1784333275881
-        },
-        {
-            "statement": "Tropical cyclone ELIDA-26 will make landfall in Baja California, Mexico",
-            "horizon": "week",
-            "probability": 0.25,
-            "location": "Baja California, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions cyclone ELIDA-26 or any landfall in Baja California; only unrelated cyclones NOUL, BERTHA, FAUSTO, and GENEVIEVE appear, so the forecast event is not shown.",
-            "resolved_ms": 1784938292620,
-            "ts": 1784333220356
-        },
-        {
-            "statement": "The International Criminal Court will issue an arrest warrant for a high-ranking US official",
-            "horizon": "week",
-            "probability": 0.25,
-            "location": "The Hague, Netherlands",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal indicates the ICC issued an arrest warrant for a high-ranking US official, an event that would certainly have been captured within the window.",
-            "resolved_ms": 1784938289321,
-            "ts": 1784333148285
-        },
-        {
-            "statement": "The Volcano Mayon in Philippines will erupt with increased intensity",
-            "horizon": "week",
-            "probability": 0.5,
-            "location": "Mayon, Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal concerns Rincon de la Vieja Volcano in Costa Rica, not Mayon in the Philippines, so no evidence shows the forecast eruption occurred.",
-            "resolved_ms": 1784938287756,
-            "ts": 1784332717097
-        },
-        {
-            "statement": "The Turkish Straits will experience a major shipping disruption within the next week",
-            "horizon": "week",
-            "probability": 0.21,
-            "location": "Turkish Straits",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal references the Turkish Straits or any shipping disruption there; all signals concern unrelated Asia-Pacific straits.",
-            "resolved_ms": 1784938285904,
-            "ts": 1784332658934
-        },
-        {
-            "statement": "A major earthquake will hit Mexico in the next week",
-            "horizon": "week",
-            "probability": 0.27,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a major earthquake in Mexico during the window, which such an event would certainly have generated.",
-            "resolved_ms": 1784938284014,
-            "ts": 1784331675889
-        },
-        {
-            "statement": "A significant earthquake will strike the Philippines within the next week.",
-            "horizon": "week",
-            "probability": 0.48,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports a significant earthquake striking the Philippines during the window, so the event that large would have been captured yet was not.",
-            "resolved_ms": 1784934682228,
-            "ts": 1784329825193
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 491,
-        "base_rate": 0.0774,
-        "brier_raw": 0.2469,
-        "brier_base_rate": 0.0714,
-        "brier_calibrated_oos": 0.0249,
-        "brier_calibrated_oos_n": 48,
+        "resolved_n": 497,
+        "base_rate": 0.0765,
+        "brier_raw": 0.2455,
+        "brier_base_rate": 0.0706,
+        "brier_calibrated_oos": 0.024,
+        "brier_calibrated_oos_n": 50,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
