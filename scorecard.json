@@ -1,38 +1,38 @@
 {
-    "resolved": 525,
-    "open": 1947,
-    "due": 60,
+    "resolved": 529,
+    "open": 1943,
+    "due": 58,
     "unresolvable": 51,
-    "brier": 0.239,
-    "hit_rate": 0.58,
+    "brier": 0.24,
+    "hit_rate": 0.59,
     "per_horizon": {
         "24h": {
-            "resolved": 359,
-            "brier": 0.246,
-            "hit_rate": 0.58
+            "resolved": 360,
+            "brier": 0.247,
+            "hit_rate": 0.57
         },
         "week": {
-            "resolved": 166,
-            "brier": 0.225,
-            "hit_rate": 0.6
+            "resolved": 169,
+            "brier": 0.223,
+            "hit_rate": 0.61
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 61,
+            "n": 62,
             "avg_predicted": 0.12,
-            "observed": 0.05
+            "observed": 0.06
         },
         {
             "bin": "20\u201340%",
-            "n": 158,
+            "n": 160,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 161,
+            "n": 162,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
@@ -51,33 +51,77 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 525,
+            "resolved": 529,
             "brier": 0.286
         },
         "Economist": {
-            "resolved": 524,
+            "resolved": 528,
             "brier": 0.298
         },
         "Naturalist": {
-            "resolved": 525,
+            "resolved": 529,
             "brier": 0.312
         },
         "Skeptic": {
-            "resolved": 524,
-            "brier": 0.18
+            "resolved": 528,
+            "brier": 0.182
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1843,
-            "brier": 0.285
+            "resolved": 1855,
+            "brier": 0.284
         },
         "qwen3:14b": {
-            "resolved": 255,
-            "brier": 0.157
+            "resolved": 259,
+            "brier": 0.166
         }
     },
     "recent": [
+        {
+            "statement": "The price of Brent crude oil will increase by at least $2.50 per barrel within the next week.",
+            "horizon": "week",
+            "probability": 0.21,
+            "location": "Global oil markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current Brent Crude signal shows the price at 96.78 $/bbl declining 3.88%, with no signal indicating any $2.50+ increase within the window.",
+            "resolved_ms": 1784978118905,
+            "ts": 1784372013888
+        },
+        {
+            "statement": "Brent Crude prices will rise above $95/bbl within 24 hours",
+            "horizon": "24h",
+            "probability": 0.13,
+            "location": "",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S12 shows Brent Crude at 96.78 $/bbl, which is above the $95/bbl threshold.",
+            "resolved_ms": 1784978116037,
+            "ts": 1784888841901
+        },
+        {
+            "statement": "The price of oil will rise by at least $5 per barrel due to supply chain disruptions",
+            "horizon": "week",
+            "probability": 0.4,
+            "location": "Global oil markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI crude fell 3.12% and Brent fell 3.88% during the window, showing prices declined rather than rising by at least $5 per barrel.",
+            "resolved_ms": 1784978109647,
+            "ts": 1784370185808
+        },
+        {
+            "statement": "The US dollar will appreciate against the euro by at least 1% within the next week",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports EUR/USD exchange rates or any dollar appreciation against the euro; the available signals cover FOMC schedules, oil, and equities only.",
+            "resolved_ms": 1784978107196,
+            "ts": 1784364680047
+        },
         {
             "statement": "Kerch Strait ship transits will drop below 1 daily due to escalating Ukrainian-Russian conflict near the strait",
             "horizon": "24h",
@@ -165,50 +209,6 @@
             "evidence": "Brent Crude fell 3.88% to 96.78 $/bbl, showing no $5 rise, so the forecast did not occur.",
             "resolved_ms": 1784963658602,
             "ts": 1784357329901
-        },
-        {
-            "statement": "WTI crude oil prices will rise above $95/bbl within 24 hours due to heightened geopolitical tensions in the Strait of Hormuz",
-            "horizon": "24h",
-            "probability": 0.1,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent fell 3.88% to $96.78/bbl with prices dropping rather than spiking, and no signal shows WTI rising above $95 amid geopolitical tension.",
-            "resolved_ms": 1784963655509,
-            "ts": 1784875374718
-        },
-        {
-            "statement": "The price of Brent crude oil will increase by $5 per barrel within the next week",
-            "horizon": "week",
-            "probability": 0.56,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent crude is at 96.78 $/bbl down 3.88%, showing a decline rather than the required $5 increase within the window.",
-            "resolved_ms": 1784963651213,
-            "ts": 1784355479592
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the Philippines within the next week",
-            "horizon": "week",
-            "probability": 0.47,
-            "location": "Philippines",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Typhoon Noul appears near the Philippines (S2, S5) affecting 6.384M people, but no signal states an actual landfall in the Philippines within the window.",
-            "resolved_ms": 1784963640730,
-            "ts": 1784344412176
-        },
-        {
-            "statement": "StoneX Group (SNEX) stock will drop below $10.50/share due to insider selling pressure",
-            "horizon": "24h",
-            "probability": 0.09,
-            "location": "",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal references StoneX Group (SNEX) stock price or insider selling; the admissible signals only cover FOMC meetings, crude oil, and Nasdaq futures.",
-            "resolved_ms": 1784960031277,
-            "ts": 1784873389907
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 525,
-        "base_rate": 0.0724,
-        "brier_raw": 0.2394,
-        "brier_base_rate": 0.0671,
-        "brier_calibrated_oos": 0.0202,
-        "brier_calibrated_oos_n": 61,
+        "resolved_n": 529,
+        "base_rate": 0.0737,
+        "brier_raw": 0.2395,
+        "brier_base_rate": 0.0683,
+        "brier_calibrated_oos": 0.0348,
+        "brier_calibrated_oos_n": 62,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
