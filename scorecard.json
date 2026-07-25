@@ -1,9 +1,9 @@
 {
-    "resolved": 520,
-    "open": 1951,
-    "due": 59,
+    "resolved": 522,
+    "open": 1949,
+    "due": 60,
     "unresolvable": 51,
-    "brier": 0.241,
+    "brier": 0.24,
     "hit_rate": 0.58,
     "per_horizon": {
         "24h": {
@@ -12,9 +12,9 @@
             "hit_rate": 0.58
         },
         "week": {
-            "resolved": 162,
-            "brier": 0.228,
-            "hit_rate": 0.59
+            "resolved": 164,
+            "brier": 0.227,
+            "hit_rate": 0.6
         }
     },
     "calibration": [
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 153,
+            "n": 155,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 520,
-            "brier": 0.288
+            "resolved": 522,
+            "brier": 0.287
         },
         "Economist": {
-            "resolved": 519,
-            "brier": 0.299
+            "resolved": 521,
+            "brier": 0.298
         },
         "Naturalist": {
-            "resolved": 520,
+            "resolved": 522,
             "brier": 0.314
         },
         "Skeptic": {
-            "resolved": 519,
+            "resolved": 521,
             "brier": 0.181
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1827,
-            "brier": 0.286
+            "resolved": 1835,
+            "brier": 0.285
         },
         "qwen3:14b": {
             "resolved": 251,
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "A major flood will hit the Austrian region of Graz within the next week",
+            "horizon": "week",
+            "probability": 0.32,
+            "location": "Graz, Austria",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal provides any text showing a major flood occurred in Graz during the window; the only listed signal is a trimmed placeholder with no flood confirmation.",
+            "resolved_ms": 1784970880174,
+            "ts": 1784362844163
+        },
+        {
+            "statement": "The US dollar will appreciate by at least 1% against the Euro in the next week",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "Global markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports EUR/USD exchange-rate movement; only FOMC schedules and oil/equity prices appear, none showing a 1% dollar appreciation against the Euro.",
+            "resolved_ms": 1784970877251,
+            "ts": 1784359167943
+        },
         {
             "statement": "A major volcanic eruption will occur on the island of Mayon in the Philippines.",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "The named cyclones (Fausto, Elida, Bertha, Noul) are located offshore or near Texas with no signal showing any landfall in Mexico, and affected populations are reported as zero.",
             "resolved_ms": 1784960024885,
             "ts": 1784353631516
-        },
-        {
-            "statement": "VIX fear gauge will spike above 22 due to escalating tensions in the Gaza conflict",
-            "horizon": "24h",
-            "probability": 0.27,
-            "location": "Gaza Strip",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal describes ongoing Gaza military operations but provides no VIX data showing a spike above 22, so the forecast event is unconfirmed.",
-            "resolved_ms": 1784960020447,
-            "ts": 1784871412977
-        },
-        {
-            "statement": "Protests will erupt in Venice, Italy within the next week due to the arrival of billionaire US envoy Tilman Fertitta's yacht.",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Venice, Italy",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal provides any text showing protests occurred in Venice over Fertitta's yacht, and such an event would have been captured within the window.",
-            "resolved_ms": 1784960017219,
-            "ts": 1784351793725
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 520,
-        "base_rate": 0.0731,
-        "brier_raw": 0.2407,
-        "brier_base_rate": 0.0677,
+        "resolved_n": 522,
+        "base_rate": 0.0728,
+        "brier_raw": 0.2401,
+        "brier_base_rate": 0.0675,
         "brier_calibrated_oos": 0.0204,
         "brier_calibrated_oos_n": 60,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
