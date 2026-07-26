@@ -1,7 +1,7 @@
 {
-    "resolved": 577,
-    "open": 1895,
-    "due": 61,
+    "resolved": 579,
+    "open": 1893,
+    "due": 62,
     "unresolvable": 51,
     "brier": 0.232,
     "hit_rate": 0.6,
@@ -12,15 +12,15 @@
             "hit_rate": 0.58
         },
         "week": {
-            "resolved": 204,
-            "brier": 0.214,
-            "hit_rate": 0.63
+            "resolved": 206,
+            "brier": 0.213,
+            "hit_rate": 0.64
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 70,
+            "n": 71,
             "avg_predicted": 0.12,
             "observed": 0.06
         },
@@ -32,7 +32,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 182,
+            "n": 183,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 577,
-            "brier": 0.279
+            "resolved": 579,
+            "brier": 0.278
         },
         "Economist": {
-            "resolved": 576,
-            "brier": 0.288
+            "resolved": 578,
+            "brier": 0.287
         },
         "Naturalist": {
-            "resolved": 577,
+            "resolved": 579,
             "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 576,
+            "resolved": 578,
             "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1995,
+            "resolved": 2003,
             "brier": 0.277
         },
         "qwen3:14b": {
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "Severe thunderstorms will impact major US cities",
+            "horizon": "week",
+            "probability": 0.48,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a widespread severe thunderstorm event impacting major US cities would certainly have been captured within the closed window.",
+            "resolved_ms": 1785028729087,
+            "ts": 1784422752566
+        },
+        {
+            "statement": "A major earthquake will occur in Mexico within the next week.",
+            "horizon": "week",
+            "probability": 0.19,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal reports a major earthquake occurring in Mexico during the window, and such an event would certainly have been captured.",
+            "resolved_ms": 1785028727191,
+            "ts": 1784420900753
+        },
         {
             "statement": "A magnitude 6 or higher earthquake will strike Mexico within the next week",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "No signal shows a tropical cyclone actually making landfall in Mexico; the named storms are offshore in the Pacific or over Texas, with zero population affected.",
             "resolved_ms": 1785014301542,
             "ts": 1784407818971
-        },
-        {
-            "statement": "A magnitude 6+ earthquake will strike the southern coast of Mexico within the next week.",
-            "horizon": "week",
-            "probability": 0.64,
-            "location": "Southern coast of Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports a magnitude 6+ earthquake striking southern Mexico, and such an event would certainly have been captured within the closed window.",
-            "resolved_ms": 1785014263029,
-            "ts": 1784406285883
-        },
-        {
-            "statement": "A magnitude 5.0 earthquake will strike near Puerto Madero, Mexico",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Puerto Madero, Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports a magnitude 5.0 earthquake near Puerto Madero within the window, though such an event would have been captured.",
-            "resolved_ms": 1785014260722,
-            "ts": 1784406246733
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 577,
-        "base_rate": 0.0693,
-        "brier_raw": 0.2323,
-        "brier_base_rate": 0.0645,
+        "resolved_n": 579,
+        "base_rate": 0.0691,
+        "brier_raw": 0.232,
+        "brier_base_rate": 0.0643,
         "brier_calibrated_oos": 0.0293,
         "brier_calibrated_oos_n": 75,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
