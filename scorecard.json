@@ -1,32 +1,32 @@
 {
-    "resolved": 610,
-    "open": 1862,
+    "resolved": 613,
+    "open": 1859,
     "due": 62,
     "unresolvable": 51,
     "brier": 0.231,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 383,
+            "resolved": 384,
             "brier": 0.238,
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 227,
-            "brier": 0.219,
+            "resolved": 229,
+            "brier": 0.22,
             "hit_rate": 0.62
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 77,
+            "n": 78,
             "avg_predicted": 0.13,
             "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 189,
+            "n": 190,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -38,7 +38,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 117,
+            "n": 118,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -51,33 +51,66 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 610,
+            "resolved": 613,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 609,
+            "resolved": 612,
             "brier": 0.288
         },
         "Naturalist": {
-            "resolved": 610,
-            "brier": 0.302
+            "resolved": 613,
+            "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 609,
+            "resolved": 612,
             "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2087,
+            "resolved": 2095,
             "brier": 0.278
         },
         "qwen3:14b": {
-            "resolved": 351,
-            "brier": 0.153
+            "resolved": 355,
+            "brier": 0.152
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.27,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
+            "resolved_ms": 1785064882711,
+            "ts": 1784459637298
+        },
+        {
+            "statement": "The VIX fear gauge will reach 20 by the end of this week.",
+            "horizon": "week",
+            "probability": 0.78,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.58, below the required threshold of 20, and no signal indicates it reached 20 during the window.",
+            "resolved_ms": 1785064881287,
+            "ts": 1784457781360
+        },
+        {
+            "statement": "WTI Crude Oil prices will drop by 2-3% within 24 hours due to sustained below-average ship transits in the Strait of Hormuz (15 vs 30-day average of 21).",
+            "horizon": "24h",
+            "probability": 0.1,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows WTI dropping 2-3%; the closest price proxy, Brent Crude, is flat at +0.0%, contradicting the predicted decline.",
+            "resolved_ms": 1785064878988,
+            "ts": 1784975685178
+        },
         {
             "statement": "The price of gold will increase by more than $20 within the next week",
             "horizon": "week",
@@ -176,39 +209,6 @@
             "evidence": "Kerch Strait still shows 2 daily transits, not 0, so the forecast of zero transits did not occur.",
             "resolved_ms": 1785057644621,
             "ts": 1784968101432
-        },
-        {
-            "statement": "The Strait of Hormuz will experience increased ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.69,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz recorded 15 daily transits, 30% below its 30-day average, showing decreased rather than increased transits.",
-            "resolved_ms": 1785054035551,
-            "ts": 1784448576685
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop to zero due to intensified Russian-Ukrainian conflict",
-            "horizon": "24h",
-            "probability": 0.14,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait still shows 2 daily ship transits, not zero, so the predicted drop to zero did not occur.",
-            "resolved_ms": 1785054033597,
-            "ts": 1784966082774
-        },
-        {
-            "statement": "The Strait of Hormuz will see a significant increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.42,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
-            "resolved_ms": 1785054032014,
-            "ts": 1784446727103
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 610,
-        "base_rate": 0.0672,
+        "resolved_n": 613,
+        "base_rate": 0.0669,
         "brier_raw": 0.2313,
-        "brier_base_rate": 0.0627,
-        "brier_calibrated_oos": 0.0262,
-        "brier_calibrated_oos_n": 85,
+        "brier_base_rate": 0.0624,
+        "brier_calibrated_oos": 0.0259,
+        "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
