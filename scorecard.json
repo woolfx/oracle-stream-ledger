@@ -1,39 +1,39 @@
 {
-    "resolved": 601,
-    "open": 1871,
-    "due": 65,
+    "resolved": 606,
+    "open": 1866,
+    "due": 62,
     "unresolvable": 51,
     "brier": 0.231,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 382,
-            "brier": 0.239,
+            "resolved": 383,
+            "brier": 0.238,
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 219,
+            "resolved": 223,
             "brier": 0.218,
-            "hit_rate": 0.63
+            "hit_rate": 0.62
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 76,
+            "n": 77,
             "avg_predicted": 0.13,
             "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 186,
+            "n": 188,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 189,
-            "avg_predicted": 0.49,
+            "n": 191,
+            "avg_predicted": 0.5,
             "observed": 0.07
         },
         {
@@ -51,33 +51,88 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 601,
-            "brier": 0.277
+            "resolved": 606,
+            "brier": 0.276
         },
         "Economist": {
-            "resolved": 600,
-            "brier": 0.288
+            "resolved": 605,
+            "brier": 0.287
         },
         "Naturalist": {
-            "resolved": 601,
-            "brier": 0.301
+            "resolved": 606,
+            "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 600,
-            "brier": 0.176
+            "resolved": 605,
+            "brier": 0.175
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2055,
+            "resolved": 2071,
             "brier": 0.278
         },
         "qwen3:14b": {
-            "resolved": 347,
-            "brier": 0.155
+            "resolved": 351,
+            "brier": 0.153
         }
     },
     "recent": [
+        {
+            "statement": "The VIX will jump above 20 by the end of the week due to increasing market volatility",
+            "horizon": "week",
+            "probability": 0.59,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, so there is no evidence that the VIX exceeded 20 during the window.",
+            "resolved_ms": 1785057660490,
+            "ts": 1784452272833
+        },
+        {
+            "statement": "A major cyber attack will occur on a US-based company within the next week.",
+            "horizon": "week",
+            "probability": 0.5,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal text shows a major cyber attack on a US-based company occurred during the window.",
+            "resolved_ms": 1785057658367,
+            "ts": 1784450423065
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week.",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
+            "resolved_ms": 1785057656043,
+            "ts": 1784450423065
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Mexico within the next week.",
+            "horizon": "week",
+            "probability": 0.35,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The listed cyclones near Mexico (GENEVIEVE, FAUSTO) are green alerts far offshore with zero population affected, and no signal shows any tropical cyclone actually making landfall in Mexico.",
+            "resolved_ms": 1785057651728,
+            "ts": 1784450423065
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop to 0 due to intensified Russian-Ukrainian naval clashes",
+            "horizon": "24h",
+            "probability": 0.16,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait still shows 2 daily transits, not 0, so the forecast of zero transits did not occur.",
+            "resolved_ms": 1785057644621,
+            "ts": 1784968101432
+        },
         {
             "statement": "The Strait of Hormuz will experience increased ship transits within the next week",
             "horizon": "week",
@@ -154,61 +209,6 @@
             "evidence": "The only signal shows VIX at 18.58, below the required threshold of 20, and the window has closed.",
             "resolved_ms": 1785050414878,
             "ts": 1784443025208
-        },
-        {
-            "statement": "WTI Crude Oil price will rise by 2.5% within 24 hours due to renewed conflict escalation near the Kerch Strait disrupting Black Sea oil exports",
-            "horizon": "24h",
-            "probability": 0.27,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI Crude Oil is at 89.31 $/bbl with a 0.0% change, showing no 2.5% rise within the window.",
-            "resolved_ms": 1785046806392,
-            "ts": 1784960260801
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
-            "resolved_ms": 1785046804116,
-            "ts": 1784441190091
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop to zero due to intensified Russia-Ukraine conflict",
-            "horizon": "24h",
-            "probability": 0.18,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait still shows 2 daily ship transits, not zero, so the predicted drop to zero did not occur.",
-            "resolved_ms": 1785046800006,
-            "ts": 1784958267408
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in the next week",
-            "horizon": "week",
-            "probability": 0.27,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Tropical cyclone NOUL-26 is located over land at 22.9,114.5 (Guangdong, China) with 11.891 million people affected by Category 1 winds, indicating landfall occurred within the window.",
-            "resolved_ms": 1785046797924,
-            "ts": 1784439344602
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 2 per day due to intensified Russian-Ukrainian missile exchanges",
-            "horizon": "24h",
-            "probability": 0.46,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily transits, which is not below the forecast's threshold of 2 per day.",
-            "resolved_ms": 1785043181217,
-            "ts": 1784956278613
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 601,
-        "base_rate": 0.0682,
-        "brier_raw": 0.2315,
-        "brier_base_rate": 0.0636,
-        "brier_calibrated_oos": 0.0265,
-        "brier_calibrated_oos_n": 84,
+        "resolved_n": 606,
+        "base_rate": 0.0677,
+        "brier_raw": 0.231,
+        "brier_base_rate": 0.0631,
+        "brier_calibrated_oos": 0.0262,
+        "brier_calibrated_oos_n": 85,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
