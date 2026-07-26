@@ -1,9 +1,9 @@
 {
-    "resolved": 581,
-    "open": 1891,
+    "resolved": 582,
+    "open": 1890,
     "due": 62,
     "unresolvable": 51,
-    "brier": 0.232,
+    "brier": 0.231,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 207,
-            "brier": 0.213,
+            "resolved": 208,
+            "brier": 0.212,
             "hit_rate": 0.64
         }
     },
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 180,
+            "n": 181,
             "avg_predicted": 0.29,
             "observed": 0.03
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 581,
+            "resolved": 582,
             "brier": 0.277
         },
         "Economist": {
-            "resolved": 580,
-            "brier": 0.287
+            "resolved": 581,
+            "brier": 0.286
         },
         "Naturalist": {
-            "resolved": 581,
-            "brier": 0.302
+            "resolved": 582,
+            "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 580,
+            "resolved": 581,
             "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2007,
-            "brier": 0.277
+            "resolved": 2011,
+            "brier": 0.276
         },
         "qwen3:14b": {
             "resolved": 315,
@@ -78,6 +78,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 6.0 or greater earthquake will occur in Mexico within the next week",
+            "horizon": "week",
+            "probability": 0.2,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports a magnitude 6.0 or greater earthquake occurring in Mexico during the window, though such an event would certainly have been captured.",
+            "resolved_ms": 1785035950878,
+            "ts": 1784430147430
+        },
         {
             "statement": "A magnitude 5.0 earthquake will occur in the Scotia Sea within the next week",
             "horizon": "week",
@@ -198,17 +209,6 @@
             "evidence": "No captured signal shows any significant increase in Mexican earthquakes during the window.",
             "resolved_ms": 1785014307654,
             "ts": 1784408001361
-        },
-        {
-            "statement": "A major fire will break out in Norway by the end of July",
-            "horizon": "week",
-            "probability": 0.32,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a major fire would certainly have been captured, yet none shows it occurred.",
-            "resolved_ms": 1785014306078,
-            "ts": 1784408001361
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 581,
-        "base_rate": 0.0688,
-        "brier_raw": 0.2316,
-        "brier_base_rate": 0.0641,
+        "resolved_n": 582,
+        "base_rate": 0.0687,
+        "brier_raw": 0.2313,
+        "brier_base_rate": 0.064,
         "brier_calibrated_oos": 0.029,
         "brier_calibrated_oos_n": 76,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
