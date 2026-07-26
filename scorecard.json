@@ -1,9 +1,9 @@
 {
-    "resolved": 630,
-    "open": 1842,
-    "due": 71,
+    "resolved": 634,
+    "open": 1838,
+    "due": 69,
     "unresolvable": 51,
-    "brier": 0.233,
+    "brier": 0.232,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 246,
-            "brier": 0.225,
+            "resolved": 250,
+            "brier": 0.224,
             "hit_rate": 0.61
         }
     },
@@ -26,15 +26,15 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 195,
-            "avg_predicted": 0.3,
+            "n": 197,
+            "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 199,
+            "n": 201,
             "avg_predicted": 0.5,
-            "observed": 0.07
+            "observed": 0.06
         },
         {
             "bin": "60\u201380%",
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 630,
-            "brier": 0.275
+            "resolved": 634,
+            "brier": 0.273
         },
         "Economist": {
-            "resolved": 629,
-            "brier": 0.29
+            "resolved": 633,
+            "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 630,
+            "resolved": 634,
             "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 629,
+            "resolved": 633,
             "brier": 0.178
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2163,
-            "brier": 0.28
+            "resolved": 2179,
+            "brier": 0.279
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "The VIX fear gauge will exceed 20",
+            "horizon": "week",
+            "probability": 0.56,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, and no signal shows it exceeding 20 during the window.",
+            "resolved_ms": 1785100942175,
+            "ts": 1784494582379
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week.",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S4 shows Strait of Hormuz at 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
+            "resolved_ms": 1785100940076,
+            "ts": 1784492936036
+        },
+        {
+            "statement": "A significant earthquake will occur within a 500 km radius of Mexico City within the next week.",
+            "horizon": "week",
+            "probability": 0.24,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a significant earthquake near Mexico City during the window, and such an event would certainly have been recorded.",
+            "resolved_ms": 1785100938290,
+            "ts": 1784491094761
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week.",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S4 shows Strait of Hormuz at 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
+            "resolved_ms": 1785100936698,
+            "ts": 1784489265170
+        },
         {
             "statement": "The VIX fear gauge will rise above 20 by the end of the week.",
             "horizon": "week",
@@ -165,50 +209,6 @@
             "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average of 21, indicating a decrease rather than a significant increase.",
             "resolved_ms": 1785086516392,
             "ts": 1784478164833
-        },
-        {
-            "statement": "The VIX fear gauge will surpass 25 within the next week.",
-            "horizon": "week",
-            "probability": 0.52,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.58, far below the 25 threshold, and the window has closed with no signal indicating a surpass.",
-            "resolved_ms": 1785082910175,
-            "ts": 1784472584586
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week.",
-            "horizon": "week",
-            "probability": 0.27,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
-            "resolved_ms": 1785082908020,
-            "ts": 1784472584586
-        },
-        {
-            "statement": "Tropical Cyclone SIX-E-26 will make landfall in Mexico within the next week.",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal references SIX-E-26 or shows any tropical cyclone making landfall in Mexico; the named cyclones are located far from Mexican coast with zero affected population or in other regions.",
-            "resolved_ms": 1785075705499,
-            "ts": 1784470723457
-        },
-        {
-            "statement": "The VIX fear gauge will exceed 20 within the next week",
-            "horizon": "week",
-            "probability": 0.73,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, with no signal showing it exceeded 20 during the window.",
-            "resolved_ms": 1785075700700,
-            "ts": 1784468866742
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 630,
-        "base_rate": 0.0651,
-        "brier_raw": 0.2329,
-        "brier_base_rate": 0.0608,
+        "resolved_n": 634,
+        "base_rate": 0.0647,
+        "brier_raw": 0.2324,
+        "brier_base_rate": 0.0605,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
