@@ -1,7 +1,7 @@
 {
-    "resolved": 618,
-    "open": 1854,
-    "due": 62,
+    "resolved": 620,
+    "open": 1852,
+    "due": 63,
     "unresolvable": 51,
     "brier": 0.232,
     "hit_rate": 0.6,
@@ -12,9 +12,9 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 234,
-            "brier": 0.222,
-            "hit_rate": 0.62
+            "resolved": 236,
+            "brier": 0.223,
+            "hit_rate": 0.61
         }
     },
     "calibration": [
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 190,
+            "n": 191,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -38,7 +38,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 120,
+            "n": 121,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 618,
+            "resolved": 620,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 617,
+            "resolved": 619,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 618,
+            "resolved": 620,
             "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 617,
+            "resolved": 619,
             "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2115,
+            "resolved": 2123,
             "brier": 0.279
         },
         "qwen3:14b": {
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "Tropical Cyclone SIX-E-26 will make landfall in Mexico within the next week.",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal references SIX-E-26 or shows any tropical cyclone making landfall in Mexico; the named cyclones are located far from Mexican coast with zero affected population or in other regions.",
+            "resolved_ms": 1785075705499,
+            "ts": 1784470723457
+        },
+        {
+            "statement": "The VIX fear gauge will exceed 20 within the next week",
+            "horizon": "week",
+            "probability": 0.73,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, with no signal showing it exceeded 20 during the window.",
+            "resolved_ms": 1785075700700,
+            "ts": 1784468866742
+        },
         {
             "statement": "A major flood will occur in South Korea within the next week",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "No signal captured any VIX movement during the window, and a >10% VIX increase would certainly have been recorded if it had occurred.",
             "resolved_ms": 1785061273805,
             "ts": 1784455941018
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week.",
-            "horizon": "week",
-            "probability": 0.5,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz recorded 15 daily transits, 30% below its 30-day average, showing a decrease rather than a significant increase.",
-            "resolved_ms": 1785061271611,
-            "ts": 1784454102675
-        },
-        {
-            "statement": "Ship transits through the Strait of Hormuz will continue to decline over the next week",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S4 shows a single below-average snapshot (15 vs 21) but no trend data demonstrating transits continued to decline over the week, so the stated decline event is not confirmed.",
-            "resolved_ms": 1785061269496,
-            "ts": 1784426462970
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 618,
-        "base_rate": 0.0663,
-        "brier_raw": 0.2319,
-        "brier_base_rate": 0.0619,
+        "resolved_n": 620,
+        "base_rate": 0.0661,
+        "brier_raw": 0.2322,
+        "brier_base_rate": 0.0618,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
