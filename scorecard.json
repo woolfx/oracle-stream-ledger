@@ -1,6 +1,6 @@
 {
-    "resolved": 615,
-    "open": 1857,
+    "resolved": 618,
+    "open": 1854,
     "due": 62,
     "unresolvable": 51,
     "brier": 0.232,
@@ -12,9 +12,9 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 231,
+            "resolved": 234,
             "brier": 0.222,
-            "hit_rate": 0.61
+            "hit_rate": 0.62
         }
     },
     "calibration": [
@@ -32,13 +32,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 194,
-            "avg_predicted": 0.5,
+            "n": 196,
+            "avg_predicted": 0.49,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 119,
+            "n": 120,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 615,
+            "resolved": 618,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 614,
-            "brier": 0.288
+            "resolved": 617,
+            "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 615,
-            "brier": 0.302
+            "resolved": 618,
+            "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 614,
-            "brier": 0.176
+            "resolved": 617,
+            "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2103,
+            "resolved": 2115,
             "brier": 0.279
         },
         "qwen3:14b": {
@@ -78,6 +78,39 @@
         }
     },
     "recent": [
+        {
+            "statement": "A major flood will occur in South Korea within the next week",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "South Korea",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal text shows a major flood occurring in South Korea during the window, though such an event would have been captured.",
+            "resolved_ms": 1785072097237,
+            "ts": 1784466997457
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Mexico within the next week",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The cyclones near Mexico (Genevieve, Fausto) show zero population affected and remain offshore in the Pacific, with no signal showing an actual landfall in Mexico during the window.",
+            "resolved_ms": 1785072093633,
+            "ts": 1784466997457
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week, exceeding its 30-day average by at least 50%.",
+            "horizon": "week",
+            "probability": 0.62,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average, far from the required 50% increase.",
+            "resolved_ms": 1785072089037,
+            "ts": 1784465147749
+        },
         {
             "statement": "The VIX will rise above 20 within the next week due to increased market volatility.",
             "horizon": "week",
@@ -176,39 +209,6 @@
             "evidence": "S4 shows a single below-average snapshot (15 vs 21) but no trend data demonstrating transits continued to decline over the week, so the stated decline event is not confirmed.",
             "resolved_ms": 1785061269496,
             "ts": 1784426462970
-        },
-        {
-            "statement": "The VIX will jump above 20 by the end of the week due to increasing market volatility",
-            "horizon": "week",
-            "probability": 0.59,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, so there is no evidence that the VIX exceeded 20 during the window.",
-            "resolved_ms": 1785057660490,
-            "ts": 1784452272833
-        },
-        {
-            "statement": "A major cyber attack will occur on a US-based company within the next week.",
-            "horizon": "week",
-            "probability": 0.5,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal text shows a major cyber attack on a US-based company occurred during the window.",
-            "resolved_ms": 1785057658367,
-            "ts": 1784450423065
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week.",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
-            "resolved_ms": 1785057656043,
-            "ts": 1784450423065
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 615,
-        "base_rate": 0.0667,
-        "brier_raw": 0.2318,
-        "brier_base_rate": 0.0622,
+        "resolved_n": 618,
+        "base_rate": 0.0663,
+        "brier_raw": 0.2319,
+        "brier_base_rate": 0.0619,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
