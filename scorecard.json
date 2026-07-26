@@ -1,18 +1,18 @@
 {
-    "resolved": 582,
-    "open": 1890,
-    "due": 66,
+    "resolved": 590,
+    "open": 1882,
+    "due": 63,
     "unresolvable": 51,
     "brier": 0.231,
-    "hit_rate": 0.6,
+    "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 374,
-            "brier": 0.242,
+            "resolved": 377,
+            "brier": 0.241,
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 208,
+            "resolved": 213,
             "brier": 0.212,
             "hit_rate": 0.64
         }
@@ -20,25 +20,25 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 71,
-            "avg_predicted": 0.12,
-            "observed": 0.06
+            "n": 73,
+            "avg_predicted": 0.13,
+            "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 181,
+            "n": 183,
             "avg_predicted": 0.29,
             "observed": 0.03
         },
         {
             "bin": "40\u201360%",
-            "n": 184,
+            "n": 187,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 112,
+            "n": 113,
             "avg_predicted": 0.67,
             "observed": 0.12
         },
@@ -51,33 +51,121 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 582,
-            "brier": 0.277
+            "resolved": 590,
+            "brier": 0.276
         },
         "Economist": {
-            "resolved": 581,
-            "brier": 0.286
+            "resolved": 589,
+            "brier": 0.287
         },
         "Naturalist": {
-            "resolved": 582,
-            "brier": 0.301
+            "resolved": 590,
+            "brier": 0.3
         },
         "Skeptic": {
-            "resolved": 581,
-            "brier": 0.176
+            "resolved": 589,
+            "brier": 0.175
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2011,
+            "resolved": 2031,
             "brier": 0.276
         },
         "qwen3:14b": {
-            "resolved": 315,
-            "brier": 0.158
+            "resolved": 327,
+            "brier": 0.16
         }
     },
     "recent": [
+        {
+            "statement": "Kerch Strait ship transits will drop below 2 per day due to intensified Russian-Ukrainian missile exchanges",
+            "horizon": "24h",
+            "probability": 0.46,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait shows 2 daily transits, which is not below the forecast's threshold of 2 per day.",
+            "resolved_ms": 1785043181217,
+            "ts": 1784956278613
+        },
+        {
+            "statement": "A major earthquake will occur in Peru within the next week",
+            "horizon": "week",
+            "probability": 0.18,
+            "location": "Peru",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports a major earthquake in Peru during the window, and such an event would certainly have been recorded.",
+            "resolved_ms": 1785043179167,
+            "ts": 1784437489469
+        },
+        {
+            "statement": "Tropical Depression SIX-E-26 will make landfall in Mexico",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "East Pacific",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "SIX-E-26 became Genevieve, shown offshore at 12.1,-106.7 with zero population affected, with no signal indicating any Mexican landfall occurred.",
+            "resolved_ms": 1785043177861,
+            "ts": 1784437489469
+        },
+        {
+            "statement": "Tropical cyclone SIX-E-26 will make landfall in Mexico within the next week.",
+            "horizon": "week",
+            "probability": 0.37,
+            "location": "East Pacific",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The relevant East Pacific cyclone (Genevieve, likely SIX-E-26) remains offshore at @12.1,-106.7 with zero population affected, and no signal shows any landfall in Mexico before the window closed.",
+            "resolved_ms": 1785043172507,
+            "ts": 1784435650338
+        },
+        {
+            "statement": "Florida electricity demand will surge past 50 GWh/h (current: 42 GWh/h) due to extreme heatwave conditions",
+            "horizon": "24h",
+            "probability": 0.13,
+            "location": "Florida",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "None of the signals concern Florida electricity demand or heatwave conditions, and such a large event would have been captured if it occurred.",
+            "resolved_ms": 1785043165086,
+            "ts": 1784952316611
+        },
+        {
+            "statement": "Kerch Strait daily ship transits will drop below 1 (current: 2) due to intensified Russian-Ukrainian missile exchanges near the strait",
+            "horizon": "24h",
+            "probability": 0.55,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait still shows 2 daily ship transits, not below the forecast threshold of 1.",
+            "resolved_ms": 1785043162424,
+            "ts": 1784952316611
+        },
+        {
+            "statement": "The VIX fear gauge will exceed 20 within the next week.",
+            "horizon": "week",
+            "probability": 0.71,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, with no signal indicating it exceeded 20 during the window.",
+            "resolved_ms": 1785043159912,
+            "ts": 1784433813826
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.58,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
+            "resolved_ms": 1785043158224,
+            "ts": 1784431978302
+        },
         {
             "statement": "A magnitude 6.0 or greater earthquake will occur in Mexico within the next week",
             "horizon": "week",
@@ -121,94 +209,6 @@
             "evidence": "No captured signal concerns this forecast, and a widespread severe thunderstorm event impacting major US cities would certainly have been captured within the closed window.",
             "resolved_ms": 1785028729087,
             "ts": 1784422752566
-        },
-        {
-            "statement": "A major earthquake will occur in Mexico within the next week.",
-            "horizon": "week",
-            "probability": 0.19,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports a major earthquake occurring in Mexico during the window, and such an event would certainly have been captured.",
-            "resolved_ms": 1785028727191,
-            "ts": 1784420900753
-        },
-        {
-            "statement": "A magnitude 6 or higher earthquake will strike Mexico within the next week",
-            "horizon": "week",
-            "probability": 0.17,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No provided signal shows a magnitude 6 or higher earthquake striking Mexico during the window, though such an event would have been captured.",
-            "resolved_ms": 1785025125009,
-            "ts": 1784415393471
-        },
-        {
-            "statement": "A magnitude 5.0 or higher earthquake will occur within 500 km of Mexico City",
-            "horizon": "week",
-            "probability": 0.42,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal text reports a magnitude 5.0+ earthquake within 500 km of Mexico City during the window, so the event cannot be confirmed.",
-            "resolved_ms": 1785025122076,
-            "ts": 1784413549739
-        },
-        {
-            "statement": "A major flood will affect the city of Paris on July 25th",
-            "horizon": "week",
-            "probability": 0.17,
-            "location": "Paris",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The forecast window has closed and no signal reports any major flood affecting Paris on July 25th, an event of that magnitude that would certainly have been captured.",
-            "resolved_ms": 1785025118142,
-            "ts": 1784291029315
-        },
-        {
-            "statement": "The Strait of Hormuz will experience reduced ship transits in the next week due to increased tensions between Iran and the US.",
-            "horizon": "week",
-            "probability": 0.57,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Strait of Hormuz recorded 15 daily transits, 30% below its 30-day average of 21, confirming reduced ship transits during the window.",
-            "resolved_ms": 1785017913707,
-            "ts": 1784411703303
-        },
-        {
-            "statement": "The S&P 500 index will close below 7500",
-            "horizon": "week",
-            "probability": 0.23,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns the S&P 500 closing level, but such a market event would certainly have been captured had it occurred.",
-            "resolved_ms": 1785017911088,
-            "ts": 1784409855334
-        },
-        {
-            "statement": "The Strait of Hormuz will experience increased ship traffic within the next week due to sustained deviations from its 30-day average.",
-            "horizon": "week",
-            "probability": 0.37,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average, contradicting the forecast of increased traffic.",
-            "resolved_ms": 1785014309159,
-            "ts": 1784408048287
-        },
-        {
-            "statement": "A significant increase in earthquakes will occur in Mexico by the end of July",
-            "horizon": "week",
-            "probability": 0.39,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal shows any significant increase in Mexican earthquakes during the window.",
-            "resolved_ms": 1785014307654,
-            "ts": 1784408001361
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 582,
-        "base_rate": 0.0687,
-        "brier_raw": 0.2313,
-        "brier_base_rate": 0.064,
-        "brier_calibrated_oos": 0.029,
-        "brier_calibrated_oos_n": 76,
+        "resolved_n": 590,
+        "base_rate": 0.0678,
+        "brier_raw": 0.231,
+        "brier_base_rate": 0.0632,
+        "brier_calibrated_oos": 0.0281,
+        "brier_calibrated_oos_n": 79,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
