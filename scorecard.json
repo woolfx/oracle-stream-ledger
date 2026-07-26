@@ -1,6 +1,6 @@
 {
-    "resolved": 606,
-    "open": 1866,
+    "resolved": 610,
+    "open": 1862,
     "due": 62,
     "unresolvable": 51,
     "brier": 0.231,
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 223,
-            "brier": 0.218,
+            "resolved": 227,
+            "brier": 0.219,
             "hit_rate": 0.62
         }
     },
@@ -26,20 +26,20 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 188,
+            "n": 189,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 191,
+            "n": 193,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 116,
-            "avg_predicted": 0.67,
+            "n": 117,
+            "avg_predicted": 0.68,
             "observed": 0.11
         },
         {
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 606,
-            "brier": 0.276
+            "resolved": 610,
+            "brier": 0.275
         },
         "Economist": {
-            "resolved": 605,
-            "brier": 0.287
+            "resolved": 609,
+            "brier": 0.288
         },
         "Naturalist": {
-            "resolved": 606,
+            "resolved": 610,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 605,
-            "brier": 0.175
+            "resolved": 609,
+            "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2071,
+            "resolved": 2087,
             "brier": 0.278
         },
         "qwen3:14b": {
@@ -78,6 +78,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "The price of gold will increase by more than $20 within the next week",
+            "horizon": "week",
+            "probability": 0.48,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports gold prices or any gold price movement, so there is no evidence the forecast event occurred within the closed window.",
+            "resolved_ms": 1785061275447,
+            "ts": 1784455941018
+        },
+        {
+            "statement": "The VIX will increase by more than 10% within the next week",
+            "horizon": "week",
+            "probability": 0.76,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal captured any VIX movement during the window, and a >10% VIX increase would certainly have been recorded if it had occurred.",
+            "resolved_ms": 1785061273805,
+            "ts": 1784455941018
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week.",
+            "horizon": "week",
+            "probability": 0.5,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz recorded 15 daily transits, 30% below its 30-day average, showing a decrease rather than a significant increase.",
+            "resolved_ms": 1785061271611,
+            "ts": 1784454102675
+        },
+        {
+            "statement": "Ship transits through the Strait of Hormuz will continue to decline over the next week",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S4 shows a single below-average snapshot (15 vs 21) but no trend data demonstrating transits continued to decline over the week, so the stated decline event is not confirmed.",
+            "resolved_ms": 1785061269496,
+            "ts": 1784426462970
+        },
         {
             "statement": "The VIX will jump above 20 by the end of the week due to increasing market volatility",
             "horizon": "week",
@@ -165,50 +209,6 @@
             "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
             "resolved_ms": 1785054032014,
             "ts": 1784446727103
-        },
-        {
-            "statement": "Florida electricity demand will surge past 40 GWh/h due to extreme heatwave conditions",
-            "horizon": "24h",
-            "probability": 0.13,
-            "location": "Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal addresses Florida electricity demand; the listed signals concern nuclear plants in Canada and Ukraine, none showing a 40 GWh/h surge in Florida.",
-            "resolved_ms": 1785054029586,
-            "ts": 1784964118291
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1 per day due to intensified Russian-Ukrainian conflict",
-            "horizon": "24h",
-            "probability": 0.39,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily ship transits, which is above the forecast threshold of below 1 per day.",
-            "resolved_ms": 1785054026937,
-            "ts": 1784964118291
-        },
-        {
-            "statement": "The VIX fear gauge will surpass 20 within the next week.",
-            "horizon": "week",
-            "probability": 0.75,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, with no signal indicating it surpassed 20 during the window.",
-            "resolved_ms": 1785050417029,
-            "ts": 1784444870601
-        },
-        {
-            "statement": "The VIX fear gauge will exceed 20 by the end of this week",
-            "horizon": "week",
-            "probability": 0.7,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.58, below the required threshold of 20, and the window has closed.",
-            "resolved_ms": 1785050414878,
-            "ts": 1784443025208
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 606,
-        "base_rate": 0.0677,
-        "brier_raw": 0.231,
-        "brier_base_rate": 0.0631,
+        "resolved_n": 610,
+        "base_rate": 0.0672,
+        "brier_raw": 0.2313,
+        "brier_base_rate": 0.0627,
         "brier_calibrated_oos": 0.0262,
         "brier_calibrated_oos_n": 85,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
