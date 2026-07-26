@@ -1,9 +1,9 @@
 {
-    "resolved": 594,
-    "open": 1878,
-    "due": 62,
+    "resolved": 596,
+    "open": 1876,
+    "due": 65,
     "unresolvable": 51,
-    "brier": 0.231,
+    "brier": 0.232,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 215,
-            "brier": 0.215,
+            "resolved": 217,
+            "brier": 0.217,
             "hit_rate": 0.63
         }
     },
@@ -38,9 +38,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 113,
+            "n": 115,
             "avg_predicted": 0.67,
-            "observed": 0.12
+            "observed": 0.11
         },
         {
             "bin": "80\u2013100%",
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 594,
-            "brier": 0.276
+            "resolved": 596,
+            "brier": 0.277
         },
         "Economist": {
-            "resolved": 593,
-            "brier": 0.288
+            "resolved": 595,
+            "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 594,
-            "brier": 0.301
+            "resolved": 596,
+            "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 593,
-            "brier": 0.175
+            "resolved": 595,
+            "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2039,
-            "brier": 0.277
+            "resolved": 2047,
+            "brier": 0.278
         },
         "qwen3:14b": {
             "resolved": 335,
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The VIX fear gauge will surpass 20 within the next week.",
+            "horizon": "week",
+            "probability": 0.75,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, with no signal indicating it surpassed 20 during the window.",
+            "resolved_ms": 1785050417029,
+            "ts": 1784444870601
+        },
+        {
+            "statement": "The VIX fear gauge will exceed 20 by the end of this week",
+            "horizon": "week",
+            "probability": 0.7,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.58, below the required threshold of 20, and the window has closed.",
+            "resolved_ms": 1785050414878,
+            "ts": 1784443025208
+        },
         {
             "statement": "WTI Crude Oil price will rise by 2.5% within 24 hours due to renewed conflict escalation near the Kerch Strait disrupting Black Sea oil exports",
             "horizon": "24h",
@@ -187,28 +209,6 @@
             "evidence": "Kerch Strait still shows 2 daily ship transits, not below the forecast threshold of 1.",
             "resolved_ms": 1785043162424,
             "ts": 1784952316611
-        },
-        {
-            "statement": "The VIX fear gauge will exceed 20 within the next week.",
-            "horizon": "week",
-            "probability": 0.71,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, with no signal indicating it exceeded 20 during the window.",
-            "resolved_ms": 1785043159912,
-            "ts": 1784433813826
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
-            "resolved_ms": 1785043158224,
-            "ts": 1784431978302
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 594,
-        "base_rate": 0.069,
-        "brier_raw": 0.231,
-        "brier_base_rate": 0.0643,
+        "resolved_n": 596,
+        "base_rate": 0.0688,
+        "brier_raw": 0.232,
+        "brier_base_rate": 0.0641,
         "brier_calibrated_oos": 0.0274,
         "brier_calibrated_oos_n": 81,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
