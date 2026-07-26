@@ -1,9 +1,9 @@
 {
-    "resolved": 634,
-    "open": 1838,
+    "resolved": 636,
+    "open": 1836,
     "due": 69,
     "unresolvable": 51,
-    "brier": 0.232,
+    "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,9 +12,9 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 250,
+            "resolved": 252,
             "brier": 0.224,
-            "hit_rate": 0.61
+            "hit_rate": 0.6
         }
     },
     "calibration": [
@@ -32,7 +32,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 201,
+            "n": 203,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 634,
+            "resolved": 636,
             "brier": 0.273
         },
         "Economist": {
-            "resolved": 633,
-            "brier": 0.289
+            "resolved": 635,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 634,
+            "resolved": 636,
             "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 633,
+            "resolved": 635,
             "brier": 0.178
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2179,
+            "resolved": 2187,
             "brier": 0.279
         },
         "qwen3:14b": {
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience increased ship transits within the next week.",
+            "horizon": "week",
+            "probability": 0.53,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average of 21, indicating decreased not increased transits.",
+            "resolved_ms": 1785104545520,
+            "ts": 1784498254389
+        },
+        {
+            "statement": "The Strait of Hormuz will experience increased ship transits due to rising tensions between Iran and the US",
+            "horizon": "week",
+            "probability": 0.5,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average, indicating decreased rather than increased ship transits.",
+            "resolved_ms": 1785104543939,
+            "ts": 1784496419454
+        },
         {
             "statement": "The VIX fear gauge will exceed 20",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "No admissible signal shows a major flood occurring in South Korea during the forecast window, though such an event would have been captured.",
             "resolved_ms": 1785086519709,
             "ts": 1784478164833
-        },
-        {
-            "statement": "The VIX fear gauge will exceed 20 within the next week due to increased market volatility.",
-            "horizon": "week",
-            "probability": 0.68,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.58, below the required threshold of 20, and no signal indicates it exceeded 20 during the window.",
-            "resolved_ms": 1785086517904,
-            "ts": 1784478164833
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits due to increased trade activity.",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average of 21, indicating a decrease rather than a significant increase.",
-            "resolved_ms": 1785086516392,
-            "ts": 1784478164833
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 634,
-        "base_rate": 0.0647,
-        "brier_raw": 0.2324,
-        "brier_base_rate": 0.0605,
+        "resolved_n": 636,
+        "base_rate": 0.0645,
+        "brier_raw": 0.2325,
+        "brier_base_rate": 0.0603,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
