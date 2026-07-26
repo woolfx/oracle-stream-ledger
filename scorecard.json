@@ -1,9 +1,9 @@
 {
-    "resolved": 613,
-    "open": 1859,
+    "resolved": 615,
+    "open": 1857,
     "due": 62,
     "unresolvable": 51,
-    "brier": 0.231,
+    "brier": 0.232,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,9 +12,9 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 229,
-            "brier": 0.22,
-            "hit_rate": 0.62
+            "resolved": 231,
+            "brier": 0.222,
+            "hit_rate": 0.61
         }
     },
     "calibration": [
@@ -32,13 +32,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 193,
+            "n": 194,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 118,
+            "n": 119,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 613,
+            "resolved": 615,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 612,
+            "resolved": 614,
             "brier": 0.288
         },
         "Naturalist": {
-            "resolved": 613,
-            "brier": 0.301
+            "resolved": 615,
+            "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 612,
+            "resolved": 614,
             "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2095,
-            "brier": 0.278
+            "resolved": 2103,
+            "brier": 0.279
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The VIX will rise above 20 within the next week due to increased market volatility.",
+            "horizon": "week",
+            "probability": 0.69,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a VIX move above 20 would certainly have been recorded during the closed window.",
+            "resolved_ms": 1785068485955,
+            "ts": 1784463314704
+        },
+        {
+            "statement": "The VIX fear gauge will exceed 20 within the next week.",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, and the window has closed.",
+            "resolved_ms": 1785068484456,
+            "ts": 1784461482870
+        },
         {
             "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
             "resolved_ms": 1785057656043,
             "ts": 1784450423065
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Mexico within the next week.",
-            "horizon": "week",
-            "probability": 0.35,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The listed cyclones near Mexico (GENEVIEVE, FAUSTO) are green alerts far offshore with zero population affected, and no signal shows any tropical cyclone actually making landfall in Mexico.",
-            "resolved_ms": 1785057651728,
-            "ts": 1784450423065
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop to 0 due to intensified Russian-Ukrainian naval clashes",
-            "horizon": "24h",
-            "probability": 0.16,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait still shows 2 daily transits, not 0, so the forecast of zero transits did not occur.",
-            "resolved_ms": 1785057644621,
-            "ts": 1784968101432
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 613,
-        "base_rate": 0.0669,
-        "brier_raw": 0.2313,
-        "brier_base_rate": 0.0624,
+        "resolved_n": 615,
+        "base_rate": 0.0667,
+        "brier_raw": 0.2318,
+        "brier_base_rate": 0.0622,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
