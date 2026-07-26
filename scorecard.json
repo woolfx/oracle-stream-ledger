@@ -1,7 +1,7 @@
 {
-    "resolved": 625,
-    "open": 1847,
-    "due": 67,
+    "resolved": 628,
+    "open": 1844,
+    "due": 68,
     "unresolvable": 51,
     "brier": 0.233,
     "hit_rate": 0.6,
@@ -12,7 +12,7 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 241,
+            "resolved": 244,
             "brier": 0.224,
             "hit_rate": 0.61
         }
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 192,
+            "n": 194,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -38,7 +38,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 122,
+            "n": 123,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 625,
-            "brier": 0.275
+            "resolved": 628,
+            "brier": 0.274
         },
         "Economist": {
-            "resolved": 624,
+            "resolved": 627,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 625,
-            "brier": 0.304
+            "resolved": 628,
+            "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 624,
-            "brier": 0.177
+            "resolved": 627,
+            "brier": 0.178
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2143,
-            "brier": 0.28
+            "resolved": 2155,
+            "brier": 0.279
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,39 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience increased ship traffic within the next week due to a surge in oil exports from Saudi Arabia.",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average, directly contradicting the forecast of increased ship traffic.",
+            "resolved_ms": 1785090129825,
+            "ts": 1784483710997
+        },
+        {
+            "statement": "The VIX fear gauge will reach 25 within the next week",
+            "horizon": "week",
+            "probability": 0.67,
+            "location": "Global markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only VIX signal shows 18.58, well below the 25 threshold, and no signal indicates it reached 25 during the window.",
+            "resolved_ms": 1785090128112,
+            "ts": 1784481864421
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant disruption in shipping within the next week",
+            "horizon": "week",
+            "probability": 0.38,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S4 shows Hormuz transits merely 30% below the 30-day average (15 vs 21), a modest reduction that does not constitute a significant shipping disruption.",
+            "resolved_ms": 1785090125786,
+            "ts": 1784481864420
+        },
         {
             "statement": "A major flood will occur in South Korea within the next week due to heavy rainfall.",
             "horizon": "week",
@@ -176,39 +209,6 @@
             "evidence": "The cyclones near Mexico (Genevieve, Fausto) show zero population affected and remain offshore in the Pacific, with no signal showing an actual landfall in Mexico during the window.",
             "resolved_ms": 1785072093633,
             "ts": 1784466997457
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week, exceeding its 30-day average by at least 50%.",
-            "horizon": "week",
-            "probability": 0.62,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average, far from the required 50% increase.",
-            "resolved_ms": 1785072089037,
-            "ts": 1784465147749
-        },
-        {
-            "statement": "The VIX will rise above 20 within the next week due to increased market volatility.",
-            "horizon": "week",
-            "probability": 0.69,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a VIX move above 20 would certainly have been recorded during the closed window.",
-            "resolved_ms": 1785068485955,
-            "ts": 1784463314704
-        },
-        {
-            "statement": "The VIX fear gauge will exceed 20 within the next week.",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, and the window has closed.",
-            "resolved_ms": 1785068484456,
-            "ts": 1784461482870
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 625,
-        "base_rate": 0.0656,
-        "brier_raw": 0.2327,
-        "brier_base_rate": 0.0613,
+        "resolved_n": 628,
+        "base_rate": 0.0653,
+        "brier_raw": 0.2326,
+        "brier_base_rate": 0.061,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
