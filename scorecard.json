@@ -1,6 +1,6 @@
 {
-    "resolved": 628,
-    "open": 1844,
+    "resolved": 630,
+    "open": 1842,
     "due": 68,
     "unresolvable": 51,
     "brier": 0.233,
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 244,
-            "brier": 0.224,
+            "resolved": 246,
+            "brier": 0.225,
             "hit_rate": 0.61
         }
     },
@@ -26,8 +26,8 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 194,
-            "avg_predicted": 0.29,
+            "n": 195,
+            "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
@@ -38,9 +38,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 123,
+            "n": 124,
             "avg_predicted": 0.68,
-            "observed": 0.11
+            "observed": 0.1
         },
         {
             "bin": "80\u2013100%",
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 628,
-            "brier": 0.274
+            "resolved": 630,
+            "brier": 0.275
         },
         "Economist": {
-            "resolved": 627,
+            "resolved": 629,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 628,
-            "brier": 0.303
+            "resolved": 630,
+            "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 627,
+            "resolved": 629,
             "brier": 0.178
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2155,
-            "brier": 0.279
+            "resolved": 2163,
+            "brier": 0.28
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The VIX fear gauge will rise above 20 by the end of the week.",
+            "horizon": "week",
+            "probability": 0.73,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.58, below the required threshold of 20, so the forecast did not come true.",
+            "resolved_ms": 1785093734274,
+            "ts": 1784485553197
+        },
+        {
+            "statement": "A magnitude 6.0 earthquake will strike near the Mexico City area.",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal captured any magnitude 6.0 earthquake near Mexico City, an event that would certainly have been recorded, and the window has closed.",
+            "resolved_ms": 1785093732238,
+            "ts": 1784485553197
+        },
         {
             "statement": "The Strait of Hormuz will experience increased ship traffic within the next week due to a surge in oil exports from Saudi Arabia.",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, with no signal showing it exceeded 20 during the window.",
             "resolved_ms": 1785075700700,
             "ts": 1784468866742
-        },
-        {
-            "statement": "A major flood will occur in South Korea within the next week",
-            "horizon": "week",
-            "probability": 0.42,
-            "location": "South Korea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal text shows a major flood occurring in South Korea during the window, though such an event would have been captured.",
-            "resolved_ms": 1785072097237,
-            "ts": 1784466997457
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Mexico within the next week",
-            "horizon": "week",
-            "probability": 0.42,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The cyclones near Mexico (Genevieve, Fausto) show zero population affected and remain offshore in the Pacific, with no signal showing an actual landfall in Mexico during the window.",
-            "resolved_ms": 1785072093633,
-            "ts": 1784466997457
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 628,
-        "base_rate": 0.0653,
-        "brier_raw": 0.2326,
-        "brier_base_rate": 0.061,
+        "resolved_n": 630,
+        "base_rate": 0.0651,
+        "brier_raw": 0.2329,
+        "brier_base_rate": 0.0608,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
