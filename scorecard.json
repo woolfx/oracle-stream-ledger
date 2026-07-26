@@ -1,44 +1,44 @@
 {
-    "resolved": 596,
-    "open": 1876,
+    "resolved": 601,
+    "open": 1871,
     "due": 65,
     "unresolvable": 51,
-    "brier": 0.232,
+    "brier": 0.231,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 379,
-            "brier": 0.24,
+            "resolved": 382,
+            "brier": 0.239,
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 217,
-            "brier": 0.217,
+            "resolved": 219,
+            "brier": 0.218,
             "hit_rate": 0.63
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 74,
+            "n": 76,
             "avg_predicted": 0.13,
             "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 185,
+            "n": 186,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 188,
-            "avg_predicted": 0.5,
+            "n": 189,
+            "avg_predicted": 0.49,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 115,
+            "n": 116,
             "avg_predicted": 0.67,
             "observed": 0.11
         },
@@ -51,33 +51,88 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 596,
+            "resolved": 601,
             "brier": 0.277
         },
         "Economist": {
-            "resolved": 595,
-            "brier": 0.289
+            "resolved": 600,
+            "brier": 0.288
         },
         "Naturalist": {
-            "resolved": 596,
-            "brier": 0.302
+            "resolved": 601,
+            "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 595,
+            "resolved": 600,
             "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2047,
+            "resolved": 2055,
             "brier": 0.278
         },
         "qwen3:14b": {
-            "resolved": 335,
-            "brier": 0.158
+            "resolved": 347,
+            "brier": 0.155
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience increased ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.69,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz recorded 15 daily transits, 30% below its 30-day average, showing decreased rather than increased transits.",
+            "resolved_ms": 1785054035551,
+            "ts": 1784448576685
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop to zero due to intensified Russian-Ukrainian conflict",
+            "horizon": "24h",
+            "probability": 0.14,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait still shows 2 daily ship transits, not zero, so the predicted drop to zero did not occur.",
+            "resolved_ms": 1785054033597,
+            "ts": 1784966082774
+        },
+        {
+            "statement": "The Strait of Hormuz will see a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
+            "resolved_ms": 1785054032014,
+            "ts": 1784446727103
+        },
+        {
+            "statement": "Florida electricity demand will surge past 40 GWh/h due to extreme heatwave conditions",
+            "horizon": "24h",
+            "probability": 0.13,
+            "location": "Florida",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal addresses Florida electricity demand; the listed signals concern nuclear plants in Canada and Ukraine, none showing a 40 GWh/h surge in Florida.",
+            "resolved_ms": 1785054029586,
+            "ts": 1784964118291
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop below 1 per day due to intensified Russian-Ukrainian conflict",
+            "horizon": "24h",
+            "probability": 0.39,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait shows 2 daily ship transits, which is above the forecast threshold of below 1 per day.",
+            "resolved_ms": 1785054026937,
+            "ts": 1784964118291
+        },
         {
             "statement": "The VIX fear gauge will surpass 20 within the next week.",
             "horizon": "week",
@@ -154,61 +209,6 @@
             "evidence": "Kerch Strait shows 2 daily transits, which is not below the forecast's threshold of 2 per day.",
             "resolved_ms": 1785043181217,
             "ts": 1784956278613
-        },
-        {
-            "statement": "A major earthquake will occur in Peru within the next week",
-            "horizon": "week",
-            "probability": 0.18,
-            "location": "Peru",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports a major earthquake in Peru during the window, and such an event would certainly have been recorded.",
-            "resolved_ms": 1785043179167,
-            "ts": 1784437489469
-        },
-        {
-            "statement": "Tropical Depression SIX-E-26 will make landfall in Mexico",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "East Pacific",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "SIX-E-26 became Genevieve, shown offshore at 12.1,-106.7 with zero population affected, with no signal indicating any Mexican landfall occurred.",
-            "resolved_ms": 1785043177861,
-            "ts": 1784437489469
-        },
-        {
-            "statement": "Tropical cyclone SIX-E-26 will make landfall in Mexico within the next week.",
-            "horizon": "week",
-            "probability": 0.37,
-            "location": "East Pacific",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The relevant East Pacific cyclone (Genevieve, likely SIX-E-26) remains offshore at @12.1,-106.7 with zero population affected, and no signal shows any landfall in Mexico before the window closed.",
-            "resolved_ms": 1785043172507,
-            "ts": 1784435650338
-        },
-        {
-            "statement": "Florida electricity demand will surge past 50 GWh/h (current: 42 GWh/h) due to extreme heatwave conditions",
-            "horizon": "24h",
-            "probability": 0.13,
-            "location": "Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "None of the signals concern Florida electricity demand or heatwave conditions, and such a large event would have been captured if it occurred.",
-            "resolved_ms": 1785043165086,
-            "ts": 1784952316611
-        },
-        {
-            "statement": "Kerch Strait daily ship transits will drop below 1 (current: 2) due to intensified Russian-Ukrainian missile exchanges near the strait",
-            "horizon": "24h",
-            "probability": 0.55,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait still shows 2 daily ship transits, not below the forecast threshold of 1.",
-            "resolved_ms": 1785043162424,
-            "ts": 1784952316611
         }
     ],
     "self_calibration": {
@@ -217,12 +217,12 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 596,
-        "base_rate": 0.0688,
-        "brier_raw": 0.232,
-        "brier_base_rate": 0.0641,
-        "brier_calibrated_oos": 0.0274,
-        "brier_calibrated_oos_n": 81,
+        "resolved_n": 601,
+        "base_rate": 0.0682,
+        "brier_raw": 0.2315,
+        "brier_base_rate": 0.0636,
+        "brier_calibrated_oos": 0.0265,
+        "brier_calibrated_oos_n": 84,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
