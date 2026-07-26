@@ -1,9 +1,9 @@
 {
-    "resolved": 574,
-    "open": 1898,
-    "due": 62,
+    "resolved": 577,
+    "open": 1895,
+    "due": 61,
     "unresolvable": 51,
-    "brier": 0.233,
+    "brier": 0.232,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,15 +12,15 @@
             "hit_rate": 0.58
         },
         "week": {
-            "resolved": 201,
-            "brier": 0.216,
+            "resolved": 204,
+            "brier": 0.214,
             "hit_rate": 0.63
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 68,
+            "n": 70,
             "avg_predicted": 0.12,
             "observed": 0.06
         },
@@ -32,7 +32,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 181,
+            "n": 182,
             "avg_predicted": 0.49,
             "observed": 0.07
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 574,
-            "brier": 0.28
+            "resolved": 577,
+            "brier": 0.279
         },
         "Economist": {
-            "resolved": 573,
-            "brier": 0.289
+            "resolved": 576,
+            "brier": 0.288
         },
         "Naturalist": {
-            "resolved": 574,
-            "brier": 0.304
+            "resolved": 577,
+            "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 573,
+            "resolved": 576,
             "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 1983,
-            "brier": 0.278
+            "resolved": 1995,
+            "brier": 0.277
         },
         "qwen3:14b": {
             "resolved": 311,
@@ -78,6 +78,39 @@
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 6 or higher earthquake will strike Mexico within the next week",
+            "horizon": "week",
+            "probability": 0.17,
+            "location": "Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No provided signal shows a magnitude 6 or higher earthquake striking Mexico during the window, though such an event would have been captured.",
+            "resolved_ms": 1785025125009,
+            "ts": 1784415393471
+        },
+        {
+            "statement": "A magnitude 5.0 or higher earthquake will occur within 500 km of Mexico City",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal text reports a magnitude 5.0+ earthquake within 500 km of Mexico City during the window, so the event cannot be confirmed.",
+            "resolved_ms": 1785025122076,
+            "ts": 1784413549739
+        },
+        {
+            "statement": "A major flood will affect the city of Paris on July 25th",
+            "horizon": "week",
+            "probability": 0.17,
+            "location": "Paris",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The forecast window has closed and no signal reports any major flood affecting Paris on July 25th, an event of that magnitude that would certainly have been captured.",
+            "resolved_ms": 1785025118142,
+            "ts": 1784291029315
+        },
         {
             "statement": "The Strait of Hormuz will experience reduced ship transits in the next week due to increased tensions between Iran and the US.",
             "horizon": "week",
@@ -176,39 +209,6 @@
             "evidence": "No admissible signal reports a magnitude 5.0 earthquake near Puerto Madero within the window, though such an event would have been captured.",
             "resolved_ms": 1785014260722,
             "ts": 1784406246733
-        },
-        {
-            "statement": "Earthquake with magnitude 6 or higher occurs in Mexico",
-            "horizon": "week",
-            "probability": 0.59,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The window has closed and no signal's text shows an M6+ earthquake occurring in Mexico, an event that would certainly have been captured.",
-            "resolved_ms": 1785010658865,
-            "ts": 1784405604158
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop to zero due to escalating Russia-Ukraine conflict",
-            "horizon": "24h",
-            "probability": 0.22,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait shows 2 daily transits, not zero, so the forecast of dropping to zero did not occur.",
-            "resolved_ms": 1785010654336,
-            "ts": 1784923642355
-        },
-        {
-            "statement": "A magnitude 6 or higher earthquake will occur in Mexico",
-            "horizon": "week",
-            "probability": 0.51,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The window closed and no numbered signal reports a magnitude 6 or higher earthquake in Mexico, an event that would certainly have been captured.",
-            "resolved_ms": 1785010652644,
-            "ts": 1784403771683
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 574,
-        "base_rate": 0.0697,
-        "brier_raw": 0.2331,
-        "brier_base_rate": 0.0648,
+        "resolved_n": 577,
+        "base_rate": 0.0693,
+        "brier_raw": 0.2323,
+        "brier_base_rate": 0.0645,
         "brier_calibrated_oos": 0.0293,
         "brier_calibrated_oos_n": 75,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
