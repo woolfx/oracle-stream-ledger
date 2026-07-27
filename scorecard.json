@@ -1,7 +1,7 @@
 {
-    "resolved": 664,
-    "open": 1808,
-    "due": 80,
+    "resolved": 666,
+    "open": 1806,
+    "due": 81,
     "unresolvable": 51,
     "brier": 0.231,
     "hit_rate": 0.6,
@@ -12,7 +12,7 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 280,
+            "resolved": 282,
             "brier": 0.222,
             "hit_rate": 0.6
         }
@@ -32,7 +32,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 210,
+            "n": 212,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 664,
+            "resolved": 666,
             "brier": 0.272
         },
         "Economist": {
-            "resolved": 662,
-            "brier": 0.289
+            "resolved": 664,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 664,
-            "brier": 0.303
+            "resolved": 666,
+            "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 663,
-            "brier": 0.177
+            "resolved": 665,
+            "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2298,
+            "resolved": 2306,
             "brier": 0.277
         },
         "qwen3:14b": {
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "A tropical cyclone will make landfall in Florida",
+            "horizon": "week",
+            "probability": 0.43,
+            "location": "Florida",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows any tropical cyclone making landfall in Florida; the named cyclones are located in the Pacific, off China, and near Texas (30.0,-96.0), none over Florida.",
+            "resolved_ms": 1785155043915,
+            "ts": 1784549518896
+        },
+        {
+            "statement": "The Strait of Hormuz will experience an increased number of ship transits, exceeding its 30-day average by 20% within the next week.",
+            "horizon": "week",
+            "probability": 0.58,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S4 shows Strait of Hormuz at 15 transits, 30% below its 30-day average, not exceeding it by 20%.",
+            "resolved_ms": 1785155040601,
+            "ts": 1784547684756
+        },
         {
             "statement": "The Strait of Hormuz will experience an increase in ship transits within the next week",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "S9 shows WTI at 85.11 $/bbl down 4.7%, implying roughly a $4.19 decline that exceeds the $2.50 threshold.",
             "resolved_ms": 1785126205075,
             "ts": 1784518533761
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits, exceeding its 30-day average by at least 20% within the next week",
-            "horizon": "week",
-            "probability": 0.38,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, not a 20%+ increase.",
-            "resolved_ms": 1785122595369,
-            "ts": 1784516707082
-        },
-        {
-            "statement": "The US will conduct additional strikes against Iran within the next week",
-            "horizon": "week",
-            "probability": 0.19,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, and a US strike on Iran would certainly have been captured within the window if it had occurred.",
-            "resolved_ms": 1785122591920,
-            "ts": 1784514857491
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 664,
-        "base_rate": 0.0678,
-        "brier_raw": 0.2312,
-        "brier_base_rate": 0.0632,
+        "resolved_n": 666,
+        "base_rate": 0.0676,
+        "brier_raw": 0.2313,
+        "brier_base_rate": 0.063,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
