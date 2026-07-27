@@ -1,7 +1,7 @@
 {
-    "resolved": 659,
-    "open": 1813,
-    "due": 79,
+    "resolved": 661,
+    "open": 1811,
+    "due": 78,
     "unresolvable": 51,
     "brier": 0.232,
     "hit_rate": 0.6,
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 275,
-            "brier": 0.224,
+            "resolved": 277,
+            "brier": 0.223,
             "hit_rate": 0.6
         }
     },
@@ -26,8 +26,8 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 202,
-            "avg_predicted": 0.3,
+            "n": 204,
+            "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 659,
-            "brier": 0.273
+            "resolved": 661,
+            "brier": 0.272
         },
         "Economist": {
-            "resolved": 657,
-            "brier": 0.291
+            "resolved": 659,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 659,
-            "brier": 0.304
+            "resolved": 661,
+            "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 658,
+            "resolved": 660,
             "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2278,
+            "resolved": 2286,
             "brier": 0.278
         },
         "qwen3:14b": {
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.23,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
+            "resolved_ms": 1785144223965,
+            "ts": 1784538450342
+        },
+        {
+            "statement": "A tropical cyclone will make landfall in Florida within the next week.",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "Florida",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a tropical cyclone making landfall in Florida; the listed cyclones are located elsewhere (Pacific, South China Sea, Texas) with none affecting Florida.",
+            "resolved_ms": 1785144220901,
+            "ts": 1784536599381
+        },
         {
             "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "Nasdaq 100 futures show only +1.12%, below the required 2% rise, and no signal shows the index reaching a 2% gain within the window.",
             "resolved_ms": 1785118983517,
             "ts": 1784509301009
-        },
-        {
-            "statement": "The price of Brent Crude Oil will rise by 5% within the next week due to supply chain disruptions and increased demand",
-            "horizon": "week",
-            "probability": 0.54,
-            "location": "Global Oil Markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude is at 92.88 $/bbl, down 4.03% rather than rising 5%, so the forecast did not come true.",
-            "resolved_ms": 1785118980416,
-            "ts": 1784509301009
-        },
-        {
-            "statement": "A tropical storm will make landfall in Florida within the next week.",
-            "horizon": "week",
-            "probability": 0.28,
-            "location": "Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a tropical storm making landfall in Florida; the listed cyclones are located elsewhere (Pacific, South China Sea, Texas) with none near Florida.",
-            "resolved_ms": 1785118977528,
-            "ts": 1784507443441
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 659,
-        "base_rate": 0.0683,
-        "brier_raw": 0.2321,
-        "brier_base_rate": 0.0636,
+        "resolved_n": 661,
+        "base_rate": 0.0681,
+        "brier_raw": 0.2316,
+        "brier_base_rate": 0.0634,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
