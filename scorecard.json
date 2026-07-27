@@ -1,9 +1,9 @@
 {
-    "resolved": 666,
-    "open": 1806,
-    "due": 81,
+    "resolved": 667,
+    "open": 1805,
+    "due": 82,
     "unresolvable": 51,
-    "brier": 0.231,
+    "brier": 0.232,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 282,
-            "brier": 0.222,
+            "resolved": 283,
+            "brier": 0.223,
             "hit_rate": 0.6
         }
     },
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 206,
+            "n": 207,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 666,
+            "resolved": 667,
             "brier": 0.272
         },
         "Economist": {
-            "resolved": 664,
+            "resolved": 665,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 666,
-            "brier": 0.304
+            "resolved": 667,
+            "brier": 0.305
         },
         "Skeptic": {
-            "resolved": 665,
-            "brier": 0.176
+            "resolved": 666,
+            "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2306,
-            "brier": 0.277
+            "resolved": 2310,
+            "brier": 0.278
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The S&P 500 futures will close above 7500",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S13 shows S&P 500 futures at 7510.75, which is above the 7500 threshold.",
+            "resolved_ms": 1785158651752,
+            "ts": 1784549518896
+        },
         {
             "statement": "A tropical cyclone will make landfall in Florida",
             "horizon": "week",
@@ -198,17 +209,6 @@
             "evidence": "S4 shows Strait of Hormuz at 15 daily transits, 30% below its 30-day average, indicating a decrease rather than the forecast 15% increase.",
             "resolved_ms": 1785126207917,
             "ts": 1784520035253
-        },
-        {
-            "statement": "The price of WTI Crude Oil will drop by at least $2.50 per barrel within the next week",
-            "horizon": "week",
-            "probability": 0.63,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S9 shows WTI at 85.11 $/bbl down 4.7%, implying roughly a $4.19 decline that exceeds the $2.50 threshold.",
-            "resolved_ms": 1785126205075,
-            "ts": 1784518533761
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 666,
-        "base_rate": 0.0676,
-        "brier_raw": 0.2313,
-        "brier_base_rate": 0.063,
+        "resolved_n": 667,
+        "base_rate": 0.069,
+        "brier_raw": 0.2316,
+        "brier_base_rate": 0.0642,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
