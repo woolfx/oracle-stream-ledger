@@ -1,9 +1,9 @@
 {
-    "resolved": 670,
-    "open": 1802,
-    "due": 83,
+    "resolved": 671,
+    "open": 1801,
+    "due": 85,
     "unresolvable": 51,
-    "brier": 0.231,
+    "brier": 0.232,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 286,
-            "brier": 0.222,
+            "resolved": 287,
+            "brier": 0.223,
             "hit_rate": 0.6
         }
     },
@@ -38,7 +38,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 130,
+            "n": 131,
             "avg_predicted": 0.68,
             "observed": 0.12
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 670,
+            "resolved": 671,
             "brier": 0.272
         },
         "Economist": {
-            "resolved": 668,
+            "resolved": 669,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 670,
+            "resolved": 671,
             "brier": 0.305
         },
         "Skeptic": {
-            "resolved": 669,
-            "brier": 0.176
+            "resolved": 670,
+            "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2322,
-            "brier": 0.277
+            "resolved": 2326,
+            "brier": 0.278
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Taiwan Strait will see an increase in ship transits by +20% within the next week",
+            "horizon": "week",
+            "probability": 0.76,
+            "location": "Taiwan Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Taiwan Strait transit data; all signals concern other straits, so the claimed +20% increase in Taiwan Strait is unsupported.",
+            "resolved_ms": 1785169469137,
+            "ts": 1784564269323
+        },
         {
             "statement": "The Strait of Hormuz will experience an increase in ship transits by 15% within the next week",
             "horizon": "week",
@@ -198,17 +209,6 @@
             "evidence": "No signal shows a tropical cyclone making landfall in Florida; the listed cyclones are located elsewhere (Pacific, South China Sea, Texas) with none affecting Florida.",
             "resolved_ms": 1785144220901,
             "ts": 1784536599381
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.18,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S4 shows Strait of Hormuz at 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
-            "resolved_ms": 1785140617374,
-            "ts": 1784532912762
         }
     ],
     "self_calibration": {
@@ -217,9 +217,9 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 670,
-        "base_rate": 0.0687,
-        "brier_raw": 0.2312,
+        "resolved_n": 671,
+        "base_rate": 0.0686,
+        "brier_raw": 0.2317,
         "brier_base_rate": 0.0639,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
