@@ -1,6 +1,6 @@
 {
-    "resolved": 656,
-    "open": 1816,
+    "resolved": 657,
+    "open": 1815,
     "due": 73,
     "unresolvable": 51,
     "brier": 0.232,
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 272,
-            "brier": 0.224,
+            "resolved": 273,
+            "brier": 0.223,
             "hit_rate": 0.6
         }
     },
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 201,
+            "n": 202,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 656,
-            "brier": 0.273
+            "resolved": 657,
+            "brier": 0.272
         },
         "Economist": {
-            "resolved": 654,
-            "brier": 0.291
+            "resolved": 655,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 656,
+            "resolved": 657,
             "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 655,
+            "resolved": 656,
             "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2266,
+            "resolved": 2270,
             "brier": 0.278
         },
         "qwen3:14b": {
@@ -78,6 +78,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience a 20% increase in daily ship transits.",
+            "horizon": "week",
+            "probability": 0.32,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average of 21, indicating a decrease rather than the forecast 20% increase.",
+            "resolved_ms": 1785129810797,
+            "ts": 1784523705430
+        },
         {
             "statement": "The Strait of Hormuz will see an increase in ship transits by at least 15% in the next week",
             "horizon": "week",
@@ -198,17 +209,6 @@
             "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
             "resolved_ms": 1785111772124,
             "ts": 1784503773738
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Midwest within the next week",
-            "horizon": "week",
-            "probability": 0.65,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal concerns this forecast, yet a severe thunderstorm warning for the Midwest over a week-long window would certainly have been captured if it occurred.",
-            "resolved_ms": 1785111770663,
-            "ts": 1784503724608
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 656,
-        "base_rate": 0.0686,
-        "brier_raw": 0.232,
-        "brier_base_rate": 0.0639,
+        "resolved_n": 657,
+        "base_rate": 0.0685,
+        "brier_raw": 0.2318,
+        "brier_base_rate": 0.0638,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
