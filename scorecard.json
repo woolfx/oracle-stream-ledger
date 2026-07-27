@@ -1,7 +1,7 @@
 {
-    "resolved": 680,
-    "open": 1792,
-    "due": 93,
+    "resolved": 683,
+    "open": 1789,
+    "due": 92,
     "unresolvable": 51,
     "brier": 0.231,
     "hit_rate": 0.6,
@@ -12,7 +12,7 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 296,
+            "resolved": 299,
             "brier": 0.222,
             "hit_rate": 0.61
         }
@@ -26,13 +26,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 212,
-            "avg_predicted": 0.29,
+            "n": 213,
+            "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 216,
+            "n": 218,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 680,
+            "resolved": 683,
             "brier": 0.271
         },
         "Economist": {
-            "resolved": 678,
+            "resolved": 681,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 680,
-            "brier": 0.305
+            "resolved": 683,
+            "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 679,
-            "brier": 0.176
+            "resolved": 682,
+            "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2362,
+            "resolved": 2374,
             "brier": 0.277
         },
         "qwen3:14b": {
@@ -78,6 +78,39 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will see an increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.54,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than the forecasted increase.",
+            "resolved_ms": 1785187549614,
+            "ts": 1784581009235
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
+            "resolved_ms": 1785187547591,
+            "ts": 1784579152652
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Midwest region within the next week",
+            "horizon": "week",
+            "probability": 0.53,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S2 shows a Severe Thunderstorm Warning issued by NWS Chicago IL on July 27, within the Midwest region and inside the forecast window.",
+            "resolved_ms": 1785187545191,
+            "ts": 1784579152652
+        },
         {
             "statement": "The Strait of Hormuz will experience a significant increase in ship transits by the end of the week.",
             "horizon": "week",
@@ -176,39 +209,6 @@
             "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, not exceeding it by 20%.",
             "resolved_ms": 1785176676951,
             "ts": 1784566105637
-        },
-        {
-            "statement": "Taiwan Strait will see an increase in ship transits by +20% within the next week",
-            "horizon": "week",
-            "probability": 0.76,
-            "location": "Taiwan Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Taiwan Strait transit data; all signals concern other straits, so the claimed +20% increase in Taiwan Strait is unsupported.",
-            "resolved_ms": 1785169469137,
-            "ts": 1784564269323
-        },
-        {
-            "statement": "The Strait of Hormuz will experience an increase in ship transits by 15% within the next week",
-            "horizon": "week",
-            "probability": 0.34,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than the forecast 15% increase.",
-            "resolved_ms": 1785165860776,
-            "ts": 1784560601636
-        },
-        {
-            "statement": "The VIX fear gauge will exceed 20 in the next week.",
-            "horizon": "week",
-            "probability": 0.44,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.83, below the 20 threshold, with no signal indicating it exceeded 20 during the window.",
-            "resolved_ms": 1785165857292,
-            "ts": 1784558743092
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 680,
-        "base_rate": 0.0676,
-        "brier_raw": 0.231,
-        "brier_base_rate": 0.0631,
+        "resolved_n": 683,
+        "base_rate": 0.0688,
+        "brier_raw": 0.2309,
+        "brier_base_rate": 0.0641,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
