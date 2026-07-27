@@ -1,9 +1,9 @@
 {
-    "resolved": 667,
-    "open": 1805,
-    "due": 82,
+    "resolved": 668,
+    "open": 1804,
+    "due": 83,
     "unresolvable": 51,
-    "brier": 0.232,
+    "brier": 0.231,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,7 +12,7 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 283,
+            "resolved": 284,
             "brier": 0.223,
             "hit_rate": 0.6
         }
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 207,
+            "n": 208,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 667,
+            "resolved": 668,
             "brier": 0.272
         },
         "Economist": {
-            "resolved": 665,
+            "resolved": 666,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 667,
+            "resolved": 668,
             "brier": 0.305
         },
         "Skeptic": {
-            "resolved": 666,
-            "brier": 0.177
+            "resolved": 667,
+            "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2310,
+            "resolved": 2314,
             "brier": 0.278
         },
         "qwen3:14b": {
@@ -78,6 +78,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience an increase in ship transits by more than 20% in the next week.",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than the forecasted >20% increase.",
+            "resolved_ms": 1785162254520,
+            "ts": 1784555062243
+        },
         {
             "statement": "The S&P 500 futures will close above 7500",
             "horizon": "week",
@@ -198,17 +209,6 @@
             "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average of 21, indicating a decrease rather than the forecast 20% increase.",
             "resolved_ms": 1785129810797,
             "ts": 1784523705430
-        },
-        {
-            "statement": "The Strait of Hormuz will see an increase in ship transits by at least 15% in the next week",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S4 shows Strait of Hormuz at 15 daily transits, 30% below its 30-day average, indicating a decrease rather than the forecast 15% increase.",
-            "resolved_ms": 1785126207917,
-            "ts": 1784520035253
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 667,
-        "base_rate": 0.069,
-        "brier_raw": 0.2316,
-        "brier_base_rate": 0.0642,
+        "resolved_n": 668,
+        "base_rate": 0.0689,
+        "brier_raw": 0.2314,
+        "brier_base_rate": 0.0641,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
