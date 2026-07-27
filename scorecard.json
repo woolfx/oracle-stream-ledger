@@ -1,9 +1,9 @@
 {
-    "resolved": 678,
-    "open": 1794,
-    "due": 87,
+    "resolved": 680,
+    "open": 1792,
+    "due": 89,
     "unresolvable": 51,
-    "brier": 0.23,
+    "brier": 0.231,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 294,
-            "brier": 0.221,
+            "resolved": 296,
+            "brier": 0.222,
             "hit_rate": 0.61
         }
     },
@@ -32,13 +32,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 215,
+            "n": 216,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
         {
             "bin": "60\u201380%",
-            "n": 131,
+            "n": 132,
             "avg_predicted": 0.68,
             "observed": 0.12
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 678,
+            "resolved": 680,
             "brier": 0.271
         },
         "Economist": {
-            "resolved": 676,
+            "resolved": 678,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 678,
+            "resolved": 680,
             "brier": 0.305
         },
         "Skeptic": {
-            "resolved": 677,
-            "brier": 0.175
+            "resolved": 679,
+            "brier": 0.176
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2354,
-            "brier": 0.276
+            "resolved": 2362,
+            "brier": 0.277
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits by the end of the week.",
+            "horizon": "week",
+            "probability": 0.44,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
+            "resolved_ms": 1785180306205,
+            "ts": 1784573541538
+        },
+        {
+            "statement": "The VIX fear gauge will rise above 20 by the end of the week.",
+            "horizon": "week",
+            "probability": 0.79,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only VIX reading shows 18.9, below the required threshold of 20, so the forecast event did not occur within the window.",
+            "resolved_ms": 1785180304371,
+            "ts": 1784573541538
+        },
         {
             "statement": "The Strait of Hormuz will see a significant increase in ship transits by at least 20% above its 30-day average.",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "The only signal shows VIX at 18.83, below the 20 threshold, with no signal indicating it exceeded 20 during the window.",
             "resolved_ms": 1785165857292,
             "ts": 1784558743092
-        },
-        {
-            "statement": "The Strait of Hormuz will experience an increase in ship transits by more than 20% in the next week.",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than the forecasted >20% increase.",
-            "resolved_ms": 1785162254520,
-            "ts": 1784555062243
-        },
-        {
-            "statement": "The S&P 500 futures will close above 7500",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S13 shows S&P 500 futures at 7510.75, which is above the 7500 threshold.",
-            "resolved_ms": 1785158651752,
-            "ts": 1784549518896
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 678,
-        "base_rate": 0.0678,
-        "brier_raw": 0.2304,
-        "brier_base_rate": 0.0632,
+        "resolved_n": 680,
+        "base_rate": 0.0676,
+        "brier_raw": 0.231,
+        "brier_base_rate": 0.0631,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
