@@ -1,9 +1,9 @@
 {
-    "resolved": 661,
-    "open": 1811,
-    "due": 81,
+    "resolved": 664,
+    "open": 1808,
+    "due": 80,
     "unresolvable": 51,
-    "brier": 0.232,
+    "brier": 0.231,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 277,
-            "brier": 0.223,
+            "resolved": 280,
+            "brier": 0.222,
             "hit_rate": 0.6
         }
     },
@@ -26,13 +26,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 204,
+            "n": 206,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 209,
+            "n": 210,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 661,
+            "resolved": 664,
             "brier": 0.272
         },
         "Economist": {
-            "resolved": 659,
-            "brier": 0.29
+            "resolved": 662,
+            "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 661,
+            "resolved": 664,
             "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 660,
+            "resolved": 663,
             "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2286,
-            "brier": 0.278
+            "resolved": 2298,
+            "brier": 0.277
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,39 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience an increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than the forecast increase.",
+            "resolved_ms": 1785151436387,
+            "ts": 1784545851539
+        },
+        {
+            "statement": "There will be a significant earthquake in the next week with a magnitude above 6.0",
+            "horizon": "week",
+            "probability": 0.24,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The window closed with no captured signal showing any magnitude 6.0+ earthquake, so the forecast cannot be confirmed as true.",
+            "resolved_ms": 1785151432281,
+            "ts": 1784543999347
+        },
+        {
+            "statement": "The VIX fear gauge will rise above 20 by the end of the week",
+            "horizon": "week",
+            "probability": 0.52,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 17.61, below the threshold of 20.",
+            "resolved_ms": 1785151426117,
+            "ts": 1784543999347
+        },
         {
             "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
             "horizon": "week",
@@ -176,39 +209,6 @@
             "evidence": "No captured signal concerns this forecast, and a US strike on Iran would certainly have been captured within the window if it had occurred.",
             "resolved_ms": 1785122591920,
             "ts": 1784514857491
-        },
-        {
-            "statement": "The price of Brent Crude will drop by at least 3% within the next week.",
-            "horizon": "week",
-            "probability": 0.61,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Brent Crude shows -4.03%, exceeding the 3% drop threshold within the window.",
-            "resolved_ms": 1785118990010,
-            "ts": 1784513017060
-        },
-        {
-            "statement": "Oil prices will surge by 5% due to disruptions in the Strait of Hormuz.",
-            "horizon": "week",
-            "probability": 0.16,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude is at 92.88 $/bbl, down 4.03%, showing prices fell rather than surging 5% from Hormuz disruptions.",
-            "resolved_ms": 1785118987129,
-            "ts": 1784511168089
-        },
-        {
-            "statement": "The Nasdaq 100 index will rise by 2% within the next week due to increased investor confidence and economic growth",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "Global Financial Markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Nasdaq 100 futures show only +1.12%, below the required 2% rise, and no signal shows the index reaching a 2% gain within the window.",
-            "resolved_ms": 1785118983517,
-            "ts": 1784509301009
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 661,
-        "base_rate": 0.0681,
-        "brier_raw": 0.2316,
-        "brier_base_rate": 0.0634,
+        "resolved_n": 664,
+        "base_rate": 0.0678,
+        "brier_raw": 0.2312,
+        "brier_base_rate": 0.0632,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
