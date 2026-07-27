@@ -1,7 +1,7 @@
 {
-    "resolved": 658,
-    "open": 1814,
-    "due": 78,
+    "resolved": 659,
+    "open": 1813,
+    "due": 79,
     "unresolvable": 51,
     "brier": 0.232,
     "hit_rate": 0.6,
@@ -12,15 +12,15 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 274,
-            "brier": 0.225,
+            "resolved": 275,
+            "brier": 0.224,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 82,
+            "n": 83,
             "avg_predicted": 0.13,
             "observed": 0.05
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 658,
+            "resolved": 659,
             "brier": 0.273
         },
         "Economist": {
-            "resolved": 656,
+            "resolved": 657,
             "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 658,
+            "resolved": 659,
             "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 657,
-            "brier": 0.178
+            "resolved": 658,
+            "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2274,
-            "brier": 0.279
+            "resolved": 2278,
+            "brier": 0.278
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.18,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S4 shows Strait of Hormuz at 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
+            "resolved_ms": 1785140617374,
+            "ts": 1784532912762
+        },
         {
             "statement": "The VIX fear gauge will rise above 20 by the end of the week",
             "horizon": "week",
@@ -198,17 +209,6 @@
             "evidence": "No signal shows a tropical storm making landfall in Florida; the listed cyclones are located elsewhere (Pacific, South China Sea, Texas) with none near Florida.",
             "resolved_ms": 1785118977528,
             "ts": 1784507443441
-        },
-        {
-            "statement": "VIX fear gauge will rise above 25 by the end of the week",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.58, well below the 25 threshold, so the forecast did not come true.",
-            "resolved_ms": 1785111773889,
-            "ts": 1784505585727
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 658,
-        "base_rate": 0.0684,
-        "brier_raw": 0.2324,
-        "brier_base_rate": 0.0637,
+        "resolved_n": 659,
+        "base_rate": 0.0683,
+        "brier_raw": 0.2321,
+        "brier_base_rate": 0.0636,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
