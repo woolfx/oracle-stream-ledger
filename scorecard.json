@@ -1,9 +1,9 @@
 {
-    "resolved": 652,
-    "open": 1820,
-    "due": 69,
+    "resolved": 654,
+    "open": 1818,
+    "due": 73,
     "unresolvable": 51,
-    "brier": 0.233,
+    "brier": 0.232,
     "hit_rate": 0.59,
     "per_horizon": {
         "24h": {
@@ -12,22 +12,22 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 268,
-            "brier": 0.225,
-            "hit_rate": 0.59
+            "resolved": 270,
+            "brier": 0.224,
+            "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 81,
+            "n": 82,
             "avg_predicted": 0.13,
             "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 199,
-            "avg_predicted": 0.29,
+            "n": 200,
+            "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
@@ -51,25 +51,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 652,
-            "brier": 0.274
+            "resolved": 654,
+            "brier": 0.273
         },
         "Economist": {
-            "resolved": 650,
-            "brier": 0.292
+            "resolved": 652,
+            "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 652,
-            "brier": 0.305
+            "resolved": 654,
+            "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 651,
-            "brier": 0.178
+            "resolved": 653,
+            "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2250,
+            "resolved": 2258,
             "brier": 0.279
         },
         "qwen3:14b": {
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits, exceeding its 30-day average by at least 20% within the next week",
+            "horizon": "week",
+            "probability": 0.38,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, not a 20%+ increase.",
+            "resolved_ms": 1785122595369,
+            "ts": 1784516707082
+        },
+        {
+            "statement": "The US will conduct additional strikes against Iran within the next week",
+            "horizon": "week",
+            "probability": 0.19,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns this forecast, and a US strike on Iran would certainly have been captured within the window if it had occurred.",
+            "resolved_ms": 1785122591920,
+            "ts": 1784514857491
+        },
         {
             "statement": "The price of Brent Crude will drop by at least 3% within the next week.",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, indicating the forecast did not come true.",
             "resolved_ms": 1785111766559,
             "ts": 1784503724608
-        },
-        {
-            "statement": "A tropical depression will form in the East Pacific within the next week due to warm ocean temperatures and a low-pressure system moving west",
-            "horizon": "week",
-            "probability": 0.73,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Hurricane Genevieve is active in the East Pacific at 13.9,-110.3, exceeding the forecast tropical-depression formation threshold.",
-            "resolved_ms": 1785108164600,
-            "ts": 1784503022278
-        },
-        {
-            "statement": "The Strait of Hormuz will experience increased congestion within the next week due to a tanker backlog at the Suez Canal",
-            "horizon": "week",
-            "probability": 0.45,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating reduced traffic rather than increased congestion.",
-            "resolved_ms": 1785108157784,
-            "ts": 1784503022278
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 652,
-        "base_rate": 0.0675,
-        "brier_raw": 0.2328,
-        "brier_base_rate": 0.0629,
+        "resolved_n": 654,
+        "base_rate": 0.0673,
+        "brier_raw": 0.2323,
+        "brier_base_rate": 0.0628,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
