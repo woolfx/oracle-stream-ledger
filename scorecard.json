@@ -1,9 +1,9 @@
 {
-    "resolved": 671,
-    "open": 1801,
-    "due": 90,
+    "resolved": 678,
+    "open": 1794,
+    "due": 87,
     "unresolvable": 51,
-    "brier": 0.232,
+    "brier": 0.23,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -12,27 +12,27 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 287,
-            "brier": 0.223,
-            "hit_rate": 0.6
+            "resolved": 294,
+            "brier": 0.221,
+            "hit_rate": 0.61
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 83,
+            "n": 85,
             "avg_predicted": 0.13,
             "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 209,
+            "n": 212,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 213,
+            "n": 215,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 671,
-            "brier": 0.272
+            "resolved": 678,
+            "brier": 0.271
         },
         "Economist": {
-            "resolved": 669,
-            "brier": 0.29
+            "resolved": 676,
+            "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 671,
+            "resolved": 678,
             "brier": 0.305
         },
         "Skeptic": {
-            "resolved": 670,
-            "brier": 0.177
+            "resolved": 677,
+            "brier": 0.175
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2326,
-            "brier": 0.278
+            "resolved": 2354,
+            "brier": 0.276
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,83 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will see a significant increase in ship transits by at least 20% above its 30-day average.",
+            "horizon": "week",
+            "probability": 0.28,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, the opposite of the forecasted 20%+ increase.",
+            "resolved_ms": 1785176695590,
+            "ts": 1784571666234
+        },
+        {
+            "statement": "A major earthquake will strike the coast of Canada within the next week",
+            "horizon": "week",
+            "probability": 0.16,
+            "location": "Canada",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal reports any major earthquake striking the coast of Canada during the window, and such an event would certainly have been recorded.",
+            "resolved_ms": 1785176693860,
+            "ts": 1784569809866
+        },
+        {
+            "statement": "WTI Crude Oil prices will rise to $85/bbl within the next week",
+            "horizon": "week",
+            "probability": 0.46,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only crude price signal shows Brent at $88.27 down 8.79% and no signal shows WTI reaching the $85/bbl threshold, with prices falling rather than rising.",
+            "resolved_ms": 1785176689237,
+            "ts": 1784569809865
+        },
+        {
+            "statement": "A magnitude 6.0 earthquake will strike the coast of Peru",
+            "horizon": "week",
+            "probability": 0.17,
+            "location": "Peru",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal was captured concerning a magnitude 6.0 earthquake off Peru's coast, and such an event would certainly have been recorded had it occurred within the window.",
+            "resolved_ms": 1785176684539,
+            "ts": 1784569809865
+        },
+        {
+            "statement": "Ship transits through the Taiwan Strait will increase by at least 20% within the next week",
+            "horizon": "week",
+            "probability": 0.35,
+            "location": "Taiwan Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Taiwan Strait transit data; all signals concern other straits (Ombai, Torres, Tsugaru, Sunda), so no evidence shows a 20% increase in Taiwan Strait transits.",
+            "resolved_ms": 1785176682287,
+            "ts": 1784567955672
+        },
+        {
+            "statement": "The VIX fear gauge will rise to 25 by the end of the week",
+            "horizon": "week",
+            "probability": 0.49,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 19.25, well below the 25 threshold, so the forecast did not come true.",
+            "resolved_ms": 1785176678532,
+            "ts": 1784567955672
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week, exceeding its 30-day average by more than 20%",
+            "horizon": "week",
+            "probability": 0.27,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, not exceeding it by 20%.",
+            "resolved_ms": 1785176676951,
+            "ts": 1784566105637
+        },
         {
             "statement": "Taiwan Strait will see an increase in ship transits by +20% within the next week",
             "horizon": "week",
@@ -132,83 +209,6 @@
             "evidence": "S13 shows S&P 500 futures at 7510.75, which is above the 7500 threshold.",
             "resolved_ms": 1785158651752,
             "ts": 1784549518896
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Florida",
-            "horizon": "week",
-            "probability": 0.43,
-            "location": "Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows any tropical cyclone making landfall in Florida; the named cyclones are located in the Pacific, off China, and near Texas (30.0,-96.0), none over Florida.",
-            "resolved_ms": 1785155043915,
-            "ts": 1784549518896
-        },
-        {
-            "statement": "The Strait of Hormuz will experience an increased number of ship transits, exceeding its 30-day average by 20% within the next week.",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S4 shows Strait of Hormuz at 15 transits, 30% below its 30-day average, not exceeding it by 20%.",
-            "resolved_ms": 1785155040601,
-            "ts": 1784547684756
-        },
-        {
-            "statement": "The Strait of Hormuz will experience an increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than the forecast increase.",
-            "resolved_ms": 1785151436387,
-            "ts": 1784545851539
-        },
-        {
-            "statement": "There will be a significant earthquake in the next week with a magnitude above 6.0",
-            "horizon": "week",
-            "probability": 0.24,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The window closed with no captured signal showing any magnitude 6.0+ earthquake, so the forecast cannot be confirmed as true.",
-            "resolved_ms": 1785151432281,
-            "ts": 1784543999347
-        },
-        {
-            "statement": "The VIX fear gauge will rise above 20 by the end of the week",
-            "horizon": "week",
-            "probability": 0.52,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 17.61, below the threshold of 20.",
-            "resolved_ms": 1785151426117,
-            "ts": 1784543999347
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.23,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
-            "resolved_ms": 1785144223965,
-            "ts": 1784538450342
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Florida within the next week.",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a tropical cyclone making landfall in Florida; the listed cyclones are located elsewhere (Pacific, South China Sea, Texas) with none affecting Florida.",
-            "resolved_ms": 1785144220901,
-            "ts": 1784536599381
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 671,
-        "base_rate": 0.0686,
-        "brier_raw": 0.2317,
-        "brier_base_rate": 0.0639,
+        "resolved_n": 678,
+        "base_rate": 0.0678,
+        "brier_raw": 0.2304,
+        "brier_base_rate": 0.0632,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
