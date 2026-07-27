@@ -1,7 +1,7 @@
 {
-    "resolved": 657,
-    "open": 1815,
-    "due": 76,
+    "resolved": 658,
+    "open": 1814,
+    "due": 78,
     "unresolvable": 51,
     "brier": 0.232,
     "hit_rate": 0.6,
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 273,
-            "brier": 0.223,
+            "resolved": 274,
+            "brier": 0.225,
             "hit_rate": 0.6
         }
     },
@@ -44,33 +44,33 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 34,
+            "n": 35,
             "avg_predicted": 0.83,
-            "observed": 0.12
+            "observed": 0.11
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 657,
-            "brier": 0.272
+            "resolved": 658,
+            "brier": 0.273
         },
         "Economist": {
-            "resolved": 655,
-            "brier": 0.29
+            "resolved": 656,
+            "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 657,
+            "resolved": 658,
             "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 656,
-            "brier": 0.177
+            "resolved": 657,
+            "brier": 0.178
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2270,
-            "brier": 0.278
+            "resolved": 2274,
+            "brier": 0.279
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The VIX fear gauge will rise above 20 by the end of the week",
+            "horizon": "week",
+            "probability": 0.8,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No captured signal concerns the VIX level, but such a market event would certainly have been captured if it occurred.",
+            "resolved_ms": 1785137014468,
+            "ts": 1784529245859
+        },
         {
             "statement": "The Strait of Hormuz will experience a 20% increase in daily ship transits.",
             "horizon": "week",
@@ -198,17 +209,6 @@
             "evidence": "The only signal shows VIX at 18.58, well below the 25 threshold, so the forecast did not come true.",
             "resolved_ms": 1785111773889,
             "ts": 1784505585727
-        },
-        {
-            "statement": "Strait of Hormuz will experience a significant increase in ship transits in the next week",
-            "horizon": "week",
-            "probability": 0.19,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
-            "resolved_ms": 1785111772124,
-            "ts": 1784503773738
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 657,
-        "base_rate": 0.0685,
-        "brier_raw": 0.2318,
-        "brier_base_rate": 0.0638,
+        "resolved_n": 658,
+        "base_rate": 0.0684,
+        "brier_raw": 0.2324,
+        "brier_base_rate": 0.0637,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
