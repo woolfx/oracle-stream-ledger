@@ -1,7 +1,7 @@
 {
-    "resolved": 636,
-    "open": 1836,
-    "due": 69,
+    "resolved": 642,
+    "open": 1830,
+    "due": 72,
     "unresolvable": 51,
     "brier": 0.233,
     "hit_rate": 0.6,
@@ -12,8 +12,8 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 252,
-            "brier": 0.224,
+            "resolved": 258,
+            "brier": 0.226,
             "hit_rate": 0.6
         }
     },
@@ -26,21 +26,21 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 197,
+            "n": 198,
             "avg_predicted": 0.29,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 203,
+            "n": 206,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
         {
             "bin": "60\u201380%",
-            "n": 124,
+            "n": 126,
             "avg_predicted": 0.68,
-            "observed": 0.1
+            "observed": 0.11
         },
         {
             "bin": "80\u2013100%",
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 636,
-            "brier": 0.273
+            "resolved": 642,
+            "brier": 0.274
         },
         "Economist": {
-            "resolved": 635,
-            "brier": 0.29
+            "resolved": 640,
+            "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 636,
-            "brier": 0.304
+            "resolved": 642,
+            "brier": 0.305
         },
         "Skeptic": {
-            "resolved": 635,
-            "brier": 0.178
+            "resolved": 641,
+            "brier": 0.179
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2187,
-            "brier": 0.279
+            "resolved": 2210,
+            "brier": 0.28
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,72 @@
         }
     },
     "recent": [
+        {
+            "statement": "A tropical depression will form in the East Pacific within the next week due to warm ocean temperatures and a low-pressure system moving west",
+            "horizon": "week",
+            "probability": 0.73,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Hurricane Genevieve is active in the East Pacific at 13.9,-110.3, exceeding the forecast tropical-depression formation threshold.",
+            "resolved_ms": 1785108164600,
+            "ts": 1784503022278
+        },
+        {
+            "statement": "The Strait of Hormuz will experience increased congestion within the next week due to a tanker backlog at the Suez Canal",
+            "horizon": "week",
+            "probability": 0.45,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, indicating reduced traffic rather than increased congestion.",
+            "resolved_ms": 1785108157784,
+            "ts": 1784503022278
+        },
+        {
+            "statement": "The VIX fear gauge will rise above 20 by the end of the week",
+            "horizon": "week",
+            "probability": 0.57,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, and the window has closed with no signal showing it exceeded 20.",
+            "resolved_ms": 1785108155446,
+            "ts": 1784503022278
+        },
+        {
+            "statement": "Ship traffic through the Strait of Hormuz will decrease by at least 20% in the next week due to heightened tensions.",
+            "horizon": "week",
+            "probability": 0.27,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S4 shows Strait of Hormuz transits at 15 daily, 30% below its 30-day average, exceeding the 20% decrease threshold.",
+            "resolved_ms": 1785108153022,
+            "ts": 1784502976440
+        },
+        {
+            "statement": "The VIX fear gauge will rise above 20 within the next week",
+            "horizon": "week",
+            "probability": 0.64,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.58, below the required threshold of 20, with no signal indicating it rose above 20 during the window.",
+            "resolved_ms": 1785108150578,
+            "ts": 1784501923925
+        },
+        {
+            "statement": "The VIX fear gauge will reach 20 by the end of the week",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "Global Markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest VIX reading (S13) is 18.58, below the 20 threshold, and no signal shows it reaching 20.",
+            "resolved_ms": 1785108148933,
+            "ts": 1784500091606
+        },
         {
             "statement": "The Strait of Hormuz will experience increased ship transits within the next week.",
             "horizon": "week",
@@ -143,72 +209,6 @@
             "evidence": "S4 shows Strait of Hormuz at 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
             "resolved_ms": 1785100936698,
             "ts": 1784489265170
-        },
-        {
-            "statement": "The VIX fear gauge will rise above 20 by the end of the week.",
-            "horizon": "week",
-            "probability": 0.73,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.58, below the required threshold of 20, so the forecast did not come true.",
-            "resolved_ms": 1785093734274,
-            "ts": 1784485553197
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will strike near the Mexico City area.",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal captured any magnitude 6.0 earthquake near Mexico City, an event that would certainly have been recorded, and the window has closed.",
-            "resolved_ms": 1785093732238,
-            "ts": 1784485553197
-        },
-        {
-            "statement": "The Strait of Hormuz will experience increased ship traffic within the next week due to a surge in oil exports from Saudi Arabia.",
-            "horizon": "week",
-            "probability": 0.25,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz showed 15 daily transits, 30% below its 30-day average, directly contradicting the forecast of increased ship traffic.",
-            "resolved_ms": 1785090129825,
-            "ts": 1784483710997
-        },
-        {
-            "statement": "The VIX fear gauge will reach 25 within the next week",
-            "horizon": "week",
-            "probability": 0.67,
-            "location": "Global markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only VIX signal shows 18.58, well below the 25 threshold, and no signal indicates it reached 25 during the window.",
-            "resolved_ms": 1785090128112,
-            "ts": 1784481864421
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant disruption in shipping within the next week",
-            "horizon": "week",
-            "probability": 0.38,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S4 shows Hormuz transits merely 30% below the 30-day average (15 vs 21), a modest reduction that does not constitute a significant shipping disruption.",
-            "resolved_ms": 1785090125786,
-            "ts": 1784481864420
-        },
-        {
-            "statement": "A major flood will occur in South Korea within the next week due to heavy rainfall.",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "South Korea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows a major flood occurring in South Korea during the forecast window, though such an event would have been captured.",
-            "resolved_ms": 1785086519709,
-            "ts": 1784478164833
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 636,
-        "base_rate": 0.0645,
-        "brier_raw": 0.2325,
-        "brier_base_rate": 0.0603,
+        "resolved_n": 642,
+        "base_rate": 0.067,
+        "brier_raw": 0.2332,
+        "brier_base_rate": 0.0625,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
