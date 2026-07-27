@@ -1,10 +1,10 @@
 {
-    "resolved": 654,
-    "open": 1818,
+    "resolved": 656,
+    "open": 1816,
     "due": 73,
     "unresolvable": 51,
     "brier": 0.232,
-    "hit_rate": 0.59,
+    "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
             "resolved": 384,
@@ -12,7 +12,7 @@
             "hit_rate": 0.59
         },
         "week": {
-            "resolved": 270,
+            "resolved": 272,
             "brier": 0.224,
             "hit_rate": 0.6
         }
@@ -26,7 +26,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 200,
+            "n": 201,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -38,7 +38,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 129,
+            "n": 130,
             "avg_predicted": 0.68,
             "observed": 0.12
         },
@@ -51,26 +51,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 654,
+            "resolved": 656,
             "brier": 0.273
         },
         "Economist": {
-            "resolved": 652,
+            "resolved": 654,
             "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 654,
+            "resolved": 656,
             "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 653,
+            "resolved": 655,
             "brier": 0.177
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2258,
-            "brier": 0.279
+            "resolved": 2266,
+            "brier": 0.278
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -78,6 +78,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will see an increase in ship transits by at least 15% in the next week",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S4 shows Strait of Hormuz at 15 daily transits, 30% below its 30-day average, indicating a decrease rather than the forecast 15% increase.",
+            "resolved_ms": 1785126207917,
+            "ts": 1784520035253
+        },
+        {
+            "statement": "The price of WTI Crude Oil will drop by at least $2.50 per barrel within the next week",
+            "horizon": "week",
+            "probability": 0.63,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S9 shows WTI at 85.11 $/bbl down 4.7%, implying roughly a $4.19 decline that exceeds the $2.50 threshold.",
+            "resolved_ms": 1785126205075,
+            "ts": 1784518533761
+        },
         {
             "statement": "The Strait of Hormuz will experience a significant increase in ship transits, exceeding its 30-day average by at least 20% within the next week",
             "horizon": "week",
@@ -187,28 +209,6 @@
             "evidence": "No captured signal concerns this forecast, yet a severe thunderstorm warning for the Midwest over a week-long window would certainly have been captured if it occurred.",
             "resolved_ms": 1785111770663,
             "ts": 1784503724608
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.17,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S4 shows Strait of Hormuz at 15 daily transits, 30% below its 30-day average, indicating a decrease rather than a significant increase.",
-            "resolved_ms": 1785111768767,
-            "ts": 1784503724608
-        },
-        {
-            "statement": "The VIX fear gauge will rise above 20 by the end of the week",
-            "horizon": "week",
-            "probability": 0.62,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.58, below the 20 threshold, indicating the forecast did not come true.",
-            "resolved_ms": 1785111766559,
-            "ts": 1784503724608
         }
     ],
     "self_calibration": {
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 654,
-        "base_rate": 0.0673,
-        "brier_raw": 0.2323,
-        "brier_base_rate": 0.0628,
+        "resolved_n": 656,
+        "base_rate": 0.0686,
+        "brier_raw": 0.232,
+        "brier_base_rate": 0.0639,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
