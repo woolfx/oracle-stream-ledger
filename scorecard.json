@@ -1,8 +1,8 @@
 {
-    "resolved": 673,
-    "open": 1814,
+    "resolved": 674,
+    "open": 1819,
     "due": 96,
-    "next_due_ms": 1785200548921,
+    "next_due_ms": 1785204235000,
     "unresolvable": 64,
     "brier": 0.226,
     "hit_rate": 0.61,
@@ -13,15 +13,15 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 302,
-            "brier": 0.222,
+            "resolved": 303,
+            "brier": 0.221,
             "hit_rate": 0.61
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 85,
+            "n": 86,
             "avg_predicted": 0.13,
             "observed": 0.05
         },
@@ -52,26 +52,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 673,
-            "brier": 0.266
+            "resolved": 674,
+            "brier": 0.265
         },
         "Economist": {
-            "resolved": 671,
-            "brier": 0.285
+            "resolved": 672,
+            "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 673,
+            "resolved": 674,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 672,
+            "resolved": 673,
             "brier": 0.171
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2334,
-            "brier": 0.272
+            "resolved": 2338,
+            "brier": 0.271
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -79,6 +79,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience an increase in ship transits by at least 20% above its 30-day average within the next week",
+            "horizon": "week",
+            "probability": 0.13,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, rather than at least 20% above it.",
+            "resolved_ms": 1785203603361,
+            "ts": 1784595748921
+        },
         {
             "statement": "Tropical cyclone TWO-26 will make landfall within the next week",
             "horizon": "week",
@@ -199,30 +210,19 @@
             "evidence": "The only crude price signal shows Brent at $88.27 down 8.79% and no signal shows WTI reaching the $85/bbl threshold, with prices falling rather than rising.",
             "resolved_ms": 1785176689237,
             "ts": 1784569809865
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will strike the coast of Peru",
-            "horizon": "week",
-            "probability": 0.17,
-            "location": "Peru",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal was captured concerning a magnitude 6.0 earthquake off Peru's coast, and such an event would certainly have been recorded had it occurred within the window.",
-            "resolved_ms": 1785176684539,
-            "ts": 1784569809865
         }
     ],
-    "next_judge_ms": 1785203585918,
+    "next_judge_ms": 1785207203373,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 673,
-        "base_rate": 0.0698,
-        "brier_raw": 0.2261,
-        "brier_base_rate": 0.065,
+        "resolved_n": 674,
+        "base_rate": 0.0697,
+        "brier_raw": 0.2258,
+        "brier_base_rate": 0.0649,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
