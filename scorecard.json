@@ -1,8 +1,8 @@
 {
-    "resolved": 686,
-    "open": 1994,
-    "due": 106,
-    "next_due_ms": 1785233704512,
+    "resolved": 688,
+    "open": 2004,
+    "due": 107,
+    "next_due_ms": 1785237394682,
     "unresolvable": 64,
     "brier": 0.225,
     "hit_rate": 0.61,
@@ -13,7 +13,7 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 315,
+            "resolved": 317,
             "brier": 0.22,
             "hit_rate": 0.62
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 217,
+            "n": 218,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 129,
+            "n": 130,
             "avg_predicted": 0.68,
             "observed": 0.12
         },
@@ -52,27 +52,27 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 686,
-            "brier": 0.263
+            "resolved": 688,
+            "brier": 0.264
         },
         "Economist": {
-            "resolved": 684,
+            "resolved": 686,
             "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 686,
+            "resolved": 688,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 685,
+            "resolved": 687,
             "brier": 0.172
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2386,
+            "resolved": 2394,
             "brier": 0.271,
-            "hit_rate": 0.549,
+            "hit_rate": 0.548,
             "rock_hit_rate": 0.925
         },
         "qwen3:14b": {
@@ -83,6 +83,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The US will experience a heat wave that leads to widespread power outages within the next week",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal was captured showing a US heat wave causing widespread power outages during the window, and an event of that magnitude would almost certainly have been reflected in the signals.",
+            "resolved_ms": 1785233502228,
+            "ts": 1784627064961
+        },
+        {
+            "statement": "The VIX fear gauge will exceed 20 by the end of the week",
+            "horizon": "week",
+            "probability": 0.65,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only VIX reading available shows 18.86, below the stated 20 threshold, and no signal in the window shows VIX exceeding 20.",
+            "resolved_ms": 1785233495875,
+            "ts": 1784627064961
+        },
         {
             "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week.",
             "horizon": "week",
@@ -192,41 +214,19 @@
             "evidence": "No captured signal reports any magnitude 6.0 earthquake during the window, and an event of that size would have been captured, so the forecast is not verified.",
             "resolved_ms": 1785212050519,
             "ts": 1784604958054
-        },
-        {
-            "statement": "The price of Brent Crude will drop by 5% within the next week",
-            "horizon": "week",
-            "probability": 0.48,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Brent price signal shows Brent at $86.87/bbl with just a -1.69% move, far short of a 5% weekly decline, and no signal indicates such a drop occurred before the window closed.",
-            "resolved_ms": 1785210208644,
-            "ts": 1784604958054
-        },
-        {
-            "statement": "A significant earthquake will occur within the next week in a region with high population density.",
-            "horizon": "week",
-            "probability": 0.11,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports any significant earthquake in a densely populated region during the 2026-07-21 to 2026-07-28 window, so the forecast is unsupported.",
-            "resolved_ms": 1785207215765,
-            "ts": 1784601275878
         }
     ],
-    "next_judge_ms": 1785233467305,
+    "next_judge_ms": 1785237102240,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 686,
-        "base_rate": 0.0685,
-        "brier_raw": 0.2252,
-        "brier_base_rate": 0.0638,
+        "resolved_n": 688,
+        "base_rate": 0.0683,
+        "brier_raw": 0.2253,
+        "brier_base_rate": 0.0636,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
