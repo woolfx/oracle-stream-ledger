@@ -1,8 +1,8 @@
 {
     "resolved": 678,
-    "open": 1881,
-    "due": 100,
-    "next_due_ms": 1785215300904,
+    "open": 1901,
+    "due": 102,
+    "next_due_ms": 1785218964673,
     "unresolvable": 64,
     "brier": 0.225,
     "hit_rate": 0.61,
@@ -71,11 +71,15 @@
     "models": {
         "llama3.1": {
             "resolved": 2354,
-            "brier": 0.27
+            "brier": 0.27,
+            "hit_rate": 0.549,
+            "rock_hit_rate": 0.924
         },
         "qwen3:14b": {
             "resolved": 355,
-            "brier": 0.152
+            "brier": 0.152,
+            "hit_rate": 0.789,
+            "rock_hit_rate": 0.977
         }
     },
     "recent": [
@@ -212,7 +216,7 @@
             "ts": 1784573541538
         }
     ],
-    "next_judge_ms": 1785215653475,
+    "next_judge_ms": null,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
