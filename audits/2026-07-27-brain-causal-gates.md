@@ -34,9 +34,26 @@ Two patterns underneath, both named by the reviewer:
 The existing `_surfaces()` (one shared gate for `/brain` connections, `/watch`
 annotations, `picks`, and the oracle's LEARNED MARKET MEMORY prompt block) now
 composes the placebo test with a new `_mechanism_ok()`. `market_calls()` consults
-`_mechanism_ok()` too, so a card can never ship on a coupling the connections list
-refuses to show — the same principle as the 2026-07-19 ranking-alignment fix,
+`_mechanism_ok()` too — the same principle as the 2026-07-19 ranking-alignment fix,
 extended from *"is it drift?"* to *"is there a mechanism?"*.
+
+> **⚠ Correction, 2026-07-28.** As first published, the paragraph above continued
+> *"so a card can never ship on a coupling the connections list refuses to show"*.
+> **That was false when written.** Sharing `_mechanism_ok()` is only half the gate:
+> `market_calls()` also applies a direction-agnostic placebo check, and it compared
+> against `PLACEBO_VETO = 0.60` while the connections list marks a cell as drift at
+> `CONN_PLACEBO_MAX = 0.20`. The entire band `0.20 < p ≤ 0.60` therefore did exactly
+> what the sentence promised it could not. Measured on the live brain the day after:
+> **6 cells sat in that band and passed every other card filter**, so the ORACLE CALL
+> panel was broadcasting public *"N similar events → avg X%"* evidence chips for
+> couplings `/brain` will not list. The conclusion did not follow from the premise,
+> and it was mirrored into the public ledger repo in that form for a day.
+> Fixed the same day: the alignment check now tests `CONN_PLACEBO_MAX`, so the two
+> surfaces agree by construction. The *direction-specific* veto beside it keeps its
+> looser `PLACEBO_VETO` — that looseness is deliberate and documented; this one was
+> not. Logged as INC-021, with the shared-gate property now pinned by a test that
+> runs `market_calls()` itself (`tests/test_brain_wiring.py`) rather than testing the
+> gate function in isolation, which is why the original error survived review.
 
 | gate | rule | constant |
 |---|---|---|
@@ -91,6 +108,22 @@ block is now **empty** — every energy-theme coupling it had was junk. That is 
 true state of the evidence, and it matches the reviewer's blunt verdict that the
 learned layer has shown no standalone skill yet (4 hit / 4 miss vs a 0.48
 drift null).
+
+> **⚠ Correction, 2026-07-28.** That consequence was understated, and the scoping
+> to *"energy topics"* was wrong. The block went empty for **every** topic, on any
+> real world brief — i.e. the brain's only feedback path into forecasting was dead,
+> not merely quiet on energy. The cause was not the gates themselves but an
+> interaction this audit did not check: `market_memory()` selected which couplings
+> to show via `themes_for_text(brief, cap=6)`, and that function does **no salience
+> ranking** — it returns matching rules in declaration order. On a planet-wide brief
+> nearly every rule matches, so `cap=6` meant "the first six rules as written", four
+> of them permanently occupied by pinned brief sections. Retiring
+> `shipping & oil chokepoints → NG=F` removed the last surfaced cell inside that
+> window; the three survivors this audit expected to keep speaking rank 7th, 11th and
+> 13th and were structurally unreachable. Verified 2026-07-28 on the live brief:
+> `market_memory()` returned **0 characters**, and 332 characters once the window was
+> widened. Fixed as part of INC-021 (`cap=len(RULES)`); the prompt stays bounded by
+> `CONFIG.brain_prompt_lines`, which is the knob that was always supposed to bound it.
 
 ## Not done — deliberately left to Harvey
 

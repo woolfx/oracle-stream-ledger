@@ -1,8 +1,8 @@
 {
-    "resolved": 706,
-    "open": 2257,
+    "resolved": 709,
+    "open": 2278,
     "due": 112,
-    "next_due_ms": 1785272871011,
+    "next_due_ms": 1785276549565,
     "unresolvable": 66,
     "brier": 0.226,
     "hit_rate": 0.61,
@@ -13,7 +13,7 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 337,
+            "resolved": 340,
             "brier": 0.222,
             "hit_rate": 0.62
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 223,
+            "n": 225,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -45,35 +45,35 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 31,
+            "n": 32,
             "avg_predicted": 0.83,
-            "observed": 0.13
+            "observed": 0.12
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 706,
+            "resolved": 709,
             "brier": 0.265
         },
         "Economist": {
-            "resolved": 704,
+            "resolved": 707,
             "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 706,
-            "brier": 0.301
+            "resolved": 709,
+            "brier": 0.3
         },
         "Skeptic": {
-            "resolved": 705,
+            "resolved": 708,
             "brier": 0.173
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2466,
+            "resolved": 2478,
             "brier": 0.271,
-            "hit_rate": 0.55,
-            "rock_hit_rate": 0.927
+            "hit_rate": 0.551,
+            "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -83,6 +83,39 @@
         }
     },
     "recent": [
+        {
+            "statement": "A tropical cyclone will make landfall in Florida within the next week",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "Florida",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows a tropical cyclone landfall in Florida during the window; Bertha, the only Atlantic system near the U.S., is located at 30.0,-96.0 (Texas) with zero population under Category 1 winds, and S8's headline only says it was 'closing in on Gulf Coast.'",
+            "resolved_ms": 1785276111934,
+            "ts": 1784669904796
+        },
+        {
+            "statement": "The EIA weekly petroleum status report will cause a 0.5% increase in CL=F on 2026-07-22",
+            "horizon": "week",
+            "probability": 0.8,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The signals only confirm the EIA weekly petroleum status report for the week ending July 17, 2026 was published around July 22 and that future reports are scheduled; none shows any 0.5% increase in CL=F on 2026-07-22.",
+            "resolved_ms": 1785276064125,
+            "ts": 1784669904796
+        },
+        {
+            "statement": "The Strait of Hormuz will see a significant increase in ship transits within the next week.",
+            "horizon": "week",
+            "probability": 0.27,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "As of the window's close, Strait of Hormuz transits stood at 10 per day \u2014 52% below the 30-day average of 21 \u2014 showing no increase, corroborated by the 24 July headline that Hormuz transits remain low.",
+            "resolved_ms": 1785276013209,
+            "ts": 1784668071011
+        },
         {
             "statement": "The EIA weekly natural gas storage report on July 23 will show a decrease in stockpiles of at least 50 billion cubic feet within the next week",
             "horizon": "week",
@@ -181,52 +214,19 @@
             "evidence": "At window close WTI stood at $78.19/bbl (-5.35%), well below the $86.00 threshold, and no signal shows any rise above $86 during the week.",
             "resolved_ms": 1785256419529,
             "ts": 1784647304081
-        },
-        {
-            "statement": "The VIX will rise to at least 20 within the next week",
-            "horizon": "week",
-            "probability": 0.42,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal in the record shows the VIX reaching 20 or above during the July 21\u201328, 2026 window, and the window has closed.",
-            "resolved_ms": 1785256385230,
-            "ts": 1784641791387
-        },
-        {
-            "statement": "NG=F will drop by at least 1.5% within the next week",
-            "horizon": "week",
-            "probability": 0.49,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal concerning NG=F price movement was captured during the window, so there is no evidence the forecast 1.5% drop occurred.",
-            "resolved_ms": 1785256283105,
-            "ts": 1784603108458
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued in the Midwest region within the next week",
-            "horizon": "week",
-            "probability": 0.69,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only in-window signal (S4, July 25) is a severe storm threat/outlook headline for the Midwest, not evidence that a severe thunderstorm warning was actually issued, and S1\u2013S2 warnings predate the July 21\u201328 window.",
-            "resolved_ms": 1785256243650,
-            "ts": 1784592062368
         }
     ],
-    "next_judge_ms": 1785275837409,
+    "next_judge_ms": 1785279711946,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 706,
-        "base_rate": 0.0666,
-        "brier_raw": 0.2257,
-        "brier_base_rate": 0.0621,
+        "resolved_n": 709,
+        "base_rate": 0.0663,
+        "brier_raw": 0.2258,
+        "brier_base_rate": 0.0619,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
