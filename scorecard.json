@@ -1,8 +1,8 @@
 {
-    "resolved": 675,
-    "open": 1834,
-    "due": 97,
-    "next_due_ms": 1785207908458,
+    "resolved": 676,
+    "open": 1861,
+    "due": 99,
+    "next_due_ms": 1785211613153,
     "unresolvable": 64,
     "brier": 0.225,
     "hit_rate": 0.61,
@@ -13,7 +13,7 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 304,
+            "resolved": 305,
             "brier": 0.22,
             "hit_rate": 0.61
         }
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 217,
+            "n": 218,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
@@ -52,25 +52,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 675,
+            "resolved": 676,
             "brier": 0.265
         },
         "Economist": {
-            "resolved": 673,
+            "resolved": 674,
             "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 675,
+            "resolved": 676,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 674,
+            "resolved": 675,
             "brier": 0.171
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2342,
+            "resolved": 2346,
             "brier": 0.271
         },
         "qwen3:14b": {
@@ -79,6 +79,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The price of Brent Crude will drop by 5% within the next week",
+            "horizon": "week",
+            "probability": 0.48,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Brent price signal shows Brent at $86.87/bbl with just a -1.69% move, far short of a 5% weekly decline, and no signal indicates such a drop occurred before the window closed.",
+            "resolved_ms": 1785210208644,
+            "ts": 1784604958054
+        },
         {
             "statement": "A significant earthquake will occur within the next week in a region with high population density.",
             "horizon": "week",
@@ -199,30 +210,19 @@
             "evidence": "Strait of Hormuz shows 15 daily transits, 30% below its 30-day average, the opposite of the forecasted 20%+ increase.",
             "resolved_ms": 1785176695590,
             "ts": 1784571666234
-        },
-        {
-            "statement": "A major earthquake will strike the coast of Canada within the next week",
-            "horizon": "week",
-            "probability": 0.16,
-            "location": "Canada",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports any major earthquake striking the coast of Canada during the window, and such an event would certainly have been recorded.",
-            "resolved_ms": 1785176693860,
-            "ts": 1784569809866
         }
     ],
-    "next_judge_ms": 1785210815777,
+    "next_judge_ms": 1785213808655,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 675,
-        "base_rate": 0.0696,
+        "resolved_n": 676,
+        "base_rate": 0.0695,
         "brier_raw": 0.2255,
-        "brier_base_rate": 0.0648,
+        "brier_base_rate": 0.0647,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
