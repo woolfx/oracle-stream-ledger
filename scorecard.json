@@ -1,10 +1,10 @@
 {
-    "resolved": 693,
-    "open": 2047,
+    "resolved": 695,
+    "open": 2071,
     "due": 106,
-    "next_due_ms": 1785244752859,
+    "next_due_ms": 1785248428627,
     "unresolvable": 64,
-    "brier": 0.226,
+    "brier": 0.225,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
@@ -13,7 +13,7 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 322,
+            "resolved": 324,
             "brier": 0.221,
             "hit_rate": 0.62
         }
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 219,
+            "n": 220,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 225,
+            "n": 226,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
@@ -52,26 +52,26 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 693,
+            "resolved": 695,
             "brier": 0.264
         },
         "Economist": {
-            "resolved": 691,
-            "brier": 0.284
+            "resolved": 693,
+            "brier": 0.283
         },
         "Naturalist": {
-            "resolved": 693,
-            "brier": 0.302
+            "resolved": 695,
+            "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 692,
+            "resolved": 694,
             "brier": 0.172
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2414,
-            "brier": 0.271,
+            "resolved": 2422,
+            "brier": 0.27,
             "hit_rate": 0.549,
             "rock_hit_rate": 0.926
         },
@@ -83,6 +83,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "Nasdaq 100 futures will close higher than the current price by more than 0.5% in the next week",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Nasdaq 100 futures signal at window close shows the contract at 27982 down 0.74% on the day, with no signal evidencing a gain of more than 0.5% over the forecast week.",
+            "resolved_ms": 1785244638832,
+            "ts": 1784638109563
+        },
+        {
+            "statement": "The price of Brent Crude will increase by at least $1 within the next week",
+            "horizon": "week",
+            "probability": 0.53,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Brent price signal at window close shows Brent at 86.7 $/bbl falling 1.88%, with no signal showing a $1 or greater increase over the forecast week.",
+            "resolved_ms": 1785244632390,
+            "ts": 1784636261753
+        },
         {
             "statement": "The Strait of Hormuz will experience an increase in ship transits by more than 20% in the next week",
             "horizon": "week",
@@ -192,41 +214,19 @@
             "evidence": "All signals concern Indo-Pacific chokepoint transit volumes and none mention any US Gulf Coast heatwave-related shipping disruption, which an event of that magnitude would have registered.",
             "resolved_ms": 1785226240235,
             "ts": 1784617857500
-        },
-        {
-            "statement": "The NG=F natural gas price will rise by at least 1% on July 23",
-            "horizon": "week",
-            "probability": 0.73,
-            "location": "",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports natural gas (NG=F) prices at all, let alone a \u22651% rise on July 23, so the forecast is unsupported after the window closed.",
-            "resolved_ms": 1785222607603,
-            "ts": 1784616003594
-        },
-        {
-            "statement": "At least one ship will transit through the Strait of Hormuz at a rate 50% above its 30-day average on July 25",
-            "horizon": "week",
-            "probability": 0.52,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% BELOW its 30-day average of 21, with no signal indicating any surge to 50% above average during the window.",
-            "resolved_ms": 1785222604676,
-            "ts": 1784616003594
         }
     ],
-    "next_judge_ms": 1785244362610,
+    "next_judge_ms": 1785248238844,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 693,
-        "base_rate": 0.0678,
-        "brier_raw": 0.2256,
-        "brier_base_rate": 0.0632,
+        "resolved_n": 695,
+        "base_rate": 0.0676,
+        "brier_raw": 0.2255,
+        "brier_base_rate": 0.0631,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
