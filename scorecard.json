@@ -1,15 +1,15 @@
 {
-    "resolved": 683,
-    "open": 1796,
-    "due": 97,
-    "unresolvable": 51,
-    "brier": 0.231,
-    "hit_rate": 0.6,
+    "resolved": 670,
+    "open": 1803,
+    "due": 99,
+    "unresolvable": 64,
+    "brier": 0.226,
+    "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 384,
-            "brier": 0.238,
-            "hit_rate": 0.59
+            "resolved": 371,
+            "brier": 0.23,
+            "hit_rate": 0.61
         },
         "week": {
             "resolved": 299,
@@ -26,51 +26,51 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 213,
+            "n": 212,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 218,
+            "n": 215,
             "avg_predicted": 0.5,
-            "observed": 0.06
+            "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 132,
+            "n": 128,
             "avg_predicted": 0.68,
             "observed": 0.12
         },
         {
             "bin": "80\u2013100%",
-            "n": 35,
+            "n": 30,
             "avg_predicted": 0.83,
-            "observed": 0.11
+            "observed": 0.13
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 683,
-            "brier": 0.271
+            "resolved": 670,
+            "brier": 0.265
         },
         "Economist": {
-            "resolved": 681,
-            "brier": 0.289
+            "resolved": 668,
+            "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 683,
-            "brier": 0.304
+            "resolved": 670,
+            "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 682,
-            "brier": 0.177
+            "resolved": 669,
+            "brier": 0.171
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2374,
-            "brier": 0.277
+            "resolved": 2322,
+            "brier": 0.272
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -217,10 +217,10 @@
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 683,
-        "base_rate": 0.0688,
-        "brier_raw": 0.2309,
-        "brier_base_rate": 0.0641,
+        "resolved_n": 670,
+        "base_rate": 0.0701,
+        "brier_raw": 0.2262,
+        "brier_base_rate": 0.0652,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
