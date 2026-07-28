@@ -1,10 +1,10 @@
 {
-    "resolved": 688,
-    "open": 2004,
-    "due": 107,
-    "next_due_ms": 1785237394682,
+    "resolved": 692,
+    "open": 2024,
+    "due": 104,
+    "next_due_ms": 1785241061753,
     "unresolvable": 64,
-    "brier": 0.225,
+    "brier": 0.226,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
@@ -13,8 +13,8 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 317,
-            "brier": 0.22,
+            "resolved": 321,
+            "brier": 0.222,
             "hit_rate": 0.62
         }
     },
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 218,
+            "n": 219,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 223,
+            "n": 225,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
@@ -45,35 +45,35 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 30,
+            "n": 31,
             "avg_predicted": 0.83,
             "observed": 0.13
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 688,
+            "resolved": 692,
             "brier": 0.264
         },
         "Economist": {
-            "resolved": 686,
+            "resolved": 690,
             "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 688,
+            "resolved": 692,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 687,
-            "brier": 0.172
+            "resolved": 691,
+            "brier": 0.173
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2394,
+            "resolved": 2410,
             "brier": 0.271,
             "hit_rate": 0.548,
-            "rock_hit_rate": 0.925
+            "rock_hit_rate": 0.926
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -83,6 +83,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "Natural gas prices will drop by -1.5% due to increased supply after EIA weekly natural gas storage report on 2026-07-23",
+            "horizon": "week",
+            "probability": 0.49,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No archived signal from the 2026-07-21 to 2026-07-28 window documents a -1.5% Henry Hub decline tied to the July 23 EIA storage report; the only gas price signal (S11) is a current snapshot showing -0.94% and references the next storage report on 2026-07-30.",
+            "resolved_ms": 1785237140789,
+            "ts": 1784630749338
+        },
+        {
+            "statement": "EIA weekly petroleum status report will move CL=F by +1.2% on 2026-07-22",
+            "horizon": "week",
+            "probability": 0.8,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All signals merely announce upcoming EIA reports scheduled for 2026-07-29/30 and none show any 2026-07-22 report or a +1.2% move in CL=F, so the forecast is unsupported after the window closed.",
+            "resolved_ms": 1785237131915,
+            "ts": 1784630749338
+        },
+        {
+            "statement": "The Strait of Hormuz will see a significant increase in ship transits within the next week.",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, indicating a decline rather than a significant increase.",
+            "resolved_ms": 1785237127568,
+            "ts": 1784628904512
+        },
+        {
+            "statement": "Severe thunderstorms will affect the Midwest region within the next week",
+            "horizon": "week",
+            "probability": 0.57,
+            "location": "Midwest US",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No archived signal documents any severe thunderstorm event in the Midwest during the 2026-07-20 to 2026-07-27 window, so the occurrence cannot be established from admissible evidence.",
+            "resolved_ms": 1785237115470,
+            "ts": 1784588373794
+        },
         {
             "statement": "The US will experience a heat wave that leads to widespread power outages within the next week",
             "horizon": "week",
@@ -170,63 +214,19 @@
             "evidence": "No signal shows a \u22652% rise in CL=F on July 22; the only crude price signal (S9) shows WTI down 2.17% at the window's close, and no archived signal documents the specified single-day gain.",
             "resolved_ms": 1785222600115,
             "ts": 1784616003594
-        },
-        {
-            "statement": "The US crude oil price drops by 3% within the next week",
-            "horizon": "week",
-            "probability": 0.41,
-            "location": "Taiwan Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports US crude (WTI) prices at all; the only oil price signal, Brent at 86.21 $/bbl (-2.43%), is a different benchmark and falls short of the stated 3% decline.",
-            "resolved_ms": 1785222596980,
-            "ts": 1784614164673
-        },
-        {
-            "statement": "The Strait of Hormuz will see increased ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.47,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, indicating decreased rather than increased transits.",
-            "resolved_ms": 1785218795388,
-            "ts": 1784612331718
-        },
-        {
-            "statement": "The Strait of Hormuz will see an increase in ship transits by more than 30% above its 30-day average within the next week",
-            "horizon": "week",
-            "probability": 0.23,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, far from a 30%+ increase.",
-            "resolved_ms": 1785212053463,
-            "ts": 1784606813153
-        },
-        {
-            "statement": "A magnitude 6.0 earthquake will occur within the next week",
-            "horizon": "week",
-            "probability": 0.38,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports any magnitude 6.0 earthquake during the window, and an event of that size would have been captured, so the forecast is not verified.",
-            "resolved_ms": 1785212050519,
-            "ts": 1784604958054
         }
     ],
-    "next_judge_ms": 1785237102240,
+    "next_judge_ms": 1785240740803,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 688,
-        "base_rate": 0.0683,
-        "brier_raw": 0.2253,
-        "brier_base_rate": 0.0636,
+        "resolved_n": 692,
+        "base_rate": 0.0679,
+        "brier_raw": 0.2259,
+        "brier_base_rate": 0.0633,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
