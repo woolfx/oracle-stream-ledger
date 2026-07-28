@@ -43,20 +43,34 @@ is the defect class, not the delta.
 
 ## How far it goes — stated honestly
 
-A scan of resolved-correct records looked for evidence text stating an absolute
-event time that could be compared against the forecast's publication time:
+Retrodiction can only inflate a verdict that claims the event HAPPENED, so the scope
+here is records resolved `yes` (`outcome == 1.0`). A signal cited by a `no` cannot
+manufacture a false hit.
 
-- 100 resolved-correct records scanned
-- **7** state an absolute, unambiguously parseable timestamp
-- **2** of those 7 predate their forecast — the two voided above
+Two scans, reported separately because they answer different questions.
 
-**7 of 100 is far too small a sample to infer a rate**, and it is not a random one:
-GDACS lines carry explicit timestamps, while NWS product lines and market snapshots
-— the bulk of the evidence pool — state no absolute time and are therefore
-unmeasurable by this method. **2 is a floor, not an estimate.** The true count is
-unknown and this audit does not claim otherwise. Anyone reading the published hit
-rate should treat it as carrying an unquantified retrodiction component, bounded
-below by 2 and above by nothing established here.
+**How many ever occurred.** Across every `outcome == 1.0` resolution record ever
+written — 101, including ones later superseded by revisions — 7 state an absolute,
+unambiguously parseable event time and **2 of those 7 predate their forecast**: the two
+voided above.
+
+**What remains in the published rate.** After the void, **46** records currently count
+as correct. Of those, **3** state a parseable absolute timestamp and **0** predate their
+forecast.
+
+So the established residual is **zero, not two** — the two known cases were removed from
+the rate by the void, not left in it. The earlier draft of this audit said the published
+hit rate carried a component "bounded below by 2"; that conflated a floor on
+retrodictions that ever *occurred* with a floor on what *survives*, and is corrected
+here.
+
+What that zero is worth is the real caveat: **3 of 46 is far too small a sample to
+clear the rate**, and it is not a random 3. GDACS lines carry explicit event times;
+NWS product lines and market snapshots — the bulk of the evidence pool — state no
+absolute time at all and are simply unmeasurable by this method. So the honest reading
+is an unquantified retrodiction component with an established floor of 0 and **no upper
+bound established here**. The method can prove specific cases; it cannot certify their
+absence.
 
 ## Fix
 

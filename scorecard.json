@@ -1,20 +1,20 @@
 {
-    "resolved": 696,
-    "open": 2109,
-    "due": 110,
-    "next_due_ms": 1785255794000,
-    "unresolvable": 64,
+    "resolved": 700,
+    "open": 2164,
+    "due": 106,
+    "next_due_ms": 1785259470319,
+    "unresolvable": 66,
     "brier": 0.225,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 371,
-            "brier": 0.23,
+            "resolved": 369,
+            "brier": 0.229,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 325,
-            "brier": 0.22,
+            "resolved": 331,
+            "brier": 0.221,
             "hit_rate": 0.62
         }
     },
@@ -33,9 +33,9 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 226,
+            "n": 230,
             "avg_predicted": 0.5,
-            "observed": 0.06
+            "observed": 0.07
         },
         {
             "bin": "60\u201380%",
@@ -52,28 +52,28 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 696,
+            "resolved": 700,
             "brier": 0.264
         },
         "Economist": {
-            "resolved": 694,
-            "brier": 0.283
+            "resolved": 698,
+            "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 696,
+            "resolved": 700,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 695,
+            "resolved": 699,
             "brier": 0.172
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2426,
+            "resolved": 2442,
             "brier": 0.27,
-            "hit_rate": 0.549,
-            "rock_hit_rate": 0.926
+            "hit_rate": 0.55,
+            "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -83,6 +83,72 @@
         }
     },
     "recent": [
+        {
+            "statement": "Gold prices will reach $4100 by the end of next week",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows gold reaching $4,100 during the window, and the only dated gold headline (S16, published within the period) states the price fell rather than hitting a new high.",
+            "resolved_ms": 1785256501403,
+            "ts": 1784649150125
+        },
+        {
+            "statement": "The Strait of Hormuz will experience reduced ship traffic within the next week due to increased tensions between Iran and the US.",
+            "horizon": "week",
+            "probability": 0.52,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S2 shows Strait of Hormuz transit calls at 10 per day as of 2026-07-23, 52% below the 30-day average of 21, confirming sharply reduced ship traffic within the forecast window amid the renewed U.S.-Iran conflict noted in S5.",
+            "resolved_ms": 1785256460900,
+            "ts": 1784647304081
+        },
+        {
+            "statement": "WTI Crude Oil will rise above $86.00 within the next week.",
+            "horizon": "week",
+            "probability": 0.59,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "At window close WTI stood at $78.19/bbl (-5.35%), well below the $86.00 threshold, and no signal shows any rise above $86 during the week.",
+            "resolved_ms": 1785256419529,
+            "ts": 1784647304081
+        },
+        {
+            "statement": "The VIX will rise to at least 20 within the next week",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal in the record shows the VIX reaching 20 or above during the July 21\u201328, 2026 window, and the window has closed.",
+            "resolved_ms": 1785256385230,
+            "ts": 1784641791387
+        },
+        {
+            "statement": "NG=F will drop by at least 1.5% within the next week",
+            "horizon": "week",
+            "probability": 0.49,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal concerning NG=F price movement was captured during the window, so there is no evidence the forecast 1.5% drop occurred.",
+            "resolved_ms": 1785256283105,
+            "ts": 1784603108458
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued in the Midwest region within the next week",
+            "horizon": "week",
+            "probability": 0.69,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only in-window signal (S4, July 25) is a severe storm threat/outlook headline for the Midwest, not evidence that a severe thunderstorm warning was actually issued, and S1\u2013S2 warnings predate the July 21\u201328 window.",
+            "resolved_ms": 1785256243650,
+            "ts": 1784592062368
+        },
         {
             "statement": "NG=F will fall by -0.8% over the next week due to sustained shipping disruptions in the Strait of Hormuz",
             "horizon": "week",
@@ -148,85 +214,19 @@
             "evidence": "All signals merely announce upcoming EIA reports scheduled for 2026-07-29/30 and none show any 2026-07-22 report or a +1.2% move in CL=F, so the forecast is unsupported after the window closed.",
             "resolved_ms": 1785237131915,
             "ts": 1784630749338
-        },
-        {
-            "statement": "The Strait of Hormuz will see a significant increase in ship transits within the next week.",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, indicating a decline rather than a significant increase.",
-            "resolved_ms": 1785237127568,
-            "ts": 1784628904512
-        },
-        {
-            "statement": "Severe thunderstorms will affect the Midwest region within the next week",
-            "horizon": "week",
-            "probability": 0.57,
-            "location": "Midwest US",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No archived signal documents any severe thunderstorm event in the Midwest during the 2026-07-20 to 2026-07-27 window, so the occurrence cannot be established from admissible evidence.",
-            "resolved_ms": 1785237115470,
-            "ts": 1784588373794
-        },
-        {
-            "statement": "The US will experience a heat wave that leads to widespread power outages within the next week",
-            "horizon": "week",
-            "probability": 0.25,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal was captured showing a US heat wave causing widespread power outages during the window, and an event of that magnitude would almost certainly have been reflected in the signals.",
-            "resolved_ms": 1785233502228,
-            "ts": 1784627064961
-        },
-        {
-            "statement": "The VIX fear gauge will exceed 20 by the end of the week",
-            "horizon": "week",
-            "probability": 0.65,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only VIX reading available shows 18.86, below the stated 20 threshold, and no signal in the window shows VIX exceeding 20.",
-            "resolved_ms": 1785233495875,
-            "ts": 1784627064961
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week.",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, indicating a decline rather than a significant increase.",
-            "resolved_ms": 1785229867289,
-            "ts": 1784623395810
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a ship transit count 30% above its 30-day average in the next week",
-            "horizon": "week",
-            "probability": 0.47,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, contradicting the forecast of 30% above average.",
-            "resolved_ms": 1785226244807,
-            "ts": 1784619715098
         }
     ],
-    "next_judge_ms": 1785255494790,
+    "next_judge_ms": 1785260101414,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 696,
-        "base_rate": 0.0675,
-        "brier_raw": 0.2253,
-        "brier_base_rate": 0.063,
+        "resolved_n": 700,
+        "base_rate": 0.0657,
+        "brier_raw": 0.2252,
+        "brier_base_rate": 0.0614,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
