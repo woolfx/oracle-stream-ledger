@@ -58,8 +58,12 @@ feed line, not less: the link is right there.
 
 ```
 [web] July 2025 Fed Meeting: Rates Hold Steady Once More … | Chase
-      (chase.com, July 31, 2025) https://www.chase.com/personal/investments/…
+      (chase.com, 2025-07-31 00:00) https://www.chase.com/personal/investments/…
 ```
+
+The date is normalised to an absolute stamp rather than echoed as the API
+returns it — see the post-deploy finding below for why that turned out to be
+load-bearing rather than cosmetic.
 
 ## Three decisions worth recording
 
@@ -91,10 +95,39 @@ exact shape that used to auto-grade "no":
 The first would have been a false MISS on the public ledger under the old judge.
 The second confirms search is not a rubber stamp.
 
-`Pythia/tests/test_websearch.py` — 22 tests, mutation-verified: defanging the
+`Pythia/tests/test_websearch.py` — 28 tests, mutation-verified: defanging the
 title sanitiser, the `page_age` handling, the URL scheme check, the error-block
 logging, the evidence-pool cap widening, and the `gather()` call site each turn
 the suite red.
+
+## Post-deploy finding: `page_age` was invisible to the retrodiction guard
+
+Found the same day by reading the first live `[web]` citations rather than the
+tests. Both carried `page_age: "2 weeks ago"` — a **relative** string.
+
+`relevance.signal_event_ms` only reads dates carrying a time component, so all
+three spellings the API returns (`"None"`, `"July 30, 2025"`, `"2 weeks ago"`)
+parsed to `None`. That meant every `[web]` signal skipped the INC-020
+retrodiction guard in `filter_signals(made_ms=…)`: **the evidence class most
+likely to predate a forecast was the one class exempt from the guard built to
+catch exactly that.** A page published before a forecast was written could have
+confirmed it.
+
+Fixed in `websearch._published()`, which now emits an absolute
+`YYYY-MM-DD HH:MM` stamp — putting web results under the guard and giving the
+judge a date it can anchor against the window instead of a floating "2 weeks
+ago". Relative ages resolve to `now − N units` at 00:00 UTC; that is approximate
+by nature (the API's own value is rounded) and only ambiguous when the
+forecast's age and the page's age fall within one unit of each other.
+
+Measured against the live API after the fix: 2 of 6 results carried a readable
+`page_age` and are now guard-visible, against 0 of 6 before. The API returns no
+age for the rest; those stay admissible **on purpose**, since treating
+unparseable as stale would silently discard most search evidence.
+
+The general lesson is the one this project keeps relearning: the tests were
+green because they asserted the shape I designed, not the shape the API returns.
+The defect was only visible in production output.
 
 ## Honest limits
 

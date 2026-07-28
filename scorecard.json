@@ -1,10 +1,10 @@
 {
-    "resolved": 704,
-    "open": 2222,
-    "due": 110,
-    "next_due_ms": 1785269190853,
+    "resolved": 706,
+    "open": 2257,
+    "due": 112,
+    "next_due_ms": 1785272871011,
     "unresolvable": 66,
-    "brier": 0.225,
+    "brier": 0.226,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
@@ -13,7 +13,7 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 335,
+            "resolved": 337,
             "brier": 0.222,
             "hit_rate": 0.62
         }
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 222,
+            "n": 223,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 232,
+            "n": 233,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
@@ -52,28 +52,28 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 704,
-            "brier": 0.264
+            "resolved": 706,
+            "brier": 0.265
         },
         "Economist": {
-            "resolved": 702,
+            "resolved": 704,
             "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 704,
+            "resolved": 706,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 703,
-            "brier": 0.172
+            "resolved": 705,
+            "brier": 0.173
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2458,
-            "brier": 0.27,
+            "resolved": 2466,
+            "brier": 0.271,
             "hit_rate": 0.55,
-            "rock_hit_rate": 0.929
+            "rock_hit_rate": 0.927
         },
         "qwen3:14b": {
             "resolved": 355,
@@ -83,6 +83,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The EIA weekly natural gas storage report on July 23 will show a decrease in stockpiles of at least 50 billion cubic feet within the next week",
+            "horizon": "week",
+            "probability": 0.4,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The July 23, 2026 EIA weekly natural gas storage report showed a 32 Bcf increase in stockpiles, not a decrease of at least 50 Bcf.",
+            "resolved_ms": 1785272237397,
+            "ts": 1784664390853
+        },
+        {
+            "statement": "There will be a severe thunderstorm warning issued for the Midwest region in the next week",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "None",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S6, published 2026-07-27 within the window, states Severe Thunderstorm Warnings were issued/continuing for Waukesha and Jefferson counties in Southeast Wisconsin, a Midwest location.",
+            "resolved_ms": 1785272202470,
+            "ts": 1784663864398
+        },
         {
             "statement": "Nasdaq 100 futures will increase by at least 1.5% within the next week",
             "horizon": "week",
@@ -192,41 +214,19 @@
             "evidence": "The only in-window signal (S4, July 25) is a severe storm threat/outlook headline for the Midwest, not evidence that a severe thunderstorm warning was actually issued, and S1\u2013S2 warnings predate the July 21\u201328 window.",
             "resolved_ms": 1785256243650,
             "ts": 1784592062368
-        },
-        {
-            "statement": "NG=F will fall by -0.8% over the next week due to sustained shipping disruptions in the Strait of Hormuz",
-            "horizon": "week",
-            "probability": 0.36,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports NG=F price movement; only ship transit counts are given, so the claimed -0.8% weekly decline in natural gas futures is unsupported despite S4 showing reduced Hormuz transits.",
-            "resolved_ms": 1785251894779,
-            "ts": 1784645469237
-        },
-        {
-            "statement": "Nasdaq 100 futures will close higher than the current price by more than 0.5% in the next week",
-            "horizon": "week",
-            "probability": 0.3,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Nasdaq 100 futures signal at window close shows the contract at 27982 down 0.74% on the day, with no signal evidencing a gain of more than 0.5% over the forecast week.",
-            "resolved_ms": 1785244638832,
-            "ts": 1784638109563
         }
     ],
-    "next_judge_ms": 1785271816865,
+    "next_judge_ms": 1785275837409,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 704,
-        "base_rate": 0.0653,
-        "brier_raw": 0.2254,
-        "brier_base_rate": 0.0611,
+        "resolved_n": 706,
+        "base_rate": 0.0666,
+        "brier_raw": 0.2257,
+        "brier_base_rate": 0.0621,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
