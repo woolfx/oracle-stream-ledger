@@ -1,8 +1,8 @@
 {
-    "resolved": 685,
-    "open": 1970,
-    "due": 104,
-    "next_due_ms": 1785230025873,
+    "resolved": 686,
+    "open": 1994,
+    "due": 106,
+    "next_due_ms": 1785233704512,
     "unresolvable": 64,
     "brier": 0.225,
     "hit_rate": 0.61,
@@ -13,7 +13,7 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 314,
+            "resolved": 315,
             "brier": 0.22,
             "hit_rate": 0.62
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 216,
+            "n": 217,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -52,27 +52,27 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 685,
-            "brier": 0.264
+            "resolved": 686,
+            "brier": 0.263
         },
         "Economist": {
-            "resolved": 683,
+            "resolved": 684,
             "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 685,
+            "resolved": 686,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 684,
+            "resolved": 685,
             "brier": 0.172
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2382,
+            "resolved": 2386,
             "brier": 0.271,
-            "hit_rate": 0.548,
+            "hit_rate": 0.549,
             "rock_hit_rate": 0.925
         },
         "qwen3:14b": {
@@ -83,6 +83,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week.",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, indicating a decline rather than a significant increase.",
+            "resolved_ms": 1785229867289,
+            "ts": 1784623395810
+        },
         {
             "statement": "The Strait of Hormuz will experience a ship transit count 30% above its 30-day average in the next week",
             "horizon": "week",
@@ -203,30 +214,19 @@
             "evidence": "No captured signal reports any significant earthquake in a densely populated region during the 2026-07-21 to 2026-07-28 window, so the forecast is unsupported.",
             "resolved_ms": 1785207215765,
             "ts": 1784601275878
-        },
-        {
-            "statement": "The Strait of Hormuz will experience an increase in ship transits by at least 20% above its 30-day average within the next week",
-            "horizon": "week",
-            "probability": 0.13,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, rather than at least 20% above it.",
-            "resolved_ms": 1785203603361,
-            "ts": 1784595748921
         }
     ],
-    "next_judge_ms": 1785229844819,
+    "next_judge_ms": 1785233467305,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 685,
-        "base_rate": 0.0686,
-        "brier_raw": 0.2254,
-        "brier_base_rate": 0.0639,
+        "resolved_n": 686,
+        "base_rate": 0.0685,
+        "brier_raw": 0.2252,
+        "brier_base_rate": 0.0638,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
