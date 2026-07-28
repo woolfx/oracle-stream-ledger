@@ -1,8 +1,8 @@
 {
-    "resolved": 692,
-    "open": 2024,
-    "due": 104,
-    "next_due_ms": 1785241061753,
+    "resolved": 693,
+    "open": 2047,
+    "due": 106,
+    "next_due_ms": 1785244752859,
     "unresolvable": 64,
     "brier": 0.226,
     "hit_rate": 0.61,
@@ -13,15 +13,15 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 321,
-            "brier": 0.222,
+            "resolved": 322,
+            "brier": 0.221,
             "hit_rate": 0.62
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 87,
+            "n": 88,
             "avg_predicted": 0.13,
             "observed": 0.05
         },
@@ -52,27 +52,27 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 692,
+            "resolved": 693,
             "brier": 0.264
         },
         "Economist": {
-            "resolved": 690,
+            "resolved": 691,
             "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 692,
+            "resolved": 693,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 691,
-            "brier": 0.173
+            "resolved": 692,
+            "brier": 0.172
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2410,
+            "resolved": 2414,
             "brier": 0.271,
-            "hit_rate": 0.548,
+            "hit_rate": 0.549,
             "rock_hit_rate": 0.926
         },
         "qwen3:14b": {
@@ -83,6 +83,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience an increase in ship transits by more than 20% in the next week",
+            "horizon": "week",
+            "probability": 0.19,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, contradicting any >20% increase in transits during the window.",
+            "resolved_ms": 1785240762597,
+            "ts": 1784632594682
+        },
         {
             "statement": "Natural gas prices will drop by -1.5% due to increased supply after EIA weekly natural gas storage report on 2026-07-23",
             "horizon": "week",
@@ -203,30 +214,19 @@
             "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% BELOW its 30-day average of 21, with no signal indicating any surge to 50% above average during the window.",
             "resolved_ms": 1785222604676,
             "ts": 1784616003594
-        },
-        {
-            "statement": "The CL=F crude oil price will rise by at least 2% on July 22",
-            "horizon": "week",
-            "probability": 0.49,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a \u22652% rise in CL=F on July 22; the only crude price signal (S9) shows WTI down 2.17% at the window's close, and no archived signal documents the specified single-day gain.",
-            "resolved_ms": 1785222600115,
-            "ts": 1784616003594
         }
     ],
-    "next_judge_ms": 1785240740803,
+    "next_judge_ms": 1785244362610,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 692,
-        "base_rate": 0.0679,
-        "brier_raw": 0.2259,
-        "brier_base_rate": 0.0633,
+        "resolved_n": 693,
+        "base_rate": 0.0678,
+        "brier_raw": 0.2256,
+        "brier_base_rate": 0.0632,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
