@@ -1,8 +1,8 @@
 {
-    "resolved": 695,
-    "open": 2098,
-    "due": 108,
-    "next_due_ms": 1785252104081,
+    "resolved": 696,
+    "open": 2109,
+    "due": 110,
+    "next_due_ms": 1785255794000,
     "unresolvable": 64,
     "brier": 0.225,
     "hit_rate": 0.61,
@@ -13,8 +13,8 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 324,
-            "brier": 0.221,
+            "resolved": 325,
+            "brier": 0.22,
             "hit_rate": 0.62
         }
     },
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 220,
+            "n": 221,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -52,25 +52,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 695,
+            "resolved": 696,
             "brier": 0.264
         },
         "Economist": {
-            "resolved": 693,
+            "resolved": 694,
             "brier": 0.283
         },
         "Naturalist": {
-            "resolved": 695,
+            "resolved": 696,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 694,
+            "resolved": 695,
             "brier": 0.172
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2422,
+            "resolved": 2426,
             "brier": 0.27,
             "hit_rate": 0.549,
             "rock_hit_rate": 0.926
@@ -83,6 +83,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "NG=F will fall by -0.8% over the next week due to sustained shipping disruptions in the Strait of Hormuz",
+            "horizon": "week",
+            "probability": 0.36,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports NG=F price movement; only ship transit counts are given, so the claimed -0.8% weekly decline in natural gas futures is unsupported despite S4 showing reduced Hormuz transits.",
+            "resolved_ms": 1785251894779,
+            "ts": 1784645469237
+        },
         {
             "statement": "Nasdaq 100 futures will close higher than the current price by more than 0.5% in the next week",
             "horizon": "week",
@@ -203,30 +214,19 @@
             "evidence": "The only Strait of Hormuz signal shows 15 daily transits, 30% below its 30-day average of 21, contradicting the forecast of 30% above average.",
             "resolved_ms": 1785226244807,
             "ts": 1784619715098
-        },
-        {
-            "statement": "A major shipping disruption will occur within the next week due to a prolonged heatwave affecting the US Gulf Coast region.",
-            "horizon": "week",
-            "probability": 0.39,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All signals concern Indo-Pacific chokepoint transit volumes and none mention any US Gulf Coast heatwave-related shipping disruption, which an event of that magnitude would have registered.",
-            "resolved_ms": 1785226240235,
-            "ts": 1784617857500
         }
     ],
-    "next_judge_ms": 1785251861819,
+    "next_judge_ms": 1785255494790,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 695,
-        "base_rate": 0.0676,
-        "brier_raw": 0.2255,
-        "brier_base_rate": 0.0631,
+        "resolved_n": 696,
+        "base_rate": 0.0675,
+        "brier_raw": 0.2253,
+        "brier_base_rate": 0.063,
         "brier_calibrated_oos": 0.0259,
         "brier_calibrated_oos_n": 86,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
