@@ -1,19 +1,19 @@
 {
-    "resolved": 748,
-    "open": 2366,
+    "resolved": 755,
+    "open": 2398,
     "due": 104,
-    "next_due_ms": 1785297960581,
+    "next_due_ms": 1785302281414,
     "unresolvable": 66,
     "brier": 0.231,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 385,
+            "resolved": 391,
             "brier": 0.23,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 363,
+            "resolved": 364,
             "brier": 0.232,
             "hit_rate": 0.6
         }
@@ -21,25 +21,25 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 92,
+            "n": 93,
             "avg_predicted": 0.13,
             "observed": 0.04
         },
         {
             "bin": "20\u201340%",
-            "n": 235,
+            "n": 238,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 243,
+            "n": 245,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
         {
             "bin": "60\u201380%",
-            "n": 140,
+            "n": 141,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,37 +52,114 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 748,
+            "resolved": 755,
             "brier": 0.274
         },
         "Economist": {
-            "resolved": 746,
-            "brier": 0.288
+            "resolved": 753,
+            "brier": 0.287
         },
         "Naturalist": {
-            "resolved": 748,
-            "brier": 0.302
+            "resolved": 755,
+            "brier": 0.3
         },
         "Skeptic": {
-            "resolved": 747,
+            "resolved": 754,
             "brier": 0.18
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2590,
-            "brier": 0.278,
-            "hit_rate": 0.541,
+            "resolved": 2594,
+            "brier": 0.277,
+            "hit_rate": 0.542,
             "rock_hit_rate": 0.929
         },
         "qwen3:14b": {
-            "resolved": 399,
-            "brier": 0.153,
-            "hit_rate": 0.779,
-            "rock_hit_rate": 0.98
+            "resolved": 423,
+            "brier": 0.156,
+            "hit_rate": 0.766,
+            "rock_hit_rate": 0.981
         }
     },
     "recent": [
+        {
+            "statement": "The US Federal Reserve will signal a pause in rate hikes during its July 28 FOMC meeting, leading to a 0.5% decline in the dollar index within 24 hours",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S3 confirms only that the FOMC meeting occurred on 2026-07-28; no signal shows a pause signal or a 0.5% dollar index decline within 24 hours, so the forecast's stated thresholds are unmet.",
+            "resolved_ms": 1785300305991,
+            "ts": 1785211836582
+        },
+        {
+            "statement": "The US Federal Reserve will signal a pause in rate hikes at the July 28 FOMC meeting, citing cooling inflation and strong labor market data.",
+            "horizon": "24h",
+            "probability": 0.46,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S2 only confirms the FOMC meeting was scheduled for 2026-07-28; no signal, including the S20 prediction-market headline, states that the Fed signaled a pause citing cooling inflation and strong labor data.",
+            "resolved_ms": 1785300263226,
+            "ts": 1785211560581
+        },
+        {
+            "statement": "The Kerch Strait's ship transits will drop below 2 daily due to escalating Russian-Ukrainian tensions near the conflict zone.",
+            "horizon": "24h",
+            "probability": 0.22,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Kerch Strait recorded 2 daily ship transits, which does not meet the stated threshold of dropping below 2.",
+            "resolved_ms": 1785300225128,
+            "ts": 1785211560581
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.3,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current snapshot shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, indicating a sharp decline rather than a significant increase during the forecast window.",
+            "resolved_ms": 1785300188153,
+            "ts": 1784691966969
+        },
+        {
+            "statement": "Kerch Strait transit drops to 0 due to renewed Black Sea naval clashes",
+            "horizon": "24h",
+            "probability": 0.14,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Kerch Strait signal shows 2 daily transits (73% below its 30-day average), not the forecast drop to 0, and no signal reports renewed Black Sea naval clashes.",
+            "resolved_ms": 1785300145096,
+            "ts": 1785209988131
+        },
+        {
+            "statement": "Federal Reserve signals 25-basis-point rate cut at July 28 FOMC meeting",
+            "horizon": "24h",
+            "probability": 0.35,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signals confirm only that an FOMC meeting was scheduled/held on 2026-07-28 (S4) and a headline about prediction markets for the July Fed decision (S20); nothing states the Fed signaled or delivered a 25-basis-point rate cut.",
+            "resolved_ms": 1785300103065,
+            "ts": 1785209988131
+        },
+        {
+            "statement": "U.S. Federal Reserve raises interest rates by 25 basis points at the July 28 FOMC meeting",
+            "horizon": "24h",
+            "probability": 0.52,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signals only confirm the July 28, 2026 FOMC meeting was scheduled/held (S4) and a prediction-markets headline (S20); no signal states any 25 basis point rate increase occurred.",
+            "resolved_ms": 1785300066555,
+            "ts": 1785209844366
+        },
         {
             "statement": "A flash flood warning will be issued for the state of Arizona within the next week",
             "horizon": "week",
@@ -137,98 +214,21 @@
             "evidence": "No signal shows an eruption at Nevados del Chill\u00e1n during the 28\u201329 July 2026 window, let alone one triggered by seismic activity near Mendoza; all web items predate the forecast (June 2026 or earlier) and only describe ongoing activity or hazard status.",
             "resolved_ms": 1785296360742,
             "ts": 1785208176573
-        },
-        {
-            "statement": "A major earthquake will occur in the Pacific-Antarctic Ridge within the next week",
-            "horizon": "week",
-            "probability": 0.15,
-            "location": "Pacific-Antarctic Ridge",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "None of the signals dates a major (M\u22656-plus) Pacific-Antarctic Ridge earthquake to the 22\u201329 July 2026 window; the USGS event pages listed are undated historical events and no in-window seismic signal shows such a quake.",
-            "resolved_ms": 1785296319206,
-            "ts": 1784688291851
-        },
-        {
-            "statement": "The EIA weekly petroleum status report will move CL=F by at least 1.5% on the day of its release, July 22nd.",
-            "horizon": "week",
-            "probability": 0.87,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any CL=F price move magnitude on July 22, 2026; the signals only confirm report scheduling/publication, so the claimed \u22651.5% move is unsupported after the window closed.",
-            "resolved_ms": 1785292469948,
-            "ts": 1784686459933
-        },
-        {
-            "statement": "The VIX fear gauge will spike above 22 within 24 hours due to escalation in Israeli-Lebanon conflict",
-            "horizon": "24h",
-            "probability": 0.29,
-            "location": "Lebanon",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 18.21 and falling, well below the 22 threshold, so the forecast spike did not occur within the window.",
-            "resolved_ms": 1785292424115,
-            "ts": 1785203704773
-        },
-        {
-            "statement": "Hurricane Genevieve will intensify to Category 3 strength within 24 hours, threatening Mexico's Gulf Coast",
-            "horizon": "24h",
-            "probability": 0.05,
-            "location": "Gulf of Mexico",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Genevieve was a Pacific hurricane east of the Gulf that reached Category 5 but was explicitly not expected to make landfall, so the forecast's stated threat to Mexico's Gulf Coast did not occur.",
-            "resolved_ms": 1785292385967,
-            "ts": 1785203704773
-        },
-        {
-            "statement": "Flash flooding will occur in the Nashville area within the next week",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "Nashville, TN",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S2, dated 2026-07-22 within the forecast window, states Nashville Fire crews rescued stranded residents in knee-deep flash flooding, showing flash flooding occurred in the Nashville area.",
-            "resolved_ms": 1785292338890,
-            "ts": 1784684622248
-        },
-        {
-            "statement": "The Federal Reserve will raise interest rates at the FOMC meeting on July 28th",
-            "horizon": "week",
-            "probability": 0.74,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 confirms only that the FOMC meeting was scheduled for 2026-07-28, and no signal \u2014 including the [web] headlines \u2014 states that the Federal Reserve actually raised interest rates.",
-            "resolved_ms": 1785292284739,
-            "ts": 1784684622248
-        },
-        {
-            "statement": "Federal Reserve's FOMC meeting on 2026-07-28 will signal a 25-basis-point rate hike to combat inflationary pressures.",
-            "horizon": "24h",
-            "probability": 0.51,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal states the FOMC announced or signaled a 25-basis-point rate hike; the web headlines only reference the scheduled July 28-29 meeting and market speculation, with no reported hike decision.",
-            "resolved_ms": 1785292250135,
-            "ts": 1785201689150
         }
     ],
-    "next_judge_ms": 1785300121364,
+    "next_judge_ms": 1785303906006,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 748,
-        "base_rate": 0.0642,
-        "brier_raw": 0.2313,
-        "brier_base_rate": 0.0601,
-        "brier_calibrated_oos": 0.0234,
-        "brier_calibrated_oos_n": 97,
+        "resolved_n": 755,
+        "base_rate": 0.0636,
+        "brier_raw": 0.2308,
+        "brier_base_rate": 0.0595,
+        "brier_calibrated_oos": 0.0223,
+        "brier_calibrated_oos_n": 103,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }

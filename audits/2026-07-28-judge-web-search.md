@@ -95,7 +95,7 @@ exact shape that used to auto-grade "no":
 The first would have been a false MISS on the public ledger under the old judge.
 The second confirms search is not a rubber stamp.
 
-`Pythia/tests/test_websearch.py` — 28 tests, mutation-verified: defanging the
+`Pythia/tests/test_websearch.py` — 35 tests, mutation-verified: defanging the
 title sanitiser, the `page_age` handling, the URL scheme check, the error-block
 logging, the evidence-pool cap widening, and the `gather()` call site each turn
 the suite red.
@@ -128,6 +128,31 @@ unparseable as stale would silently discard most search evidence.
 The general lesson is the one this project keeps relearning: the tests were
 green because they asserted the shape I designed, not the shape the API returns.
 The defect was only visible in production output.
+
+## Second post-deploy finding: the spend cap never engaged
+
+`JUDGE_SEARCH_DAILY_CAP` was counted in a module global, so it reset every time
+the engine restarted — and the engine restarted six times on 2026-07-28. The
+documented "hard per-UTC-day ceiling" was really `cap × restarts today`, which
+bounds nothing, while still reading like a guard in the config and on `/health`.
+`/health` compounded it by reporting a reassuring `0` after every reboot.
+
+Nothing ran away — real spend is ~60–80 calls/day against a cap of 320 — so this
+was a guard that would have failed silently the first time it was actually
+needed, which is the same shape as INC-019.
+
+The count now persists to `runs/judge_search_budget.json` and `budget_used()`
+reads through to disk. Verified across real processes, not just by resetting
+globals in-process: a fresh interpreter inherited the prior count and refused the
+call that crossed the cap. The file is operational state, not ledger evidence —
+`infra/ledger-mirror.sh` selects `runs/ledger.jsonl` by name, so it cannot reach
+the public repo.
+
+Writing the test for this surfaced a second bug in the same code: `json.loads`
+returns `None` for a file containing `null`, and `None.get()` raises
+`AttributeError`, which the handler did not catch — so a corrupt counter file
+would have propagated an exception into the judge path rather than degrading. A
+budget guard that can crash the thing it guards is worse than no guard.
 
 ## Honest limits
 
