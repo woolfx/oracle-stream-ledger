@@ -1,21 +1,21 @@
 {
-    "resolved": 709,
-    "open": 2302,
-    "due": 119,
-    "next_due_ms": 1785280253050,
+    "resolved": 715,
+    "open": 2311,
+    "due": 115,
+    "next_due_ms": 1785283924595,
     "unresolvable": 66,
-    "brier": 0.226,
+    "brier": 0.227,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 369,
+            "resolved": 370,
             "brier": 0.229,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 340,
-            "brier": 0.222,
-            "hit_rate": 0.62
+            "resolved": 345,
+            "brier": 0.224,
+            "hit_rate": 0.61
         }
     },
     "calibration": [
@@ -27,62 +27,128 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 225,
+            "n": 227,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 233,
+            "n": 235,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
         {
             "bin": "60\u201380%",
-            "n": 131,
+            "n": 132,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
         {
             "bin": "80\u2013100%",
-            "n": 32,
+            "n": 33,
             "avg_predicted": 0.83,
             "observed": 0.12
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 709,
-            "brier": 0.265
+            "resolved": 715,
+            "brier": 0.266
         },
         "Economist": {
-            "resolved": 707,
+            "resolved": 713,
             "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 709,
-            "brier": 0.3
+            "resolved": 715,
+            "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 708,
-            "brier": 0.173
+            "resolved": 714,
+            "brier": 0.174
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2478,
-            "brier": 0.271,
-            "hit_rate": 0.551,
+            "resolved": 2498,
+            "brier": 0.272,
+            "hit_rate": 0.549,
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 355,
+            "resolved": 359,
             "brier": 0.152,
-            "hit_rate": 0.789,
-            "rock_hit_rate": 0.977
+            "hit_rate": 0.791,
+            "rock_hit_rate": 0.978
         }
     },
     "recent": [
+        {
+            "statement": "A minor earthquake of magnitude 4.5-5.0 will strike the South Island of New Zealand",
+            "horizon": "24h",
+            "probability": 0.38,
+            "location": "South Island of New Zealand",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All signals describe a magnitude 5.9/6.3 earthquake around July 16, 2026 \u2014 before the forecast window \u2014 and none show a magnitude 4.5\u20135.0 quake in the South Island on July 27\u201328, 2026.",
+            "resolved_ms": 1785280186448,
+            "ts": 1785192590008
+        },
+        {
+            "statement": "Severe weather conditions will impact US markets within the next week",
+            "horizon": "week",
+            "probability": 0.41,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows severe weather actually impacting US markets during the window \u2014 the visible market signals (VIX 18.21, WTI, Nasdaq futures) show ordinary moves tied to FOMC/geopolitical items, and the trimmed weather sections provide no qualifying text.",
+            "resolved_ms": 1785280144975,
+            "ts": 1784673606501
+        },
+        {
+            "statement": "The price of Brent Crude Oil will rise by at least 2% on July 25",
+            "horizon": "week",
+            "probability": 0.68,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows Brent rising \u22652% on July 25 (a Saturday with no futures settlement); the current Brent quote shows it down 1.08%, and S16 only reports a weekly jump, not a specific July 25 gain.",
+            "resolved_ms": 1785280069366,
+            "ts": 1784671749565
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits on July 24",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current snapshot for the Strait of Hormuz shows 10 daily ship transits, 52% below its 30-day average of 21 as of 2026-07-23, showing a sharp decline rather than a significant increase.",
+            "resolved_ms": 1785280028456,
+            "ts": 1784671749565
+        },
+        {
+            "statement": "The price of WTI Crude Oil will rise by at least 1.5% on July 22",
+            "horizon": "week",
+            "probability": 0.87,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal documents WTI's July 22 daily move; the only price data (S9: 82.52 $/bbl, -0.11%) is a current snapshot showing no such gain, and the window has closed without evidence of a \u22651.5% rise.",
+            "resolved_ms": 1785279989638,
+            "ts": 1784671749565
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the Midwest region on July 22",
+            "horizon": "week",
+            "probability": 0.56,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All signals describe severe thunderstorm warnings and storms in the Midwest around July 25\u201327, and none shows a severe thunderstorm warning issued on July 22, the specific date stated in the forecast.",
+            "resolved_ms": 1785279939856,
+            "ts": 1784671749565
+        },
         {
             "statement": "A tropical cyclone will make landfall in Florida within the next week",
             "horizon": "week",
@@ -148,87 +214,21 @@
             "evidence": "At window close the only price signal shows Nasdaq 100 futures at 27962.75, down 0.81%, with no signal indicating a \u22651.5% gain during the week.",
             "resolved_ms": 1785268216854,
             "ts": 1784662035020
-        },
-        {
-            "statement": "NG=F will drop by at least 1.5% due to increased shipping disruptions through the Strait of Hormuz.",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows NG=F falling 1.5%; the only price-related headline reports European natural gas prices jumping on Hormuz escalation, not a decline.",
-            "resolved_ms": 1785268174471,
-            "ts": 1784660202297
-        },
-        {
-            "statement": "A severe thunderstorm will cause power outages affecting over 100,000 people within the next week",
-            "horizon": "week",
-            "probability": 0.5,
-            "location": "Midwestern United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal documents a severe thunderstorm causing power outages affecting over 100,000 people in the Midwestern United States during the July 21\u201328, 2026 window.",
-            "resolved_ms": 1785264149442,
-            "ts": 1784656515120
-        },
-        {
-            "statement": "The price of Brent Crude will increase by at least $2.50 per barrel within the next week",
-            "horizon": "week",
-            "probability": 0.71,
-            "location": "Global Oil Markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "At the close of the window Brent was quoted at $84.17/bbl and falling (-4.74%), with no signal showing a $2.50+ per-barrel increase over the week.",
-            "resolved_ms": 1785264096989,
-            "ts": 1784656515120
-        },
-        {
-            "statement": "Gold prices will reach $4100 by the end of next week",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows gold reaching $4,100 during the window, and the only dated gold headline (S16, published within the period) states the price fell rather than hitting a new high.",
-            "resolved_ms": 1785256501403,
-            "ts": 1784649150125
-        },
-        {
-            "statement": "The Strait of Hormuz will experience reduced ship traffic within the next week due to increased tensions between Iran and the US.",
-            "horizon": "week",
-            "probability": 0.52,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S2 shows Strait of Hormuz transit calls at 10 per day as of 2026-07-23, 52% below the 30-day average of 21, confirming sharply reduced ship traffic within the forecast window amid the renewed U.S.-Iran conflict noted in S5.",
-            "resolved_ms": 1785256460900,
-            "ts": 1784647304081
-        },
-        {
-            "statement": "WTI Crude Oil will rise above $86.00 within the next week.",
-            "horizon": "week",
-            "probability": 0.59,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "At window close WTI stood at $78.19/bbl (-5.35%), well below the $86.00 threshold, and no signal shows any rise above $86 during the week.",
-            "resolved_ms": 1785256419529,
-            "ts": 1784647304081
         }
     ],
-    "next_judge_ms": 1785279711946,
+    "next_judge_ms": 1785283786460,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 709,
-        "base_rate": 0.0663,
-        "brier_raw": 0.2258,
-        "brier_base_rate": 0.0619,
-        "brier_calibrated_oos": 0.0259,
-        "brier_calibrated_oos_n": 86,
+        "resolved_n": 715,
+        "base_rate": 0.0657,
+        "brier_raw": 0.2266,
+        "brier_base_rate": 0.0614,
+        "brier_calibrated_oos": 0.0257,
+        "brier_calibrated_oos_n": 87,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
