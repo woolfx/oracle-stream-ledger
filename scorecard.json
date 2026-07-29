@@ -1,19 +1,19 @@
 {
-    "resolved": 786,
-    "open": 2491,
-    "due": 113,
-    "next_due_ms": 1785334812652,
+    "resolved": 788,
+    "open": 2504,
+    "due": 120,
+    "next_due_ms": 1785338827686,
     "unresolvable": 96,
-    "brier": 0.233,
+    "brier": 0.234,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 406,
-            "brier": 0.232,
+            "resolved": 407,
+            "brier": 0.233,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 380,
+            "resolved": 381,
             "brier": 0.235,
             "hit_rate": 0.6
         }
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 252,
+            "n": 253,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 151,
+            "n": 152,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,43 +52,65 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 785,
+            "resolved": 787,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 783,
+            "resolved": 785,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 785,
+            "resolved": 787,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 784,
-            "brier": 0.183
+            "resolved": 786,
+            "brier": 0.184
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2654,
-            "brier": 0.279,
+            "resolved": 2658,
+            "brier": 0.278,
             "hit_rate": 0.54,
             "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
-            "resolved": 483,
-            "brier": 0.173,
-            "hit_rate": 0.741,
-            "rock_hit_rate": 0.942
+            "resolved": 487,
+            "brier": 0.177,
+            "hit_rate": 0.735,
+            "rock_hit_rate": 0.943
         },
         "claude-opus-5 (headline)": {
-            "resolved": 12,
-            "brier": 0.451,
-            "hit_rate": 0.333,
-            "rock_hit_rate": 0.667
+            "resolved": 13,
+            "brier": 0.466,
+            "hit_rate": 0.308,
+            "rock_hit_rate": 0.692
         }
     },
     "recent": [
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28, 2026 meeting",
+            "horizon": "24h",
+            "probability": 0.76,
+            "location": "Washington, DC, United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms the FOMC left the federal funds rate unchanged; signals only confirm the July 28 meeting was scheduled, not its outcome.",
+            "resolved_ms": 1785335478923,
+            "ts": 1785226374430
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a ship transit increase by at least 20% within the next week",
+            "horizon": "week",
+            "probability": 0.4,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz had 10 daily ship transits, 52% below its 30-day average (21), indicating a decrease, not an increase of at least 20%.",
+            "resolved_ms": 1785335422247,
+            "ts": 1784703053545
+        },
         {
             "statement": "CBOT corn front-month settles above 465 \u00a2/bu",
             "horizon": "24h",
@@ -198,43 +220,21 @@
             "evidence": "No signal confirms Typhoon Noul made landfall or triggered signal-8-level warnings in the Pearl River Delta; S3 only mentions an Orange notification affecting 11.891 million people with Category 1 winds, which does not match the forecast's signal-8-level warnings or transport suspensions.",
             "resolved_ms": 1785315661864,
             "ts": 1785218563840
-        },
-        {
-            "statement": "The Federal Reserve will signal a pause in rate hikes during the July 28 FOMC meeting, leading to a 0.5% decline in the VIX fear gauge within 24 hours.",
-            "horizon": "24h",
-            "probability": 0.53,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal confirms the Federal Reserve signaled a pause in rate hikes during the July 28 FOMC meeting or that the VIX fear gauge declined by 0.5% within 24 hours.",
-            "resolved_ms": 1785315608318,
-            "ts": 1785217473624
-        },
-        {
-            "statement": "The price of WTI Crude Oil will rise to $87.50/bbl by the end of the week",
-            "horizon": "week",
-            "probability": 0.38,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Signal S10 states WTI Crude Oil was at $81.74/bbl on 2026-07-29, below the forecasted $87.50 threshold.",
-            "resolved_ms": 1785311694363,
-            "ts": 1784701220788
         }
     ],
-    "next_judge_ms": 1785335172291,
+    "next_judge_ms": 1785339091722,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 786,
-        "base_rate": 0.0687,
-        "brier_raw": 0.2334,
-        "brier_base_rate": 0.064,
-        "brier_calibrated_oos": 0.0567,
-        "brier_calibrated_oos_n": 118,
+        "resolved_n": 788,
+        "base_rate": 0.0685,
+        "brier_raw": 0.2338,
+        "brier_base_rate": 0.0638,
+        "brier_calibrated_oos": 0.0563,
+        "brier_calibrated_oos_n": 119,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
