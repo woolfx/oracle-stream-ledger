@@ -1,20 +1,20 @@
 {
-    "resolved": 800,
-    "open": 2585,
-    "due": 138,
-    "next_due_ms": 1785348175399,
+    "resolved": 802,
+    "open": 2620,
+    "due": 154,
+    "next_due_ms": 1785352160873,
     "unresolvable": 96,
-    "brier": 0.233,
+    "brier": 0.234,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 413,
+            "resolved": 414,
             "brier": 0.231,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 387,
-            "brier": 0.235,
+            "resolved": 388,
+            "brier": 0.236,
             "hit_rate": 0.6
         }
     },
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 257,
+            "n": 258,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -45,50 +45,72 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 41,
+            "n": 42,
             "avg_predicted": 0.83,
             "observed": 0.1
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 799,
+            "resolved": 801,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 797,
+            "resolved": 799,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 799,
-            "brier": 0.3
+            "resolved": 801,
+            "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 798,
+            "resolved": 800,
             "brier": 0.184
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2682,
-            "brier": 0.278,
-            "hit_rate": 0.541,
+            "resolved": 2686,
+            "brier": 0.279,
+            "hit_rate": 0.54,
             "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
-            "resolved": 511,
-            "brier": 0.175,
-            "hit_rate": 0.736,
-            "rock_hit_rate": 0.945
+            "resolved": 515,
+            "brier": 0.176,
+            "hit_rate": 0.734,
+            "rock_hit_rate": 0.946
         },
         "claude-opus-5 (headline)": {
-            "resolved": 19,
-            "brier": 0.515,
-            "hit_rate": 0.211,
-            "rock_hit_rate": 0.789
+            "resolved": 20,
+            "brier": 0.525,
+            "hit_rate": 0.2,
+            "rock_hit_rate": 0.8
         }
     },
     "recent": [
+        {
+            "statement": "The US Federal Reserve will raise interest rates by 25-50 basis points on July 28",
+            "horizon": "week",
+            "probability": 0.8,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any FOMC rate decision or hike on July 28, 2026; the only Fed-related signal (S1) references a future January 2027 meeting, so a 25-50bp hike is unsupported after the window closed.",
+            "resolved_ms": 1785349957508,
+            "ts": 1784714100418
+        },
+        {
+            "statement": "Russian strikes or drone attacks damage Ukrainian energy/port infrastructure, with Ukrainian officials reporting new power outages in at least one oblast",
+            "horizon": "24h",
+            "probability": 0.49,
+            "location": "Ukraine",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 describes Ukrainian attacks depriving Crimean towns of power (the reverse direction), and S2 is only a generic war-status marker, so no signal shows Russian strikes damaging Ukrainian energy/port infrastructure with new oblast-level outages in the window.",
+            "resolved_ms": 1785349953942,
+            "ts": 1785232388720
+        },
         {
             "statement": "The FOMC meeting on 2026-07-28 will result in a rate hike",
             "horizon": "week",
@@ -198,43 +220,21 @@
             "evidence": "The signals only document the M6.8 Uto, Kumamoto earthquake itself (S2, S3); none states that JMA reported M4.5+ aftershocks in the window.",
             "resolved_ms": 1785338462478,
             "ts": 1785226374430
-        },
-        {
-            "statement": "The US dollar will strengthen against the euro by at least 1% in the next week",
-            "horizon": "week",
-            "probability": 0.52,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports an actual EUR/USD exchange rate move; S18's headline only notes euro-facing headwinds without stating the dollar gained 1% or more during the window.",
-            "resolved_ms": 1785338427356,
-            "ts": 1784706716654
-        },
-        {
-            "statement": "At least one aftershock of M5.0 or greater is recorded within 150 km of the M7.1 Uki, Japan epicenter",
-            "horizon": "24h",
-            "probability": 0.28,
-            "location": "Uki, Kumamoto, Japan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "None of the admissible signals \u2014 including the Wikipedia and Al Jazeera headlines on the M7.1 Kumamoto quake \u2014 state that an aftershock of M5.0 or greater occurred within 150 km of the epicenter during the window.",
-            "resolved_ms": 1785338360593,
-            "ts": 1785224376107
         }
     ],
-    "next_judge_ms": 1785349715149,
+    "next_judge_ms": null,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 800,
-        "base_rate": 0.0675,
-        "brier_raw": 0.2331,
-        "brier_base_rate": 0.0629,
-        "brier_calibrated_oos": 0.0537,
-        "brier_calibrated_oos_n": 125,
+        "resolved_n": 802,
+        "base_rate": 0.0673,
+        "brier_raw": 0.2336,
+        "brier_base_rate": 0.0628,
+        "brier_calibrated_oos": 0.0534,
+        "brier_calibrated_oos_n": 126,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
