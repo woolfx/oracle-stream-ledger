@@ -1,10 +1,10 @@
 {
-    "resolved": 802,
-    "open": 2620,
-    "due": 154,
-    "next_due_ms": 1785352160873,
+    "resolved": 804,
+    "open": 2657,
+    "due": 163,
+    "next_due_ms": 1785356171695,
     "unresolvable": 96,
-    "brier": 0.234,
+    "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -13,7 +13,7 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 388,
+            "resolved": 390,
             "brier": 0.236,
             "hit_rate": 0.6
         }
@@ -21,7 +21,7 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 96,
+            "n": 97,
             "avg_predicted": 0.13,
             "observed": 0.05
         },
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 258,
+            "n": 259,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,28 +52,28 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 801,
+            "resolved": 803,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 799,
+            "resolved": 801,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 801,
+            "resolved": 803,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 800,
+            "resolved": 802,
             "brier": 0.184
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2686,
+            "resolved": 2694,
             "brier": 0.279,
             "hit_rate": 0.54,
-            "rock_hit_rate": 0.93
+            "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
             "resolved": 515,
@@ -89,6 +89,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "There will be a significant increase in ship transits through the Malacca Strait within the next week.",
+            "horizon": "week",
+            "probability": 0.58,
+            "location": "Malacca Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Malacca Strait transit data at all; the only chokepoint signals cover Luzon, Lombok, and Mindoro Straits, so nothing shows a significant increase in Malacca Strait transits during the closed window.",
+            "resolved_ms": 1785352278832,
+            "ts": 1784715949711
+        },
+        {
+            "statement": "The VIX fear gauge will rise above 20 within the next week",
+            "horizon": "week",
+            "probability": 0.12,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only VIX reading available shows 17.72, below the 20 threshold, and no signal indicates the index rose above 20 during the window.",
+            "resolved_ms": 1785352275204,
+            "ts": 1784714100418
+        },
         {
             "statement": "The US Federal Reserve will raise interest rates by 25-50 basis points on July 28",
             "horizon": "week",
@@ -198,41 +220,19 @@
             "evidence": "S1 shows CBOT corn at 473 \u00a2/bu (+3.16%), higher on the day but below the required 475 \u00a2/bu close.",
             "resolved_ms": 1785342443510,
             "ts": 1785226374430
-        },
-        {
-            "statement": "Ship transits through the Strait of Hormuz will increase by 20% within the next week",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current snapshot shows Strait of Hormuz transits at 10 per day, 52% below its 30-day average of 21 \u2014 no 20% increase occurred within the window.",
-            "resolved_ms": 1785338565719,
-            "ts": 1784708567029
-        },
-        {
-            "statement": "Japan Meteorological Agency reports M4.5+ aftershocks near Uto, Kumamoto Prefecture following the M6.8 quake",
-            "horizon": "24h",
-            "probability": 0.37,
-            "location": "Uto, Kumamoto, Japan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The signals only document the M6.8 Uto, Kumamoto earthquake itself (S2, S3); none states that JMA reported M4.5+ aftershocks in the window.",
-            "resolved_ms": 1785338462478,
-            "ts": 1785226374430
         }
     ],
-    "next_judge_ms": null,
+    "next_judge_ms": 1785355878848,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 802,
-        "base_rate": 0.0673,
-        "brier_raw": 0.2336,
-        "brier_base_rate": 0.0628,
+        "resolved_n": 804,
+        "base_rate": 0.0672,
+        "brier_raw": 0.2335,
+        "brier_base_rate": 0.0627,
         "brier_calibrated_oos": 0.0534,
         "brier_calibrated_oos_n": 126,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
