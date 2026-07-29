@@ -1,20 +1,20 @@
 {
-    "resolved": 715,
-    "open": 2311,
-    "due": 115,
-    "next_due_ms": 1785283924595,
+    "resolved": 727,
+    "open": 2323,
+    "due": 108,
+    "next_due_ms": 1785287587056,
     "unresolvable": 66,
-    "brier": 0.227,
-    "hit_rate": 0.61,
+    "brier": 0.23,
+    "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 370,
-            "brier": 0.229,
-            "hit_rate": 0.61
+            "resolved": 375,
+            "brier": 0.232,
+            "hit_rate": 0.6
         },
         "week": {
-            "resolved": 345,
-            "brier": 0.224,
+            "resolved": 352,
+            "brier": 0.229,
             "hit_rate": 0.61
         }
     },
@@ -27,53 +27,53 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 227,
+            "n": 228,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 235,
+            "n": 238,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
         {
             "bin": "60\u201380%",
-            "n": 132,
+            "n": 137,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
         {
             "bin": "80\u2013100%",
-            "n": 33,
+            "n": 36,
             "avg_predicted": 0.83,
-            "observed": 0.12
+            "observed": 0.11
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 715,
-            "brier": 0.266
+            "resolved": 727,
+            "brier": 0.272
         },
         "Economist": {
-            "resolved": 713,
-            "brier": 0.284
+            "resolved": 725,
+            "brier": 0.287
         },
         "Naturalist": {
-            "resolved": 715,
-            "brier": 0.301
+            "resolved": 727,
+            "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 714,
-            "brier": 0.174
+            "resolved": 726,
+            "brier": 0.179
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2498,
-            "brier": 0.272,
-            "hit_rate": 0.549,
-            "rock_hit_rate": 0.928
+            "resolved": 2546,
+            "brier": 0.276,
+            "hit_rate": 0.543,
+            "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
             "resolved": 359,
@@ -84,149 +84,149 @@
     },
     "recent": [
         {
-            "statement": "A minor earthquake of magnitude 4.5-5.0 will strike the South Island of New Zealand",
-            "horizon": "24h",
-            "probability": 0.38,
-            "location": "South Island of New Zealand",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All signals describe a magnitude 5.9/6.3 earthquake around July 16, 2026 \u2014 before the forecast window \u2014 and none show a magnitude 4.5\u20135.0 quake in the South Island on July 27\u201328, 2026.",
-            "resolved_ms": 1785280186448,
-            "ts": 1785192590008
-        },
-        {
-            "statement": "Severe weather conditions will impact US markets within the next week",
-            "horizon": "week",
-            "probability": 0.41,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows severe weather actually impacting US markets during the window \u2014 the visible market signals (VIX 18.21, WTI, Nasdaq futures) show ordinary moves tied to FOMC/geopolitical items, and the trimmed weather sections provide no qualifying text.",
-            "resolved_ms": 1785280144975,
-            "ts": 1784673606501
-        },
-        {
-            "statement": "The price of Brent Crude Oil will rise by at least 2% on July 25",
-            "horizon": "week",
-            "probability": 0.68,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows Brent rising \u22652% on July 25 (a Saturday with no futures settlement); the current Brent quote shows it down 1.08%, and S16 only reports a weekly jump, not a specific July 25 gain.",
-            "resolved_ms": 1785280069366,
-            "ts": 1784671749565
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits on July 24",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current snapshot for the Strait of Hormuz shows 10 daily ship transits, 52% below its 30-day average of 21 as of 2026-07-23, showing a sharp decline rather than a significant increase.",
-            "resolved_ms": 1785280028456,
-            "ts": 1784671749565
-        },
-        {
-            "statement": "The price of WTI Crude Oil will rise by at least 1.5% on July 22",
-            "horizon": "week",
-            "probability": 0.87,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal documents WTI's July 22 daily move; the only price data (S9: 82.52 $/bbl, -0.11%) is a current snapshot showing no such gain, and the window has closed without evidence of a \u22651.5% rise.",
-            "resolved_ms": 1785279989638,
-            "ts": 1784671749565
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the Midwest region on July 22",
-            "horizon": "week",
-            "probability": 0.56,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All signals describe severe thunderstorm warnings and storms in the Midwest around July 25\u201327, and none shows a severe thunderstorm warning issued on July 22, the specific date stated in the forecast.",
-            "resolved_ms": 1785279939856,
-            "ts": 1784671749565
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Florida within the next week",
-            "horizon": "week",
-            "probability": 0.25,
-            "location": "Florida",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows a tropical cyclone landfall in Florida during the window; Bertha, the only Atlantic system near the U.S., is located at 30.0,-96.0 (Texas) with zero population under Category 1 winds, and S8's headline only says it was 'closing in on Gulf Coast.'",
-            "resolved_ms": 1785276111934,
-            "ts": 1784669904796
-        },
-        {
-            "statement": "The EIA weekly petroleum status report will cause a 0.5% increase in CL=F on 2026-07-22",
+            "statement": "The FOMC meeting on July 28 will result in a rate hike",
             "horizon": "week",
             "probability": 0.8,
             "location": "None",
             "outcome": 0.0,
             "verdict": "no",
-            "evidence": "The signals only confirm the EIA weekly petroleum status report for the week ending July 17, 2026 was published around July 22 and that future reports are scheduled; none shows any 0.5% increase in CL=F on 2026-07-22.",
-            "resolved_ms": 1785276064125,
-            "ts": 1784669904796
+            "evidence": "The FOMC meeting is only occurring on 2026-07-28, after the forecast window closed on 2026-07-27, and no signal shows any rate hike decision.",
+            "resolved_ms": 1785284266342,
+            "ts": 1784551377922
         },
         {
-            "statement": "The Strait of Hormuz will see a significant increase in ship transits within the next week.",
+            "statement": "The US will announce a rate hike at the FOMC meeting scheduled for July 28, 2026.",
             "horizon": "week",
-            "probability": 0.27,
-            "location": "Strait of Hormuz",
+            "probability": 0.69,
+            "location": "United States",
             "outcome": 0.0,
             "verdict": "no",
-            "evidence": "As of the window's close, Strait of Hormuz transits stood at 10 per day \u2014 52% below the 30-day average of 21 \u2014 showing no increase, corroborated by the 24 July headline that Hormuz transits remain low.",
-            "resolved_ms": 1785276013209,
-            "ts": 1784668071011
+            "evidence": "The July FOMC meeting was scheduled for July 28\u201329, 2026 \u2014 after the forecast window closed on July 27 \u2014 and no signal shows any announced rate hike.",
+            "resolved_ms": 1785284227121,
+            "ts": 1784525535987
         },
         {
-            "statement": "The EIA weekly natural gas storage report on July 23 will show a decrease in stockpiles of at least 50 billion cubic feet within the next week",
+            "statement": "The US will announce a new Federal Reserve rate decision on July 28th, with a 0.5% increase.",
             "horizon": "week",
-            "probability": 0.4,
+            "probability": 0.24,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S2 shows the FOMC meeting is only occurring on 2026-07-28 \u2014 after the forecast window closed on 2026-07-27 \u2014 and no signal reports any announced rate decision, let alone a 0.5% increase.",
+            "resolved_ms": 1785284186098,
+            "ts": 1784519914558
+        },
+        {
+            "statement": "The FOMC will raise interest rates by 25 basis points on July 28th",
+            "horizon": "week",
+            "probability": 0.58,
             "location": "None",
             "outcome": 0.0,
             "verdict": "no",
-            "evidence": "The July 23, 2026 EIA weekly natural gas storage report showed a 32 Bcf increase in stockpiles, not a decrease of at least 50 Bcf.",
-            "resolved_ms": 1785272237397,
-            "ts": 1784664390853
+            "evidence": "No signal shows any FOMC rate hike occurring; S4 only confirms the July 28, 2026 meeting was scheduled (a day after the forecast window closed), and no signal reports a 25 bp increase.",
+            "resolved_ms": 1785284144363,
+            "ts": 1784514857491
         },
         {
-            "statement": "There will be a severe thunderstorm warning issued for the Midwest region in the next week",
+            "statement": "The Federal Reserve will raise interest rates by 25 basis points at the next FOMC meeting on July 28th.",
             "horizon": "week",
-            "probability": 0.31,
-            "location": "None",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S6, published 2026-07-27 within the window, states Severe Thunderstorm Warnings were issued/continuing for Waukesha and Jefferson counties in Southeast Wisconsin, a Midwest location.",
-            "resolved_ms": 1785272202470,
-            "ts": 1784663864398
+            "probability": 0.8,
+            "location": "Washington D.C.",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal states that the FOMC raised rates by 25 basis points; the July 28 meeting (S3) falls after the forecast window closed on 2026-07-26 and no signal reports any rate decision outcome.",
+            "resolved_ms": 1785284107625,
+            "ts": 1784428311406
         },
         {
-            "statement": "Nasdaq 100 futures will increase by at least 1.5% within the next week",
+            "statement": "The FOMC will raise interest rates at their meeting on July 28th",
             "horizon": "week",
-            "probability": 0.41,
+            "probability": 0.76,
+            "location": "Federal Reserve, Washington D.C.",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal states that the FOMC raised rates; the July 28, 2026 meeting is only shown as scheduled/occurring today (S3), after the forecast window closed on 2026-07-25, and no admissible signal reports a rate hike outcome.",
+            "resolved_ms": 1785284069269,
+            "ts": 1784419069977
+        },
+        {
+            "statement": "The FOMC will raise interest rates at their next meeting on July 28th",
+            "horizon": "week",
+            "probability": 0.53,
             "location": "None",
             "outcome": 0.0,
             "verdict": "no",
-            "evidence": "At window close the only price signal shows Nasdaq 100 futures at 27962.75, down 0.81%, with no signal indicating a \u22651.5% gain during the week.",
-            "resolved_ms": 1785268216854,
-            "ts": 1784662035020
+            "evidence": "The July 28, 2026 FOMC meeting is only occurring now \u2014 after the forecast window closed on 2026-07-25 \u2014 and no signal states that the Fed raised rates.",
+            "resolved_ms": 1785284028406,
+            "ts": 1784417235453
+        },
+        {
+            "statement": "The FOMC will raise interest rates by at least 25 basis points on July 28th",
+            "horizon": "24h",
+            "probability": 0.72,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows any FOMC rate increase; the July 28, 2026 meeting is only listed as scheduled (and falls after the forecast window closed on 2026-07-21), with no decision outcome reported.",
+            "resolved_ms": 1785283989723,
+            "ts": 1784567955672
+        },
+        {
+            "statement": "The FOMC will raise interest rates at the next meeting on July 28th",
+            "horizon": "24h",
+            "probability": 0.84,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows any FOMC rate hike; the July 28, 2026 meeting is only listed as scheduled/occurring with no decision reported, and the forecast's window closed on 2026-07-21 before the meeting.",
+            "resolved_ms": 1785283957540,
+            "ts": 1784543999347
+        },
+        {
+            "statement": "The US Federal Reserve will raise interest rates by at least 25 basis points during the July 28 FOMC meeting",
+            "horizon": "24h",
+            "probability": 0.73,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any FOMC rate decision outcome; S3 only confirms the July 28, 2026 meeting was scheduled, and no evidence of a 25bp-or-more hike exists within the closed window.",
+            "resolved_ms": 1785283913102,
+            "ts": 1784516707082
+        },
+        {
+            "statement": "The FOMC will raise interest rates by 50 basis points at their next meeting on July 28th",
+            "horizon": "24h",
+            "probability": 0.63,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal shows any FOMC rate decision, let alone a 50 bp hike; the July 28, 2026 meeting is only listed as scheduled (S3), and the forecast's 24h window closed 2026-07-20 well before it.",
+            "resolved_ms": 1785283866208,
+            "ts": 1784503724608
+        },
+        {
+            "statement": "The Federal Reserve will raise interest rates by at least 25 basis points during the upcoming FOMC meeting on 2026-07-28.",
+            "horizon": "24h",
+            "probability": 0.59,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any FOMC rate decision outcome \u2014 S4 only confirms the 2026-07-28 meeting is scheduled/occurring, and no admissible evidence shows a 25 bp or larger hike, so the forecast is not shown to have come true within its closed window.",
+            "resolved_ms": 1785283825413,
+            "ts": 1784502976440
         }
     ],
-    "next_judge_ms": 1785283786460,
+    "next_judge_ms": 1785287866354,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 715,
-        "base_rate": 0.0657,
-        "brier_raw": 0.2266,
-        "brier_base_rate": 0.0614,
+        "resolved_n": 727,
+        "base_rate": 0.0646,
+        "brier_raw": 0.2305,
+        "brier_base_rate": 0.0605,
         "brier_calibrated_oos": 0.0257,
         "brier_calibrated_oos_n": 87,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
