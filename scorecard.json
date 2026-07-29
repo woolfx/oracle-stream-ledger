@@ -1,88 +1,165 @@
 {
-    "resolved": 735,
-    "open": 2339,
-    "due": 106,
-    "next_due_ms": 1785291259933,
+    "resolved": 742,
+    "open": 2359,
+    "due": 101,
+    "next_due_ms": 1785294576573,
     "unresolvable": 66,
-    "brier": 0.231,
+    "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 377,
+            "resolved": 381,
             "brier": 0.232,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 358,
-            "brier": 0.23,
+            "resolved": 361,
+            "brier": 0.233,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 88,
+            "n": 89,
             "avg_predicted": 0.13,
-            "observed": 0.05
+            "observed": 0.04
         },
         {
             "bin": "20\u201340%",
-            "n": 230,
+            "n": 232,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 242,
+            "n": 243,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
         {
             "bin": "60\u201380%",
-            "n": 138,
+            "n": 140,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
         {
             "bin": "80\u2013100%",
-            "n": 37,
+            "n": 38,
             "avg_predicted": 0.83,
             "observed": 0.11
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 735,
-            "brier": 0.273
+            "resolved": 742,
+            "brier": 0.275
         },
         "Economist": {
-            "resolved": 733,
-            "brier": 0.289
+            "resolved": 740,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 735,
+            "resolved": 742,
             "brier": 0.304
         },
         "Skeptic": {
-            "resolved": 734,
-            "brier": 0.18
+            "resolved": 741,
+            "brier": 0.181
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2570,
-            "brier": 0.277,
-            "hit_rate": 0.542,
-            "rock_hit_rate": 0.93
+            "resolved": 2582,
+            "brier": 0.278,
+            "hit_rate": 0.54,
+            "rock_hit_rate": 0.929
         },
         "qwen3:14b": {
-            "resolved": 367,
-            "brier": 0.155,
-            "hit_rate": 0.779,
-            "rock_hit_rate": 0.978
+            "resolved": 383,
+            "brier": 0.158,
+            "hit_rate": 0.77,
+            "rock_hit_rate": 0.979
         }
     },
     "recent": [
+        {
+            "statement": "The EIA weekly petroleum status report will move CL=F by at least 1.5% on the day of its release, July 22nd.",
+            "horizon": "week",
+            "probability": 0.87,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any CL=F price move magnitude on July 22, 2026; the signals only confirm report scheduling/publication, so the claimed \u22651.5% move is unsupported after the window closed.",
+            "resolved_ms": 1785292469948,
+            "ts": 1784686459933
+        },
+        {
+            "statement": "The VIX fear gauge will spike above 22 within 24 hours due to escalation in Israeli-Lebanon conflict",
+            "horizon": "24h",
+            "probability": 0.29,
+            "location": "Lebanon",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 18.21 and falling, well below the 22 threshold, so the forecast spike did not occur within the window.",
+            "resolved_ms": 1785292424115,
+            "ts": 1785203704773
+        },
+        {
+            "statement": "Hurricane Genevieve will intensify to Category 3 strength within 24 hours, threatening Mexico's Gulf Coast",
+            "horizon": "24h",
+            "probability": 0.05,
+            "location": "Gulf of Mexico",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Genevieve was a Pacific hurricane east of the Gulf that reached Category 5 but was explicitly not expected to make landfall, so the forecast's stated threat to Mexico's Gulf Coast did not occur.",
+            "resolved_ms": 1785292385967,
+            "ts": 1785203704773
+        },
+        {
+            "statement": "Flash flooding will occur in the Nashville area within the next week",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "Nashville, TN",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S2, dated 2026-07-22 within the forecast window, states Nashville Fire crews rescued stranded residents in knee-deep flash flooding, showing flash flooding occurred in the Nashville area.",
+            "resolved_ms": 1785292338890,
+            "ts": 1784684622248
+        },
+        {
+            "statement": "The Federal Reserve will raise interest rates at the FOMC meeting on July 28th",
+            "horizon": "week",
+            "probability": 0.74,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 confirms only that the FOMC meeting was scheduled for 2026-07-28, and no signal \u2014 including the [web] headlines \u2014 states that the Federal Reserve actually raised interest rates.",
+            "resolved_ms": 1785292284739,
+            "ts": 1784684622248
+        },
+        {
+            "statement": "Federal Reserve's FOMC meeting on 2026-07-28 will signal a 25-basis-point rate hike to combat inflationary pressures.",
+            "horizon": "24h",
+            "probability": 0.51,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal states the FOMC announced or signaled a 25-basis-point rate hike; the web headlines only reference the scheduled July 28-29 meeting and market speculation, with no reported hike decision.",
+            "resolved_ms": 1785292250135,
+            "ts": 1785201689150
+        },
+        {
+            "statement": "Federal Reserve will maintain benchmark interest rates unchanged during the July 28 FOMC meeting",
+            "horizon": "24h",
+            "probability": 0.75,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The signals confirm only that an FOMC meeting was scheduled for 2026-07-28; no signal or headline states that the Fed actually held rates unchanged, so the forecast event is not shown to have occurred within the closed window.",
+            "resolved_ms": 1785292165489,
+            "ts": 1785199843575
+        },
         {
             "statement": "Federal Reserve's FOMC meeting on 2026-07-28 will signal a 25-basis-point rate hike due to persistently high inflation in the US.",
             "horizon": "24h",
@@ -137,98 +214,21 @@
             "evidence": "No signal reports natural gas futures (NG=F) prices at all \u2014 only AIS ship transit counts for various straits \u2014 so nothing shows a >2% weekly drop occurred.",
             "resolved_ms": 1785288199240,
             "ts": 1784675453050
-        },
-        {
-            "statement": "The FOMC will announce a rate hike on July 28, 2026.",
-            "horizon": "week",
-            "probability": 0.76,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The FOMC meeting is only occurring on 2026-07-28 (after the forecast window closed on 2026-07-27), and no signal shows any announced rate hike.",
-            "resolved_ms": 1785287976793,
-            "ts": 1784575394680
-        },
-        {
-            "statement": "The US Federal Reserve will announce a rate hike at their next meeting on July 28th.",
-            "horizon": "week",
-            "probability": 0.45,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The FOMC meeting is only occurring on 2026-07-28, after the forecast window closed on 2026-07-27, and no signal shows any announced rate hike.",
-            "resolved_ms": 1785287935380,
-            "ts": 1784556904855
-        },
-        {
-            "statement": "The US Federal Reserve will raise interest rates by at least 25 basis points",
-            "horizon": "week",
-            "probability": 0.8,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The window closed 2026-07-27 with no signal showing any Fed rate increase; the nearest FOMC decision (S2) falls on 2026-07-28, after the window closed.",
-            "resolved_ms": 1785287900970,
-            "ts": 1784553223041
-        },
-        {
-            "statement": "The FOMC meeting on July 28 will result in a rate hike",
-            "horizon": "week",
-            "probability": 0.8,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The FOMC meeting is only occurring on 2026-07-28, after the forecast window closed on 2026-07-27, and no signal shows any rate hike decision.",
-            "resolved_ms": 1785284266342,
-            "ts": 1784551377922
-        },
-        {
-            "statement": "The US will announce a rate hike at the FOMC meeting scheduled for July 28, 2026.",
-            "horizon": "week",
-            "probability": 0.69,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The July FOMC meeting was scheduled for July 28\u201329, 2026 \u2014 after the forecast window closed on July 27 \u2014 and no signal shows any announced rate hike.",
-            "resolved_ms": 1785284227121,
-            "ts": 1784525535987
-        },
-        {
-            "statement": "The US will announce a new Federal Reserve rate decision on July 28th, with a 0.5% increase.",
-            "horizon": "week",
-            "probability": 0.24,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S2 shows the FOMC meeting is only occurring on 2026-07-28 \u2014 after the forecast window closed on 2026-07-27 \u2014 and no signal reports any announced rate decision, let alone a 0.5% increase.",
-            "resolved_ms": 1785284186098,
-            "ts": 1784519914558
-        },
-        {
-            "statement": "The FOMC will raise interest rates by 25 basis points on July 28th",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal shows any FOMC rate hike occurring; S4 only confirms the July 28, 2026 meeting was scheduled (a day after the forecast window closed), and no signal reports a 25 bp increase.",
-            "resolved_ms": 1785284144363,
-            "ts": 1784514857491
         }
     ],
-    "next_judge_ms": 1785291971146,
+    "next_judge_ms": 1785296069959,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 735,
-        "base_rate": 0.0639,
-        "brier_raw": 0.2313,
-        "brier_base_rate": 0.0599,
-        "brier_calibrated_oos": 0.0252,
-        "brier_calibrated_oos_n": 89,
+        "resolved_n": 742,
+        "base_rate": 0.0647,
+        "brier_raw": 0.2328,
+        "brier_base_rate": 0.0605,
+        "brier_calibrated_oos": 0.0244,
+        "brier_calibrated_oos_n": 93,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
