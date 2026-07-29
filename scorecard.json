@@ -1,15 +1,15 @@
 {
-    "resolved": 779,
-    "open": 2463,
-    "due": 99,
-    "next_due_ms": 1785324427351,
+    "resolved": 781,
+    "open": 2468,
+    "due": 102,
+    "next_due_ms": 1785326779338,
     "unresolvable": 96,
-    "brier": 0.233,
+    "brier": 0.234,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 399,
-            "brier": 0.231,
+            "resolved": 401,
+            "brier": 0.232,
             "hit_rate": 0.6
         },
         "week": {
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 148,
+            "n": 150,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 778,
+            "resolved": 780,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 776,
-            "brier": 0.289
+            "resolved": 778,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 778,
-            "brier": 0.302
+            "resolved": 780,
+            "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 777,
-            "brier": 0.182
+            "resolved": 779,
+            "brier": 0.183
         }
     },
     "models": {
@@ -76,19 +76,41 @@
             "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
-            "resolved": 455,
-            "brier": 0.165,
-            "hit_rate": 0.752,
-            "rock_hit_rate": 0.956
+            "resolved": 463,
+            "brier": 0.172,
+            "hit_rate": 0.739,
+            "rock_hit_rate": 0.957
         },
         "claude-opus-5 (headline)": {
-            "resolved": 5,
-            "brier": 0.418,
-            "hit_rate": 0.4,
-            "rock_hit_rate": 0.6
+            "resolved": 7,
+            "brier": 0.477,
+            "hit_rate": 0.286,
+            "rock_hit_rate": 0.714
         }
     },
     "recent": [
+        {
+            "statement": "FOMC leaves the federal funds target range unchanged at its July 28, 2026 meeting",
+            "horizon": "24h",
+            "probability": 0.72,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms the FOMC left the federal funds target range unchanged; all signals only confirm the meeting was scheduled, not its outcome.",
+            "resolved_ms": 1785323496360,
+            "ts": 1785218563840
+        },
+        {
+            "statement": "FOMC leaves the federal funds target range unchanged at its July 28, 2026 meeting",
+            "horizon": "24h",
+            "probability": 0.76,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms the FOMC left the federal funds target range unchanged; all signals only confirm the meeting was scheduled, not its outcome.",
+            "resolved_ms": 1785323486415,
+            "ts": 1785218362696
+        },
         {
             "statement": "Ukrainian drone or missile strikes are reported against targets in Crimea or Russian Black Sea infrastructure, with further power/water disruption reported",
             "horizon": "24h",
@@ -198,43 +220,21 @@
             "evidence": "Strait of Hormuz transits were 10 per day, 52% below the 30-day average of 21, showing a sharp decrease rather than a significant increase.",
             "resolved_ms": 1785303929722,
             "ts": 1784695636391
-        },
-        {
-            "statement": "The Kerch Strait ship transit count will drop to 1/day due to heightened Ukrainian-Russian tensions near the conflict zone.",
-            "horizon": "24h",
-            "probability": 0.48,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Kerch Strait signal reports 2 daily ship transits, not the forecast drop to 1/day.",
-            "resolved_ms": 1785303884120,
-            "ts": 1785213594659
-        },
-        {
-            "statement": "There will be at least one major disruption in the Strait of Hormuz within the next week.",
-            "horizon": "week",
-            "probability": 0.53,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S4 shows Strait of Hormuz transits at 10 per day, 52% below the 30-day average of 21 as of 2026-07-23 inside the forecast window, a collapse in traffic corroborated by the existence of a documented '2026 Strait of Hormuz crisis' (S7).",
-            "resolved_ms": 1785303839037,
-            "ts": 1784693805586
         }
     ],
-    "next_judge_ms": 1785323178021,
+    "next_judge_ms": 1785327176957,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 779,
-        "base_rate": 0.0668,
-        "brier_raw": 0.2328,
-        "brier_base_rate": 0.0623,
-        "brier_calibrated_oos": 0.0444,
-        "brier_calibrated_oos_n": 111,
+        "resolved_n": 781,
+        "base_rate": 0.0666,
+        "brier_raw": 0.2336,
+        "brier_base_rate": 0.0621,
+        "brier_calibrated_oos": 0.0439,
+        "brier_calibrated_oos_n": 113,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
