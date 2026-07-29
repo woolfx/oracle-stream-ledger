@@ -1,19 +1,19 @@
 {
-    "resolved": 796,
-    "open": 2564,
-    "due": 136,
-    "next_due_ms": 1785346158069,
+    "resolved": 800,
+    "open": 2585,
+    "due": 138,
+    "next_due_ms": 1785348175399,
     "unresolvable": 96,
     "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 411,
-            "brier": 0.232,
-            "hit_rate": 0.6
+            "resolved": 413,
+            "brier": 0.231,
+            "hit_rate": 0.61
         },
         "week": {
-            "resolved": 385,
+            "resolved": 387,
             "brier": 0.235,
             "hit_rate": 0.6
         }
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 252,
+            "n": 254,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 255,
+            "n": 257,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,43 +52,87 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 795,
+            "resolved": 799,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 793,
+            "resolved": 797,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 795,
+            "resolved": 799,
             "brier": 0.3
         },
         "Skeptic": {
-            "resolved": 794,
+            "resolved": 798,
             "brier": 0.184
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2674,
-            "brier": 0.279,
-            "hit_rate": 0.54,
+            "resolved": 2682,
+            "brier": 0.278,
+            "hit_rate": 0.541,
             "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
-            "resolved": 503,
+            "resolved": 511,
             "brier": 0.175,
-            "hit_rate": 0.738,
-            "rock_hit_rate": 0.944
+            "hit_rate": 0.736,
+            "rock_hit_rate": 0.945
         },
         "claude-opus-5 (headline)": {
-            "resolved": 17,
-            "brier": 0.502,
-            "hit_rate": 0.235,
-            "rock_hit_rate": 0.765
+            "resolved": 19,
+            "brier": 0.515,
+            "hit_rate": 0.211,
+            "rock_hit_rate": 0.789
         }
     },
     "recent": [
+        {
+            "statement": "The FOMC meeting on 2026-07-28 will result in a rate hike",
+            "horizon": "week",
+            "probability": 0.58,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 only confirms the FOMC meeting was scheduled for 2026-07-28; no signal in the closed window reports any rate hike decision, which such a major event would have shown.",
+            "resolved_ms": 1785346115136,
+            "ts": 1784712254215
+        },
+        {
+            "statement": "Aftershock of M5.0 or greater strikes within 100 km of Uto, Kumamoto, Japan following the M6.8 red-alert quake",
+            "horizon": "24h",
+            "probability": 0.25,
+            "location": "Uto, Kumamoto, Japan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal text shows any M5.0+ aftershock near Uto, Kumamoto during the closed window, and an event of that size would have been captured.",
+            "resolved_ms": 1785346108623,
+            "ts": 1785230387026
+        },
+        {
+            "statement": "WTI crude front-month settles below $84/bbl (staying under Brent's level and holding the sell-off)",
+            "horizon": "24h",
+            "probability": 0.48,
+            "location": "Cushing, Oklahoma, United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports a WTI settlement, and the only crude price signal shows Brent surging +7.5% to $90.4/bbl \u2014 a rally rather than a held sell-off, implying WTI well above $84 rather than below it.",
+            "resolved_ms": 1785346098822,
+            "ts": 1785228384333
+        },
+        {
+            "statement": "A magnitude 5.0 or greater earthquake will occur within the next week in South America",
+            "horizon": "week",
+            "probability": 0.27,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The window has closed and no admissible signal text reports any magnitude 5.0+ earthquake in South America, so the occurrence cannot be established from the evidence provided.",
+            "resolved_ms": 1785346064463,
+            "ts": 1784575472569
+        },
         {
             "statement": "Aftershock of M5.0 or greater strikes within 100 km of the M6.8 Uto, Japan epicenter",
             "horizon": "24h",
@@ -176,65 +220,21 @@
             "evidence": "None of the admissible signals \u2014 including the Wikipedia and Al Jazeera headlines on the M7.1 Kumamoto quake \u2014 state that an aftershock of M5.0 or greater occurred within 150 km of the epicenter during the window.",
             "resolved_ms": 1785338360593,
             "ts": 1785224376107
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28, 2026 meeting",
-            "horizon": "24h",
-            "probability": 0.76,
-            "location": "Washington, DC, United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal confirms the FOMC left the federal funds rate unchanged; signals only confirm the July 28 meeting was scheduled, not its outcome.",
-            "resolved_ms": 1785335478923,
-            "ts": 1785226374430
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a ship transit increase by at least 20% within the next week",
-            "horizon": "week",
-            "probability": 0.4,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz had 10 daily ship transits, 52% below its 30-day average (21), indicating a decrease, not an increase of at least 20%.",
-            "resolved_ms": 1785335422247,
-            "ts": 1784703053545
-        },
-        {
-            "statement": "CBOT corn front-month settles above 465 \u00a2/bu",
-            "horizon": "24h",
-            "probability": 0.51,
-            "location": "US Corn Belt",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Signal S1 shows Corn (CBOT) at 477 \u00a2/bu, which is above the 465 \u00a2/bu threshold stated in the forecast.",
-            "resolved_ms": 1785331572277,
-            "ts": 1785224376107
-        },
-        {
-            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, prompting typhoon signals and flight cancellations in Hong Kong or Shenzhen",
-            "horizon": "24h",
-            "probability": 0.26,
-            "location": "Pearl River Delta, Guangdong, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal explicitly confirms Typhoon Noul made landfall or passed within 100 km of the Pearl River Delta coast, or caused typhoon signals/flights cancellations in Hong Kong/Shenzhen; S3 only mentions an Orange alert for Noul-26 affecting 11.891 million people with Category 1 winds, but does not specify landfall/proximity to the Pearl River Delta or flight cancellations.",
-            "resolved_ms": 1785331548969,
-            "ts": 1785222401884
         }
     ],
-    "next_judge_ms": 1785346057928,
+    "next_judge_ms": 1785349715149,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 796,
-        "base_rate": 0.0678,
-        "brier_raw": 0.2334,
-        "brier_base_rate": 0.0632,
-        "brier_calibrated_oos": 0.0546,
-        "brier_calibrated_oos_n": 123,
+        "resolved_n": 800,
+        "base_rate": 0.0675,
+        "brier_raw": 0.2331,
+        "brier_base_rate": 0.0629,
+        "brier_calibrated_oos": 0.0537,
+        "brier_calibrated_oos_n": 125,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
