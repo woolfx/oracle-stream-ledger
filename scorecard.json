@@ -1,234 +1,234 @@
 {
-    "resolved": 755,
-    "open": 2398,
-    "due": 104,
-    "next_due_ms": 1785302281414,
-    "unresolvable": 66,
-    "brier": 0.231,
+    "resolved": 771,
+    "open": 2414,
+    "due": 68,
+    "next_due_ms": 1785306020788,
+    "unresolvable": 96,
+    "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 391,
-            "brier": 0.23,
+            "resolved": 393,
+            "brier": 0.231,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 364,
-            "brier": 0.232,
+            "resolved": 378,
+            "brier": 0.235,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 93,
+            "n": 94,
             "avg_predicted": 0.13,
-            "observed": 0.04
+            "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 238,
+            "n": 243,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 245,
+            "n": 249,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
         {
             "bin": "60\u201380%",
-            "n": 141,
+            "n": 145,
             "avg_predicted": 0.68,
-            "observed": 0.11
+            "observed": 0.1
         },
         {
             "bin": "80\u2013100%",
-            "n": 38,
+            "n": 40,
             "avg_predicted": 0.83,
-            "observed": 0.11
+            "observed": 0.1
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 755,
-            "brier": 0.274
+            "resolved": 770,
+            "brier": 0.275
         },
         "Economist": {
-            "resolved": 753,
-            "brier": 0.287
+            "resolved": 768,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 755,
-            "brier": 0.3
+            "resolved": 770,
+            "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 754,
-            "brier": 0.18
+            "resolved": 769,
+            "brier": 0.182
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2594,
-            "brier": 0.277,
-            "hit_rate": 0.542,
+            "resolved": 2646,
+            "brier": 0.279,
+            "hit_rate": 0.54,
             "rock_hit_rate": 0.929
         },
         "qwen3:14b": {
-            "resolved": 423,
-            "brier": 0.156,
-            "hit_rate": 0.766,
-            "rock_hit_rate": 0.981
+            "resolved": 431,
+            "brier": 0.162,
+            "hit_rate": 0.754,
+            "rock_hit_rate": 0.972
         }
     },
     "recent": [
         {
-            "statement": "The US Federal Reserve will signal a pause in rate hikes during its July 28 FOMC meeting, leading to a 0.5% decline in the dollar index within 24 hours",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S3 confirms only that the FOMC meeting occurred on 2026-07-28; no signal shows a pause signal or a 0.5% dollar index decline within 24 hours, so the forecast's stated thresholds are unmet.",
-            "resolved_ms": 1785300305991,
-            "ts": 1785211836582
-        },
-        {
-            "statement": "The US Federal Reserve will signal a pause in rate hikes at the July 28 FOMC meeting, citing cooling inflation and strong labor market data.",
-            "horizon": "24h",
-            "probability": 0.46,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S2 only confirms the FOMC meeting was scheduled for 2026-07-28; no signal, including the S20 prediction-market headline, states that the Fed signaled a pause citing cooling inflation and strong labor data.",
-            "resolved_ms": 1785300263226,
-            "ts": 1785211560581
-        },
-        {
-            "statement": "The Kerch Strait's ship transits will drop below 2 daily due to escalating Russian-Ukrainian tensions near the conflict zone.",
-            "horizon": "24h",
-            "probability": 0.22,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Kerch Strait recorded 2 daily ship transits, which does not meet the stated threshold of dropping below 2.",
-            "resolved_ms": 1785300225128,
-            "ts": 1785211560581
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
+            "statement": "The FOMC will raise interest rates by 25 basis points on July 28th",
             "horizon": "week",
-            "probability": 0.3,
+            "probability": 0.78,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms the FOMC raised rates by 25 bps on July 28; S5-S8 only confirm the meeting was scheduled, not its outcome.",
+            "resolved_ms": 1785304037899,
+            "ts": 1784697481414
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits",
+            "horizon": "week",
+            "probability": 0.27,
             "location": "Strait of Hormuz",
             "outcome": 0.0,
             "verdict": "no",
-            "evidence": "The current snapshot shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, indicating a sharp decline rather than a significant increase during the forecast window.",
-            "resolved_ms": 1785300188153,
-            "ts": 1784691966969
+            "evidence": "Strait of Hormuz transits were 10 per day, 52% below the 30-day average of 21, showing a sharp decrease rather than a significant increase.",
+            "resolved_ms": 1785303929722,
+            "ts": 1784695636391
         },
         {
-            "statement": "Kerch Strait transit drops to 0 due to renewed Black Sea naval clashes",
+            "statement": "The Kerch Strait ship transit count will drop to 1/day due to heightened Ukrainian-Russian tensions near the conflict zone.",
             "horizon": "24h",
-            "probability": 0.14,
+            "probability": 0.48,
             "location": "Kerch Strait",
             "outcome": 0.0,
             "verdict": "no",
-            "evidence": "The only Kerch Strait signal shows 2 daily transits (73% below its 30-day average), not the forecast drop to 0, and no signal reports renewed Black Sea naval clashes.",
-            "resolved_ms": 1785300145096,
-            "ts": 1785209988131
+            "evidence": "The only Kerch Strait signal reports 2 daily ship transits, not the forecast drop to 1/day.",
+            "resolved_ms": 1785303884120,
+            "ts": 1785213594659
         },
         {
-            "statement": "Federal Reserve signals 25-basis-point rate cut at July 28 FOMC meeting",
-            "horizon": "24h",
-            "probability": 0.35,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Signals confirm only that an FOMC meeting was scheduled/held on 2026-07-28 (S4) and a headline about prediction markets for the July Fed decision (S20); nothing states the Fed signaled or delivered a 25-basis-point rate cut.",
-            "resolved_ms": 1785300103065,
-            "ts": 1785209988131
-        },
-        {
-            "statement": "U.S. Federal Reserve raises interest rates by 25 basis points at the July 28 FOMC meeting",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Signals only confirm the July 28, 2026 FOMC meeting was scheduled/held (S4) and a prediction-markets headline (S20); no signal states any 25 basis point rate increase occurred.",
-            "resolved_ms": 1785300066555,
-            "ts": 1785209844366
-        },
-        {
-            "statement": "A flash flood warning will be issued for the state of Arizona within the next week",
+            "statement": "There will be at least one major disruption in the Strait of Hormuz within the next week.",
             "horizon": "week",
-            "probability": 0.33,
-            "location": "Arizona",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All flash flood warning signals for Arizona (S2\u2013S7) are dated July 12\u201317, 2026, before the forecast window opened on July 22, and no signal documents a warning issued between July 22 and July 29, 2026.",
-            "resolved_ms": 1785296521351,
-            "ts": 1784690134115
+            "probability": 0.53,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S4 shows Strait of Hormuz transits at 10 per day, 52% below the 30-day average of 21 as of 2026-07-23 inside the forecast window, a collapse in traffic corroborated by the existence of a documented '2026 Strait of Hormuz crisis' (S7).",
+            "resolved_ms": 1785303839037,
+            "ts": 1784693805586
         },
         {
-            "statement": "Tropical Cyclone NOUL-26 will intensify to Category 3 within 24 hours",
+            "statement": "The Strait of Hormuz will see a 15% drop in daily ship transits due to heightened regional tensions linked to Iran's conflict with Ukraine",
             "horizon": "24h",
-            "probability": 0.1,
-            "location": "Pacific Ocean",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only intensity-related signal for NOUL-26 (S3) cites Category 1 (120 km/h) wind impacts after landfall in China, and no signal shows the storm reaching Category 3 within the 24-hour window.",
-            "resolved_ms": 1785296478856,
-            "ts": 1785208353114
+            "probability": 0.12,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Strait of Hormuz daily transits were 10, 52% below the 30-day average of 21, far exceeding the forecast's 15% drop threshold within the window.",
+            "resolved_ms": 1785303799486,
+            "ts": 1785211836582
         },
         {
-            "statement": "VIX fear gauge will spike above 20 due to Gaza conflict escalation",
-            "horizon": "24h",
-            "probability": 0.25,
-            "location": "Global markets",
+            "statement": "A major earthquake will occur in the United States within the next week",
+            "horizon": "week",
+            "probability": 0.4,
+            "location": "United States",
             "outcome": 0.0,
             "verdict": "no",
-            "evidence": "The current VIX snapshot shows 18.21 (-2.46%), below the stated 20 threshold, and no signal shows a Gaza-driven spike above 20 during the window.",
-            "resolved_ms": 1785296438982,
-            "ts": 1785208353114
+            "evidence": "No signal reports a major earthquake occurring in the United States during 2026-07-17 to 2026-07-24; the only quake-specific web item names the 2026 Sanriku earthquake (Japan), and the generic earthquake trackers state no U.S. major event.",
+            "resolved_ms": 1785302680741,
+            "ts": 1784302134236
         },
         {
-            "statement": "Kerch Strait ship transits will drop below 1 daily due to escalating Ukraine war tensions",
-            "horizon": "24h",
-            "probability": 0.3,
-            "location": "Kerch Strait",
+            "statement": "A major earthquake will occur in the United States within the next week",
+            "horizon": "week",
+            "probability": 0.24,
+            "location": "United States",
             "outcome": 0.0,
             "verdict": "no",
-            "evidence": "Kerch Strait recorded 2 daily ship transits during the window, which is above the forecast threshold of below 1.",
-            "resolved_ms": 1785296401911,
-            "ts": 1785208353114
+            "evidence": "No signal reports a major earthquake occurring in the United States during 2026-07-17 to 2026-07-24; the only quake-specific web item names a Sanriku (Japan) event, and generic earthquake trackers state no U.S. major event.",
+            "resolved_ms": 1785302634580,
+            "ts": 1784302134236
         },
         {
-            "statement": "A volcanic eruption occurs at Nevados del Chillan Volcano, Chile, triggered by seismic activity near Mendoza, Argentina.",
-            "horizon": "24h",
-            "probability": 0.1,
-            "location": "Nevados del Chillan Volcano",
+            "statement": "A major wildfire will break out in the Western United States within the next week",
+            "horizon": "week",
+            "probability": 0.75,
+            "location": "Western United States",
             "outcome": 0.0,
             "verdict": "no",
-            "evidence": "No signal shows an eruption at Nevados del Chill\u00e1n during the 28\u201329 July 2026 window, let alone one triggered by seismic activity near Mendoza; all web items predate the forecast (June 2026 or earlier) and only describe ongoing activity or hazard status.",
-            "resolved_ms": 1785296360742,
-            "ts": 1785208176573
+            "evidence": "No signal states that a major wildfire ignited in the Western United States between 2026-07-17 and 2026-07-24; S2 is only a generic Wikipedia page title for 2026 Washington wildfires with no date or event details, and S3 predates the window by six years.",
+            "resolved_ms": 1785302593065,
+            "ts": 1784302134236
+        },
+        {
+            "statement": "A Category 3 hurricane will make landfall in the Gulf Coast of the United States",
+            "horizon": "week",
+            "probability": 0.57,
+            "location": "Gulf Coast, USA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Gulf Coast landfalls in the window were by Tropical Storm Bertha, which made its second U.S. landfall and degenerated into a trough \u2014 far below Category 3 hurricane strength.",
+            "resolved_ms": 1785302553727,
+            "ts": 1784300272543
+        },
+        {
+            "statement": "A major storm will hit the eastern seaboard of the United States within the next week, causing significant damage and power outages.",
+            "horizon": "week",
+            "probability": 0.83,
+            "location": "Eastern Seaboard, USA",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal is an undated headline stating a storm front \"aims at\" the eastern seaboard, which shows an anticipated condition rather than a storm that actually struck and caused significant damage and power outages within the window.",
+            "resolved_ms": 1785302524603,
+            "ts": 1784281787054
+        },
+        {
+            "statement": "A severe thunderstorm warning will be issued for the eastern United States within the next week.",
+            "horizon": "week",
+            "probability": 0.8,
+            "location": "Eastern United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal is a July 28, 2026 severe thunderstorm watch (not warning) dated after the July 23 window closed, so no admissible evidence shows a severe thunderstorm warning issued in the eastern U.S. during the forecast window.",
+            "resolved_ms": 1785302482356,
+            "ts": 1784239325006
+        },
+        {
+            "statement": "A Category 2 hurricane will make landfall in the southeastern United States.",
+            "horizon": "week",
+            "probability": 0.35,
+            "location": "Southeastern United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only U.S. landfall in the window was Tropical Storm Bertha in Louisiana, not a Category 2 hurricane in the southeastern United States.",
+            "resolved_ms": 1785302444883,
+            "ts": 1784226582946
         }
     ],
-    "next_judge_ms": 1785303906006,
+    "next_judge_ms": 1785307637912,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 755,
-        "base_rate": 0.0636,
-        "brier_raw": 0.2308,
-        "brier_base_rate": 0.0595,
-        "brier_calibrated_oos": 0.0223,
-        "brier_calibrated_oos_n": 103,
+        "resolved_n": 771,
+        "base_rate": 0.0649,
+        "brier_raw": 0.2332,
+        "brier_base_rate": 0.0606,
+        "brier_calibrated_oos": 0.0309,
+        "brier_calibrated_oos_n": 105,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
