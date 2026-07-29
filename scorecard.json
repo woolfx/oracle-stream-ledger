@@ -1,8 +1,8 @@
 {
-    "resolved": 806,
-    "open": 2699,
-    "due": 195,
-    "next_due_ms": 1785362578857,
+    "resolved": 807,
+    "open": 2723,
+    "due": 202,
+    "next_due_ms": 1785366491473,
     "unresolvable": 96,
     "brier": 0.234,
     "hit_rate": 0.6,
@@ -13,7 +13,7 @@
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 390,
+            "resolved": 391,
             "brier": 0.236,
             "hit_rate": 0.6
         }
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 152,
+            "n": 153,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,25 +52,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 805,
+            "resolved": 806,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 803,
+            "resolved": 804,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 805,
-            "brier": 0.3
+            "resolved": 806,
+            "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 804,
+            "resolved": 805,
             "brier": 0.185
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2694,
+            "resolved": 2698,
             "brier": 0.279,
             "hit_rate": 0.54,
             "rock_hit_rate": 0.931
@@ -89,6 +89,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The FOMC meeting on July 28 will result in a 50bps rate hike",
+            "horizon": "week",
+            "probability": 0.65,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions the FOMC meeting or any rate decision, and a 50bps hike would certainly have appeared among the market/economy signals; thus nothing shows the forecast event occurred within the closed window.",
+            "resolved_ms": 1785363469502,
+            "ts": 1784717788345
+        },
         {
             "statement": "Strait of Hormuz daily transit counts remain at least 15% below their 30-day average in the next IMF PortWatch update",
             "horizon": "24h",
@@ -209,30 +220,19 @@
             "evidence": "No admissible signal reports an M5.0+ aftershock near Uto during the window, and an event of that magnitude would have been captured by the seismic feeds.",
             "resolved_ms": 1785342457915,
             "ts": 1785228384333
-        },
-        {
-            "statement": "FOMC will raise interest rates by 50bps at their meeting on July 28th",
-            "horizon": "week",
-            "probability": 0.82,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any FOMC rate decision on July 28, 2026, let alone a 50bps hike; the only FOMC references are future scheduled meetings in October 2026 and January 2027, so a move that significant went unrecorded within the closed window.",
-            "resolved_ms": 1785342451492,
-            "ts": 1784708567029
         }
     ],
-    "next_judge_ms": 1785363411324,
+    "next_judge_ms": 1785367069518,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 806,
+        "resolved_n": 807,
         "base_rate": 0.0682,
-        "brier_raw": 0.2335,
-        "brier_base_rate": 0.0636,
+        "brier_raw": 0.2337,
+        "brier_base_rate": 0.0635,
         "brier_calibrated_oos": 0.0594,
         "brier_calibrated_oos_n": 128,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
