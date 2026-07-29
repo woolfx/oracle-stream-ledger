@@ -1,15 +1,15 @@
 {
-    "resolved": 783,
-    "open": 2482,
-    "due": 107,
-    "next_due_ms": 1785330785132,
+    "resolved": 786,
+    "open": 2491,
+    "due": 113,
+    "next_due_ms": 1785334812652,
     "unresolvable": 96,
-    "brier": 0.234,
+    "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 403,
-            "brier": 0.233,
+            "resolved": 406,
+            "brier": 0.232,
             "hit_rate": 0.6
         },
         "week": {
@@ -21,19 +21,19 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 94,
+            "n": 95,
             "avg_predicted": 0.13,
             "observed": 0.05
         },
         {
             "bin": "20\u201340%",
-            "n": 247,
+            "n": 248,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 251,
+            "n": 252,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 782,
-            "brier": 0.276
+            "resolved": 785,
+            "brier": 0.275
         },
         "Economist": {
-            "resolved": 780,
+            "resolved": 783,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 782,
+            "resolved": 785,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 781,
+            "resolved": 784,
             "brier": 0.183
         }
     },
@@ -76,19 +76,52 @@
             "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
-            "resolved": 471,
-            "brier": 0.175,
-            "hit_rate": 0.735,
-            "rock_hit_rate": 0.949
+            "resolved": 483,
+            "brier": 0.173,
+            "hit_rate": 0.741,
+            "rock_hit_rate": 0.942
         },
         "claude-opus-5 (headline)": {
-            "resolved": 9,
-            "brier": 0.467,
+            "resolved": 12,
+            "brier": 0.451,
             "hit_rate": 0.333,
             "rock_hit_rate": 0.667
         }
     },
     "recent": [
+        {
+            "statement": "CBOT corn front-month settles above 465 \u00a2/bu",
+            "horizon": "24h",
+            "probability": 0.51,
+            "location": "US Corn Belt",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S1 shows Corn (CBOT) at 477 \u00a2/bu, which is above the 465 \u00a2/bu threshold stated in the forecast.",
+            "resolved_ms": 1785331572277,
+            "ts": 1785224376107
+        },
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, prompting typhoon signals and flight cancellations in Hong Kong or Shenzhen",
+            "horizon": "24h",
+            "probability": 0.26,
+            "location": "Pearl River Delta, Guangdong, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal explicitly confirms Typhoon Noul made landfall or passed within 100 km of the Pearl River Delta coast, or caused typhoon signals/flights cancellations in Hong Kong/Shenzhen; S3 only mentions an Orange alert for Noul-26 affecting 11.891 million people with Category 1 winds, but does not specify landfall/proximity to the Pearl River Delta or flight cancellations.",
+            "resolved_ms": 1785331548969,
+            "ts": 1785222401884
+        },
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering signal-8-or-higher storm warnings in Hong Kong or Shenzhen",
+            "horizon": "24h",
+            "probability": 0.15,
+            "location": "Pearl River Delta, Guangdong, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms signal-8-or-higher warnings in Hong Kong or Shenzhen for Typhoon Noul-26; S3 only mentions an Orange notification affecting 11.891 million people with Category 1 winds, which does not meet the forecast's threshold.",
+            "resolved_ms": 1785331490761,
+            "ts": 1785220360344
+        },
         {
             "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting decision",
             "horizon": "24h",
@@ -187,54 +220,21 @@
             "evidence": "Signal S10 states WTI Crude Oil was at $81.74/bbl on 2026-07-29, below the forecasted $87.50 threshold.",
             "resolved_ms": 1785311694363,
             "ts": 1784701220788
-        },
-        {
-            "statement": "Brent crude settles in the $84\u201392/bbl band, remaining below $95",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "North Sea / global oil market",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Brent Crude: 87 $/bbl (+3.46%) \u2014 Supply-region anchor: North Sea",
-            "resolved_ms": 1785311681253,
-            "ts": 1785218563840
-        },
-        {
-            "statement": "Typhoon Noul makes landfall or passes within 50 km of the Guangdong coast (Pearl River Delta), prompting China to issue typhoon signals and suspend flights/ferries in Hong Kong or Shenzhen",
-            "horizon": "24h",
-            "probability": 0.28,
-            "location": "Guangdong / Pearl River Delta, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal explicitly confirms Typhoon Noul made landfall or passed within 50 km of Guangdong's Pearl River Delta, or that China issued typhoon signals/suspended flights/ferries in Hong Kong/Shenzhen.",
-            "resolved_ms": 1785307834218,
-            "ts": 1785218362696
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.32,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Signal S4 shows Strait of Hormuz had 10 daily ship transits (52% below its 30-day average) as of 2026-07-23, directly contradicting the forecast's claim of a 'significant increase' in transits during the window.",
-            "resolved_ms": 1785307792325,
-            "ts": 1784699349538
         }
     ],
-    "next_judge_ms": 1785331236687,
+    "next_judge_ms": 1785335172291,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 783,
-        "base_rate": 0.0677,
-        "brier_raw": 0.2339,
-        "brier_base_rate": 0.0631,
-        "brier_calibrated_oos": 0.0507,
-        "brier_calibrated_oos_n": 115,
+        "resolved_n": 786,
+        "base_rate": 0.0687,
+        "brier_raw": 0.2334,
+        "brier_base_rate": 0.064,
+        "brier_calibrated_oos": 0.0567,
+        "brier_calibrated_oos_n": 118,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
