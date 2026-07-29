@@ -1,14 +1,14 @@
 {
-    "resolved": 804,
-    "open": 2657,
-    "due": 163,
-    "next_due_ms": 1785356171695,
+    "resolved": 805,
+    "open": 2674,
+    "due": 188,
+    "next_due_ms": 1785360068300,
     "unresolvable": 96,
     "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 414,
+            "resolved": 415,
             "brier": 0.231,
             "hit_rate": 0.61
         },
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 254,
+            "n": 255,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 803,
+            "resolved": 804,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 801,
+            "resolved": 802,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 803,
-            "brier": 0.301
+            "resolved": 804,
+            "brier": 0.3
         },
         "Skeptic": {
-            "resolved": 802,
+            "resolved": 803,
             "brier": 0.184
         }
     },
@@ -76,19 +76,30 @@
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 515,
+            "resolved": 519,
             "brier": 0.176,
             "hit_rate": 0.734,
             "rock_hit_rate": 0.946
         },
         "claude-opus-5 (headline)": {
-            "resolved": 20,
-            "brier": 0.525,
-            "hit_rate": 0.2,
-            "rock_hit_rate": 0.8
+            "resolved": 21,
+            "brier": 0.53,
+            "hit_rate": 0.19,
+            "rock_hit_rate": 0.81
         }
     },
     "recent": [
+        {
+            "statement": "Japan's Kumamoto region (near Uto/Tsunagi) records at least one aftershock of M5.0 or greater following the M6.8 red-alert quake",
+            "horizon": "24h",
+            "probability": 0.36,
+            "location": "Uto, Kumamoto, Japan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal reports any M5.0+ aftershock in the Kumamoto region within the 24h window, and an event of that size would have been captured by the seismic feeds.",
+            "resolved_ms": 1785356143785,
+            "ts": 1785234377689
+        },
         {
             "statement": "There will be a significant increase in ship transits through the Malacca Strait within the next week.",
             "horizon": "week",
@@ -209,32 +220,21 @@
             "evidence": "No archived signal shows any VIX spike to 25 or equity turmoil during the window, and a volatility surge of that magnitude would have been captured before the window closed.",
             "resolved_ms": 1785342447317,
             "ts": 1784708567029
-        },
-        {
-            "statement": "CBOT corn (ZC=F) settles higher again, closing above 475 \u00a2/bu",
-            "horizon": "24h",
-            "probability": 0.43,
-            "location": "US Corn Belt / Chicago",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows CBOT corn at 473 \u00a2/bu (+3.16%), higher on the day but below the required 475 \u00a2/bu close.",
-            "resolved_ms": 1785342443510,
-            "ts": 1785226374430
         }
     ],
-    "next_judge_ms": 1785355878848,
+    "next_judge_ms": 1785359743799,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 804,
-        "base_rate": 0.0672,
-        "brier_raw": 0.2335,
-        "brier_base_rate": 0.0627,
-        "brier_calibrated_oos": 0.0534,
-        "brier_calibrated_oos_n": 126,
+        "resolved_n": 805,
+        "base_rate": 0.0671,
+        "brier_raw": 0.2334,
+        "brier_base_rate": 0.0626,
+        "brier_calibrated_oos": 0.053,
+        "brier_calibrated_oos_n": 127,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
