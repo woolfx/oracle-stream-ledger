@@ -1,14 +1,14 @@
 {
-    "resolved": 805,
-    "open": 2674,
-    "due": 188,
-    "next_due_ms": 1785360068300,
+    "resolved": 806,
+    "open": 2699,
+    "due": 195,
+    "next_due_ms": 1785362578857,
     "unresolvable": 96,
-    "brier": 0.233,
+    "brier": 0.234,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 415,
+            "resolved": 416,
             "brier": 0.231,
             "hit_rate": 0.61
         },
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 259,
+            "n": 260,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 804,
+            "resolved": 805,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 802,
+            "resolved": 803,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 804,
+            "resolved": 805,
             "brier": 0.3
         },
         "Skeptic": {
-            "resolved": 803,
-            "brier": 0.184
+            "resolved": 804,
+            "brier": 0.185
         }
     },
     "models": {
@@ -76,19 +76,30 @@
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 519,
-            "brier": 0.176,
+            "resolved": 523,
+            "brier": 0.177,
             "hit_rate": 0.734,
-            "rock_hit_rate": 0.946
+            "rock_hit_rate": 0.939
         },
         "claude-opus-5 (headline)": {
-            "resolved": 21,
-            "brier": 0.53,
-            "hit_rate": 0.19,
-            "rock_hit_rate": 0.81
+            "resolved": 22,
+            "brier": 0.509,
+            "hit_rate": 0.227,
+            "rock_hit_rate": 0.773
         }
     },
     "recent": [
+        {
+            "statement": "Strait of Hormuz daily transit counts remain at least 15% below their 30-day average in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.4,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, far exceeding the 15% below threshold.",
+            "resolved_ms": 1785359811310,
+            "ts": 1785234377689
+        },
         {
             "statement": "Japan's Kumamoto region (near Uto/Tsunagi) records at least one aftershock of M5.0 or greater following the M6.8 red-alert quake",
             "horizon": "24h",
@@ -209,32 +220,21 @@
             "evidence": "No signal reports any FOMC rate decision on July 28, 2026, let alone a 50bps hike; the only FOMC references are future scheduled meetings in October 2026 and January 2027, so a move that significant went unrecorded within the closed window.",
             "resolved_ms": 1785342451492,
             "ts": 1784708567029
-        },
-        {
-            "statement": "VIX will jump to 25 within the next week due to increased equity market turmoil",
-            "horizon": "week",
-            "probability": 0.36,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No archived signal shows any VIX spike to 25 or equity turmoil during the window, and a volatility surge of that magnitude would have been captured before the window closed.",
-            "resolved_ms": 1785342447317,
-            "ts": 1784708567029
         }
     ],
-    "next_judge_ms": 1785359743799,
+    "next_judge_ms": 1785363411324,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 805,
-        "base_rate": 0.0671,
-        "brier_raw": 0.2334,
-        "brier_base_rate": 0.0626,
-        "brier_calibrated_oos": 0.053,
-        "brier_calibrated_oos_n": 127,
+        "resolved_n": 806,
+        "base_rate": 0.0682,
+        "brier_raw": 0.2335,
+        "brier_base_rate": 0.0636,
+        "brier_calibrated_oos": 0.0594,
+        "brier_calibrated_oos_n": 128,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
