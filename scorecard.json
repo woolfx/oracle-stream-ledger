@@ -1,19 +1,19 @@
 {
-    "resolved": 773,
-    "open": 2431,
-    "due": 71,
-    "next_due_ms": 1785308801884,
+    "resolved": 775,
+    "open": 2442,
+    "due": 77,
+    "next_due_ms": 1785312774430,
     "unresolvable": 96,
     "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 394,
-            "brier": 0.231,
+            "resolved": 395,
+            "brier": 0.23,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 379,
+            "resolved": 380,
             "brier": 0.235,
             "hit_rate": 0.6
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 245,
+            "n": 246,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -39,9 +39,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 145,
+            "n": 146,
             "avg_predicted": 0.68,
-            "observed": 0.1
+            "observed": 0.11
         },
         {
             "bin": "80\u2013100%",
@@ -52,43 +52,65 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 772,
+            "resolved": 774,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 770,
+            "resolved": 772,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 772,
-            "brier": 0.303
+            "resolved": 774,
+            "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 771,
-            "brier": 0.182
+            "resolved": 773,
+            "brier": 0.181
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2650,
+            "resolved": 2654,
             "brier": 0.279,
             "hit_rate": 0.54,
-            "rock_hit_rate": 0.929
+            "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
-            "resolved": 435,
-            "brier": 0.162,
-            "hit_rate": 0.756,
-            "rock_hit_rate": 0.972
+            "resolved": 439,
+            "brier": 0.161,
+            "hit_rate": 0.759,
+            "rock_hit_rate": 0.964
         },
         "claude-opus-5 (headline)": {
-            "resolved": 1,
-            "brier": 0.722,
-            "hit_rate": 0.0,
-            "rock_hit_rate": 1.0
+            "resolved": 2,
+            "brier": 0.368,
+            "hit_rate": 0.5,
+            "rock_hit_rate": 0.5
         }
     },
     "recent": [
+        {
+            "statement": "The price of WTI Crude Oil will rise to $87.50/bbl by the end of the week",
+            "horizon": "week",
+            "probability": 0.38,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signal S10 states WTI Crude Oil was at $81.74/bbl on 2026-07-29, below the forecasted $87.50 threshold.",
+            "resolved_ms": 1785311694363,
+            "ts": 1784701220788
+        },
+        {
+            "statement": "Brent crude settles in the $84\u201392/bbl band, remaining below $95",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "North Sea / global oil market",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Brent Crude: 87 $/bbl (+3.46%) \u2014 Supply-region anchor: North Sea",
+            "resolved_ms": 1785311681253,
+            "ts": 1785218563840
+        },
         {
             "statement": "Typhoon Noul makes landfall or passes within 50 km of the Guangdong coast (Pearl River Delta), prompting China to issue typhoon signals and suspend flights/ferries in Hong Kong or Shenzhen",
             "horizon": "24h",
@@ -198,43 +220,21 @@
             "evidence": "No signal states that a major wildfire ignited in the Western United States between 2026-07-17 and 2026-07-24; S2 is only a generic Wikipedia page title for 2026 Washington wildfires with no date or event details, and S3 predates the window by six years.",
             "resolved_ms": 1785302593065,
             "ts": 1784302134236
-        },
-        {
-            "statement": "A Category 3 hurricane will make landfall in the Gulf Coast of the United States",
-            "horizon": "week",
-            "probability": 0.57,
-            "location": "Gulf Coast, USA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Gulf Coast landfalls in the window were by Tropical Storm Bertha, which made its second U.S. landfall and degenerated into a trough \u2014 far below Category 3 hurricane strength.",
-            "resolved_ms": 1785302553727,
-            "ts": 1784300272543
-        },
-        {
-            "statement": "A major storm will hit the eastern seaboard of the United States within the next week, causing significant damage and power outages.",
-            "horizon": "week",
-            "probability": 0.83,
-            "location": "Eastern Seaboard, USA",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal is an undated headline stating a storm front \"aims at\" the eastern seaboard, which shows an anticipated condition rather than a storm that actually struck and caused significant damage and power outages within the window.",
-            "resolved_ms": 1785302524603,
-            "ts": 1784281787054
         }
     ],
-    "next_judge_ms": 1785311481426,
+    "next_judge_ms": 1785315294376,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 773,
-        "base_rate": 0.0647,
-        "brier_raw": 0.2329,
-        "brier_base_rate": 0.0605,
-        "brier_calibrated_oos": 0.0307,
-        "brier_calibrated_oos_n": 106,
+        "resolved_n": 775,
+        "base_rate": 0.0658,
+        "brier_raw": 0.2326,
+        "brier_base_rate": 0.0615,
+        "brier_calibrated_oos": 0.0381,
+        "brier_calibrated_oos_n": 107,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
