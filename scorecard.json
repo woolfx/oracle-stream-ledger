@@ -1,20 +1,20 @@
 {
-    "resolved": 788,
-    "open": 2504,
-    "due": 120,
-    "next_due_ms": 1785338827686,
+    "resolved": 792,
+    "open": 2541,
+    "due": 122,
+    "next_due_ms": 1785341002729,
     "unresolvable": 96,
-    "brier": 0.234,
+    "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 407,
-            "brier": 0.233,
+            "resolved": 409,
+            "brier": 0.232,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 381,
-            "brier": 0.235,
+            "resolved": 383,
+            "brier": 0.234,
             "hit_rate": 0.6
         }
     },
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 248,
+            "n": 251,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 253,
+            "n": 254,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,43 +52,87 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 787,
+            "resolved": 791,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 785,
-            "brier": 0.29
+            "resolved": 789,
+            "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 787,
-            "brier": 0.302
+            "resolved": 791,
+            "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 786,
+            "resolved": 790,
             "brier": 0.184
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2658,
+            "resolved": 2666,
             "brier": 0.278,
-            "hit_rate": 0.54,
+            "hit_rate": 0.541,
             "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
-            "resolved": 487,
-            "brier": 0.177,
-            "hit_rate": 0.735,
+            "resolved": 495,
+            "brier": 0.176,
+            "hit_rate": 0.737,
             "rock_hit_rate": 0.943
         },
         "claude-opus-5 (headline)": {
-            "resolved": 13,
-            "brier": 0.466,
-            "hit_rate": 0.308,
-            "rock_hit_rate": 0.692
+            "resolved": 15,
+            "brier": 0.5,
+            "hit_rate": 0.267,
+            "rock_hit_rate": 0.733
         }
     },
     "recent": [
+        {
+            "statement": "Ship transits through the Strait of Hormuz will increase by 20% within the next week",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current snapshot shows Strait of Hormuz transits at 10 per day, 52% below its 30-day average of 21 \u2014 no 20% increase occurred within the window.",
+            "resolved_ms": 1785338565719,
+            "ts": 1784708567029
+        },
+        {
+            "statement": "Japan Meteorological Agency reports M4.5+ aftershocks near Uto, Kumamoto Prefecture following the M6.8 quake",
+            "horizon": "24h",
+            "probability": 0.37,
+            "location": "Uto, Kumamoto, Japan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The signals only document the M6.8 Uto, Kumamoto earthquake itself (S2, S3); none states that JMA reported M4.5+ aftershocks in the window.",
+            "resolved_ms": 1785338462478,
+            "ts": 1785226374430
+        },
+        {
+            "statement": "The US dollar will strengthen against the euro by at least 1% in the next week",
+            "horizon": "week",
+            "probability": 0.52,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports an actual EUR/USD exchange rate move; S18's headline only notes euro-facing headwinds without stating the dollar gained 1% or more during the window.",
+            "resolved_ms": 1785338427356,
+            "ts": 1784706716654
+        },
+        {
+            "statement": "At least one aftershock of M5.0 or greater is recorded within 150 km of the M7.1 Uki, Japan epicenter",
+            "horizon": "24h",
+            "probability": 0.28,
+            "location": "Uki, Kumamoto, Japan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "None of the admissible signals \u2014 including the Wikipedia and Al Jazeera headlines on the M7.1 Kumamoto quake \u2014 state that an aftershock of M5.0 or greater occurred within 150 km of the epicenter during the window.",
+            "resolved_ms": 1785338360593,
+            "ts": 1785224376107
+        },
         {
             "statement": "FOMC holds the federal funds target range unchanged at its July 28, 2026 meeting",
             "horizon": "24h",
@@ -176,65 +220,21 @@
             "evidence": "No signal confirms the FOMC left the federal funds target range unchanged; all signals only confirm the meeting was scheduled, not its outcome.",
             "resolved_ms": 1785323496360,
             "ts": 1785218563840
-        },
-        {
-            "statement": "FOMC leaves the federal funds target range unchanged at its July 28, 2026 meeting",
-            "horizon": "24h",
-            "probability": 0.76,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal confirms the FOMC left the federal funds target range unchanged; all signals only confirm the meeting was scheduled, not its outcome.",
-            "resolved_ms": 1785323486415,
-            "ts": 1785218362696
-        },
-        {
-            "statement": "Ukrainian drone or missile strikes are reported against targets in Crimea or Russian Black Sea infrastructure, with further power/water disruption reported",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "Crimea",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Signal S1 directly confirms Ukrainian attacks in Crimea caused power and water disruptions, matching the forecast's location and effects.",
-            "resolved_ms": 1785319540817,
-            "ts": 1785220360344
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, with no intermeeting emergency action",
-            "horizon": "24h",
-            "probability": 0.73,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal confirms the FOMC left the federal funds rate unchanged or that no emergency action occurred; signals only confirm the meeting was scheduled.",
-            "resolved_ms": 1785315671991,
-            "ts": 1785220360344
-        },
-        {
-            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Pearl River Delta coast (Guangdong/Hong Kong), triggering signal-8-level warnings and mass transport suspensions",
-            "horizon": "24h",
-            "probability": 0.25,
-            "location": "Pearl River Delta, Guangdong, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal confirms Typhoon Noul made landfall or triggered signal-8-level warnings in the Pearl River Delta; S3 only mentions an Orange notification affecting 11.891 million people with Category 1 winds, which does not match the forecast's signal-8-level warnings or transport suspensions.",
-            "resolved_ms": 1785315661864,
-            "ts": 1785218563840
         }
     ],
-    "next_judge_ms": 1785339091722,
+    "next_judge_ms": 1785342165732,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 788,
-        "base_rate": 0.0685,
-        "brier_raw": 0.2338,
-        "brier_base_rate": 0.0638,
-        "brier_calibrated_oos": 0.0563,
-        "brier_calibrated_oos_n": 119,
+        "resolved_n": 792,
+        "base_rate": 0.0682,
+        "brier_raw": 0.2333,
+        "brier_base_rate": 0.0635,
+        "brier_calibrated_oos": 0.0554,
+        "brier_calibrated_oos_n": 121,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
