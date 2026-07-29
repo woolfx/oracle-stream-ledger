@@ -1,14 +1,14 @@
 {
-    "resolved": 778,
-    "open": 2458,
-    "due": 91,
-    "next_due_ms": 1785320749711,
+    "resolved": 779,
+    "open": 2463,
+    "due": 99,
+    "next_due_ms": 1785324427351,
     "unresolvable": 96,
     "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 398,
+            "resolved": 399,
             "brier": 0.231,
             "hit_rate": 0.6
         },
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 147,
+            "n": 148,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 777,
+            "resolved": 778,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 775,
-            "brier": 0.29
+            "resolved": 776,
+            "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 777,
+            "resolved": 778,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 776,
+            "resolved": 777,
             "brier": 0.182
         }
     },
@@ -76,19 +76,30 @@
             "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
-            "resolved": 451,
+            "resolved": 455,
             "brier": 0.165,
-            "hit_rate": 0.749,
-            "rock_hit_rate": 0.965
+            "hit_rate": 0.752,
+            "rock_hit_rate": 0.956
         },
         "claude-opus-5 (headline)": {
-            "resolved": 4,
-            "brier": 0.512,
-            "hit_rate": 0.25,
-            "rock_hit_rate": 0.75
+            "resolved": 5,
+            "brier": 0.418,
+            "hit_rate": 0.4,
+            "rock_hit_rate": 0.6
         }
     },
     "recent": [
+        {
+            "statement": "Ukrainian drone or missile strikes are reported against targets in Crimea or Russian Black Sea infrastructure, with further power/water disruption reported",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "Crimea",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S1 directly confirms Ukrainian attacks in Crimea caused power and water disruptions, matching the forecast's location and effects.",
+            "resolved_ms": 1785319540817,
+            "ts": 1785220360344
+        },
         {
             "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, with no intermeeting emergency action",
             "horizon": "24h",
@@ -209,32 +220,21 @@
             "evidence": "S4 shows Strait of Hormuz transits at 10 per day, 52% below the 30-day average of 21 as of 2026-07-23 inside the forecast window, a collapse in traffic corroborated by the existence of a documented '2026 Strait of Hormuz crisis' (S7).",
             "resolved_ms": 1785303839037,
             "ts": 1784693805586
-        },
-        {
-            "statement": "The Strait of Hormuz will see a 15% drop in daily ship transits due to heightened regional tensions linked to Iran's conflict with Ukraine",
-            "horizon": "24h",
-            "probability": 0.12,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Strait of Hormuz daily transits were 10, 52% below the 30-day average of 21, far exceeding the forecast's 15% drop threshold within the window.",
-            "resolved_ms": 1785303799486,
-            "ts": 1785211836582
         }
     ],
-    "next_judge_ms": 1785319290665,
+    "next_judge_ms": 1785323178021,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 778,
-        "base_rate": 0.0656,
-        "brier_raw": 0.2329,
-        "brier_base_rate": 0.0613,
-        "brier_calibrated_oos": 0.0373,
-        "brier_calibrated_oos_n": 110,
+        "resolved_n": 779,
+        "base_rate": 0.0668,
+        "brier_raw": 0.2328,
+        "brier_base_rate": 0.0623,
+        "brier_calibrated_oos": 0.0444,
+        "brier_calibrated_oos_n": 111,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
