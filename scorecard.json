@@ -1,19 +1,19 @@
 {
-    "resolved": 771,
-    "open": 2414,
-    "due": 68,
-    "next_due_ms": 1785306020788,
+    "resolved": 773,
+    "open": 2431,
+    "due": 71,
+    "next_due_ms": 1785308801884,
     "unresolvable": 96,
     "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 393,
+            "resolved": 394,
             "brier": 0.231,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 378,
+            "resolved": 379,
             "brier": 0.235,
             "hit_rate": 0.6
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 243,
+            "n": 245,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -52,37 +52,65 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 770,
+            "resolved": 772,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 768,
+            "resolved": 770,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 770,
+            "resolved": 772,
             "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 769,
+            "resolved": 771,
             "brier": 0.182
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2646,
+            "resolved": 2650,
             "brier": 0.279,
             "hit_rate": 0.54,
             "rock_hit_rate": 0.929
         },
         "qwen3:14b": {
-            "resolved": 431,
+            "resolved": 435,
             "brier": 0.162,
-            "hit_rate": 0.754,
+            "hit_rate": 0.756,
             "rock_hit_rate": 0.972
+        },
+        "claude-opus-5 (headline)": {
+            "resolved": 1,
+            "brier": 0.722,
+            "hit_rate": 0.0,
+            "rock_hit_rate": 1.0
         }
     },
     "recent": [
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 50 km of the Guangdong coast (Pearl River Delta), prompting China to issue typhoon signals and suspend flights/ferries in Hong Kong or Shenzhen",
+            "horizon": "24h",
+            "probability": 0.28,
+            "location": "Guangdong / Pearl River Delta, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal explicitly confirms Typhoon Noul made landfall or passed within 50 km of Guangdong's Pearl River Delta, or that China issued typhoon signals/suspended flights/ferries in Hong Kong/Shenzhen.",
+            "resolved_ms": 1785307834218,
+            "ts": 1785218362696
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.32,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signal S4 shows Strait of Hormuz had 10 daily ship transits (52% below its 30-day average) as of 2026-07-23, directly contradicting the forecast's claim of a 'significant increase' in transits during the window.",
+            "resolved_ms": 1785307792325,
+            "ts": 1784699349538
+        },
         {
             "statement": "The FOMC will raise interest rates by 25 basis points on July 28th",
             "horizon": "week",
@@ -192,43 +220,21 @@
             "evidence": "The only signal is an undated headline stating a storm front \"aims at\" the eastern seaboard, which shows an anticipated condition rather than a storm that actually struck and caused significant damage and power outages within the window.",
             "resolved_ms": 1785302524603,
             "ts": 1784281787054
-        },
-        {
-            "statement": "A severe thunderstorm warning will be issued for the eastern United States within the next week.",
-            "horizon": "week",
-            "probability": 0.8,
-            "location": "Eastern United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal is a July 28, 2026 severe thunderstorm watch (not warning) dated after the July 23 window closed, so no admissible evidence shows a severe thunderstorm warning issued in the eastern U.S. during the forecast window.",
-            "resolved_ms": 1785302482356,
-            "ts": 1784239325006
-        },
-        {
-            "statement": "A Category 2 hurricane will make landfall in the southeastern United States.",
-            "horizon": "week",
-            "probability": 0.35,
-            "location": "Southeastern United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only U.S. landfall in the window was Tropical Storm Bertha in Louisiana, not a Category 2 hurricane in the southeastern United States.",
-            "resolved_ms": 1785302444883,
-            "ts": 1784226582946
         }
     ],
-    "next_judge_ms": 1785307637912,
+    "next_judge_ms": 1785311481426,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 771,
-        "base_rate": 0.0649,
-        "brier_raw": 0.2332,
-        "brier_base_rate": 0.0606,
-        "brier_calibrated_oos": 0.0309,
-        "brier_calibrated_oos_n": 105,
+        "resolved_n": 773,
+        "base_rate": 0.0647,
+        "brier_raw": 0.2329,
+        "brier_base_rate": 0.0605,
+        "brier_calibrated_oos": 0.0307,
+        "brier_calibrated_oos_n": 106,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
