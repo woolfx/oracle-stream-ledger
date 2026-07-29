@@ -1,15 +1,15 @@
 {
-    "resolved": 781,
-    "open": 2468,
-    "due": 102,
-    "next_due_ms": 1785326779338,
+    "resolved": 783,
+    "open": 2482,
+    "due": 107,
+    "next_due_ms": 1785330785132,
     "unresolvable": 96,
     "brier": 0.234,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 401,
-            "brier": 0.232,
+            "resolved": 403,
+            "brier": 0.233,
             "hit_rate": 0.6
         },
         "week": {
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 250,
+            "n": 251,
             "avg_predicted": 0.5,
-            "observed": 0.06
+            "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 150,
+            "n": 151,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 780,
-            "brier": 0.275
+            "resolved": 782,
+            "brier": 0.276
         },
         "Economist": {
-            "resolved": 778,
+            "resolved": 780,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 780,
-            "brier": 0.303
+            "resolved": 782,
+            "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 779,
+            "resolved": 781,
             "brier": 0.183
         }
     },
@@ -76,19 +76,41 @@
             "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
-            "resolved": 463,
-            "brier": 0.172,
-            "hit_rate": 0.739,
-            "rock_hit_rate": 0.957
+            "resolved": 471,
+            "brier": 0.175,
+            "hit_rate": 0.735,
+            "rock_hit_rate": 0.949
         },
         "claude-opus-5 (headline)": {
-            "resolved": 7,
-            "brier": 0.477,
-            "hit_rate": 0.286,
-            "rock_hit_rate": 0.714
+            "resolved": 9,
+            "brier": 0.467,
+            "hit_rate": 0.333,
+            "rock_hit_rate": 0.667
         }
     },
     "recent": [
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting decision",
+            "horizon": "24h",
+            "probability": 0.67,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms the FOMC's decision to hold the federal funds rate unchanged during the July 28 meeting; signals only confirm the meeting's scheduling, not its outcome.",
+            "resolved_ms": 1785327636673,
+            "ts": 1785224376107
+        },
+        {
+            "statement": "CBOT corn front-month settles higher again, closing above 474 \u00a2/bu",
+            "horizon": "24h",
+            "probability": 0.5,
+            "location": "US Corn Belt",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S1 shows CBOT corn at 478 \u00a2/bu (+4.25%), which is above the 474 \u00a2/bu threshold stated in the forecast, with the US Corn Belt as the supply-region anchor.",
+            "resolved_ms": 1785327621241,
+            "ts": 1785222401884
+        },
         {
             "statement": "FOMC leaves the federal funds target range unchanged at its July 28, 2026 meeting",
             "horizon": "24h",
@@ -198,43 +220,21 @@
             "evidence": "Signal S4 shows Strait of Hormuz had 10 daily ship transits (52% below its 30-day average) as of 2026-07-23, directly contradicting the forecast's claim of a 'significant increase' in transits during the window.",
             "resolved_ms": 1785307792325,
             "ts": 1784699349538
-        },
-        {
-            "statement": "The FOMC will raise interest rates by 25 basis points on July 28th",
-            "horizon": "week",
-            "probability": 0.78,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal confirms the FOMC raised rates by 25 bps on July 28; S5-S8 only confirm the meeting was scheduled, not its outcome.",
-            "resolved_ms": 1785304037899,
-            "ts": 1784697481414
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits",
-            "horizon": "week",
-            "probability": 0.27,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz transits were 10 per day, 52% below the 30-day average of 21, showing a sharp decrease rather than a significant increase.",
-            "resolved_ms": 1785303929722,
-            "ts": 1784695636391
         }
     ],
-    "next_judge_ms": 1785327176957,
+    "next_judge_ms": 1785331236687,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 781,
-        "base_rate": 0.0666,
-        "brier_raw": 0.2336,
-        "brier_base_rate": 0.0621,
-        "brier_calibrated_oos": 0.0439,
-        "brier_calibrated_oos_n": 113,
+        "resolved_n": 783,
+        "base_rate": 0.0677,
+        "brier_raw": 0.2339,
+        "brier_base_rate": 0.0631,
+        "brier_calibrated_oos": 0.0507,
+        "brier_calibrated_oos_n": 115,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
