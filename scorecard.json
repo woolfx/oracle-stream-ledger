@@ -1,15 +1,15 @@
 {
-    "resolved": 775,
-    "open": 2454,
-    "due": 86,
-    "next_due_ms": 1785316787026,
+    "resolved": 778,
+    "open": 2458,
+    "due": 91,
+    "next_due_ms": 1785320749711,
     "unresolvable": 96,
     "brier": 0.233,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 395,
-            "brier": 0.23,
+            "resolved": 398,
+            "brier": 0.231,
             "hit_rate": 0.6
         },
         "week": {
@@ -27,19 +27,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 246,
+            "n": 247,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 249,
+            "n": 250,
             "avg_predicted": 0.5,
             "observed": 0.06
         },
         {
             "bin": "60\u201380%",
-            "n": 146,
+            "n": 147,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 774,
+            "resolved": 777,
             "brier": 0.275
         },
         "Economist": {
-            "resolved": 772,
+            "resolved": 775,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 774,
+            "resolved": 777,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 773,
-            "brier": 0.181
+            "resolved": 776,
+            "brier": 0.182
         }
     },
     "models": {
@@ -76,19 +76,52 @@
             "rock_hit_rate": 0.93
         },
         "qwen3:14b": {
-            "resolved": 439,
-            "brier": 0.161,
-            "hit_rate": 0.759,
-            "rock_hit_rate": 0.964
+            "resolved": 451,
+            "brier": 0.165,
+            "hit_rate": 0.749,
+            "rock_hit_rate": 0.965
         },
         "claude-opus-5 (headline)": {
-            "resolved": 2,
-            "brier": 0.368,
-            "hit_rate": 0.5,
-            "rock_hit_rate": 0.5
+            "resolved": 4,
+            "brier": 0.512,
+            "hit_rate": 0.25,
+            "rock_hit_rate": 0.75
         }
     },
     "recent": [
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, with no intermeeting emergency action",
+            "horizon": "24h",
+            "probability": 0.73,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms the FOMC left the federal funds rate unchanged or that no emergency action occurred; signals only confirm the meeting was scheduled.",
+            "resolved_ms": 1785315671991,
+            "ts": 1785220360344
+        },
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Pearl River Delta coast (Guangdong/Hong Kong), triggering signal-8-level warnings and mass transport suspensions",
+            "horizon": "24h",
+            "probability": 0.25,
+            "location": "Pearl River Delta, Guangdong, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms Typhoon Noul made landfall or triggered signal-8-level warnings in the Pearl River Delta; S3 only mentions an Orange notification affecting 11.891 million people with Category 1 winds, which does not match the forecast's signal-8-level warnings or transport suspensions.",
+            "resolved_ms": 1785315661864,
+            "ts": 1785218563840
+        },
+        {
+            "statement": "The Federal Reserve will signal a pause in rate hikes during the July 28 FOMC meeting, leading to a 0.5% decline in the VIX fear gauge within 24 hours.",
+            "horizon": "24h",
+            "probability": 0.53,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms the Federal Reserve signaled a pause in rate hikes during the July 28 FOMC meeting or that the VIX fear gauge declined by 0.5% within 24 hours.",
+            "resolved_ms": 1785315608318,
+            "ts": 1785217473624
+        },
         {
             "statement": "The price of WTI Crude Oil will rise to $87.50/bbl by the end of the week",
             "horizon": "week",
@@ -187,54 +220,21 @@
             "evidence": "Strait of Hormuz daily transits were 10, 52% below the 30-day average of 21, far exceeding the forecast's 15% drop threshold within the window.",
             "resolved_ms": 1785303799486,
             "ts": 1785211836582
-        },
-        {
-            "statement": "A major earthquake will occur in the United States within the next week",
-            "horizon": "week",
-            "probability": 0.4,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports a major earthquake occurring in the United States during 2026-07-17 to 2026-07-24; the only quake-specific web item names the 2026 Sanriku earthquake (Japan), and the generic earthquake trackers state no U.S. major event.",
-            "resolved_ms": 1785302680741,
-            "ts": 1784302134236
-        },
-        {
-            "statement": "A major earthquake will occur in the United States within the next week",
-            "horizon": "week",
-            "probability": 0.24,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports a major earthquake occurring in the United States during 2026-07-17 to 2026-07-24; the only quake-specific web item names a Sanriku (Japan) event, and generic earthquake trackers state no U.S. major event.",
-            "resolved_ms": 1785302634580,
-            "ts": 1784302134236
-        },
-        {
-            "statement": "A major wildfire will break out in the Western United States within the next week",
-            "horizon": "week",
-            "probability": 0.75,
-            "location": "Western United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal states that a major wildfire ignited in the Western United States between 2026-07-17 and 2026-07-24; S2 is only a generic Wikipedia page title for 2026 Washington wildfires with no date or event details, and S3 predates the window by six years.",
-            "resolved_ms": 1785302593065,
-            "ts": 1784302134236
         }
     ],
-    "next_judge_ms": 1785315294376,
+    "next_judge_ms": 1785319290665,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 775,
-        "base_rate": 0.0658,
-        "brier_raw": 0.2326,
-        "brier_base_rate": 0.0615,
-        "brier_calibrated_oos": 0.0381,
-        "brier_calibrated_oos_n": 107,
+        "resolved_n": 778,
+        "base_rate": 0.0656,
+        "brier_raw": 0.2329,
+        "brier_base_rate": 0.0613,
+        "brier_calibrated_oos": 0.0373,
+        "brier_calibrated_oos_n": 110,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
