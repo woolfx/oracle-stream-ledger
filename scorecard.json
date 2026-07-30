@@ -1,14 +1,14 @@
 {
-    "resolved": 818,
-    "open": 3296,
-    "due": 350,
-    "next_due_ms": 1785449245703,
+    "resolved": 819,
+    "open": 3308,
+    "due": 357,
+    "next_due_ms": 1785454228149,
     "unresolvable": 96,
     "brier": 0.235,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 425,
+            "resolved": 426,
             "brier": 0.235,
             "hit_rate": 0.6
         },
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 261,
+            "n": 262,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 817,
+            "resolved": 818,
             "brier": 0.277
         },
         "Economist": {
-            "resolved": 815,
+            "resolved": 816,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 817,
+            "resolved": 818,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 816,
+            "resolved": 817,
             "brier": 0.187
         }
     },
@@ -76,19 +76,30 @@
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 559,
+            "resolved": 563,
             "brier": 0.192,
-            "hit_rate": 0.708,
-            "rock_hit_rate": 0.928
+            "hit_rate": 0.707,
+            "rock_hit_rate": 0.929
         },
         "claude-opus-5 (headline)": {
-            "resolved": 31,
-            "brier": 0.509,
-            "hit_rate": 0.226,
-            "rock_hit_rate": 0.774
+            "resolved": 32,
+            "brier": 0.515,
+            "hit_rate": 0.219,
+            "rock_hit_rate": 0.781
         }
     },
     "recent": [
+        {
+            "statement": "WTI front-month settles above $78/bbl, holding the backwardated structure amid Iran-Ukraine escalation",
+            "horizon": "24h",
+            "probability": 0.46,
+            "location": "Cushing, Oklahoma, United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any WTI settlement price or futures curve structure; the only signal is a geopolitical headline about Iran-Ukraine tensions, so the $78/bbl settlement and backwardation claim is unsupported within the closed window.",
+            "resolved_ms": 1785452116181,
+            "ts": 1785240379338
+        },
         {
             "statement": "A magnitude 4.0 or greater aftershock strikes within 100 km of Tsunagi, Kumamoto Prefecture, Japan",
             "horizon": "24h",
@@ -209,32 +220,21 @@
             "evidence": "All admissible signals only list future scheduled FOMC meetings (September 2026 onward); none reports the outcome of a July 28, 2026 FOMC rate decision, so the forecast's occurrence is not shown despite the window having closed.",
             "resolved_ms": 1785393319966,
             "ts": 1785230387026
-        },
-        {
-            "statement": "The FOMC meeting on July 28 will result in a 50bps rate hike",
-            "horizon": "week",
-            "probability": 0.65,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions the FOMC meeting or any rate decision, and a 50bps hike would certainly have appeared among the market/economy signals; thus nothing shows the forecast event occurred within the closed window.",
-            "resolved_ms": 1785363469502,
-            "ts": 1784717788345
         }
     ],
-    "next_judge_ms": 1785452061554,
+    "next_judge_ms": 1785455722681,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 818,
-        "base_rate": 0.0697,
+        "resolved_n": 819,
+        "base_rate": 0.0696,
         "brier_raw": 0.2352,
         "brier_base_rate": 0.0648,
-        "brier_calibrated_oos": 0.0694,
-        "brier_calibrated_oos_n": 137,
+        "brier_calibrated_oos": 0.0689,
+        "brier_calibrated_oos_n": 138,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
