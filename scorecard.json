@@ -1,14 +1,14 @@
 {
-    "resolved": 809,
-    "open": 3025,
-    "due": 284,
-    "next_due_ms": 1785411601284,
+    "resolved": 810,
+    "open": 3048,
+    "due": 285,
+    "next_due_ms": 1785413594338,
     "unresolvable": 96,
     "brier": 0.235,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 418,
+            "resolved": 419,
             "brier": 0.233,
             "hit_rate": 0.6
         },
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 255,
+            "n": 256,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 808,
-            "brier": 0.276
+            "resolved": 809,
+            "brier": 0.277
         },
         "Economist": {
-            "resolved": 806,
-            "brier": 0.289
+            "resolved": 807,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 808,
+            "resolved": 809,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 807,
+            "resolved": 808,
             "brier": 0.186
         }
     },
@@ -76,19 +76,30 @@
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 531,
-            "brier": 0.183,
-            "hit_rate": 0.723,
-            "rock_hit_rate": 0.94
+            "resolved": 535,
+            "brier": 0.185,
+            "hit_rate": 0.72,
+            "rock_hit_rate": 0.933
         },
         "claude-opus-5 (headline)": {
-            "resolved": 24,
-            "brier": 0.528,
-            "hit_rate": 0.208,
-            "rock_hit_rate": 0.792
+            "resolved": 25,
+            "brier": 0.511,
+            "hit_rate": 0.24,
+            "rock_hit_rate": 0.76
         }
     },
     "recent": [
+        {
+            "statement": "Another M4.0+ earthquake strikes within 50 km of Tsunagi/Kumamoto, Kyushu, Japan",
+            "horizon": "24h",
+            "probability": 0.34,
+            "location": "Kumamoto Prefecture, Japan",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 reports a M5.4 seismic shock at Kikuyo (32.9,130.8) in Kumamoto Prefecture, ~14 km from Kumamoto city, exceeding the M4.0 threshold within 50 km.",
+            "resolved_ms": 1785411935443,
+            "ts": 1785236389324
+        },
         {
             "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting",
             "horizon": "24h",
@@ -209,32 +220,21 @@
             "evidence": "No admissible signal text shows any M5.0+ aftershock near Uto, Kumamoto during the closed window, and an event of that size would have been captured.",
             "resolved_ms": 1785346108623,
             "ts": 1785230387026
-        },
-        {
-            "statement": "WTI crude front-month settles below $84/bbl (staying under Brent's level and holding the sell-off)",
-            "horizon": "24h",
-            "probability": 0.48,
-            "location": "Cushing, Oklahoma, United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports a WTI settlement, and the only crude price signal shows Brent surging +7.5% to $90.4/bbl \u2014 a rally rather than a held sell-off, implying WTI well above $84 rather than below it.",
-            "resolved_ms": 1785346098822,
-            "ts": 1785228384333
         }
     ],
-    "next_judge_ms": 1785411853352,
+    "next_judge_ms": 1785415535458,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 809,
-        "base_rate": 0.068,
-        "brier_raw": 0.2345,
-        "brier_base_rate": 0.0634,
-        "brier_calibrated_oos": 0.0587,
-        "brier_calibrated_oos_n": 130,
+        "resolved_n": 810,
+        "base_rate": 0.0691,
+        "brier_raw": 0.2348,
+        "brier_base_rate": 0.0644,
+        "brier_calibrated_oos": 0.0651,
+        "brier_calibrated_oos_n": 131,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
