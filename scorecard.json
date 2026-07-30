@@ -1,16 +1,16 @@
 {
-    "resolved": 807,
-    "open": 2928,
-    "due": 271,
-    "next_due_ms": 1785391607849,
+    "resolved": 808,
+    "open": 2939,
+    "due": 274,
+    "next_due_ms": 1785395655450,
     "unresolvable": 96,
     "brier": 0.234,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 416,
-            "brier": 0.231,
-            "hit_rate": 0.61
+            "resolved": 417,
+            "brier": 0.232,
+            "hit_rate": 0.6
         },
         "week": {
             "resolved": 391,
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 153,
+            "n": 154,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 806,
-            "brier": 0.275
+            "resolved": 807,
+            "brier": 0.276
         },
         "Economist": {
-            "resolved": 804,
+            "resolved": 805,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 806,
+            "resolved": 807,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 805,
+            "resolved": 806,
             "brier": 0.185
         }
     },
@@ -76,19 +76,30 @@
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 523,
-            "brier": 0.177,
-            "hit_rate": 0.734,
+            "resolved": 527,
+            "brier": 0.18,
+            "hit_rate": 0.729,
             "rock_hit_rate": 0.939
         },
         "claude-opus-5 (headline)": {
-            "resolved": 22,
-            "brier": 0.509,
-            "hit_rate": 0.227,
-            "rock_hit_rate": 0.773
+            "resolved": 23,
+            "brier": 0.52,
+            "hit_rate": 0.217,
+            "rock_hit_rate": 0.783
         }
     },
     "recent": [
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting",
+            "horizon": "24h",
+            "probability": 0.73,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All admissible signals only list future scheduled FOMC meetings (September 2026 onward); none reports the outcome of a July 28, 2026 FOMC rate decision, so the forecast's occurrence is not shown despite the window having closed.",
+            "resolved_ms": 1785393319966,
+            "ts": 1785230387026
+        },
         {
             "statement": "The FOMC meeting on July 28 will result in a 50bps rate hike",
             "horizon": "week",
@@ -209,32 +220,21 @@
             "evidence": "The window has closed and no admissible signal text reports any magnitude 5.0+ earthquake in South America, so the occurrence cannot be established from the evidence provided.",
             "resolved_ms": 1785346064463,
             "ts": 1784575472569
-        },
-        {
-            "statement": "Aftershock of M5.0 or greater strikes within 100 km of the M6.8 Uto, Japan epicenter",
-            "horizon": "24h",
-            "probability": 0.19,
-            "location": "Uto, Kumamoto, Japan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports an M5.0+ aftershock near Uto during the window, and an event of that magnitude would have been captured by the seismic feeds.",
-            "resolved_ms": 1785342457915,
-            "ts": 1785228384333
         }
     ],
-    "next_judge_ms": 1785393152600,
+    "next_judge_ms": 1785396951564,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 807,
-        "base_rate": 0.0682,
-        "brier_raw": 0.2337,
-        "brier_base_rate": 0.0635,
-        "brier_calibrated_oos": 0.0594,
-        "brier_calibrated_oos_n": 128,
+        "resolved_n": 808,
+        "base_rate": 0.0681,
+        "brier_raw": 0.2341,
+        "brier_base_rate": 0.0634,
+        "brier_calibrated_oos": 0.0591,
+        "brier_calibrated_oos_n": 129,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
