@@ -1,33 +1,33 @@
 {
-    "resolved": 816,
-    "open": 3272,
-    "due": 345,
-    "next_due_ms": 1785446240609,
+    "resolved": 818,
+    "open": 3296,
+    "due": 350,
+    "next_due_ms": 1785449245703,
     "unresolvable": 96,
     "brier": 0.235,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 424,
-            "brier": 0.234,
+            "resolved": 425,
+            "brier": 0.235,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 392,
-            "brier": 0.236,
+            "resolved": 393,
+            "brier": 0.235,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 97,
+            "n": 98,
             "avg_predicted": 0.13,
-            "observed": 0.05
+            "observed": 0.06
         },
         {
             "bin": "20\u201340%",
-            "n": 259,
+            "n": 260,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
@@ -52,43 +52,65 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 815,
-            "brier": 0.276
+            "resolved": 817,
+            "brier": 0.277
         },
         "Economist": {
-            "resolved": 813,
-            "brier": 0.289
+            "resolved": 815,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 815,
+            "resolved": 817,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 814,
-            "brier": 0.186
+            "resolved": 816,
+            "brier": 0.187
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2702,
-            "brier": 0.279,
-            "hit_rate": 0.54,
+            "resolved": 2706,
+            "brier": 0.278,
+            "hit_rate": 0.541,
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 555,
-            "brier": 0.188,
-            "hit_rate": 0.714,
-            "rock_hit_rate": 0.935
+            "resolved": 559,
+            "brier": 0.192,
+            "hit_rate": 0.708,
+            "rock_hit_rate": 0.928
         },
         "claude-opus-5 (headline)": {
-            "resolved": 30,
-            "brier": 0.524,
-            "hit_rate": 0.2,
-            "rock_hit_rate": 0.8
+            "resolved": 31,
+            "brier": 0.509,
+            "hit_rate": 0.226,
+            "rock_hit_rate": 0.774
         }
     },
     "recent": [
+        {
+            "statement": "A magnitude 4.0 or greater aftershock strikes within 100 km of Tsunagi, Kumamoto Prefecture, Japan",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "Kumamoto Prefecture, Japan",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 reports an M5.0 seismic shock at Kikuyo, Japan (32.9,130.8), roughly 80 km from Tsunagi, satisfying the M4.0+ within-100 km threshold.",
+            "resolved_ms": 1785448461540,
+            "ts": 1785240379338
+        },
+        {
+            "statement": "Ship transits through the Strait of Hormuz will be suspended due to increased tensions in the region within the next week",
+            "horizon": "week",
+            "probability": 0.23,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The Strait of Hormuz still recorded 10 daily ship transits during the window \u2014 reduced but not suspended \u2014 and no signal reports any suspension of transits.",
+            "resolved_ms": 1785448443516,
+            "ts": 1784721467057
+        },
         {
             "statement": "Front-month CBOT corn settles above 470 \u00a2/bu",
             "horizon": "24h",
@@ -198,43 +220,21 @@
             "evidence": "No signal mentions the FOMC meeting or any rate decision, and a 50bps hike would certainly have appeared among the market/economy signals; thus nothing shows the forecast event occurred within the closed window.",
             "resolved_ms": 1785363469502,
             "ts": 1784717788345
-        },
-        {
-            "statement": "Strait of Hormuz daily transit counts remain at least 15% below their 30-day average in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.4,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, far exceeding the 15% below threshold.",
-            "resolved_ms": 1785359811310,
-            "ts": 1785234377689
-        },
-        {
-            "statement": "Japan's Kumamoto region (near Uto/Tsunagi) records at least one aftershock of M5.0 or greater following the M6.8 red-alert quake",
-            "horizon": "24h",
-            "probability": 0.36,
-            "location": "Uto, Kumamoto, Japan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal reports any M5.0+ aftershock in the Kumamoto region within the 24h window, and an event of that size would have been captured by the seismic feeds.",
-            "resolved_ms": 1785356143785,
-            "ts": 1785234377689
         }
     ],
-    "next_judge_ms": 1785448399012,
+    "next_judge_ms": 1785452061554,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 816,
-        "base_rate": 0.0686,
-        "brier_raw": 0.2347,
-        "brier_base_rate": 0.0639,
-        "brier_calibrated_oos": 0.063,
-        "brier_calibrated_oos_n": 136,
+        "resolved_n": 818,
+        "base_rate": 0.0697,
+        "brier_raw": 0.2352,
+        "brier_base_rate": 0.0648,
+        "brier_calibrated_oos": 0.0694,
+        "brier_calibrated_oos_n": 137,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
