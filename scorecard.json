@@ -1,15 +1,15 @@
 {
-    "resolved": 813,
-    "open": 3250,
-    "due": 342,
-    "next_due_ms": 1785442245631,
+    "resolved": 816,
+    "open": 3272,
+    "due": 345,
+    "next_due_ms": 1785446240609,
     "unresolvable": 96,
     "brier": 0.235,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 421,
-            "brier": 0.235,
+            "resolved": 424,
+            "brier": 0.234,
             "hit_rate": 0.6
         },
         "week": {
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 257,
+            "n": 259,
             "avg_predicted": 0.3,
             "observed": 0.04
         },
         {
             "bin": "40\u201360%",
-            "n": 260,
+            "n": 261,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 812,
-            "brier": 0.277
+            "resolved": 815,
+            "brier": 0.276
         },
         "Economist": {
-            "resolved": 810,
-            "brier": 0.29
+            "resolved": 813,
+            "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 812,
+            "resolved": 815,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 811,
-            "brier": 0.187
+            "resolved": 814,
+            "brier": 0.186
         }
     },
     "models": {
@@ -76,19 +76,52 @@
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 543,
-            "brier": 0.19,
-            "hit_rate": 0.709,
-            "rock_hit_rate": 0.934
+            "resolved": 555,
+            "brier": 0.188,
+            "hit_rate": 0.714,
+            "rock_hit_rate": 0.935
         },
         "claude-opus-5 (headline)": {
-            "resolved": 27,
-            "brier": 0.522,
-            "hit_rate": 0.222,
-            "rock_hit_rate": 0.778
+            "resolved": 30,
+            "brier": 0.524,
+            "hit_rate": 0.2,
+            "rock_hit_rate": 0.8
         }
     },
     "recent": [
+        {
+            "statement": "Front-month CBOT corn settles above 470 \u00a2/bu",
+            "horizon": "24h",
+            "probability": 0.42,
+            "location": "Chicago Board of Trade / US Corn Belt",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current CBOT corn quote is 468.5 \u00a2/bu, below the 470 \u00a2/bu threshold, so the forecast did not verify.",
+            "resolved_ms": 1785444798999,
+            "ts": 1785238379452
+        },
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, prompting typhoon signal warnings in Hong Kong or Shenzhen",
+            "horizon": "24h",
+            "probability": 0.22,
+            "location": "Pearl River Delta, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal concerns Hurricane Genevieve in the eastern Pacific, and no signal shows Typhoon Noul nearing the Pearl River Delta or typhoon signals in Hong Kong/Shenzhen within the closed window, an event that would certainly have been captured.",
+            "resolved_ms": 1785444780829,
+            "ts": 1785236389324
+        },
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering typhoon signals in Hong Kong or Shenzhen",
+            "horizon": "24h",
+            "probability": 0.25,
+            "location": "Guangdong / Pearl River Delta, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal concerns Hurricane Genevieve in the eastern Pacific near 20.8N/124.8W and says nothing about Typhoon Noul or Guangdong/Hong Kong typhoon signals, so nothing shows the forecast event occurred before the window closed.",
+            "resolved_ms": 1785444769804,
+            "ts": 1785232388720
+        },
         {
             "statement": "FOMC holds the federal funds target range unchanged at its July 28, 2026 decision",
             "horizon": "24h",
@@ -187,54 +220,21 @@
             "evidence": "No admissible signal reports any M5.0+ aftershock in the Kumamoto region within the 24h window, and an event of that size would have been captured by the seismic feeds.",
             "resolved_ms": 1785356143785,
             "ts": 1785234377689
-        },
-        {
-            "statement": "There will be a significant increase in ship transits through the Malacca Strait within the next week.",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "Malacca Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Malacca Strait transit data at all; the only chokepoint signals cover Luzon, Lombok, and Mindoro Straits, so nothing shows a significant increase in Malacca Strait transits during the closed window.",
-            "resolved_ms": 1785352278832,
-            "ts": 1784715949711
-        },
-        {
-            "statement": "The VIX fear gauge will rise above 20 within the next week",
-            "horizon": "week",
-            "probability": 0.12,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only VIX reading available shows 17.72, below the 20 threshold, and no signal indicates the index rose above 20 during the window.",
-            "resolved_ms": 1785352275204,
-            "ts": 1784714100418
-        },
-        {
-            "statement": "The US Federal Reserve will raise interest rates by 25-50 basis points on July 28",
-            "horizon": "week",
-            "probability": 0.8,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any FOMC rate decision or hike on July 28, 2026; the only Fed-related signal (S1) references a future January 2027 meeting, so a 25-50bp hike is unsupported after the window closed.",
-            "resolved_ms": 1785349957508,
-            "ts": 1784714100418
         }
     ],
-    "next_judge_ms": 1785444705018,
+    "next_judge_ms": 1785448399012,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 813,
-        "base_rate": 0.0689,
-        "brier_raw": 0.2353,
-        "brier_base_rate": 0.0641,
-        "brier_calibrated_oos": 0.0643,
-        "brier_calibrated_oos_n": 133,
+        "resolved_n": 816,
+        "base_rate": 0.0686,
+        "brier_raw": 0.2347,
+        "brier_base_rate": 0.0639,
+        "brier_calibrated_oos": 0.063,
+        "brier_calibrated_oos_n": 136,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
