@@ -1,14 +1,14 @@
 {
-    "resolved": 825,
-    "open": 3596,
-    "due": 443,
-    "next_due_ms": 1785497669609,
-    "unresolvable": 96,
+    "resolved": 826,
+    "open": 3607,
+    "due": 444,
+    "next_due_ms": 1785499322324,
+    "unresolvable": 97,
     "brier": 0.238,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 430,
+            "resolved": 431,
             "brier": 0.238,
             "hit_rate": 0.6
         },
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 261,
+            "n": 262,
             "avg_predicted": 0.3,
             "observed": 0.05
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 824,
+            "resolved": 825,
             "brier": 0.279
         },
         "Economist": {
-            "resolved": 822,
+            "resolved": 823,
             "brier": 0.292
         },
         "Naturalist": {
-            "resolved": 824,
+            "resolved": 825,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 823,
+            "resolved": 824,
             "brier": 0.19
         }
     },
@@ -76,19 +76,30 @@
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 579,
-            "brier": 0.204,
-            "hit_rate": 0.687,
-            "rock_hit_rate": 0.91
+            "resolved": 583,
+            "brier": 0.203,
+            "hit_rate": 0.688,
+            "rock_hit_rate": 0.911
         },
         "claude-opus-5 (headline)": {
-            "resolved": 36,
-            "brier": 0.481,
-            "hit_rate": 0.278,
-            "rock_hit_rate": 0.722
+            "resolved": 37,
+            "brier": 0.482,
+            "hit_rate": 0.27,
+            "rock_hit_rate": 0.73
         }
     },
     "recent": [
+        {
+            "statement": "Typhoon NOUL-26 makes landfall or passes within 100 km of the Pearl River Delta, prompting Hong Kong/Guangdong storm signals and flight cancellations",
+            "horizon": "24h",
+            "probability": 0.26,
+            "location": "Pearl River Delta, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon Noul, the Pearl River Delta, or Hong Kong/Guangdong storm signals; the only tropical cyclone signals concern Dolphin, Genevieve, and Fausto in the Pacific far from China.",
+            "resolved_ms": 1785496717975,
+            "ts": 1785246382258
+        },
         {
             "statement": "The US Federal Reserve will raise interest rates by at least 25 basis points on July 28th",
             "horizon": "week",
@@ -209,32 +220,21 @@
             "evidence": "The only signal concerns Hurricane Genevieve in the eastern Pacific, and no signal shows Typhoon Noul nearing the Pearl River Delta or typhoon signals in Hong Kong/Shenzhen within the closed window, an event that would certainly have been captured.",
             "resolved_ms": 1785444780829,
             "ts": 1785236389324
-        },
-        {
-            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering typhoon signals in Hong Kong or Shenzhen",
-            "horizon": "24h",
-            "probability": 0.25,
-            "location": "Guangdong / Pearl River Delta, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal concerns Hurricane Genevieve in the eastern Pacific near 20.8N/124.8W and says nothing about Typhoon Noul or Guangdong/Hong Kong typhoon signals, so nothing shows the forecast event occurred before the window closed.",
-            "resolved_ms": 1785444769804,
-            "ts": 1785232388720
         }
     ],
-    "next_judge_ms": 1785496620420,
+    "next_judge_ms": 1785500317992,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 825,
-        "base_rate": 0.0727,
-        "brier_raw": 0.2379,
+        "resolved_n": 826,
+        "base_rate": 0.0726,
+        "brier_raw": 0.2377,
         "brier_base_rate": 0.0674,
-        "brier_calibrated_oos": 0.0867,
-        "brier_calibrated_oos_n": 142,
+        "brier_calibrated_oos": 0.0861,
+        "brier_calibrated_oos_n": 143,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
