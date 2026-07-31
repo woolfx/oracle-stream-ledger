@@ -1,10 +1,10 @@
 {
-    "resolved": 824,
-    "open": 3520,
-    "due": 422,
-    "next_due_ms": 1785485538214,
+    "resolved": 825,
+    "open": 3544,
+    "due": 428,
+    "next_due_ms": 1785489566615,
     "unresolvable": 96,
-    "brier": 0.237,
+    "brier": 0.238,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -13,9 +13,9 @@
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 394,
-            "brier": 0.236,
-            "hit_rate": 0.6
+            "resolved": 395,
+            "brier": 0.237,
+            "hit_rate": 0.59
         }
     },
     "calibration": [
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 158,
+            "n": 159,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,25 +52,25 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 823,
-            "brier": 0.278
+            "resolved": 824,
+            "brier": 0.279
         },
         "Economist": {
-            "resolved": 821,
+            "resolved": 822,
             "brier": 0.292
         },
         "Naturalist": {
-            "resolved": 823,
-            "brier": 0.303
+            "resolved": 824,
+            "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 822,
+            "resolved": 823,
             "brier": 0.19
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2710,
+            "resolved": 2714,
             "brier": 0.279,
             "hit_rate": 0.54,
             "rock_hit_rate": 0.931
@@ -89,6 +89,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The US Federal Reserve will raise interest rates by at least 25 basis points on July 28th",
+            "horizon": "week",
+            "probability": 0.74,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any FOMC rate decision or 25bp hike on July 28, 2026; the only central-bank signals list future meetings (Oct 2026 onward), and a Fed rate increase of this magnitude would certainly have appeared.",
+            "resolved_ms": 1785485548597,
+            "ts": 1784726981202
+        },
         {
             "statement": "Aftershock of M4.0 or greater strikes the Kumamoto/Tsunagi area of Kyushu, Japan",
             "horizon": "24h",
@@ -209,30 +220,19 @@
             "evidence": "The only signal concerns Hurricane Genevieve in the eastern Pacific near 20.8N/124.8W and says nothing about Typhoon Noul or Guangdong/Hong Kong typhoon signals, so nothing shows the forecast event occurred before the window closed.",
             "resolved_ms": 1785444769804,
             "ts": 1785232388720
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28, 2026 decision",
-            "horizon": "24h",
-            "probability": 0.75,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All admissible signals are forward-looking FOMC calendar entries (Sept 2026 onward); none report the outcome of the July 28, 2026 decision, so the claimed hold is not shown despite the window having closed.",
-            "resolved_ms": 1785441070729,
-            "ts": 1785234377689
         }
     ],
-    "next_judge_ms": 1785485451332,
+    "next_judge_ms": 1785489148610,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 824,
-        "base_rate": 0.0728,
-        "brier_raw": 0.2375,
-        "brier_base_rate": 0.0675,
+        "resolved_n": 825,
+        "base_rate": 0.0727,
+        "brier_raw": 0.2379,
+        "brier_base_rate": 0.0674,
         "brier_calibrated_oos": 0.0867,
         "brier_calibrated_oos_n": 142,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
