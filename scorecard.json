@@ -1,10 +1,10 @@
 {
-    "resolved": 863,
-    "open": 3764,
-    "due": 440,
-    "next_due_ms": 1785536947747,
-    "unresolvable": 137,
-    "brier": 0.238,
+    "resolved": 867,
+    "open": 3780,
+    "due": 434,
+    "next_due_ms": 1785538959702,
+    "unresolvable": 142,
+    "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -13,27 +13,27 @@
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 424,
-            "brier": 0.238,
+            "resolved": 428,
+            "brier": 0.237,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 104,
+            "n": 105,
             "avg_predicted": 0.13,
             "observed": 0.1
         },
         {
             "bin": "20\u201340%",
-            "n": 281,
+            "n": 283,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 272,
+            "n": 273,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 862,
-            "brier": 0.279
+            "resolved": 866,
+            "brier": 0.278
         },
         "Economist": {
-            "resolved": 860,
+            "resolved": 864,
             "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 862,
-            "brier": 0.302
+            "resolved": 866,
+            "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 861,
+            "resolved": 865,
             "brier": 0.191
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 635,
-            "brier": 0.209,
-            "hit_rate": 0.676,
-            "rock_hit_rate": 0.899
+            "resolved": 651,
+            "brier": 0.207,
+            "hit_rate": 0.677,
+            "rock_hit_rate": 0.902
         },
         "claude-opus-5 (headline)": {
             "resolved": 45,
@@ -89,6 +89,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "Flash flood warnings in Colorado will expand to 3 new counties by July 24",
+            "horizon": "week",
+            "probability": 0.14,
+            "location": "Colorado",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No admissible signal shows flash flood warnings expanding to three new Colorado counties by July 24; the only entry is a trimmed section listing with no supporting content.",
+            "resolved_ms": 1785537624978,
+            "ts": 1784753552845
+        },
+        {
+            "statement": "Natural gas futures (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report on July 23",
+            "horizon": "week",
+            "probability": 0.59,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports natural gas futures prices or any post-EIA-storage-report move, so the specific 2.5-3.5% rise is unsupported after the window closed.",
+            "resolved_ms": 1785537622979,
+            "ts": 1784753552845
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict near the strait",
+            "horizon": "week",
+            "probability": 0.34,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Kerch Strait transit data at all; the only chokepoint signals concern Luzon, Lombok, and Mindoro Straits, so nothing shows Kerch Strait transits dropping below 1/day.",
+            "resolved_ms": 1785537619088,
+            "ts": 1784753390447
+        },
+        {
+            "statement": "WTI crude oil (CL=F) will increase by 2.0% in the next week due to heightened geopolitical risks at chokepoints",
+            "horizon": "week",
+            "probability": 0.32,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports WTI (CL=F) price or its weekly change; the only crude price signal (S10, Brent +1.22% on the day) does not show a 2.0% weekly WTI increase, so the forecast event is unsupported at window close.",
+            "resolved_ms": 1785537615470,
+            "ts": 1784752721075
+        },
         {
             "statement": "WTI crude oil will break $90/bbl as Houthi Red Sea attacks force shipping reroutes through Strait of Hormuz",
             "horizon": "week",
@@ -176,65 +220,21 @@
             "evidence": "The current Strait of Hormuz snapshot shows 10 daily transits, 52% below its 30-day average of 21, indicating a sharp decline rather than the forecast 20% increase.",
             "resolved_ms": 1785530117657,
             "ts": 1784750153786
-        },
-        {
-            "statement": "WTI Crude Oil prices will be at least $88/bbl in the next week.",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only WTI price signal shows crude at $84.88/bbl, below the $88 threshold, with no signal indicating WTI reached $88 during the window.",
-            "resolved_ms": 1785526442685,
-            "ts": 1784748305853
-        },
-        {
-            "statement": "The Strait of Hormuz sees a significant increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.24,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The latest Strait of Hormuz snapshot shows only 10 daily transits, 52% below its 30-day average of 21, showing a sharp decline rather than a significant increase.",
-            "resolved_ms": 1785526439440,
-            "ts": 1784746450072
-        },
-        {
-            "statement": "There will be a significant increase in Brent Crude prices by the end of the week.",
-            "horizon": "week",
-            "probability": 0.6,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Brent signal shows 90.12 $/bbl up just 1.22%, a modest daily move that does not establish a significant week-end price increase.",
-            "resolved_ms": 1785526435142,
-            "ts": 1784746158557
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant reduction in ship transits by at least 20% within the next week.",
-            "horizon": "week",
-            "probability": 0.17,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "IMF PortWatch data as of 2026-07-23 shows Strait of Hormuz daily transits at 10, 52% below its 30-day average of 21, exceeding the forecast's 20% reduction threshold.",
-            "resolved_ms": 1785526430977,
-            "ts": 1784746119117
         }
     ],
-    "next_judge_ms": 1785537571191,
+    "next_judge_ms": 1785541224993,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 863,
-        "base_rate": 0.0776,
-        "brier_raw": 0.2379,
-        "brier_base_rate": 0.0716,
-        "brier_calibrated_oos": 0.0878,
-        "brier_calibrated_oos_n": 151,
+        "resolved_n": 867,
+        "base_rate": 0.0773,
+        "brier_raw": 0.2374,
+        "brier_base_rate": 0.0713,
+        "brier_calibrated_oos": 0.0863,
+        "brier_calibrated_oos_n": 154,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
