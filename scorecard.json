@@ -1,15 +1,15 @@
 {
-    "resolved": 821,
-    "open": 3430,
-    "due": 392,
-    "next_due_ms": 1785470527369,
+    "resolved": 822,
+    "open": 3454,
+    "due": 398,
+    "next_due_ms": 1785474511537,
     "unresolvable": 96,
-    "brier": 0.236,
+    "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 427,
-            "brier": 0.236,
+            "resolved": 428,
+            "brier": 0.237,
             "hit_rate": 0.6
         },
         "week": {
@@ -21,9 +21,9 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 98,
+            "n": 99,
             "avg_predicted": 0.13,
-            "observed": 0.06
+            "observed": 0.07
         },
         {
             "bin": "20\u201340%",
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 820,
-            "brier": 0.277
+            "resolved": 821,
+            "brier": 0.278
         },
         "Economist": {
-            "resolved": 818,
+            "resolved": 819,
             "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 820,
-            "brier": 0.301
+            "resolved": 821,
+            "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 819,
-            "brier": 0.188
+            "resolved": 820,
+            "brier": 0.189
         }
     },
     "models": {
@@ -76,19 +76,30 @@
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 567,
-            "brier": 0.195,
-            "hit_rate": 0.702,
-            "rock_hit_rate": 0.922
+            "resolved": 571,
+            "brier": 0.199,
+            "hit_rate": 0.697,
+            "rock_hit_rate": 0.916
         },
         "claude-opus-5 (headline)": {
-            "resolved": 33,
-            "brier": 0.501,
-            "hit_rate": 0.242,
-            "rock_hit_rate": 0.758
+            "resolved": 34,
+            "brier": 0.487,
+            "hit_rate": 0.265,
+            "rock_hit_rate": 0.735
         }
     },
     "recent": [
+        {
+            "statement": "Japan's Kumamoto region (near Tsunagi/Uki) records another M4.0 or greater aftershock",
+            "horizon": "24h",
+            "probability": 0.18,
+            "location": "Kumamoto Prefecture, Japan",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 reports an M5.0 seismic shock at Kikuyo in Kumamoto Prefecture (32.9,130.8), exceeding the M4.0 threshold for a further Kumamoto-region quake.",
+            "resolved_ms": 1785470756484,
+            "ts": 1785238379452
+        },
         {
             "statement": "The Federal Reserve will raise interest rates by at least 25 basis points during their meeting on July 28.",
             "horizon": "week",
@@ -209,32 +220,21 @@
             "evidence": "Strait of Hormuz traffic was 10 daily transits, 52% below its 30-day average of 21, showing decreased rather than increased congestion.",
             "resolved_ms": 1785415640623,
             "ts": 1784719627351
-        },
-        {
-            "statement": "Another M4.0+ earthquake strikes within 50 km of Tsunagi/Kumamoto, Kyushu, Japan",
-            "horizon": "24h",
-            "probability": 0.34,
-            "location": "Kumamoto Prefecture, Japan",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 reports a M5.4 seismic shock at Kikuyo (32.9,130.8) in Kumamoto Prefecture, ~14 km from Kumamoto city, exceeding the M4.0 threshold within 50 km.",
-            "resolved_ms": 1785411935443,
-            "ts": 1785236389324
         }
     ],
-    "next_judge_ms": 1785470679217,
+    "next_judge_ms": 1785474374490,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 821,
-        "base_rate": 0.0706,
-        "brier_raw": 0.2361,
-        "brier_base_rate": 0.0657,
-        "brier_calibrated_oos": 0.0751,
-        "brier_calibrated_oos_n": 139,
+        "resolved_n": 822,
+        "base_rate": 0.0718,
+        "brier_raw": 0.2367,
+        "brier_base_rate": 0.0666,
+        "brier_calibrated_oos": 0.0812,
+        "brier_calibrated_oos_n": 140,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
