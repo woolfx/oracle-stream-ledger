@@ -1,8 +1,8 @@
 {
-    "resolved": 859,
-    "open": 3755,
-    "due": 438,
-    "next_due_ms": 1785532895520,
+    "resolved": 863,
+    "open": 3764,
+    "due": 440,
+    "next_due_ms": 1785536947747,
     "unresolvable": 137,
     "brier": 0.238,
     "hit_rate": 0.6,
@@ -13,7 +13,7 @@
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 420,
+            "resolved": 424,
             "brier": 0.238,
             "hit_rate": 0.6
         }
@@ -27,9 +27,9 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 278,
+            "n": 281,
             "avg_predicted": 0.3,
-            "observed": 0.05
+            "observed": 0.06
         },
         {
             "bin": "40\u201360%",
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 162,
+            "n": 163,
             "avg_predicted": 0.68,
             "observed": 0.1
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 858,
+            "resolved": 862,
             "brier": 0.279
         },
         "Economist": {
-            "resolved": 856,
+            "resolved": 860,
             "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 858,
+            "resolved": 862,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 857,
+            "resolved": 861,
             "brier": 0.191
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 619,
-            "brier": 0.207,
-            "hit_rate": 0.682,
-            "rock_hit_rate": 0.903
+            "resolved": 635,
+            "brier": 0.209,
+            "hit_rate": 0.676,
+            "rock_hit_rate": 0.899
         },
         "claude-opus-5 (headline)": {
             "resolved": 45,
@@ -89,6 +89,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "WTI crude oil will break $90/bbl as Houthi Red Sea attacks force shipping reroutes through Strait of Hormuz",
+            "horizon": "week",
+            "probability": 0.32,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only price signal shows Brent at $90.12/bbl, with no signal indicating WTI crude broke $90/bbl during the window.",
+            "resolved_ms": 1785533971175,
+            "ts": 1784752534077
+        },
+        {
+            "statement": "Strait of Hormuz ship transits will remain 30% below 30-day average (15 vs 21) due to persistent regional tensions",
+            "horizon": "week",
+            "probability": 0.32,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S4 shows Strait of Hormuz daily transits at 10, 52% below the 30-day average of 21, satisfying the forecast's stated threshold of remaining at least 30% below average during the window.",
+            "resolved_ms": 1785533967391,
+            "ts": 1784752231561
+        },
+        {
+            "statement": "Natural gas prices (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report release on 2026-07-23",
+            "horizon": "week",
+            "probability": 0.61,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports natural gas (NG=F) prices or the EIA storage report reaction at all \u2014 only crude oil, equities, and rate-meeting signals \u2014 so the specific 2.5\u20133.5% post-report gain is unsupported after the window closed.",
+            "resolved_ms": 1785533961687,
+            "ts": 1784752231561
+        },
+        {
+            "statement": "WTI crude oil will break $90/bbl due to combined chokepoint disruptions and OPEC+ dynamics",
+            "horizon": "week",
+            "probability": 0.28,
+            "location": "",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "WTI crude is quoted at $86.8/bbl at the close of the window, below the stated $90/bbl threshold (Brent's $90.12 is a different benchmark).",
+            "resolved_ms": 1785533953290,
+            "ts": 1784751997820
+        },
         {
             "statement": "Strait of Hormuz transits will fall below 12/day due to escalating Iran-US tensions",
             "horizon": "week",
@@ -176,63 +220,19 @@
             "evidence": "IMF PortWatch data as of 2026-07-23 shows Strait of Hormuz daily transits at 10, 52% below its 30-day average of 21, exceeding the forecast's 20% reduction threshold.",
             "resolved_ms": 1785526430977,
             "ts": 1784746119117
-        },
-        {
-            "statement": "Typhoon NOUL-26 triggers a red/orange-level GDACS or China Meteorological Administration warning with landfall or close approach to Guangdong, prompting suspension of flights or ferries near Shenzhen/Hong Kong",
-            "horizon": "24h",
-            "probability": 0.28,
-            "location": "Guangdong / Pearl River Delta, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Typhoon NOUL-26, Guangdong, or any red/orange warning or transport suspension near Shenzhen/Hong Kong; the only cyclone signals are green notifications for unrelated Pacific storms.",
-            "resolved_ms": 1785522745902,
-            "ts": 1785263778851
-        },
-        {
-            "statement": "Ombai Strait sees a reduction of -20% in ship transits within the next week.",
-            "horizon": "week",
-            "probability": 0.32,
-            "location": "Ombai Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports transit data for Ombai Strait at all; nearby Indonesian chokepoints (Lombok) are covered but Ombai's -20% decline is unverified by any listed signal.",
-            "resolved_ms": 1785522737049,
-            "ts": 1784744108260
-        },
-        {
-            "statement": "The Strait of Hormuz will experience reduced ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Strait of Hormuz recorded 10 daily ship transits, 52% below its 30-day average of 21, as of 2026-07-23 within the forecast window, showing reduced transits.",
-            "resolved_ms": 1785522733633,
-            "ts": 1784744058370
-        },
-        {
-            "statement": "The Strait of Hormuz will see a significant increase in ship transits within the next week.",
-            "horizon": "week",
-            "probability": 0.27,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current snapshot shows Strait of Hormuz transits at 10 per day, 52% below its 30-day average of 21, indicating a decline rather than a significant increase during the forecast window.",
-            "resolved_ms": 1785522729361,
-            "ts": 1784743717788
         }
     ],
-    "next_judge_ms": 1785533730737,
+    "next_judge_ms": 1785537571191,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 859,
-        "base_rate": 0.0768,
-        "brier_raw": 0.2378,
-        "brier_base_rate": 0.0709,
+        "resolved_n": 863,
+        "base_rate": 0.0776,
+        "brier_raw": 0.2379,
+        "brier_base_rate": 0.0716,
         "brier_calibrated_oos": 0.0878,
         "brier_calibrated_oos_n": 151,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
