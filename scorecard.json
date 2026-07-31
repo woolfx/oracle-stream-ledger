@@ -1,8 +1,8 @@
 {
-    "resolved": 820,
-    "open": 3402,
-    "due": 388,
-    "next_due_ms": 1785468503060,
+    "resolved": 821,
+    "open": 3430,
+    "due": 392,
+    "next_due_ms": 1785470527369,
     "unresolvable": 96,
     "brier": 0.236,
     "hit_rate": 0.6,
@@ -13,8 +13,8 @@
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 393,
-            "brier": 0.235,
+            "resolved": 394,
+            "brier": 0.236,
             "hit_rate": 0.6
         }
     },
@@ -45,34 +45,34 @@
         },
         {
             "bin": "80\u2013100%",
-            "n": 42,
+            "n": 43,
             "avg_predicted": 0.83,
-            "observed": 0.1
+            "observed": 0.09
         }
     ],
     "personas": {
         "Strategist": {
-            "resolved": 819,
+            "resolved": 820,
             "brier": 0.277
         },
         "Economist": {
-            "resolved": 817,
-            "brier": 0.29
+            "resolved": 818,
+            "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 819,
+            "resolved": 820,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 818,
+            "resolved": 819,
             "brier": 0.188
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2706,
-            "brier": 0.278,
-            "hit_rate": 0.541,
+            "resolved": 2710,
+            "brier": 0.279,
+            "hit_rate": 0.54,
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
@@ -89,6 +89,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Federal Reserve will raise interest rates by at least 25 basis points during their meeting on July 28.",
+            "horizon": "week",
+            "probability": 0.8,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any FOMC rate decision or hike on July 28, 2026; the only central-bank signal references a scheduled meeting in April 2027, so a 25bp hike is unsupported.",
+            "resolved_ms": 1785467079202,
+            "ts": 1784725139636
+        },
         {
             "statement": "Another M4.0+ aftershock strikes the Kumamoto/Tsunagi area of Kyushu, Japan",
             "horizon": "24h",
@@ -209,29 +220,18 @@
             "evidence": "S1 reports a M5.4 seismic shock at Kikuyo (32.9,130.8) in Kumamoto Prefecture, ~14 km from Kumamoto city, exceeding the M4.0 threshold within 50 km.",
             "resolved_ms": 1785411935443,
             "ts": 1785236389324
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting",
-            "horizon": "24h",
-            "probability": 0.76,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All signals are merely calendar listings of future FOMC meetings (Sept 2026 onward); none reports the July 28, 2026 decision or the federal funds target range, so no signal shows the forecast event occurred.",
-            "resolved_ms": 1785408200583,
-            "ts": 1785228384333
         }
     ],
-    "next_judge_ms": 1785466855969,
+    "next_judge_ms": 1785470679217,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 820,
-        "base_rate": 0.0707,
-        "brier_raw": 0.2356,
+        "resolved_n": 821,
+        "base_rate": 0.0706,
+        "brier_raw": 0.2361,
         "brier_base_rate": 0.0657,
         "brier_calibrated_oos": 0.0751,
         "brier_calibrated_oos_n": 139,
