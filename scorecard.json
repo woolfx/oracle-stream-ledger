@@ -1,27 +1,27 @@
 {
-    "resolved": 836,
-    "open": 3672,
-    "due": 453,
-    "next_due_ms": 1785510731441,
-    "unresolvable": 105,
+    "resolved": 839,
+    "open": 3692,
+    "due": 454,
+    "next_due_ms": 1785514783856,
+    "unresolvable": 107,
     "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 436,
+            "resolved": 437,
             "brier": 0.238,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 400,
-            "brier": 0.236,
+            "resolved": 402,
+            "brier": 0.237,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 100,
+            "n": 101,
             "avg_predicted": 0.13,
             "observed": 0.08
         },
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 263,
+            "n": 264,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 160,
+            "n": 161,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,43 +52,76 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 835,
-            "brier": 0.279
+            "resolved": 838,
+            "brier": 0.278
         },
         "Economist": {
-            "resolved": 833,
+            "resolved": 836,
             "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 835,
+            "resolved": 838,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 834,
+            "resolved": 837,
             "brier": 0.191
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2734,
+            "resolved": 2742,
             "brier": 0.279,
-            "hit_rate": 0.541,
+            "hit_rate": 0.54,
             "rock_hit_rate": 0.932
         },
         "qwen3:14b": {
-            "resolved": 603,
-            "brier": 0.206,
-            "hit_rate": 0.683,
-            "rock_hit_rate": 0.907
+            "resolved": 607,
+            "brier": 0.205,
+            "hit_rate": 0.685,
+            "rock_hit_rate": 0.908
         },
         "claude-opus-5 (headline)": {
-            "resolved": 42,
-            "brier": 0.486,
-            "hit_rate": 0.262,
-            "rock_hit_rate": 0.738
+            "resolved": 43,
+            "brier": 0.487,
+            "hit_rate": 0.256,
+            "rock_hit_rate": 0.744
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will see at least 5 additional ship transits above its 30-day average within the next week",
+            "horizon": "week",
+            "probability": 0.4,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Strait of Hormuz transits were 10 daily, 52% below its 30-day average of 21, showing no increase above average during the window.",
+            "resolved_ms": 1785511703498,
+            "ts": 1784736202729
+        },
+        {
+            "statement": "Typhoon NOUL-26 makes landfall or passes within 100 km of the Pearl River Delta, triggering typhoon signals in Hong Kong/Shenzhen and mass flight cancellations",
+            "horizon": "24h",
+            "probability": 0.16,
+            "location": "Pearl River Delta, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon NOUL-26 or any Pearl River Delta landfall, typhoon signals in Hong Kong/Shenzhen, or flight cancellations; the only cyclone notifications are for distant Pacific storms (DOLPHIN-26, GENEVIEVE-26, FAUSTO-26), so an event of this magnitude went uncaptured.",
+            "resolved_ms": 1785511698366,
+            "ts": 1785254413010
+        },
+        {
+            "statement": "The FOMC will raise interest rates by at least 50 basis points on July 28th.",
+            "horizon": "week",
+            "probability": 0.67,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any FOMC rate decision on July 28, 2026, let alone a 50+ basis point hike, and such an action would certainly have appeared among the archived signals before the window closed.",
+            "resolved_ms": 1785511687631,
+            "ts": 1784734353574
+        },
         {
             "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting",
             "horizon": "24h",
@@ -187,54 +220,21 @@
             "evidence": "The only signal shows VIX at 17.01, well below the 20 threshold, and no signal indicates any rise above 20 during the forecast window.",
             "resolved_ms": 1785500412764,
             "ts": 1784728827310
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.29,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The most recent Strait of Hormuz signal shows only 10 daily transits, 52% below its 30-day average of 21, indicating a sharp decrease rather than a significant increase.",
-            "resolved_ms": 1785500405360,
-            "ts": 1784728827310
-        },
-        {
-            "statement": "Typhoon NOUL-26 makes landfall or passes within 100 km of the Pearl River Delta, prompting Hong Kong/Guangdong storm signals and flight cancellations",
-            "horizon": "24h",
-            "probability": 0.26,
-            "location": "Pearl River Delta, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Typhoon Noul, the Pearl River Delta, or Hong Kong/Guangdong storm signals; the only tropical cyclone signals concern Dolphin, Genevieve, and Fausto in the Pacific far from China.",
-            "resolved_ms": 1785496717975,
-            "ts": 1785246382258
-        },
-        {
-            "statement": "The US Federal Reserve will raise interest rates by at least 25 basis points on July 28th",
-            "horizon": "week",
-            "probability": 0.74,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any FOMC rate decision or 25bp hike on July 28, 2026; the only central-bank signals list future meetings (Oct 2026 onward), and a Fed rate increase of this magnitude would certainly have appeared.",
-            "resolved_ms": 1785485548597,
-            "ts": 1784726981202
         }
     ],
-    "next_judge_ms": 1785511379032,
+    "next_judge_ms": 1785515308070,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 836,
-        "base_rate": 0.073,
-        "brier_raw": 0.2374,
-        "brier_base_rate": 0.0676,
-        "brier_calibrated_oos": 0.0895,
-        "brier_calibrated_oos_n": 148,
+        "resolved_n": 839,
+        "base_rate": 0.0727,
+        "brier_raw": 0.2373,
+        "brier_base_rate": 0.0674,
+        "brier_calibrated_oos": 0.089,
+        "brier_calibrated_oos_n": 149,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
