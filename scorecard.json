@@ -1,10 +1,10 @@
 {
-    "resolved": 826,
-    "open": 3607,
-    "due": 444,
-    "next_due_ms": 1785499322324,
-    "unresolvable": 97,
-    "brier": 0.238,
+    "resolved": 828,
+    "open": 3631,
+    "due": 447,
+    "next_due_ms": 1785503726729,
+    "unresolvable": 99,
+    "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -13,9 +13,9 @@
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 395,
+            "resolved": 397,
             "brier": 0.237,
-            "hit_rate": 0.59
+            "hit_rate": 0.6
         }
     },
     "calibration": [
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 262,
+            "n": 264,
             "avg_predicted": 0.3,
             "observed": 0.05
         },
@@ -52,27 +52,27 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 825,
-            "brier": 0.279
+            "resolved": 827,
+            "brier": 0.278
         },
         "Economist": {
-            "resolved": 823,
+            "resolved": 825,
             "brier": 0.292
         },
         "Naturalist": {
-            "resolved": 825,
+            "resolved": 827,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 824,
+            "resolved": 826,
             "brier": 0.19
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2714,
+            "resolved": 2722,
             "brier": 0.279,
-            "hit_rate": 0.54,
+            "hit_rate": 0.541,
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
@@ -89,6 +89,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The VIX fear gauge will rise above 20 within the next week",
+            "horizon": "week",
+            "probability": 0.37,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 17.01, well below the 20 threshold, and no signal indicates any rise above 20 during the forecast window.",
+            "resolved_ms": 1785500412764,
+            "ts": 1784728827310
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.29,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The most recent Strait of Hormuz signal shows only 10 daily transits, 52% below its 30-day average of 21, indicating a sharp decrease rather than a significant increase.",
+            "resolved_ms": 1785500405360,
+            "ts": 1784728827310
+        },
         {
             "statement": "Typhoon NOUL-26 makes landfall or passes within 100 km of the Pearl River Delta, prompting Hong Kong/Guangdong storm signals and flight cancellations",
             "horizon": "24h",
@@ -198,41 +220,19 @@
             "evidence": "The Strait of Hormuz still recorded 10 daily ship transits during the window \u2014 reduced but not suspended \u2014 and no signal reports any suspension of transits.",
             "resolved_ms": 1785448443516,
             "ts": 1784721467057
-        },
-        {
-            "statement": "Front-month CBOT corn settles above 470 \u00a2/bu",
-            "horizon": "24h",
-            "probability": 0.42,
-            "location": "Chicago Board of Trade / US Corn Belt",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current CBOT corn quote is 468.5 \u00a2/bu, below the 470 \u00a2/bu threshold, so the forecast did not verify.",
-            "resolved_ms": 1785444798999,
-            "ts": 1785238379452
-        },
-        {
-            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, prompting typhoon signal warnings in Hong Kong or Shenzhen",
-            "horizon": "24h",
-            "probability": 0.22,
-            "location": "Pearl River Delta, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal concerns Hurricane Genevieve in the eastern Pacific, and no signal shows Typhoon Noul nearing the Pearl River Delta or typhoon signals in Hong Kong/Shenzhen within the closed window, an event that would certainly have been captured.",
-            "resolved_ms": 1785444780829,
-            "ts": 1785236389324
         }
     ],
-    "next_judge_ms": 1785500317992,
+    "next_judge_ms": 1785504012779,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 826,
-        "base_rate": 0.0726,
-        "brier_raw": 0.2377,
-        "brier_base_rate": 0.0674,
+        "resolved_n": 828,
+        "base_rate": 0.0725,
+        "brier_raw": 0.2374,
+        "brier_base_rate": 0.0672,
         "brier_calibrated_oos": 0.0861,
         "brier_calibrated_oos_n": 143,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
