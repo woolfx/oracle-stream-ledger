@@ -1,19 +1,19 @@
 {
-    "resolved": 847,
-    "open": 3706,
-    "due": 444,
-    "next_due_ms": 1785522507174,
-    "unresolvable": 123,
+    "resolved": 851,
+    "open": 3724,
+    "due": 442,
+    "next_due_ms": 1785524877771,
+    "unresolvable": 126,
     "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 438,
+            "resolved": 439,
             "brier": 0.238,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 409,
+            "resolved": 412,
             "brier": 0.237,
             "hit_rate": 0.6
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 272,
+            "n": 276,
             "avg_predicted": 0.3,
             "observed": 0.05
         },
@@ -52,43 +52,87 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 846,
-            "brier": 0.279
+            "resolved": 850,
+            "brier": 0.278
         },
         "Economist": {
-            "resolved": 844,
+            "resolved": 848,
             "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 846,
+            "resolved": 850,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 845,
+            "resolved": 849,
             "brier": 0.19
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2770,
+            "resolved": 2782,
             "brier": 0.279,
             "hit_rate": 0.54,
-            "rock_hit_rate": 0.93
+            "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 611,
-            "brier": 0.205,
-            "hit_rate": 0.684,
-            "rock_hit_rate": 0.908
+            "resolved": 615,
+            "brier": 0.204,
+            "hit_rate": 0.686,
+            "rock_hit_rate": 0.909
         },
         "claude-opus-5 (headline)": {
-            "resolved": 44,
-            "brier": 0.495,
-            "hit_rate": 0.25,
-            "rock_hit_rate": 0.75
+            "resolved": 45,
+            "brier": 0.499,
+            "hit_rate": 0.244,
+            "rock_hit_rate": 0.756
         }
     },
     "recent": [
+        {
+            "statement": "Typhoon NOUL-26 triggers a red/orange-level GDACS or China Meteorological Administration warning with landfall or close approach to Guangdong, prompting suspension of flights or ferries near Shenzhen/Hong Kong",
+            "horizon": "24h",
+            "probability": 0.28,
+            "location": "Guangdong / Pearl River Delta, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon NOUL-26, Guangdong, or any red/orange warning or transport suspension near Shenzhen/Hong Kong; the only cyclone signals are green notifications for unrelated Pacific storms.",
+            "resolved_ms": 1785522745902,
+            "ts": 1785263778851
+        },
+        {
+            "statement": "Ombai Strait sees a reduction of -20% in ship transits within the next week.",
+            "horizon": "week",
+            "probability": 0.32,
+            "location": "Ombai Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports transit data for Ombai Strait at all; nearby Indonesian chokepoints (Lombok) are covered but Ombai's -20% decline is unverified by any listed signal.",
+            "resolved_ms": 1785522737049,
+            "ts": 1784744108260
+        },
+        {
+            "statement": "The Strait of Hormuz will experience reduced ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Strait of Hormuz recorded 10 daily ship transits, 52% below its 30-day average of 21, as of 2026-07-23 within the forecast window, showing reduced transits.",
+            "resolved_ms": 1785522733633,
+            "ts": 1784744058370
+        },
+        {
+            "statement": "The Strait of Hormuz will see a significant increase in ship transits within the next week.",
+            "horizon": "week",
+            "probability": 0.27,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current snapshot shows Strait of Hormuz transits at 10 per day, 52% below its 30-day average of 21, indicating a decline rather than a significant increase during the forecast window.",
+            "resolved_ms": 1785522729361,
+            "ts": 1784743717788
+        },
         {
             "statement": "WTI Crude Oil prices will rise by at least 2% in the next week",
             "horizon": "week",
@@ -176,65 +220,21 @@
             "evidence": "No signal reports soybean prices at all, so nothing shows a $0.50 rise during the closed window.",
             "resolved_ms": 1785515371204,
             "ts": 1784736202729
-        },
-        {
-            "statement": "The Strait of Hormuz will see at least 5 additional ship transits above its 30-day average within the next week",
-            "horizon": "week",
-            "probability": 0.4,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Strait of Hormuz transits were 10 daily, 52% below its 30-day average of 21, showing no increase above average during the window.",
-            "resolved_ms": 1785511703498,
-            "ts": 1784736202729
-        },
-        {
-            "statement": "Typhoon NOUL-26 makes landfall or passes within 100 km of the Pearl River Delta, triggering typhoon signals in Hong Kong/Shenzhen and mass flight cancellations",
-            "horizon": "24h",
-            "probability": 0.16,
-            "location": "Pearl River Delta, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Typhoon NOUL-26 or any Pearl River Delta landfall, typhoon signals in Hong Kong/Shenzhen, or flight cancellations; the only cyclone notifications are for distant Pacific storms (DOLPHIN-26, GENEVIEVE-26, FAUSTO-26), so an event of this magnitude went uncaptured.",
-            "resolved_ms": 1785511698366,
-            "ts": 1785254413010
-        },
-        {
-            "statement": "The FOMC will raise interest rates by at least 50 basis points on July 28th.",
-            "horizon": "week",
-            "probability": 0.67,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any FOMC rate decision on July 28, 2026, let alone a 50+ basis point hike, and such an action would certainly have appeared among the archived signals before the window closed.",
-            "resolved_ms": 1785511687631,
-            "ts": 1784734353574
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting",
-            "horizon": "24h",
-            "probability": 0.71,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All signals are merely calendar listings of future FOMC meetings (Sept 2026 onward); none reports the outcome of the July 28, 2026 meeting or any unchanged federal funds target range, so the forecast is not shown to have occurred within its closed window.",
-            "resolved_ms": 1785507779017,
-            "ts": 1785252427686
         }
     ],
-    "next_judge_ms": 1785522696174,
+    "next_judge_ms": 1785526345918,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 847,
-        "base_rate": 0.0744,
-        "brier_raw": 0.2373,
-        "brier_base_rate": 0.0688,
-        "brier_calibrated_oos": 0.0884,
-        "brier_calibrated_oos_n": 150,
+        "resolved_n": 851,
+        "base_rate": 0.0752,
+        "brier_raw": 0.2371,
+        "brier_base_rate": 0.0695,
+        "brier_calibrated_oos": 0.0878,
+        "brier_calibrated_oos_n": 151,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
