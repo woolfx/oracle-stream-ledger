@@ -1,15 +1,15 @@
 {
-    "resolved": 823,
-    "open": 3509,
-    "due": 417,
-    "next_due_ms": 1785481502665,
+    "resolved": 824,
+    "open": 3520,
+    "due": 422,
+    "next_due_ms": 1785485538214,
     "unresolvable": 96,
     "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 429,
-            "brier": 0.237,
+            "resolved": 430,
+            "brier": 0.238,
             "hit_rate": 0.6
         },
         "week": {
@@ -21,9 +21,9 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 99,
+            "n": 100,
             "avg_predicted": 0.13,
-            "observed": 0.07
+            "observed": 0.08
         },
         {
             "bin": "20\u201340%",
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 822,
+            "resolved": 823,
             "brier": 0.278
         },
         "Economist": {
-            "resolved": 820,
-            "brier": 0.291
+            "resolved": 821,
+            "brier": 0.292
         },
         "Naturalist": {
-            "resolved": 822,
-            "brier": 0.302
+            "resolved": 823,
+            "brier": 0.303
         },
         "Skeptic": {
-            "resolved": 821,
-            "brier": 0.189
+            "resolved": 822,
+            "brier": 0.19
         }
     },
     "models": {
@@ -76,19 +76,30 @@
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 575,
-            "brier": 0.201,
-            "hit_rate": 0.692,
-            "rock_hit_rate": 0.917
+            "resolved": 579,
+            "brier": 0.204,
+            "hit_rate": 0.687,
+            "rock_hit_rate": 0.91
         },
         "claude-opus-5 (headline)": {
-            "resolved": 35,
-            "brier": 0.493,
-            "hit_rate": 0.257,
-            "rock_hit_rate": 0.743
+            "resolved": 36,
+            "brier": 0.481,
+            "hit_rate": 0.278,
+            "rock_hit_rate": 0.722
         }
     },
     "recent": [
+        {
+            "statement": "Aftershock of M4.0 or greater strikes the Kumamoto/Tsunagi area of Kyushu, Japan",
+            "horizon": "24h",
+            "probability": 0.19,
+            "location": "Kumamoto Prefecture, Japan",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 reports a seismic shock of M5.0 at Kikuyo (32.9,130.8) in Kumamoto Prefecture, Japan, exceeding the stated M4.0 threshold in the forecast's area.",
+            "resolved_ms": 1785481851317,
+            "ts": 1785244385132
+        },
         {
             "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting",
             "horizon": "24h",
@@ -209,32 +220,21 @@
             "evidence": "All admissible signals are forward-looking FOMC calendar entries (Sept 2026 onward); none report the outcome of the July 28, 2026 decision, so the claimed hold is not shown despite the window having closed.",
             "resolved_ms": 1785441070729,
             "ts": 1785234377689
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28, 2026 meeting",
-            "horizon": "24h",
-            "probability": 0.67,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All signals are forward-looking FOMC calendar entries (September 2026 onward); none reports the outcome of a July 28, 2026 rate decision, so no admissible signal shows the hold occurred.",
-            "resolved_ms": 1785437388969,
-            "ts": 1785232388720
         }
     ],
-    "next_judge_ms": 1785481750459,
+    "next_judge_ms": 1785485451332,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 823,
-        "base_rate": 0.0717,
-        "brier_raw": 0.237,
-        "brier_base_rate": 0.0665,
-        "brier_calibrated_oos": 0.0807,
-        "brier_calibrated_oos_n": 141,
+        "resolved_n": 824,
+        "base_rate": 0.0728,
+        "brier_raw": 0.2375,
+        "brier_base_rate": 0.0675,
+        "brier_calibrated_oos": 0.0867,
+        "brier_calibrated_oos_n": 142,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
