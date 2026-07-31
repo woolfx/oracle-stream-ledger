@@ -1,20 +1,20 @@
 {
-    "resolved": 828,
-    "open": 3631,
-    "due": 447,
-    "next_due_ms": 1785503726729,
-    "unresolvable": 99,
+    "resolved": 831,
+    "open": 3652,
+    "due": 455,
+    "next_due_ms": 1785507018887,
+    "unresolvable": 101,
     "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 431,
-            "brier": 0.238,
+            "resolved": 433,
+            "brier": 0.239,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 397,
-            "brier": 0.237,
+            "resolved": 398,
+            "brier": 0.236,
             "hit_rate": 0.6
         }
     },
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 264,
+            "n": 267,
             "avg_predicted": 0.3,
             "observed": 0.05
         },
@@ -52,43 +52,76 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 827,
+            "resolved": 830,
             "brier": 0.278
         },
         "Economist": {
-            "resolved": 825,
-            "brier": 0.292
+            "resolved": 828,
+            "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 827,
-            "brier": 0.302
+            "resolved": 830,
+            "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 826,
-            "brier": 0.19
+            "resolved": 829,
+            "brier": 0.191
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2722,
+            "resolved": 2726,
             "brier": 0.279,
             "hit_rate": 0.541,
             "rock_hit_rate": 0.931
         },
         "qwen3:14b": {
-            "resolved": 583,
-            "brier": 0.203,
-            "hit_rate": 0.688,
-            "rock_hit_rate": 0.911
+            "resolved": 591,
+            "brier": 0.205,
+            "hit_rate": 0.685,
+            "rock_hit_rate": 0.905
         },
         "claude-opus-5 (headline)": {
-            "resolved": 37,
-            "brier": 0.482,
-            "hit_rate": 0.27,
-            "rock_hit_rate": 0.73
+            "resolved": 39,
+            "brier": 0.474,
+            "hit_rate": 0.282,
+            "rock_hit_rate": 0.718
         }
     },
     "recent": [
+        {
+            "statement": "Typhoon NOUL-26 makes landfall or passes within 100 km of the Pearl River Delta, prompting Hong Kong/Guangdong typhoon signals and flight cancellations",
+            "horizon": "24h",
+            "probability": 0.21,
+            "location": "Pearl River Delta, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon NOUL-26, the Pearl River Delta, or Hong Kong/Guangdong typhoon signals \u2014 only unrelated Pacific cyclones (DOLPHIN, GENEVIEVE, FAUSTO) far from China \u2014 so the forecast event is not shown to have occurred before the window closed.",
+            "resolved_ms": 1785504107677,
+            "ts": 1785248412652
+        },
+        {
+            "statement": "The Strait of Malacca will experience a significant decrease in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Strait of Malacca",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any transit data for the Strait of Malacca; the only chokepoint figures given cover Luzon, Lombok, and Mindoro Straits, so nothing shows a significant decrease in Malacca transits within the closed window.",
+            "resolved_ms": 1785504095879,
+            "ts": 1784728827310
+        },
+        {
+            "statement": "Another M4.0+ aftershock strikes the Kumamoto/Tsunagi area of Kyushu, Japan",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "Kumamoto Prefecture, Japan",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 reports a seismic shock of M5.0 at Kikuyo (32.9,130.8) in Kumamoto Prefecture, exceeding the M4.0+ threshold in the specified Kumamoto area.",
+            "resolved_ms": 1785504092939,
+            "ts": 1785246382258
+        },
         {
             "statement": "The VIX fear gauge will rise above 20 within the next week",
             "horizon": "week",
@@ -187,54 +220,21 @@
             "evidence": "S1 reports a seismic shock of M5.0 at 32.9,130.8 in Kikuyo, Kumamoto Prefecture, Japan, exceeding the M4.0 threshold in the forecast's Kumamoto area.",
             "resolved_ms": 1785463255954,
             "ts": 1785242394095
-        },
-        {
-            "statement": "WTI front-month settles above $78/bbl, holding the backwardated structure amid Iran-Ukraine escalation",
-            "horizon": "24h",
-            "probability": 0.46,
-            "location": "Cushing, Oklahoma, United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any WTI settlement price or futures curve structure; the only signal is a geopolitical headline about Iran-Ukraine tensions, so the $78/bbl settlement and backwardation claim is unsupported within the closed window.",
-            "resolved_ms": 1785452116181,
-            "ts": 1785240379338
-        },
-        {
-            "statement": "A magnitude 4.0 or greater aftershock strikes within 100 km of Tsunagi, Kumamoto Prefecture, Japan",
-            "horizon": "24h",
-            "probability": 0.12,
-            "location": "Kumamoto Prefecture, Japan",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 reports an M5.0 seismic shock at Kikuyo, Japan (32.9,130.8), roughly 80 km from Tsunagi, satisfying the M4.0+ within-100 km threshold.",
-            "resolved_ms": 1785448461540,
-            "ts": 1785240379338
-        },
-        {
-            "statement": "Ship transits through the Strait of Hormuz will be suspended due to increased tensions in the region within the next week",
-            "horizon": "week",
-            "probability": 0.23,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The Strait of Hormuz still recorded 10 daily ship transits during the window \u2014 reduced but not suspended \u2014 and no signal reports any suspension of transits.",
-            "resolved_ms": 1785448443516,
-            "ts": 1784721467057
         }
     ],
-    "next_judge_ms": 1785504012779,
+    "next_judge_ms": 1785507719998,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 828,
-        "base_rate": 0.0725,
+        "resolved_n": 831,
+        "base_rate": 0.0734,
         "brier_raw": 0.2374,
-        "brier_base_rate": 0.0672,
-        "brier_calibrated_oos": 0.0861,
-        "brier_calibrated_oos_n": 143,
+        "brier_base_rate": 0.068,
+        "brier_calibrated_oos": 0.0913,
+        "brier_calibrated_oos_n": 145,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
