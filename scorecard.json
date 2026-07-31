@@ -1,10 +1,10 @@
 {
-    "resolved": 851,
-    "open": 3724,
-    "due": 442,
-    "next_due_ms": 1785524877771,
-    "unresolvable": 126,
-    "brier": 0.237,
+    "resolved": 855,
+    "open": 3739,
+    "due": 441,
+    "next_due_ms": 1785528442355,
+    "unresolvable": 131,
+    "brier": 0.238,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -13,35 +13,35 @@
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 412,
-            "brier": 0.237,
+            "resolved": 416,
+            "brier": 0.238,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 101,
+            "n": 102,
             "avg_predicted": 0.13,
-            "observed": 0.08
+            "observed": 0.09
         },
         {
             "bin": "20\u201340%",
-            "n": 276,
+            "n": 277,
             "avg_predicted": 0.3,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 270,
+            "n": 271,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 161,
+            "n": 162,
             "avg_predicted": 0.68,
-            "observed": 0.11
+            "observed": 0.1
         },
         {
             "bin": "80\u2013100%",
@@ -52,28 +52,28 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 850,
-            "brier": 0.278
+            "resolved": 854,
+            "brier": 0.279
         },
         "Economist": {
-            "resolved": 848,
+            "resolved": 852,
             "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 850,
+            "resolved": 854,
             "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 849,
-            "brier": 0.19
+            "resolved": 853,
+            "brier": 0.191
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2782,
-            "brier": 0.279,
-            "hit_rate": 0.54,
-            "rock_hit_rate": 0.928
+            "resolved": 2798,
+            "brier": 0.28,
+            "hit_rate": 0.539,
+            "rock_hit_rate": 0.927
         },
         "qwen3:14b": {
             "resolved": 615,
@@ -89,6 +89,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "WTI Crude Oil prices will be at least $88/bbl in the next week.",
+            "horizon": "week",
+            "probability": 0.58,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only WTI price signal shows crude at $84.88/bbl, below the $88 threshold, with no signal indicating WTI reached $88 during the window.",
+            "resolved_ms": 1785526442685,
+            "ts": 1784748305853
+        },
+        {
+            "statement": "The Strait of Hormuz sees a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.24,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest Strait of Hormuz snapshot shows only 10 daily transits, 52% below its 30-day average of 21, showing a sharp decline rather than a significant increase.",
+            "resolved_ms": 1785526439440,
+            "ts": 1784746450072
+        },
+        {
+            "statement": "There will be a significant increase in Brent Crude prices by the end of the week.",
+            "horizon": "week",
+            "probability": 0.6,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Brent signal shows 90.12 $/bbl up just 1.22%, a modest daily move that does not establish a significant week-end price increase.",
+            "resolved_ms": 1785526435142,
+            "ts": 1784746158557
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant reduction in ship transits by at least 20% within the next week.",
+            "horizon": "week",
+            "probability": 0.17,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "IMF PortWatch data as of 2026-07-23 shows Strait of Hormuz daily transits at 10, 52% below its 30-day average of 21, exceeding the forecast's 20% reduction threshold.",
+            "resolved_ms": 1785526430977,
+            "ts": 1784746119117
+        },
         {
             "statement": "Typhoon NOUL-26 triggers a red/orange-level GDACS or China Meteorological Administration warning with landfall or close approach to Guangdong, prompting suspension of flights or ferries near Shenzhen/Hong Kong",
             "horizon": "24h",
@@ -176,63 +220,19 @@
             "evidence": "Strait of Hormuz transits stood at 10 per day, 52% below the 30-day average of 21, exceeding the forecast 20% decrease within the window.",
             "resolved_ms": 1785519073683,
             "ts": 1784739708738
-        },
-        {
-            "statement": "WTI crude front-month settles below $85/bbl every session in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.46,
-            "location": "Cushing, Oklahoma",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports a WTI settlement at all, and the only crude price given \u2014 Brent at $89.9/bbl and rising \u2014 implies WTI near $86, above the stated $85 threshold, so nothing shows the forecast condition was met.",
-            "resolved_ms": 1785515396680,
-            "ts": 1785257748679
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.46,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current snapshot shows Strait of Hormuz transits at 10 per day, 52% below its 30-day average of 21, indicating no significant increase during the window.",
-            "resolved_ms": 1785515379037,
-            "ts": 1784739247603
-        },
-        {
-            "statement": "The Strait of Hormuz will experience a significant increase in ship transits, exceeding its 30-day average by at least 20% within the next week",
-            "horizon": "week",
-            "probability": 0.48,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The Strait of Hormuz signal shows 10 daily transits, 52% below its 30-day average of 21, the opposite of the forecast 20% increase.",
-            "resolved_ms": 1785515375033,
-            "ts": 1784738060554
-        },
-        {
-            "statement": "The price of Soybeans will rise by at least $0.50 within the next week",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports soybean prices at all, so nothing shows a $0.50 rise during the closed window.",
-            "resolved_ms": 1785515371204,
-            "ts": 1784736202729
         }
     ],
-    "next_judge_ms": 1785526345918,
+    "next_judge_ms": 1785530042701,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 851,
-        "base_rate": 0.0752,
-        "brier_raw": 0.2371,
-        "brier_base_rate": 0.0695,
+        "resolved_n": 855,
+        "base_rate": 0.076,
+        "brier_raw": 0.2376,
+        "brier_base_rate": 0.0702,
         "brier_calibrated_oos": 0.0878,
         "brier_calibrated_oos_n": 151,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
