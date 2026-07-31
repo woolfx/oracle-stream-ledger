@@ -1,8 +1,8 @@
 {
     "resolved": 820,
-    "open": 3388,
-    "due": 373,
-    "next_due_ms": 1785464314086,
+    "open": 3402,
+    "due": 388,
+    "next_due_ms": 1785468503060,
     "unresolvable": 96,
     "brier": 0.236,
     "hit_rate": 0.6,
