@@ -1,19 +1,19 @@
 {
-    "resolved": 831,
-    "open": 3652,
-    "due": 455,
-    "next_due_ms": 1785507018887,
-    "unresolvable": 101,
+    "resolved": 836,
+    "open": 3672,
+    "due": 453,
+    "next_due_ms": 1785510731441,
+    "unresolvable": 105,
     "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 433,
-            "brier": 0.239,
+            "resolved": 436,
+            "brier": 0.238,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 398,
+            "resolved": 400,
             "brier": 0.236,
             "hit_rate": 0.6
         }
@@ -27,19 +27,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 267,
+            "n": 270,
             "avg_predicted": 0.3,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 262,
+            "n": 263,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 159,
+            "n": 160,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,43 +52,98 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 830,
-            "brier": 0.278
+            "resolved": 835,
+            "brier": 0.279
         },
         "Economist": {
-            "resolved": 828,
+            "resolved": 833,
             "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 830,
+            "resolved": 835,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 829,
+            "resolved": 834,
             "brier": 0.191
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2726,
+            "resolved": 2734,
             "brier": 0.279,
             "hit_rate": 0.541,
-            "rock_hit_rate": 0.931
+            "rock_hit_rate": 0.932
         },
         "qwen3:14b": {
-            "resolved": 591,
-            "brier": 0.205,
-            "hit_rate": 0.685,
-            "rock_hit_rate": 0.905
+            "resolved": 603,
+            "brier": 0.206,
+            "hit_rate": 0.683,
+            "rock_hit_rate": 0.907
         },
         "claude-opus-5 (headline)": {
-            "resolved": 39,
-            "brier": 0.474,
-            "hit_rate": 0.282,
-            "rock_hit_rate": 0.718
+            "resolved": 42,
+            "brier": 0.486,
+            "hit_rate": 0.262,
+            "rock_hit_rate": 0.738
         }
     },
     "recent": [
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting",
+            "horizon": "24h",
+            "probability": 0.71,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All signals are merely calendar listings of future FOMC meetings (Sept 2026 onward); none reports the outcome of the July 28, 2026 meeting or any unchanged federal funds target range, so the forecast is not shown to have occurred within its closed window.",
+            "resolved_ms": 1785507779017,
+            "ts": 1785252427686
+        },
+        {
+            "statement": "The Strait of Hormuz will experience increased ship transits in the next week",
+            "horizon": "week",
+            "probability": 0.36,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The Strait of Hormuz showed 10 daily ship transits, 52% below its 30-day average of 21, indicating decreased rather than increased transits during the window.",
+            "resolved_ms": 1785507769324,
+            "ts": 1784732524020
+        },
+        {
+            "statement": "CBOT corn front-month settles above 470 \u00a2/bu, holding most of its +6% jump",
+            "horizon": "24h",
+            "probability": 0.35,
+            "location": "Chicago Board of Trade / US Corn Belt",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current CBOT corn snapshot shows the front month at 465.5 \u00a2/bu, below the stated 470 \u00a2/bu threshold.",
+            "resolved_ms": 1785507765132,
+            "ts": 1785250426789
+        },
+        {
+            "statement": "Japan Meteorological Agency records at least one additional M4.0+ aftershock in the Kumamoto/Honmachi-Mifune area of Kyushu",
+            "horizon": "24h",
+            "probability": 0.27,
+            "location": "Kumamoto Prefecture, Japan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any M4.0+ aftershock in the Kumamoto/Honmachi-Mifune area during the forecast window, despite seismic signals being present in the archive.",
+            "resolved_ms": 1785507760775,
+            "ts": 1785250426789
+        },
+        {
+            "statement": "The US Federal Reserve will announce a rate hike at the next FOMC meeting on July 28th",
+            "horizon": "week",
+            "probability": 0.56,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any FOMC rate hike on July 28, 2026; the only Fed-related signals list future scheduled meetings beginning 2026-09-15, and nothing documents a hike decision within the closed window.",
+            "resolved_ms": 1785507749983,
+            "ts": 1784730683969
+        },
         {
             "statement": "Typhoon NOUL-26 makes landfall or passes within 100 km of the Pearl River Delta, prompting Hong Kong/Guangdong typhoon signals and flight cancellations",
             "horizon": "24h",
@@ -165,76 +220,21 @@
             "evidence": "No signal reports any FOMC rate decision or 25bp hike on July 28, 2026; the only central-bank signals list future meetings (Oct 2026 onward), and a Fed rate increase of this magnitude would certainly have appeared.",
             "resolved_ms": 1785485548597,
             "ts": 1784726981202
-        },
-        {
-            "statement": "Aftershock of M4.0 or greater strikes the Kumamoto/Tsunagi area of Kyushu, Japan",
-            "horizon": "24h",
-            "probability": 0.19,
-            "location": "Kumamoto Prefecture, Japan",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 reports a seismic shock of M5.0 at Kikuyo (32.9,130.8) in Kumamoto Prefecture, Japan, exceeding the stated M4.0 threshold in the forecast's area.",
-            "resolved_ms": 1785481851317,
-            "ts": 1785244385132
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting",
-            "horizon": "24h",
-            "probability": 0.7,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports the outcome of the July 28, 2026 FOMC meeting; the admissible signals only list future scheduled FOMC meetings (Sept 15, Oct 27, Jan 26, Apr 27), so nothing shows a hold decision occurred within the window.",
-            "resolved_ms": 1785478105830,
-            "ts": 1785222401884
-        },
-        {
-            "statement": "Japan's Kumamoto region (near Tsunagi/Uki) records another M4.0 or greater aftershock",
-            "horizon": "24h",
-            "probability": 0.18,
-            "location": "Kumamoto Prefecture, Japan",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 reports an M5.0 seismic shock at Kikuyo in Kumamoto Prefecture (32.9,130.8), exceeding the M4.0 threshold for a further Kumamoto-region quake.",
-            "resolved_ms": 1785470756484,
-            "ts": 1785238379452
-        },
-        {
-            "statement": "The Federal Reserve will raise interest rates by at least 25 basis points during their meeting on July 28.",
-            "horizon": "week",
-            "probability": 0.8,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any FOMC rate decision or hike on July 28, 2026; the only central-bank signal references a scheduled meeting in April 2027, so a 25bp hike is unsupported.",
-            "resolved_ms": 1785467079202,
-            "ts": 1784725139636
-        },
-        {
-            "statement": "Another M4.0+ aftershock strikes the Kumamoto/Tsunagi area of Kyushu, Japan",
-            "horizon": "24h",
-            "probability": 0.2,
-            "location": "Tsunagi, Kumamoto, Japan",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 reports a seismic shock of M5.0 at 32.9,130.8 in Kikuyo, Kumamoto Prefecture, Japan, exceeding the M4.0 threshold in the forecast's Kumamoto area.",
-            "resolved_ms": 1785463255954,
-            "ts": 1785242394095
         }
     ],
-    "next_judge_ms": 1785507719998,
+    "next_judge_ms": 1785511379032,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 831,
-        "base_rate": 0.0734,
+        "resolved_n": 836,
+        "base_rate": 0.073,
         "brier_raw": 0.2374,
-        "brier_base_rate": 0.068,
-        "brier_calibrated_oos": 0.0913,
-        "brier_calibrated_oos_n": 145,
+        "brier_base_rate": 0.0676,
+        "brier_calibrated_oos": 0.0895,
+        "brier_calibrated_oos_n": 148,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
