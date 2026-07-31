@@ -1,19 +1,19 @@
 {
-    "resolved": 839,
-    "open": 3692,
-    "due": 454,
-    "next_due_ms": 1785514783856,
-    "unresolvable": 107,
+    "resolved": 843,
+    "open": 3690,
+    "due": 446,
+    "next_due_ms": 1785518802469,
+    "unresolvable": 118,
     "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 437,
+            "resolved": 438,
             "brier": 0.238,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 402,
+            "resolved": 405,
             "brier": 0.237,
             "hit_rate": 0.6
         }
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 264,
+            "n": 268,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,43 +52,87 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 838,
+            "resolved": 842,
             "brier": 0.278
         },
         "Economist": {
-            "resolved": 836,
+            "resolved": 840,
             "brier": 0.291
         },
         "Naturalist": {
-            "resolved": 838,
-            "brier": 0.301
+            "resolved": 842,
+            "brier": 0.302
         },
         "Skeptic": {
-            "resolved": 837,
+            "resolved": 841,
             "brier": 0.191
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2742,
+            "resolved": 2754,
             "brier": 0.279,
-            "hit_rate": 0.54,
+            "hit_rate": 0.541,
             "rock_hit_rate": 0.932
         },
         "qwen3:14b": {
-            "resolved": 607,
+            "resolved": 611,
             "brier": 0.205,
-            "hit_rate": 0.685,
+            "hit_rate": 0.684,
             "rock_hit_rate": 0.908
         },
         "claude-opus-5 (headline)": {
-            "resolved": 43,
-            "brier": 0.487,
-            "hit_rate": 0.256,
-            "rock_hit_rate": 0.744
+            "resolved": 44,
+            "brier": 0.495,
+            "hit_rate": 0.25,
+            "rock_hit_rate": 0.75
         }
     },
     "recent": [
+        {
+            "statement": "WTI crude front-month settles below $85/bbl every session in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.46,
+            "location": "Cushing, Oklahoma",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports a WTI settlement at all, and the only crude price given \u2014 Brent at $89.9/bbl and rising \u2014 implies WTI near $86, above the stated $85 threshold, so nothing shows the forecast condition was met.",
+            "resolved_ms": 1785515396680,
+            "ts": 1785257748679
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits within the next week",
+            "horizon": "week",
+            "probability": 0.46,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current snapshot shows Strait of Hormuz transits at 10 per day, 52% below its 30-day average of 21, indicating no significant increase during the window.",
+            "resolved_ms": 1785515379037,
+            "ts": 1784739247603
+        },
+        {
+            "statement": "The Strait of Hormuz will experience a significant increase in ship transits, exceeding its 30-day average by at least 20% within the next week",
+            "horizon": "week",
+            "probability": 0.48,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The Strait of Hormuz signal shows 10 daily transits, 52% below its 30-day average of 21, the opposite of the forecast 20% increase.",
+            "resolved_ms": 1785515375033,
+            "ts": 1784738060554
+        },
+        {
+            "statement": "The price of Soybeans will rise by at least $0.50 within the next week",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports soybean prices at all, so nothing shows a $0.50 rise during the closed window.",
+            "resolved_ms": 1785515371204,
+            "ts": 1784736202729
+        },
         {
             "statement": "The Strait of Hormuz will see at least 5 additional ship transits above its 30-day average within the next week",
             "horizon": "week",
@@ -176,65 +220,21 @@
             "evidence": "No signal reports any FOMC rate hike on July 28, 2026; the only Fed-related signals list future scheduled meetings beginning 2026-09-15, and nothing documents a hike decision within the closed window.",
             "resolved_ms": 1785507749983,
             "ts": 1784730683969
-        },
-        {
-            "statement": "Typhoon NOUL-26 makes landfall or passes within 100 km of the Pearl River Delta, prompting Hong Kong/Guangdong typhoon signals and flight cancellations",
-            "horizon": "24h",
-            "probability": 0.21,
-            "location": "Pearl River Delta, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Typhoon NOUL-26, the Pearl River Delta, or Hong Kong/Guangdong typhoon signals \u2014 only unrelated Pacific cyclones (DOLPHIN, GENEVIEVE, FAUSTO) far from China \u2014 so the forecast event is not shown to have occurred before the window closed.",
-            "resolved_ms": 1785504107677,
-            "ts": 1785248412652
-        },
-        {
-            "statement": "The Strait of Malacca will experience a significant decrease in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Strait of Malacca",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any transit data for the Strait of Malacca; the only chokepoint figures given cover Luzon, Lombok, and Mindoro Straits, so nothing shows a significant decrease in Malacca transits within the closed window.",
-            "resolved_ms": 1785504095879,
-            "ts": 1784728827310
-        },
-        {
-            "statement": "Another M4.0+ aftershock strikes the Kumamoto/Tsunagi area of Kyushu, Japan",
-            "horizon": "24h",
-            "probability": 0.2,
-            "location": "Kumamoto Prefecture, Japan",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 reports a seismic shock of M5.0 at Kikuyo (32.9,130.8) in Kumamoto Prefecture, exceeding the M4.0+ threshold in the specified Kumamoto area.",
-            "resolved_ms": 1785504092939,
-            "ts": 1785246382258
-        },
-        {
-            "statement": "The VIX fear gauge will rise above 20 within the next week",
-            "horizon": "week",
-            "probability": 0.37,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal shows VIX at 17.01, well below the 20 threshold, and no signal indicates any rise above 20 during the forecast window.",
-            "resolved_ms": 1785500412764,
-            "ts": 1784728827310
         }
     ],
-    "next_judge_ms": 1785515308070,
+    "next_judge_ms": 1785518996694,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 839,
-        "base_rate": 0.0727,
+        "resolved_n": 843,
+        "base_rate": 0.0724,
         "brier_raw": 0.2373,
-        "brier_base_rate": 0.0674,
-        "brier_calibrated_oos": 0.089,
-        "brier_calibrated_oos_n": 149,
+        "brier_base_rate": 0.0671,
+        "brier_calibrated_oos": 0.0884,
+        "brier_calibrated_oos_n": 150,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
