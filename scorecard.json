@@ -1,14 +1,14 @@
 {
-    "resolved": 926,
-    "open": 3958,
-    "due": 411,
-    "next_due_ms": 1785587659676,
+    "resolved": 928,
+    "open": 3981,
+    "due": 412,
+    "next_due_ms": 1785589661689,
     "unresolvable": 199,
     "brier": 0.232,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 463,
+            "resolved": 465,
             "brier": 0.233,
             "hit_rate": 0.61
         },
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 292,
+            "n": 294,
             "avg_predicted": 0.5,
             "observed": 0.08
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 925,
+            "resolved": 927,
             "brier": 0.272
         },
         "Economist": {
-            "resolved": 923,
+            "resolved": 925,
             "brier": 0.283
         },
         "Naturalist": {
-            "resolved": 925,
+            "resolved": 927,
             "brier": 0.293
         },
         "Skeptic": {
-            "resolved": 923,
+            "resolved": 925,
             "brier": 0.188
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 878,
-            "brier": 0.194,
-            "hit_rate": 0.7,
-            "rock_hit_rate": 0.882
+            "resolved": 886,
+            "brier": 0.195,
+            "hit_rate": 0.696,
+            "rock_hit_rate": 0.883
         },
         "claude-opus-5 (headline)": {
-            "resolved": 53,
-            "brier": 0.451,
-            "hit_rate": 0.321,
-            "rock_hit_rate": 0.679
+            "resolved": 55,
+            "brier": 0.456,
+            "hit_rate": 0.309,
+            "rock_hit_rate": 0.691
         },
         "qwen3:14b (headline)": {
             "resolved": 16,
@@ -95,6 +95,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "Brent crude settles or trades above $92/bbl at some point within 24 hours",
+            "horizon": "24h",
+            "probability": 0.51,
+            "location": "North Sea / global oil market",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Brent price signals show it at $90.12/bbl (+1.22%), below the $92 threshold, and no signal indicates any trade or settle above $92 during the window.",
+            "resolved_ms": 1785589256431,
+            "ts": 1785341607111
+        },
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, citing an oil-driven inflation risk from the Iran conflict",
+            "horizon": "24h",
+            "probability": 0.5,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports the outcome of a July 28, 2026 FOMC meeting or any rate decision rationale; the only FOMC signals list future scheduled meetings (Sept 2026 onward), so the claimed hold citing Iran-driven oil inflation is unsupported.",
+            "resolved_ms": 1785589253132,
+            "ts": 1785341607111
+        },
         {
             "statement": "Strait of Hormuz ship transits will drop below 10/day as Iran-Saudi tensions escalate.",
             "horizon": "week",
@@ -204,43 +226,21 @@
             "evidence": "S1 only notes U.S. and Saudi airstrikes drawing in more countries generally, with no signal showing airstrikes escalating in Iraq or increased Iranian retaliation within the window.",
             "resolved_ms": 1785578086427,
             "ts": 1785337177279
-        },
-        {
-            "statement": "EIA weekly petroleum report on July 29 will show a 2.3% increase in U.S. crude oil exports compared to prior week",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports U.S. crude oil export volumes or any week-over-week export change; the only EIA-related signals (S11, S12) cover commercial crude and SPR stock draws, so the claimed 2.3% export increase is not shown.",
-            "resolved_ms": 1785578082977,
-            "ts": 1784816998532
-        },
-        {
-            "statement": "U.S. and Saudi airstrikes in Iraq will trigger a 10% spike in the VIX fear gauge within 24 hours",
-            "horizon": "24h",
-            "probability": 0.27,
-            "location": "Iraq",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any VIX movement, let alone a 10% spike; S1 only notes airstrikes occurring and S2 is unrelated to Iraq or markets.",
-            "resolved_ms": 1785574425695,
-            "ts": 1785335167020
         }
     ],
-    "next_judge_ms": 1785589160770,
+    "next_judge_ms": 1785592856446,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 926,
-        "base_rate": 0.0832,
-        "brier_raw": 0.232,
-        "brier_base_rate": 0.0762,
-        "brier_calibrated_oos": 0.1044,
-        "brier_calibrated_oos_n": 211,
+        "resolved_n": 928,
+        "base_rate": 0.083,
+        "brier_raw": 0.2321,
+        "brier_base_rate": 0.0761,
+        "brier_calibrated_oos": 0.1034,
+        "brier_calibrated_oos_n": 213,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
