@@ -1,15 +1,15 @@
 {
-    "resolved": 928,
-    "open": 4005,
-    "due": 418,
-    "next_due_ms": 1785593726541,
+    "resolved": 930,
+    "open": 4030,
+    "due": 422,
+    "next_due_ms": 1785597790892,
     "unresolvable": 199,
     "brier": 0.232,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 465,
-            "brier": 0.233,
+            "resolved": 467,
+            "brier": 0.234,
             "hit_rate": 0.61
         },
         "week": {
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 169,
+            "n": 171,
             "avg_predicted": 0.68,
             "observed": 0.12
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 927,
-            "brier": 0.272
+            "resolved": 929,
+            "brier": 0.273
         },
         "Economist": {
-            "resolved": 925,
+            "resolved": 927,
             "brier": 0.283
         },
         "Naturalist": {
-            "resolved": 927,
+            "resolved": 929,
             "brier": 0.293
         },
         "Skeptic": {
-            "resolved": 925,
+            "resolved": 927,
             "brier": 0.188
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 886,
-            "brier": 0.195,
-            "hit_rate": 0.696,
-            "rock_hit_rate": 0.883
+            "resolved": 894,
+            "brier": 0.196,
+            "hit_rate": 0.691,
+            "rock_hit_rate": 0.884
         },
         "claude-opus-5 (headline)": {
-            "resolved": 55,
-            "brier": 0.456,
-            "hit_rate": 0.309,
-            "rock_hit_rate": 0.691
+            "resolved": 57,
+            "brier": 0.461,
+            "hit_rate": 0.298,
+            "rock_hit_rate": 0.702
         },
         "qwen3:14b (headline)": {
             "resolved": 16,
@@ -95,6 +95,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "The FOMC leaves the federal funds target range unchanged at its July 28 meeting, citing an oil-driven inflation risk from the Iran conflict",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "Washington, DC",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports the July 28 FOMC rate decision or its stated rationale; the only FOMC signals list future scheduled meetings (Sept 2026 onward), so the forecast event is not shown to have occurred within the window.",
+            "resolved_ms": 1785593069185,
+            "ts": 1785343646134
+        },
+        {
+            "statement": "Further Iranian or proxy missile/drone attack reported on a US base or Gulf-state facility in Iraq, Jordan, or the Gulf",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "Iraq / Jordan border region",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any missile or drone attack on a US base or Gulf-state facility in Iraq, Jordan, or the Gulf; the only Middle East items concern a Saudi-led Red Sea shipping alliance.",
+            "resolved_ms": 1785593063680,
+            "ts": 1785341607111
+        },
         {
             "statement": "Brent crude settles or trades above $92/bbl at some point within 24 hours",
             "horizon": "24h",
@@ -204,43 +226,21 @@
             "evidence": "No signal concerns the Kerch Strait at all \u2014 the only data points are Lombok and Mindoro Strait transit counts \u2014 so nothing shows Kerch Strait transits falling below 1/day within the closed window.",
             "resolved_ms": 1785578093510,
             "ts": 1784818937171
-        },
-        {
-            "statement": "Internet blackout in Somalia due to state fragility and governance collapse",
-            "horizon": "24h",
-            "probability": 0.1,
-            "location": "Somalia",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Somalia signal is a country risk status (CRITICAL, state fragility), not an outage, while the blackout signals name Burundi and Turkmenistan, so no internet blackout in Somalia is shown within the window.",
-            "resolved_ms": 1785578089611,
-            "ts": 1785337177279
-        },
-        {
-            "statement": "Escalation of US-Saudi airstrikes in Iraq leading to increased Iranian retaliation",
-            "horizon": "24h",
-            "probability": 0.32,
-            "location": "Iraq",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 only notes U.S. and Saudi airstrikes drawing in more countries generally, with no signal showing airstrikes escalating in Iraq or increased Iranian retaliation within the window.",
-            "resolved_ms": 1785578086427,
-            "ts": 1785337177279
         }
     ],
-    "next_judge_ms": 1785592856446,
+    "next_judge_ms": 1785596669201,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 928,
-        "base_rate": 0.083,
-        "brier_raw": 0.2321,
-        "brier_base_rate": 0.0761,
-        "brier_calibrated_oos": 0.1034,
-        "brier_calibrated_oos_n": 213,
+        "resolved_n": 930,
+        "base_rate": 0.0828,
+        "brier_raw": 0.2324,
+        "brier_base_rate": 0.0759,
+        "brier_calibrated_oos": 0.1025,
+        "brier_calibrated_oos_n": 215,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
