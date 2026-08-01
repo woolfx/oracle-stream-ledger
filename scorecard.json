@@ -1,20 +1,20 @@
 {
-    "resolved": 931,
-    "open": 4053,
-    "due": 427,
-    "next_due_ms": 1785601830292,
-    "unresolvable": 199,
-    "brier": 0.232,
+    "resolved": 935,
+    "open": 4073,
+    "due": 425,
+    "next_due_ms": 1785605899703,
+    "unresolvable": 203,
+    "brier": 0.233,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 468,
-            "brier": 0.233,
+            "resolved": 470,
+            "brier": 0.234,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 463,
-            "brier": 0.231,
+            "resolved": 465,
+            "brier": 0.232,
             "hit_rate": 0.61
         }
     },
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 294,
+            "n": 295,
             "avg_predicted": 0.5,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 172,
+            "n": 175,
             "avg_predicted": 0.68,
             "observed": 0.13
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 930,
+            "resolved": 934,
             "brier": 0.273
         },
         "Economist": {
-            "resolved": 928,
-            "brier": 0.283
+            "resolved": 932,
+            "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 930,
+            "resolved": 934,
             "brier": 0.293
         },
         "Skeptic": {
-            "resolved": 928,
-            "brier": 0.188
+            "resolved": 932,
+            "brier": 0.189
         }
     },
     "models": {
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 898,
-            "brier": 0.196,
-            "hit_rate": 0.693,
-            "rock_hit_rate": 0.88
+            "resolved": 914,
+            "brier": 0.199,
+            "hit_rate": 0.682,
+            "rock_hit_rate": 0.882
         },
         "claude-opus-5 (headline)": {
-            "resolved": 58,
-            "brier": 0.454,
-            "hit_rate": 0.31,
-            "rock_hit_rate": 0.69
+            "resolved": 60,
+            "brier": 0.463,
+            "hit_rate": 0.3,
+            "rock_hit_rate": 0.7
         },
         "qwen3:14b (headline)": {
             "resolved": 16,
@@ -95,6 +95,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "Kerch Strait ship transits will fall to 1/day as Ukrainian naval mines expand in Black Sea",
+            "horizon": "week",
+            "probability": 0.69,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal addresses Kerch Strait transits at all; the only transit data concern Lombok and Mindoro Straits, so nothing shows Kerch Strait falling to 1 transit/day.",
+            "resolved_ms": 1785600444758,
+            "ts": 1784828716525
+        },
+        {
+            "statement": "VIX fear gauge will surge above 22 as Fed officials warn about inflation risks from energy shocks",
+            "horizon": "week",
+            "probability": 0.48,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The VIX snapshot shows 15.99 (-6.44%), far below the forecast threshold of 22, and no signal indicates any surge above 22 during the window.",
+            "resolved_ms": 1785600441030,
+            "ts": 1784828716525
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (well under the 21 30-day average), with new war-risk insurance surcharges or transit advisories issued",
+            "horizon": "24h",
+            "probability": 0.67,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signals confirm Hormuz transits at 10 (\u226415), but no signal shows any new war-risk insurance surcharge or transit advisory being issued, so the conjunctive forecast is not verified.",
+            "resolved_ms": 1785600438530,
+            "ts": 1785345685896
+        },
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, citing oil-driven inflation risk from the Iran conflict",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports the outcome of the July 28, 2026 FOMC meeting; the only FOMC references are future scheduled meetings (S2\u2013S5), so nothing shows a hold decision citing oil-driven inflation risk occurred within the window.",
+            "resolved_ms": 1785600429795,
+            "ts": 1785345685896
+        },
         {
             "statement": "Strait of Hormuz daily ship transits remain at or below 15 (well under the 21 30-day average) in the next PortWatch update",
             "horizon": "24h",
@@ -182,65 +226,21 @@
             "evidence": "All signals merely note routinely scheduled EIA report dates (2026-08-05/06) and none document any CL=F intra-day swing of +3.5% or record volatility on 2026-07-29 within the closed window.",
             "resolved_ms": 1785581911745,
             "ts": 1784820922348
-        },
-        {
-            "statement": "Strait of Hormuz daily transits remain at or below 15 in the next IMF PortWatch update (no rebound to the 21 average)",
-            "horizon": "24h",
-            "probability": 0.69,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot (S4) shows Strait of Hormuz at 10 daily transits, 52% below its 21 average, which is at or below the forecast's 15 threshold with no rebound.",
-            "resolved_ms": 1785581908934,
-            "ts": 1785337788090
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.51,
-            "location": "North Sea / global crude market",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Brent Crude is quoted at $90.12/bbl (+1.22%) at the North Sea anchor, above the $88/bbl threshold.",
-            "resolved_ms": 1785581904703,
-            "ts": 1785337788090
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at or below 15 in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.7,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, at or below the stated threshold of 15.",
-            "resolved_ms": 1785581897031,
-            "ts": 1785337585942
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.57,
-            "location": "North Sea / global oil market",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Signal S8 shows Brent Crude (North Sea) at $90.12/bbl, above the $88 threshold within the forecast window.",
-            "resolved_ms": 1785578103717,
-            "ts": 1785337585942
         }
     ],
-    "next_judge_ms": 1785600357724,
+    "next_judge_ms": 1785604044774,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 931,
-        "base_rate": 0.0838,
-        "brier_raw": 0.2322,
-        "brier_base_rate": 0.0768,
-        "brier_calibrated_oos": 0.1058,
-        "brier_calibrated_oos_n": 216,
+        "resolved_n": 935,
+        "base_rate": 0.0834,
+        "brier_raw": 0.2329,
+        "brier_base_rate": 0.0765,
+        "brier_calibrated_oos": 0.1041,
+        "brier_calibrated_oos_n": 220,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
