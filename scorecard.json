@@ -1,9 +1,9 @@
 {
-    "resolved": 867,
-    "open": 3780,
-    "due": 434,
-    "next_due_ms": 1785538959702,
-    "unresolvable": 142,
+    "resolved": 871,
+    "open": 3795,
+    "due": 427,
+    "next_due_ms": 1785543004470,
+    "unresolvable": 151,
     "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
@@ -13,7 +13,7 @@
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 428,
+            "resolved": 432,
             "brier": 0.237,
             "hit_rate": 0.6
         }
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 283,
+            "n": 286,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 273,
+            "n": 274,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 866,
+            "resolved": 870,
             "brier": 0.278
         },
         "Economist": {
-            "resolved": 864,
-            "brier": 0.291
+            "resolved": 868,
+            "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 866,
+            "resolved": 870,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 865,
+            "resolved": 869,
             "brier": 0.191
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 651,
-            "brier": 0.207,
-            "hit_rate": 0.677,
-            "rock_hit_rate": 0.902
+            "resolved": 667,
+            "brier": 0.206,
+            "hit_rate": 0.678,
+            "rock_hit_rate": 0.904
         },
         "claude-opus-5 (headline)": {
             "resolved": 45,
@@ -89,6 +89,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "Kerch Strait ship transits will drop to 1-2 daily due to escalating Ukrainian conflict proximity",
+            "horizon": "week",
+            "probability": 0.34,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Kerch Strait transit data at all; all provided signals concern other chokepoints (Luzon, Lombok, Windward, Yucatan, Mindoro), so nothing shows Kerch Strait transits dropping to 1-2 daily.",
+            "resolved_ms": 1785541278106,
+            "ts": 1784755800139
+        },
+        {
+            "statement": "Natural gas prices (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report release on 2026-07-23",
+            "horizon": "week",
+            "probability": 0.58,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports natural gas (NG=F) prices or any post-EIA-storage-report price move, so the specific 2.5\u20133.5% rise is unsupported despite the window having closed.",
+            "resolved_ms": 1785541274771,
+            "ts": 1784755800139
+        },
+        {
+            "statement": "WTI crude oil (CL=F) will trade 2.5-3.0% higher due to Hormuz chokepoint tensions and OPEC+ production cuts",
+            "horizon": "week",
+            "probability": 0.27,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports WTI's weekly move; the only crude price signal, Brent at +1.22%, falls well short of the stated 2.5-3.0% gain, and no admissible signal shows WTI rising in that band during the window.",
+            "resolved_ms": 1785541270770,
+            "ts": 1784754001766
+        },
+        {
+            "statement": "Sudan's SAF-RSF conflict will escalate into Darfur region causing displacement of 50,000+ people",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Sudan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal is a generic description of the ongoing SAF-RSF civil war with no mention of Darfur escalation or displacement of 50,000+ people during the window.",
+            "resolved_ms": 1785541266003,
+            "ts": 1784754001766
+        },
         {
             "statement": "Flash flood warnings in Colorado will expand to 3 new counties by July 24",
             "horizon": "week",
@@ -176,65 +220,21 @@
             "evidence": "WTI crude is quoted at $86.8/bbl at the close of the window, below the stated $90/bbl threshold (Brent's $90.12 is a different benchmark).",
             "resolved_ms": 1785533953290,
             "ts": 1784751997820
-        },
-        {
-            "statement": "Strait of Hormuz transits will fall below 12/day due to escalating Iran-US tensions",
-            "horizon": "week",
-            "probability": 0.16,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S4 reports Strait of Hormuz at 10 daily ship transits (52% below its 30-day average) as of 2026-07-23, within the forecast window and below the stated 12/day threshold.",
-            "resolved_ms": 1785530130722,
-            "ts": 1784751997820
-        },
-        {
-            "statement": "A tropical cyclone will make landfall in Haiti within the next week, causing widespread damage and disruption",
-            "horizon": "week",
-            "probability": 0.37,
-            "location": "Haiti",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All signals concern cyclones in the Pacific (Dolphin, Genevieve, Fausto) far from Haiti, and none shows any tropical cyclone landfall in Haiti during the window.",
-            "resolved_ms": 1785530125883,
-            "ts": 1784750153786
-        },
-        {
-            "statement": "The conflict in Ukraine will escalate, leading to a complete shutdown of the Kerch Strait within the next week",
-            "horizon": "week",
-            "probability": 0.46,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions the Kerch Strait or any shutdown there; all signals concern unrelated Southeast Asian chokepoints, and a complete closure of the Kerch Strait would certainly have been captured.",
-            "resolved_ms": 1785530120899,
-            "ts": 1784750153786
-        },
-        {
-            "statement": "The Strait of Hormuz will see a 20% increase in ship transits within the next week",
-            "horizon": "week",
-            "probability": 0.15,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current Strait of Hormuz snapshot shows 10 daily transits, 52% below its 30-day average of 21, indicating a sharp decline rather than the forecast 20% increase.",
-            "resolved_ms": 1785530117657,
-            "ts": 1784750153786
         }
     ],
-    "next_judge_ms": 1785541224993,
+    "next_judge_ms": 1785544878121,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 867,
-        "base_rate": 0.0773,
-        "brier_raw": 0.2374,
-        "brier_base_rate": 0.0713,
-        "brier_calibrated_oos": 0.0863,
-        "brier_calibrated_oos_n": 154,
+        "resolved_n": 871,
+        "base_rate": 0.0769,
+        "brier_raw": 0.2371,
+        "brier_base_rate": 0.071,
+        "brier_calibrated_oos": 0.0843,
+        "brier_calibrated_oos_n": 158,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
