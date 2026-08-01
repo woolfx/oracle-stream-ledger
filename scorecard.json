@@ -1,20 +1,20 @@
 {
-    "resolved": 924,
-    "open": 3946,
-    "due": 407,
-    "next_due_ms": 1785583608685,
+    "resolved": 926,
+    "open": 3958,
+    "due": 411,
+    "next_due_ms": 1785587659676,
     "unresolvable": 199,
     "brier": 0.232,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 462,
+            "resolved": 463,
             "brier": 0.233,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 462,
-            "brier": 0.232,
+            "resolved": 463,
+            "brier": 0.231,
             "hit_rate": 0.61
         }
     },
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 306,
+            "n": 307,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 291,
+            "n": 292,
             "avg_predicted": 0.5,
             "observed": 0.08
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 923,
-            "brier": 0.273
+            "resolved": 925,
+            "brier": 0.272
         },
         "Economist": {
-            "resolved": 921,
+            "resolved": 923,
             "brier": 0.283
         },
         "Naturalist": {
-            "resolved": 923,
+            "resolved": 925,
             "brier": 0.293
         },
         "Skeptic": {
-            "resolved": 921,
+            "resolved": 923,
             "brier": 0.188
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 870,
+            "resolved": 878,
             "brier": 0.194,
-            "hit_rate": 0.698,
-            "rock_hit_rate": 0.885
+            "hit_rate": 0.7,
+            "rock_hit_rate": 0.882
         },
         "claude-opus-5 (headline)": {
-            "resolved": 52,
-            "brier": 0.459,
-            "hit_rate": 0.308,
-            "rock_hit_rate": 0.692
+            "resolved": 53,
+            "brier": 0.451,
+            "hit_rate": 0.321,
+            "rock_hit_rate": 0.679
         },
         "qwen3:14b (headline)": {
             "resolved": 16,
@@ -95,6 +95,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "Strait of Hormuz ship transits will drop below 10/day as Iran-Saudi tensions escalate.",
+            "horizon": "week",
+            "probability": 0.26,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Hormuz signal reports 10 daily transits as of 2026-07-23, which does not meet the stated threshold of dropping below 10/day, and no signal shows Iran-Saudi escalation driving it.",
+            "resolved_ms": 1785585560754,
+            "ts": 1784822864916
+        },
+        {
+            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.53,
+            "location": "North Sea / global oil market",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S8 shows Brent Crude at $90.12/bbl (+1.22%), above the $88 threshold during the forecast window.",
+            "resolved_ms": 1785585555691,
+            "ts": 1785339591835
+        },
         {
             "statement": "EIA petroleum report (2026-07-29) will show record CL=F volatility (+3.5% intra-day swings)",
             "horizon": "week",
@@ -204,43 +226,21 @@
             "evidence": "No signal reports any VIX movement, let alone a 10% spike; S1 only notes airstrikes occurring and S2 is unrelated to Iraq or markets.",
             "resolved_ms": 1785574425695,
             "ts": 1785335167020
-        },
-        {
-            "statement": "Iran launches a limited missile strike against a US military base in Iraq in response to recent US-Saudi airstrikes",
-            "horizon": "24h",
-            "probability": 0.36,
-            "location": "Iraq",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 reports Iran striking US forces in Jordan, not a missile strike on a US base in Iraq, and no signal shows an Iranian strike on a US base in Iraq during the window.",
-            "resolved_ms": 1785574423268,
-            "ts": 1785333183020
-        },
-        {
-            "statement": "Escalation of US-Saudi airstrikes in Iraq leading to increased humanitarian aid requests in Baghdad",
-            "horizon": "24h",
-            "probability": 0.23,
-            "location": "Baghdad",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 only reports U.S. and Saudi airstrikes drawing more countries into the fighting, with no mention of Iraq, Baghdad, or any increase in humanitarian aid requests there, and no other signal shows such an event.",
-            "resolved_ms": 1785574420326,
-            "ts": 1785331181423
         }
     ],
-    "next_judge_ms": 1785585511760,
+    "next_judge_ms": 1785589160770,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 924,
-        "base_rate": 0.0823,
-        "brier_raw": 0.2322,
-        "brier_base_rate": 0.0755,
-        "brier_calibrated_oos": 0.1012,
-        "brier_calibrated_oos_n": 209,
+        "resolved_n": 926,
+        "base_rate": 0.0832,
+        "brier_raw": 0.232,
+        "brier_base_rate": 0.0762,
+        "brier_calibrated_oos": 0.1044,
+        "brier_calibrated_oos_n": 211,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
