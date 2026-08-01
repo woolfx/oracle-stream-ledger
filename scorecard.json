@@ -1,9 +1,9 @@
 {
-    "resolved": 876,
-    "open": 3812,
+    "resolved": 880,
+    "open": 3818,
     "due": 427,
-    "next_due_ms": 1785547030736,
-    "unresolvable": 154,
+    "next_due_ms": 1785551104625,
+    "unresolvable": 157,
     "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
@@ -13,27 +13,27 @@
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 437,
-            "brier": 0.237,
+            "resolved": 441,
+            "brier": 0.236,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 105,
+            "n": 107,
             "avg_predicted": 0.13,
-            "observed": 0.1
+            "observed": 0.09
         },
         {
             "bin": "20\u201340%",
-            "n": 287,
+            "n": 288,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 276,
+            "n": 277,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 875,
-            "brier": 0.278
+            "resolved": 879,
+            "brier": 0.277
         },
         "Economist": {
-            "resolved": 873,
-            "brier": 0.29
+            "resolved": 877,
+            "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 875,
-            "brier": 0.301
+            "resolved": 879,
+            "brier": 0.3
         },
         "Skeptic": {
-            "resolved": 874,
-            "brier": 0.191
+            "resolved": 878,
+            "brier": 0.19
         }
     },
     "models": {
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 683,
-            "brier": 0.207,
-            "hit_rate": 0.673,
-            "rock_hit_rate": 0.906
+            "resolved": 699,
+            "brier": 0.204,
+            "hit_rate": 0.678,
+            "rock_hit_rate": 0.908
         },
         "claude-opus-5 (headline)": {
             "resolved": 45,
@@ -89,6 +89,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "Kerch Strait ship transits drop to 1/day due to Ukraine conflict escalation",
+            "horizon": "week",
+            "probability": 0.45,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Kerch Strait transit levels at all; the only transit data concern Luzon, Lombok, and Mindoro Straits, so nothing shows a drop to 1/day in the Kerch Strait during the closed window.",
+            "resolved_ms": 1785548718588,
+            "ts": 1784764327211
+        },
+        {
+            "statement": "Texas electricity demand will exceed 95 GWh/h for 3 consecutive days due to extreme heatwave conditions",
+            "horizon": "week",
+            "probability": 0.26,
+            "location": "Texas",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 shows only a single current-hour Texas demand reading ~12% above an 88 GWh/h baseline, which does not demonstrate demand above 95 GWh/h sustained across three consecutive days within the window.",
+            "resolved_ms": 1785548715998,
+            "ts": 1784764015540
+        },
+        {
+            "statement": "WTI crude oil prices exceed $92/bbl amid Strait of Hormuz transit disruptions",
+            "horizon": "week",
+            "probability": 0.16,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent crude is quoted at $90.12/bbl, and no signal shows WTI (typically priced below Brent) exceeding $92/bbl during the window despite the Hormuz transit decline.",
+            "resolved_ms": 1785548702726,
+            "ts": 1784762209103
+        },
+        {
+            "statement": "Texas electricity demand will exceed 100 GWh/h due to extreme heatwave conditions",
+            "horizon": "week",
+            "probability": 0.15,
+            "location": "Texas",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 shows Texas demand running 12% above an 88 GWh/h baseline (~98.6 GWh/h), still short of the stated 100 GWh/h threshold, and no other signal shows Texas demand exceeding 100 GWh/h during the window.",
+            "resolved_ms": 1785548699945,
+            "ts": 1784761988036
+        },
         {
             "statement": "Kerch Strait ship transits will drop below 1/day due to escalating Ukrainian conflict",
             "horizon": "week",
@@ -176,65 +220,21 @@
             "evidence": "No signal reports WTI's weekly move; the only crude price signal, Brent at +1.22%, falls well short of the stated 2.5-3.0% gain, and no admissible signal shows WTI rising in that band during the window.",
             "resolved_ms": 1785541270770,
             "ts": 1784754001766
-        },
-        {
-            "statement": "Sudan's SAF-RSF conflict will escalate into Darfur region causing displacement of 50,000+ people",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Sudan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal is a generic description of the ongoing SAF-RSF civil war with no mention of Darfur escalation or displacement of 50,000+ people during the window.",
-            "resolved_ms": 1785541266003,
-            "ts": 1784754001766
-        },
-        {
-            "statement": "Flash flood warnings in Colorado will expand to 3 new counties by July 24",
-            "horizon": "week",
-            "probability": 0.14,
-            "location": "Colorado",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No admissible signal shows flash flood warnings expanding to three new Colorado counties by July 24; the only entry is a trimmed section listing with no supporting content.",
-            "resolved_ms": 1785537624978,
-            "ts": 1784753552845
-        },
-        {
-            "statement": "Natural gas futures (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report on July 23",
-            "horizon": "week",
-            "probability": 0.59,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports natural gas futures prices or any post-EIA-storage-report move, so the specific 2.5-3.5% rise is unsupported after the window closed.",
-            "resolved_ms": 1785537622979,
-            "ts": 1784753552845
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1/day due to intensified Ukrainian conflict near the strait",
-            "horizon": "week",
-            "probability": 0.34,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Kerch Strait transit data at all; the only chokepoint signals concern Luzon, Lombok, and Mindoro Straits, so nothing shows Kerch Strait transits dropping below 1/day.",
-            "resolved_ms": 1785537619088,
-            "ts": 1784753390447
         }
     ],
-    "next_judge_ms": 1785548630207,
+    "next_judge_ms": 1785552318604,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 876,
-        "base_rate": 0.0765,
-        "brier_raw": 0.2373,
-        "brier_base_rate": 0.0706,
-        "brier_calibrated_oos": 0.0825,
-        "brier_calibrated_oos_n": 162,
+        "resolved_n": 880,
+        "base_rate": 0.0761,
+        "brier_raw": 0.2366,
+        "brier_base_rate": 0.0703,
+        "brier_calibrated_oos": 0.0806,
+        "brier_calibrated_oos_n": 166,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
