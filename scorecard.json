@@ -1,20 +1,20 @@
 {
-    "resolved": 944,
-    "open": 4100,
-    "due": 423,
-    "next_due_ms": 1785611987231,
-    "unresolvable": 205,
-    "brier": 0.233,
+    "resolved": 949,
+    "open": 4109,
+    "due": 414,
+    "next_due_ms": 1785616018888,
+    "unresolvable": 215,
+    "brier": 0.232,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 478,
+            "resolved": 481,
             "brier": 0.233,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 466,
-            "brier": 0.232,
+            "resolved": 468,
+            "brier": 0.231,
             "hit_rate": 0.61
         }
     },
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 308,
+            "n": 311,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
@@ -39,9 +39,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 181,
+            "n": 183,
             "avg_predicted": 0.68,
-            "observed": 0.14
+            "observed": 0.15
         },
         {
             "bin": "80\u2013100%",
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 943,
+            "resolved": 948,
             "brier": 0.272
         },
         "Economist": {
-            "resolved": 941,
-            "brier": 0.283
+            "resolved": 946,
+            "brier": 0.282
         },
         "Naturalist": {
-            "resolved": 943,
+            "resolved": 948,
             "brier": 0.292
         },
         "Skeptic": {
-            "resolved": 941,
+            "resolved": 946,
             "brier": 0.189
         }
     },
@@ -76,14 +76,14 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 950,
-            "brier": 0.2,
-            "hit_rate": 0.68,
-            "rock_hit_rate": 0.865
+            "resolved": 970,
+            "brier": 0.199,
+            "hit_rate": 0.682,
+            "rock_hit_rate": 0.864
         },
         "claude-opus-5 (headline)": {
-            "resolved": 68,
-            "brier": 0.439,
+            "resolved": 71,
+            "brier": 0.44,
             "hit_rate": 0.338,
             "rock_hit_rate": 0.662
         },
@@ -95,6 +95,61 @@
         }
     },
     "recent": [
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, citing oil-driven inflation risk from the Iran war",
+            "horizon": "24h",
+            "probability": 0.63,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports the outcome of the July 28, 2026 FOMC meeting or any rate decision rationale; the only FOMC items listed are future scheduled meetings (Sept 2026 onward), so the claimed hold-with-Iran-oil-citation is not shown.",
+            "resolved_ms": 1785611510148,
+            "ts": 1785355845631
+        },
+        {
+            "statement": "Strait of Hormuz ship transits will drop below 10/day due to increased Houthi activity",
+            "horizon": "week",
+            "probability": 0.22,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Hormuz signal reports 10 daily transits as of 2026-07-23, which is not below the stated threshold of 10/day and cites no Houthi-related cause.",
+            "resolved_ms": 1785611503523,
+            "ts": 1784836519128
+        },
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering\u6e2f/typhoon signal suspensions of flights or trading",
+            "horizon": "24h",
+            "probability": 0.34,
+            "location": "Guangdong / Hong Kong, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon Noul or any landfall/near-pass on the Guangdong/Pearl River Delta coast; the only tropical cyclone notifications (Dolphin, Genevieve, Fausto) are elsewhere and green-level, so an event of this magnitude would have been captured but was not.",
+            "resolved_ms": 1785611500418,
+            "ts": 1785353843874
+        },
+        {
+            "statement": "Brent crude settles above $88/bbl",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "North Sea / global oil market",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S9 shows Brent Crude at $90.12/bbl (+1.22%), above the $88/bbl threshold for the North Sea benchmark.",
+            "resolved_ms": 1785611496596,
+            "ts": 1785353843873
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop to 0 due to intensified Ukrainian conflict",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal concerns the Kerch Strait at all; the only data points cover Lombok and Mindoro Straits, so nothing shows Kerch transits dropping to zero within the window.",
+            "resolved_ms": 1785611486840,
+            "ts": 1784834545323
+        },
         {
             "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering typhoon signal suspensions in Hong Kong or Shenzhen",
             "horizon": "24h",
@@ -171,76 +226,21 @@
             "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
             "resolved_ms": 1785604086257,
             "ts": 1785347682619
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.65,
-            "location": "North Sea / global crude benchmark",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Brent Crude is quoted at $90.12/bbl (+1.22%) in the current snapshot, above the $88/bbl threshold.",
-            "resolved_ms": 1785604080500,
-            "ts": 1785347682619
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, with the statement citing elevated energy-price uncertainty",
-            "horizon": "24h",
-            "probability": 0.7,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports the July 28 FOMC decision or its statement language; the only FOMC references (S1, S2) are scheduled 2027 meetings, so nothing shows the forecast event occurred within the window.",
-            "resolved_ms": 1785604077433,
-            "ts": 1785347682618
-        },
-        {
-            "statement": "Kerch Strait ship transits will fall to 1/day as Ukrainian naval mines expand in Black Sea",
-            "horizon": "week",
-            "probability": 0.69,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal addresses Kerch Strait transits at all; the only transit data concern Lombok and Mindoro Straits, so nothing shows Kerch Strait falling to 1 transit/day.",
-            "resolved_ms": 1785600444758,
-            "ts": 1784828716525
-        },
-        {
-            "statement": "VIX fear gauge will surge above 22 as Fed officials warn about inflation risks from energy shocks",
-            "horizon": "week",
-            "probability": 0.48,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The VIX snapshot shows 15.99 (-6.44%), far below the forecast threshold of 22, and no signal indicates any surge above 22 during the window.",
-            "resolved_ms": 1785600441030,
-            "ts": 1784828716525
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (well under the 21 30-day average), with new war-risk insurance surcharges or transit advisories issued",
-            "horizon": "24h",
-            "probability": 0.67,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Signals confirm Hormuz transits at 10 (\u226415), but no signal shows any new war-risk insurance surcharge or transit advisory being issued, so the conjunctive forecast is not verified.",
-            "resolved_ms": 1785600438530,
-            "ts": 1785345685896
         }
     ],
-    "next_judge_ms": 1785611435454,
+    "next_judge_ms": 1785615110164,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 944,
-        "base_rate": 0.0879,
-        "brier_raw": 0.2326,
-        "brier_base_rate": 0.0802,
-        "brier_calibrated_oos": 0.1183,
-        "brier_calibrated_oos_n": 229,
+        "resolved_n": 949,
+        "base_rate": 0.0885,
+        "brier_raw": 0.2322,
+        "brier_base_rate": 0.0807,
+        "brier_calibrated_oos": 0.1195,
+        "brier_calibrated_oos_n": 234,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
