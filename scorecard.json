@@ -1,21 +1,21 @@
 {
-    "resolved": 909,
-    "open": 3886,
-    "due": 406,
-    "next_due_ms": 1785572901432,
+    "resolved": 915,
+    "open": 3904,
+    "due": 404,
+    "next_due_ms": 1785575494403,
     "unresolvable": 199,
-    "brier": 0.234,
+    "brier": 0.233,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 451,
-            "brier": 0.235,
+            "resolved": 456,
+            "brier": 0.234,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 458,
+            "resolved": 459,
             "brier": 0.232,
-            "hit_rate": 0.6
+            "hit_rate": 0.61
         }
     },
     "calibration": [
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 299,
+            "n": 304,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 286,
+            "n": 287,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 908,
+            "resolved": 914,
             "brier": 0.274
         },
         "Economist": {
-            "resolved": 906,
-            "brier": 0.285
+            "resolved": 912,
+            "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 908,
-            "brier": 0.296
+            "resolved": 914,
+            "brier": 0.295
         },
         "Skeptic": {
-            "resolved": 906,
-            "brier": 0.189
+            "resolved": 912,
+            "brier": 0.188
         }
     },
     "models": {
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 810,
+            "resolved": 834,
             "brier": 0.197,
-            "hit_rate": 0.689,
-            "rock_hit_rate": 0.901
+            "hit_rate": 0.691,
+            "rock_hit_rate": 0.899
         },
         "claude-opus-5 (headline)": {
             "resolved": 48,
@@ -88,13 +88,79 @@
             "rock_hit_rate": 0.75
         },
         "qwen3:14b (headline)": {
-            "resolved": 9,
-            "brier": 0.291,
-            "hit_rate": 0.444,
-            "rock_hit_rate": 0.778
+            "resolved": 14,
+            "brier": 0.335,
+            "hit_rate": 0.357,
+            "rock_hit_rate": 0.786
         }
     },
     "recent": [
+        {
+            "statement": "U.S. and Saudi airstrikes in Iraq will trigger a 10% spike in the VIX fear gauge within 24 hours",
+            "horizon": "24h",
+            "probability": 0.27,
+            "location": "Iraq",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any VIX movement, let alone a 10% spike; S1 only notes airstrikes occurring and S2 is unrelated to Iraq or markets.",
+            "resolved_ms": 1785574425695,
+            "ts": 1785335167020
+        },
+        {
+            "statement": "Iran launches a limited missile strike against a US military base in Iraq in response to recent US-Saudi airstrikes",
+            "horizon": "24h",
+            "probability": 0.36,
+            "location": "Iraq",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 reports Iran striking US forces in Jordan, not a missile strike on a US base in Iraq, and no signal shows an Iranian strike on a US base in Iraq during the window.",
+            "resolved_ms": 1785574423268,
+            "ts": 1785333183020
+        },
+        {
+            "statement": "Escalation of US-Saudi airstrikes in Iraq leading to increased humanitarian aid requests in Baghdad",
+            "horizon": "24h",
+            "probability": 0.23,
+            "location": "Baghdad",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 only reports U.S. and Saudi airstrikes drawing more countries into the fighting, with no mention of Iraq, Baghdad, or any increase in humanitarian aid requests there, and no other signal shows such an event.",
+            "resolved_ms": 1785574420326,
+            "ts": 1785331181423
+        },
+        {
+            "statement": "VIX fear gauge rises above 20 due to escalating Middle East conflicts and typhoon Noul's humanitarian impact",
+            "horizon": "24h",
+            "probability": 0.41,
+            "location": "Global markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The VIX stood at 15.99 (-6.44%), well below the forecast threshold of 20, showing no fear-gauge spike within the window.",
+            "resolved_ms": 1785574416612,
+            "ts": 1785329235809
+        },
+        {
+            "statement": "The Federal Reserve will signal a 50-basis-point rate hike at its July 28 meeting, pushing the Fed Funds rate to 5.75-6.00%",
+            "horizon": "week",
+            "probability": 0.23,
+            "location": "Federal Reserve Board",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any FOMC rate decision from July 28, 2026 or a 50-basis-point hike to 5.75-6.00%; the only Fed-related signals are scheduled 2027 meetings, and risk-on markets (VIX 15.99, S&P futures +0.63%) show no sign of such a shock, so the window closed without evidence the event occurred.",
+            "resolved_ms": 1785574414218,
+            "ts": 1784809205859
+        },
+        {
+            "statement": "Strait of Hormuz ship transits will drop 15% below 30-day average due to increased Iranian naval activity",
+            "horizon": "24h",
+            "probability": 0.28,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal 2 reports Strait of Hormuz daily transits at 10, 52% below its 30-day average of 21, far exceeding the forecast's 15% decline threshold.",
+            "resolved_ms": 1785574409488,
+            "ts": 1785327194338
+        },
         {
             "statement": "Ukraine will conduct a naval strike on an Iranian vessel in the Black Sea",
             "horizon": "24h",
@@ -160,87 +226,21 @@
             "evidence": "S1 shows the Russian invasion of Ukraine still ongoing with active frontlines across eastern and southern regions, confirming no ceasefire agreement emerged during the window.",
             "resolved_ms": 1785570731871,
             "ts": 1784797651915
-        },
-        {
-            "statement": "Strait of Hormuz ship transits drop below 10/day due to increased Houthi missile activity",
-            "horizon": "week",
-            "probability": 0.23,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The Strait of Hormuz signal reports 10 daily transits, which is not below the stated threshold of 10/day, and no signal attributes any decline to Houthi missile activity.",
-            "resolved_ms": 1785567102240,
-            "ts": 1784795691981
-        },
-        {
-            "statement": "Kerch Strait ship transits will fall below 1/day due to increased Russian-Ukrainian naval posturing",
-            "horizon": "week",
-            "probability": 0.39,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal addresses Kerch Strait transit volumes at all \u2014 the only data concern Lombok and Mindoro Straits \u2014 so nothing shows Kerch Strait transits falling below 1/day.",
-            "resolved_ms": 1785567099253,
-            "ts": 1784793692189
-        },
-        {
-            "statement": "EIA weekly petroleum status report (2026-07-29) will push CL=F higher by 1.8-2.4% due to tight global crude supply dynamics",
-            "horizon": "week",
-            "probability": 0.56,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only crude price signal shows WTI up just 1.29%, below the forecast's 1.8-2.4% gain band, and no signal documents an EIA-report-driven move of that magnitude within the window.",
-            "resolved_ms": 1785567096381,
-            "ts": 1784793692189
-        },
-        {
-            "statement": "U.S. Federal Reserve will cut rates by 25bps at July 28 FOMC meeting despite sticky inflation data",
-            "horizon": "24h",
-            "probability": 0.28,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any FOMC rate decision or 25bp cut on July 28, 2026 \u2014 the only central-bank signals (S1, S2) are future scheduled 2027 meetings \u2014 so a Fed cut of that prominence is unsupported within the closed window.",
-            "resolved_ms": 1785567092102,
-            "ts": 1785311234438
-        },
-        {
-            "statement": "Hurricane Genevieve intensifies to Category 4, prompting evacuations in Mexico's Baja California region",
-            "horizon": "24h",
-            "probability": 0.14,
-            "location": "Pacific Ocean near Baja California",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Genevieve signal is a green (lowest) GDACS notification with zero population affected by Category 1+ winds, located far out in the Pacific near 22.6,-131.4, showing no Category 4 intensification or Baja California evacuations.",
-            "resolved_ms": 1785567086244,
-            "ts": 1785309255450
-        },
-        {
-            "statement": "Natural Gas (Henry Hub) futures will rise by 1.5-2.5% following the EIA weekly storage report release on 2026-07-23",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Henry Hub natural gas prices or any post-EIA-storage-report move of 1.5-2.5%; the only energy price signals concern WTI and Brent crude, so nothing shows the forecast event occurred within the closed window.",
-            "resolved_ms": 1785567081794,
-            "ts": 1784781894961
         }
     ],
-    "next_judge_ms": 1785574355539,
+    "next_judge_ms": 1785578025711,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 909,
-        "base_rate": 0.0781,
-        "brier_raw": 0.2336,
-        "brier_base_rate": 0.072,
-        "brier_calibrated_oos": 0.087,
-        "brier_calibrated_oos_n": 194,
+        "resolved_n": 915,
+        "base_rate": 0.0787,
+        "brier_raw": 0.2332,
+        "brier_base_rate": 0.0725,
+        "brier_calibrated_oos": 0.089,
+        "brier_calibrated_oos_n": 200,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
