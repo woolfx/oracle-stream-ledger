@@ -1,33 +1,33 @@
 {
-    "resolved": 949,
-    "open": 4109,
-    "due": 414,
-    "next_due_ms": 1785616018888,
-    "unresolvable": 215,
-    "brier": 0.232,
+    "resolved": 954,
+    "open": 4127,
+    "due": 412,
+    "next_due_ms": 1785620093852,
+    "unresolvable": 218,
+    "brier": 0.231,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 481,
-            "brier": 0.233,
+            "resolved": 484,
+            "brier": 0.232,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 468,
-            "brier": 0.231,
+            "resolved": 470,
+            "brier": 0.23,
             "hit_rate": 0.61
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 115,
+            "n": 116,
             "avg_predicted": 0.13,
             "observed": 0.09
         },
         {
             "bin": "20\u201340%",
-            "n": 311,
+            "n": 314,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 183,
+            "n": 184,
             "avg_predicted": 0.68,
             "observed": 0.15
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 948,
-            "brier": 0.272
+            "resolved": 953,
+            "brier": 0.271
         },
         "Economist": {
-            "resolved": 946,
-            "brier": 0.282
+            "resolved": 951,
+            "brier": 0.281
         },
         "Naturalist": {
-            "resolved": 948,
-            "brier": 0.292
+            "resolved": 953,
+            "brier": 0.291
         },
         "Skeptic": {
-            "resolved": 946,
-            "brier": 0.189
+            "resolved": 951,
+            "brier": 0.188
         }
     },
     "models": {
@@ -76,25 +76,80 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 970,
-            "brier": 0.199,
-            "hit_rate": 0.682,
-            "rock_hit_rate": 0.864
+            "resolved": 990,
+            "brier": 0.197,
+            "hit_rate": 0.688,
+            "rock_hit_rate": 0.863
         },
         "claude-opus-5 (headline)": {
-            "resolved": 71,
-            "brier": 0.44,
-            "hit_rate": 0.338,
-            "rock_hit_rate": 0.662
+            "resolved": 73,
+            "brier": 0.437,
+            "hit_rate": 0.342,
+            "rock_hit_rate": 0.658
         },
         "qwen3:14b (headline)": {
-            "resolved": 16,
-            "brier": 0.308,
-            "hit_rate": 0.438,
-            "rock_hit_rate": 0.812
+            "resolved": 17,
+            "brier": 0.297,
+            "hit_rate": 0.471,
+            "rock_hit_rate": 0.824
         }
     },
     "recent": [
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, prompting suspension of work and classes in at least one major city",
+            "horizon": "24h",
+            "probability": 0.2,
+            "location": "Guangdong, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon Noul, a Guangdong/Pearl River Delta landfall, or work/class suspensions; the only cyclone signals concern DOLPHIN, GENEVIEVE, and FAUSTO in unrelated locations.",
+            "resolved_ms": 1785615186393,
+            "ts": 1785359840609
+        },
+        {
+            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "North Sea / global oil market",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S9 shows Brent Crude at $90.12/bbl (+1.22%), above the stated $88/bbl threshold.",
+            "resolved_ms": 1785615182477,
+            "ts": 1785359840609
+        },
+        {
+            "statement": "Iran will escalate attacks on Saudi oil infrastructure within 24 hours, triggering a 10% spike in Brent crude prices.",
+            "horizon": "24h",
+            "probability": 0.13,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Brent crude is up only 1.22% at $90.12/bbl, far short of the forecast 10% spike, and no signal shows any Iranian attack on Saudi oil infrastructure during the window.",
+            "resolved_ms": 1785615172924,
+            "ts": 1785357898601
+        },
+        {
+            "statement": "Gold prices retreat below $4000/oz as U.S. Treasury yields rise following Fed hawkish signals",
+            "horizon": "week",
+            "probability": 0.38,
+            "location": "London Metal Exchange",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports gold prices, Treasury yields, or any Fed hawkish signal during the window (the only FOMC dates listed are months after the window closed), so nothing shows the forecast event occurred.",
+            "resolved_ms": 1785615168279,
+            "ts": 1784838520126
+        },
+        {
+            "statement": "Strait of Hormuz ship transits fall below 10/day due to escalating Houthi attacks on commercial vessels",
+            "horizon": "week",
+            "probability": 0.2,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Hormuz signal shows 10 daily transits as of 2026-07-23, which is not below the stated 10/day threshold, and no signal attributes any decline to Houthi attacks.",
+            "resolved_ms": 1785615165137,
+            "ts": 1784838520126
+        },
         {
             "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, citing oil-driven inflation risk from the Iran war",
             "horizon": "24h",
@@ -171,76 +226,21 @@
             "evidence": "Signal 8 shows Brent Crude at $90.12/bbl (+1.22%) at the North Sea benchmark, above the stated $88/bbl threshold within the forecast window.",
             "resolved_ms": 1785607830883,
             "ts": 1785351318695
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, citing an oil-driven inflation risk from the Iran war",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any July 28, 2026 FOMC rate decision or its rationale; the only FOMC entries are future scheduled meetings (Sept 2026 onward), so the claimed hold citing oil-driven Iran-war inflation risk is unsupported.",
-            "resolved_ms": 1785607828125,
-            "ts": 1785351318695
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1/day due to Ukrainian conflict escalation",
-            "horizon": "week",
-            "probability": 0.48,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions the Kerch Strait at all; the only transit data concern Lombok and Mindoro Straits, so nothing shows Kerch transits fell below 1/day.",
-            "resolved_ms": 1785607823864,
-            "ts": 1784832558906
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (well under the 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.65,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, satisfying the at-or-below-15 threshold.",
-            "resolved_ms": 1785607819082,
-            "ts": 1785349697862
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.54,
-            "location": "North Sea / global oil market",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Brent Crude is quoted at $90.12/bbl (+1.22%) at the North Sea anchor, above the $88/bbl threshold within the forecast window.",
-            "resolved_ms": 1785604092585,
-            "ts": 1785349697862
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (well under the 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.73,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
-            "resolved_ms": 1785604086257,
-            "ts": 1785347682619
         }
     ],
-    "next_judge_ms": 1785615110164,
+    "next_judge_ms": 1785618786409,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 949,
-        "base_rate": 0.0885,
-        "brier_raw": 0.2322,
-        "brier_base_rate": 0.0807,
-        "brier_calibrated_oos": 0.1195,
-        "brier_calibrated_oos_n": 234,
+        "resolved_n": 954,
+        "base_rate": 0.0891,
+        "brier_raw": 0.2314,
+        "brier_base_rate": 0.0812,
+        "brier_calibrated_oos": 0.1206,
+        "brier_calibrated_oos_n": 239,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
