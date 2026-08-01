@@ -1,9 +1,9 @@
 {
-    "resolved": 871,
-    "open": 3795,
+    "resolved": 876,
+    "open": 3812,
     "due": 427,
-    "next_due_ms": 1785543004470,
-    "unresolvable": 151,
+    "next_due_ms": 1785547030736,
+    "unresolvable": 154,
     "brier": 0.237,
     "hit_rate": 0.6,
     "per_horizon": {
@@ -13,7 +13,7 @@
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 432,
+            "resolved": 437,
             "brier": 0.237,
             "hit_rate": 0.6
         }
@@ -27,19 +27,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 286,
+            "n": 287,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 274,
+            "n": 276,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 163,
+            "n": 165,
             "avg_predicted": 0.68,
             "observed": 0.1
         },
@@ -52,34 +52,34 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 870,
+            "resolved": 875,
             "brier": 0.278
         },
         "Economist": {
-            "resolved": 868,
+            "resolved": 873,
             "brier": 0.29
         },
         "Naturalist": {
-            "resolved": 870,
+            "resolved": 875,
             "brier": 0.301
         },
         "Skeptic": {
-            "resolved": 869,
+            "resolved": 874,
             "brier": 0.191
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2810,
+            "resolved": 2814,
             "brier": 0.279,
-            "hit_rate": 0.541,
+            "hit_rate": 0.54,
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 667,
-            "brier": 0.206,
-            "hit_rate": 0.678,
-            "rock_hit_rate": 0.904
+            "resolved": 683,
+            "brier": 0.207,
+            "hit_rate": 0.673,
+            "rock_hit_rate": 0.906
         },
         "claude-opus-5 (headline)": {
             "resolved": 45,
@@ -89,6 +89,61 @@
         }
     },
     "recent": [
+        {
+            "statement": "Kerch Strait ship transits will drop below 1/day due to escalating Ukrainian conflict",
+            "horizon": "week",
+            "probability": 0.41,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Kerch Strait transit data at all; the only transit figures concern Luzon, Lombok, and Mindoro Straits, so nothing shows Kerch Strait transits falling below 1/day within the closed window.",
+            "resolved_ms": 1785545030192,
+            "ts": 1784761988036
+        },
+        {
+            "statement": "Natural gas prices (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report on July 23",
+            "horizon": "week",
+            "probability": 0.52,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports natural gas (NG=F) prices or the July 23 EIA storage report reaction, so the claimed 2.5-3.5% rise is not shown by any admissible evidence within the closed window.",
+            "resolved_ms": 1785545027229,
+            "ts": 1784761988036
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop to 1 per day due to intensified Ukrainian conflict",
+            "horizon": "week",
+            "probability": 0.28,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Kerch Strait transit data at all \u2014 the only chokepoint figures given are for Luzon, Lombok, and Mindoro Straits \u2014 so nothing shows transits dropping to 1 per day within the closed window.",
+            "resolved_ms": 1785545020923,
+            "ts": 1784761691473
+        },
+        {
+            "statement": "Natural Gas (Henry Hub) futures rise by 2.5% following the EIA weekly storage report release on July 23",
+            "horizon": "week",
+            "probability": 0.63,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Henry Hub natural gas signal shows a +1.23% move to $2.79/MMBtu, short of the forecast 2.5% rise, and no signal shows a 2.5%+ post-EIA-report gain within the window.",
+            "resolved_ms": 1785545017835,
+            "ts": 1784759725739
+        },
+        {
+            "statement": "NG=F will move down by 1.2% within the next week",
+            "horizon": "week",
+            "probability": 0.69,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal in the record shows NG=F declining 1.2% within the 2026-07-21 to 2026-07-28 window, so the forecast cannot be confirmed.",
+            "resolved_ms": 1785544984874,
+            "ts": 1784673606500
+        },
         {
             "statement": "Kerch Strait ship transits will drop to 1-2 daily due to escalating Ukrainian conflict proximity",
             "horizon": "week",
@@ -165,76 +220,21 @@
             "evidence": "No signal reports Kerch Strait transit data at all; the only chokepoint signals concern Luzon, Lombok, and Mindoro Straits, so nothing shows Kerch Strait transits dropping below 1/day.",
             "resolved_ms": 1785537619088,
             "ts": 1784753390447
-        },
-        {
-            "statement": "WTI crude oil (CL=F) will increase by 2.0% in the next week due to heightened geopolitical risks at chokepoints",
-            "horizon": "week",
-            "probability": 0.32,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports WTI (CL=F) price or its weekly change; the only crude price signal (S10, Brent +1.22% on the day) does not show a 2.0% weekly WTI increase, so the forecast event is unsupported at window close.",
-            "resolved_ms": 1785537615470,
-            "ts": 1784752721075
-        },
-        {
-            "statement": "WTI crude oil will break $90/bbl as Houthi Red Sea attacks force shipping reroutes through Strait of Hormuz",
-            "horizon": "week",
-            "probability": 0.32,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only price signal shows Brent at $90.12/bbl, with no signal indicating WTI crude broke $90/bbl during the window.",
-            "resolved_ms": 1785533971175,
-            "ts": 1784752534077
-        },
-        {
-            "statement": "Strait of Hormuz ship transits will remain 30% below 30-day average (15 vs 21) due to persistent regional tensions",
-            "horizon": "week",
-            "probability": 0.32,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S4 shows Strait of Hormuz daily transits at 10, 52% below the 30-day average of 21, satisfying the forecast's stated threshold of remaining at least 30% below average during the window.",
-            "resolved_ms": 1785533967391,
-            "ts": 1784752231561
-        },
-        {
-            "statement": "Natural gas prices (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report release on 2026-07-23",
-            "horizon": "week",
-            "probability": 0.61,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports natural gas (NG=F) prices or the EIA storage report reaction at all \u2014 only crude oil, equities, and rate-meeting signals \u2014 so the specific 2.5\u20133.5% post-report gain is unsupported after the window closed.",
-            "resolved_ms": 1785533961687,
-            "ts": 1784752231561
-        },
-        {
-            "statement": "WTI crude oil will break $90/bbl due to combined chokepoint disruptions and OPEC+ dynamics",
-            "horizon": "week",
-            "probability": 0.28,
-            "location": "",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "WTI crude is quoted at $86.8/bbl at the close of the window, below the stated $90/bbl threshold (Brent's $90.12 is a different benchmark).",
-            "resolved_ms": 1785533953290,
-            "ts": 1784751997820
         }
     ],
-    "next_judge_ms": 1785544878121,
+    "next_judge_ms": 1785548630207,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 871,
-        "base_rate": 0.0769,
-        "brier_raw": 0.2371,
-        "brier_base_rate": 0.071,
-        "brier_calibrated_oos": 0.0843,
-        "brier_calibrated_oos_n": 158,
+        "resolved_n": 876,
+        "base_rate": 0.0765,
+        "brier_raw": 0.2373,
+        "brier_base_rate": 0.0706,
+        "brier_calibrated_oos": 0.0825,
+        "brier_calibrated_oos_n": 162,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
