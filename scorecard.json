@@ -1,19 +1,19 @@
 {
-    "resolved": 915,
-    "open": 3904,
-    "due": 404,
-    "next_due_ms": 1785575494403,
+    "resolved": 920,
+    "open": 3926,
+    "due": 405,
+    "next_due_ms": 1785579537315,
     "unresolvable": 199,
     "brier": 0.233,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 456,
-            "brier": 0.234,
+            "resolved": 459,
+            "brier": 0.233,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 459,
+            "resolved": 461,
             "brier": 0.232,
             "hit_rate": 0.61
         }
@@ -21,21 +21,21 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 114,
+            "n": 115,
             "avg_predicted": 0.13,
             "observed": 0.09
         },
         {
             "bin": "20\u201340%",
-            "n": 304,
+            "n": 306,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 287,
+            "n": 289,
             "avg_predicted": 0.5,
-            "observed": 0.07
+            "observed": 0.08
         },
         {
             "bin": "60\u201380%",
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 914,
-            "brier": 0.274
+            "resolved": 919,
+            "brier": 0.273
         },
         "Economist": {
-            "resolved": 912,
+            "resolved": 917,
             "brier": 0.284
         },
         "Naturalist": {
-            "resolved": 914,
-            "brier": 0.295
+            "resolved": 919,
+            "brier": 0.294
         },
         "Skeptic": {
-            "resolved": 912,
+            "resolved": 917,
             "brier": 0.188
         }
     },
@@ -76,25 +76,80 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 834,
-            "brier": 0.197,
-            "hit_rate": 0.691,
-            "rock_hit_rate": 0.899
+            "resolved": 854,
+            "brier": 0.195,
+            "hit_rate": 0.696,
+            "rock_hit_rate": 0.897
         },
         "claude-opus-5 (headline)": {
-            "resolved": 48,
-            "brier": 0.494,
-            "hit_rate": 0.25,
-            "rock_hit_rate": 0.75
+            "resolved": 49,
+            "brier": 0.485,
+            "hit_rate": 0.265,
+            "rock_hit_rate": 0.735
         },
         "qwen3:14b (headline)": {
-            "resolved": 14,
-            "brier": 0.335,
-            "hit_rate": 0.357,
-            "rock_hit_rate": 0.786
+            "resolved": 16,
+            "brier": 0.308,
+            "hit_rate": 0.438,
+            "rock_hit_rate": 0.812
         }
     },
     "recent": [
+        {
+            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.57,
+            "location": "North Sea / global oil market",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S8 shows Brent Crude (North Sea) at $90.12/bbl, above the $88 threshold within the forecast window.",
+            "resolved_ms": 1785578103717,
+            "ts": 1785337585942
+        },
+        {
+            "statement": "Kerch Strait transits will fall below 1/day due to renewed Ukraine conflict escalation",
+            "horizon": "week",
+            "probability": 0.43,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal concerns the Kerch Strait at all \u2014 the only data points are Lombok and Mindoro Strait transit counts \u2014 so nothing shows Kerch Strait transits falling below 1/day within the closed window.",
+            "resolved_ms": 1785578093510,
+            "ts": 1784818937171
+        },
+        {
+            "statement": "Internet blackout in Somalia due to state fragility and governance collapse",
+            "horizon": "24h",
+            "probability": 0.1,
+            "location": "Somalia",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Somalia signal is a country risk status (CRITICAL, state fragility), not an outage, while the blackout signals name Burundi and Turkmenistan, so no internet blackout in Somalia is shown within the window.",
+            "resolved_ms": 1785578089611,
+            "ts": 1785337177279
+        },
+        {
+            "statement": "Escalation of US-Saudi airstrikes in Iraq leading to increased Iranian retaliation",
+            "horizon": "24h",
+            "probability": 0.32,
+            "location": "Iraq",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 only notes U.S. and Saudi airstrikes drawing in more countries generally, with no signal showing airstrikes escalating in Iraq or increased Iranian retaliation within the window.",
+            "resolved_ms": 1785578086427,
+            "ts": 1785337177279
+        },
+        {
+            "statement": "EIA weekly petroleum report on July 29 will show a 2.3% increase in U.S. crude oil exports compared to prior week",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports U.S. crude oil export volumes or any week-over-week export change; the only EIA-related signals (S11, S12) cover commercial crude and SPR stock draws, so the claimed 2.3% export increase is not shown.",
+            "resolved_ms": 1785578082977,
+            "ts": 1784816998532
+        },
         {
             "statement": "U.S. and Saudi airstrikes in Iraq will trigger a 10% spike in the VIX fear gauge within 24 hours",
             "horizon": "24h",
@@ -171,76 +226,21 @@
             "evidence": "No signal mentions any Ukrainian naval strike, Iranian vessel, or Black Sea activity; all signals concern Southeast Asian chokepoint transit counts, and an event of this magnitude would have been captured.",
             "resolved_ms": 1785570755524,
             "ts": 1785327194338
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop to 1-2 daily (73% below average) due to escalating Ukrainian conflict tensions.",
-            "horizon": "week",
-            "probability": 0.42,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Kerch Strait transit data at all; all available chokepoint signals concern Lombok, Windward, Yucatan, and Mindoro, so nothing shows the forecast drop occurred.",
-            "resolved_ms": 1785570750178,
-            "ts": 1784807219146
-        },
-        {
-            "statement": "Escalation of hostilities in the Gaza Strip leading to a significant increase in humanitarian aid requests",
-            "horizon": "24h",
-            "probability": 0.56,
-            "location": "Gaza Strip",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 only describes an ongoing conflict and humanitarian crisis as a standing condition, showing no escalation of hostilities or measurable surge in aid requests within the 24-hour window.",
-            "resolved_ms": 1785570746415,
-            "ts": 1785325201284
-        },
-        {
-            "statement": "A major cyberattack on Ghana\u2019s energy grid will cause a 48-hour blackout, linked to the country\u2019s recent internet outage (connectivity drop score 1,294,430).",
-            "horizon": "24h",
-            "probability": 0.08,
-            "location": "Ghana",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any cyberattack or 48-hour blackout on Ghana's energy grid \u2014 Ghana is not mentioned at all \u2014 and an event of that magnitude would have been captured within the window.",
-            "resolved_ms": 1785570743759,
-            "ts": 1785321201533
-        },
-        {
-            "statement": "The FOMC will signal a 25-basis-point rate hike at its 2026-07-28 meeting, citing persistent inflation and tight labor markets.",
-            "horizon": "24h",
-            "probability": 0.44,
-            "location": "Federal Reserve Board, Washington D.C.",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any FOMC decision or hike signal from the 2026-07-28 meeting; the only Fed-related signals (S1-S3) merely list future scheduled meetings, so the forecast event is unsupported at window close.",
-            "resolved_ms": 1785570736380,
-            "ts": 1785321201533
-        },
-        {
-            "statement": "Ukraine-Russia diplomatic talks will fail to produce ceasefire agreement",
-            "horizon": "week",
-            "probability": 0.65,
-            "location": "Ukraine",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 shows the Russian invasion of Ukraine still ongoing with active frontlines across eastern and southern regions, confirming no ceasefire agreement emerged during the window.",
-            "resolved_ms": 1785570731871,
-            "ts": 1784797651915
         }
     ],
-    "next_judge_ms": 1785578025711,
+    "next_judge_ms": 1785581703735,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 915,
-        "base_rate": 0.0787,
-        "brier_raw": 0.2332,
-        "brier_base_rate": 0.0725,
-        "brier_calibrated_oos": 0.089,
-        "brier_calibrated_oos_n": 200,
+        "resolved_n": 920,
+        "base_rate": 0.0793,
+        "brier_raw": 0.2326,
+        "brier_base_rate": 0.0731,
+        "brier_calibrated_oos": 0.091,
+        "brier_calibrated_oos_n": 205,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
