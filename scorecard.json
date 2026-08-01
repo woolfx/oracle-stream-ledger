@@ -1,35 +1,35 @@
 {
-    "resolved": 892,
-    "open": 3850,
-    "due": 411,
-    "next_due_ms": 1785561078613,
-    "unresolvable": 186,
+    "resolved": 897,
+    "open": 3858,
+    "due": 402,
+    "next_due_ms": 1785565060801,
+    "unresolvable": 199,
     "brier": 0.235,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 442,
+            "resolved": 445,
             "brier": 0.237,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 450,
-            "brier": 0.234,
+            "resolved": 452,
+            "brier": 0.233,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 109,
+            "n": 111,
             "avg_predicted": 0.13,
             "observed": 0.09
         },
         {
             "bin": "20\u201340%",
-            "n": 294,
+            "n": 296,
             "avg_predicted": 0.3,
-            "observed": 0.05
+            "observed": 0.06
         },
         {
             "bin": "40\u201360%",
@@ -39,9 +39,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 165,
+            "n": 166,
             "avg_predicted": 0.68,
-            "observed": 0.1
+            "observed": 0.11
         },
         {
             "bin": "80\u2013100%",
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 891,
-            "brier": 0.276
+            "resolved": 896,
+            "brier": 0.275
         },
         "Economist": {
-            "resolved": 889,
-            "brier": 0.287
+            "resolved": 894,
+            "brier": 0.286
         },
         "Naturalist": {
-            "resolved": 891,
-            "brier": 0.298
+            "resolved": 896,
+            "brier": 0.297
         },
         "Skeptic": {
-            "resolved": 889,
+            "resolved": 894,
             "brier": 0.19
         }
     },
@@ -76,19 +76,80 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 742,
-            "brier": 0.201,
-            "hit_rate": 0.687,
-            "rock_hit_rate": 0.908
+            "resolved": 762,
+            "brier": 0.199,
+            "hit_rate": 0.689,
+            "rock_hit_rate": 0.9
         },
         "claude-opus-5 (headline)": {
             "resolved": 48,
             "brier": 0.494,
             "hit_rate": 0.25,
             "rock_hit_rate": 0.75
+        },
+        "qwen3:14b (headline)": {
+            "resolved": 3,
+            "brier": 0.154,
+            "hit_rate": 0.667,
+            "rock_hit_rate": 0.333
         }
     },
     "recent": [
+        {
+            "statement": "WTI crude oil will breach $92.50/bbl on 2026-07-29 due to Strait of Hormuz disruptions",
+            "horizon": "week",
+            "probability": 0.13,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only oil price signal shows Brent at $90.12/bbl (with WTI typically trading below Brent), and no signal indicates WTI breached $92.50/bbl during the window.",
+            "resolved_ms": 1785563427378,
+            "ts": 1784789775547
+        },
+        {
+            "statement": "Haiti experiences major internet outage linked to gang violence escalation",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "Haiti",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Haiti signal is a country risk status (CRITICAL, gang violence/governance flags), not an internet outage, while the outage signals name Niger and Turkmenistan \u2014 no signal shows a major Haitian internet blackout in the window.",
+            "resolved_ms": 1785563424158,
+            "ts": 1785307225071
+        },
+        {
+            "statement": "Iranian missile strikes on Jordanian targets escalate tensions in the Middle East",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "Jordan",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1's own text states the IRGC fired missiles at Jordan, matching the forecast's subject and place, with S2 corroborating wider escalation.",
+            "resolved_ms": 1785563421238,
+            "ts": 1785307225070
+        },
+        {
+            "statement": "Strait of Hormuz ship transits will drop 15% below 30-day average due to Iranian naval exercises",
+            "horizon": "24h",
+            "probability": 0.35,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "IMF PortWatch data shows Strait of Hormuz daily transits at 10, 52% below the 30-day average of 21, far exceeding the forecast's 15% decline threshold.",
+            "resolved_ms": 1785563417092,
+            "ts": 1785305207849
+        },
+        {
+            "statement": "Strait of Hormuz ship transits will drop below 10/day due to increased Houthi naval activity",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest Hormuz reading is 10 daily transits \u2014 not below the stated threshold of 10/day \u2014 and no signal attributes any decline to Houthi naval activity.",
+            "resolved_ms": 1785563411252,
+            "ts": 1784783863454
+        },
         {
             "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong coast, prompting suspension of rail/flights in the Pearl River Delta",
             "horizon": "24h",
@@ -165,76 +226,21 @@
             "evidence": "No signal mentions Zaporizhzhia NPP or any 24-hour power outage there; the only signals concern internet connectivity in Niger and Turkmenistan.",
             "resolved_ms": 1785556041385,
             "ts": 1784776085413
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1/day due to Ukrainian naval mine deployments",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal addresses Kerch Strait transits or Ukrainian mine deployments; the only data concern Lombok and Mindoro Straits, so nothing shows the forecast event occurred within the closed window.",
-            "resolved_ms": 1785556038037,
-            "ts": 1784776085412
-        },
-        {
-            "statement": "Military escalation in the Kerch Strait will reduce ship transits by 15-20% over the next week as Ukrainian-Russian conflict intensifies near the 535km proximity marker",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Kerch Strait transit data or escalation-driven traffic decline; the only transit figures concern Lombok and Mindoro Straits, so nothing shows the forecast 15-20% drop occurred before the window closed.",
-            "resolved_ms": 1785552399862,
-            "ts": 1784770248317
-        },
-        {
-            "statement": "VIX fear gauge will spike above 18.5 due to escalating Yemen conflict and Sudan civil war tensions",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "Red Sea region",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The VIX reads 15.99 and is falling (-6.44%), well below the forecast threshold of 18.5, with no signal showing any spike during the window.",
-            "resolved_ms": 1785552396710,
-            "ts": 1784768269220
-        },
-        {
-            "statement": "Brent Crude (BZ=F) surges 4.5% due to Red Sea shipping disruptions",
-            "horizon": "week",
-            "probability": 0.54,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Brent price signal shows crude at $90.12/bbl up just 1.22%, far short of the forecast 4.5% surge, and no signal documents any Red Sea-driven 4.5% move within the window.",
-            "resolved_ms": 1785552394479,
-            "ts": 1784764327211
-        },
-        {
-            "statement": "Natural gas prices (NG=F) will rise by 1.5-2.5% following the EIA weekly storage report release on 2026-07-23",
-            "horizon": "week",
-            "probability": 0.55,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports natural gas (NG=F) prices or the 2026-07-23 EIA storage report reaction; the only energy price signals cover WTI and Brent crude, so nothing shows the specified 1.5-2.5% natural gas rise occurred within the closed window.",
-            "resolved_ms": 1785552391430,
-            "ts": 1784764015539
         }
     ],
-    "next_judge_ms": 1785563343495,
+    "next_judge_ms": 1785567027394,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 892,
-        "base_rate": 0.0762,
-        "brier_raw": 0.2354,
-        "brier_base_rate": 0.0704,
-        "brier_calibrated_oos": 0.0808,
-        "brier_calibrated_oos_n": 177,
+        "resolved_n": 897,
+        "base_rate": 0.078,
+        "brier_raw": 0.2348,
+        "brier_base_rate": 0.0719,
+        "brier_calibrated_oos": 0.0882,
+        "brier_calibrated_oos_n": 182,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
