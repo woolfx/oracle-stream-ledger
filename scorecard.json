@@ -1,19 +1,19 @@
 {
-    "resolved": 939,
-    "open": 4080,
+    "resolved": 944,
+    "open": 4100,
     "due": 423,
-    "next_due_ms": 1785607926411,
-    "unresolvable": 204,
+    "next_due_ms": 1785611987231,
+    "unresolvable": 205,
     "brier": 0.233,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 474,
-            "brier": 0.234,
+            "resolved": 478,
+            "brier": 0.233,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 465,
+            "resolved": 466,
             "brier": 0.232,
             "hit_rate": 0.61
         }
@@ -27,21 +27,21 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 307,
+            "n": 308,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 296,
+            "n": 297,
             "avg_predicted": 0.5,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 178,
+            "n": 181,
             "avg_predicted": 0.68,
-            "observed": 0.13
+            "observed": 0.14
         },
         {
             "bin": "80\u2013100%",
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 938,
-            "brier": 0.273
+            "resolved": 943,
+            "brier": 0.272
         },
         "Economist": {
-            "resolved": 936,
+            "resolved": 941,
             "brier": 0.283
         },
         "Naturalist": {
-            "resolved": 938,
-            "brier": 0.293
+            "resolved": 943,
+            "brier": 0.292
         },
         "Skeptic": {
-            "resolved": 936,
+            "resolved": 941,
             "brier": 0.189
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 930,
+            "resolved": 950,
             "brier": 0.2,
-            "hit_rate": 0.682,
-            "rock_hit_rate": 0.871
+            "hit_rate": 0.68,
+            "rock_hit_rate": 0.865
         },
         "claude-opus-5 (headline)": {
-            "resolved": 64,
-            "brier": 0.447,
-            "hit_rate": 0.328,
-            "rock_hit_rate": 0.672
+            "resolved": 68,
+            "brier": 0.439,
+            "hit_rate": 0.338,
+            "rock_hit_rate": 0.662
         },
         "qwen3:14b (headline)": {
             "resolved": 16,
@@ -95,6 +95,61 @@
         }
     },
     "recent": [
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering typhoon signal suspensions in Hong Kong or Shenzhen",
+            "horizon": "24h",
+            "probability": 0.25,
+            "location": "Pearl River Delta, Guangdong, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon Noul, a Guangdong/Pearl River Delta landfall, or typhoon signal suspensions in Hong Kong or Shenzhen \u2014 the only cyclone signals concern Dolphin, Genevieve, and Fausto in the central/eastern Pacific \u2014 so the event is unsupported after the window closed.",
+            "resolved_ms": 1785607835439,
+            "ts": 1785351318695
+        },
+        {
+            "statement": "Brent crude settles above $88/bbl within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.61,
+            "location": "North Sea / global crude benchmark",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal 8 shows Brent Crude at $90.12/bbl (+1.22%) at the North Sea benchmark, above the stated $88/bbl threshold within the forecast window.",
+            "resolved_ms": 1785607830883,
+            "ts": 1785351318695
+        },
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, citing an oil-driven inflation risk from the Iran war",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any July 28, 2026 FOMC rate decision or its rationale; the only FOMC entries are future scheduled meetings (Sept 2026 onward), so the claimed hold citing oil-driven Iran-war inflation risk is unsupported.",
+            "resolved_ms": 1785607828125,
+            "ts": 1785351318695
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop below 1/day due to Ukrainian conflict escalation",
+            "horizon": "week",
+            "probability": 0.48,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions the Kerch Strait at all; the only transit data concern Lombok and Mindoro Straits, so nothing shows Kerch transits fell below 1/day.",
+            "resolved_ms": 1785607823864,
+            "ts": 1784832558906
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (well under the 21 30-day average) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.65,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, satisfying the at-or-below-15 threshold.",
+            "resolved_ms": 1785607819082,
+            "ts": 1785349697862
+        },
         {
             "statement": "Brent crude settles above $88/bbl within the next 24 hours",
             "horizon": "24h",
@@ -171,76 +226,21 @@
             "evidence": "Signals confirm Hormuz transits at 10 (\u226415), but no signal shows any new war-risk insurance surcharge or transit advisory being issued, so the conjunctive forecast is not verified.",
             "resolved_ms": 1785600438530,
             "ts": 1785345685896
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, citing oil-driven inflation risk from the Iran conflict",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports the outcome of the July 28, 2026 FOMC meeting; the only FOMC references are future scheduled meetings (S2\u2013S5), so nothing shows a hold decision citing oil-driven inflation risk occurred within the window.",
-            "resolved_ms": 1785600429795,
-            "ts": 1785345685896
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (well under the 21 30-day average) in the next PortWatch update",
-            "horizon": "24h",
-            "probability": 0.71,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
-            "resolved_ms": 1785596757709,
-            "ts": 1785343646134
-        },
-        {
-            "statement": "The FOMC leaves the federal funds target range unchanged at its July 28 meeting, citing an oil-driven inflation risk from the Iran conflict",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "Washington, DC",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports the July 28 FOMC rate decision or its stated rationale; the only FOMC signals list future scheduled meetings (Sept 2026 onward), so the forecast event is not shown to have occurred within the window.",
-            "resolved_ms": 1785593069185,
-            "ts": 1785343646134
-        },
-        {
-            "statement": "Further Iranian or proxy missile/drone attack reported on a US base or Gulf-state facility in Iraq, Jordan, or the Gulf",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "Iraq / Jordan border region",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any missile or drone attack on a US base or Gulf-state facility in Iraq, Jordan, or the Gulf; the only Middle East items concern a Saudi-led Red Sea shipping alliance.",
-            "resolved_ms": 1785593063680,
-            "ts": 1785341607111
-        },
-        {
-            "statement": "Brent crude settles or trades above $92/bbl at some point within 24 hours",
-            "horizon": "24h",
-            "probability": 0.51,
-            "location": "North Sea / global oil market",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Brent price signals show it at $90.12/bbl (+1.22%), below the $92 threshold, and no signal indicates any trade or settle above $92 during the window.",
-            "resolved_ms": 1785589256431,
-            "ts": 1785341607111
         }
     ],
-    "next_judge_ms": 1785607692601,
+    "next_judge_ms": 1785611435454,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 939,
-        "base_rate": 0.0863,
-        "brier_raw": 0.2329,
-        "brier_base_rate": 0.0788,
-        "brier_calibrated_oos": 0.1134,
-        "brier_calibrated_oos_n": 224,
+        "resolved_n": 944,
+        "base_rate": 0.0879,
+        "brier_raw": 0.2326,
+        "brier_base_rate": 0.0802,
+        "brier_calibrated_oos": 0.1183,
+        "brier_calibrated_oos_n": 229,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
