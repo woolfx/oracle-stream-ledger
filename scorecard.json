@@ -1,35 +1,35 @@
 {
-    "resolved": 884,
-    "open": 3823,
-    "due": 416,
-    "next_due_ms": 1785555135243,
-    "unresolvable": 172,
+    "resolved": 888,
+    "open": 3838,
+    "due": 412,
+    "next_due_ms": 1785557116611,
+    "unresolvable": 178,
     "brier": 0.236,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 439,
-            "brier": 0.238,
+            "resolved": 440,
+            "brier": 0.237,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 445,
-            "brier": 0.235,
+            "resolved": 448,
+            "brier": 0.234,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 107,
+            "n": 109,
             "avg_predicted": 0.13,
             "observed": 0.09
         },
         {
             "bin": "20\u201340%",
-            "n": 290,
+            "n": 292,
             "avg_predicted": 0.3,
-            "observed": 0.06
+            "observed": 0.05
         },
         {
             "bin": "40\u201360%",
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 883,
+            "resolved": 887,
             "brier": 0.277
         },
         "Economist": {
-            "resolved": 881,
-            "brier": 0.289
+            "resolved": 885,
+            "brier": 0.288
         },
         "Naturalist": {
-            "resolved": 883,
-            "brier": 0.3
+            "resolved": 887,
+            "brier": 0.299
         },
         "Skeptic": {
-            "resolved": 882,
-            "brier": 0.19
+            "resolved": 886,
+            "brier": 0.189
         }
     },
     "models": {
@@ -76,19 +76,63 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 715,
-            "brier": 0.205,
-            "hit_rate": 0.677,
-            "rock_hit_rate": 0.91
+            "resolved": 731,
+            "brier": 0.202,
+            "hit_rate": 0.684,
+            "rock_hit_rate": 0.912
         },
         "claude-opus-5 (headline)": {
-            "resolved": 45,
-            "brier": 0.499,
-            "hit_rate": 0.244,
-            "rock_hit_rate": 0.756
+            "resolved": 46,
+            "brier": 0.502,
+            "hit_rate": 0.239,
+            "rock_hit_rate": 0.761
         }
     },
     "recent": [
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering signal No. 8 or higher warnings in Hong Kong or Macau",
+            "horizon": "24h",
+            "probability": 0.18,
+            "location": "Guangdong / Pearl River Delta, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon Noul, a Guangdong/Pearl River Delta landfall, or any signal No. 8 warning in Hong Kong or Macau; the only cyclone signals concern Dolphin, Genevieve, and Fausto far from the region.",
+            "resolved_ms": 1785556053546,
+            "ts": 1785297598581
+        },
+        {
+            "statement": "Strait of Hormuz ship transits will drop below 10/day due to increased Houthi Red Sea threats",
+            "horizon": "week",
+            "probability": 0.14,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The latest Strait of Hormuz reading is 10 daily transits, which is not below the stated threshold of 10/day, and no signal attributes any decline to Houthi Red Sea threats.",
+            "resolved_ms": 1785556044147,
+            "ts": 1784778068754
+        },
+        {
+            "statement": "Zaporizhzhia NPP will experience 24-hour power outage due to Ukrainian artillery strikes",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "Zaporizhzhia NPP",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Zaporizhzhia NPP or any 24-hour power outage there; the only signals concern internet connectivity in Niger and Turkmenistan.",
+            "resolved_ms": 1785556041385,
+            "ts": 1784776085413
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop below 1/day due to Ukrainian naval mine deployments",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal addresses Kerch Strait transits or Ukrainian mine deployments; the only data concern Lombok and Mindoro Straits, so nothing shows the forecast event occurred within the closed window.",
+            "resolved_ms": 1785556038037,
+            "ts": 1784776085412
+        },
         {
             "statement": "Military escalation in the Kerch Strait will reduce ship transits by 15-20% over the next week as Ukrainian-Russian conflict intensifies near the 535km proximity marker",
             "horizon": "week",
@@ -176,65 +220,21 @@
             "evidence": "S1 shows Texas demand running 12% above an 88 GWh/h baseline (~98.6 GWh/h), still short of the stated 100 GWh/h threshold, and no other signal shows Texas demand exceeding 100 GWh/h during the window.",
             "resolved_ms": 1785548699945,
             "ts": 1784761988036
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop below 1/day due to escalating Ukrainian conflict",
-            "horizon": "week",
-            "probability": 0.41,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Kerch Strait transit data at all; the only transit figures concern Luzon, Lombok, and Mindoro Straits, so nothing shows Kerch Strait transits falling below 1/day within the closed window.",
-            "resolved_ms": 1785545030192,
-            "ts": 1784761988036
-        },
-        {
-            "statement": "Natural gas prices (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report on July 23",
-            "horizon": "week",
-            "probability": 0.52,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports natural gas (NG=F) prices or the July 23 EIA storage report reaction, so the claimed 2.5-3.5% rise is not shown by any admissible evidence within the closed window.",
-            "resolved_ms": 1785545027229,
-            "ts": 1784761988036
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop to 1 per day due to intensified Ukrainian conflict",
-            "horizon": "week",
-            "probability": 0.28,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Kerch Strait transit data at all \u2014 the only chokepoint figures given are for Luzon, Lombok, and Mindoro Straits \u2014 so nothing shows transits dropping to 1 per day within the closed window.",
-            "resolved_ms": 1785545020923,
-            "ts": 1784761691473
-        },
-        {
-            "statement": "Natural Gas (Henry Hub) futures rise by 2.5% following the EIA weekly storage report release on July 23",
-            "horizon": "week",
-            "probability": 0.63,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Henry Hub natural gas signal shows a +1.23% move to $2.79/MMBtu, short of the forecast 2.5% rise, and no signal shows a 2.5%+ post-EIA-report gain within the window.",
-            "resolved_ms": 1785545017835,
-            "ts": 1784759725739
         }
     ],
-    "next_judge_ms": 1785556007353,
+    "next_judge_ms": 1785559653561,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 884,
-        "base_rate": 0.0758,
-        "brier_raw": 0.2364,
-        "brier_base_rate": 0.07,
-        "brier_calibrated_oos": 0.0789,
-        "brier_calibrated_oos_n": 170,
+        "resolved_n": 888,
+        "base_rate": 0.0755,
+        "brier_raw": 0.2356,
+        "brier_base_rate": 0.0698,
+        "brier_calibrated_oos": 0.0772,
+        "brier_calibrated_oos_n": 174,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
