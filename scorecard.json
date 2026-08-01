@@ -1,19 +1,19 @@
 {
-    "resolved": 888,
-    "open": 3838,
-    "due": 412,
-    "next_due_ms": 1785557116611,
-    "unresolvable": 178,
-    "brier": 0.236,
+    "resolved": 892,
+    "open": 3850,
+    "due": 411,
+    "next_due_ms": 1785561078613,
+    "unresolvable": 186,
+    "brier": 0.235,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
-            "resolved": 440,
+            "resolved": 442,
             "brier": 0.237,
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 448,
+            "resolved": 450,
             "brier": 0.234,
             "hit_rate": 0.6
         }
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 292,
+            "n": 294,
             "avg_predicted": 0.3,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 279,
+            "n": 281,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,43 +52,87 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 887,
-            "brier": 0.277
+            "resolved": 891,
+            "brier": 0.276
         },
         "Economist": {
-            "resolved": 885,
-            "brier": 0.288
+            "resolved": 889,
+            "brier": 0.287
         },
         "Naturalist": {
-            "resolved": 887,
-            "brier": 0.299
+            "resolved": 891,
+            "brier": 0.298
         },
         "Skeptic": {
-            "resolved": 886,
-            "brier": 0.189
+            "resolved": 889,
+            "brier": 0.19
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2814,
+            "resolved": 2818,
             "brier": 0.279,
-            "hit_rate": 0.54,
+            "hit_rate": 0.539,
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 731,
-            "brier": 0.202,
-            "hit_rate": 0.684,
-            "rock_hit_rate": 0.912
+            "resolved": 742,
+            "brier": 0.201,
+            "hit_rate": 0.687,
+            "rock_hit_rate": 0.908
         },
         "claude-opus-5 (headline)": {
-            "resolved": 46,
-            "brier": 0.502,
-            "hit_rate": 0.239,
-            "rock_hit_rate": 0.761
+            "resolved": 48,
+            "brier": 0.494,
+            "hit_rate": 0.25,
+            "rock_hit_rate": 0.75
         }
     },
     "recent": [
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong coast, prompting suspension of rail/flights in the Pearl River Delta",
+            "horizon": "24h",
+            "probability": 0.38,
+            "location": "Guangdong, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon Noul, a Guangdong landfall, or Pearl River Delta transport suspensions; the only cyclone signals are unrelated storms (Dolphin, Genevieve, Fausto) far from Guangdong.",
+            "resolved_ms": 1785559743480,
+            "ts": 1785301397807
+        },
+        {
+            "statement": "Brent crude settles above $85/bbl at least once in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.52,
+            "location": "North Sea / global oil market",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S8 shows Brent Crude at $90.12/bbl (+1.22%), well above the $85/bbl threshold within the forecast window.",
+            "resolved_ms": 1785559739427,
+            "ts": 1785301397807
+        },
+        {
+            "statement": "FOMC will signal 50bps rate hike at July 28 meeting despite softening inflation data",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any July 28, 2026 FOMC decision or a 50bps hike signal; the only FOMC entries reference scheduled 2027 meetings, so an event this significant went uncaptured within the closed window.",
+            "resolved_ms": 1785559732524,
+            "ts": 1784781894962
+        },
+        {
+            "statement": "WTI crude oil prices will rise by 3% in the next week",
+            "horizon": "week",
+            "probability": 0.56,
+            "location": "None",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports WTI's week-over-week change; S7 only shows a single-day move of +1.29% at 84.67 $/bbl, so no evidence exists that WTI rose 3% over the 2026-07-22 to 2026-07-29 window.",
+            "resolved_ms": 1785559714870,
+            "ts": 1784745899580
+        },
         {
             "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering signal No. 8 or higher warnings in Hong Kong or Macau",
             "horizon": "24h",
@@ -176,65 +220,21 @@
             "evidence": "No signal reports natural gas (NG=F) prices or the 2026-07-23 EIA storage report reaction; the only energy price signals cover WTI and Brent crude, so nothing shows the specified 1.5-2.5% natural gas rise occurred within the closed window.",
             "resolved_ms": 1785552391430,
             "ts": 1784764015539
-        },
-        {
-            "statement": "Kerch Strait ship transits drop to 1/day due to Ukraine conflict escalation",
-            "horizon": "week",
-            "probability": 0.45,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Kerch Strait transit levels at all; the only transit data concern Luzon, Lombok, and Mindoro Straits, so nothing shows a drop to 1/day in the Kerch Strait during the closed window.",
-            "resolved_ms": 1785548718588,
-            "ts": 1784764327211
-        },
-        {
-            "statement": "Texas electricity demand will exceed 95 GWh/h for 3 consecutive days due to extreme heatwave conditions",
-            "horizon": "week",
-            "probability": 0.26,
-            "location": "Texas",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows only a single current-hour Texas demand reading ~12% above an 88 GWh/h baseline, which does not demonstrate demand above 95 GWh/h sustained across three consecutive days within the window.",
-            "resolved_ms": 1785548715998,
-            "ts": 1784764015540
-        },
-        {
-            "statement": "WTI crude oil prices exceed $92/bbl amid Strait of Hormuz transit disruptions",
-            "horizon": "week",
-            "probability": 0.16,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent crude is quoted at $90.12/bbl, and no signal shows WTI (typically priced below Brent) exceeding $92/bbl during the window despite the Hormuz transit decline.",
-            "resolved_ms": 1785548702726,
-            "ts": 1784762209103
-        },
-        {
-            "statement": "Texas electricity demand will exceed 100 GWh/h due to extreme heatwave conditions",
-            "horizon": "week",
-            "probability": 0.15,
-            "location": "Texas",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S1 shows Texas demand running 12% above an 88 GWh/h baseline (~98.6 GWh/h), still short of the stated 100 GWh/h threshold, and no other signal shows Texas demand exceeding 100 GWh/h during the window.",
-            "resolved_ms": 1785548699945,
-            "ts": 1784761988036
         }
     ],
-    "next_judge_ms": 1785559653561,
+    "next_judge_ms": 1785563343495,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 888,
-        "base_rate": 0.0755,
-        "brier_raw": 0.2356,
-        "brier_base_rate": 0.0698,
-        "brier_calibrated_oos": 0.0772,
-        "brier_calibrated_oos_n": 174,
+        "resolved_n": 892,
+        "base_rate": 0.0762,
+        "brier_raw": 0.2354,
+        "brier_base_rate": 0.0704,
+        "brier_calibrated_oos": 0.0808,
+        "brier_calibrated_oos_n": 177,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
