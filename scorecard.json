@@ -1,27 +1,27 @@
 {
-    "resolved": 903,
-    "open": 3865,
-    "due": 403,
-    "next_due_ms": 1785568918291,
+    "resolved": 909,
+    "open": 3886,
+    "due": 406,
+    "next_due_ms": 1785572901432,
     "unresolvable": 199,
     "brier": 0.234,
-    "hit_rate": 0.6,
+    "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 447,
-            "brier": 0.236,
-            "hit_rate": 0.6
+            "resolved": 451,
+            "brier": 0.235,
+            "hit_rate": 0.61
         },
         "week": {
-            "resolved": 456,
-            "brier": 0.233,
+            "resolved": 458,
+            "brier": 0.232,
             "hit_rate": 0.6
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 112,
+            "n": 114,
             "avg_predicted": 0.13,
             "observed": 0.09
         },
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 283,
+            "n": 286,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
         {
             "bin": "60\u201380%",
-            "n": 166,
+            "n": 167,
             "avg_predicted": 0.68,
             "observed": 0.11
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 902,
-            "brier": 0.275
+            "resolved": 908,
+            "brier": 0.274
         },
         "Economist": {
-            "resolved": 900,
+            "resolved": 906,
             "brier": 0.285
         },
         "Naturalist": {
-            "resolved": 902,
-            "brier": 0.297
+            "resolved": 908,
+            "brier": 0.296
         },
         "Skeptic": {
-            "resolved": 900,
+            "resolved": 906,
             "brier": 0.189
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 786,
-            "brier": 0.198,
-            "hit_rate": 0.687,
-            "rock_hit_rate": 0.903
+            "resolved": 810,
+            "brier": 0.197,
+            "hit_rate": 0.689,
+            "rock_hit_rate": 0.901
         },
         "claude-opus-5 (headline)": {
             "resolved": 48,
@@ -88,13 +88,79 @@
             "rock_hit_rate": 0.75
         },
         "qwen3:14b (headline)": {
-            "resolved": 5,
-            "brier": 0.265,
-            "hit_rate": 0.4,
-            "rock_hit_rate": 0.6
+            "resolved": 9,
+            "brier": 0.291,
+            "hit_rate": 0.444,
+            "rock_hit_rate": 0.778
         }
     },
     "recent": [
+        {
+            "statement": "Ukraine will conduct a naval strike on an Iranian vessel in the Black Sea",
+            "horizon": "24h",
+            "probability": 0.19,
+            "location": "Black Sea",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions any Ukrainian naval strike, Iranian vessel, or Black Sea activity; all signals concern Southeast Asian chokepoint transit counts, and an event of this magnitude would have been captured.",
+            "resolved_ms": 1785570755524,
+            "ts": 1785327194338
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop to 1-2 daily (73% below average) due to escalating Ukrainian conflict tensions.",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Kerch Strait transit data at all; all available chokepoint signals concern Lombok, Windward, Yucatan, and Mindoro, so nothing shows the forecast drop occurred.",
+            "resolved_ms": 1785570750178,
+            "ts": 1784807219146
+        },
+        {
+            "statement": "Escalation of hostilities in the Gaza Strip leading to a significant increase in humanitarian aid requests",
+            "horizon": "24h",
+            "probability": 0.56,
+            "location": "Gaza Strip",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "S1 only describes an ongoing conflict and humanitarian crisis as a standing condition, showing no escalation of hostilities or measurable surge in aid requests within the 24-hour window.",
+            "resolved_ms": 1785570746415,
+            "ts": 1785325201284
+        },
+        {
+            "statement": "A major cyberattack on Ghana\u2019s energy grid will cause a 48-hour blackout, linked to the country\u2019s recent internet outage (connectivity drop score 1,294,430).",
+            "horizon": "24h",
+            "probability": 0.08,
+            "location": "Ghana",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any cyberattack or 48-hour blackout on Ghana's energy grid \u2014 Ghana is not mentioned at all \u2014 and an event of that magnitude would have been captured within the window.",
+            "resolved_ms": 1785570743759,
+            "ts": 1785321201533
+        },
+        {
+            "statement": "The FOMC will signal a 25-basis-point rate hike at its 2026-07-28 meeting, citing persistent inflation and tight labor markets.",
+            "horizon": "24h",
+            "probability": 0.44,
+            "location": "Federal Reserve Board, Washington D.C.",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any FOMC decision or hike signal from the 2026-07-28 meeting; the only Fed-related signals (S1-S3) merely list future scheduled meetings, so the forecast event is unsupported at window close.",
+            "resolved_ms": 1785570736380,
+            "ts": 1785321201533
+        },
+        {
+            "statement": "Ukraine-Russia diplomatic talks will fail to produce ceasefire agreement",
+            "horizon": "week",
+            "probability": 0.65,
+            "location": "Ukraine",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 shows the Russian invasion of Ukraine still ongoing with active frontlines across eastern and southern regions, confirming no ceasefire agreement emerged during the window.",
+            "resolved_ms": 1785570731871,
+            "ts": 1784797651915
+        },
         {
             "statement": "Strait of Hormuz ship transits drop below 10/day due to increased Houthi missile activity",
             "horizon": "week",
@@ -160,87 +226,21 @@
             "evidence": "No signal reports Henry Hub natural gas prices or any post-EIA-storage-report move of 1.5-2.5%; the only energy price signals concern WTI and Brent crude, so nothing shows the forecast event occurred within the closed window.",
             "resolved_ms": 1785567081794,
             "ts": 1784781894961
-        },
-        {
-            "statement": "WTI crude oil will breach $92.50/bbl on 2026-07-29 due to Strait of Hormuz disruptions",
-            "horizon": "week",
-            "probability": 0.13,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only oil price signal shows Brent at $90.12/bbl (with WTI typically trading below Brent), and no signal indicates WTI breached $92.50/bbl during the window.",
-            "resolved_ms": 1785563427378,
-            "ts": 1784789775547
-        },
-        {
-            "statement": "Haiti experiences major internet outage linked to gang violence escalation",
-            "horizon": "24h",
-            "probability": 0.12,
-            "location": "Haiti",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Haiti signal is a country risk status (CRITICAL, gang violence/governance flags), not an internet outage, while the outage signals name Niger and Turkmenistan \u2014 no signal shows a major Haitian internet blackout in the window.",
-            "resolved_ms": 1785563424158,
-            "ts": 1785307225071
-        },
-        {
-            "statement": "Iranian missile strikes on Jordanian targets escalate tensions in the Middle East",
-            "horizon": "24h",
-            "probability": 0.61,
-            "location": "Jordan",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1's own text states the IRGC fired missiles at Jordan, matching the forecast's subject and place, with S2 corroborating wider escalation.",
-            "resolved_ms": 1785563421238,
-            "ts": 1785307225070
-        },
-        {
-            "statement": "Strait of Hormuz ship transits will drop 15% below 30-day average due to Iranian naval exercises",
-            "horizon": "24h",
-            "probability": 0.35,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "IMF PortWatch data shows Strait of Hormuz daily transits at 10, 52% below the 30-day average of 21, far exceeding the forecast's 15% decline threshold.",
-            "resolved_ms": 1785563417092,
-            "ts": 1785305207849
-        },
-        {
-            "statement": "Strait of Hormuz ship transits will drop below 10/day due to increased Houthi naval activity",
-            "horizon": "week",
-            "probability": 0.25,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The latest Hormuz reading is 10 daily transits \u2014 not below the stated threshold of 10/day \u2014 and no signal attributes any decline to Houthi naval activity.",
-            "resolved_ms": 1785563411252,
-            "ts": 1784783863454
-        },
-        {
-            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong coast, prompting suspension of rail/flights in the Pearl River Delta",
-            "horizon": "24h",
-            "probability": 0.38,
-            "location": "Guangdong, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Typhoon Noul, a Guangdong landfall, or Pearl River Delta transport suspensions; the only cyclone signals are unrelated storms (Dolphin, Genevieve, Fausto) far from Guangdong.",
-            "resolved_ms": 1785559743480,
-            "ts": 1785301397807
         }
     ],
-    "next_judge_ms": 1785570702259,
+    "next_judge_ms": 1785574355539,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 903,
-        "base_rate": 0.0775,
-        "brier_raw": 0.2342,
-        "brier_base_rate": 0.0715,
-        "brier_calibrated_oos": 0.0856,
-        "brier_calibrated_oos_n": 188,
+        "resolved_n": 909,
+        "base_rate": 0.0781,
+        "brier_raw": 0.2336,
+        "brier_base_rate": 0.072,
+        "brier_calibrated_oos": 0.087,
+        "brier_calibrated_oos_n": 194,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
