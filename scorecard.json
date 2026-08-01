@@ -1,14 +1,14 @@
 {
-    "resolved": 935,
-    "open": 4073,
-    "due": 425,
-    "next_due_ms": 1785605899703,
-    "unresolvable": 203,
+    "resolved": 939,
+    "open": 4080,
+    "due": 423,
+    "next_due_ms": 1785607926411,
+    "unresolvable": 204,
     "brier": 0.233,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 470,
+            "resolved": 474,
             "brier": 0.234,
             "hit_rate": 0.61
         },
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 295,
+            "n": 296,
             "avg_predicted": 0.5,
             "observed": 0.08
         },
         {
             "bin": "60\u201380%",
-            "n": 175,
+            "n": 178,
             "avg_predicted": 0.68,
             "observed": 0.13
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 934,
+            "resolved": 938,
             "brier": 0.273
         },
         "Economist": {
-            "resolved": 932,
-            "brier": 0.284
+            "resolved": 936,
+            "brier": 0.283
         },
         "Naturalist": {
-            "resolved": 934,
+            "resolved": 938,
             "brier": 0.293
         },
         "Skeptic": {
-            "resolved": 932,
+            "resolved": 936,
             "brier": 0.189
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 914,
-            "brier": 0.199,
+            "resolved": 930,
+            "brier": 0.2,
             "hit_rate": 0.682,
-            "rock_hit_rate": 0.882
+            "rock_hit_rate": 0.871
         },
         "claude-opus-5 (headline)": {
-            "resolved": 60,
-            "brier": 0.463,
-            "hit_rate": 0.3,
-            "rock_hit_rate": 0.7
+            "resolved": 64,
+            "brier": 0.447,
+            "hit_rate": 0.328,
+            "rock_hit_rate": 0.672
         },
         "qwen3:14b (headline)": {
             "resolved": 16,
@@ -95,6 +95,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "Brent crude settles above $88/bbl within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.54,
+            "location": "North Sea / global oil market",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Brent Crude is quoted at $90.12/bbl (+1.22%) at the North Sea anchor, above the $88/bbl threshold within the forecast window.",
+            "resolved_ms": 1785604092585,
+            "ts": 1785349697862
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (well under the 21 30-day average) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.73,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
+            "resolved_ms": 1785604086257,
+            "ts": 1785347682619
+        },
+        {
+            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.65,
+            "location": "North Sea / global crude benchmark",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Brent Crude is quoted at $90.12/bbl (+1.22%) in the current snapshot, above the $88/bbl threshold.",
+            "resolved_ms": 1785604080500,
+            "ts": 1785347682619
+        },
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, with the statement citing elevated energy-price uncertainty",
+            "horizon": "24h",
+            "probability": 0.7,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports the July 28 FOMC decision or its statement language; the only FOMC references (S1, S2) are scheduled 2027 meetings, so nothing shows the forecast event occurred within the window.",
+            "resolved_ms": 1785604077433,
+            "ts": 1785347682618
+        },
         {
             "statement": "Kerch Strait ship transits will fall to 1/day as Ukrainian naval mines expand in Black Sea",
             "horizon": "week",
@@ -182,65 +226,21 @@
             "evidence": "The only Brent price signals show it at $90.12/bbl (+1.22%), below the $92 threshold, and no signal indicates any trade or settle above $92 during the window.",
             "resolved_ms": 1785589256431,
             "ts": 1785341607111
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, citing an oil-driven inflation risk from the Iran conflict",
-            "horizon": "24h",
-            "probability": 0.5,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports the outcome of a July 28, 2026 FOMC meeting or any rate decision rationale; the only FOMC signals list future scheduled meetings (Sept 2026 onward), so the claimed hold citing Iran-driven oil inflation is unsupported.",
-            "resolved_ms": 1785589253132,
-            "ts": 1785341607111
-        },
-        {
-            "statement": "Strait of Hormuz ship transits will drop below 10/day as Iran-Saudi tensions escalate.",
-            "horizon": "week",
-            "probability": 0.26,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Hormuz signal reports 10 daily transits as of 2026-07-23, which does not meet the stated threshold of dropping below 10/day, and no signal shows Iran-Saudi escalation driving it.",
-            "resolved_ms": 1785585560754,
-            "ts": 1784822864916
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.53,
-            "location": "North Sea / global oil market",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S8 shows Brent Crude at $90.12/bbl (+1.22%), above the $88 threshold during the forecast window.",
-            "resolved_ms": 1785585555691,
-            "ts": 1785339591835
-        },
-        {
-            "statement": "EIA petroleum report (2026-07-29) will show record CL=F volatility (+3.5% intra-day swings)",
-            "horizon": "week",
-            "probability": 0.44,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All signals merely note routinely scheduled EIA report dates (2026-08-05/06) and none document any CL=F intra-day swing of +3.5% or record volatility on 2026-07-29 within the closed window.",
-            "resolved_ms": 1785581911745,
-            "ts": 1784820922348
         }
     ],
-    "next_judge_ms": 1785604044774,
+    "next_judge_ms": 1785607692601,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 935,
-        "base_rate": 0.0834,
+        "resolved_n": 939,
+        "base_rate": 0.0863,
         "brier_raw": 0.2329,
-        "brier_base_rate": 0.0765,
-        "brier_calibrated_oos": 0.1041,
-        "brier_calibrated_oos_n": 220,
+        "brier_base_rate": 0.0788,
+        "brier_calibrated_oos": 0.1134,
+        "brier_calibrated_oos_n": 224,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
