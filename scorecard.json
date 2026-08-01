@@ -1,10 +1,10 @@
 {
-    "resolved": 880,
-    "open": 3818,
-    "due": 427,
-    "next_due_ms": 1785551104625,
-    "unresolvable": 157,
-    "brier": 0.237,
+    "resolved": 884,
+    "open": 3823,
+    "due": 416,
+    "next_due_ms": 1785555135243,
+    "unresolvable": 172,
+    "brier": 0.236,
     "hit_rate": 0.6,
     "per_horizon": {
         "24h": {
@@ -13,8 +13,8 @@
             "hit_rate": 0.6
         },
         "week": {
-            "resolved": 441,
-            "brier": 0.236,
+            "resolved": 445,
+            "brier": 0.235,
             "hit_rate": 0.6
         }
     },
@@ -27,13 +27,13 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 288,
+            "n": 290,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 277,
+            "n": 279,
             "avg_predicted": 0.5,
             "observed": 0.07
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 879,
+            "resolved": 883,
             "brier": 0.277
         },
         "Economist": {
-            "resolved": 877,
+            "resolved": 881,
             "brier": 0.289
         },
         "Naturalist": {
-            "resolved": 879,
+            "resolved": 883,
             "brier": 0.3
         },
         "Skeptic": {
-            "resolved": 878,
+            "resolved": 882,
             "brier": 0.19
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 699,
-            "brier": 0.204,
-            "hit_rate": 0.678,
-            "rock_hit_rate": 0.908
+            "resolved": 715,
+            "brier": 0.205,
+            "hit_rate": 0.677,
+            "rock_hit_rate": 0.91
         },
         "claude-opus-5 (headline)": {
             "resolved": 45,
@@ -89,6 +89,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "Military escalation in the Kerch Strait will reduce ship transits by 15-20% over the next week as Ukrainian-Russian conflict intensifies near the 535km proximity marker",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Kerch Strait transit data or escalation-driven traffic decline; the only transit figures concern Lombok and Mindoro Straits, so nothing shows the forecast 15-20% drop occurred before the window closed.",
+            "resolved_ms": 1785552399862,
+            "ts": 1784770248317
+        },
+        {
+            "statement": "VIX fear gauge will spike above 18.5 due to escalating Yemen conflict and Sudan civil war tensions",
+            "horizon": "week",
+            "probability": 0.31,
+            "location": "Red Sea region",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The VIX reads 15.99 and is falling (-6.44%), well below the forecast threshold of 18.5, with no signal showing any spike during the window.",
+            "resolved_ms": 1785552396710,
+            "ts": 1784768269220
+        },
+        {
+            "statement": "Brent Crude (BZ=F) surges 4.5% due to Red Sea shipping disruptions",
+            "horizon": "week",
+            "probability": 0.54,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Brent price signal shows crude at $90.12/bbl up just 1.22%, far short of the forecast 4.5% surge, and no signal documents any Red Sea-driven 4.5% move within the window.",
+            "resolved_ms": 1785552394479,
+            "ts": 1784764327211
+        },
+        {
+            "statement": "Natural gas prices (NG=F) will rise by 1.5-2.5% following the EIA weekly storage report release on 2026-07-23",
+            "horizon": "week",
+            "probability": 0.55,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports natural gas (NG=F) prices or the 2026-07-23 EIA storage report reaction; the only energy price signals cover WTI and Brent crude, so nothing shows the specified 1.5-2.5% natural gas rise occurred within the closed window.",
+            "resolved_ms": 1785552391430,
+            "ts": 1784764015539
+        },
         {
             "statement": "Kerch Strait ship transits drop to 1/day due to Ukraine conflict escalation",
             "horizon": "week",
@@ -176,65 +220,21 @@
             "evidence": "The only Henry Hub natural gas signal shows a +1.23% move to $2.79/MMBtu, short of the forecast 2.5% rise, and no signal shows a 2.5%+ post-EIA-report gain within the window.",
             "resolved_ms": 1785545017835,
             "ts": 1784759725739
-        },
-        {
-            "statement": "NG=F will move down by 1.2% within the next week",
-            "horizon": "week",
-            "probability": 0.69,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal in the record shows NG=F declining 1.2% within the 2026-07-21 to 2026-07-28 window, so the forecast cannot be confirmed.",
-            "resolved_ms": 1785544984874,
-            "ts": 1784673606500
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop to 1-2 daily due to escalating Ukrainian conflict proximity",
-            "horizon": "week",
-            "probability": 0.34,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Kerch Strait transit data at all; all provided signals concern other chokepoints (Luzon, Lombok, Windward, Yucatan, Mindoro), so nothing shows Kerch Strait transits dropping to 1-2 daily.",
-            "resolved_ms": 1785541278106,
-            "ts": 1784755800139
-        },
-        {
-            "statement": "Natural gas prices (NG=F) will rise by 2.5-3.5% following the EIA weekly storage report release on 2026-07-23",
-            "horizon": "week",
-            "probability": 0.58,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports natural gas (NG=F) prices or any post-EIA-storage-report price move, so the specific 2.5\u20133.5% rise is unsupported despite the window having closed.",
-            "resolved_ms": 1785541274771,
-            "ts": 1784755800139
-        },
-        {
-            "statement": "WTI crude oil (CL=F) will trade 2.5-3.0% higher due to Hormuz chokepoint tensions and OPEC+ production cuts",
-            "horizon": "week",
-            "probability": 0.27,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports WTI's weekly move; the only crude price signal, Brent at +1.22%, falls well short of the stated 2.5-3.0% gain, and no admissible signal shows WTI rising in that band during the window.",
-            "resolved_ms": 1785541270770,
-            "ts": 1784754001766
         }
     ],
-    "next_judge_ms": 1785552318604,
+    "next_judge_ms": 1785556007353,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 880,
-        "base_rate": 0.0761,
-        "brier_raw": 0.2366,
-        "brier_base_rate": 0.0703,
-        "brier_calibrated_oos": 0.0806,
-        "brier_calibrated_oos_n": 166,
+        "resolved_n": 884,
+        "base_rate": 0.0758,
+        "brier_raw": 0.2364,
+        "brier_base_rate": 0.07,
+        "brier_calibrated_oos": 0.0789,
+        "brier_calibrated_oos_n": 170,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
