@@ -1,14 +1,14 @@
 {
-    "resolved": 1026,
-    "open": 4376,
-    "due": 388,
-    "next_due_ms": 1785674031355,
-    "unresolvable": 250,
+    "resolved": 1030,
+    "open": 4399,
+    "due": 386,
+    "next_due_ms": 1785676007966,
+    "unresolvable": 251,
     "brier": 0.228,
     "hit_rate": 0.62,
     "per_horizon": {
         "24h": {
-            "resolved": 544,
+            "resolved": 548,
             "brier": 0.227,
             "hit_rate": 0.63
         },
@@ -21,7 +21,7 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 124,
+            "n": 125,
             "avg_predicted": 0.13,
             "observed": 0.09
         },
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 322,
+            "n": 324,
             "avg_predicted": 0.5,
             "observed": 0.13
         },
         {
             "bin": "60\u201380%",
-            "n": 210,
+            "n": 211,
             "avg_predicted": 0.68,
             "observed": 0.22
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1025,
+            "resolved": 1029,
             "brier": 0.266
         },
         "Economist": {
-            "resolved": 1023,
-            "brier": 0.274
+            "resolved": 1027,
+            "brier": 0.273
         },
         "Naturalist": {
-            "resolved": 1025,
+            "resolved": 1029,
             "brier": 0.283
         },
         "Skeptic": {
-            "resolved": 1023,
+            "resolved": 1027,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 1274,
-            "brier": 0.196,
-            "hit_rate": 0.696,
-            "rock_hit_rate": 0.78
+            "resolved": 1290,
+            "brier": 0.195,
+            "hit_rate": 0.697,
+            "rock_hit_rate": 0.777
         },
         "claude-opus-5 (headline)": {
-            "resolved": 133,
-            "brier": 0.343,
-            "hit_rate": 0.459,
-            "rock_hit_rate": 0.549
+            "resolved": 137,
+            "brier": 0.341,
+            "hit_rate": 0.46,
+            "rock_hit_rate": 0.547
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "New Iranian or Iran-aligned militia attack causes casualties or damage at a site in Iraq, Saudi Arabia or the Gulf, reported by major wire services",
+            "horizon": "24h",
+            "probability": 0.44,
+            "location": "Iraq",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal describes Saudi Arabian strikes in Iraq, not an Iranian or Iran-aligned militia attack causing casualties or damage, so no signal shows the forecast event occurred within the window.",
+            "resolved_ms": 1785674139317,
+            "ts": 1785417326729
+        },
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, prompting typhoon signal No. 8 or higher in Hong Kong or Shenzhen",
+            "horizon": "24h",
+            "probability": 0.13,
+            "location": "Pearl River Delta, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon Noul, a Guangdong/Pearl River Delta landfall, or a No. 8 signal in Hong Kong or Shenzhen; the only cyclone signals (Dolphin, Genevieve, Fausto) are distant Pacific systems with green alert levels.",
+            "resolved_ms": 1785674136413,
+            "ts": 1785417326729
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at least 30% below their 30-day average (i.e. under ~15 transits/day) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.47,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "IMF PortWatch current snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, well beyond the 30%-below / under-15 threshold.",
+            "resolved_ms": 1785674126337,
+            "ts": 1785417326729
+        },
+        {
+            "statement": "New reported strikes or drone/missile attacks on Iraqi territory involving Iran-aligned militias, U.S. or Saudi forces",
+            "horizon": "24h",
+            "probability": 0.75,
+            "location": "Baghdad, Iraq",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal 2's headline states Saudi Arabia carried out strikes in Iraq, marking its entry into the U.S.-Iran war, which is a reported attack on Iraqi territory involving Saudi forces and Iran-aligned militias (corroborated by S1's U.S.-Saudi attack on Iraqi militias).",
+            "resolved_ms": 1785674119742,
+            "ts": 1785415294489
+        },
         {
             "statement": "Strait of Hormuz daily ship transits remain at or below 15 per day (vs 21 30-day average) in the next IMF PortWatch update",
             "horizon": "24h",
@@ -182,65 +226,21 @@
             "evidence": "The only Brent price signal shows Brent Crude at $90.12/bbl (+0.0%), below the $92/bbl threshold, with no signal indicating a settlement above $92 during the window.",
             "resolved_ms": 1785666736148,
             "ts": 1785409241841
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.65,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot (S4) shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, exceeding the forecast's 30%-below threshold.",
-            "resolved_ms": 1785666734081,
-            "ts": 1785409241841
-        },
-        {
-            "statement": "Brent crude settles above $90/bbl",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "North Sea / global oil market",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S10 shows Brent Crude at $90.12/bbl at the North Sea anchor, above the $90 threshold.",
-            "resolved_ms": 1785663103166,
-            "ts": 1785407228177
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (vs 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.48,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
-            "resolved_ms": 1785663099839,
-            "ts": 1785407228177
-        },
-        {
-            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering signal-8-or-higher warnings and mass flight cancellations",
-            "horizon": "24h",
-            "probability": 0.12,
-            "location": "Pearl River Delta, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Typhoon Noul or any cyclone impact on the Guangdong/Pearl River Delta coast; the only active cyclones listed (Dolphin, Genevieve, Fausto) are far from China with green/low alert levels.",
-            "resolved_ms": 1785663093446,
-            "ts": 1785405194021
         }
     ],
-    "next_judge_ms": 1785674034535,
+    "next_judge_ms": 1785677739335,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1026,
-        "base_rate": 0.1179,
-        "brier_raw": 0.228,
-        "brier_base_rate": 0.104,
-        "brier_calibrated_oos": 0.191,
-        "brier_calibrated_oos_n": 310,
+        "resolved_n": 1030,
+        "base_rate": 0.1194,
+        "brier_raw": 0.2276,
+        "brier_base_rate": 0.1052,
+        "brier_calibrated_oos": 0.1939,
+        "brier_calibrated_oos_n": 314,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
