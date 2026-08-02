@@ -1,15 +1,15 @@
 {
-    "resolved": 1045,
-    "open": 4439,
-    "due": 379,
-    "next_due_ms": 1785687932185,
-    "unresolvable": 261,
+    "resolved": 1049,
+    "open": 4463,
+    "due": 380,
+    "next_due_ms": 1785691944855,
+    "unresolvable": 262,
     "brier": 0.226,
     "hit_rate": 0.63,
     "per_horizon": {
         "24h": {
-            "resolved": 559,
-            "brier": 0.225,
+            "resolved": 563,
+            "brier": 0.224,
             "hit_rate": 0.64
         },
         "week": {
@@ -33,15 +33,15 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 327,
+            "n": 328,
             "avg_predicted": 0.5,
             "observed": 0.13
         },
         {
             "bin": "60\u201380%",
-            "n": 219,
+            "n": 222,
             "avg_predicted": 0.68,
-            "observed": 0.25
+            "observed": 0.26
         },
         {
             "bin": "80\u2013100%",
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1044,
-            "brier": 0.264
+            "resolved": 1048,
+            "brier": 0.263
         },
         "Economist": {
-            "resolved": 1042,
+            "resolved": 1046,
             "brier": 0.271
         },
         "Naturalist": {
-            "resolved": 1044,
+            "resolved": 1048,
             "brier": 0.28
         },
         "Skeptic": {
-            "resolved": 1042,
+            "resolved": 1046,
             "brier": 0.188
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 1350,
+            "resolved": 1366,
             "brier": 0.192,
-            "hit_rate": 0.704,
-            "rock_hit_rate": 0.763
+            "hit_rate": 0.708,
+            "rock_hit_rate": 0.754
         },
         "claude-opus-5 (headline)": {
-            "resolved": 148,
-            "brier": 0.328,
-            "hit_rate": 0.48,
-            "rock_hit_rate": 0.527
+            "resolved": 152,
+            "brier": 0.32,
+            "hit_rate": 0.493,
+            "rock_hit_rate": 0.513
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at or below 15 per day (vs 30-day average of 21) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.66,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current IMF PortWatch snapshot for the Strait of Hormuz shows 10 daily ship transits, 52% below the 30-day average of 21, which is at or below the forecast threshold of 15.",
+            "resolved_ms": 1785688831132,
+            "ts": 1785432402469
+        },
+        {
+            "statement": "New reported air or missile strikes involving Iran, Iraqi militias, or Saudi/U.S. forces occur somewhere in Iraq or the Gulf",
+            "horizon": "24h",
+            "probability": 0.73,
+            "location": "Iraq",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal 2 states that Saudi Arabia carried out strikes in Iraq, directly showing air/missile strikes involving Saudi forces occurred in Iraq.",
+            "resolved_ms": 1785688825751,
+            "ts": 1785430388821
+        },
+        {
+            "statement": "Brent crude settles above $85/bbl",
+            "horizon": "24h",
+            "probability": 0.57,
+            "location": "North Sea / global oil market",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S11 shows Brent Crude at $90.12/bbl at the North Sea anchor, above the $85/bbl threshold.",
+            "resolved_ms": 1785688821933,
+            "ts": 1785430388821
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.66,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot (S4) shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the stated 30%-below threshold.",
+            "resolved_ms": 1785688819302,
+            "ts": 1785430388821
+        },
         {
             "statement": "Ukraine war humanitarian crisis will force 50,000+ new displacements in Donetsk region",
             "horizon": "week",
@@ -182,65 +226,21 @@
             "evidence": "The only WTI price signal shows crude at 84.67 $/bbl with a 0.0% change and no signal documents a +2.5% post-EIA-report rally within the window that closed 2026-07-31.",
             "resolved_ms": 1785681452461,
             "ts": 1784904240724
-        },
-        {
-            "statement": "New reported strikes or drone/missile attacks involving Iran-aligned militias in Iraq are announced within 24 hours",
-            "horizon": "24h",
-            "probability": 0.7,
-            "location": "Iraq",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 reports Saudi Arabia conducting strikes in Iraq as part of the U.S.-Iran war, i.e., new strikes in Iraq against Iran-aligned targets announced during the window.",
-            "resolved_ms": 1785681447292,
-            "ts": 1785422294229
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.67,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot (S4) shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the forecast's \u226530% below threshold.",
-            "resolved_ms": 1785677814353,
-            "ts": 1785422294229
-        },
-        {
-            "statement": "Wheat (CBOT) will drop 3% in the week following the FOMC meeting on 2026-07-28 due to dollar strength",
-            "horizon": "week",
-            "probability": 0.34,
-            "location": "Black Sea grain corridor",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only wheat signal shows CBOT wheat at 639.25 \u00a2/bu with a 0.0% change and no sign of a 3% weekly decline after the window closed.",
-            "resolved_ms": 1785677807903,
-            "ts": 1784902218887
-        },
-        {
-            "statement": "The Kerch Strait ship transit count will drop below 1 per day due to intensified Russian-Ukrainian missile exchanges",
-            "horizon": "week",
-            "probability": 0.41,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports Kerch Strait transit counts at all \u2014 only Lombok and Mindoro Strait transit data and general Russia risk/war status \u2014 so nothing shows transits fell below 1 per day within the window.",
-            "resolved_ms": 1785677804020,
-            "ts": 1784902218887
         }
     ],
-    "next_judge_ms": 1785688753246,
+    "next_judge_ms": 1785692444565,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1045,
-        "base_rate": 0.1254,
-        "brier_raw": 0.2262,
-        "brier_base_rate": 0.1096,
-        "brier_calibrated_oos": 0.2052,
-        "brier_calibrated_oos_n": 329,
+        "resolved_n": 1049,
+        "base_rate": 0.1287,
+        "brier_raw": 0.2258,
+        "brier_base_rate": 0.1121,
+        "brier_calibrated_oos": 0.2126,
+        "brier_calibrated_oos_n": 333,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
