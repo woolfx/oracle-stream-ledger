@@ -1,15 +1,15 @@
 {
-    "resolved": 964,
-    "open": 4175,
-    "due": 413,
-    "next_due_ms": 1785630170771,
-    "unresolvable": 222,
-    "brier": 0.23,
+    "resolved": 967,
+    "open": 4194,
+    "due": 412,
+    "next_due_ms": 1785634154911,
+    "unresolvable": 226,
+    "brier": 0.231,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 492,
-            "brier": 0.231,
+            "resolved": 495,
+            "brier": 0.232,
             "hit_rate": 0.61
         },
         "week": {
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 299,
+            "n": 300,
             "avg_predicted": 0.5,
             "observed": 0.09
         },
         {
             "bin": "60\u201380%",
-            "n": 190,
+            "n": 192,
             "avg_predicted": 0.68,
             "observed": 0.17
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 963,
+            "resolved": 966,
             "brier": 0.27
         },
         "Economist": {
-            "resolved": 961,
+            "resolved": 964,
             "brier": 0.28
         },
         "Naturalist": {
-            "resolved": 963,
+            "resolved": 966,
             "brier": 0.289
         },
         "Skeptic": {
-            "resolved": 961,
-            "brier": 0.188
+            "resolved": 964,
+            "brier": 0.189
         }
     },
     "models": {
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 1030,
-            "brier": 0.195,
-            "hit_rate": 0.692,
-            "rock_hit_rate": 0.845
+            "resolved": 1042,
+            "brier": 0.196,
+            "hit_rate": 0.687,
+            "rock_hit_rate": 0.843
         },
         "claude-opus-5 (headline)": {
-            "resolved": 81,
-            "brier": 0.41,
-            "hit_rate": 0.383,
-            "rock_hit_rate": 0.617
+            "resolved": 84,
+            "brier": 0.409,
+            "hit_rate": 0.381,
+            "rock_hit_rate": 0.619
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,39 @@
         }
     },
     "recent": [
+        {
+            "statement": "New Israeli, US or Saudi strikes on Iranian or Iran-linked targets are reported within 24 hours",
+            "horizon": "24h",
+            "probability": 0.53,
+            "location": "Iran / Iraq",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1, archived within the window, reports Saudi Arabia carrying out strikes in Iraq framed as entry into the U.S.-Iran war, matching the forecast of new Saudi strikes on Iran-linked targets in Iraq.",
+            "resolved_ms": 1785629865026,
+            "ts": 1785373923923
+        },
+        {
+            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, citing an oil-driven inflation risk from the Iran war",
+            "horizon": "24h",
+            "probability": 0.63,
+            "location": "Washington, D.C., United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports any July 28, 2026 FOMC rate decision or its rationale \u2014 the only FOMC entries are future scheduled meetings (Sept 15, Oct 27, 2026 and 2027 dates) \u2014 so the claimed hold citing Iran-war oil inflation is unsupported within the window.",
+            "resolved_ms": 1785629856912,
+            "ts": 1785373923923
+        },
+        {
+            "statement": "VIX closes above 22 within 24 hours as equities extend risk-off (Nasdaq 100 futures already -1.26%)",
+            "horizon": "24h",
+            "probability": 0.65,
+            "location": "US equity markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The VIX snapshot shows 15.99 (-6.44%), far below the 22 threshold, with S&P 500 and Nasdaq futures both higher, contradicting the risk-off spike forecast.",
+            "resolved_ms": 1785629850056,
+            "ts": 1785371880313
+        },
         {
             "statement": "Strait of Hormuz daily transits stay at or below 15 (well under the 21 30-day average) in the next reported IMF PortWatch update",
             "horizon": "24h",
@@ -193,54 +226,21 @@
             "evidence": "The current PortWatch snapshot (S4) shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
             "resolved_ms": 1785618826999,
             "ts": 1785361822814
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.59,
-            "location": "North Sea / global oil market",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S8 shows Brent Crude at $90.12/bbl (+1.22%) at the North Sea anchor, above the $88/bbl threshold during the forecast window.",
-            "resolved_ms": 1785618823620,
-            "ts": 1785361822814
-        },
-        {
-            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, prompting suspension of work and classes in at least one major city",
-            "horizon": "24h",
-            "probability": 0.2,
-            "location": "Guangdong, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Typhoon Noul, a Guangdong/Pearl River Delta landfall, or work/class suspensions; the only cyclone signals concern DOLPHIN, GENEVIEVE, and FAUSTO in unrelated locations.",
-            "resolved_ms": 1785615186393,
-            "ts": 1785359840609
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.6,
-            "location": "North Sea / global oil market",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S9 shows Brent Crude at $90.12/bbl (+1.22%), above the stated $88/bbl threshold.",
-            "resolved_ms": 1785615182477,
-            "ts": 1785359840609
         }
     ],
-    "next_judge_ms": 1785629730879,
+    "next_judge_ms": 1785633465041,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 964,
-        "base_rate": 0.0944,
-        "brier_raw": 0.2304,
-        "brier_base_rate": 0.0855,
-        "brier_calibrated_oos": 0.1355,
-        "brier_calibrated_oos_n": 249,
+        "resolved_n": 967,
+        "base_rate": 0.0951,
+        "brier_raw": 0.2308,
+        "brier_base_rate": 0.0861,
+        "brier_calibrated_oos": 0.1373,
+        "brier_calibrated_oos_n": 252,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
