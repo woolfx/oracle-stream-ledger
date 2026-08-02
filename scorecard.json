@@ -1,15 +1,15 @@
 {
-    "resolved": 962,
-    "open": 4154,
-    "due": 411,
-    "next_due_ms": 1785626136707,
-    "unresolvable": 220,
-    "brier": 0.231,
+    "resolved": 964,
+    "open": 4175,
+    "due": 413,
+    "next_due_ms": 1785630170771,
+    "unresolvable": 222,
+    "brier": 0.23,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 490,
-            "brier": 0.232,
+            "resolved": 492,
+            "brier": 0.231,
             "hit_rate": 0.61
         },
         "week": {
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 298,
+            "n": 299,
             "avg_predicted": 0.5,
             "observed": 0.09
         },
         {
             "bin": "60\u201380%",
-            "n": 189,
+            "n": 190,
             "avg_predicted": 0.68,
             "observed": 0.17
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 961,
+            "resolved": 963,
             "brier": 0.27
         },
         "Economist": {
-            "resolved": 959,
+            "resolved": 961,
             "brier": 0.28
         },
         "Naturalist": {
-            "resolved": 961,
+            "resolved": 963,
             "brier": 0.289
         },
         "Skeptic": {
-            "resolved": 959,
+            "resolved": 961,
             "brier": 0.188
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 1022,
+            "resolved": 1030,
             "brier": 0.195,
-            "hit_rate": 0.694,
-            "rock_hit_rate": 0.847
+            "hit_rate": 0.692,
+            "rock_hit_rate": 0.845
         },
         "claude-opus-5 (headline)": {
-            "resolved": 79,
-            "brier": 0.415,
-            "hit_rate": 0.38,
-            "rock_hit_rate": 0.62
+            "resolved": 81,
+            "brier": 0.41,
+            "hit_rate": 0.383,
+            "rock_hit_rate": 0.617
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "Strait of Hormuz daily transits stay at or below 15 (well under the 21 30-day average) in the next reported IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.74,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current IMF PortWatch snapshot reports Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the stated threshold of 15.",
+            "resolved_ms": 1785626130861,
+            "ts": 1785369834328
+        },
+        {
+            "statement": "VIX trades above 22 intraday within 24 hours",
+            "horizon": "24h",
+            "probability": 0.56,
+            "location": "US equity markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only VIX signal shows the fear gauge at 15.99 (-6.44%), far below the 22 threshold, and no signal indicates any intraday spike above 22 during the window.",
+            "resolved_ms": 1785626118478,
+            "ts": 1785367828149
+        },
         {
             "statement": "Strait of Hormuz daily ship transits remain at or below 15 (well under the 21 30-day average) in the next IMF PortWatch update",
             "horizon": "24h",
@@ -204,43 +226,21 @@
             "evidence": "S9 shows Brent Crude at $90.12/bbl (+1.22%), above the stated $88/bbl threshold.",
             "resolved_ms": 1785615182477,
             "ts": 1785359840609
-        },
-        {
-            "statement": "Iran will escalate attacks on Saudi oil infrastructure within 24 hours, triggering a 10% spike in Brent crude prices.",
-            "horizon": "24h",
-            "probability": 0.13,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent crude is up only 1.22% at $90.12/bbl, far short of the forecast 10% spike, and no signal shows any Iranian attack on Saudi oil infrastructure during the window.",
-            "resolved_ms": 1785615172924,
-            "ts": 1785357898601
-        },
-        {
-            "statement": "Gold prices retreat below $4000/oz as U.S. Treasury yields rise following Fed hawkish signals",
-            "horizon": "week",
-            "probability": 0.38,
-            "location": "London Metal Exchange",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports gold prices, Treasury yields, or any Fed hawkish signal during the window (the only FOMC dates listed are months after the window closed), so nothing shows the forecast event occurred.",
-            "resolved_ms": 1785615168279,
-            "ts": 1784838520126
         }
     ],
-    "next_judge_ms": 1785626084141,
+    "next_judge_ms": 1785629730879,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 962,
-        "base_rate": 0.0936,
-        "brier_raw": 0.2305,
-        "brier_base_rate": 0.0848,
-        "brier_calibrated_oos": 0.1333,
-        "brier_calibrated_oos_n": 247,
+        "resolved_n": 964,
+        "base_rate": 0.0944,
+        "brier_raw": 0.2304,
+        "brier_base_rate": 0.0855,
+        "brier_calibrated_oos": 0.1355,
+        "brier_calibrated_oos_n": 249,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
