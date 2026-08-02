@@ -1,19 +1,19 @@
 {
-    "resolved": 1040,
-    "open": 4421,
-    "due": 380,
-    "next_due_ms": 1785683958936,
-    "unresolvable": 259,
-    "brier": 0.227,
+    "resolved": 1045,
+    "open": 4439,
+    "due": 379,
+    "next_due_ms": 1785687932185,
+    "unresolvable": 261,
+    "brier": 0.226,
     "hit_rate": 0.63,
     "per_horizon": {
         "24h": {
-            "resolved": 555,
+            "resolved": 559,
             "brier": 0.225,
-            "hit_rate": 0.63
+            "hit_rate": 0.64
         },
         "week": {
-            "resolved": 485,
+            "resolved": 486,
             "brier": 0.228,
             "hit_rate": 0.62
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 328,
+            "n": 330,
             "avg_predicted": 0.3,
             "observed": 0.05
         },
@@ -39,9 +39,9 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 216,
+            "n": 219,
             "avg_predicted": 0.68,
-            "observed": 0.24
+            "observed": 0.25
         },
         {
             "bin": "80\u2013100%",
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1039,
-            "brier": 0.265
+            "resolved": 1044,
+            "brier": 0.264
         },
         "Economist": {
-            "resolved": 1037,
-            "brier": 0.272
+            "resolved": 1042,
+            "brier": 0.271
         },
         "Naturalist": {
-            "resolved": 1039,
-            "brier": 0.281
+            "resolved": 1044,
+            "brier": 0.28
         },
         "Skeptic": {
-            "resolved": 1037,
-            "brier": 0.189
+            "resolved": 1042,
+            "brier": 0.188
         }
     },
     "models": {
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 1330,
-            "brier": 0.194,
-            "hit_rate": 0.7,
-            "rock_hit_rate": 0.768
+            "resolved": 1350,
+            "brier": 0.192,
+            "hit_rate": 0.704,
+            "rock_hit_rate": 0.763
         },
         "claude-opus-5 (headline)": {
-            "resolved": 144,
-            "brier": 0.332,
-            "hit_rate": 0.472,
-            "rock_hit_rate": 0.535
+            "resolved": 148,
+            "brier": 0.328,
+            "hit_rate": 0.48,
+            "rock_hit_rate": 0.527
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,61 @@
         }
     },
     "recent": [
+        {
+            "statement": "Ukraine war humanitarian crisis will force 50,000+ new displacements in Donetsk region",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "Ukraine",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal documents 50,000+ new displacements in Donetsk region during the window, an event of a scale that would have been captured.",
+            "resolved_ms": 1785685153228,
+            "ts": 1784910070248
+        },
+        {
+            "statement": "New reported strikes or drone/missile attacks involving Iran-aligned militias inside Iraq",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "Baghdad, Iraq",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 reports Saudi Arabia conducting strikes inside Iraq as part of the U.S.-Iran war, i.e., new strikes involving Iran-aligned militias in Iraq during the window.",
+            "resolved_ms": 1785685150329,
+            "ts": 1785428383856
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at or below 15 per day (vs 21 30-day average) in IMF PortWatch data",
+            "horizon": "24h",
+            "probability": 0.68,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S2, archived within the forecast window, reports Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, satisfying the at-or-below-15 threshold.",
+            "resolved_ms": 1785685139238,
+            "ts": 1785428383856
+        },
+        {
+            "statement": "Typhoon NOUL-26 makes landfall on the South China coast (Guangdong/Fujian/Hong Kong region), prompting mass evacuations and suspended port operations",
+            "horizon": "24h",
+            "probability": 0.24,
+            "location": "Guangdong, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon NOUL-26 or any landfall on the South China coast; the only tropical cyclone signals concern DOLPHIN-26, GENEVIEVE-26, and FAUSTO-26 far from Guangdong, so a landfall event of this magnitude would have been captured but was not.",
+            "resolved_ms": 1785685135077,
+            "ts": 1785426368745
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.7,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current IMF PortWatch snapshot (S4) shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the stated 30% shortfall threshold.",
+            "resolved_ms": 1785685131601,
+            "ts": 1785426368745
+        },
         {
             "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering typhoon signal 8 or higher in Hong Kong or Macau",
             "horizon": "24h",
@@ -171,76 +226,21 @@
             "evidence": "No signal reports Kerch Strait transit counts at all \u2014 only Lombok and Mindoro Strait transit data and general Russia risk/war status \u2014 so nothing shows transits fell below 1 per day within the window.",
             "resolved_ms": 1785677804020,
             "ts": 1784902218887
-        },
-        {
-            "statement": "New reports of missile, drone or air strikes on targets in Iraq or Iran involving US, Saudi or Iranian-aligned militia forces",
-            "horizon": "24h",
-            "probability": 0.78,
-            "location": "Iraq",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 explicitly reports Saudi Arabian strikes on targets in Iraq, satisfying the forecast's requirement of new reports of strikes in Iraq involving Saudi forces.",
-            "resolved_ms": 1785677801130,
-            "ts": 1785420279918
-        },
-        {
-            "statement": "Brent crude settles above $87/bbl, with intraday trading above $92 at some point",
-            "horizon": "24h",
-            "probability": 0.56,
-            "location": "North Sea / global oil market",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "S10 shows Brent at $90.12/bbl, which clears the $87 settle threshold but no signal shows any intraday trade above $92, so the conjunctive forecast fails.",
-            "resolved_ms": 1785677796154,
-            "ts": 1785420279918
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits stay at or below 15 per day (vs 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot for the Strait of Hormuz shows 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15 per day.",
-            "resolved_ms": 1785677792325,
-            "ts": 1785420279918
-        },
-        {
-            "statement": "New Iranian or Iran-aligned militia attack causes casualties or damage at a site in Iraq, Saudi Arabia or the Gulf, reported by major wire services",
-            "horizon": "24h",
-            "probability": 0.44,
-            "location": "Iraq",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal describes Saudi Arabian strikes in Iraq, not an Iranian or Iran-aligned militia attack causing casualties or damage, so no signal shows the forecast event occurred within the window.",
-            "resolved_ms": 1785674139317,
-            "ts": 1785417326729
-        },
-        {
-            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, prompting typhoon signal No. 8 or higher in Hong Kong or Shenzhen",
-            "horizon": "24h",
-            "probability": 0.13,
-            "location": "Pearl River Delta, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Typhoon Noul, a Guangdong/Pearl River Delta landfall, or a No. 8 signal in Hong Kong or Shenzhen; the only cyclone signals (Dolphin, Genevieve, Fausto) are distant Pacific systems with green alert levels.",
-            "resolved_ms": 1785674136413,
-            "ts": 1785417326729
         }
     ],
-    "next_judge_ms": 1785685069156,
+    "next_judge_ms": 1785688753246,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1040,
-        "base_rate": 0.1231,
-        "brier_raw": 0.2268,
-        "brier_base_rate": 0.1079,
-        "brier_calibrated_oos": 0.2007,
-        "brier_calibrated_oos_n": 324,
+        "resolved_n": 1045,
+        "base_rate": 0.1254,
+        "brier_raw": 0.2262,
+        "brier_base_rate": 0.1096,
+        "brier_calibrated_oos": 0.2052,
+        "brier_calibrated_oos_n": 329,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
