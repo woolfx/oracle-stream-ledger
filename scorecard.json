@@ -1,41 +1,41 @@
 {
-    "resolved": 973,
-    "open": 4211,
-    "due": 406,
-    "next_due_ms": 1785636162667,
-    "unresolvable": 229,
+    "resolved": 977,
+    "open": 4228,
+    "due": 405,
+    "next_due_ms": 1785640147447,
+    "unresolvable": 232,
     "brier": 0.23,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 498,
+            "resolved": 501,
             "brier": 0.232,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 475,
+            "resolved": 476,
             "brier": 0.229,
-            "hit_rate": 0.61
+            "hit_rate": 0.62
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 119,
+            "n": 120,
             "avg_predicted": 0.13,
             "observed": 0.08
         },
         {
             "bin": "20\u201340%",
-            "n": 315,
+            "n": 316,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 303,
+            "n": 305,
             "avg_predicted": 0.5,
-            "observed": 0.09
+            "observed": 0.1
         },
         {
             "bin": "60\u201380%",
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 972,
-            "brier": 0.27
+            "resolved": 976,
+            "brier": 0.269
         },
         "Economist": {
-            "resolved": 970,
-            "brier": 0.279
+            "resolved": 974,
+            "brier": 0.278
         },
         "Naturalist": {
-            "resolved": 972,
-            "brier": 0.288
+            "resolved": 976,
+            "brier": 0.287
         },
         "Skeptic": {
-            "resolved": 970,
+            "resolved": 974,
             "brier": 0.189
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 1062,
-            "brier": 0.197,
-            "hit_rate": 0.684,
-            "rock_hit_rate": 0.842
+            "resolved": 1078,
+            "brier": 0.196,
+            "hit_rate": 0.686,
+            "rock_hit_rate": 0.837
         },
         "claude-opus-5 (headline)": {
-            "resolved": 87,
-            "brier": 0.404,
-            "hit_rate": 0.379,
-            "rock_hit_rate": 0.621
+            "resolved": 90,
+            "brier": 0.396,
+            "hit_rate": 0.389,
+            "rock_hit_rate": 0.611
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "New strikes or drone/missile attacks reported inside Iran or Iraq within 24 hours",
+            "horizon": "24h",
+            "probability": 0.52,
+            "location": "Iran/Iraq",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1, archived within the forecast window, states that Saudi Arabia carried out strikes in Iraq, satisfying the requirement of new strikes reported inside Iran or Iraq.",
+            "resolved_ms": 1785637318596,
+            "ts": 1785378315834
+        },
+        {
+            "statement": "VIX trades above 22 intraday within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.26,
+            "location": "US markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only VIX signal shows the fear gauge at 15.99 (-6.44%), far below the 22 threshold, and no signal indicates any intraday move above 22 during the window.",
+            "resolved_ms": 1785637314845,
+            "ts": 1785378315834
+        },
+        {
+            "statement": "The VIX fear gauge will spike above 22 during the week of July 29 due to escalating tensions in the Ukraine warfront",
+            "horizon": "week",
+            "probability": 0.19,
+            "location": "Ukraine",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal shows VIX at 15.99 and falling, well below the forecast 22 threshold, with no signal indicating any spike above 22 during the window.",
+            "resolved_ms": 1785637308000,
+            "ts": 1784859836618
+        },
+        {
+            "statement": "Strait of Hormuz daily transits remain at least 30% below their 30-day average of 21 in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.58,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current IMF PortWatch snapshot (S4) shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the stated 30% shortfall threshold.",
+            "resolved_ms": 1785637302904,
+            "ts": 1785378131166
+        },
         {
             "statement": "Kerch Strait ship transits drop to 1 per day amid intensified Ukraine conflict",
             "horizon": "week",
@@ -182,65 +226,21 @@
             "evidence": "No signal reports any July 28, 2026 FOMC rate decision or its rationale \u2014 the only FOMC entries are future scheduled meetings (Sept 15, Oct 27, 2026 and 2027 dates) \u2014 so the claimed hold citing Iran-war oil inflation is unsupported within the window.",
             "resolved_ms": 1785629856912,
             "ts": 1785373923923
-        },
-        {
-            "statement": "VIX closes above 22 within 24 hours as equities extend risk-off (Nasdaq 100 futures already -1.26%)",
-            "horizon": "24h",
-            "probability": 0.65,
-            "location": "US equity markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The VIX snapshot shows 15.99 (-6.44%), far below the 22 threshold, with S&P 500 and Nasdaq futures both higher, contradicting the risk-off spike forecast.",
-            "resolved_ms": 1785629850056,
-            "ts": 1785371880313
-        },
-        {
-            "statement": "Strait of Hormuz daily transits stay at or below 15 (well under the 21 30-day average) in the next reported IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.74,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot reports Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the stated threshold of 15.",
-            "resolved_ms": 1785626130861,
-            "ts": 1785369834328
-        },
-        {
-            "statement": "VIX trades above 22 intraday within 24 hours",
-            "horizon": "24h",
-            "probability": 0.56,
-            "location": "US equity markets",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only VIX signal shows the fear gauge at 15.99 (-6.44%), far below the 22 threshold, and no signal indicates any intraday spike above 22 during the window.",
-            "resolved_ms": 1785626118478,
-            "ts": 1785367828149
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (well under the 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.75,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot (S4) shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
-            "resolved_ms": 1785622484125,
-            "ts": 1785365821772
         }
     ],
-    "next_judge_ms": 1785637276075,
+    "next_judge_ms": 1785640918613,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 973,
-        "base_rate": 0.0956,
-        "brier_raw": 0.2305,
-        "brier_base_rate": 0.0864,
-        "brier_calibrated_oos": 0.1379,
-        "brier_calibrated_oos_n": 257,
+        "resolved_n": 977,
+        "base_rate": 0.0972,
+        "brier_raw": 0.2301,
+        "brier_base_rate": 0.0878,
+        "brier_calibrated_oos": 0.1424,
+        "brier_calibrated_oos_n": 261,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
