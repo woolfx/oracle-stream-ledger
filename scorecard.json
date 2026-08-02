@@ -1,20 +1,20 @@
 {
-    "resolved": 977,
-    "open": 4228,
-    "due": 405,
-    "next_due_ms": 1785640147447,
-    "unresolvable": 232,
+    "resolved": 984,
+    "open": 4229,
+    "due": 398,
+    "next_due_ms": 1785644127223,
+    "unresolvable": 238,
     "brier": 0.23,
     "hit_rate": 0.61,
     "per_horizon": {
         "24h": {
-            "resolved": 501,
-            "brier": 0.232,
+            "resolved": 507,
+            "brier": 0.231,
             "hit_rate": 0.61
         },
         "week": {
-            "resolved": 476,
-            "brier": 0.229,
+            "resolved": 477,
+            "brier": 0.228,
             "hit_rate": 0.62
         }
     },
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 316,
+            "n": 319,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 193,
+            "n": 197,
             "avg_predicted": 0.68,
             "observed": 0.18
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 976,
+            "resolved": 983,
             "brier": 0.269
         },
         "Economist": {
-            "resolved": 974,
+            "resolved": 981,
             "brier": 0.278
         },
         "Naturalist": {
-            "resolved": 976,
+            "resolved": 983,
             "brier": 0.287
         },
         "Skeptic": {
-            "resolved": 974,
-            "brier": 0.189
+            "resolved": 981,
+            "brier": 0.188
         }
     },
     "models": {
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 1078,
+            "resolved": 1106,
             "brier": 0.196,
-            "hit_rate": 0.686,
-            "rock_hit_rate": 0.837
+            "hit_rate": 0.685,
+            "rock_hit_rate": 0.834
         },
         "claude-opus-5 (headline)": {
-            "resolved": 90,
-            "brier": 0.396,
-            "hit_rate": 0.389,
-            "rock_hit_rate": 0.611
+            "resolved": 96,
+            "brier": 0.389,
+            "hit_rate": 0.385,
+            "rock_hit_rate": 0.615
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,83 @@
         }
     },
     "recent": [
+        {
+            "statement": "Strait of Hormuz daily transit count stays at or below 15 (well under its 21-call 30-day average) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.68,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 21-call 30-day average, which is at or below the forecast threshold of 15.",
+            "resolved_ms": 1785640987612,
+            "ts": 1785384127369
+        },
+        {
+            "statement": "Brent crude settles above $92/bbl at least once within 24 hours as the US-Iran war widens",
+            "horizon": "24h",
+            "probability": 0.37,
+            "location": "North Sea / global oil market",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Brent price signal shows Brent Crude at $90.12/bbl, below the $92 threshold, with no signal indicating a settle above $92 during the window.",
+            "resolved_ms": 1785640981296,
+            "ts": 1785384127369
+        },
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering suspended flights and port closures in Hong Kong or Shenzhen",
+            "horizon": "24h",
+            "probability": 0.24,
+            "location": "Pearl River Delta, Guangdong, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon Noul or any landfall/closure in Guangdong, Hong Kong, or Shenzhen; the only cyclones named (Dolphin, Genevieve, Fausto) are far from the Pearl River Delta.",
+            "resolved_ms": 1785640978001,
+            "ts": 1785382103060
+        },
+        {
+            "statement": "VIX trades above 22 intraday as equities extend risk-off on Middle East escalation",
+            "horizon": "24h",
+            "probability": 0.68,
+            "location": "US equity markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The VIX snapshot shows 15.99 (-6.44%), far below the 22 threshold, with S&P 500 and Nasdaq futures higher rather than risk-off.",
+            "resolved_ms": 1785640974198,
+            "ts": 1785382103060
+        },
+        {
+            "statement": "Strait of Hormuz daily transit count stays at or below 15 (well under its 21-call 30-day average) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.72,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 21-call 30-day average, satisfying the \u226415 threshold.",
+            "resolved_ms": 1785640971816,
+            "ts": 1785382103060
+        },
+        {
+            "statement": "Brent crude settles above $92/bbl at least once, as the US-Iran war escalation keeps the risk premium bid",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "North Sea / global oil market",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Brent price signal shows Brent Crude at $90.12/bbl, below the $92/bbl threshold, with no signal showing a settle above $92 during the window.",
+            "resolved_ms": 1785640967324,
+            "ts": 1785382103060
+        },
+        {
+            "statement": "Sudan civil war escalates with targeted medical facility attacks",
+            "horizon": "week",
+            "probability": 0.35,
+            "location": "Sudan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal is a generic ongoing SAF\u2013RSF conflict status for Sudan with no mention of escalation or targeted attacks on medical facilities during the window.",
+            "resolved_ms": 1785640965022,
+            "ts": 1784861791599
+        },
         {
             "statement": "New strikes or drone/missile attacks reported inside Iran or Iraq within 24 hours",
             "horizon": "24h",
@@ -149,98 +226,21 @@
             "evidence": "No signal addresses Kerch Strait transits; the only data concern Lombok and Mindoro Straits, so nothing shows Kerch Strait transits dropping to 1 per day within the window.",
             "resolved_ms": 1785633673265,
             "ts": 1784857895612
-        },
-        {
-            "statement": "Strait of Hormuz daily transit count remains at or below 14 (well under its 21 30-day average)",
-            "horizon": "24h",
-            "probability": 0.68,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot shows the Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, satisfying the forecast's threshold of at or below 14.",
-            "resolved_ms": 1785633670167,
-            "ts": 1785375927232
-        },
-        {
-            "statement": "VIX closes above 21 as US equity futures stay under pressure",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The VIX snapshot shows 15.99 (-6.44%), far below the forecast threshold of 21, and equity futures (S9, S10) were higher rather than under pressure.",
-            "resolved_ms": 1785633663991,
-            "ts": 1785375927232
-        },
-        {
-            "statement": "Brent crude settles above $92/bbl at least once, extending the Iran-war risk premium",
-            "horizon": "24h",
-            "probability": 0.55,
-            "location": "North Sea / global oil market",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Brent price signal shows Brent Crude at $90.12/bbl, below the $92/bbl threshold, and no signal shows a settle above $92.",
-            "resolved_ms": 1785633660911,
-            "ts": 1785375927232
-        },
-        {
-            "statement": "WTI crude oil prices rise above $95/bbl due to reduced shipping through the Strait of Hormuz",
-            "horizon": "week",
-            "probability": 0.18,
-            "location": "Strait of Hormuz",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent crude is quoted at $90.12/bbl, so WTI (typically below Brent) did not exceed $95/bbl during the window, and no signal shows such a price.",
-            "resolved_ms": 1785633658671,
-            "ts": 1784855917253
-        },
-        {
-            "statement": "The price of Gold will rise by at least $10 within the next week",
-            "horizon": "week",
-            "probability": 0.31,
-            "location": "None",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal states a gold price level or a change of at least $10 during 2026-07-22 to 2026-07-29; S19's headline only notes safe-haven demand pushing gold 'higher' on a single day without any magnitude.",
-            "resolved_ms": 1785633652512,
-            "ts": 1784736202729
-        },
-        {
-            "statement": "New Israeli, US or Saudi strikes on Iranian or Iran-linked targets are reported within 24 hours",
-            "horizon": "24h",
-            "probability": 0.53,
-            "location": "Iran / Iraq",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1, archived within the window, reports Saudi Arabia carrying out strikes in Iraq framed as entry into the U.S.-Iran war, matching the forecast of new Saudi strikes on Iran-linked targets in Iraq.",
-            "resolved_ms": 1785629865026,
-            "ts": 1785373923923
-        },
-        {
-            "statement": "FOMC holds the federal funds target range unchanged at its July 28 meeting, citing an oil-driven inflation risk from the Iran war",
-            "horizon": "24h",
-            "probability": 0.63,
-            "location": "Washington, D.C., United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal reports any July 28, 2026 FOMC rate decision or its rationale \u2014 the only FOMC entries are future scheduled meetings (Sept 15, Oct 27, 2026 and 2027 dates) \u2014 so the claimed hold citing Iran-war oil inflation is unsupported within the window.",
-            "resolved_ms": 1785629856912,
-            "ts": 1785373923923
         }
     ],
-    "next_judge_ms": 1785640918613,
+    "next_judge_ms": 1785644587633,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 977,
-        "base_rate": 0.0972,
-        "brier_raw": 0.2301,
-        "brier_base_rate": 0.0878,
-        "brier_calibrated_oos": 0.1424,
-        "brier_calibrated_oos_n": 261,
+        "resolved_n": 984,
+        "base_rate": 0.0986,
+        "brier_raw": 0.2298,
+        "brier_base_rate": 0.0889,
+        "brier_calibrated_oos": 0.1448,
+        "brier_calibrated_oos_n": 268,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
