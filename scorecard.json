@@ -1,29 +1,29 @@
 {
-    "resolved": 1012,
-    "open": 4316,
-    "due": 388,
-    "next_due_ms": 1785662037838,
-    "unresolvable": 247,
-    "brier": 0.228,
+    "resolved": 1017,
+    "open": 4334,
+    "due": 387,
+    "next_due_ms": 1785666046688,
+    "unresolvable": 248,
+    "brier": 0.229,
     "hit_rate": 0.62,
     "per_horizon": {
         "24h": {
-            "resolved": 531,
+            "resolved": 535,
             "brier": 0.229,
             "hit_rate": 0.62
         },
         "week": {
-            "resolved": 481,
-            "brier": 0.227,
+            "resolved": 482,
+            "brier": 0.229,
             "hit_rate": 0.62
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 121,
+            "n": 123,
             "avg_predicted": 0.13,
-            "observed": 0.08
+            "observed": 0.09
         },
         {
             "bin": "20\u201340%",
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 319,
+            "n": 321,
             "avg_predicted": 0.5,
-            "observed": 0.12
+            "observed": 0.13
         },
         {
             "bin": "60\u201380%",
-            "n": 203,
+            "n": 204,
             "avg_predicted": 0.68,
             "observed": 0.2
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1011,
+            "resolved": 1016,
             "brier": 0.267
         },
         "Economist": {
-            "resolved": 1009,
+            "resolved": 1014,
             "brier": 0.275
         },
         "Naturalist": {
-            "resolved": 1011,
+            "resolved": 1016,
             "brier": 0.284
         },
         "Skeptic": {
-            "resolved": 1009,
-            "brier": 0.189
+            "resolved": 1014,
+            "brier": 0.19
         }
     },
     "models": {
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 1218,
-            "brier": 0.195,
+            "resolved": 1238,
+            "brier": 0.197,
             "hit_rate": 0.692,
-            "rock_hit_rate": 0.803
+            "rock_hit_rate": 0.793
         },
         "claude-opus-5 (headline)": {
-            "resolved": 120,
-            "brier": 0.359,
-            "hit_rate": 0.433,
-            "rock_hit_rate": 0.575
+            "resolved": 124,
+            "brier": 0.354,
+            "hit_rate": 0.444,
+            "rock_hit_rate": 0.565
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,61 @@
         }
     },
     "recent": [
+        {
+            "statement": "Brent crude settles above $90/bbl",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "North Sea / global oil market",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S10 shows Brent Crude at $90.12/bbl at the North Sea anchor, above the $90 threshold.",
+            "resolved_ms": 1785663103166,
+            "ts": 1785407228177
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (vs 21 30-day average) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.48,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
+            "resolved_ms": 1785663099839,
+            "ts": 1785407228177
+        },
+        {
+            "statement": "Typhoon Noul makes landfall or passes within 100 km of the Guangdong/Pearl River Delta coast, triggering signal-8-or-higher warnings and mass flight cancellations",
+            "horizon": "24h",
+            "probability": 0.12,
+            "location": "Pearl River Delta, China",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Typhoon Noul or any cyclone impact on the Guangdong/Pearl River Delta coast; the only active cyclones listed (Dolphin, Genevieve, Fausto) are far from China with green/low alert levels.",
+            "resolved_ms": 1785663093446,
+            "ts": 1785405194021
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.57,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current snapshot signal reports Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the forecast's 30%-below threshold.",
+            "resolved_ms": 1785663077125,
+            "ts": 1785405194021
+        },
+        {
+            "statement": "Shipping transits through the Strait of Hormuz will remain 30% below its 30-day average for the next week due to ongoing Iran maritime tensions.",
+            "horizon": "week",
+            "probability": 0.11,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot shows Strait of Hormuz transits at 10 daily calls, 52% below its 30-day average of 21, exceeding the forecast's 30%-below threshold.",
+            "resolved_ms": 1785663070765,
+            "ts": 1784884923839
+        },
         {
             "statement": "Brent crude settles above $90/bbl",
             "horizon": "24h",
@@ -171,76 +226,21 @@
             "evidence": "S10 shows Brent Crude at 90.12 $/bbl, above the $90/bbl threshold at the close of the forecast window.",
             "resolved_ms": 1785655717443,
             "ts": 1785399138214
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.53,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot (S4) reports Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the stated 30% shortfall threshold.",
-            "resolved_ms": 1785655713511,
-            "ts": 1785399138214
-        },
-        {
-            "statement": "Typhoon Noul makes landfall or passes within 100km of the Guangdong coast, prompting mass evacuations/suspensions in Shenzhen or Hong Kong",
-            "horizon": "24h",
-            "probability": 0.21,
-            "location": "Guangdong / Pearl River Delta, China",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Typhoon Noul, a Guangdong landfall, or evacuations/suspensions in Shenzhen or Hong Kong; the only cyclone signals concern Dolphin, Genevieve, and Fausto far from the Pearl River Delta.",
-            "resolved_ms": 1785655707885,
-            "ts": 1785397120879
-        },
-        {
-            "statement": "Strait of Hormuz daily transits remain at or below 15 (well under the 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.58,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
-            "resolved_ms": 1785655704757,
-            "ts": 1785397120879
-        },
-        {
-            "statement": "Brent crude settles above $95/bbl on at least one trading day",
-            "horizon": "24h",
-            "probability": 0.48,
-            "location": "North Sea / global oil market",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The Brent Crude signal shows a price of $90.12/bbl, below the $95/bbl threshold, and no signal indicates any settle above $95 during the window.",
-            "resolved_ms": 1785655701424,
-            "ts": 1785397120879
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits stay at or below 15 per day (well under the 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.68,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast's 15-per-day threshold.",
-            "resolved_ms": 1785651985945,
-            "ts": 1785395102665
         }
     ],
-    "next_judge_ms": 1785663005265,
+    "next_judge_ms": 1785666703183,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1012,
-        "base_rate": 0.1097,
-        "brier_raw": 0.2284,
-        "brier_base_rate": 0.0977,
-        "brier_calibrated_oos": 0.1714,
-        "brier_calibrated_oos_n": 296,
+        "resolved_n": 1017,
+        "base_rate": 0.1131,
+        "brier_raw": 0.2287,
+        "brier_base_rate": 0.1003,
+        "brier_calibrated_oos": 0.1802,
+        "brier_calibrated_oos_n": 301,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
