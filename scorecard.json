@@ -1,19 +1,19 @@
 {
-    "resolved": 1109,
-    "open": 4653,
-    "due": 368,
-    "next_due_ms": 1785729805851,
-    "unresolvable": 271,
+    "resolved": 1114,
+    "open": 4671,
+    "due": 367,
+    "next_due_ms": 1785733859465,
+    "unresolvable": 273,
     "brier": 0.222,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
-            "resolved": 615,
+            "resolved": 619,
             "brier": 0.218,
             "hit_rate": 0.66
         },
         "week": {
-            "resolved": 494,
+            "resolved": 495,
             "brier": 0.226,
             "hit_rate": 0.62
         }
@@ -27,19 +27,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 342,
+            "n": 343,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 340,
+            "n": 343,
             "avg_predicted": 0.5,
             "observed": 0.15
         },
         {
             "bin": "60\u201380%",
-            "n": 255,
+            "n": 256,
             "avg_predicted": 0.68,
             "observed": 0.34
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1108,
+            "resolved": 1113,
             "brier": 0.258
         },
         "Economist": {
-            "resolved": 1106,
+            "resolved": 1111,
             "brier": 0.265
         },
         "Naturalist": {
-            "resolved": 1108,
-            "brier": 0.272
+            "resolved": 1113,
+            "brier": 0.271
         },
         "Skeptic": {
-            "resolved": 1106,
-            "brier": 0.187
+            "resolved": 1111,
+            "brier": 0.188
         }
     },
     "models": {
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 1606,
+            "resolved": 1626,
             "brier": 0.187,
-            "hit_rate": 0.724,
-            "rock_hit_rate": 0.694
+            "hit_rate": 0.723,
+            "rock_hit_rate": 0.692
         },
         "claude-opus-5 (headline)": {
-            "resolved": 204,
-            "brier": 0.28,
-            "hit_rate": 0.564,
-            "rock_hit_rate": 0.446
+            "resolved": 208,
+            "brier": 0.281,
+            "hit_rate": 0.562,
+            "rock_hit_rate": 0.447
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,61 @@
         }
     },
     "recent": [
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.55,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot (S4) shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the stated 30% below threshold.",
+            "resolved_ms": 1785733055803,
+            "ts": 1785476943792
+        },
+        {
+            "statement": "Texas (ERCOT) grid demand stays more than 5% above its 4-week same-hour baseline during afternoon peak hours",
+            "horizon": "24h",
+            "probability": 0.51,
+            "location": "Texas, United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal addresses ERCOT demand or Texas grid conditions at all, so nothing shows the forecast peak-hour demand exceedance occurred within the closed window.",
+            "resolved_ms": 1785733051522,
+            "ts": 1785474870377
+        },
+        {
+            "statement": "Brent crude settles above $85/bbl at least once in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.39,
+            "location": "North Sea / global oil market",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only crude price signal shows WTI settling at $79.77/bbl (-5.79%), implying Brent well below $85/bbl, and no signal shows a Brent settlement above $85.",
+            "resolved_ms": 1785733048120,
+            "ts": 1785474870377
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at or below 15 per day (vs 21 30-day average) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.63,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "IMF PortWatch shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast's 15-transit threshold.",
+            "resolved_ms": 1785733045108,
+            "ts": 1785474870377
+        },
+        {
+            "statement": "Natural gas storage injections will miss expectations in the July 30 EIA report",
+            "horizon": "week",
+            "probability": 0.5,
+            "location": "Henry Hub, Louisiana",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports the July 30 EIA storage injection figure or any comparison to expectations; the only storage-report signals reference a future August 6 release and a price quote, so nothing shows the forecast event occurred.",
+            "resolved_ms": 1785733038543,
+            "ts": 1784956278613
+        },
         {
             "statement": "Strait of Hormuz daily ship transits remain at or below 15 per day (vs 21 30-day average) in the next IMF PortWatch update",
             "horizon": "24h",
@@ -171,76 +226,21 @@
             "evidence": "S2 reports Russian missile attacks on Kyiv killing at least nine, showing Russian strikes hit and damaged civilian areas of the Ukrainian capital within the forecast window.",
             "resolved_ms": 1785725718433,
             "ts": 1785468791967
-        },
-        {
-            "statement": "Niger's national internet connectivity remains degraded or blacked out with no full restoration announced",
-            "horizon": "24h",
-            "probability": 0.25,
-            "location": "Niger",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal concerns a national internet blackout in Syria, with no signal reporting on Niger's connectivity status during the window.",
-            "resolved_ms": 1785725710565,
-            "ts": 1785468791967
-        },
-        {
-            "statement": "Bab el-Mandeb daily ship transits remain below 30 daily transits, staying at least 20% under their 30-day average of 34",
-            "horizon": "24h",
-            "probability": 0.33,
-            "location": "Bab el-Mandeb Strait",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Bab el-Mandeb recorded 20 daily transits, 42% below its 30-day average of 34, satisfying both the sub-30 level and the \u226520% shortfall thresholds.",
-            "resolved_ms": 1785725706354,
-            "ts": 1785468791967
-        },
-        {
-            "statement": "Zaporizhzhia NPP will experience a 24-hour shutdown due to intensified shelling",
-            "horizon": "week",
-            "probability": 0.25,
-            "location": "Zaporizhzhia NPP",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Zaporizhzhia NPP or any 24-hour shutdown due to shelling; only generic Ukraine war and unrelated outage signals appear, so an event of that magnitude would have been captured.",
-            "resolved_ms": 1785725702433,
-            "ts": 1784950335244
-        },
-        {
-            "statement": "Kerch Strait ship transits will drop to 0 due to intensified Russian-Ukrainian naval clashes",
-            "horizon": "week",
-            "probability": 0.22,
-            "location": "Kerch Strait",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal addresses Kerch Strait transits at all; the only data concern Lombok and Mindoro Straits, so nothing shows Kerch transits dropping to zero within the closed window.",
-            "resolved_ms": 1785725698972,
-            "ts": 1784950335244
-        },
-        {
-            "statement": "ERCOT Texas grid demand again exceeds 10% above its 4-week same-hour baseline during afternoon peak hours",
-            "horizon": "24h",
-            "probability": 0.37,
-            "location": "Texas, United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal addresses ERCOT Texas grid demand at all; the only signals concern North Korean IT workers and internet outages in Syria and Tuvalu, so nothing shows the forecast peak-demand exceedance occurred within the closed window.",
-            "resolved_ms": 1785722025399,
-            "ts": 1785466764999
         }
     ],
-    "next_judge_ms": 1785732971158,
+    "next_judge_ms": 1785736663497,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1109,
-        "base_rate": 0.1569,
-        "brier_raw": 0.2217,
-        "brier_base_rate": 0.1323,
-        "brier_calibrated_oos": 0.2626,
-        "brier_calibrated_oos_n": 393,
+        "resolved_n": 1114,
+        "base_rate": 0.158,
+        "brier_raw": 0.2216,
+        "brier_base_rate": 0.133,
+        "brier_calibrated_oos": 0.2635,
+        "brier_calibrated_oos_n": 398,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
