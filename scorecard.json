@@ -1,19 +1,19 @@
 {
-    "resolved": 1103,
-    "open": 4648,
-    "due": 372,
-    "next_due_ms": 1785727794171,
-    "unresolvable": 270,
-    "brier": 0.221,
+    "resolved": 1109,
+    "open": 4653,
+    "due": 368,
+    "next_due_ms": 1785729805851,
+    "unresolvable": 271,
+    "brier": 0.222,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
-            "resolved": 611,
+            "resolved": 615,
             "brier": 0.218,
             "hit_rate": 0.66
         },
         "week": {
-            "resolved": 492,
+            "resolved": 494,
             "brier": 0.226,
             "hit_rate": 0.62
         }
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 337,
+            "n": 340,
             "avg_predicted": 0.5,
             "observed": 0.15
         },
         {
             "bin": "60\u201380%",
-            "n": 252,
+            "n": 255,
             "avg_predicted": 0.68,
             "observed": 0.34
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1102,
+            "resolved": 1108,
             "brier": 0.258
         },
         "Economist": {
-            "resolved": 1100,
+            "resolved": 1106,
             "brier": 0.265
         },
         "Naturalist": {
-            "resolved": 1102,
-            "brier": 0.271
+            "resolved": 1108,
+            "brier": 0.272
         },
         "Skeptic": {
-            "resolved": 1100,
+            "resolved": 1106,
             "brier": 0.187
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 1582,
-            "brier": 0.185,
-            "hit_rate": 0.728,
+            "resolved": 1606,
+            "brier": 0.187,
+            "hit_rate": 0.724,
             "rock_hit_rate": 0.694
         },
         "claude-opus-5 (headline)": {
-            "resolved": 200,
-            "brier": 0.279,
-            "hit_rate": 0.565,
-            "rock_hit_rate": 0.445
+            "resolved": 204,
+            "brier": 0.28,
+            "hit_rate": 0.564,
+            "rock_hit_rate": 0.446
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,72 @@
         }
     },
     "recent": [
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at or below 15 per day (vs 21 30-day average) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.57,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
+            "resolved_ms": 1785729371138,
+            "ts": 1785472823697
+        },
+        {
+            "statement": "Kerch Strait ship transits will drop to 1/day (73% below 30-day average) due to intensified Russian-Ukrainian missile exchanges",
+            "horizon": "week",
+            "probability": 0.57,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal reports Kerch Strait transit volumes at all \u2014 the only chokepoint transit data (S5\u2013S8) concern Lombok, Windward, Yucatan and Mindoro \u2014 so the claimed drop to 1/day is unsupported after the window closed.",
+            "resolved_ms": 1785729366950,
+            "ts": 1784954306821
+        },
+        {
+            "statement": "New reported airstrikes or missile/drone attacks involving Iran-aligned militias in Iraq",
+            "horizon": "24h",
+            "probability": 0.76,
+            "location": "Iraq",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal concerns M23 rebels in eastern DRC and says nothing about airstrikes or missile/drone attacks involving Iran-aligned militias in Iraq during the window.",
+            "resolved_ms": 1785729361883,
+            "ts": 1785470810896
+        },
+        {
+            "statement": "Brent crude settles above $85/bbl",
+            "horizon": "24h",
+            "probability": 0.6,
+            "location": "North Sea / global oil market",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only price signal, S8, shows WTI at $80.04/bbl (-5.47%), implying Brent well below the $85 threshold, and no signal shows Brent settling above $85.",
+            "resolved_ms": 1785729358436,
+            "ts": 1785470810896
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.72,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S2, archived during the forecast window, reports Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, exceeding the stated 30% shortfall threshold (corroborated by the current snapshot S4).",
+            "resolved_ms": 1785729354489,
+            "ts": 1785470810896
+        },
+        {
+            "statement": "WTI Crude Oil price will break above $95/bbl (current: $90.47) due to geopolitical risk premiums",
+            "horizon": "week",
+            "probability": 0.44,
+            "location": "Global Energy Markets",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only WTI price signal shows crude at $80.04/bbl (-5.47%), far below the forecast $95/bbl threshold, and no signal indicates any break above $95 during the window.",
+            "resolved_ms": 1785729347776,
+            "ts": 1784952316611
+        },
         {
             "statement": "Russian strikes or drone attacks damage Ukrainian energy or civilian infrastructure, reported by Ukrainian authorities",
             "horizon": "24h",
@@ -160,87 +226,21 @@
             "evidence": "No signal addresses ERCOT Texas grid demand at all; the only signals concern North Korean IT workers and internet outages in Syria and Tuvalu, so nothing shows the forecast peak-demand exceedance occurred within the closed window.",
             "resolved_ms": 1785722025399,
             "ts": 1785466764999
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain below 15 (more than 25% under the 21-transit 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.71,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 21-transit 30-day average, meeting both the sub-15 and >25%-below thresholds.",
-            "resolved_ms": 1785722015193,
-            "ts": 1785466764999
-        },
-        {
-            "statement": "Brent crude closes above $84/bbl despite the current pullback, with no move below $75",
-            "horizon": "24h",
-            "probability": 0.55,
-            "location": "North Sea / global oil market",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only price signal shows WTI crude at $80.33/bbl down 5.13%, implying Brent near or below $84 with no signal showing Brent closing above $84 during the window.",
-            "resolved_ms": 1785722004580,
-            "ts": 1785464704625
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at or below 15 per day (vs 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
-            "resolved_ms": 1785721998694,
-            "ts": 1785464704625
-        },
-        {
-            "statement": "Hurricane Genevieve remains over open Pacific water and causes no mainland landfall or fatalities",
-            "horizon": "24h",
-            "probability": 0.7,
-            "location": "Eastern Pacific (Hurricane Genevieve)",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S2 places Genevieve-26 at 24.8N, 139.5W in the open Eastern Pacific with a green alert and 0 population affected by Category 1 or higher winds, consistent with no mainland landfall or fatalities.",
-            "resolved_ms": 1785718212412,
-            "ts": 1785462672194
-        },
-        {
-            "statement": "Israeli or U.S. strikes reported on targets inside Iran or Iran-aligned militias in Iraq/Syria within 24 hours",
-            "horizon": "24h",
-            "probability": 0.36,
-            "location": "Iraq/Iran border region",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal describes Saudi Arabian strikes in Iraq, not Israeli or U.S. strikes on Iran or Iran-aligned militias, so no admissible signal shows the forecast event occurred within the window.",
-            "resolved_ms": 1785718207111,
-            "ts": 1785462672194
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at or below 15 per day (well under the 21/day 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15 per day.",
-            "resolved_ms": 1785718202910,
-            "ts": 1785462672194
         }
     ],
-    "next_judge_ms": 1785729318453,
+    "next_judge_ms": 1785732971158,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1103,
-        "base_rate": 0.1559,
-        "brier_raw": 0.2214,
-        "brier_base_rate": 0.1316,
-        "brier_calibrated_oos": 0.2622,
-        "brier_calibrated_oos_n": 387,
+        "resolved_n": 1109,
+        "base_rate": 0.1569,
+        "brier_raw": 0.2217,
+        "brier_base_rate": 0.1323,
+        "brier_calibrated_oos": 0.2626,
+        "brier_calibrated_oos_n": 393,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
