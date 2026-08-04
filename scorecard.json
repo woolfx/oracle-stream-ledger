@@ -1,15 +1,15 @@
 {
-    "resolved": 1215,
-    "open": 5003,
-    "due": 367,
-    "next_due_ms": 1785802140789,
+    "resolved": 1219,
+    "open": 5023,
+    "due": 372,
+    "next_due_ms": 1785806130430,
     "unresolvable": 278,
     "brier": 0.221,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
-            "resolved": 720,
-            "brier": 0.218,
+            "resolved": 724,
+            "brier": 0.217,
             "hit_rate": 0.65
         },
         "week": {
@@ -27,19 +27,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 347,
+            "n": 348,
             "avg_predicted": 0.3,
             "observed": 0.05
         },
         {
             "bin": "40\u201360%",
-            "n": 389,
-            "avg_predicted": 0.5,
+            "n": 391,
+            "avg_predicted": 0.51,
             "observed": 0.17
         },
         {
             "bin": "60\u201380%",
-            "n": 306,
+            "n": 307,
             "avg_predicted": 0.68,
             "observed": 0.41
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1214,
+            "resolved": 1218,
             "brier": 0.257
         },
         "Economist": {
-            "resolved": 1212,
-            "brier": 0.262
+            "resolved": 1216,
+            "brier": 0.261
         },
         "Naturalist": {
-            "resolved": 1214,
+            "resolved": 1218,
             "brier": 0.268
         },
         "Skeptic": {
-            "resolved": 1212,
+            "resolved": 1216,
             "brier": 0.19
         }
     },
@@ -76,15 +76,15 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2030,
-            "brier": 0.196,
-            "hit_rate": 0.692,
-            "rock_hit_rate": 0.651
+            "resolved": 2046,
+            "brier": 0.195,
+            "hit_rate": 0.693,
+            "rock_hit_rate": 0.65
         },
         "claude-opus-5 (headline)": {
-            "resolved": 309,
+            "resolved": 313,
             "brier": 0.293,
-            "hit_rate": 0.557,
+            "hit_rate": 0.556,
             "rock_hit_rate": 0.46
         },
         "qwen3:14b (headline)": {
@@ -95,6 +95,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "Strait of Hormuz daily transit counts remain at least 30% below their 30-day average in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.59,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the stated 30% below threshold.",
+            "resolved_ms": 1785803803054,
+            "ts": 1785551746638
+        },
+        {
+            "statement": "WTI front-month crude settles above $85/bbl at least once in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.35,
+            "location": "Cushing, Oklahoma / NYMEX",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only crude price signal shows Brent at $84.22/bbl, and since WTI trades at a discount to Brent, no signal indicates a WTI settlement above $85/bbl during the window.",
+            "resolved_ms": 1785803798006,
+            "ts": 1785551746638
+        },
+        {
+            "statement": "Strait of Hormuz daily ship transits remain below 15 (well under the 21 30-day average) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.71,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, satisfying the below-15 threshold.",
+            "resolved_ms": 1785803791355,
+            "ts": 1785549762667
+        },
+        {
+            "statement": "Brent crude settles above $90/bbl at least once in the next 24 hours as Iran-war escalation and Hormuz transit collapse keep a war premium in the market",
+            "horizon": "24h",
+            "probability": 0.46,
+            "location": "North Sea / global crude benchmark",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current Brent quote stands at $84.22/bbl, well below the $90 threshold, and no signal shows any settle above $90 during the window.",
+            "resolved_ms": 1785803787733,
+            "ts": 1785549762667
+        },
         {
             "statement": "Energy equities (XLE) outperform the S&P 500 on the next trading session",
             "horizon": "24h",
@@ -182,65 +226,21 @@
             "evidence": "The current Brent Crude snapshot shows $83.58/bbl (-0.23%), well below the $88 threshold, and no signal shows any settle above $88 during the window.",
             "resolved_ms": 1785796170904,
             "ts": 1785543770771
-        },
-        {
-            "statement": "New Israeli, US or allied strikes reported on Iranian or Iran-aligned militia targets in Iraq, Iran, Yemen or Syria",
-            "horizon": "24h",
-            "probability": 0.5,
-            "location": "Iraq / Iran",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal in the window reports any Israeli, US or allied strike on Iranian or Iran-aligned targets in Iraq, Iran, Yemen or Syria, and such strikes would almost certainly have been captured.",
-            "resolved_ms": 1785796167304,
-            "ts": 1785541727634
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl",
-            "horizon": "24h",
-            "probability": 0.62,
-            "location": "North Sea / global oil market",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent Crude is quoted at $83.58/bbl, well below the $88/bbl threshold, so the forecast did not come true.",
-            "resolved_ms": 1785796162943,
-            "ts": 1785541727634
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.74,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the stated 30% shortfall threshold.",
-            "resolved_ms": 1785796160660,
-            "ts": 1785541727634
-        },
-        {
-            "statement": "ERCOT issues a conservation appeal or sets a new peak-demand record as Texas demand stays above its 4-week baseline",
-            "horizon": "24h",
-            "probability": 0.42,
-            "location": "Texas, ERCOT",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal records any ERCOT conservation appeal or new peak-demand record during the window, an event that would certainly have been captured.",
-            "resolved_ms": 1785792529732,
-            "ts": 1785539736707
         }
     ],
-    "next_judge_ms": 1785803667099,
+    "next_judge_ms": 1785807403079,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1215,
-        "base_rate": 0.1877,
-        "brier_raw": 0.2213,
-        "brier_base_rate": 0.1524,
-        "brier_calibrated_oos": 0.2976,
-        "brier_calibrated_oos_n": 499,
+        "resolved_n": 1219,
+        "base_rate": 0.1887,
+        "brier_raw": 0.2211,
+        "brier_base_rate": 0.1531,
+        "brier_calibrated_oos": 0.2985,
+        "brier_calibrated_oos_n": 503,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
