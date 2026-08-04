@@ -1,14 +1,14 @@
 {
-    "resolved": 1230,
-    "open": 5067,
-    "due": 379,
-    "next_due_ms": 1785812976573,
+    "resolved": 1235,
+    "open": 5087,
+    "due": 388,
+    "next_due_ms": 1785816360580,
     "unresolvable": 280,
     "brier": 0.221,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
-            "resolved": 735,
+            "resolved": 740,
             "brier": 0.218,
             "hit_rate": 0.65
         },
@@ -27,19 +27,19 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 348,
+            "n": 349,
             "avg_predicted": 0.3,
-            "observed": 0.05
+            "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 396,
+            "n": 397,
             "avg_predicted": 0.51,
             "observed": 0.17
         },
         {
             "bin": "60\u201380%",
-            "n": 313,
+            "n": 316,
             "avg_predicted": 0.68,
             "observed": 0.42
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1229,
+            "resolved": 1234,
             "brier": 0.257
         },
         "Economist": {
-            "resolved": 1227,
+            "resolved": 1232,
             "brier": 0.261
         },
         "Naturalist": {
-            "resolved": 1229,
+            "resolved": 1234,
             "brier": 0.268
         },
         "Skeptic": {
-            "resolved": 1227,
+            "resolved": 1232,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2090,
+            "resolved": 2110,
             "brier": 0.197,
-            "hit_rate": 0.69,
-            "rock_hit_rate": 0.648
+            "hit_rate": 0.691,
+            "rock_hit_rate": 0.644
         },
         "claude-opus-5 (headline)": {
-            "resolved": 324,
-            "brier": 0.296,
-            "hit_rate": 0.552,
-            "rock_hit_rate": 0.463
+            "resolved": 329,
+            "brier": 0.294,
+            "hit_rate": 0.556,
+            "rock_hit_rate": 0.459
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,61 @@
         }
     },
     "recent": [
+        {
+            "statement": "Brent crude settles above $88/bbl on at least one day in the next 24 hours, holding the escalation premium from the Ukraine strike on an Iranian ship",
+            "horizon": "24h",
+            "probability": 0.5,
+            "location": "North Sea Brent benchmark",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only Brent price signal shows Brent Crude at 84.8 $/bbl, well below the $88/bbl threshold, and no signal shows any settlement above $88 during the window.",
+            "resolved_ms": 1785814841328,
+            "ts": 1785563691185
+        },
+        {
+            "statement": "Russia launches another missile/drone barrage on Ukrainian cities causing at least one civilian death",
+            "horizon": "24h",
+            "probability": 0.7,
+            "location": "Kyiv, Ukraine",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S2, archived during the forecast window, states Russian missile attacks killed at least nine people in Kyiv, satisfying the barrage-with-at-least-one-death threshold.",
+            "resolved_ms": 1785814837974,
+            "ts": 1785561685617
+        },
+        {
+            "statement": "Bab el-Mandeb daily transits remain at or below 25 per day (vs 34 30-day average) with no return to the average",
+            "horizon": "24h",
+            "probability": 0.65,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current snapshot shows Bab el-Mandeb at 20 daily transits, 42% below its 30-day average of 34, satisfying the forecast of \u226425 per day with no return to average.",
+            "resolved_ms": 1785814832805,
+            "ts": 1785561685617
+        },
+        {
+            "statement": "Bab el-Mandeb daily transits remain at or below 25 (no recovery toward the 34 average) in the next reported IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.62,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current IMF PortWatch snapshot (S4) reports Bab el-Mandeb at 20 daily transits, 42% below the 34 average \u2014 at or below the 25 threshold with no recovery.",
+            "resolved_ms": 1785814823035,
+            "ts": 1785559700415
+        },
+        {
+            "statement": "Russia launches another missile/drone strike on Ukrainian cities causing civilian casualties within 24 hours",
+            "horizon": "24h",
+            "probability": 0.35,
+            "location": "Kyiv, Ukraine",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S2, archived during the forecast window, states Russian missile attacks killed at least nine people in Kyiv, matching the predicted strike causing civilian casualties.",
+            "resolved_ms": 1785814812624,
+            "ts": 1785559700415
+        },
         {
             "statement": "Brent crude settles above $88/bbl on at least one day in the next 24 hours, holding near the $90 area amid Hormuz and Bab el-Mandeb transit collapse",
             "horizon": "24h",
@@ -171,76 +226,21 @@
             "evidence": "The current snapshot shows Brent crude at $84.23/bbl, well below the $88/bbl threshold, and no signal indicates any settle above $88 during the window.",
             "resolved_ms": 1785807487196,
             "ts": 1785555748439
-        },
-        {
-            "statement": "Bab el-Mandeb records another day with fewer than 25 daily transits and no meaningful recovery",
-            "horizon": "24h",
-            "probability": 0.68,
-            "location": "Bab el-Mandeb Strait",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S2 reports Bab el-Mandeb at 20 daily transits, 42% below its 30-day average of 34, satisfying both the sub-25 transit threshold and the absence of recovery.",
-            "resolved_ms": 1785807483935,
-            "ts": 1785553747447
-        },
-        {
-            "statement": "Strait of Hormuz daily transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.63,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the 30% shortfall threshold.",
-            "resolved_ms": 1785807479102,
-            "ts": 1785553747447
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours as Iran-war headlines persist",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "North Sea / global crude benchmark",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current snapshot shows Brent crude at $84.23/bbl, well below the $88 threshold, and no signal indicates any settlement above $88 during the window.",
-            "resolved_ms": 1785807472915,
-            "ts": 1785553747447
-        },
-        {
-            "statement": "New reported strikes or drone/missile attacks involving Iran-aligned militias occur in Iraq or the Gulf within 24 hours",
-            "horizon": "24h",
-            "probability": 0.64,
-            "location": "Iraq",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal concerns M23 rebel activity in eastern DRC and says nothing about strikes or drone/missile attacks involving Iran-aligned militias in Iraq or the Gulf, so no signal shows the forecast event occurred.",
-            "resolved_ms": 1785807469829,
-            "ts": 1785551746638
-        },
-        {
-            "statement": "Strait of Hormuz daily transit counts remain at least 30% below their 30-day average in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.59,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the stated 30% below threshold.",
-            "resolved_ms": 1785803803054,
-            "ts": 1785551746638
         }
     ],
-    "next_judge_ms": 1785814744415,
+    "next_judge_ms": 1785818441349,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1230,
-        "base_rate": 0.1911,
-        "brier_raw": 0.2212,
-        "brier_base_rate": 0.1546,
-        "brier_calibrated_oos": 0.3003,
-        "brier_calibrated_oos_n": 514,
+        "resolved_n": 1235,
+        "base_rate": 0.1935,
+        "brier_raw": 0.2211,
+        "brier_base_rate": 0.1561,
+        "brier_calibrated_oos": 0.3039,
+        "brier_calibrated_oos_n": 519,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
