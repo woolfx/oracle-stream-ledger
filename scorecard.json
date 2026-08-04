@@ -1,15 +1,15 @@
 {
-    "resolved": 1235,
-    "open": 5087,
-    "due": 388,
-    "next_due_ms": 1785816360580,
+    "resolved": 1239,
+    "open": 5097,
+    "due": 390,
+    "next_due_ms": 1785820150654,
     "unresolvable": 280,
     "brier": 0.221,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
-            "resolved": 740,
-            "brier": 0.218,
+            "resolved": 744,
+            "brier": 0.217,
             "hit_rate": 0.65
         },
         "week": {
@@ -33,15 +33,15 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 397,
+            "n": 398,
             "avg_predicted": 0.51,
             "observed": 0.17
         },
         {
             "bin": "60\u201380%",
-            "n": 316,
+            "n": 319,
             "avg_predicted": 0.68,
-            "observed": 0.42
+            "observed": 0.43
         },
         {
             "bin": "80\u2013100%",
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1234,
-            "brier": 0.257
+            "resolved": 1238,
+            "brier": 0.256
         },
         "Economist": {
-            "resolved": 1232,
-            "brier": 0.261
+            "resolved": 1236,
+            "brier": 0.26
         },
         "Naturalist": {
-            "resolved": 1234,
-            "brier": 0.268
+            "resolved": 1238,
+            "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1232,
+            "resolved": 1236,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2110,
-            "brier": 0.197,
-            "hit_rate": 0.691,
-            "rock_hit_rate": 0.644
+            "resolved": 2126,
+            "brier": 0.196,
+            "hit_rate": 0.692,
+            "rock_hit_rate": 0.639
         },
         "claude-opus-5 (headline)": {
-            "resolved": 329,
-            "brier": 0.294,
-            "hit_rate": 0.556,
-            "rock_hit_rate": 0.459
+            "resolved": 333,
+            "brier": 0.29,
+            "hit_rate": 0.562,
+            "rock_hit_rate": 0.453
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,50 @@
         }
     },
     "recent": [
+        {
+            "statement": "Russia launches another missile/drone strike on Ukrainian urban targets causing civilian casualties",
+            "horizon": "24h",
+            "probability": 0.71,
+            "location": "Kyiv, Ukraine",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1, archived during the forecast window, states Russian missile attacks killed at least nine people in Kyiv, matching the forecast of a strike on Ukrainian urban targets causing civilian casualties.",
+            "resolved_ms": 1785818574542,
+            "ts": 1785565696892
+        },
+        {
+            "statement": "Bab el-Mandeb daily transits remain at or below 25/day (vs 34 30-day average) in the next PortWatch update",
+            "horizon": "24h",
+            "probability": 0.75,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot shows Bab el-Mandeb at 20 daily ship transits, 42% below its 30-day average of 34, which is at or below the forecast threshold of 25/day.",
+            "resolved_ms": 1785818569188,
+            "ts": 1785565696892
+        },
+        {
+            "statement": "Bab el-Mandeb daily transits remain at or below 25 (well under the 34 30-day average) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.69,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot for Bab el-Mandeb shows 20 daily transits (42% below the 34 30-day average), at or below the forecast threshold of 25.",
+            "resolved_ms": 1785818556938,
+            "ts": 1785563691185
+        },
+        {
+            "statement": "Russia launches another missile/drone barrage on Ukrainian cities causing at least one civilian death",
+            "horizon": "24h",
+            "probability": 0.49,
+            "location": "Kyiv, Ukraine",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1, archived during the forecast window, states Russian missile attacks killed at least nine people in Kyiv, satisfying the barrage-with-at-least-one-death threshold.",
+            "resolved_ms": 1785818549324,
+            "ts": 1785563691185
+        },
         {
             "statement": "Brent crude settles above $88/bbl on at least one day in the next 24 hours, holding the escalation premium from the Ukraine strike on an Iranian ship",
             "horizon": "24h",
@@ -182,65 +226,21 @@
             "evidence": "S2, archived within the forecast window, states Russian missile attacks killed at least nine people in Kyiv, satisfying the at-least-one-death threshold for a strike on a Ukrainian city.",
             "resolved_ms": 1785811136726,
             "ts": 1785557727223
-        },
-        {
-            "statement": "WTI front-month crude settles above $84/bbl, holding its gains after the 7.2M bbl US crude stock draw",
-            "horizon": "24h",
-            "probability": 0.68,
-            "location": "Cushing, Oklahoma",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only crude price signal in the window is Brent at $84.62/bbl, which normally trades at a premium to WTI, and no signal shows a WTI front-month settlement above $84/bbl.",
-            "resolved_ms": 1785811131577,
-            "ts": 1785557727223
-        },
-        {
-            "statement": "New Israeli, US or Saudi strikes reported on Iranian or Iran-aligned militia targets in Iraq, Iran or Yemen within 24 hours",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "Iraq / Iran",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No captured signal reports any Israeli, US or Saudi strikes on Iranian or Iran-aligned targets during the 24-hour window, and strikes of that nature would have been captured.",
-            "resolved_ms": 1785811125915,
-            "ts": 1785555748439
-        },
-        {
-            "statement": "Strait of Hormuz daily transits stay below 15 (vs 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.66,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot reports Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is below the forecast threshold of 15.",
-            "resolved_ms": 1785811119199,
-            "ts": 1785555748439
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours as the Iran war premium holds",
-            "horizon": "24h",
-            "probability": 0.56,
-            "location": "North Sea / global crude benchmark",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current snapshot shows Brent crude at $84.23/bbl, well below the $88/bbl threshold, and no signal indicates any settle above $88 during the window.",
-            "resolved_ms": 1785807487196,
-            "ts": 1785555748439
         }
     ],
-    "next_judge_ms": 1785818441349,
+    "next_judge_ms": 1785822174563,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1235,
-        "base_rate": 0.1935,
-        "brier_raw": 0.2211,
-        "brier_base_rate": 0.1561,
-        "brier_calibrated_oos": 0.3039,
-        "brier_calibrated_oos_n": 519,
+        "resolved_n": 1239,
+        "base_rate": 0.1961,
+        "brier_raw": 0.2208,
+        "brier_base_rate": 0.1577,
+        "brier_calibrated_oos": 0.3079,
+        "brier_calibrated_oos_n": 523,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
