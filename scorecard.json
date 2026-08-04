@@ -1,15 +1,15 @@
 {
-    "resolved": 1219,
-    "open": 5023,
-    "due": 372,
-    "next_due_ms": 1785806130430,
-    "unresolvable": 278,
+    "resolved": 1224,
+    "open": 5044,
+    "due": 378,
+    "next_due_ms": 1785810155784,
+    "unresolvable": 279,
     "brier": 0.221,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
-            "resolved": 724,
-            "brier": 0.217,
+            "resolved": 729,
+            "brier": 0.218,
             "hit_rate": 0.65
         },
         "week": {
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 391,
+            "n": 393,
             "avg_predicted": 0.51,
             "observed": 0.17
         },
         {
             "bin": "60\u201380%",
-            "n": 307,
+            "n": 310,
             "avg_predicted": 0.68,
             "observed": 0.41
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1218,
+            "resolved": 1223,
             "brier": 0.257
         },
         "Economist": {
-            "resolved": 1216,
+            "resolved": 1221,
             "brier": 0.261
         },
         "Naturalist": {
-            "resolved": 1218,
+            "resolved": 1223,
             "brier": 0.268
         },
         "Skeptic": {
-            "resolved": 1216,
+            "resolved": 1221,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2046,
-            "brier": 0.195,
-            "hit_rate": 0.693,
+            "resolved": 2066,
+            "brier": 0.196,
+            "hit_rate": 0.691,
             "rock_hit_rate": 0.65
         },
         "claude-opus-5 (headline)": {
-            "resolved": 313,
-            "brier": 0.293,
-            "hit_rate": 0.556,
-            "rock_hit_rate": 0.46
+            "resolved": 318,
+            "brier": 0.295,
+            "hit_rate": 0.553,
+            "rock_hit_rate": 0.462
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,61 @@
         }
     },
     "recent": [
+        {
+            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours as the Iran war premium holds",
+            "horizon": "24h",
+            "probability": 0.56,
+            "location": "North Sea / global crude benchmark",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current snapshot shows Brent crude at $84.23/bbl, well below the $88/bbl threshold, and no signal indicates any settle above $88 during the window.",
+            "resolved_ms": 1785807487196,
+            "ts": 1785555748439
+        },
+        {
+            "statement": "Bab el-Mandeb records another day with fewer than 25 daily transits and no meaningful recovery",
+            "horizon": "24h",
+            "probability": 0.68,
+            "location": "Bab el-Mandeb Strait",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S2 reports Bab el-Mandeb at 20 daily transits, 42% below its 30-day average of 34, satisfying both the sub-25 transit threshold and the absence of recovery.",
+            "resolved_ms": 1785807483935,
+            "ts": 1785553747447
+        },
+        {
+            "statement": "Strait of Hormuz daily transits remain at least 30% below their 30-day average (21) in the next IMF PortWatch update",
+            "horizon": "24h",
+            "probability": 0.63,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily transits, 52% below its 30-day average of 21, exceeding the 30% shortfall threshold.",
+            "resolved_ms": 1785807479102,
+            "ts": 1785553747447
+        },
+        {
+            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours as Iran-war headlines persist",
+            "horizon": "24h",
+            "probability": 0.52,
+            "location": "North Sea / global crude benchmark",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The current snapshot shows Brent crude at $84.23/bbl, well below the $88 threshold, and no signal indicates any settlement above $88 during the window.",
+            "resolved_ms": 1785807472915,
+            "ts": 1785553747447
+        },
+        {
+            "statement": "New reported strikes or drone/missile attacks involving Iran-aligned militias occur in Iraq or the Gulf within 24 hours",
+            "horizon": "24h",
+            "probability": 0.64,
+            "location": "Iraq",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal concerns M23 rebel activity in eastern DRC and says nothing about strikes or drone/missile attacks involving Iran-aligned militias in Iraq or the Gulf, so no signal shows the forecast event occurred.",
+            "resolved_ms": 1785807469829,
+            "ts": 1785551746638
+        },
         {
             "statement": "Strait of Hormuz daily transit counts remain at least 30% below their 30-day average in the next IMF PortWatch update",
             "horizon": "24h",
@@ -171,76 +226,21 @@
             "evidence": "The only Brent price signal shows Brent crude at $83.54/bbl (-0.27%), well below the $88/bbl settlement threshold, with no signal showing any settle above $88 during the window.",
             "resolved_ms": 1785800058173,
             "ts": 1785547754911
-        },
-        {
-            "statement": "Strait of Hormuz daily transits remain below 15 (well under the 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.74,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot shows Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is below the forecast threshold of 15.",
-            "resolved_ms": 1785800048724,
-            "ts": 1785545748065
-        },
-        {
-            "statement": "Brent crude settles above $90/bbl at least once in the next 24 hours as Iran-war escalation headlines persist",
-            "horizon": "24h",
-            "probability": 0.49,
-            "location": "Strait of Hormuz / global crude market",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current Brent Crude quote stands at $83.54/bbl (-0.27%), far below the $90/bbl settlement threshold, and no signal shows any settle above $90 during the window.",
-            "resolved_ms": 1785800045485,
-            "ts": 1785545748065
-        },
-        {
-            "statement": "ERCOT issues a conservation appeal or grid watch/advisory as Texas demand stays above baseline",
-            "horizon": "24h",
-            "probability": 0.3,
-            "location": "Texas, United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions ERCOT, Texas grid conditions, or any conservation appeal or grid watch/advisory; the only signals concern North Korean IT workers and internet outages abroad.",
-            "resolved_ms": 1785796177732,
-            "ts": 1785543770771
-        },
-        {
-            "statement": "Strait of Hormuz daily ship transits remain at or below 15 (vs 21 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.69,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot reports Strait of Hormuz at 10 daily ship transits, 52% below its 30-day average of 21, which is at or below the forecast threshold of 15.",
-            "resolved_ms": 1785796174773,
-            "ts": 1785543770771
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl at least once in the next 24 hours as Iran-war escalation headlines persist",
-            "horizon": "24h",
-            "probability": 0.55,
-            "location": "North Sea / global oil market",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The current Brent Crude snapshot shows $83.58/bbl (-0.23%), well below the $88 threshold, and no signal shows any settle above $88 during the window.",
-            "resolved_ms": 1785796170904,
-            "ts": 1785543770771
         }
     ],
-    "next_judge_ms": 1785807403079,
+    "next_judge_ms": 1785811087218,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1219,
-        "base_rate": 0.1887,
-        "brier_raw": 0.2211,
-        "brier_base_rate": 0.1531,
-        "brier_calibrated_oos": 0.2985,
-        "brier_calibrated_oos_n": 503,
+        "resolved_n": 1224,
+        "base_rate": 0.1895,
+        "brier_raw": 0.2212,
+        "brier_base_rate": 0.1536,
+        "brier_calibrated_oos": 0.2989,
+        "brier_calibrated_oos_n": 508,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
