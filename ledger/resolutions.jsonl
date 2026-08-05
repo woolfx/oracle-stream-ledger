@@ -1696,3 +1696,10 @@
 {"evidence": "window passed with insufficient evidence", "id": "pred_f074736f4d", "kind": "resolution", "outcome": null, "resolved_ms": 1785893213206, "verdict": "unresolved"}
 {"evidence": "window passed with insufficient evidence", "id": "pred_69cf4e173b", "kind": "resolution", "outcome": null, "resolved_ms": 1785893213206, "verdict": "unresolved"}
 {"evidence": "window passed with insufficient evidence", "id": "pred_cf3be1ffa7", "kind": "resolution", "outcome": null, "resolved_ms": 1785893213206, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_04f1c7a1cb", "kind": "resolution", "outcome": null, "resolved_ms": 1785897090662, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_c28ce97a4e", "kind": "resolution", "outcome": null, "resolved_ms": 1785897090662, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_991cd7a0ca", "kind": "resolution", "outcome": null, "resolved_ms": 1785897090662, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_ffe90917af", "kind": "resolution", "outcome": null, "resolved_ms": 1785897090662, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_9a473ab0d3", "kind": "resolution", "outcome": null, "resolved_ms": 1785897090663, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_d8bc8bbb3e", "kind": "resolution", "outcome": null, "resolved_ms": 1785897090663, "verdict": "unresolved"}
+{"evidence": "No signal explicitly confirms Russian drone/missile strikes on Ukrainian energy or port infrastructure within the 24-hour window.", "id": "pred_dee4fb30f0", "judge": "qwen3:14b", "judge_search": 0, "kind": "resolution", "outcome": 0.0, "resolved_ms": 1785897199801, "verdict": "no"}

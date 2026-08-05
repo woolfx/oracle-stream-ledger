@@ -1,14 +1,14 @@
 {
-    "resolved": 1241,
-    "open": 5033,
-    "due": 522,
-    "next_due_ms": 1785896182285,
-    "unresolvable": 381,
+    "resolved": 1242,
+    "open": 5040,
+    "due": 528,
+    "next_due_ms": 1785900196467,
+    "unresolvable": 387,
     "brier": 0.221,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
-            "resolved": 746,
+            "resolved": 747,
             "brier": 0.217,
             "hit_rate": 0.65
         },
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 349,
+            "n": 350,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1240,
+            "resolved": 1241,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1238,
+            "resolved": 1239,
             "brier": 0.26
         },
         "Naturalist": {
-            "resolved": 1240,
+            "resolved": 1241,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1238,
+            "resolved": 1239,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2134,
+            "resolved": 2138,
             "brier": 0.196,
-            "hit_rate": 0.693,
-            "rock_hit_rate": 0.636
+            "hit_rate": 0.692,
+            "rock_hit_rate": 0.637
         },
         "claude-opus-5 (headline)": {
-            "resolved": 335,
-            "brier": 0.289,
-            "hit_rate": 0.564,
-            "rock_hit_rate": 0.451
+            "resolved": 336,
+            "brier": 0.29,
+            "hit_rate": 0.562,
+            "rock_hit_rate": 0.452
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Russian drone/missile strikes hit Ukrainian energy or port infrastructure, reported by Ukrainian authorities within 24 hours",
+            "horizon": "24h",
+            "probability": 0.39,
+            "location": "Ukraine",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal explicitly confirms Russian drone/missile strikes on Ukrainian energy or port infrastructure within the 24-hour window.",
+            "resolved_ms": 1785897199801,
+            "ts": 1785641394171
+        },
         {
             "statement": "Israeli strikes continue in Gaza with at least five more Palestinian fatalities reported within 24 hours",
             "horizon": "24h",
@@ -215,32 +226,21 @@
             "evidence": "S2, archived during the forecast window, states Russian missile attacks killed at least nine people in Kyiv, matching the predicted strike causing civilian casualties.",
             "resolved_ms": 1785814812624,
             "ts": 1785559700415
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl on at least one day in the next 24 hours, holding near the $90 area amid Hormuz and Bab el-Mandeb transit collapse",
-            "horizon": "24h",
-            "probability": 0.52,
-            "location": "North Sea / global crude benchmark",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Brent is quoted at 84.62 $/bbl, well below the forecast $88/bbl settlement threshold, and no signal shows any higher print during the window.",
-            "resolved_ms": 1785811144392,
-            "ts": 1785559700415
         }
     ],
-    "next_judge_ms": 1785896930091,
+    "next_judge_ms": 1785900799822,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1241,
-        "base_rate": 0.1974,
-        "brier_raw": 0.2207,
-        "brier_base_rate": 0.1584,
-        "brier_calibrated_oos": 0.3096,
-        "brier_calibrated_oos_n": 525,
+        "resolved_n": 1242,
+        "base_rate": 0.1973,
+        "brier_raw": 0.2206,
+        "brier_base_rate": 0.1583,
+        "brier_calibrated_oos": 0.309,
+        "brier_calibrated_oos_n": 526,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
