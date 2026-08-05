@@ -1,14 +1,14 @@
 {
-    "resolved": 1242,
-    "open": 5040,
-    "due": 528,
-    "next_due_ms": 1785900196467,
-    "unresolvable": 387,
-    "brier": 0.221,
+    "resolved": 1244,
+    "open": 5037,
+    "due": 532,
+    "next_due_ms": 1785904190297,
+    "unresolvable": 392,
+    "brier": 0.22,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
-            "resolved": 747,
+            "resolved": 749,
             "brier": 0.217,
             "hit_rate": 0.65
         },
@@ -27,15 +27,15 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 350,
+            "n": 351,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
         {
             "bin": "40\u201360%",
-            "n": 399,
+            "n": 400,
             "avg_predicted": 0.51,
-            "observed": 0.18
+            "observed": 0.17
         },
         {
             "bin": "60\u201380%",
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1241,
+            "resolved": 1243,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1239,
-            "brier": 0.26
+            "resolved": 1241,
+            "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1241,
+            "resolved": 1243,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1239,
+            "resolved": 1241,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2138,
+            "resolved": 2146,
             "brier": 0.196,
             "hit_rate": 0.692,
-            "rock_hit_rate": 0.637
+            "rock_hit_rate": 0.638
         },
         "claude-opus-5 (headline)": {
-            "resolved": 336,
+            "resolved": 338,
             "brier": 0.29,
-            "hit_rate": 0.562,
-            "rock_hit_rate": 0.452
+            "hit_rate": 0.559,
+            "rock_hit_rate": 0.456
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "Burundi's national internet connectivity remains degraded or blacked out for more than 24 additional hours",
+            "horizon": "24h",
+            "probability": 0.26,
+            "location": "Burundi",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal (S1) refers to Cote D'Ivoire, not Burundi, and does not mention duration exceeding 24 hours.",
+            "resolved_ms": 1785901125537,
+            "ts": 1785643405851
+        },
+        {
+            "statement": "WTI crude (CL=F) closes higher than $84.67 within the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.43,
+            "location": "Cushing / US Gulf Coast",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signal S8 states WTI Crude Oil is currently at $74.56, which is below the forecasted threshold of $84.67.",
+            "resolved_ms": 1785901100495,
+            "ts": 1785643405851
+        },
         {
             "statement": "Russian drone/missile strikes hit Ukrainian energy or port infrastructure, reported by Ukrainian authorities within 24 hours",
             "horizon": "24h",
@@ -204,43 +226,21 @@
             "evidence": "The current snapshot shows Bab el-Mandeb at 20 daily transits, 42% below its 30-day average of 34, satisfying the forecast of \u226425 per day with no return to average.",
             "resolved_ms": 1785814832805,
             "ts": 1785561685617
-        },
-        {
-            "statement": "Bab el-Mandeb daily transits remain at or below 25 (no recovery toward the 34 average) in the next reported IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.62,
-            "location": "Bab el-Mandeb Strait",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current IMF PortWatch snapshot (S4) reports Bab el-Mandeb at 20 daily transits, 42% below the 34 average \u2014 at or below the 25 threshold with no recovery.",
-            "resolved_ms": 1785814823035,
-            "ts": 1785559700415
-        },
-        {
-            "statement": "Russia launches another missile/drone strike on Ukrainian cities causing civilian casualties within 24 hours",
-            "horizon": "24h",
-            "probability": 0.35,
-            "location": "Kyiv, Ukraine",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S2, archived during the forecast window, states Russian missile attacks killed at least nine people in Kyiv, matching the predicted strike causing civilian casualties.",
-            "resolved_ms": 1785814812624,
-            "ts": 1785559700415
         }
     ],
-    "next_judge_ms": 1785900799822,
+    "next_judge_ms": 1785904783615,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1242,
-        "base_rate": 0.1973,
-        "brier_raw": 0.2206,
-        "brier_base_rate": 0.1583,
-        "brier_calibrated_oos": 0.309,
-        "brier_calibrated_oos_n": 526,
+        "resolved_n": 1244,
+        "base_rate": 0.1969,
+        "brier_raw": 0.2204,
+        "brier_base_rate": 0.1582,
+        "brier_calibrated_oos": 0.3079,
+        "brier_calibrated_oos_n": 528,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
