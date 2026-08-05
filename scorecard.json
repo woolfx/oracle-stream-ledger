@@ -1,14 +1,14 @@
 {
-    "resolved": 1239,
-    "open": 5116,
-    "due": 610,
-    "next_due_ms": 1785890185114,
-    "unresolvable": 280,
+    "resolved": 1241,
+    "open": 5024,
+    "due": 516,
+    "next_due_ms": 1785892189648,
+    "unresolvable": 377,
     "brier": 0.221,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
-            "resolved": 744,
+            "resolved": 746,
             "brier": 0.217,
             "hit_rate": 0.65
         },
@@ -33,13 +33,13 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 398,
+            "n": 399,
             "avg_predicted": 0.51,
-            "observed": 0.17
+            "observed": 0.18
         },
         {
             "bin": "60\u201380%",
-            "n": 319,
+            "n": 320,
             "avg_predicted": 0.68,
             "observed": 0.43
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1238,
+            "resolved": 1240,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1236,
+            "resolved": 1238,
             "brier": 0.26
         },
         "Naturalist": {
-            "resolved": 1238,
+            "resolved": 1240,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1236,
+            "resolved": 1238,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2126,
+            "resolved": 2134,
             "brier": 0.196,
-            "hit_rate": 0.692,
-            "rock_hit_rate": 0.639
+            "hit_rate": 0.693,
+            "rock_hit_rate": 0.636
         },
         "claude-opus-5 (headline)": {
-            "resolved": 333,
-            "brier": 0.29,
-            "hit_rate": 0.562,
-            "rock_hit_rate": 0.453
+            "resolved": 335,
+            "brier": 0.289,
+            "hit_rate": 0.564,
+            "rock_hit_rate": 0.451
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "Israeli strikes continue in Gaza with at least five more Palestinian fatalities reported within 24 hours",
+            "horizon": "24h",
+            "probability": 0.56,
+            "location": "Gaza Strip",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S1 states Israeli strikes killed seven in Gaza, meeting the forecast's threshold of at least five fatalities in the same location.",
+            "resolved_ms": 1785889489622,
+            "ts": 1785633419186
+        },
+        {
+            "statement": "Israeli strikes continue in Gaza with additional reported fatalities in the next 24 hours",
+            "horizon": "24h",
+            "probability": 0.79,
+            "location": "Gaza Strip",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S1 explicitly states Israeli strikes killed seven in Gaza, confirming additional fatalities within the forecast's 24-hour window.",
+            "resolved_ms": 1785889446202,
+            "ts": 1785631414312
+        },
         {
             "statement": "Russia launches another missile/drone strike on Ukrainian urban targets causing civilian casualties",
             "horizon": "24h",
@@ -204,43 +226,21 @@
             "evidence": "Brent is quoted at 84.62 $/bbl, well below the forecast $88/bbl settlement threshold, and no signal shows any higher print during the window.",
             "resolved_ms": 1785811144392,
             "ts": 1785559700415
-        },
-        {
-            "statement": "Bab el-Mandeb daily transits remain at least 25% below its 30-day average of 34",
-            "horizon": "24h",
-            "probability": 0.77,
-            "location": "Bab el-Mandeb Strait",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Bab el-Mandeb registered 20 daily transits, 42% below its 30-day average of 34, exceeding the forecast's 25%-below threshold.",
-            "resolved_ms": 1785811141211,
-            "ts": 1785557727223
-        },
-        {
-            "statement": "Russia launches another missile/drone strike on Ukrainian cities causing at least one civilian death",
-            "horizon": "24h",
-            "probability": 0.57,
-            "location": "Kyiv, Ukraine",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S2, archived within the forecast window, states Russian missile attacks killed at least nine people in Kyiv, satisfying the at-least-one-death threshold for a strike on a Ukrainian city.",
-            "resolved_ms": 1785811136726,
-            "ts": 1785557727223
         }
     ],
-    "next_judge_ms": null,
+    "next_judge_ms": 1785893111437,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1239,
-        "base_rate": 0.1961,
-        "brier_raw": 0.2208,
-        "brier_base_rate": 0.1577,
-        "brier_calibrated_oos": 0.3079,
-        "brier_calibrated_oos_n": 523,
+        "resolved_n": 1241,
+        "base_rate": 0.1974,
+        "brier_raw": 0.2207,
+        "brier_base_rate": 0.1584,
+        "brier_calibrated_oos": 0.3096,
+        "brier_calibrated_oos_n": 525,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
