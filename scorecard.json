@@ -1,9 +1,9 @@
 {
-    "resolved": 1246,
-    "open": 4961,
-    "due": 991,
-    "next_due_ms": 1786238219186,
-    "unresolvable": 501,
+    "resolved": 1248,
+    "open": 4972,
+    "due": 993,
+    "next_due_ms": 1786242200505,
+    "unresolvable": 504,
     "brier": 0.221,
     "hit_rate": 0.64,
     "per_horizon": {
@@ -13,7 +13,7 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 497,
+            "resolved": 499,
             "brier": 0.227,
             "hit_rate": 0.62
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 351,
+            "n": 353,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1245,
+            "resolved": 1247,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1243,
+            "resolved": 1245,
             "brier": 0.26
         },
         "Naturalist": {
-            "resolved": 1245,
+            "resolved": 1247,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1243,
+            "resolved": 1245,
             "brier": 0.19
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2154,
+            "resolved": 2162,
             "brier": 0.197,
             "hit_rate": 0.691,
-            "rock_hit_rate": 0.638
+            "rock_hit_rate": 0.639
         },
         "claude-opus-5 (headline)": {
             "resolved": 338,
@@ -95,6 +95,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "Wheat prices (WC=F) will surge 4.2% in the next week due to Black Sea grain corridor disruptions from the Ukraine war",
+            "horizon": "week",
+            "probability": 0.36,
+            "location": "Black Sea",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Wheat (CBOT) rose 1.35% (+639.75 \u00a2/bu), far below the forecasted 4.2% surge.",
+            "resolved_ms": 1786238037201,
+            "ts": 1785203704774
+        },
+        {
+            "statement": "EIA weekly petroleum report on 2026-07-29 will show a 2.1 million barrel decline in US crude inventories, pushing CL=F above $85/bbl.",
+            "horizon": "week",
+            "probability": 0.39,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms the forecasted 2.1M barrel decline in US crude inventories or CL=F exceeding $85/bbl; S10 shows Brent at $83.55 (below $85), and no signal directly reports the EIA's July 29 inventory data.",
+            "resolved_ms": 1786237986919,
+            "ts": 1785199623686
+        },
         {
             "statement": "The Strait of Hormuz will see ship transits remain below 15/day due to ongoing Houthi threats in the Red Sea",
             "horizon": "week",
@@ -204,43 +226,21 @@
             "evidence": "The current PortWatch snapshot for Bab el-Mandeb shows 20 daily transits (42% below the 34 30-day average), at or below the forecast threshold of 25.",
             "resolved_ms": 1785818556938,
             "ts": 1785563691185
-        },
-        {
-            "statement": "Russia launches another missile/drone barrage on Ukrainian cities causing at least one civilian death",
-            "horizon": "24h",
-            "probability": 0.49,
-            "location": "Kyiv, Ukraine",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1, archived during the forecast window, states Russian missile attacks killed at least nine people in Kyiv, satisfying the barrage-with-at-least-one-death threshold.",
-            "resolved_ms": 1785818549324,
-            "ts": 1785563691185
-        },
-        {
-            "statement": "Brent crude settles above $88/bbl on at least one day in the next 24 hours, holding the escalation premium from the Ukraine strike on an Iranian ship",
-            "horizon": "24h",
-            "probability": 0.5,
-            "location": "North Sea Brent benchmark",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only Brent price signal shows Brent Crude at 84.8 $/bbl, well below the $88/bbl threshold, and no signal shows any settlement above $88 during the window.",
-            "resolved_ms": 1785814841328,
-            "ts": 1785563691185
         }
     ],
-    "next_judge_ms": 1786237815946,
+    "next_judge_ms": 1786241637222,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1246,
-        "base_rate": 0.1974,
-        "brier_raw": 0.2208,
-        "brier_base_rate": 0.1585,
-        "brier_calibrated_oos": 0.3085,
-        "brier_calibrated_oos_n": 530,
+        "resolved_n": 1248,
+        "base_rate": 0.1971,
+        "brier_raw": 0.2207,
+        "brier_base_rate": 0.1583,
+        "brier_calibrated_oos": 0.3074,
+        "brier_calibrated_oos_n": 532,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
