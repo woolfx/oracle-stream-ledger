@@ -1,9 +1,9 @@
 {
-    "resolved": 1248,
-    "open": 4972,
-    "due": 993,
-    "next_due_ms": 1786242200505,
-    "unresolvable": 504,
+    "resolved": 1249,
+    "open": 4980,
+    "due": 995,
+    "next_due_ms": 1786246194171,
+    "unresolvable": 507,
     "brier": 0.221,
     "hit_rate": 0.64,
     "per_horizon": {
@@ -13,7 +13,7 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 499,
+            "resolved": 500,
             "brier": 0.227,
             "hit_rate": 0.62
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 353,
+            "n": 354,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1247,
+            "resolved": 1248,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1245,
-            "brier": 0.26
+            "resolved": 1246,
+            "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1247,
+            "resolved": 1248,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1245,
+            "resolved": 1246,
             "brier": 0.19
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2162,
+            "resolved": 2166,
             "brier": 0.197,
             "hit_rate": 0.691,
-            "rock_hit_rate": 0.639
+            "rock_hit_rate": 0.64
         },
         "claude-opus-5 (headline)": {
             "resolved": 338,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The FOMC will signal a 50-basis-point rate cut at its 2026-07-28 meeting amid slowing global growth and energy price declines",
+            "horizon": "week",
+            "probability": 0.33,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms the FOMC signaled a 50-basis-point rate cut at its 2026-07-28 meeting; the only relevant signals (S3-S6) reference later meetings (2026-09-15 onward), not the July 28 meeting.",
+            "resolved_ms": 1786242015569,
+            "ts": 1785203704774
+        },
         {
             "statement": "Wheat prices (WC=F) will surge 4.2% in the next week due to Black Sea grain corridor disruptions from the Ukraine war",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "The current PortWatch snapshot shows Bab el-Mandeb at 20 daily ship transits, 42% below its 30-day average of 34, which is at or below the forecast threshold of 25/day.",
             "resolved_ms": 1785818569188,
             "ts": 1785565696892
-        },
-        {
-            "statement": "Bab el-Mandeb daily transits remain at or below 25 (well under the 34 30-day average) in the next IMF PortWatch update",
-            "horizon": "24h",
-            "probability": 0.69,
-            "location": "Bab el-Mandeb Strait",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot for Bab el-Mandeb shows 20 daily transits (42% below the 34 30-day average), at or below the forecast threshold of 25.",
-            "resolved_ms": 1785818556938,
-            "ts": 1785563691185
         }
     ],
-    "next_judge_ms": 1786241637222,
+    "next_judge_ms": 1786245637108,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1248,
-        "base_rate": 0.1971,
-        "brier_raw": 0.2207,
-        "brier_base_rate": 0.1583,
-        "brier_calibrated_oos": 0.3074,
-        "brier_calibrated_oos_n": 532,
+        "resolved_n": 1249,
+        "base_rate": 0.197,
+        "brier_raw": 0.2206,
+        "brier_base_rate": 0.1582,
+        "brier_calibrated_oos": 0.3068,
+        "brier_calibrated_oos_n": 533,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
