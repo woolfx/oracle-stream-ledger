@@ -1,8 +1,8 @@
 {
-    "resolved": 1249,
-    "open": 5004,
-    "due": 1008,
-    "next_due_ms": 1786252259465,
+    "resolved": 1251,
+    "open": 5016,
+    "due": 1012,
+    "next_due_ms": 1786256220019,
     "unresolvable": 507,
     "brier": 0.221,
     "hit_rate": 0.64,
@@ -13,7 +13,7 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 500,
+            "resolved": 502,
             "brier": 0.227,
             "hit_rate": 0.62
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 354,
+            "n": 355,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 320,
+            "n": 321,
             "avg_predicted": 0.68,
             "observed": 0.43
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1248,
+            "resolved": 1250,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1246,
+            "resolved": 1248,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1248,
+            "resolved": 1250,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1246,
+            "resolved": 1248,
             "brier": 0.19
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2166,
+            "resolved": 2174,
             "brier": 0.197,
-            "hit_rate": 0.691,
-            "rock_hit_rate": 0.64
+            "hit_rate": 0.69,
+            "rock_hit_rate": 0.641
         },
         "claude-opus-5 (headline)": {
             "resolved": 338,
@@ -95,6 +95,28 @@
         }
     },
     "recent": [
+        {
+            "statement": "Natural gas storage injections will exceed 100 Bcf in the July 30 EIA report",
+            "horizon": "week",
+            "probability": 0.61,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "All signals (S1-S5) reference EIA reports dated after the forecast window closed (2026-08-04), providing no evidence about the July 30 report's data within the window.",
+            "resolved_ms": 1786253892587,
+            "ts": 1785205762671
+        },
+        {
+            "statement": "Bitcoin will break below $60,000 as Fed rate cut expectations pressure crypto markets",
+            "horizon": "week",
+            "probability": 0.21,
+            "location": "Global",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "None of the provided signals mention Bitcoin's price breaking below $60,000 or any direct market data confirming this event within the forecast window.",
+            "resolved_ms": 1786253724741,
+            "ts": 1785196099291
+        },
         {
             "statement": "The FOMC will signal a 50-basis-point rate cut at its 2026-07-28 meeting amid slowing global growth and energy price declines",
             "horizon": "week",
@@ -204,43 +226,21 @@
             "evidence": "Signal S1 explicitly states Israeli strikes killed seven in Gaza, confirming additional fatalities within the forecast's 24-hour window.",
             "resolved_ms": 1785889446202,
             "ts": 1785631414312
-        },
-        {
-            "statement": "Russia launches another missile/drone strike on Ukrainian urban targets causing civilian casualties",
-            "horizon": "24h",
-            "probability": 0.71,
-            "location": "Kyiv, Ukraine",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1, archived during the forecast window, states Russian missile attacks killed at least nine people in Kyiv, matching the forecast of a strike on Ukrainian urban targets causing civilian casualties.",
-            "resolved_ms": 1785818574542,
-            "ts": 1785565696892
-        },
-        {
-            "statement": "Bab el-Mandeb daily transits remain at or below 25/day (vs 34 30-day average) in the next PortWatch update",
-            "horizon": "24h",
-            "probability": 0.75,
-            "location": "Bab el-Mandeb Strait",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "The current PortWatch snapshot shows Bab el-Mandeb at 20 daily ship transits, 42% below its 30-day average of 34, which is at or below the forecast threshold of 25/day.",
-            "resolved_ms": 1785818569188,
-            "ts": 1785565696892
         }
     ],
-    "next_judge_ms": 1786253586444,
+    "next_judge_ms": 1786257492608,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1249,
-        "base_rate": 0.197,
+        "resolved_n": 1251,
+        "base_rate": 0.1966,
         "brier_raw": 0.2206,
-        "brier_base_rate": 0.1582,
-        "brier_calibrated_oos": 0.3068,
-        "brier_calibrated_oos_n": 533,
+        "brier_base_rate": 0.158,
+        "brier_calibrated_oos": 0.3057,
+        "brier_calibrated_oos_n": 535,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
