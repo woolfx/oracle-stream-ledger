@@ -1,10 +1,10 @@
 {
-    "resolved": 1251,
-    "open": 5021,
-    "due": 1135,
-    "next_due_ms": 1786316537497,
-    "unresolvable": 507,
-    "brier": 0.221,
+    "resolved": 1252,
+    "open": 5023,
+    "due": 1134,
+    "next_due_ms": 1786318533239,
+    "unresolvable": 510,
+    "brier": 0.22,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
@@ -13,15 +13,15 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 502,
-            "brier": 0.227,
+            "resolved": 503,
+            "brier": 0.226,
             "hit_rate": 0.62
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 128,
+            "n": 129,
             "avg_predicted": 0.13,
             "observed": 0.09
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1250,
+            "resolved": 1251,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1248,
+            "resolved": 1249,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1250,
+            "resolved": 1251,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1248,
+            "resolved": 1249,
             "brier": 0.19
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2174,
-            "brier": 0.197,
-            "hit_rate": 0.69,
-            "rock_hit_rate": 0.641
+            "resolved": 2178,
+            "brier": 0.196,
+            "hit_rate": 0.691,
+            "rock_hit_rate": 0.642
         },
         "claude-opus-5 (headline)": {
             "resolved": 338,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Typhoon Noul will make landfall in Vietnam causing $1-2B in damages",
+            "horizon": "week",
+            "probability": 0.17,
+            "location": "Vietnam",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Vietnam or Typhoon Noul making landfall there; all signals reference other typhoons (CHAN-HOM-26, PEILOU-26, DOLPHIN-26) in different locations with no mention of Vietnam or $1-2B damages.",
+            "resolved_ms": 1786315652459,
+            "ts": 1785205762671
+        },
         {
             "statement": "Natural gas storage injections will exceed 100 Bcf in the July 30 EIA report",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "Signal S1 states Israeli strikes killed seven in Gaza, meeting the forecast's threshold of at least five fatalities in the same location.",
             "resolved_ms": 1785889489622,
             "ts": 1785633419186
-        },
-        {
-            "statement": "Israeli strikes continue in Gaza with additional reported fatalities in the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.79,
-            "location": "Gaza Strip",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Signal S1 explicitly states Israeli strikes killed seven in Gaza, confirming additional fatalities within the forecast's 24-hour window.",
-            "resolved_ms": 1785889446202,
-            "ts": 1785631414312
         }
     ],
-    "next_judge_ms": null,
+    "next_judge_ms": 1786319266620,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1251,
-        "base_rate": 0.1966,
-        "brier_raw": 0.2206,
-        "brier_base_rate": 0.158,
-        "brier_calibrated_oos": 0.3057,
-        "brier_calibrated_oos_n": 535,
+        "resolved_n": 1252,
+        "base_rate": 0.1965,
+        "brier_raw": 0.2204,
+        "brier_base_rate": 0.1579,
+        "brier_calibrated_oos": 0.3051,
+        "brier_calibrated_oos_n": 536,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
