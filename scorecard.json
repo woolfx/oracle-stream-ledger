@@ -1,8 +1,8 @@
 {
-    "resolved": 1259,
-    "open": 5156,
-    "due": 1231,
-    "next_due_ms": 1786374575313,
+    "resolved": 1260,
+    "open": 5173,
+    "due": 1238,
+    "next_due_ms": 1786378574608,
     "unresolvable": 525,
     "brier": 0.22,
     "hit_rate": 0.64,
@@ -13,8 +13,8 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 510,
-            "brier": 0.225,
+            "resolved": 511,
+            "brier": 0.226,
             "hit_rate": 0.63
         }
     },
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 357,
+            "n": 358,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1258,
+            "resolved": 1259,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1256,
+            "resolved": 1257,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1258,
+            "resolved": 1259,
             "brier": 0.266
         },
         "Skeptic": {
-            "resolved": 1256,
-            "brier": 0.189
+            "resolved": 1257,
+            "brier": 0.19
         }
     },
     "models": {
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2206,
-            "brier": 0.196,
-            "hit_rate": 0.69,
-            "rock_hit_rate": 0.646
+            "resolved": 2210,
+            "brier": 0.197,
+            "hit_rate": 0.689,
+            "rock_hit_rate": 0.645
         },
         "claude-opus-5 (headline)": {
             "resolved": 338,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will see a 15% reduction in ship transits due to increased regional military exercises",
+            "horizon": "week",
+            "probability": 0.25,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 shows Strait of Hormuz had 2 daily ship transits (72% below its 30-day average of 7), confirming a significant reduction (exceeding the forecasted 15%) within the window.",
+            "resolved_ms": 1786374236335,
+            "ts": 1785192590008
+        },
         {
             "statement": "Tropical Storm Fausto will intensify to Category 2 strength, affecting 2 million people in the Pacific by 2026-08-02",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "No signal confirms the FOMC signaled a 50-basis-point rate cut at its 2026-07-28 meeting; the only relevant signals (S3-S6) reference later meetings (2026-09-15 onward), not the July 28 meeting.",
             "resolved_ms": 1786242015569,
             "ts": 1785203704774
-        },
-        {
-            "statement": "Wheat prices (WC=F) will surge 4.2% in the next week due to Black Sea grain corridor disruptions from the Ukraine war",
-            "horizon": "week",
-            "probability": 0.36,
-            "location": "Black Sea",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Wheat (CBOT) rose 1.35% (+639.75 \u00a2/bu), far below the forecasted 4.2% surge.",
-            "resolved_ms": 1786238037201,
-            "ts": 1785203704774
         }
     ],
-    "next_judge_ms": 1786374018395,
+    "next_judge_ms": 1786378032040,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1259,
-        "base_rate": 0.1954,
-        "brier_raw": 0.2201,
-        "brier_base_rate": 0.1572,
-        "brier_calibrated_oos": 0.3012,
-        "brier_calibrated_oos_n": 543,
+        "resolved_n": 1260,
+        "base_rate": 0.196,
+        "brier_raw": 0.2204,
+        "brier_base_rate": 0.1576,
+        "brier_calibrated_oos": 0.3023,
+        "brier_calibrated_oos_n": 544,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
