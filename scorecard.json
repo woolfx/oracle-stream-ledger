@@ -1,9 +1,9 @@
 {
-    "resolved": 1258,
-    "open": 5121,
-    "due": 1206,
-    "next_due_ms": 1786356574586,
-    "unresolvable": 516,
+    "resolved": 1259,
+    "open": 5133,
+    "due": 1209,
+    "next_due_ms": 1786360554652,
+    "unresolvable": 519,
     "brier": 0.22,
     "hit_rate": 0.64,
     "per_horizon": {
@@ -13,15 +13,15 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 509,
-            "brier": 0.226,
+            "resolved": 510,
+            "brier": 0.225,
             "hit_rate": 0.63
         }
     },
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 129,
+            "n": 130,
             "avg_predicted": 0.13,
             "observed": 0.09
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1257,
+            "resolved": 1258,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1255,
+            "resolved": 1256,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1257,
+            "resolved": 1258,
             "brier": 0.266
         },
         "Skeptic": {
-            "resolved": 1255,
+            "resolved": 1256,
             "brier": 0.189
         }
     },
@@ -76,9 +76,9 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2202,
+            "resolved": 2206,
             "brier": 0.196,
-            "hit_rate": 0.689,
+            "hit_rate": 0.69,
             "rock_hit_rate": 0.646
         },
         "claude-opus-5 (headline)": {
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Tropical Storm Fausto will intensify to Category 2 strength, affecting 2 million people in the Pacific by 2026-08-02",
+            "horizon": "week",
+            "probability": 0.18,
+            "location": "Pacific Ocean",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal mentions Tropical Storm Fausto, the 2 million people figure, or Category 2 intensity in the Pacific Ocean.",
+            "resolved_ms": 1786358610469,
+            "ts": 1785211836582
+        },
         {
             "statement": "The EIA weekly petroleum status report on 2026-07-29 will likely cause a short-term spike in WTI crude oil prices due to unexpected inventory drawdowns.",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "Wheat (CBOT) rose 1.35% (+639.75 \u00a2/bu), far below the forecasted 4.2% surge.",
             "resolved_ms": 1786238037201,
             "ts": 1785203704774
-        },
-        {
-            "statement": "EIA weekly petroleum report on 2026-07-29 will show a 2.1 million barrel decline in US crude inventories, pushing CL=F above $85/bbl.",
-            "horizon": "week",
-            "probability": 0.39,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal confirms the forecasted 2.1M barrel decline in US crude inventories or CL=F exceeding $85/bbl; S10 shows Brent at $83.55 (below $85), and no signal directly reports the EIA's July 29 inventory data.",
-            "resolved_ms": 1786237986919,
-            "ts": 1785199623686
         }
     ],
-    "next_judge_ms": 1786358214132,
+    "next_judge_ms": 1786362210489,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1258,
-        "base_rate": 0.1955,
-        "brier_raw": 0.2203,
-        "brier_base_rate": 0.1573,
-        "brier_calibrated_oos": 0.3018,
-        "brier_calibrated_oos_n": 542,
+        "resolved_n": 1259,
+        "base_rate": 0.1954,
+        "brier_raw": 0.2201,
+        "brier_base_rate": 0.1572,
+        "brier_calibrated_oos": 0.3012,
+        "brier_calibrated_oos_n": 543,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
