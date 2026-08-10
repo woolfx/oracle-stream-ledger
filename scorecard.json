@@ -1,8 +1,8 @@
 {
-    "resolved": 1257,
-    "open": 5114,
-    "due": 1203,
-    "next_due_ms": 1786354558887,
+    "resolved": 1258,
+    "open": 5121,
+    "due": 1206,
+    "next_due_ms": 1786356574586,
     "unresolvable": 516,
     "brier": 0.22,
     "hit_rate": 0.64,
@@ -13,7 +13,7 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 508,
+            "resolved": 509,
             "brier": 0.226,
             "hit_rate": 0.63
         }
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 404,
+            "n": 405,
             "avg_predicted": 0.5,
             "observed": 0.17
         },
@@ -52,20 +52,20 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1256,
+            "resolved": 1257,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1254,
+            "resolved": 1255,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1256,
+            "resolved": 1257,
             "brier": 0.266
         },
         "Skeptic": {
-            "resolved": 1254,
-            "brier": 0.19
+            "resolved": 1255,
+            "brier": 0.189
         }
     },
     "models": {
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2198,
+            "resolved": 2202,
             "brier": 0.196,
-            "hit_rate": 0.69,
-            "rock_hit_rate": 0.645
+            "hit_rate": 0.689,
+            "rock_hit_rate": 0.646
         },
         "claude-opus-5 (headline)": {
             "resolved": 338,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The EIA weekly petroleum status report on 2026-07-29 will likely cause a short-term spike in WTI crude oil prices due to unexpected inventory drawdowns.",
+            "horizon": "week",
+            "probability": 0.51,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal explicitly confirms the EIA report's inventory drawdown or its direct impact on WTI prices within the forecast window.",
+            "resolved_ms": 1786354614110,
+            "ts": 1785211560580
+        },
         {
             "statement": "WTI crude drops to $78/bbl as Ombai Strait transit surges 51% above 30-day average",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "No signal confirms the forecasted 2.1M barrel decline in US crude inventories or CL=F exceeding $85/bbl; S10 shows Brent at $83.55 (below $85), and no signal directly reports the EIA's July 29 inventory data.",
             "resolved_ms": 1786237986919,
             "ts": 1785199623686
-        },
-        {
-            "statement": "The Strait of Hormuz will see ship transits remain below 15/day due to ongoing Houthi threats in the Red Sea",
-            "horizon": "week",
-            "probability": 0.14,
-            "location": "Strait of Hormuz",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "S1 shows Strait of Hormuz had 2 daily ship transits (72% below its 30-day average of 7), which is below the forecast's threshold of 15/day.",
-            "resolved_ms": 1786234155526,
-            "ts": 1785195279769
         }
     ],
-    "next_judge_ms": 1786354289470,
+    "next_judge_ms": 1786358214132,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1257,
-        "base_rate": 0.1957,
-        "brier_raw": 0.2202,
-        "brier_base_rate": 0.1574,
-        "brier_calibrated_oos": 0.3023,
-        "brier_calibrated_oos_n": 541,
+        "resolved_n": 1258,
+        "base_rate": 0.1955,
+        "brier_raw": 0.2203,
+        "brier_base_rate": 0.1573,
+        "brier_calibrated_oos": 0.3018,
+        "brier_calibrated_oos_n": 542,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
