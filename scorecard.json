@@ -1,8 +1,8 @@
 {
-    "resolved": 1260,
-    "open": 5185,
-    "due": 1245,
-    "next_due_ms": 1786382638323,
+    "resolved": 1261,
+    "open": 5190,
+    "due": 1251,
+    "next_due_ms": 1786386672068,
     "unresolvable": 525,
     "brier": 0.22,
     "hit_rate": 0.64,
@@ -13,9 +13,9 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 511,
+            "resolved": 512,
             "brier": 0.226,
-            "hit_rate": 0.63
+            "hit_rate": 0.62
         }
     },
     "calibration": [
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 405,
+            "n": 406,
             "avg_predicted": 0.5,
             "observed": 0.17
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1259,
+            "resolved": 1260,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1257,
+            "resolved": 1258,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1259,
-            "brier": 0.266
+            "resolved": 1260,
+            "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1257,
+            "resolved": 1258,
             "brier": 0.19
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2210,
+            "resolved": 2214,
             "brier": 0.197,
-            "hit_rate": 0.689,
-            "rock_hit_rate": 0.645
+            "hit_rate": 0.688,
+            "rock_hit_rate": 0.646
         },
         "claude-opus-5 (headline)": {
             "resolved": 338,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The EIA's weekly natural gas storage report on July 30 will show a larger-than-expected drawdown, pushing the Henry Hub natural gas price above $3.00/MMBtu by the end of the week.",
+            "horizon": "week",
+            "probability": 0.51,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "Signal S7 shows Natural Gas (Henry Hub) at 2.79 $/MMBtu, which is below the forecasted threshold of $3.00/MMBtu.",
+            "resolved_ms": 1786382037427,
+            "ts": 1785217473624
+        },
         {
             "statement": "The Strait of Hormuz will see a 15% reduction in ship transits due to increased regional military exercises",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "None of the provided signals mention Bitcoin's price breaking below $60,000 or any direct market data confirming this event within the forecast window.",
             "resolved_ms": 1786253724741,
             "ts": 1785196099291
-        },
-        {
-            "statement": "The FOMC will signal a 50-basis-point rate cut at its 2026-07-28 meeting amid slowing global growth and energy price declines",
-            "horizon": "week",
-            "probability": 0.33,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal confirms the FOMC signaled a 50-basis-point rate cut at its 2026-07-28 meeting; the only relevant signals (S3-S6) reference later meetings (2026-09-15 onward), not the July 28 meeting.",
-            "resolved_ms": 1786242015569,
-            "ts": 1785203704774
         }
     ],
-    "next_judge_ms": 1786381838854,
+    "next_judge_ms": 1786385637448,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1260,
-        "base_rate": 0.196,
+        "resolved_n": 1261,
+        "base_rate": 0.1959,
         "brier_raw": 0.2204,
-        "brier_base_rate": 0.1576,
-        "brier_calibrated_oos": 0.3023,
-        "brier_calibrated_oos_n": 544,
+        "brier_base_rate": 0.1575,
+        "brier_calibrated_oos": 0.3018,
+        "brier_calibrated_oos_n": 545,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
