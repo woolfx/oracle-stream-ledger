@@ -1,8 +1,8 @@
 {
     "resolved": 1259,
-    "open": 5133,
-    "due": 1211,
-    "next_due_ms": 1786364533180,
+    "open": 5138,
+    "due": 1218,
+    "next_due_ms": 1786368534594,
     "unresolvable": 525,
     "brier": 0.22,
     "hit_rate": 0.64,
@@ -228,7 +228,7 @@
             "ts": 1785203704774
         }
     ],
-    "next_judge_ms": 1786366057150,
+    "next_judge_ms": 1786369999993,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
