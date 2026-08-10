@@ -1,8 +1,8 @@
 {
-    "resolved": 1254,
-    "open": 5078,
-    "due": 1167,
-    "next_due_ms": 1786334549493,
+    "resolved": 1255,
+    "open": 5092,
+    "due": 1175,
+    "next_due_ms": 1786338550654,
     "unresolvable": 513,
     "brier": 0.22,
     "hit_rate": 0.64,
@@ -13,7 +13,7 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 505,
+            "resolved": 506,
             "brier": 0.226,
             "hit_rate": 0.63
         }
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 402,
+            "n": 403,
             "avg_predicted": 0.51,
             "observed": 0.17
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1253,
+            "resolved": 1254,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1251,
+            "resolved": 1252,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1253,
+            "resolved": 1254,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1251,
+            "resolved": 1252,
             "brier": 0.19
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2186,
+            "resolved": 2190,
             "brier": 0.196,
             "hit_rate": 0.691,
-            "rock_hit_rate": 0.643
+            "rock_hit_rate": 0.644
         },
         "claude-opus-5 (headline)": {
             "resolved": 338,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "EIA's weekly petroleum report on 2026-07-29 will show a 2% increase in U.S. crude oil inventories, pushing CL=F down 1.5%.",
+            "horizon": "week",
+            "probability": 0.49,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal directly confirms the EIA report's 2% inventory increase or the 1.5% CL=F drop; signals S11/S12 mention inventory changes but not the EIA's specific findings, and S8/S10 show price increases, not declines.",
+            "resolved_ms": 1786335189403,
+            "ts": 1785201689150
+        },
         {
             "statement": "Natural gas prices (Henry Hub) rise by 3% due to below-average storage injections reported in the July 30 EIA report",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "The only signal (S1) refers to Cote D'Ivoire, not Burundi, and does not mention duration exceeding 24 hours.",
             "resolved_ms": 1785901125537,
             "ts": 1785643405851
-        },
-        {
-            "statement": "WTI crude (CL=F) closes higher than $84.67 within the next 24 hours",
-            "horizon": "24h",
-            "probability": 0.43,
-            "location": "Cushing / US Gulf Coast",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "Signal S8 states WTI Crude Oil is currently at $74.56, which is below the forecasted threshold of $84.67.",
-            "resolved_ms": 1785901100495,
-            "ts": 1785643405851
         }
     ],
-    "next_judge_ms": 1786334861090,
+    "next_judge_ms": 1786338850140,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1254,
-        "base_rate": 0.1962,
+        "resolved_n": 1255,
+        "base_rate": 0.196,
         "brier_raw": 0.2203,
-        "brier_base_rate": 0.1577,
-        "brier_calibrated_oos": 0.304,
-        "brier_calibrated_oos_n": 538,
+        "brier_base_rate": 0.1576,
+        "brier_calibrated_oos": 0.3034,
+        "brier_calibrated_oos_n": 539,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
