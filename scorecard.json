@@ -1,8 +1,8 @@
 {
-    "resolved": 1253,
-    "open": 5039,
-    "due": 1135,
-    "next_due_ms": 1786320540789,
+    "resolved": 1254,
+    "open": 5056,
+    "due": 1142,
+    "next_due_ms": 1786324053442,
     "unresolvable": 513,
     "brier": 0.22,
     "hit_rate": 0.64,
@@ -13,9 +13,9 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 504,
+            "resolved": 505,
             "brier": 0.226,
-            "hit_rate": 0.62
+            "hit_rate": 0.63
         }
     },
     "calibration": [
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 401,
+            "n": 402,
             "avg_predicted": 0.51,
             "observed": 0.17
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1252,
+            "resolved": 1253,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1250,
+            "resolved": 1251,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1252,
+            "resolved": 1253,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1250,
+            "resolved": 1251,
             "brier": 0.19
         }
     },
@@ -76,9 +76,9 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2182,
+            "resolved": 2186,
             "brier": 0.196,
-            "hit_rate": 0.692,
+            "hit_rate": 0.691,
             "rock_hit_rate": 0.643
         },
         "claude-opus-5 (headline)": {
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Natural gas prices (Henry Hub) rise by 3% due to below-average storage injections reported in the July 30 EIA report",
+            "horizon": "week",
+            "probability": 0.47,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal explicitly confirms the forecasted 3% rise in Henry Hub prices or attributes it to below-average EIA storage injections; S7 only shows a 2.52% price increase, falling short of the 3% threshold stated in the forecast.",
+            "resolved_ms": 1786323523199,
+            "ts": 1785209844366
+        },
         {
             "statement": "Sudan's RSF will seize control of Khartoum airport",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "Signal S8 states WTI Crude Oil is currently at $74.56, which is below the forecasted threshold of $84.67.",
             "resolved_ms": 1785901100495,
             "ts": 1785643405851
-        },
-        {
-            "statement": "Russian drone/missile strikes hit Ukrainian energy or port infrastructure, reported by Ukrainian authorities within 24 hours",
-            "horizon": "24h",
-            "probability": 0.39,
-            "location": "Ukraine",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal explicitly confirms Russian drone/missile strikes on Ukrainian energy or port infrastructure within the 24-hour window.",
-            "resolved_ms": 1785897199801,
-            "ts": 1785641394171
         }
     ],
-    "next_judge_ms": 1786323125523,
+    "next_judge_ms": 1786327123221,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1253,
-        "base_rate": 0.1963,
+        "resolved_n": 1254,
+        "base_rate": 0.1962,
         "brier_raw": 0.2203,
-        "brier_base_rate": 0.1578,
-        "brier_calibrated_oos": 0.3045,
-        "brier_calibrated_oos_n": 537,
+        "brier_base_rate": 0.1577,
+        "brier_calibrated_oos": 0.304,
+        "brier_calibrated_oos_n": 538,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
