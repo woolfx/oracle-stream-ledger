@@ -1,8 +1,8 @@
 {
-    "resolved": 1255,
-    "open": 5099,
-    "due": 1182,
-    "next_due_ms": 1786342521904,
+    "resolved": 1256,
+    "open": 5100,
+    "due": 1189,
+    "next_due_ms": 1786346557533,
     "unresolvable": 513,
     "brier": 0.22,
     "hit_rate": 0.64,
@@ -13,7 +13,7 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 506,
+            "resolved": 507,
             "brier": 0.226,
             "hit_rate": 0.63
         }
@@ -33,8 +33,8 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 403,
-            "avg_predicted": 0.51,
+            "n": 404,
+            "avg_predicted": 0.5,
             "observed": 0.17
         },
         {
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1254,
+            "resolved": 1255,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1252,
+            "resolved": 1253,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1254,
-            "brier": 0.267
+            "resolved": 1255,
+            "brier": 0.266
         },
         "Skeptic": {
-            "resolved": 1252,
+            "resolved": 1253,
             "brier": 0.19
         }
     },
@@ -76,7 +76,7 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2190,
+            "resolved": 2194,
             "brier": 0.196,
             "hit_rate": 0.691,
             "rock_hit_rate": 0.644
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Brazilian real depreciates 3.7% against dollar as Lula runoff odds rise to 62%",
+            "horizon": "week",
+            "probability": 0.44,
+            "location": "Brazil",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal provides evidence of the Brazilian real's depreciation or Lula's runoff odds reaching 62% during the forecast window.",
+            "resolved_ms": 1786342968477,
+            "ts": 1785209988131
+        },
         {
             "statement": "EIA's weekly petroleum report on 2026-07-29 will show a 2% increase in U.S. crude oil inventories, pushing CL=F down 1.5%.",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "No signal confirms geopolitical tensions in the Gaza Strip or Kerch Strait causing a VIX spike; S4 mentions a conflict near Gaza but relates to Suez Canal traffic, not Kerch Strait.",
             "resolved_ms": 1786234141562,
             "ts": 1785192734335
-        },
-        {
-            "statement": "Burundi's national internet connectivity remains degraded or blacked out for more than 24 additional hours",
-            "horizon": "24h",
-            "probability": 0.26,
-            "location": "Burundi",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "The only signal (S1) refers to Cote D'Ivoire, not Burundi, and does not mention duration exceeding 24 hours.",
-            "resolved_ms": 1785901125537,
-            "ts": 1785643405851
         }
     ],
-    "next_judge_ms": 1786342780188,
+    "next_judge_ms": 1786346568498,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1255,
-        "base_rate": 0.196,
+        "resolved_n": 1256,
+        "base_rate": 0.1959,
         "brier_raw": 0.2203,
-        "brier_base_rate": 0.1576,
-        "brier_calibrated_oos": 0.3034,
-        "brier_calibrated_oos_n": 539,
+        "brier_base_rate": 0.1575,
+        "brier_calibrated_oos": 0.3029,
+        "brier_calibrated_oos_n": 540,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
