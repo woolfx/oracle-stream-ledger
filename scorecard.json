@@ -1,9 +1,9 @@
 {
-    "resolved": 1252,
-    "open": 5023,
-    "due": 1134,
-    "next_due_ms": 1786318533239,
-    "unresolvable": 510,
+    "resolved": 1253,
+    "open": 5039,
+    "due": 1135,
+    "next_due_ms": 1786320540789,
+    "unresolvable": 513,
     "brier": 0.22,
     "hit_rate": 0.64,
     "per_horizon": {
@@ -13,7 +13,7 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 503,
+            "resolved": 504,
             "brier": 0.226,
             "hit_rate": 0.62
         }
@@ -27,7 +27,7 @@
         },
         {
             "bin": "20\u201340%",
-            "n": 355,
+            "n": 356,
             "avg_predicted": 0.3,
             "observed": 0.06
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1251,
+            "resolved": 1252,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1249,
+            "resolved": 1250,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1251,
+            "resolved": 1252,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1249,
+            "resolved": 1250,
             "brier": 0.19
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2178,
+            "resolved": 2182,
             "brier": 0.196,
-            "hit_rate": 0.691,
-            "rock_hit_rate": 0.642
+            "hit_rate": 0.692,
+            "rock_hit_rate": 0.643
         },
         "claude-opus-5 (headline)": {
             "resolved": 338,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Sudan's RSF will seize control of Khartoum airport",
+            "horizon": "week",
+            "probability": 0.22,
+            "location": "Sudan",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signals or web search results confirm the RSF seized control of Khartoum airport during the forecast window.",
+            "resolved_ms": 1786319525502,
+            "ts": 1785208353114
+        },
         {
             "statement": "Typhoon Noul will make landfall in Vietnam causing $1-2B in damages",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "No signal explicitly confirms Russian drone/missile strikes on Ukrainian energy or port infrastructure within the 24-hour window.",
             "resolved_ms": 1785897199801,
             "ts": 1785641394171
-        },
-        {
-            "statement": "Israeli strikes continue in Gaza with at least five more Palestinian fatalities reported within 24 hours",
-            "horizon": "24h",
-            "probability": 0.56,
-            "location": "Gaza Strip",
-            "outcome": 1.0,
-            "verdict": "yes",
-            "evidence": "Signal S1 states Israeli strikes killed seven in Gaza, meeting the forecast's threshold of at least five fatalities in the same location.",
-            "resolved_ms": 1785889489622,
-            "ts": 1785633419186
         }
     ],
-    "next_judge_ms": 1786319266620,
+    "next_judge_ms": 1786323125523,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1252,
-        "base_rate": 0.1965,
-        "brier_raw": 0.2204,
-        "brier_base_rate": 0.1579,
-        "brier_calibrated_oos": 0.3051,
-        "brier_calibrated_oos_n": 536,
+        "resolved_n": 1253,
+        "base_rate": 0.1963,
+        "brier_raw": 0.2203,
+        "brier_base_rate": 0.1578,
+        "brier_calibrated_oos": 0.3045,
+        "brier_calibrated_oos_n": 537,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }

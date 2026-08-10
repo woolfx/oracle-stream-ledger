@@ -1836,3 +1836,7 @@
 {"evidence": "window passed with insufficient evidence", "id": "pred_ef8dc901ab", "kind": "resolution", "outcome": null, "resolved_ms": 1786315652459, "verdict": "unresolved"}
 {"evidence": "window passed with insufficient evidence", "id": "pred_91b0b0d409", "kind": "resolution", "outcome": null, "resolved_ms": 1786315652459, "verdict": "unresolved"}
 {"evidence": "window passed with insufficient evidence", "id": "pred_d09a900127", "kind": "resolution", "outcome": null, "resolved_ms": 1786315652459, "verdict": "unresolved"}
+{"evidence": "No signals or web search results confirm the RSF seized control of Khartoum airport during the forecast window.", "id": "pred_44bc94f150", "judge": "qwen3:14b", "judge_search": 0, "kind": "resolution", "outcome": 0.0, "resolved_ms": 1786319525502, "verdict": "no"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_983c669e1d", "kind": "resolution", "outcome": null, "resolved_ms": 1786319525502, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_868580b506", "kind": "resolution", "outcome": null, "resolved_ms": 1786319525502, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_4590ad65b7", "kind": "resolution", "outcome": null, "resolved_ms": 1786319525502, "verdict": "unresolved"}
