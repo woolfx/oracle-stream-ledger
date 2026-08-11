@@ -1,8 +1,8 @@
 {
-    "resolved": 1261,
-    "open": 5257,
-    "due": 1286,
-    "next_due_ms": 1786403530110,
+    "resolved": 1262,
+    "open": 5268,
+    "due": 1294,
+    "next_due_ms": 1786406624664,
     "unresolvable": 525,
     "brier": 0.22,
     "hit_rate": 0.64,
@@ -13,9 +13,9 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 512,
+            "resolved": 513,
             "brier": 0.226,
-            "hit_rate": 0.62
+            "hit_rate": 0.63
         }
     },
     "calibration": [
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 406,
+            "n": 407,
             "avg_predicted": 0.5,
             "observed": 0.17
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1260,
+            "resolved": 1261,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1258,
+            "resolved": 1259,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1260,
+            "resolved": 1261,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1258,
+            "resolved": 1259,
             "brier": 0.19
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2214,
+            "resolved": 2218,
             "brier": 0.197,
             "hit_rate": 0.688,
-            "rock_hit_rate": 0.646
+            "rock_hit_rate": 0.647
         },
         "claude-opus-5 (headline)": {
             "resolved": 338,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The EIA weekly petroleum status report on 2026-07-29 will show a decline in US crude oil inventories, pushing WTI Crude Oil futures below $80/bbl.",
+            "horizon": "week",
+            "probability": 0.44,
+            "location": "United States",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms the EIA report showed a decline in US crude oil inventories or WTI below $80/bbl; S12 indicates Cushing stocks increased (contradicting inventory decline), and S9 shows WTI at $82.02 (above $80).",
+            "resolved_ms": 1786404843695,
+            "ts": 1785213594659
+        },
         {
             "statement": "The EIA's weekly natural gas storage report on July 30 will show a larger-than-expected drawdown, pushing the Henry Hub natural gas price above $3.00/MMBtu by the end of the week.",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "All signals (S1-S5) reference EIA reports dated after the forecast window closed (2026-08-04), providing no evidence about the July 30 report's data within the window.",
             "resolved_ms": 1786253892587,
             "ts": 1785205762671
-        },
-        {
-            "statement": "Bitcoin will break below $60,000 as Fed rate cut expectations pressure crypto markets",
-            "horizon": "week",
-            "probability": 0.21,
-            "location": "Global",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "None of the provided signals mention Bitcoin's price breaking below $60,000 or any direct market data confirming this event within the forecast window.",
-            "resolved_ms": 1786253724741,
-            "ts": 1785196099291
         }
     ],
-    "next_judge_ms": 1786404666241,
+    "next_judge_ms": 1786408465480,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1261,
-        "base_rate": 0.1959,
+        "resolved_n": 1262,
+        "base_rate": 0.1957,
         "brier_raw": 0.2204,
-        "brier_base_rate": 0.1575,
-        "brier_calibrated_oos": 0.3018,
-        "brier_calibrated_oos_n": 545,
+        "brier_base_rate": 0.1574,
+        "brier_calibrated_oos": 0.3013,
+        "brier_calibrated_oos_n": 546,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
