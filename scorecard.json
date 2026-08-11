@@ -1,9 +1,9 @@
 {
-    "resolved": 1264,
-    "open": 5324,
-    "due": 1376,
-    "next_due_ms": 1786482492507,
-    "unresolvable": 527,
+    "resolved": 1265,
+    "open": 5332,
+    "due": 1373,
+    "next_due_ms": 1786486474020,
+    "unresolvable": 530,
     "brier": 0.22,
     "hit_rate": 0.64,
     "per_horizon": {
@@ -13,9 +13,9 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 515,
+            "resolved": 516,
             "brier": 0.226,
-            "hit_rate": 0.63
+            "hit_rate": 0.62
         }
     },
     "calibration": [
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 408,
+            "n": 409,
             "avg_predicted": 0.5,
             "observed": 0.17
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1263,
+            "resolved": 1264,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1261,
+            "resolved": 1262,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1263,
+            "resolved": 1264,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1261,
+            "resolved": 1262,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.927
         },
         "qwen3:14b": {
-            "resolved": 2222,
+            "resolved": 2226,
             "brier": 0.197,
             "hit_rate": 0.687,
-            "rock_hit_rate": 0.645
+            "rock_hit_rate": 0.646
         },
         "claude-opus-5 (headline)": {
-            "resolved": 339,
-            "brier": 0.29,
-            "hit_rate": 0.56,
-            "rock_hit_rate": 0.454
+            "resolved": 340,
+            "brier": 0.291,
+            "hit_rate": 0.559,
+            "rock_hit_rate": 0.456
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Russia launches a mass drone/missile strike (50+ munitions) on Ukrainian cities, and Ukraine conducts further strikes affecting Crimean power or water infrastructure",
+            "horizon": "week",
+            "probability": 0.5,
+            "location": "Ukraine / Crimea",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal confirms Russia launched a mass strike with 50+ munitions or Ukraine targeting Crimea's infrastructure; S1-S3 only mention casualties in Kyiv without specifying munition counts, and S4 is unrelated.",
+            "resolved_ms": 1786483511319,
+            "ts": 1785218563840
+        },
         {
             "statement": "The Strait of Hormuz will experience another day with below-average ship transits on July 25.",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "No signal explicitly confirms the forecasted 3% rise in Henry Hub prices or attributes it to below-average EIA storage injections; S7 only shows a 2.52% price increase, falling short of the 3% threshold stated in the forecast.",
             "resolved_ms": 1786323523199,
             "ts": 1785209844366
-        },
-        {
-            "statement": "Sudan's RSF will seize control of Khartoum airport",
-            "horizon": "week",
-            "probability": 0.22,
-            "location": "Sudan",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signals or web search results confirm the RSF seized control of Khartoum airport during the forecast window.",
-            "resolved_ms": 1786319525502,
-            "ts": 1785208353114
         }
     ],
-    "next_judge_ms": 1786483331499,
+    "next_judge_ms": 1786487111345,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1264,
-        "base_rate": 0.197,
+        "resolved_n": 1265,
+        "base_rate": 0.1968,
         "brier_raw": 0.2204,
-        "brier_base_rate": 0.1582,
-        "brier_calibrated_oos": 0.3023,
-        "brier_calibrated_oos_n": 547,
+        "brier_base_rate": 0.1581,
+        "brier_calibrated_oos": 0.3018,
+        "brier_calibrated_oos_n": 548,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
