@@ -1,8 +1,8 @@
 {
-    "resolved": 1262,
-    "open": 5268,
-    "due": 1294,
-    "next_due_ms": 1786406624664,
+    "resolved": 1263,
+    "open": 5277,
+    "due": 1304,
+    "next_due_ms": 1786410589648,
     "unresolvable": 525,
     "brier": 0.22,
     "hit_rate": 0.64,
@@ -13,9 +13,9 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 513,
+            "resolved": 514,
             "brier": 0.226,
-            "hit_rate": 0.63
+            "hit_rate": 0.62
         }
     },
     "calibration": [
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 407,
+            "n": 408,
             "avg_predicted": 0.5,
             "observed": 0.17
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1261,
+            "resolved": 1262,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1259,
+            "resolved": 1260,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1261,
+            "resolved": 1262,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1259,
+            "resolved": 1260,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.928
         },
         "qwen3:14b": {
-            "resolved": 2218,
+            "resolved": 2222,
             "brier": 0.197,
-            "hit_rate": 0.688,
-            "rock_hit_rate": 0.647
+            "hit_rate": 0.687,
+            "rock_hit_rate": 0.645
         },
         "claude-opus-5 (headline)": {
-            "resolved": 338,
+            "resolved": 339,
             "brier": 0.29,
-            "hit_rate": 0.559,
-            "rock_hit_rate": 0.456
+            "hit_rate": 0.56,
+            "rock_hit_rate": 0.454
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Strait of Hormuz daily transit counts remain at least 15% below their 30-day average in the next IMF PortWatch update",
+            "horizon": "week",
+            "probability": 0.42,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "S1 shows Strait of Hormuz had 2 daily transits (72% below 30-day average of 7) as of 2026-08-02, exceeding the forecast's 15% threshold.",
+            "resolved_ms": 1786408666244,
+            "ts": 1785218362696
+        },
         {
             "statement": "The EIA weekly petroleum status report on 2026-07-29 will show a decline in US crude oil inventories, pushing WTI Crude Oil futures below $80/bbl.",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "No signal mentions Vietnam or Typhoon Noul making landfall there; all signals reference other typhoons (CHAN-HOM-26, PEILOU-26, DOLPHIN-26) in different locations with no mention of Vietnam or $1-2B damages.",
             "resolved_ms": 1786315652459,
             "ts": 1785205762671
-        },
-        {
-            "statement": "Natural gas storage injections will exceed 100 Bcf in the July 30 EIA report",
-            "horizon": "week",
-            "probability": 0.61,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "All signals (S1-S5) reference EIA reports dated after the forecast window closed (2026-08-04), providing no evidence about the July 30 report's data within the window.",
-            "resolved_ms": 1786253892587,
-            "ts": 1785205762671
         }
     ],
-    "next_judge_ms": 1786408465480,
+    "next_judge_ms": 1786412266265,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1262,
-        "base_rate": 0.1957,
-        "brier_raw": 0.2204,
-        "brier_base_rate": 0.1574,
-        "brier_calibrated_oos": 0.3013,
-        "brier_calibrated_oos_n": 546,
+        "resolved_n": 1263,
+        "base_rate": 0.1964,
+        "brier_raw": 0.2205,
+        "brier_base_rate": 0.1578,
+        "brier_calibrated_oos": 0.3023,
+        "brier_calibrated_oos_n": 547,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
