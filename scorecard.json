@@ -1,9 +1,9 @@
 {
-    "resolved": 1263,
-    "open": 5312,
-    "due": 1378,
-    "next_due_ms": 1786480538604,
-    "unresolvable": 525,
+    "resolved": 1264,
+    "open": 5324,
+    "due": 1376,
+    "next_due_ms": 1786482492507,
+    "unresolvable": 527,
     "brier": 0.22,
     "hit_rate": 0.64,
     "per_horizon": {
@@ -13,9 +13,9 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 514,
+            "resolved": 515,
             "brier": 0.226,
-            "hit_rate": 0.62
+            "hit_rate": 0.63
         }
     },
     "calibration": [
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 321,
+            "n": 322,
             "avg_predicted": 0.68,
             "observed": 0.43
         },
@@ -52,28 +52,28 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1262,
+            "resolved": 1263,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1260,
+            "resolved": 1261,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1262,
+            "resolved": 1263,
             "brier": 0.267
         },
         "Skeptic": {
-            "resolved": 1260,
+            "resolved": 1261,
             "brier": 0.19
         }
     },
     "models": {
         "llama3.1": {
-            "resolved": 2822,
+            "resolved": 2826,
             "brier": 0.279,
-            "hit_rate": 0.54,
-            "rock_hit_rate": 0.928
+            "hit_rate": 0.541,
+            "rock_hit_rate": 0.927
         },
         "qwen3:14b": {
             "resolved": 2222,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "The Strait of Hormuz will experience another day with below-average ship transits on July 25.",
+            "horizon": "week",
+            "probability": 0.65,
+            "location": "Strait of Hormuz",
+            "outcome": 1.0,
+            "verdict": "yes",
+            "evidence": "Signal S2 directly confirms the Strait of Hormuz had 10 daily ship transits (52% below its 30-day average of 21), matching the forecast's claim of below-average transits in the location specified.",
+            "resolved_ms": 1786479596973,
+            "ts": 1784725139636
+        },
         {
             "statement": "Strait of Hormuz daily transit counts remain at least 15% below their 30-day average in the next IMF PortWatch update",
             "horizon": "week",
@@ -215,30 +226,19 @@
             "evidence": "No signals or web search results confirm the RSF seized control of Khartoum airport during the forecast window.",
             "resolved_ms": 1786319525502,
             "ts": 1785208353114
-        },
-        {
-            "statement": "Typhoon Noul will make landfall in Vietnam causing $1-2B in damages",
-            "horizon": "week",
-            "probability": 0.17,
-            "location": "Vietnam",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal mentions Vietnam or Typhoon Noul making landfall there; all signals reference other typhoons (CHAN-HOM-26, PEILOU-26, DOLPHIN-26) in different locations with no mention of Vietnam or $1-2B damages.",
-            "resolved_ms": 1786315652459,
-            "ts": 1785205762671
         }
     ],
-    "next_judge_ms": null,
+    "next_judge_ms": 1786483331499,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1263,
-        "base_rate": 0.1964,
-        "brier_raw": 0.2205,
-        "brier_base_rate": 0.1578,
+        "resolved_n": 1264,
+        "base_rate": 0.197,
+        "brier_raw": 0.2204,
+        "brier_base_rate": 0.1582,
         "brier_calibrated_oos": 0.3023,
         "brier_calibrated_oos_n": 547,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
