@@ -1,7 +1,7 @@
 {
-    "resolved": 1267,
-    "open": 5391,
-    "due": 1394,
+    "resolved": 1268,
+    "open": 5399,
+    "due": 1393,
     "next_due_ms": 1786565612172,
     "unresolvable": 535,
     "brier": 0.221,
@@ -13,7 +13,7 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 518,
+            "resolved": 519,
             "brier": 0.226,
             "hit_rate": 0.62
         }
@@ -33,7 +33,7 @@
         },
         {
             "bin": "40\u201360%",
-            "n": 409,
+            "n": 410,
             "avg_predicted": 0.5,
             "observed": 0.17
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1266,
+            "resolved": 1267,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1264,
+            "resolved": 1265,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1265,
+            "resolved": 1266,
             "brier": 0.266
         },
         "Skeptic": {
-            "resolved": 1264,
+            "resolved": 1265,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.927
         },
         "qwen3:14b": {
-            "resolved": 2233,
+            "resolved": 2237,
             "brier": 0.198,
-            "hit_rate": 0.687,
-            "rock_hit_rate": 0.647
+            "hit_rate": 0.686,
+            "rock_hit_rate": 0.648
         },
         "claude-opus-5 (headline)": {
-            "resolved": 341,
-            "brier": 0.292,
-            "hit_rate": 0.557,
-            "rock_hit_rate": 0.457
+            "resolved": 342,
+            "brier": 0.293,
+            "hit_rate": 0.556,
+            "rock_hit_rate": 0.459
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Strait of Hormuz daily transits remain at least 15% below their 30-day average in the next PortWatch update",
+            "horizon": "week",
+            "probability": 0.41,
+            "location": "Strait of Hormuz",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "No signal provides data specifically about the Strait of Hormuz's daily transits during the forecast window.",
+            "resolved_ms": 1786557974023,
+            "ts": 1785222401884
+        },
         {
             "statement": "At least one M6.0+ earthquake occurs worldwide",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "No signal mentions Ombai Strait transit levels or confirms the 51% surge above its 30-day average, despite the forecast's specific geographic and quantitative claim.",
             "resolved_ms": 1786350689448,
             "ts": 1785209988131
-        },
-        {
-            "statement": "Brazilian real depreciates 3.7% against dollar as Lula runoff odds rise to 62%",
-            "horizon": "week",
-            "probability": 0.44,
-            "location": "Brazil",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal provides evidence of the Brazilian real's depreciation or Lula's runoff odds reaching 62% during the forecast window.",
-            "resolved_ms": 1786342968477,
-            "ts": 1785209988131
         }
     ],
-    "next_judge_ms": 1786557785942,
+    "next_judge_ms": 1786561574044,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1267,
-        "base_rate": 0.1965,
+        "resolved_n": 1268,
+        "base_rate": 0.1964,
         "brier_raw": 0.2206,
-        "brier_base_rate": 0.1579,
-        "brier_calibrated_oos": 0.3007,
-        "brier_calibrated_oos_n": 550,
+        "brier_base_rate": 0.1578,
+        "brier_calibrated_oos": 0.3002,
+        "brier_calibrated_oos_n": 551,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }
