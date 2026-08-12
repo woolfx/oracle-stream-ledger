@@ -1,10 +1,10 @@
 {
-    "resolved": 1266,
-    "open": 5384,
-    "due": 1398,
+    "resolved": 1267,
+    "open": 5391,
+    "due": 1394,
     "next_due_ms": 1786565612172,
-    "unresolvable": 532,
-    "brier": 0.22,
+    "unresolvable": 535,
+    "brier": 0.221,
     "hit_rate": 0.64,
     "per_horizon": {
         "24h": {
@@ -13,7 +13,7 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 517,
+            "resolved": 518,
             "brier": 0.226,
             "hit_rate": 0.62
         }
@@ -39,7 +39,7 @@
         },
         {
             "bin": "60\u201380%",
-            "n": 322,
+            "n": 323,
             "avg_predicted": 0.68,
             "observed": 0.43
         },
@@ -52,11 +52,11 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1265,
+            "resolved": 1266,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1263,
+            "resolved": 1264,
             "brier": 0.259
         },
         "Naturalist": {
@@ -64,7 +64,7 @@
             "brier": 0.266
         },
         "Skeptic": {
-            "resolved": 1263,
+            "resolved": 1264,
             "brier": 0.19
         }
     },
@@ -76,16 +76,16 @@
             "rock_hit_rate": 0.927
         },
         "qwen3:14b": {
-            "resolved": 2230,
-            "brier": 0.197,
+            "resolved": 2233,
+            "brier": 0.198,
             "hit_rate": 0.687,
             "rock_hit_rate": 0.647
         },
         "claude-opus-5 (headline)": {
-            "resolved": 340,
-            "brier": 0.291,
-            "hit_rate": 0.559,
-            "rock_hit_rate": 0.456
+            "resolved": 341,
+            "brier": 0.292,
+            "hit_rate": 0.557,
+            "rock_hit_rate": 0.457
         },
         "qwen3:14b (headline)": {
             "resolved": 17,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "At least one M6.0+ earthquake occurs worldwide",
+            "horizon": "week",
+            "probability": 0.79,
+            "location": "Global",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "The only signal (S1) reports a M4.9 earthquake, which does not meet the M6.0+ threshold stated in the forecast.",
+            "resolved_ms": 1786554185919,
+            "ts": 1785220360344
+        },
         {
             "statement": "Kerch Strait ship transits will drop to 0 within the next week due to renewed Ukrainian naval blockades near Crimea",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "No signal provides evidence of the Brazilian real's depreciation or Lula's runoff odds reaching 62% during the forecast window.",
             "resolved_ms": 1786342968477,
             "ts": 1785209988131
-        },
-        {
-            "statement": "EIA's weekly petroleum report on 2026-07-29 will show a 2% increase in U.S. crude oil inventories, pushing CL=F down 1.5%.",
-            "horizon": "week",
-            "probability": 0.49,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal directly confirms the EIA report's 2% inventory increase or the 1.5% CL=F drop; signals S11/S12 mention inventory changes but not the EIA's specific findings, and S8/S10 show price increases, not declines.",
-            "resolved_ms": 1786335189403,
-            "ts": 1785201689150
         }
     ],
-    "next_judge_ms": null,
+    "next_judge_ms": 1786557785942,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1266,
-        "base_rate": 0.1967,
-        "brier_raw": 0.2203,
-        "brier_base_rate": 0.158,
-        "brier_calibrated_oos": 0.3012,
-        "brier_calibrated_oos_n": 549,
+        "resolved_n": 1267,
+        "base_rate": 0.1965,
+        "brier_raw": 0.2206,
+        "brier_base_rate": 0.1579,
+        "brier_calibrated_oos": 0.3007,
+        "brier_calibrated_oos_n": 550,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }

@@ -1872,3 +1872,7 @@
 {"evidence": "None of the signals mention Kerch Strait or its ship transits; all signals refer to Balabac, Ombai, and Sunda Straits, which are unrelated to the forecast's location and event.", "id": "pred_62c54884e3", "judge": "qwen3:14b", "judge_search": 0, "kind": "resolution", "outcome": 0.0, "resolved_ms": 1786491216452, "verdict": "no"}
 {"evidence": "window passed with insufficient evidence", "id": "pred_ef17f2b5f4", "kind": "resolution", "outcome": null, "resolved_ms": 1786498877029, "verdict": "unresolved"}
 {"evidence": "window passed with insufficient evidence", "id": "pred_6f5da4a8c1", "kind": "resolution", "outcome": null, "resolved_ms": 1786553986961, "verdict": "unresolved"}
+{"evidence": "The only signal (S1) reports a M4.9 earthquake, which does not meet the M6.0+ threshold stated in the forecast.", "id": "pred_3e46c0ac1f", "judge": "qwen3:14b", "judge_search": 0, "kind": "resolution", "outcome": 0.0, "resolved_ms": 1786554185919, "verdict": "no"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_986a7f8f60", "kind": "resolution", "outcome": null, "resolved_ms": 1786554185920, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_c29701280b", "kind": "resolution", "outcome": null, "resolved_ms": 1786554185920, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_640d180927", "kind": "resolution", "outcome": null, "resolved_ms": 1786554185920, "verdict": "unresolved"}
