@@ -1,8 +1,8 @@
 {
-    "resolved": 1265,
-    "open": 5350,
-    "due": 1376,
-    "next_due_ms": 1786490494984,
+    "resolved": 1266,
+    "open": 5355,
+    "due": 1377,
+    "next_due_ms": 1786493794296,
     "unresolvable": 530,
     "brier": 0.22,
     "hit_rate": 0.64,
@@ -13,7 +13,7 @@
             "hit_rate": 0.65
         },
         "week": {
-            "resolved": 516,
+            "resolved": 517,
             "brier": 0.226,
             "hit_rate": 0.62
         }
@@ -21,7 +21,7 @@
     "calibration": [
         {
             "bin": "0\u201320%",
-            "n": 130,
+            "n": 131,
             "avg_predicted": 0.13,
             "observed": 0.09
         },
@@ -52,19 +52,19 @@
     ],
     "personas": {
         "Strategist": {
-            "resolved": 1264,
+            "resolved": 1265,
             "brier": 0.256
         },
         "Economist": {
-            "resolved": 1262,
+            "resolved": 1263,
             "brier": 0.259
         },
         "Naturalist": {
-            "resolved": 1264,
-            "brier": 0.267
+            "resolved": 1265,
+            "brier": 0.266
         },
         "Skeptic": {
-            "resolved": 1262,
+            "resolved": 1263,
             "brier": 0.19
         }
     },
@@ -76,10 +76,10 @@
             "rock_hit_rate": 0.927
         },
         "qwen3:14b": {
-            "resolved": 2226,
+            "resolved": 2230,
             "brier": 0.197,
             "hit_rate": 0.687,
-            "rock_hit_rate": 0.646
+            "rock_hit_rate": 0.647
         },
         "claude-opus-5 (headline)": {
             "resolved": 340,
@@ -95,6 +95,17 @@
         }
     },
     "recent": [
+        {
+            "statement": "Kerch Strait ship transits will drop to 0 within the next week due to renewed Ukrainian naval blockades near Crimea",
+            "horizon": "week",
+            "probability": 0.11,
+            "location": "Kerch Strait",
+            "outcome": 0.0,
+            "verdict": "no",
+            "evidence": "None of the signals mention Kerch Strait or its ship transits; all signals refer to Balabac, Ombai, and Sunda Straits, which are unrelated to the forecast's location and event.",
+            "resolved_ms": 1786491216452,
+            "ts": 1785203704774
+        },
         {
             "statement": "Russia launches a mass drone/missile strike (50+ munitions) on Ukrainian cities, and Ukraine conducts further strikes affecting Crimean power or water infrastructure",
             "horizon": "week",
@@ -215,32 +226,21 @@
             "evidence": "No signal directly confirms the EIA report's 2% inventory increase or the 1.5% CL=F drop; signals S11/S12 mention inventory changes but not the EIA's specific findings, and S8/S10 show price increases, not declines.",
             "resolved_ms": 1786335189403,
             "ts": 1785201689150
-        },
-        {
-            "statement": "Natural gas prices (Henry Hub) rise by 3% due to below-average storage injections reported in the July 30 EIA report",
-            "horizon": "week",
-            "probability": 0.47,
-            "location": "United States",
-            "outcome": 0.0,
-            "verdict": "no",
-            "evidence": "No signal explicitly confirms the forecasted 3% rise in Henry Hub prices or attributes it to below-average EIA storage injections; S7 only shows a 2.52% price increase, falling short of the 3% threshold stated in the forecast.",
-            "resolved_ms": 1786323523199,
-            "ts": 1785209844366
         }
     ],
-    "next_judge_ms": 1786491011290,
+    "next_judge_ms": 1786494948500,
     "self_calibration": {
         "enabled": true,
         "feedback": false,
         "method": "platt",
         "fallback": "none",
         "fitted": true,
-        "resolved_n": 1265,
-        "base_rate": 0.1968,
-        "brier_raw": 0.2204,
-        "brier_base_rate": 0.1581,
-        "brier_calibrated_oos": 0.3018,
-        "brier_calibrated_oos_n": 548,
+        "resolved_n": 1266,
+        "base_rate": 0.1967,
+        "brier_raw": 0.2203,
+        "brier_base_rate": 0.158,
+        "brier_calibrated_oos": 0.3012,
+        "brier_calibrated_oos_n": 549,
         "note": "Published headline probability is RAW conviction (unchanged); this is the honest companion. Calibration fixes overconfidence, not discrimination \u2014 see /calibration."
     }
 }

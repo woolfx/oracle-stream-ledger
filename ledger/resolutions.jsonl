@@ -1869,3 +1869,4 @@
 {"evidence": "window passed with insufficient evidence", "id": "pred_ba0c1ac4f5", "kind": "resolution", "outcome": null, "resolved_ms": 1786483511320, "verdict": "unresolved"}
 {"evidence": "window passed with insufficient evidence", "id": "pred_e24b790ad9", "kind": "resolution", "outcome": null, "resolved_ms": 1786483511320, "verdict": "unresolved"}
 {"evidence": "window passed with insufficient evidence", "id": "pred_a89fcb91cf", "kind": "resolution", "outcome": null, "resolved_ms": 1786483511320, "verdict": "unresolved"}
+{"evidence": "None of the signals mention Kerch Strait or its ship transits; all signals refer to Balabac, Ombai, and Sunda Straits, which are unrelated to the forecast's location and event.", "id": "pred_62c54884e3", "judge": "qwen3:14b", "judge_search": 0, "kind": "resolution", "outcome": 0.0, "resolved_ms": 1786491216452, "verdict": "no"}
