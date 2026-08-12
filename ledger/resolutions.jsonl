@@ -1877,3 +1877,5 @@
 {"evidence": "window passed with insufficient evidence", "id": "pred_c29701280b", "kind": "resolution", "outcome": null, "resolved_ms": 1786554185920, "verdict": "unresolved"}
 {"evidence": "window passed with insufficient evidence", "id": "pred_640d180927", "kind": "resolution", "outcome": null, "resolved_ms": 1786554185920, "verdict": "unresolved"}
 {"evidence": "No signal provides data specifically about the Strait of Hormuz's daily transits during the forecast window.", "id": "pred_cf7b736d0c", "judge": "qwen3:14b", "judge_search": 0, "kind": "resolution", "outcome": 0.0, "resolved_ms": 1786557974023, "verdict": "no"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_6cd59154ef", "kind": "resolution", "outcome": null, "resolved_ms": 1786561898117, "verdict": "unresolved"}
+{"evidence": "window passed with insufficient evidence", "id": "pred_9db4afb178", "kind": "resolution", "outcome": null, "resolved_ms": 1786561898117, "verdict": "unresolved"}
